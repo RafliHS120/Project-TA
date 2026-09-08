@@ -1,2 +1,2 @@
 # Project-TA
-Penyelesaia Tugas Akhir
+Penyelesaian Tugas Akhir
