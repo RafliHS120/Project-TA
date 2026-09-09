@@ -401,7 +401,7 @@ Penetapan jumlah klaster merupakan persoalan mendasar dalam metode partisi karen
 
 Persoalan ini umumnya dijawab melalui kriteria evaluasi internal, yaitu ukuran yang menilai kualitas struktur pengelompokan berdasarkan data itu sendiri tanpa memerlukan informasi kelompok yang sebenarnya. Dua kriteria yang paling banyak digunakan dalam literatur analisis klaster adalah Metode Elbow dan koefisien Silhouette.
 
-Metode Elbow bertumpu pada perilaku Within-Cluster Sum of Squares (WCSS) sebagai fungsi dari jumlah klaster. Everitt dkk. (2011) menjelaskan bahwa dalam penerapan klaster optimisasi, jumlah kelompok yang sesuai dapat diperkirakan dengan memplot nilai kriteria klaster terhadap jumlah kelompok dan mengamati perubahan besar pada kurva. Titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (elbow) menandakan bahwa penambahan klaster berikutnya tidak lagi memberikan perbaikan homogenitas yang berarti, sehingga jumlah klaster dipilih berdasarkan keseimbangan antara homogenitas internal dan kesederhanaan struktur pengelompokan.
+Metode Elbow bertumpu pada perilaku Within-Cluster Sum of Squares (WCSS) sebagai fungsi dari jumlah klaster. Everitt et al. (2011) menjelaskan bahwa dalam penerapan klaster optimisasi, jumlah kelompok yang sesuai dapat diperkirakan dengan memplot nilai kriteria klaster terhadap jumlah kelompok dan mengamati perubahan besar pada kurva. Titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (elbow) menandakan bahwa penambahan klaster berikutnya tidak lagi memberikan perbaikan homogenitas yang berarti, sehingga jumlah klaster dipilih berdasarkan keseimbangan antara homogenitas internal dan kesederhanaan struktur pengelompokan.
 
 Kriteria ini memiliki dua keterbatasan yang saling berkaitan. Pertama, nilai WCSS menurun secara monoton seiring bertambahnya jumlah klaster sehingga tidak dapat diperlakukan sebagai fungsi objektif yang diminimalkan secara langsung; penilaiannya bergantung pada pembacaan bentuk kurva, yang menjadi ambigu ketika penurunan berlangsung landai tanpa titik patah yang tegas. Kedua, WCSS semata-mata merekam kedekatan objek terhadap centroid klasternya sendiri dan tidak memuat informasi mengenai jarak antar klaster, padahal kualitas pengelompokan ditentukan oleh kekompakan internal sekaligus keterpisahan antar kelompok.
 
@@ -417,7 +417,7 @@ dengan:
 Nilai s\left(i\right) terbatas pada rentang −1 hingga 1. Nilai yang mendekati 1 menunjukkan objek berada jauh lebih dekat dengan anggota klasternya sendiri dibandingkan klaster tetangga, nilai di sekitar 0 menandakan objek berada pada perbatasan dua klaster, sedangkan nilai negatif mengindikasikan objek kemungkinan lebih sesuai ditempatkan pada klaster lain.
 Kualitas struktur pengelompokan secara keseluruhan dinilai melalui rata-rata koefisien Silhouette seluruh objek atau average silhouette width:
 \bar{s}=\frac{1}{n}\sum_{i=1}^{n} s\left(i\right)
-dengan s menyatakan rata-rata koefisien Silhouette dan n menyatakan banyaknya objek. Kaufman dan Rousseeuw (1990) menetapkan pedoman interpretasi atas nilai tersebut: nilai di atas 0,70 mencerminkan struktur klaster yang kuat, nilai 0,51 sampai 0,70 mencerminkan struktur yang memadai, nilai 0,26 sampai 0,50 mencerminkan struktur yang lemah sehingga hasilnya perlu ditafsirkan secara hati-hati, dan nilai di bawah 0,26 menunjukkan struktur klaster yang belum meyakinkan.
+dengan s menyatakan rata-rata koefisien Silhouette dan n menyatakan banyaknya objek. _Kaufman dan Rousseeuw_ (1990) menetapkan pedoman interpretasi atas nilai tersebut: nilai di atas 0,70 mencerminkan struktur klaster yang kuat, nilai 0,51 sampai 0,70 mencerminkan struktur yang memadai, nilai 0,26 sampai 0,50 mencerminkan struktur yang lemah sehingga hasilnya perlu ditafsirkan secara hati-hati, dan nilai di bawah 0,26 menunjukkan struktur klaster yang belum meyakinkan.
 Kedua kriteria tersebut bersifat komplementer: Metode Elbow membaca pola penurunan variasi dalam klaster, sedangkan koefisien Silhouette mengukur kekuatan pemisahan antar klaster pada setiap kandidat jumlah klaster. Atas dasar itu, penelitian ini menggunakan keduanya secara bersamaan dalam menetapkan jumlah klaster, dengan prosedur penerapan yang diuraikan pada Subbab 3.4.5.
 
 
@@ -609,7 +609,7 @@ dengan:
 - ⟨Z_ij⟩ = nilai variabel ke-⟨j⟩ pada objek ke-⟨i⟩,
 - ⟨Z_kj⟩ = nilai variabel ke-⟨j⟩ pada objek ke-⟨k⟩
 
-## 3.4.5 Penentuan Jumlah Klaster
+### 3.4.5 Penentuan Jumlah Klaster
 
 Salah satu keputusan penting dalam metode klaster partisi adalah penentuan jumlah klaster ⟨K⟩. Everitt et al. (2011) menjelaskan bahwa dalam banyak aplikasi klaster optimisasi, peneliti perlu "mengestimasi" jumlah kelompok yang paling sesuai, dan salah satu pendekatan yang umum digunakan adalah memplot nilai kriteria klaster terhadap jumlah kelompok untuk melihat perubahan yang besar pada kurva. Dalam penelitian ini, jumlah klaster optimal ditentukan menggunakan Metode Elbow, yaitu dengan membandingkan nilai Within-Cluster Sum of Squares (WCSS) pada beberapa kandidat ⟨K⟩. Nilai ⟨K⟩ dipilih pada titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (elbow), sehingga pemilihan jumlah klaster tidak dilakukan secara arbitrer.
 
@@ -617,7 +617,7 @@ Selain Metode Elbow, penentuan jumlah klaster dalam penelitian ini juga mengguna
 
 Jumlah klaster akhir ditetapkan dengan mempertimbangkan tiga hal secara bersamaan, yaitu pola siku pada kurva WCSS, nilai rata-rata koefisien silhouette tertinggi, dan keterbacaan hasil klaster secara substantif. Apabila hasil Elbow dan silhouette menunjuk pada jumlah klaster yang berbeda, keputusan diambil dengan mengutamakan konfigurasi yang menghasilkan profil klaster yang paling dapat diinterpretasikan dalam konteks pola konsumsi listrik dan karakteristik sosial ekonomi rumah tangga, disertai penjelasan atas pertimbangan tersebut.
 
-## 3.4.6 Analisis Klaster Non-Hierarki (K-Means Clustering)
+### 3.4.6 Analisis Klaster Non-Hierarki (K-Means Clustering)
 
 Pembentukan klaster rumah tangga dilakukan menggunakan metode K-Means clustering, yaitu metode klaster non-hierarki yang bersifat unsupervised. Johnson dan Wichern (2014) menjelaskan bahwa metode non-hierarki membentuk kumpulan klaster dengan mengalokasikan setiap objek ke pusat klaster yang terdekat, sedangkan Everitt et al. (2011) menempatkan k-means sebagai bagian dari teknik klaster optimisasi yang meminimalkan variasi dalam klaster. Metode ini dipilih karena penelitian bertujuan mengelompokkan rumah tangga ketika label kelompok belum tersedia sebelumnya, dengan variabel pembentuk klaster berupa peubah kuantitatif kontinu yang telah distandarisasi. Selain itu, K-Means relatif efisien untuk diterapkan pada data berukuran besar dan menghasilkan segmentasi yang mudah diinterpretasikan.
 
@@ -675,6 +675,8 @@ Hasil profiling ini menjadi dasar untuk menyimpulkan karakteristik dominan setia
 ---
 
 # BAB IV HASIL DAN PEMBAHASAN
+
+[Akan direvisi, saat ini menggunakan data bangkitan. Menunggu output mikrodata SUSENAS]
 
 Bab ini menyajikan hasil pengolahan data dan pembahasan mengenai klasifikasi rumah tangga di Provinsi DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi. Pembahasan diawali dengan uraian mengenai hasil pra-pengolahan data, statistik deskriptif variabel penelitian, dan pola awal konsumsi listrik rumah tangga. Selanjutnya, bab ini membahas proses penentuan jumlah klaster, hasil pembentukan klaster menggunakan metode K-Means, evaluasi perbedaan antar klaster, serta interpretasi karakteristik masing-masing klaster berdasarkan variabel pembentuk klaster dan variabel profiling.
 
@@ -1349,7 +1351,7 @@ Berdasarkan temuan dan kesimpulan penelitian, saran yang dapat diberikan adalah:
 25. Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, 16(1).
 26. Rencher, A. C., & Christensen, W. F. (2012). *Methods of multivariate analysis* (3rd ed.). John Wiley & Sons.
 27. Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, 2(1), 79–91. https://doi.org/10.5334/bc.72
-28. Rousseeuw (1987), J. Computational & Applied Mathematics, 20, 53–65
+28. Rousseeuw, PJ (1987). Silhouettes: a graphical aid to the interpretation and validation of cluster analysis. Journal of computational and applied mathematics, Elsevier, <https://www.sciencedirect.com/science/article/pii/0377042787901257>
 29. Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C., Gamal, A., & Dimyati, M. (2023). Spatio-temporal characteristics of urban heat island of Jakarta metropolitan. *Remote Sensing Applications: Society and Environment*, 32, 101062. https://doi.org/10.1016/j.rsase.2023.101062
 30. Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
 31. van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, 20, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
