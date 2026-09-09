@@ -882,174 +882,8 @@ Visualisasi hasil klaster memperlihatkan bahwa pemisahan dua kelompok relatif je
 
 Pola pemisahan tersebut mengindikasikan bahwa pembentukan dua klaster tidak terjadi secara acak, melainkan merefleksikan perbedaan sistematis pada variabel pembentuk klaster. Oleh karena itu, langkah berikutnya adalah menelaah profil masing-masing klaster agar karakter rumah tangga dalam tiap kelompok dapat dipahami secara lebih substantif.
 
-## 4.5 Profil Klaster Rumah Tangga
 
-Profil klaster disusun berdasarkan nilai rata-rata tertimbang dari variabel pembentuk klaster dan beberapa variabel pendukung. Dari hasil ini terlihat bahwa dua klaster yang terbentuk menunjukkan karakter yang berbeda secara cukup tegas.
-
-Secara umum, klaster 1 merupakan kelompok rumah tangga dengan estimasi konsumsi listrik yang lebih rendah. Rata-rata estimasi konsumsi listrik pada klaster ini sekitar 107 kWh per bulan, dengan median sekitar 94,4 kWh. Di sisi lain, klaster 2 memiliki rata-rata estimasi konsumsi listrik yang jauh lebih tinggi, yaitu sekitar 495 kWh per bulan, dengan median sekitar 322 kWh. Perbedaan ini menunjukkan bahwa klaster 2 merupakan kelompok rumah tangga dengan intensitas penggunaan listrik yang secara nyata lebih tinggi dibandingkan klaster 1.
-
-Perbedaan serupa juga terlihat pada pengeluaran nonmakanan selain listrik. Klaster 2 memiliki rata-rata pengeluaran nonmakanan selain listrik yang lebih tinggi daripada klaster 1. Hal ini menunjukkan bahwa rumah tangga pada klaster 2 pada umumnya memiliki kapasitas konsumsi non-listrik yang lebih besar, sehingga secara ekonomi relatif lebih mampu membiayai kebutuhan rumah tangga di luar konsumsi dasar listrik.
-
-Jika dilihat dari ukuran rumah tangga, klaster 2 cenderung memiliki ukuran rumah tangga yang sedikit lebih besar dibandingkan klaster 1. Sementara itu, pada variabel pendidikan kepala rumah tangga, pola yang muncul justru menunjukkan bahwa klaster 1 memiliki rata-rata pendidikan kepala rumah tangga yang sedikit lebih tinggi, sedangkan klaster 2 sedikit lebih rendah. Dengan demikian, rumah tangga dengan konsumsi listrik dan kapasitas belanja non-listrik yang lebih tinggi tidak selalu identik dengan tingkat pendidikan kepala rumah tangga yang lebih tinggi.
-
-**Tabel 4.7 Profil Tertimbang Rumah Tangga Menurut Klaster**
-
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER.** Hanya nomor dan judul tabel yang terbawa. Angka-angka yang tersebar di naskah dan di lampiran deskripsi visual menghasilkan rekonstruksi parsial berikut:
->
-> | Indikator | Klaster 1 | Klaster 2 |
-> |---|---|---|
-> | Jumlah rumah tangga (sampel) | 3.329 | 1.665 |
-> | Komposisi tertimbang | ±58,8% | ±41,2% |
-> | Rata-rata estimasi konsumsi listrik | ±107,03 kWh/bulan | ±494,97 kWh/bulan |
-> | Median estimasi konsumsi listrik | ±94,4 kWh | ±322 kWh |
-> | Rata-rata pengeluaran nonmakanan selain listrik | ±Rp2,34 juta | ±Rp9,80 juta |
-> | Proporsi kepemilikan AC | 14,73% | 73,32% |
-
-Visualisasi rata-rata estimasi konsumsi listrik per klaster mempertegas perbedaan tersebut. Klaster 2 memiliki rata-rata konsumsi listrik beberapa kali lebih tinggi dibandingkan klaster 1. Temuan ini menguatkan bahwa dimensi konsumsi energi merupakan salah satu pembeda utama dalam struktur klaster rumah tangga yang terbentuk.
-
-![Gambar 4.7 Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster](assets-ta/gambar-4-7-bar-konsumsi-klaster.png)
-
-**Gambar 4.7 Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster**
-
-> **Deskripsi Gambar 4.7.**
-> *Media internal:* `image15.png` · *Lokasi dokumen:* halaman 58 / halaman tercetak 52.
->
-> **Bentuk visual.** *Bar chart* vertikal sangat sederhana, hanya dua batang berwarna **abu-abu gelap solid**, latar putih.
-> - **Judul di dalam gambar:** "Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster"
-> - **Subjudul di dalam gambar:** "Estimasi kWh = pengeluaran listrik / tarif acuan Statistik PLN 2024"
-> - **Sumbu-X:** "Klaster", dua kategori berlabel **1** dan **2**
-> - **Sumbu-Y:** "Rata-rata estimasi listrik tertimbang (kWh)", tanda sumbu 0, 100, 200, 300, 400, 500
->
-> **Pola yang terlihat.** Batang klaster 1 pendek, berhenti sedikit di atas garis 100. Batang klaster 2 hampir menyentuh garis 500 — kira-kira **4,6 kali** lebih tinggi. Tidak ada label angka di atas batang; grafik memang disusun untuk menonjolkan kesenjangan, bukan nilai persisnya.
->
-> **Angka pendukung dari naskah.** Klaster 1 ±107,03 kWh/bulan; klaster 2 ±494,97 kWh/bulan. Median disebut ±94,4 kWh (klaster 1) dan ±322 kWh (klaster 2).
->
-> **Makna dalam konteks dokumen.** Konsumsi listrik merupakan salah satu pembeda utama struktur klaster; klaster 2 menunjukkan intensitas pemakaian yang jauh lebih tinggi daripada klaster 1.
-
-Kepemilikan air conditioner (AC) juga memperlihatkan perbedaan yang sangat menonjol antar klaster. Pada klaster 1, proporsi rumah tangga yang memiliki AC berada pada kisaran yang jauh lebih rendah, sekitar 14–15 persen. Sebaliknya, pada klaster 2 proporsinya meningkat tajam hingga sekitar 70 persen atau lebih. Temuan ini memperlihatkan bahwa klaster 2 bukan hanya dicirikan oleh konsumsi listrik yang lebih tinggi, tetapi juga oleh tingkat kepemilikan perangkat pendingin yang jauh lebih besar.
-
-![Gambar 4.8 Proporsi Kepemilikan AC Menurut Klaster](assets-ta/gambar-4-8-proporsi-ac-klaster.png)
-
-**Gambar 4.8 Proporsi Kepemilikan AC Menurut Klaster**
-
-> **Deskripsi Gambar 4.8.**
-> *Media internal:* `image16.png` · *Lokasi dokumen:* halaman 59 / halaman tercetak 53.
->
-> **Bentuk visual.** *Bar chart* vertikal dua batang, warna **abu-abu gelap solid**, latar putih.
-> - **Judul di dalam gambar:** "Proporsi Kepemilikan AC Menurut Klaster"
-> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
-> - **Sumbu-Y:** "Proporsi rumah tangga memiliki AC (%)", tanda sumbu 0, 20, 40, 60
->
-> **Pola yang terlihat.** Batang klaster 1 pendek, berhenti di sekitar **15 persen**. Batang klaster 2 jauh lebih tinggi, melewati tanda 60 dan mencapai sekitar **73 persen** — hampir lima kali lipat. Selisih ketinggian batang adalah salah satu kontras paling tegas di seluruh bab hasil. Tidak ada label angka di atas batang.
->
-> **Angka pendukung.** Berdasarkan tabel profil tertimbang yang menyertai bagian ini: **Klaster 1 = 14,73%** rumah tangga memiliki AC; **Klaster 2 = 73,32%**.
->
-> **Makna dalam konteks dokumen.** Klaster 2 bukan hanya memiliki konsumsi listrik lebih tinggi, tetapi juga akses jauh lebih besar terhadap perangkat pendingin. Klaster 1 kemudian dibaca sebagai kelompok dengan keterbatasan lebih besar dalam adaptasi pendinginan.
-
-Hasil heatmap berbasis rata-rata z-score menunjukkan pola yang konsisten. Klaster 2 memiliki nilai rata-rata z-score positif pada log estimasi konsumsi listrik dan log pengeluaran nonmakanan selain listrik, masing-masing sekitar 1,04 dan 1,05. Sebaliknya, klaster 1 memiliki nilai rata-rata z-score negatif pada kedua variabel tersebut, masing-masing sekitar -0,52 dan -0,52. Pola ini menegaskan bahwa pemisahan utama antarklaster terutama didorong oleh perbedaan konsumsi listrik dan kapasitas pengeluaran non-listrik. Pada variabel pendidikan kepala rumah tangga, klaster 1 memiliki nilai rata-rata z-score positif, sedangkan klaster 2 negatif. Untuk ukuran rumah tangga, perbedaannya relatif kecil, meskipun klaster 2 tetap sedikit lebih tinggi.
-
-![Gambar 4.9 Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score](assets-ta/gambar-4-9-heatmap-zscore.png)
-
-**Gambar 4.9 Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score**
-
-> **Deskripsi Gambar 4.9.**
-> *Media internal:* `image17.png` · *Lokasi dokumen:* halaman 59 / halaman tercetak 53.
->
-> **Bentuk visual.** *Heatmap* berupa matriks **2 baris × 4 kolom**, setiap sel diberi warna sekaligus label angka di tengahnya.
-> - **Judul di dalam gambar:** "Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score"
-> - **Sumbu-Y:** "Klaster" — baris atas = **2**, baris bawah = **1**
-> - **Sumbu-X:** "Variabel pembentuk klaster" — empat label ditulis miring: `ln_listrik_kwh`, `ln_pengeluaran_nonmakanan_nonlistrik`, `pendidikan_krt`, `ukuran_rt_w`
-> - **Legenda warna di kanan:** berjudul "Rata-rata Z", gradasi divergen dari **merah salmon** (nilai negatif, ≈ -0,5) melalui **putih/ungu pucat** (nol) ke **biru pekat** (nilai positif, ≈ 1,0)
->
-> **Pola warna dan angka:**
->
-> | Klaster | ln_listrik_kwh | ln_pengeluaran_nonmakanan_nonlistrik | pendidikan_krt | ukuran_rt_w |
-> |---|---|---|---|---|
-> | **2** (baris atas) | **1,04** — biru pekat | **1,05** — biru pekat | **-0,29** — salmon muda | **0,14** — ungu sangat pucat |
-> | **1** (baris bawah) | **-0,52** — salmon | **-0,52** — salmon | **0,15** — ungu sangat pucat | **-0,07** — hampir putih |
->
-> **Pola yang terlihat.** Dua kolom pertama menghasilkan kontras warna paling ekstrem: klaster 2 biru pekat, klaster 1 salmon. Pada kolom `pendidikan_krt` **arah pola berbalik** — klaster 1 sedikit positif, klaster 2 negatif. Kolom `ukuran_rt_w` nyaris tanpa warna karena kedua nilainya mendekati nol.
->
-> **Makna dalam konteks dokumen.** Heatmap menegaskan bahwa pemisahan terbesar muncul pada dimensi konsumsi listrik dan kapasitas pengeluaran non-listrik. Pendidikan dan ukuran rumah tangga memberi kontribusi pembeda yang jauh lebih kecil, dan arah pendidikan berlawanan dengan dua variabel ekonomi utama.
-
-Sebaran estimasi konsumsi listrik menurut klaster juga menunjukkan bahwa klaster 1 terkonsentrasi pada tingkat konsumsi yang lebih rendah dengan penyebaran yang relatif sempit, sedangkan klaster 2 memiliki median yang lebih tinggi dan penyebaran yang lebih lebar. Artinya, klaster 2 tidak hanya lebih tinggi secara rata-rata, tetapi juga lebih heterogen dalam intensitas konsumsi listriknya.
-
-![Gambar 4.10 Sebaran Estimasi Konsumsi Listrik per Klaster](assets-ta/gambar-4-10-boxplot-klaster.png)
-
-**Gambar 4.10 Sebaran Estimasi Konsumsi Listrik per Klaster**
-
-> **Deskripsi Gambar 4.10.**
-> *Media internal:* `image18.png` · *Lokasi dokumen:* halaman 60 / halaman tercetak 54.
->
-> **Bentuk visual.** Dua *boxplot* berdampingan yang ditumpangi hamburan titik observasi (*jitter*), monokrom abu-abu/hitam, latar putih.
-> - **Judul di dalam gambar:** "Sebaran Estimasi Konsumsi Listrik per Klaster"
-> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
-> - **Sumbu-Y:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
->
-> **Pola yang terlihat.**
-> - **Klaster 1:** kotak sangat rendah dan pipih (kira-kira 60–140 kWh) dengan garis median di sekitar 95 kWh. Awan titik padat dan sempit, hampir seluruhnya di bawah 250 kWh. Nyaris tanpa titik ekstrem ke atas.
-> - **Klaster 2:** kotak jauh lebih tinggi dan lebih lebar (kira-kira 240–495 kWh), garis median di sekitar 320 kWh. *Whisker* atas memanjang hingga ±880 kWh. Awan titik menyebar sangat luas ke atas dan membentuk pita rapat di batas atas (±1.725 kWh).
-> *Posisi kuartil dibaca secara visual, sehingga bersifat perkiraan.*
->
-> **Angka pendukung dari naskah.** Rata-rata ±107 kWh (klaster 1) dan ±495 kWh (klaster 2); median ±94,4 kWh dan ±322 kWh. Perbedaan bukan hanya pada rata-rata, tetapi juga pada pusat distribusi dan lebar penyebaran.
->
-> **Makna dalam konteks dokumen.** Klaster 2 lebih heterogen dalam intensitas konsumsi, sedangkan klaster 1 lebih homogen dan terkonsentrasi pada konsumsi rendah.
-
-Hubungan antara pengeluaran nonmakanan selain listrik dan estimasi konsumsi listrik juga memperlihatkan pola yang searah. Rumah tangga dalam klaster 2 cenderung menempati area dengan pengeluaran non-listrik lebih tinggi dan konsumsi listrik lebih tinggi. Sebaliknya, rumah tangga pada klaster 1 cenderung terkonsentrasi pada area dengan pengeluaran non-listrik dan konsumsi listrik yang sama-sama lebih rendah. Temuan ini menguatkan bahwa terdapat keterkaitan antara kapasitas pengeluaran rumah tangga dan intensitas penggunaan listrik.
-
-![Gambar 4.11 Hubungan Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster](assets-ta/gambar-4-11-scatter-klaster.png)
-
-**Gambar 4.11 Hubungan Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster**
-
-> **Deskripsi Gambar 4.11.**
-> *Media internal:* `image19.png` · *Lokasi dokumen:* halaman 60 / halaman tercetak 54.
->
-> **Bentuk visual.** *Scatter plot* dengan sumbu identik seperti Gambar 4.2, tetapi kini titik **diwarnai menurut klaster**.
-> - **Judul di dalam gambar:** "Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster"
-> - **Sumbu-X:** "Pengeluaran nonmakanan selain listrik (Rp)", tanda sumbu 0; 10.000.000; 20.000.000; 30.000.000
-> - **Sumbu-Y:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
-> - **Legenda di kanan:** berjudul "Klaster" — **1** = **merah salmon**, **2** = **biru kehijauan/teal**
->
-> **Pola yang terlihat.** Titik **merah salmon (klaster 1)** membentuk gumpalan sangat padat di **pojok kiri bawah**, terbatas pada pengeluaran di bawah ±Rp5 juta dan konsumsi di bawah ±300 kWh. Titik **teal (klaster 2)** mengisi seluruh sisa bidang: menyebar jauh ke kanan (sampai batas ±Rp35 juta) dan ke atas (sampai batas ±1.725 kWh). Batas antara dua warna terlihat cukup tegas dan mengikuti garis diagonal — makin tinggi salah satu sumbu, makin dominan teal. Terlihat pula kolom teal rapat di tepi kanan dan pita teal rapat di garis atas, yaitu observasi yang menumpuk pada batas atas kedua variabel.
->
-> **Angka pendukung.** Profil tertimbang: rata-rata pengeluaran nonmakanan nonlistrik ±Rp2,34 juta (klaster 1) dan ±Rp9,80 juta (klaster 2); rata-rata konsumsi listrik ±107 dan ±495 kWh/bulan.
->
-> **Makna dalam konteks dokumen.** Plot memperlihatkan bahwa klaster 2 merepresentasikan kelompok dengan kapasitas konsumsi non-listrik dan penggunaan listrik yang secara bersamaan lebih tinggi, sejalan dengan gagasan bahwa kondisi ekonomi berhubungan dengan intensitas penggunaan energi modern.
-
-Jika dilihat dari distribusi pendidikan kepala rumah tangga, klaster 1 memiliki proporsi kategori pendidikan tinggi yang relatif lebih besar, sedangkan klaster 2 memiliki proporsi kategori pendidikan rendah yang lebih besar. Temuan ini menarik karena menunjukkan bahwa rumah tangga dengan konsumsi listrik lebih tinggi tidak selalu berasal dari kepala rumah tangga dengan tingkat pendidikan lebih tinggi. Dalam konteks ini, pola konsumsi listrik tampaknya lebih erat berkaitan dengan kapasitas pengeluaran dan kepemilikan perangkat pendingin dibandingkan dengan pendidikan kepala rumah tangga semata.
-
-![Gambar 4.12 Distribusi Pendidikan Kepala Rumah Tangga Menurut Klaster](assets-ta/gambar-4-12-pendidikan-krt-klaster.png)
-
-**Gambar 4.12 Distribusi Pendidikan Kepala Rumah Tangga Menurut Klaster**
-
-> **Deskripsi Gambar 4.12.**
-> *Media internal:* `image20.png` · *Lokasi dokumen:* halaman 61 / halaman tercetak 55.
->
-> **Bentuk visual.** *Stacked bar chart* 100 persen, dua batang vertikal, latar putih.
-> - **Judul di dalam gambar:** "Distribusi Pendidikan KRT per Klaster"
-> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
-> - **Sumbu-Y:** "Persentase rumah tangga", tanda sumbu 0%, 25%, 50%, 75%, 100%
-> - **Legenda di kanan:** berjudul "Kategori pendidikan" — **Rendah** = **merah salmon**, **Sedang** = **hijau**, **Tinggi** = **biru**
->
-> **Susunan tumpukan (dari bawah ke atas):** biru (Tinggi) → hijau (Sedang) → salmon (Rendah). Kedua batang penuh sampai 100%.
->
-> **Proporsi yang terbaca secara visual:**
->
-> | Kategori | Klaster 1 | Klaster 2 |
-> |---|---|---|
-> | Tinggi (biru) | ±53% | ±47% |
-> | Sedang (hijau) | ±20% | ±10% |
-> | Rendah (salmon) | ±27% | ±43% |
->
-> Angka di atas merupakan pembacaan visual proporsi terhadap sumbu, bukan angka tabel eksplisit. Yang paling kentara adalah **segmen hijau (Sedang) pada klaster 2 menyusut menjadi kira-kira separuh** dari klaster 1, sementara segmen salmon (Rendah) membesar tajam.
->
-> **Kesimpulan tekstual dokumen.** Klaster 1 memiliki proporsi kategori pendidikan tinggi yang relatif lebih besar, sedangkan klaster 2 memiliki proporsi kategori pendidikan rendah yang lebih besar.
->
-> **Makna dalam konteks dokumen.** Temuan ini penting karena memperlihatkan bahwa kelompok dengan konsumsi listrik lebih tinggi tidak otomatis memiliki pendidikan KRT yang lebih tinggi. Dalam hasil klaster, kapasitas pengeluaran dan kepemilikan perangkat pendingin tampak lebih erat berhubungan dengan perbedaan konsumsi listrik dibanding pendidikan KRT semata.
-
-Berdasarkan keseluruhan profil tersebut, klaster 1 dapat diinterpretasikan sebagai kelompok rumah tangga dengan konsumsi listrik relatif rendah, pengeluaran nonmakanan selain listrik relatif lebih rendah, dan proporsi kepemilikan AC yang juga rendah. Dalam konteks penelitian ini, klaster tersebut dapat dibaca sebagai kelompok rumah tangga yang cenderung memiliki keterbatasan lebih besar dalam adaptasi pendinginan. Sebaliknya, klaster 2 dapat diinterpretasikan sebagai kelompok rumah tangga dengan konsumsi listrik lebih tinggi, kapasitas pengeluaran non-listrik lebih tinggi, dan tingkat kepemilikan AC yang jauh lebih besar, sehingga relatif lebih mampu melakukan adaptasi pendinginan.
-
-## 4.6 Evaluasi Perbedaan dan Pemisahan Klaster
+## 4.5 Evaluasi Perbedaan dan Pemisahan Klaster
 
 Setelah dua klaster terbentuk, evaluasi dilakukan untuk menilai apakah karakteristik rumah tangga antar klaster menunjukkan perbedaan yang bermakna. Evaluasi ini dilakukan melalui uji beda univariat, uji hubungan pada variabel kepemilikan AC, serta evaluasi pemisahan multivariat. Perlu ditegaskan bahwa evaluasi ini bersifat internal dan deskriptif, karena klaster yang diuji merupakan hasil pembentukan dari variabel yang sama. Oleh karena itu, hasil uji statistik dalam bagian ini digunakan untuk memperjelas karakter pemisahan klaster, bukan sebagai validasi eksternal yang sepenuhnya independen.
 
@@ -1271,6 +1105,174 @@ Hasil klasifikasi ulang menunjukkan bahwa seluruh rumah tangga pada klaster 1 be
 **Tabel 4.16 Akurasi Klasifikasi Internal**
 
 > ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER** (hanya nomor dan judul). Angka yang disebut di naskah: akurasi klasifikasi internal **94,51 persen**.
+
+
+## 4.6 Profil Klaster Rumah Tangga
+
+Profil klaster disusun berdasarkan nilai rata-rata tertimbang dari variabel pembentuk klaster dan beberapa variabel pendukung. Dari hasil ini terlihat bahwa dua klaster yang terbentuk menunjukkan karakter yang berbeda secara cukup tegas.
+
+Secara umum, klaster 1 merupakan kelompok rumah tangga dengan estimasi konsumsi listrik yang lebih rendah. Rata-rata estimasi konsumsi listrik pada klaster ini sekitar 107 kWh per bulan, dengan median sekitar 94,4 kWh. Di sisi lain, klaster 2 memiliki rata-rata estimasi konsumsi listrik yang jauh lebih tinggi, yaitu sekitar 495 kWh per bulan, dengan median sekitar 322 kWh. Perbedaan ini menunjukkan bahwa klaster 2 merupakan kelompok rumah tangga dengan intensitas penggunaan listrik yang secara nyata lebih tinggi dibandingkan klaster 1.
+
+Perbedaan serupa juga terlihat pada pengeluaran nonmakanan selain listrik. Klaster 2 memiliki rata-rata pengeluaran nonmakanan selain listrik yang lebih tinggi daripada klaster 1. Hal ini menunjukkan bahwa rumah tangga pada klaster 2 pada umumnya memiliki kapasitas konsumsi non-listrik yang lebih besar, sehingga secara ekonomi relatif lebih mampu membiayai kebutuhan rumah tangga di luar konsumsi dasar listrik.
+
+Jika dilihat dari ukuran rumah tangga, klaster 2 cenderung memiliki ukuran rumah tangga yang sedikit lebih besar dibandingkan klaster 1. Sementara itu, pada variabel pendidikan kepala rumah tangga, pola yang muncul justru menunjukkan bahwa klaster 1 memiliki rata-rata pendidikan kepala rumah tangga yang sedikit lebih tinggi, sedangkan klaster 2 sedikit lebih rendah. Dengan demikian, rumah tangga dengan konsumsi listrik dan kapasitas belanja non-listrik yang lebih tinggi tidak selalu identik dengan tingkat pendidikan kepala rumah tangga yang lebih tinggi.
+
+**Tabel 4.7 Profil Tertimbang Rumah Tangga Menurut Klaster**
+
+> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER.** Hanya nomor dan judul tabel yang terbawa. Angka-angka yang tersebar di naskah dan di lampiran deskripsi visual menghasilkan rekonstruksi parsial berikut:
+>
+> | Indikator | Klaster 1 | Klaster 2 |
+> |---|---|---|
+> | Jumlah rumah tangga (sampel) | 3.329 | 1.665 |
+> | Komposisi tertimbang | ±58,8% | ±41,2% |
+> | Rata-rata estimasi konsumsi listrik | ±107,03 kWh/bulan | ±494,97 kWh/bulan |
+> | Median estimasi konsumsi listrik | ±94,4 kWh | ±322 kWh |
+> | Rata-rata pengeluaran nonmakanan selain listrik | ±Rp2,34 juta | ±Rp9,80 juta |
+> | Proporsi kepemilikan AC | 14,73% | 73,32% |
+
+Visualisasi rata-rata estimasi konsumsi listrik per klaster mempertegas perbedaan tersebut. Klaster 2 memiliki rata-rata konsumsi listrik beberapa kali lebih tinggi dibandingkan klaster 1. Temuan ini menguatkan bahwa dimensi konsumsi energi merupakan salah satu pembeda utama dalam struktur klaster rumah tangga yang terbentuk.
+
+![Gambar 4.7 Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster](assets-ta/gambar-4-7-bar-konsumsi-klaster.png)
+
+**Gambar 4.7 Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster**
+
+> **Deskripsi Gambar 4.7.**
+> *Media internal:* `image15.png` · *Lokasi dokumen:* halaman 58 / halaman tercetak 52.
+>
+> **Bentuk visual.** *Bar chart* vertikal sangat sederhana, hanya dua batang berwarna **abu-abu gelap solid**, latar putih.
+> - **Judul di dalam gambar:** "Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster"
+> - **Subjudul di dalam gambar:** "Estimasi kWh = pengeluaran listrik / tarif acuan Statistik PLN 2024"
+> - **Sumbu-X:** "Klaster", dua kategori berlabel **1** dan **2**
+> - **Sumbu-Y:** "Rata-rata estimasi listrik tertimbang (kWh)", tanda sumbu 0, 100, 200, 300, 400, 500
+>
+> **Pola yang terlihat.** Batang klaster 1 pendek, berhenti sedikit di atas garis 100. Batang klaster 2 hampir menyentuh garis 500 — kira-kira **4,6 kali** lebih tinggi. Tidak ada label angka di atas batang; grafik memang disusun untuk menonjolkan kesenjangan, bukan nilai persisnya.
+>
+> **Angka pendukung dari naskah.** Klaster 1 ±107,03 kWh/bulan; klaster 2 ±494,97 kWh/bulan. Median disebut ±94,4 kWh (klaster 1) dan ±322 kWh (klaster 2).
+>
+> **Makna dalam konteks dokumen.** Konsumsi listrik merupakan salah satu pembeda utama struktur klaster; klaster 2 menunjukkan intensitas pemakaian yang jauh lebih tinggi daripada klaster 1.
+
+Kepemilikan air conditioner (AC) juga memperlihatkan perbedaan yang sangat menonjol antar klaster. Pada klaster 1, proporsi rumah tangga yang memiliki AC berada pada kisaran yang jauh lebih rendah, sekitar 14–15 persen. Sebaliknya, pada klaster 2 proporsinya meningkat tajam hingga sekitar 70 persen atau lebih. Temuan ini memperlihatkan bahwa klaster 2 bukan hanya dicirikan oleh konsumsi listrik yang lebih tinggi, tetapi juga oleh tingkat kepemilikan perangkat pendingin yang jauh lebih besar.
+
+![Gambar 4.8 Proporsi Kepemilikan AC Menurut Klaster](assets-ta/gambar-4-8-proporsi-ac-klaster.png)
+
+**Gambar 4.8 Proporsi Kepemilikan AC Menurut Klaster**
+
+> **Deskripsi Gambar 4.8.**
+> *Media internal:* `image16.png` · *Lokasi dokumen:* halaman 59 / halaman tercetak 53.
+>
+> **Bentuk visual.** *Bar chart* vertikal dua batang, warna **abu-abu gelap solid**, latar putih.
+> - **Judul di dalam gambar:** "Proporsi Kepemilikan AC Menurut Klaster"
+> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
+> - **Sumbu-Y:** "Proporsi rumah tangga memiliki AC (%)", tanda sumbu 0, 20, 40, 60
+>
+> **Pola yang terlihat.** Batang klaster 1 pendek, berhenti di sekitar **15 persen**. Batang klaster 2 jauh lebih tinggi, melewati tanda 60 dan mencapai sekitar **73 persen** — hampir lima kali lipat. Selisih ketinggian batang adalah salah satu kontras paling tegas di seluruh bab hasil. Tidak ada label angka di atas batang.
+>
+> **Angka pendukung.** Berdasarkan tabel profil tertimbang yang menyertai bagian ini: **Klaster 1 = 14,73%** rumah tangga memiliki AC; **Klaster 2 = 73,32%**.
+>
+> **Makna dalam konteks dokumen.** Klaster 2 bukan hanya memiliki konsumsi listrik lebih tinggi, tetapi juga akses jauh lebih besar terhadap perangkat pendingin. Klaster 1 kemudian dibaca sebagai kelompok dengan keterbatasan lebih besar dalam adaptasi pendinginan.
+
+Hasil heatmap berbasis rata-rata z-score menunjukkan pola yang konsisten. Klaster 2 memiliki nilai rata-rata z-score positif pada log estimasi konsumsi listrik dan log pengeluaran nonmakanan selain listrik, masing-masing sekitar 1,04 dan 1,05. Sebaliknya, klaster 1 memiliki nilai rata-rata z-score negatif pada kedua variabel tersebut, masing-masing sekitar -0,52 dan -0,52. Pola ini menegaskan bahwa pemisahan utama antarklaster terutama didorong oleh perbedaan konsumsi listrik dan kapasitas pengeluaran non-listrik. Pada variabel pendidikan kepala rumah tangga, klaster 1 memiliki nilai rata-rata z-score positif, sedangkan klaster 2 negatif. Untuk ukuran rumah tangga, perbedaannya relatif kecil, meskipun klaster 2 tetap sedikit lebih tinggi.
+
+![Gambar 4.9 Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score](assets-ta/gambar-4-9-heatmap-zscore.png)
+
+**Gambar 4.9 Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score**
+
+> **Deskripsi Gambar 4.9.**
+> *Media internal:* `image17.png` · *Lokasi dokumen:* halaman 59 / halaman tercetak 53.
+>
+> **Bentuk visual.** *Heatmap* berupa matriks **2 baris × 4 kolom**, setiap sel diberi warna sekaligus label angka di tengahnya.
+> - **Judul di dalam gambar:** "Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score"
+> - **Sumbu-Y:** "Klaster" — baris atas = **2**, baris bawah = **1**
+> - **Sumbu-X:** "Variabel pembentuk klaster" — empat label ditulis miring: `ln_listrik_kwh`, `ln_pengeluaran_nonmakanan_nonlistrik`, `pendidikan_krt`, `ukuran_rt_w`
+> - **Legenda warna di kanan:** berjudul "Rata-rata Z", gradasi divergen dari **merah salmon** (nilai negatif, ≈ -0,5) melalui **putih/ungu pucat** (nol) ke **biru pekat** (nilai positif, ≈ 1,0)
+>
+> **Pola warna dan angka:**
+>
+> | Klaster | ln_listrik_kwh | ln_pengeluaran_nonmakanan_nonlistrik | pendidikan_krt | ukuran_rt_w |
+> |---|---|---|---|---|
+> | **2** (baris atas) | **1,04** — biru pekat | **1,05** — biru pekat | **-0,29** — salmon muda | **0,14** — ungu sangat pucat |
+> | **1** (baris bawah) | **-0,52** — salmon | **-0,52** — salmon | **0,15** — ungu sangat pucat | **-0,07** — hampir putih |
+>
+> **Pola yang terlihat.** Dua kolom pertama menghasilkan kontras warna paling ekstrem: klaster 2 biru pekat, klaster 1 salmon. Pada kolom `pendidikan_krt` **arah pola berbalik** — klaster 1 sedikit positif, klaster 2 negatif. Kolom `ukuran_rt_w` nyaris tanpa warna karena kedua nilainya mendekati nol.
+>
+> **Makna dalam konteks dokumen.** Heatmap menegaskan bahwa pemisahan terbesar muncul pada dimensi konsumsi listrik dan kapasitas pengeluaran non-listrik. Pendidikan dan ukuran rumah tangga memberi kontribusi pembeda yang jauh lebih kecil, dan arah pendidikan berlawanan dengan dua variabel ekonomi utama.
+
+Sebaran estimasi konsumsi listrik menurut klaster juga menunjukkan bahwa klaster 1 terkonsentrasi pada tingkat konsumsi yang lebih rendah dengan penyebaran yang relatif sempit, sedangkan klaster 2 memiliki median yang lebih tinggi dan penyebaran yang lebih lebar. Artinya, klaster 2 tidak hanya lebih tinggi secara rata-rata, tetapi juga lebih heterogen dalam intensitas konsumsi listriknya.
+
+![Gambar 4.10 Sebaran Estimasi Konsumsi Listrik per Klaster](assets-ta/gambar-4-10-boxplot-klaster.png)
+
+**Gambar 4.10 Sebaran Estimasi Konsumsi Listrik per Klaster**
+
+> **Deskripsi Gambar 4.10.**
+> *Media internal:* `image18.png` · *Lokasi dokumen:* halaman 60 / halaman tercetak 54.
+>
+> **Bentuk visual.** Dua *boxplot* berdampingan yang ditumpangi hamburan titik observasi (*jitter*), monokrom abu-abu/hitam, latar putih.
+> - **Judul di dalam gambar:** "Sebaran Estimasi Konsumsi Listrik per Klaster"
+> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
+> - **Sumbu-Y:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
+>
+> **Pola yang terlihat.**
+> - **Klaster 1:** kotak sangat rendah dan pipih (kira-kira 60–140 kWh) dengan garis median di sekitar 95 kWh. Awan titik padat dan sempit, hampir seluruhnya di bawah 250 kWh. Nyaris tanpa titik ekstrem ke atas.
+> - **Klaster 2:** kotak jauh lebih tinggi dan lebih lebar (kira-kira 240–495 kWh), garis median di sekitar 320 kWh. *Whisker* atas memanjang hingga ±880 kWh. Awan titik menyebar sangat luas ke atas dan membentuk pita rapat di batas atas (±1.725 kWh).
+> *Posisi kuartil dibaca secara visual, sehingga bersifat perkiraan.*
+>
+> **Angka pendukung dari naskah.** Rata-rata ±107 kWh (klaster 1) dan ±495 kWh (klaster 2); median ±94,4 kWh dan ±322 kWh. Perbedaan bukan hanya pada rata-rata, tetapi juga pada pusat distribusi dan lebar penyebaran.
+>
+> **Makna dalam konteks dokumen.** Klaster 2 lebih heterogen dalam intensitas konsumsi, sedangkan klaster 1 lebih homogen dan terkonsentrasi pada konsumsi rendah.
+
+Hubungan antara pengeluaran nonmakanan selain listrik dan estimasi konsumsi listrik juga memperlihatkan pola yang searah. Rumah tangga dalam klaster 2 cenderung menempati area dengan pengeluaran non-listrik lebih tinggi dan konsumsi listrik lebih tinggi. Sebaliknya, rumah tangga pada klaster 1 cenderung terkonsentrasi pada area dengan pengeluaran non-listrik dan konsumsi listrik yang sama-sama lebih rendah. Temuan ini menguatkan bahwa terdapat keterkaitan antara kapasitas pengeluaran rumah tangga dan intensitas penggunaan listrik.
+
+![Gambar 4.11 Hubungan Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster](assets-ta/gambar-4-11-scatter-klaster.png)
+
+**Gambar 4.11 Hubungan Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster**
+
+> **Deskripsi Gambar 4.11.**
+> *Media internal:* `image19.png` · *Lokasi dokumen:* halaman 60 / halaman tercetak 54.
+>
+> **Bentuk visual.** *Scatter plot* dengan sumbu identik seperti Gambar 4.2, tetapi kini titik **diwarnai menurut klaster**.
+> - **Judul di dalam gambar:** "Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster"
+> - **Sumbu-X:** "Pengeluaran nonmakanan selain listrik (Rp)", tanda sumbu 0; 10.000.000; 20.000.000; 30.000.000
+> - **Sumbu-Y:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
+> - **Legenda di kanan:** berjudul "Klaster" — **1** = **merah salmon**, **2** = **biru kehijauan/teal**
+>
+> **Pola yang terlihat.** Titik **merah salmon (klaster 1)** membentuk gumpalan sangat padat di **pojok kiri bawah**, terbatas pada pengeluaran di bawah ±Rp5 juta dan konsumsi di bawah ±300 kWh. Titik **teal (klaster 2)** mengisi seluruh sisa bidang: menyebar jauh ke kanan (sampai batas ±Rp35 juta) dan ke atas (sampai batas ±1.725 kWh). Batas antara dua warna terlihat cukup tegas dan mengikuti garis diagonal — makin tinggi salah satu sumbu, makin dominan teal. Terlihat pula kolom teal rapat di tepi kanan dan pita teal rapat di garis atas, yaitu observasi yang menumpuk pada batas atas kedua variabel.
+>
+> **Angka pendukung.** Profil tertimbang: rata-rata pengeluaran nonmakanan nonlistrik ±Rp2,34 juta (klaster 1) dan ±Rp9,80 juta (klaster 2); rata-rata konsumsi listrik ±107 dan ±495 kWh/bulan.
+>
+> **Makna dalam konteks dokumen.** Plot memperlihatkan bahwa klaster 2 merepresentasikan kelompok dengan kapasitas konsumsi non-listrik dan penggunaan listrik yang secara bersamaan lebih tinggi, sejalan dengan gagasan bahwa kondisi ekonomi berhubungan dengan intensitas penggunaan energi modern.
+
+Jika dilihat dari distribusi pendidikan kepala rumah tangga, klaster 1 memiliki proporsi kategori pendidikan tinggi yang relatif lebih besar, sedangkan klaster 2 memiliki proporsi kategori pendidikan rendah yang lebih besar. Temuan ini menarik karena menunjukkan bahwa rumah tangga dengan konsumsi listrik lebih tinggi tidak selalu berasal dari kepala rumah tangga dengan tingkat pendidikan lebih tinggi. Dalam konteks ini, pola konsumsi listrik tampaknya lebih erat berkaitan dengan kapasitas pengeluaran dan kepemilikan perangkat pendingin dibandingkan dengan pendidikan kepala rumah tangga semata.
+
+![Gambar 4.12 Distribusi Pendidikan Kepala Rumah Tangga Menurut Klaster](assets-ta/gambar-4-12-pendidikan-krt-klaster.png)
+
+**Gambar 4.12 Distribusi Pendidikan Kepala Rumah Tangga Menurut Klaster**
+
+> **Deskripsi Gambar 4.12.**
+> *Media internal:* `image20.png` · *Lokasi dokumen:* halaman 61 / halaman tercetak 55.
+>
+> **Bentuk visual.** *Stacked bar chart* 100 persen, dua batang vertikal, latar putih.
+> - **Judul di dalam gambar:** "Distribusi Pendidikan KRT per Klaster"
+> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
+> - **Sumbu-Y:** "Persentase rumah tangga", tanda sumbu 0%, 25%, 50%, 75%, 100%
+> - **Legenda di kanan:** berjudul "Kategori pendidikan" — **Rendah** = **merah salmon**, **Sedang** = **hijau**, **Tinggi** = **biru**
+>
+> **Susunan tumpukan (dari bawah ke atas):** biru (Tinggi) → hijau (Sedang) → salmon (Rendah). Kedua batang penuh sampai 100%.
+>
+> **Proporsi yang terbaca secara visual:**
+>
+> | Kategori | Klaster 1 | Klaster 2 |
+> |---|---|---|
+> | Tinggi (biru) | ±53% | ±47% |
+> | Sedang (hijau) | ±20% | ±10% |
+> | Rendah (salmon) | ±27% | ±43% |
+>
+> Angka di atas merupakan pembacaan visual proporsi terhadap sumbu, bukan angka tabel eksplisit. Yang paling kentara adalah **segmen hijau (Sedang) pada klaster 2 menyusut menjadi kira-kira separuh** dari klaster 1, sementara segmen salmon (Rendah) membesar tajam.
+>
+> **Kesimpulan tekstual dokumen.** Klaster 1 memiliki proporsi kategori pendidikan tinggi yang relatif lebih besar, sedangkan klaster 2 memiliki proporsi kategori pendidikan rendah yang lebih besar.
+>
+> **Makna dalam konteks dokumen.** Temuan ini penting karena memperlihatkan bahwa kelompok dengan konsumsi listrik lebih tinggi tidak otomatis memiliki pendidikan KRT yang lebih tinggi. Dalam hasil klaster, kapasitas pengeluaran dan kepemilikan perangkat pendingin tampak lebih erat berhubungan dengan perbedaan konsumsi listrik dibanding pendidikan KRT semata.
+
+Berdasarkan keseluruhan profil tersebut, klaster 1 dapat diinterpretasikan sebagai kelompok rumah tangga dengan konsumsi listrik relatif rendah, pengeluaran nonmakanan selain listrik relatif lebih rendah, dan proporsi kepemilikan AC yang juga rendah. Dalam konteks penelitian ini, klaster tersebut dapat dibaca sebagai kelompok rumah tangga yang cenderung memiliki keterbatasan lebih besar dalam adaptasi pendinginan. Sebaliknya, klaster 2 dapat diinterpretasikan sebagai kelompok rumah tangga dengan konsumsi listrik lebih tinggi, kapasitas pengeluaran non-listrik lebih tinggi, dan tingkat kepemilikan AC yang jauh lebih besar, sehingga relatif lebih mampu melakukan adaptasi pendinginan.
 
 ## 4.7 Pembahasan Karakter Klaster
 
