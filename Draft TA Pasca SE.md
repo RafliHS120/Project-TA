@@ -397,9 +397,29 @@ Nilai WCSS yang semakin kecil menunjukkan bahwa objek-objek dalam suatu klaster 
 
 ### 2.1.5 Pemilihan Jumlah Klaster
 
-Salah satu keputusan penting dalam metode k-means adalah penentuan jumlah klaster yang paling representatif. Rencher (2002) menunjukkan bahwa dalam metode partisi, jumlah klaster perlu ditetapkan atau dipilih sebelum interpretasi akhir dilakukan. Johnson dan Wichern (2014) juga mencatat bahwa jumlah klaster pada metode non-hierarki dapat ditentukan terlebih dahulu atau ditetapkan melalui prosedur tertentu sebagai bagian dari proses klasterisasi.
+Penetapan jumlah klaster merupakan persoalan mendasar dalam metode partisi karena nilai K harus ditentukan sebelum proses alokasi objek berlangsung. Rencher (2002) menunjukkan bahwa pada metode partisi jumlah klaster perlu ditetapkan atau dipilih sebelum interpretasi akhir dilakukan, sementara Johnson dan Wichern (2014) mencatat bahwa jumlah klaster pada metode non-hierarki dapat ditentukan terlebih dahulu maupun ditetapkan melalui prosedur tertentu sebagai bagian dari proses klasterisasi. Keduanya menegaskan keharusan penetapan tersebut tanpa menguraikan prosedur pemilihannya secara khusus. 
 
-Dalam penelitian ini, penentuan jumlah klaster dilakukan menggunakan Metode Elbow. Metode ini didasarkan pada perbandingan nilai WCSS untuk beberapa kemungkinan jumlah klaster. Jumlah klaster optimal dipilih pada titik ketika penurunan WCSS mulai melambat dan membentuk pola siku (elbow), yang menunjukkan bahwa penambahan klaster setelah titik tersebut tidak lagi memberikan penurunan variasi dalam klaster yang cukup berarti. Penggunaan pendekatan ini sejalan dengan prinsip bahwa jumlah klaster dipilih berdasarkan keseimbangan antara homogenitas internal dan kesederhanaan struktur pengelompokan.
+Persoalan ini umumnya dijawab melalui kriteria evaluasi internal, yaitu ukuran yang menilai kualitas struktur pengelompokan berdasarkan data itu sendiri tanpa memerlukan informasi kelompok yang sebenarnya. Dua kriteria yang paling banyak digunakan dalam literatur analisis klaster adalah Metode Elbow dan koefisien Silhouette.
+
+Metode Elbow bertumpu pada perilaku Within-Cluster Sum of Squares (WCSS) sebagai fungsi dari jumlah klaster. Everitt dkk. (2011) menjelaskan bahwa dalam penerapan klaster optimisasi, jumlah kelompok yang sesuai dapat diperkirakan dengan memplot nilai kriteria klaster terhadap jumlah kelompok dan mengamati perubahan besar pada kurva. Titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (elbow) menandakan bahwa penambahan klaster berikutnya tidak lagi memberikan perbaikan homogenitas yang berarti, sehingga jumlah klaster dipilih berdasarkan keseimbangan antara homogenitas internal dan kesederhanaan struktur pengelompokan.
+
+Kriteria ini memiliki dua keterbatasan yang saling berkaitan. Pertama, nilai WCSS menurun secara monoton seiring bertambahnya jumlah klaster sehingga tidak dapat diperlakukan sebagai fungsi objektif yang diminimalkan secara langsung; penilaiannya bergantung pada pembacaan bentuk kurva, yang menjadi ambigu ketika penurunan berlangsung landai tanpa titik patah yang tegas. Kedua, WCSS semata-mata merekam kedekatan objek terhadap centroid klasternya sendiri dan tidak memuat informasi mengenai jarak antar klaster, padahal kualitas pengelompokan ditentukan oleh kekompakan internal sekaligus keterpisahan antar kelompok.
+
+Rousseeuw (1987) memperkenalkan koefisien Silhouette sebagai ukuran yang memuat kedua dimensi tersebut secara serentak. Ukuran ini menilai ketepatan penempatan setiap objek dengan membandingkan kedekatannya terhadap anggota klasternya sendiri dan kedekatannya terhadap klaster tetangga terdekat. Untuk objek ke-i, didefinisikan a(i) sebagai rata-rata jarak objek ke-i terhadap seluruh objek lain dalam klaster yang sama, dan b(i) sebagai nilai terkecil dari rata-rata jarak objek ke-i terhadap seluruh objek pada klaster lain, sehingga koefisien Silhouette dirumuskan sebagai:
+
+s\left(i\right)=\frac{b\left(i\right)-a\left(i\right)}{\max⁡\left\{a,\; \left(i\right)\text{\,}b\left(i\right)\right\}}
+
+dengan:
+	s\left(i\right)s(i) = koefisien Silhouette objek ke-i,
+	a\left(i\right)a(i) = rata-rata jarak objek ke-i terhadap objek lain dalam klaster yang sama,
+	b\left(i\right)b(i) = rata-rata jarak terkecil objek ke-i terhadap objek pada klaster lain.
+  
+Nilai s\left(i\right) terbatas pada rentang −1 hingga 1. Nilai yang mendekati 1 menunjukkan objek berada jauh lebih dekat dengan anggota klasternya sendiri dibandingkan klaster tetangga, nilai di sekitar 0 menandakan objek berada pada perbatasan dua klaster, sedangkan nilai negatif mengindikasikan objek kemungkinan lebih sesuai ditempatkan pada klaster lain.
+Kualitas struktur pengelompokan secara keseluruhan dinilai melalui rata-rata koefisien Silhouette seluruh objek atau average silhouette width:
+\bar{s}=\frac{1}{n}\sum_{i=1}^{n} s\left(i\right)
+dengan s menyatakan rata-rata koefisien Silhouette dan n menyatakan banyaknya objek. Kaufman dan Rousseeuw (1990) menetapkan pedoman interpretasi atas nilai tersebut: nilai di atas 0,70 mencerminkan struktur klaster yang kuat, nilai 0,51 sampai 0,70 mencerminkan struktur yang memadai, nilai 0,26 sampai 0,50 mencerminkan struktur yang lemah sehingga hasilnya perlu ditafsirkan secara hati-hati, dan nilai di bawah 0,26 menunjukkan struktur klaster yang belum meyakinkan.
+Kedua kriteria tersebut bersifat komplementer: Metode Elbow membaca pola penurunan variasi dalam klaster, sedangkan koefisien Silhouette mengukur kekuatan pemisahan antar klaster pada setiap kandidat jumlah klaster. Atas dasar itu, penelitian ini menggunakan keduanya secara bersamaan dalam menetapkan jumlah klaster, dengan prosedur penerapan yang diuraikan pada Subbab 3.4.5.
+
 
 ### 2.1.6 Karakterisasi Klaster
 
@@ -589,11 +609,15 @@ dengan:
 - ⟨Z_ij⟩ = nilai variabel ke-⟨j⟩ pada objek ke-⟨i⟩,
 - ⟨Z_kj⟩ = nilai variabel ke-⟨j⟩ pada objek ke-⟨k⟩
 
-## Penentuan Jumlah Klaster
+## 3.4.5 Penentuan Jumlah Klaster
 
 Salah satu keputusan penting dalam metode klaster partisi adalah penentuan jumlah klaster ⟨K⟩. Everitt et al. (2011) menjelaskan bahwa dalam banyak aplikasi klaster optimisasi, peneliti perlu "mengestimasi" jumlah kelompok yang paling sesuai, dan salah satu pendekatan yang umum digunakan adalah memplot nilai kriteria klaster terhadap jumlah kelompok untuk melihat perubahan yang besar pada kurva. Dalam penelitian ini, jumlah klaster optimal ditentukan menggunakan Metode Elbow, yaitu dengan membandingkan nilai Within-Cluster Sum of Squares (WCSS) pada beberapa kandidat ⟨K⟩. Nilai ⟨K⟩ dipilih pada titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (elbow), sehingga pemilihan jumlah klaster tidak dilakukan secara arbitrer.
 
-## Analisis Klaster Non-Hierarki (K-Means Clustering)
+Selain Metode Elbow, penentuan jumlah klaster dalam penelitian ini juga menggunakan koefisien silhouette. Perhitungan dilakukan pada data yang telah distandardisasi menggunakan jarak Euclidean, sesuai dengan ukuran jarak yang digunakan dalam proses pembentukan klaster. Rata-rata koefisien silhouette dihitung untuk setiap kandidat jumlah klaster, kemudian dibandingkan untuk melihat konfigurasi yang menghasilkan pemisahan kelompok paling kuat.
+
+Jumlah klaster akhir ditetapkan dengan mempertimbangkan tiga hal secara bersamaan, yaitu pola siku pada kurva WCSS, nilai rata-rata koefisien silhouette tertinggi, dan keterbacaan hasil klaster secara substantif. Apabila hasil Elbow dan silhouette menunjuk pada jumlah klaster yang berbeda, keputusan diambil dengan mengutamakan konfigurasi yang menghasilkan profil klaster yang paling dapat diinterpretasikan dalam konteks pola konsumsi listrik dan karakteristik sosial ekonomi rumah tangga, disertai penjelasan atas pertimbangan tersebut.
+
+## 3.4.6 Analisis Klaster Non-Hierarki (K-Means Clustering)
 
 Pembentukan klaster rumah tangga dilakukan menggunakan metode K-Means clustering, yaitu metode klaster non-hierarki yang bersifat unsupervised. Johnson dan Wichern (2014) menjelaskan bahwa metode non-hierarki membentuk kumpulan klaster dengan mengalokasikan setiap objek ke pusat klaster yang terdekat, sedangkan Everitt et al. (2011) menempatkan k-means sebagai bagian dari teknik klaster optimisasi yang meminimalkan variasi dalam klaster. Metode ini dipilih karena penelitian bertujuan mengelompokkan rumah tangga ketika label kelompok belum tersedia sebelumnya, dengan variabel pembentuk klaster berupa peubah kuantitatif kontinu yang telah distandarisasi. Selain itu, K-Means relatif efisien untuk diterapkan pada data berukuran besar dan menghasilkan segmentasi yang mudah diinterpretasikan.
 
@@ -622,56 +646,6 @@ Algoritme K-Means dilakukan secara iteratif melalui langkah-langkah:
 
 Everitt et al. (2011) juga menekankan bahwa hasil k-means dapat dipengaruhi oleh nilai awal, sehingga penggunaan beberapa inisialisasi dan pemilihan solusi dengan kriteria terbaik merupakan praktik yang lebih baik. Oleh karena itu, dalam penelitian ini K-Means dijalankan beberapa kali dengan inisialisasi berbeda, lalu dipilih solusi dengan nilai WCSS terendah.
 
-## Evaluasi Perbedaan dan Pemisahan Klaster
-
-Setelah klaster terbentuk, evaluasi dilakukan untuk menggambarkan karakter perbedaan antar klaster dan menilai kekuatan pemisahan kelompok yang terbentuk. Untuk satu variabel respons, evaluasi perbedaan dilakukan menggunakan ANOVA satu arah apabila asumsi parametrik terpenuhi. Statistik uji ANOVA dirumuskan sebagai:
-
-> ⚠️ **RUMUS HILANG PADA BERKAS SUMBER.** Bentuk bakunya:
-> $$F=\frac{MSB}{MSE}$$
-
-dengan:
-
-- ⟨MSB = SSB/(g-1)⟩,
-- ⟨MSE = SSE/(n-g)⟩.
-
-Apabila asumsi parametrik tidak terpenuhi, maka digunakan uji Kruskal–Wallis sebagai alternatif nonparametrik. Statistik uji Kruskal–Wallis dirumuskan sebagai:
-
-> ⚠️ **RUMUS HILANG PADA BERKAS SUMBER.** Bentuk bakunya:
-> $$H=\frac{12}{N(N+1)}\sum_{i=1}^{g}\frac{R_i^2}{n_i}-3(N+1)$$
-
-dengan:
-
-- ⟨R_i⟩ = jumlah peringkat pada klaster ke-⟨i⟩,
-- ⟨n_i⟩ = ukuran klaster ke-⟨i⟩,
-- ⟨N⟩ = jumlah seluruh pengamatan.
-
-Selain secara univariat, evaluasi pemisahan kelompok dilakukan secara multivariat menggunakan analisis diskriminan dengan statistik Wilks' Lambda. Johnson dan Wichern (2014) menyatakan bahwa Wilks' Lambda dapat dinyatakan sebagai rasio determinan matriks within-group ⟨W⟩ terhadap determinan matriks total ⟨B+W⟩. Statistik ini dirumuskan sebagai:
-
-> ⚠️ **RUMUS HILANG PADA BERKAS SUMBER.** Bentuk bakunya:
-> $$\Lambda=\frac{|W|}{|B+W|}$$
-
-dengan:
-
-- ⟨W⟩ = matriks within-group,
-- ⟨B⟩ = matriks between-group.
-
-Nilai ⟨Λ⟩ yang semakin kecil menunjukkan pemisahan kelompok yang semakin kuat secara multivariat. Untuk mendukung evaluasi ini, homogenitas matriks varians–kovarians antar klaster diperiksa menggunakan uji Box's M, dengan statistik:
-
-> ⚠️ **RUMUS HILANG PADA BERKAS SUMBER.** Bentuk bakunya:
-> $$M=(N-g)\ln|S_{pooled}|-\sum_{i=1}^{g}(n_i-1)\ln|S_i|$$
-
-dengan:
-
-- ⟨S_pooled⟩ = matriks kovarians gabungan,
-- ⟨S_i⟩ = matriks kovarians klaster ke-⟨i⟩,
-- ⟨g⟩ = jumlah klaster,
-- ⟨N⟩ = jumlah total pengamatan.
-
-Dalam penelitian ini, uji beda univariat, Wilks' Lambda, dan Box's M tidak dimaksudkan sebagai validasi eksternal yang sepenuhnya terpisah dari proses pembentukan klaster, melainkan sebagai evaluasi deskriptif untuk menggambarkan karakter perbedaan antar klaster serta menilai kekuatan pemisahan kelompok yang terbentuk.
-
-## Profiling dan Interpretasi Klaster
-
-Tahap akhir analisis adalah profiling dan interpretasi klaster. Hair et al. (2018) menyebut tahap ini sebagai cluster profiling, yaitu proses membaca ciri khas masing-masing kelompok berdasarkan statistik ringkas dari variabel pembentuk klaster maupun variabel pendukung lainnya. Dalam penelitian ini, setiap klaster dideskripsikan berdasarkan nilai rata-rata atau median variabel pembentuk klaster, serta proporsi kepemilikan AC pada masing-masing klaster. Informasi ini digunakan untuk membaca karakter dominan tiap klaster dan memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami adaptation cooling deficit. Secara substantif, klaster dengan total pengeluaran rumah tangga relatif rendah, pengeluaran listrik rendah, dan proporsi kepemilikan AC yang rendah diinterpretasikan secara hati-hati sebagai kelompok yang berpotensi memiliki keterbatasan dalam adaptasi pendinginan.
 
 ### 3.4.7 Evaluasi Perbedaan dan Pemisahan Klaster
 
@@ -1359,25 +1333,27 @@ Berdasarkan temuan dan kesimpulan penelitian, saran yang dapat diberikan adalah:
 9. Handayani, K., Krozer, Y., & Filatova, T. (2019). Trade-offs between electrification and climate change mitigation: An analysis of the Java-Bali power system in Indonesia. *Applied Energy*, 236, 659–672.
 10. Indrawanto, D. (2025). Integration of sustainable architecture principles in vertical housing design in high-density urban areas. *The Journal of Academic Science*, 2(2), 461–469. https://thejoas.com/index.php/
 11. Johnson, R. A., & Wichern, D. W. (2014). *Applied multivariate statistical analysis* (6th ed.). Pearson Education Limited.
-12. Kubota, T., Surahman, U., & Higashi, O. (2014). A comparative analysis of household energy consumption in Jakarta and Bandung. *Proceedings of the 30th International PLEA Conference*, Ahmedabad, India.
-13. Landau, S., & Chis Ster, I. (2010). Cluster analysis: Overview. In *Encyclopedia of Behavioral Statistics*. Elsevier Ltd.
-14. Leach, G. (1992). The energy transition. *Energy Policy*, 20(2), 116–123. https://doi.org/10.1016/0301-4215(92)90105-B
-15. Moeeni, S., Moeeni, M., & Bozorga, A. M. R. (2025). Quantile regression analysis of household energy demand in Iran using income-expenditure national survey (2016–2023): Heterogeneity and key characteristics. *Iranian Journal of Economic Studies*, 14(1), 163–200.
-16. Nazer, M., & Handra, H. (2016). Analisis konsumsi energi rumah tangga perkotaan di Indonesia. *Jurnal Ekonomi dan Pembangunan Indonesia*.
-17. Nicholson, W., & Snyder, C. (2010). *Intermediate microeconomics and its application* (11th ed.). South-Western Cengage Learning.
-18. Nojedehi, P., Gunay, B., O'Brien, W., & Papineau, M. (2025). A method to develop residential archetypes by associating thermophysical building attributes with utility meter data. *Energy & Buildings*, 347.
-19. Novianto, D., Gao, W., & Kuroki, S. (2015). Review on people's lifestyle and energy consumption of Asian communities: Case study of Indonesia, Thailand, and China. *Energy and Power Engineering*, 7(10), 465–476. https://doi.org/10.4236/epe.2015.710045
-20. Oktasandira, A. (2025). *Analisis klaster pelanggan listrik berdasarkan perilaku konsumsi di Kota Sukabumi menggunakan metode K-Means clustering*.
-21. Pasaribu, N. G., Wulandari, F. W., & Wulandari, S. P. (2024). Pengelompokan indikator kemiskinan di kabupaten/kota Aceh tahun 2021 menggunakan analisis klaster. *Bilangan: Jurnal Ilmiah Matematika, Kebumian dan Angkasa*, 2(6).
-22. Pavanello, F., De Cian, E., Davide, M., Mistry, M., Cruz, T., Bezerra, P., Jagu, D., Renner, S., Schaeffer, R., & Lucena, A. F. P. (2021). Air-conditioning and the adaptation cooling deficit in emerging economies. *Nature Communications*, 12, 6460. https://doi.org/10.1038/s41467-021-26592-2
-23. Prastika, A. (2023). Hubungan antara tingkat konsumsi energi listrik dengan pertumbuhan ekonomi di Indonesia. *Jurnal Ilmu Ekonomi (JIE)*.
-24. Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, 16(1).
-25. Rencher, A. C., & Christensen, W. F. (2012). *Methods of multivariate analysis* (3rd ed.). John Wiley & Sons.
-26. Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, 2(1), 79–91. https://doi.org/10.5334/bc.72
-27. Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C., Gamal, A., & Dimyati, M. (2023). Spatio-temporal characteristics of urban heat island of Jakarta metropolitan. *Remote Sensing Applications: Society and Environment*, 32, 101062. https://doi.org/10.1016/j.rsase.2023.101062
-28. Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
-29. van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, 20, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
-30. Widyasanti, A. A. (2024, August 30). *Press release: Kondisi kelas menengah di Indonesia*. Badan Pusat Statistik.
+12. Kaufman, L., & Rousseeuw, P. J. (1990). Finding groups in data: An introduction to cluster analysis. John Wiley & Sons.
+13. Kubota, T., Surahman, U., & Higashi, O. (2014). A comparative analysis of household energy consumption in Jakarta and Bandung. *Proceedings of the 30th International PLEA Conference*, Ahmedabad, India.
+14. Landau, S., & Chis Ster, I. (2010). Cluster analysis: Overview. In *Encyclopedia of Behavioral Statistics*. Elsevier Ltd.
+15. Leach, G. (1992). The energy transition. *Energy Policy*, 20(2), 116–123. https://doi.org/10.1016/0301-4215(92)90105-B
+16. Moeeni, S., Moeeni, M., & Bozorga, A. M. R. (2025). Quantile regression analysis of household energy demand in Iran using income-expenditure national survey (2016–2023): Heterogeneity and key characteristics. *Iranian Journal of Economic Studies*, 14(1), 163–200.
+17. Nazer, M., & Handra, H. (2016). Analisis konsumsi energi rumah tangga perkotaan di Indonesia. *Jurnal Ekonomi dan Pembangunan Indonesia*.
+18. Nicholson, W., & Snyder, C. (2010). *Intermediate microeconomics and its application* (11th ed.). South-Western Cengage Learning.
+19. Nojedehi, P., Gunay, B., O'Brien, W., & Papineau, M. (2025). A method to develop residential archetypes by associating thermophysical building attributes with utility meter data. *Energy & Buildings*, 347.
+20. Novianto, D., Gao, W., & Kuroki, S. (2015). Review on people's lifestyle and energy consumption of Asian communities: Case study of Indonesia, Thailand, and China. *Energy and Power Engineering*, 7(10), 465–476. https://doi.org/10.4236/epe.2015.710045
+21. Oktasandira, A. (2025). *Analisis klaster pelanggan listrik berdasarkan perilaku konsumsi di Kota Sukabumi menggunakan metode K-Means clustering*.
+22. Pasaribu, N. G., Wulandari, F. W., & Wulandari, S. P. (2024). Pengelompokan indikator kemiskinan di kabupaten/kota Aceh tahun 2021 menggunakan analisis klaster. *Bilangan: Jurnal Ilmiah Matematika, Kebumian dan Angkasa*, 2(6).
+23. Pavanello, F., De Cian, E., Davide, M., Mistry, M., Cruz, T., Bezerra, P., Jagu, D., Renner, S., Schaeffer, R., & Lucena, A. F. P. (2021). Air-conditioning and the adaptation cooling deficit in emerging economies. *Nature Communications*, 12, 6460. https://doi.org/10.1038/s41467-021-26592-2
+24. Prastika, A. (2023). Hubungan antara tingkat konsumsi energi listrik dengan pertumbuhan ekonomi di Indonesia. *Jurnal Ilmu Ekonomi (JIE)*.
+25. Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, 16(1).
+26. Rencher, A. C., & Christensen, W. F. (2012). *Methods of multivariate analysis* (3rd ed.). John Wiley & Sons.
+27. Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, 2(1), 79–91. https://doi.org/10.5334/bc.72
+28. Rousseeuw (1987), J. Computational & Applied Mathematics, 20, 53–65
+29. Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C., Gamal, A., & Dimyati, M. (2023). Spatio-temporal characteristics of urban heat island of Jakarta metropolitan. *Remote Sensing Applications: Society and Environment*, 32, 101062. https://doi.org/10.1016/j.rsase.2023.101062
+30. Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
+31. van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, 20, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
+32. Widyasanti, A. A. (2024, August 30). *Press release: Kondisi kelas menengah di Indonesia*. Badan Pusat Statistik.
 
 ---
 
