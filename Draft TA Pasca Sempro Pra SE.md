@@ -1324,31 +1324,25 @@ Dengan demikian, hasil penelitian ini menunjukkan adanya dua pola utama rumah ta
 
 # BAB V KESIMPULAN DAN SARAN
 
-> ⚠️ **PERINGATAN KONSISTENSI.** Kesimpulan di bawah ini melaporkan **3 klaster**, Wilks' Lambda **0,156**, dan jumlah rumah tangga per klaster dalam puluhan ribu (31.534 / 47.459 / 21.606). Seluruh Bab IV melaporkan **2 klaster**, Wilks' Lambda **0,5928**, dan 4.994 rumah tangga sampel (3.329 / 1.665). Kedua bagian tidak dapat benar sekaligus. Isi bab ini dipertahankan apa adanya sesuai berkas sumber.
 
 ## Kesimpulan
 
 Berdasarkan hasil analisis data dan pembahasan yang telah diuraikan, ditarik kesimpulan sebagai berikut:
 
-1. Profil konsumsi listrik rumah tangga di Provinsi DKI Jakarta Tahun 2025 menunjukkan distribusi yang menceng ke kanan, dengan pemusatan pengeluaran pada kisaran Rp200.000 hingga Rp500.000 per bulan. Heterogenitas konsumsi listrik ini memiliki keterkaitan empiris yang kuat dengan status kepemilikan Air Conditioner (AC), di mana rumah tangga yang memiliki AC mencatatkan lonjakan median pengeluaran listrik yang signifikan disertai variabilitas konsumsi yang sangat lebar akibat tuntutan adaptasi termal di wilayah metropolitan.
-
-2. Melalui penerapan algoritma K-Means Clustering dan optimasi metode Elbow, rumah tangga di Provinsi DKI Jakarta secara optimal terklasifikasi ke dalam 3 (tiga) klaster yang konsisten dan terpisah secara nyata secara multivariat (Wilks' Lambda = 0,156; p-value ⟨tidak tercantum pada berkas sumber⟩).
+1. 
+2. 
 
 3. Terdapat perbedaan karakteristik sosial ekonomi yang signifikan pada setiap klaster rumah tangga yang terbentuk:
 
-   - **Klaster 1 (Kelompok Bawah Rentan Termal):** Mencakup 31.534 rumah tangga dengan kapasitas ekonomi dan tingkat pendidikan KRT terendah. Kelompok ini memiliki pengeluaran listrik yang sangat minim dan tingkat kepemilikan AC paling rendah (30,08%), yang mengindikasikan adanya defisit adaptasi pendinginan di tengah paparan panas perkotaan.
 
-   - **Klaster 2 (Kelompok Menengah Efisien):** Menjadi kelompok mayoritas (47.459 rumah tangga) dengan tingkat pendidikan KRT tertinggi. Kelompok ini menunjukkan manajemen energi yang efisien; meskipun memiliki total pengeluaran menengah, pengeluaran listrik mereka tetap terkendali dengan kepemilikan AC yang moderat.
-
-   - **Klaster 3 (Kelompok Atas Padat Energi):** Mencakup 21.606 rumah tangga berskala besar dengan kapasitas finansial tertinggi. Kelompok ini memiliki kepemilikan AC yang nyaris mutlak (99,08%) dan pengeluaran listrik yang melambung tinggi, merepresentasikan permintaan energi untuk pendinginan yang bersifat inelastis.
 
 ## Saran
 
 Berdasarkan temuan dan kesimpulan penelitian, saran yang dapat diberikan adalah:
 
-1. **Bagi Pembuat Kebijakan (Pemerintah dan PLN):** Mengingat pola konsumsi listrik rumah tangga sangat heterogen, perumusan kebijakan efisiensi energi (demand-side management) tidak dapat diaplikasikan secara seragam (Oktasandira, 2025). Kebijakan intervensi tarif tidak akan efektif menekan konsumsi pada Klaster 3 yang inelastis, sehingga regulasi wajib efisiensi peralatan (misalnya standar AC Inverter) lebih tepat diterapkan. Di sisi lain, instrumen kebijakan harus menjamin perlindungan daya beli dan akses kenyamanan dasar bagi Klaster 1 agar terhindar dari adaptation cooling deficit (Pavanello et al., 2021).
+1. **Bagi Pembuat Kebijakan (Pemerintah dan PLN):** 
 
-2. **Bagi Peneliti Selanjutnya:** Penelitian ini memiliki keterbatasan karena hanya menggunakan proksi pengeluaran listrik berbasis data cross-section. Kajian mendatang disarankan untuk mengintegrasikan data teknis meteran utilitas cerdas (smart meter), durasi penggunaan perangkat elektronik, serta pengukuran iklim mikro rumah tangga secara time-series agar dinamika respons konsumsi listrik terhadap fluktuasi suhu perkotaan dapat diestimasi secara presisi.
+2. **Bagi Peneliti Selanjutnya:** 
 
 ---
 
