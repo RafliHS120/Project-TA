@@ -651,7 +651,7 @@ Algoritme K-Means dilakukan secara iteratif melalui langkah-langkah:
 4. memperbarui centroid berdasarkan rata-rata anggota klaster,
 5. mengulangi langkah 3 dan 4 sampai konvergen.
 
-Everitt et al. (2011) juga menekankan bahwa hasil k-means dapat dipengaruhi oleh nilai awal, sehingga penggunaan beberapa inisialisasi dan pemilihan solusi dengan kriteria terbaik merupakan praktik yang lebih baik. Oleh karena itu, dalam penelitian ini K-Means dijalankan beberapa kali dengan inisialisasi berbeda, lalu dipilih solusi dengan nilai WCSS terendah.
+Everitt et al. (2011, hlm. 125–126) juga menekankan bahwa hasil k-means dapat dipengaruhi oleh nilai awal, sehingga penggunaan beberapa inisialisasi dan pemilihan solusi dengan kriteria terbaik merupakan praktik yang lebih baik. Oleh karena itu, dalam penelitian ini K-Means dijalankan beberapa kali dengan inisialisasi berbeda, lalu dipilih solusi dengan nilai WCSS terendah.
 
 
 ### 3.4.7 Evaluasi Perbedaan dan Pemisahan Klaster
