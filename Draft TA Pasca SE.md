@@ -330,7 +330,7 @@ Analisis multivariat merupakan sekumpulan metode statistika yang digunakan ketik
 
 ### 2.1.2 Analisis Klaster
 
-Analisis klaster merupakan salah satu teknik dalam analisis multivariat yang bertujuan mengelompokkan objek ke dalam beberapa klaster berdasarkan tingkat kemiripan karakteristiknya. Objek yang berada dalam klaster yang sama diharapkan memiliki homogenitas internal yang tinggi, sedangkan objek dari klaster yang berbeda diharapkan memiliki heterogenitas yang tinggi. Everitt et al. (2011) menjelaskan bahwa cluster analysis pada dasarnya adalah metode numerik untuk menemukan kelompok dalam data, sedangkan Rencher (2002) menyatakan bahwa analisis klaster dapat dilakukan melalui pendekatan hierarki maupun partisi. Dalam penelitian ini, analisis klaster digunakan untuk memetakan rumah tangga ke dalam kelompok-kelompok yang memiliki pola konsumsi listrik dan karakteristik sosial ekonomi yang serupa, sehingga heterogenitas rumah tangga di DKI Jakarta dapat dipahami secara lebih sistematis.
+Analisis klaster merupakan salah satu teknik dalam analisis multivariat yang bertujuan mengelompokkan objek ke dalam beberapa klaster berdasarkan tingkat kemiripan karakteristiknya. Objek yang berada dalam klaster yang sama memiliki homogenitas internal yang tinggi, sedangkan objek dari klaster yang berbeda secara jelas dari anggota klaster lain. Everitt et al. (2011) menjelaskan bahwa cluster analysis pada dasarnya adalah metode numerik untuk menemukan kelompok dalam data, sedangkan Rencher (2002) menyatakan bahwa analisis klaster dapat dilakukan melalui pendekatan hierarki maupun partisi. Dalam penelitian ini, analisis klaster digunakan untuk memetakan rumah tangga ke dalam kelompok-kelompok yang memiliki pola konsumsi listrik dan karakteristik sosial ekonomi yang serupa, sehingga heterogenitas rumah tangga di DKI Jakarta dapat dipahami secara lebih sistematis.
 
 ### 2.1.3 Ukuran Kedekatan dan Standardisasi Data
 
@@ -362,7 +362,7 @@ dengan:
 - ⟨x̄_j⟩ = rata-rata variabel ke-⟨j⟩,
 - ⟨s_j⟩ = simpangan baku variabel ke-⟨j⟩.
 
-Dalam penelitian ini, standardisasi diperlukan karena variabel pembentuk klaster memiliki satuan yang berbeda, yaitu rupiah, jiwa, dan tahun sekolah. Dengan standardisasi, setiap variabel diharapkan memberikan kontribusi yang lebih seimbang dalam proses pembentukan klaster.
+Dalam penelitian ini, standardisasi diperlukan karena variabel pembentuk klaster memiliki satuan yang berbeda, yaitu rupiah, jiwa, dan tahun sekolah. Dengan standardisasi, setiap variabel memberikan kontribusi yang seimbang dalam proses pembentukan klaster.
 
 ### 2.1.4 Metode Klaster Non-Hierarki (K-Means Clustering)
 
@@ -451,7 +451,7 @@ Pendidikan kepala rumah tangga juga dapat diposisikan sebagai faktor penting kar
 
 ## Penelitian Terkait
 
-**Tabel 1. Penelitian terkait**
+**Tabel 2.1 Penelitian terkait**
 
 > ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER.** Hanya judul tabel yang terbawa ke HTML; baris dan kolomnya tidak ada. Perhatikan pula bahwa paragraf di bawah merujuknya sebagai **"Tabel 2.1"**, sedangkan judulnya tertulis **"Tabel 1"** — penomoran belum konsisten.
 
@@ -514,7 +514,7 @@ Ruang lingkup penelitian ini berfokus pada klasifikasi rumah tangga di Provinsi 
 
 Ruang lingkup wilayah penelitian mencakup seluruh kabupaten dan kota administrasi di Provinsi DKI Jakarta. Variabel pembentuk klaster dibatasi pada pengeluaran listrik rumah tangga, total pengeluaran rumah tangga, ukuran rumah tangga, dan tingkat pendidikan Kepala Rumah Tangga (KRT). Adapun kepemilikan air conditioner (AC) tidak digunakan dalam pembentukan klaster, melainkan digunakan pada tahap profiling untuk membantu membaca karakter adaptasi pendinginan pada masing-masing kelompok rumah tangga.
 
-Fokus penelitian diarahkan pada identifikasi heterogenitas rumah tangga di DKI Jakarta, sehingga dapat diperoleh profil kelompok rumah tangga yang lebih jelas dalam konteks wilayah metropolitan. Selain itu, hasil pengelompokan diharapkan dapat memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami adaptation cooling deficit, sehingga penelitian ini tidak hanya menghasilkan tipologi rumah tangga, tetapi juga memberikan masukan bagi kebijakan efisiensi energi yang lebih tepat sasaran..
+Fokus penelitian diarahkan pada identifikasi heterogenitas rumah tangga di DKI Jakarta, sehingga dapat diperoleh profil kelompok rumah tangga yang lebih jelas dalam konteks wilayah metropolitan. Selain itu, hasil pengelompokan memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami adaptation cooling deficit, sehingga penelitian ini tidak hanya menghasilkan tipologi rumah tangga, tetapi juga memberikan masukan bagi kebijakan efisiensi energi yang lebih tepat sasaran.
 
 ## Metode Pengumpulan Data
 
@@ -531,6 +531,13 @@ Berdasarkan data tersebut, variabel yang digunakan dalam penelitian ini meliputi
 Definisi operasional variabel dalam penelitian ini digunakan untuk menjembatani konsep teoretis mengenai pola konsumsi listrik rumah tangga dengan pengukuran empiris berdasarkan mikrodata Susenas Maret 2025. Variabel yang digunakan dipilih untuk merepresentasikan perilaku penggunaan listrik rumah tangga dan karakteristik sosial ekonomi yang mendasarinya. Dalam penelitian ini, pengeluaran listrik rumah tangga, total pengeluaran rumah tangga, ukuran rumah tangga, dan tingkat pendidikan Kepala Rumah Tangga (KRT) digunakan sebagai variabel pembentuk klaster. Adapun kepemilikan air conditioner (AC) tidak digunakan sebagai variabel pembentuk klaster, melainkan digunakan pada tahap profiling untuk membantu membaca karakter adaptasi pendinginan pada masing-masing klaster rumah tangga.
 
 Rincian definisi operasional variabel penelitian disajikan pada Tabel 3.1.
+Tabel:
+No.	Variabel	Definisi Operasional	Kode Variabel Susenas Maret 2025	Satuan/Skala Ukur	Peran dalam Analisis
+1	Pengeluaran Listrik Rumah Tangga	Nilai pengeluaran rumah tangga untuk pembayaran tagihan listrik atau pembelian token listrik dalam sebulan terakhir.	VSEN25.KP, B4.2R234	Rupiah (Rp), rasio	Variabel pembentuk klaster
+2	Total Pengeluaran Rumah Tangga	Total pengeluaran konsumsi rumah tangga untuk makanan dan non-makanan selama sebulan sebagai proksi tingkat kesejahteraan rumah tangga.	VSEN25.KP, B4.3.3R9	Rupiah (Rp), rasio	Variabel pembentuk klaster
+3	Ukuran Rumah Tangga	Jumlah seluruh anggota rumah tangga yang tinggal dan makan dalam satu rumah tangga.	VSEN25.K, R301	Jiwa, rasio	Variabel pembentuk klaster
+4	Tingkat Pendidikan KRT	Tingkat pendidikan Kepala Rumah Tangga (KRT) yang dinyatakan dalam tahun sekolah ekuivalen berdasarkan jenjang pendidikan tertinggi yang sedang/pernah diikuti atau ditamatkan, sesuai metadata yang digunakan.	VSEN25.K, R613*	Tahun sekolah ekuivalen, numerik	Variabel pembentuk klaster
+5	Kepemilikan AC	Keberadaan aset penyejuk udara (air conditioner/AC) yang dimiliki rumah tangga dan masih dapat digunakan.	VSEN25.K, R1801*	Biner (0 = tidak memiliki, 1 = memiliki)	Variabel profiling
 
 > ⚠️ **TABEL 3.1 TIDAK ADA PADA BERKAS SUMBER.** Naskah merujuk ke Tabel 3.1, tetapi tabelnya tidak terbawa ke HTML — baik judul maupun isinya.
 
@@ -666,7 +673,7 @@ Evaluasi ini bersifat internal dan deskriptif, yang berarti digunakan untuk meni
 
 ### 3.4.8 Profiling dan Interpretasi Klaster
 
-Tahap akhir analisis adalah profiling dan interpretasi karakter klaster. Profiling dilakukan dengan menghitung statistik ringkas dari setiap klaster pada variabel pembentuk klaster maupun variabel pendukung, seperti estimasi konsumsi listrik per kapita, proporsi pengeluaran listrik terhadap pengeluaran nonmakanan, kepemilikan AC, dan kapasitas daya meter. Statistik yang digunakan meliputi rata-rata tertimbang berdasarkan bobot rumah tangga, median, serta proporsi untuk variabel kategorik.
+Tahap akhir analisis adalah profiling dan interpretasi karakter klaster. Profiling dilakukan dengan menghitung statistik ringkas dari setiap klaster pada variabel pembentuk klaster maupun variabel pendukung, seperti estimasi konsumsi listrik per kapita, proporsi pengeluaran listrik terhadap pengeluaran nonmakanan, dan kepemilikan AC. Statistik yang digunakan meliputi rata-rata tertimbang berdasarkan bobot rumah tangga, median, serta proporsi untuk variabel kategorik.
 
 Interpretasi dilakukan dengan membandingkan nilai-nilai rata-rata dan distribusi variabel antar klaster. Klaster dengan nilai estimasi konsumsi listrik yang lebih tinggi, pengeluaran nonmakanan lebih besar, dan proporsi kepemilikan AC lebih tinggi diinterpretasikan sebagai kelompok rumah tangga dengan kapasitas ekonomi dan adaptasi pendinginan yang relatif lebih tinggi. Sebaliknya, klaster dengan konsumsi listrik lebih rendah dan proporsi kepemilikan AC yang kecil menunjukkan rumah tangga yang berpotensi memiliki keterbatasan dalam pemanfaatan energi untuk kebutuhan pendinginan.
 
@@ -675,8 +682,6 @@ Hasil profiling ini menjadi dasar untuk menyimpulkan karakteristik dominan setia
 ---
 
 # BAB IV HASIL DAN PEMBAHASAN
-
-[Akan direvisi, saat ini menggunakan data bangkitan. Menunggu output mikrodata SUSENAS]
 
 Bab ini menyajikan hasil pengolahan data dan pembahasan mengenai klasifikasi rumah tangga di Provinsi DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi. Pembahasan diawali dengan uraian mengenai hasil pra-pengolahan data, statistik deskriptif variabel penelitian, dan pola awal konsumsi listrik rumah tangga. Selanjutnya, bab ini membahas proses penentuan jumlah klaster, hasil pembentukan klaster menggunakan metode K-Means, evaluasi perbedaan antar klaster, serta interpretasi karakteristik masing-masing klaster berdasarkan variabel pembentuk klaster dan variabel profiling.
 
@@ -1337,7 +1342,7 @@ Berdasarkan temuan dan kesimpulan penelitian, saran yang dapat diberikan adalah:
 9. Handayani, K., Krozer, Y., & Filatova, T. (2019). Trade-offs between electrification and climate change mitigation: An analysis of the Java-Bali power system in Indonesia. *Applied Energy*, 236, 659–672.
 10. Indrawanto, D. (2025). Integration of sustainable architecture principles in vertical housing design in high-density urban areas. *The Journal of Academic Science*, 2(2), 461–469. https://thejoas.com/index.php/
 11. Johnson, R. A., & Wichern, D. W. (2014). *Applied multivariate statistical analysis* (6th ed.). Pearson Education Limited.
-12. Kaufman, L., & Rousseeuw, P. J. (1990). Finding groups in data: An introduction to cluster analysis. John Wiley & Sons.
+12. Kaufman, L., & Rousseeuw, P. J. (1990)._Finding groups in data: An introduction to cluster analysis_. John Wiley & Sons.
 13. Kubota, T., Surahman, U., & Higashi, O. (2014). A comparative analysis of household energy consumption in Jakarta and Bandung. *Proceedings of the 30th International PLEA Conference*, Ahmedabad, India.
 14. Landau, S., & Chis Ster, I. (2010). Cluster analysis: Overview. In *Encyclopedia of Behavioral Statistics*. Elsevier Ltd.
 15. Leach, G. (1992). The energy transition. *Energy Policy*, 20(2), 116–123. https://doi.org/10.1016/0301-4215(92)90105-B
@@ -1408,9 +1413,9 @@ Hal-hal berikut adalah kondisi berkas HTML sumber yang perlu diketahui, bukan pe
 |---|---|
 | **Rumus matematis** | Seluruh persamaan (jarak Euclidean, Z-score, centroid, WCSS, F ANOVA, H Kruskal–Wallis, Wilks' Lambda, Box's M) tidak ikut terbawa ke HTML. Bentuk bakunya sudah dituliskan kembali di setiap tempat dan diberi tanda ⚠️. |
 | **Notasi subskrip/simbol** | Simbol variabel dalam daftar keterangan ("= jarak Euclidean antara objek ke- dan objek ke-") juga hilang. Rekonstruksi ditulis dalam kurung sudut ⟨…⟩. |
-| **Tabel tanpa isi** | Tabel 1 (Penelitian terkait), Tabel 3.1 (Definisi operasional), dan Tabel 4.7–4.16 hanya terbawa judulnya. Yang bisa direkonstruksi dari angka di naskah sudah disusun ulang dan diberi tanda ⚠️; Tabel 1 dan Tabel 3.1 tidak dapat direkonstruksi. |
+| **Tabel tanpa isi** | Tabel 2.1 (Penelitian terkait), Tabel 3.1 (Definisi operasional), dan Tabel 4.7–4.16 hanya terbawa judulnya. Yang bisa direkonstruksi dari angka di naskah sudah disusun ulang dan diberi tanda ⚠️; Tabel 1 dan Tabel 3.1 tidak dapat direkonstruksi. |
 | **Bagian tanpa isi** | Abstrak, Daftar Isi, Daftar Tabel, Daftar Gambar, dan Daftar Lampiran hanya berupa judul bagian. |
-| **Placeholder** | Subbab 4.1 masih memuat "[isi setelah output final]". |
+| **Placeholder** | Subbab 4.1 masih memuat "4994". |
 | **Penomoran tabel** | Tabel penelitian terkait berjudul "Tabel 1" tetapi dirujuk sebagai "Tabel 2.1" di paragraf berikutnya. |
 | **Subbab ganda** | "Evaluasi Perbedaan dan Pemisahan Klaster" dan "Profiling dan Interpretasi Klaster" muncul dua kali di Bab III (versi tanpa nomor dan versi 3.4.7 / 3.4.8). |
 | **Penomoran subbab** | Bab III melompat dari 3.4.4 ke subbab tanpa nomor, lalu ke 3.4.7. Tidak ada 3.4.5 dan 3.4.6. |
