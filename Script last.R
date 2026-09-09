@@ -1225,4 +1225,147 @@ cat("Sumber pendidikan:", unique(ta_clean$sumber_pendidikan), "\n")
 cat("Jumlah klaster final:", k_opt, "\n")
 cat("Akurasi diskriminan:", round(akurasi_lda * 100, 2), "%\n")
 cat("Output tersimpan di:", folder_output, "\n")
+
+
+# ============================================================
+# 22. BLOK VARIABEL PENCIRI (penjawab Tujuan 3)
+# Dijalankan setelah bagian 20. Tidak mengubah pipeline klaster.
+# ============================================================
+
+# --- 22.1 Cek ketersediaan variabel -------------------------
+
+vars_kandidat <- c("r1604", "r1801b", "r1801c", "r1616b1")
+
+cek_penciri <- tibble(
+  variabel = vars_kandidat,
+  tersedia = vars_kandidat %in% names(kor_rt)
+)
+
+print(cek_penciri)
+write_csv(cek_penciri, file.path(folder_output, "43_cek_ketersediaan_penciri.csv"))
+
+cat("\nSemua variabel R16 dan R18 pada kor_rt:\n")
+print(names(kor_rt)[grepl("^r16|^r18", names(kor_rt))])
+
+if ("r1604" %in% names(kor_rt)) {
+  cat("\nSebaran r1604 (kandidat luas lantai):\n")
+  print(summary(safe_num(kor_rt$r1604)))
+}
+
+if ("r1801b" %in% names(kor_rt)) {
+  cat("\nSebaran r1801b (kandidat lemari es):\n")
+  print(table(kor_rt$r1801b, useNA = "ifany"))
+}
+
+# --- 22.2 Bentuk data penciri -------------------------------
+
+punya_r1604  <- "r1604"  %in% names(kor_rt)
+punya_r1801b <- "r1801b" %in% names(kor_rt)
+
+penciri <- kor_rt |>
+  group_by(idrt) |>
+  slice(1) |>
+  ungroup() |>
+  transmute(
+    idrt,
+    luas_lantai = if (punya_r1604) safe_num(r1604) else NA_real_,
+    lemari_es = if (punya_r1801b) {
+      case_when(
+        safe_num(r1801b) == 1 ~ 1L,
+        safe_num(r1801b) %in% c(0, 2, 5) ~ 0L,
+        TRUE ~ NA_integer_
+      )
+    } else NA_integer_
+  )
+
+data_penciri <- data_hasil |>
+  left_join(penciri, by = "idrt") |>
+  mutate(
+    luas_lantai_w = if (all(is.na(luas_lantai))) NA_real_ else winsorize(luas_lantai),
+    ac_f = factor(ac, levels = c(0, 1), labels = c("Tidak", "Ya")),
+    lemari_es_f = factor(lemari_es, levels = c(0, 1), labels = c("Tidak", "Ya"))
+  )
+
+cat("\nJumlah baris data_penciri:", nrow(data_penciri),
+    "| harus sama dengan data_hasil:", nrow(data_hasil), "\n")
+
+# --- 22.3 Profil penciri per klaster (tertimbang) -----------
+
+profil_penciri <- data_penciri |>
+  group_by(cluster) |>
+  summarise(
+    n_sampel = n(),
+    persen_tertimbang = 100 * sum(bobot, na.rm = TRUE) /
+      sum(data_penciri$bobot, na.rm = TRUE),
+    rata_luas_lantai = weighted.mean(luas_lantai_w, bobot, na.rm = TRUE),
+    median_luas_lantai = median(luas_lantai_w, na.rm = TRUE),
+    proporsi_ac = weighted.mean(ac, bobot, na.rm = TRUE) * 100,
+    proporsi_lemari_es = weighted.mean(lemari_es, bobot, na.rm = TRUE) * 100,
+    n_missing_luas_lantai = sum(is.na(luas_lantai_w)),
+    n_missing_lemari_es = sum(is.na(lemari_es)),
+    .groups = "drop"
+  )
+
+print(profil_penciri, width = Inf)
+write_csv(profil_penciri, file.path(folder_output, "44_profil_penciri_tertimbang.csv"))
+
+# --- 22.4 Uji beda berbasis desain survei -------------------
+
+desain_penciri <- survey::svydesign(ids = ~1, weights = ~bobot, data = data_penciri)
+
+if (!all(is.na(data_penciri$luas_lantai_w))) {
+  uji_luas_w <- survey::svyranktest(
+    luas_lantai_w ~ cluster, desain_penciri, test = "KruskalWallis"
+  )
+  print(uji_luas_w)
+  capture.output(uji_luas_w,
+                 file = file.path(folder_output, "45_uji_luas_lantai_tertimbang.txt"))
+}
+
+uji_ac_w <- survey::svychisq(~ cluster + ac_f, desain_penciri, statistic = "Chisq")
+print(uji_ac_w)
+capture.output(uji_ac_w, file = file.path(folder_output, "46_uji_ac_tertimbang.txt"))
+
+if (!all(is.na(data_penciri$lemari_es))) {
+  desain_es <- subset(desain_penciri, !is.na(lemari_es))
+  uji_es_w <- survey::svychisq(~ cluster + lemari_es_f, desain_es, statistic = "Chisq")
+  print(uji_es_w)
+  capture.output(uji_es_w,
+                 file = file.path(folder_output, "47_uji_lemari_es_tertimbang.txt"))
+}
+
+# --- 22.5 Uji tidak tertimbang sebagai pembanding ------------
+
+uji_penciri_unweighted <- list()
+
+if (!all(is.na(data_penciri$luas_lantai_w))) {
+  uji_penciri_unweighted$luas_lantai <-
+    broom::tidy(kruskal.test(luas_lantai_w ~ cluster, data = data_penciri))
+}
+
+uji_penciri_unweighted$ac <-
+  broom::tidy(chisq.test(table(data_penciri$cluster, data_penciri$ac)))
+
+if (!all(is.na(data_penciri$lemari_es))) {
+  uji_penciri_unweighted$lemari_es <-
+    broom::tidy(chisq.test(table(data_penciri$cluster, data_penciri$lemari_es)))
+}
+
+uji_penciri_unweighted <- bind_rows(uji_penciri_unweighted, .id = "variabel")
+print(uji_penciri_unweighted)
+write_csv(uji_penciri_unweighted,
+          file.path(folder_output, "48_uji_penciri_tidak_tertimbang.csv"))
 cat("============================================================\n")
+
+
+# --- 22.6 Ukuran efek ---------------------------------------
+efek_ac <- sqrt(as.numeric(uji_penciri_unweighted$statistic[2]) / nrow(data_penciri))
+efek_es <- sqrt(as.numeric(uji_penciri_unweighted$statistic[3]) / nrow(data_penciri))
+
+ukuran_efek <- tibble(
+  variabel = c("ac", "lemari_es"),
+  cramers_v = c(efek_ac, efek_es)
+)
+
+print(ukuran_efek)
+write_csv(ukuran_efek, file.path(folder_output, "49_ukuran_efek_penciri.csv"))
