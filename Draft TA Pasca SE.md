@@ -508,7 +508,7 @@ Berdasarkan landasan teori, penelitian terkait, dan kerangka pikir yang telah di
 
 # BAB III METODOLOGI
 
-## Ruang Lingkup Penelitian
+## 3.1 Ruang Lingkup Penelitian
 
 Ruang lingkup penelitian ini berfokus pada klasifikasi rumah tangga di Provinsi DKI Jakarta Tahun 2025 berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi. Penelitian ini menggunakan data mikro Survei Sosial Ekonomi Nasional (Susenas) Maret 2025 sebagai sumber data utama dalam prosedur analisis. Unit observasi sekaligus unit analisis dalam penelitian ini adalah rumah tangga yang tercakup dalam sampel Susenas Maret 2025 di Provinsi DKI Jakarta.
 
@@ -516,7 +516,7 @@ Ruang lingkup wilayah penelitian mencakup seluruh kabupaten dan kota administras
 
 Fokus penelitian diarahkan pada identifikasi heterogenitas rumah tangga di DKI Jakarta, sehingga dapat diperoleh profil kelompok rumah tangga yang lebih jelas dalam konteks wilayah metropolitan. Selain itu, hasil pengelompokan memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami adaptation cooling deficit, sehingga penelitian ini tidak hanya menghasilkan tipologi rumah tangga, tetapi juga memberikan masukan bagi kebijakan efisiensi energi yang lebih tepat sasaran.
 
-## Metode Pengumpulan Data
+## 3.2 Metode Pengumpulan Data
 
 Jenis data yang digunakan dalam penelitian ini adalah data cross-section, sedangkan sumber data yang digunakan adalah data sekunder berupa mikrodata Survei Sosial Ekonomi Nasional (Susenas) Maret 2025 Provinsi DKI Jakarta yang diterbitkan oleh Badan Pusat Statistik (BPS). Unit observasi sekaligus unit analisis dalam penelitian ini adalah rumah tangga yang tercakup dalam sampel Susenas Maret 2025 di Provinsi DKI Jakarta.
 
@@ -526,18 +526,23 @@ Variabel yang digunakan dalam penelitian ini diperoleh dari dua sumber utama dal
 
 Berdasarkan data tersebut, variabel yang digunakan dalam penelitian ini meliputi pengeluaran listrik rumah tangga, total pengeluaran rumah tangga, ukuran rumah tangga, tingkat pendidikan Kepala Rumah Tangga (KRT), dan kepemilikan air conditioner (AC). Variabel pengeluaran listrik, total pengeluaran rumah tangga, ukuran rumah tangga, dan pendidikan KRT digunakan sebagai variabel pembentuk klaster, sedangkan kepemilikan AC digunakan pada tahap profiling untuk membantu membaca karakter adaptasi pendinginan pada masing-masing klaster rumah tangga. Rincian definisi operasional masing-masing variabel disajikan pada Subbab 3.3.
 
-## Definisi Operasional
+## 3.3 Definisi Operasional
 
-Definisi operasional variabel dalam penelitian ini digunakan untuk menjembatani konsep teoretis mengenai pola konsumsi listrik rumah tangga dengan pengukuran empiris berdasarkan mikrodata Susenas Maret 2025. Variabel yang digunakan dipilih untuk merepresentasikan perilaku penggunaan listrik rumah tangga dan karakteristik sosial ekonomi yang mendasarinya. Dalam penelitian ini, pengeluaran listrik rumah tangga, total pengeluaran rumah tangga, ukuran rumah tangga, dan tingkat pendidikan Kepala Rumah Tangga (KRT) digunakan sebagai variabel pembentuk klaster. Adapun kepemilikan air conditioner (AC) tidak digunakan sebagai variabel pembentuk klaster, melainkan digunakan pada tahap profiling untuk membantu membaca karakter adaptasi pendinginan pada masing-masing klaster rumah tangga.
+Definisi operasional variabel dalam penelitian ini menjembatani konsep teoretis mengenai pola konsumsi listrik rumah tangga dengan pengukuran empiris berdasarkan mikrodata Susenas Maret 2025. Empat variabel digunakan sebagai pembentuk klaster, yaitu estimasi konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, ukuran rumah tangga, dan tingkat pendidikan Kepala Rumah Tangga (KRT). Estimasi konsumsi listrik diperoleh dengan membagi pengeluaran listrik rumah tangga sebulan terakhir dengan tarif listrik rata-rata kelompok pelanggan rumah tangga pada PLN UID Jakarta Raya tahun 2024, yaitu Rp1.493,62 per kWh (PT PLN (Persero), 2025). Karena tarif yang digunakan bernilai tunggal, variabel ini merupakan pengubahan skala pengeluaran listrik ke dalam satuan kWh sehingga dibaca sebagai ukuran relatif pemakaian listrik antarrumah tangga, bukan sebagai hasil pencatatan meteran. Pengeluaran nonmakanan selain listrik dipakai sebagai proksi kemampuan belanja rumah tangga di luar kebutuhan pangan setelah komponen listrik dikeluarkan, agar tidak terjadi tumpang tindih informasi dengan variabel pertama. Tingkat pendidikan KRT dinyatakan dalam tahun sekolah ekuivalen yang dikonversi dari jenjang pendidikan tertinggi yang sedang atau pernah diikuti berdasarkan ketentuan konversi lama sekolah Badan Pusat Statistik ([PERLU VERIFIKASI]). Kedua variabel moneter memiliki sebaran yang menjulur ke kanan sehingga ditransformasi ke dalam bentuk logaritma natural sebelum distandardisasi, sebagaimana diuraikan pada Subbab 3.4.1 dan 3.4.3. Adapun kepemilikan air conditioner (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang tidak digunakan sebagai pembentuk klaster, melainkan sebagai variabel penciri pada tahap profiling. Rincian definisi operasional variabel penelitian disajikan pada Tabel 3.1.
 
 Rincian definisi operasional variabel penelitian disajikan pada Tabel 3.1.
 Tabel:
-No.	Variabel	Definisi Operasional	Kode Variabel Susenas Maret 2025	Satuan/Skala Ukur	Peran dalam Analisis
-1	Pengeluaran Listrik Rumah Tangga	Nilai pengeluaran rumah tangga untuk pembayaran tagihan listrik atau pembelian token listrik dalam sebulan terakhir.	VSEN25.KP, B4.2R234	Rupiah (Rp), rasio	Variabel pembentuk klaster
-2	Total Pengeluaran Rumah Tangga	Total pengeluaran konsumsi rumah tangga untuk makanan dan non-makanan selama sebulan sebagai proksi tingkat kesejahteraan rumah tangga.	VSEN25.KP, B4.3.3R9	Rupiah (Rp), rasio	Variabel pembentuk klaster
-3	Ukuran Rumah Tangga	Jumlah seluruh anggota rumah tangga yang tinggal dan makan dalam satu rumah tangga.	VSEN25.K, R301	Jiwa, rasio	Variabel pembentuk klaster
-4	Tingkat Pendidikan KRT	Tingkat pendidikan Kepala Rumah Tangga (KRT) yang dinyatakan dalam tahun sekolah ekuivalen berdasarkan jenjang pendidikan tertinggi yang sedang/pernah diikuti atau ditamatkan, sesuai metadata yang digunakan.	VSEN25.K, R613*	Tahun sekolah ekuivalen, numerik	Variabel pembentuk klaster
-5	Kepemilikan AC	Keberadaan aset penyejuk udara (air conditioner/AC) yang dimiliki rumah tangga dan masih dapat digunakan.	VSEN25.K, R1801*	Biner (0 = tidak memiliki, 1 = memiliki)	Variabel profiling
+No.	Variabel	Definisi Operasional	Kode Susenas Maret 2025	Satuan/Skala	Peran
+1	Estimasi Konsumsi Listrik (X₁)	Pengeluaran listrik sebulan terakhir dibagi tarif listrik rata-rata rumah tangga PLN UID Jakarta Raya 2024 (Rp1.493,62/kWh); digunakan dalam bentuk ln(1 + x)	VSEN25.KP, Blok IV.2 R234	kWh per bulan; rasio	Pembentuk klaster
+2	Pengeluaran Nonmakanan Selain Listrik (X₂)	Total pengeluaran nonmakanan sebulan dikurangi pengeluaran listrik; selisih negatif diperlakukan sebagai data tidak valid; digunakan dalam bentuk ln(1 + x)	VSEN25.KP, Blok IV.2 subtotal nonmakanan dikurangi R234	Rupiah per bulan; rasio	Pembentuk klaster
+3	Ukuran Rumah Tangga (X₃)	Banyaknya anggota rumah tangga	VSEN25.K, R301	Jiwa; rasio	Pembentuk klaster
+4	Pendidikan KRT (X₄)	Lama sekolah ekuivalen KRT, dikonversi dari jenjang pendidikan tertinggi yang sedang/pernah diikuti	VSEN25.K, R613 (KRT: R403 = 1)	Tahun; rasio	Pembentuk klaster
+5	Kepemilikan AC	Rumah tangga memiliki AC	VSEN25.K, R1801C	Biner (1 = ya; 0 = tidak)	Penciri
+6	Kepemilikan Lemari Es	Rumah tangga memiliki lemari es/kulkas	VSEN25.K, R1801B	Biner (1 = ya; 0 = tidak)	Penciri
+7	Luas Lantai	Luas lantai bangunan tempat tinggal	VSEN25.K, R1604	m²; rasio	Penciri
+8	Golongan Daya Terpasang	Daya terpasang pada meteran 1, khusus rumah tangga pengguna listrik PLN bermeteran	VSEN25.K, R1616B1	Ordinal: 450 watt; 900 watt; 1.300 watt atau lebih	Penciri
+
+Sumber: Badan Pusat Statistik (2025), diolah.
 
 > ⚠️ **TABEL 3.1 TIDAK ADA PADA BERKAS SUMBER.** Naskah merujuk ke Tabel 3.1, tetapi tabelnya tidak terbawa ke HTML — baik judul maupun isinya.
 
@@ -583,7 +588,7 @@ Tahap pra-pengolahan dilakukan untuk mengubah mikrodata mentah Susenas Maret 202
 
 Integrasi berkas dilakukan dengan menggabungkan tiga sumber, yaitu berkas keterangan individu, berkas keterangan rumah tangga, dan berkas konsumsi dan pengeluaran Blok IV.2. Penggabungan memakai pengenal unik rumah tangga yang dibentuk dari kombinasi kode wilayah dan nomor urut rumah tangga. Keterangan pendidikan diambil dari berkas individu dengan menyaring anggota rumah tangga berstatus kepala rumah tangga, kemudian dilekatkan pada catatan rumah tangga yang bersangkutan. Cakupan analisis dibatasi pada rumah tangga di Provinsi DKI Jakarta.
 
-Variabel turunan dibentuk pada tahap berikutnya. Estimasi konsumsi listrik diperoleh dengan membagi nilai pengeluaran listrik sebulan terakhir dengan tarif tenaga listrik acuan rumah tangga. Pengeluaran nonmakanan selain listrik dihitung dengan mengurangkan pengeluaran listrik dari total pengeluaran nonmakanan sebulan, dan selisih bernilai negatif akibat pembulatan pencatatan ditetapkan menjadi nol.
+Variabel turunan dibentuk pada tahap berikutnya. Estimasi konsumsi listrik diperoleh dengan membagi nilai pengeluaran listrik sebulan terakhir dengan tarif tenaga listrik acuan rumah tangga. Pengeluaran nonmakanan selain listrik dihitung dengan mengurangkan pengeluaran listrik dari total pengeluaran nonmakanan sebulan, dan selisih bernilai negatif diperlakukan sebagai data tidak valid.
 
 Pembersihan data dilakukan dengan kriteria kelengkapan dan kewajaran nilai. Rumah tangga dipertahankan dalam analisis apabila memiliki penimbang yang sah bernilai positif, nilai pengeluaran listrik dan estimasi konsumsi listrik yang tidak hilang serta tidak negatif, total pengeluaran nonmakanan bernilai positif, pengeluaran nonmakanan selain listrik tidak negatif, jumlah anggota rumah tangga bernilai positif, keterangan pendidikan kepala rumah tangga tersedia, dan keterangan kepemilikan air conditioner bernilai biner. Rumah tangga yang tidak memenuhi salah satu kriteria tersebut dikeluarkan dari analisis. Dari 5079 rumah tangga hasil penggabungan, sebanyak 4994 rumah tangga dikeluarkan sehingga tersisa 85 rumah tangga yang dianalisis.
 
@@ -1365,14 +1370,15 @@ Berdasarkan temuan dan kesimpulan penelitian, saran yang dapat diberikan adalah:
 22. Pasaribu, N. G., Wulandari, F. W., & Wulandari, S. P. (2024). Pengelompokan indikator kemiskinan di kabupaten/kota Aceh tahun 2021 menggunakan analisis klaster. *Bilangan: Jurnal Ilmiah Matematika, Kebumian dan Angkasa*, 2(6).
 23. Pavanello, F., De Cian, E., Davide, M., Mistry, M., Cruz, T., Bezerra, P., Jagu, D., Renner, S., Schaeffer, R., & Lucena, A. F. P. (2021). Air-conditioning and the adaptation cooling deficit in emerging economies. *Nature Communications*, 12, 6460. https://doi.org/10.1038/s41467-021-26592-2
 24. Prastika, A. (2023). Hubungan antara tingkat konsumsi energi listrik dengan pertumbuhan ekonomi di Indonesia. *Jurnal Ilmu Ekonomi (JIE)*.
-25. Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, 16(1).
-26. Rencher, A. C. (2002). Methods of multivariate analysis (2nd ed.). John Wiley & Sons.
-27. Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, 2(1), 79–91. https://doi.org/10.5334/bc.72
-28. Rousseeuw, PJ (1987). Silhouettes: a graphical aid to the interpretation and validation of cluster analysis. Journal of computational and applied mathematics, Elsevier, <https://www.sciencedirect.com/science/article/pii/0377042787901257>
-29. Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C., Gamal, A., & Dimyati, M. (2023). Spatio-temporal characteristics of urban heat island of Jakarta metropolitan. *Remote Sensing Applications: Society and Environment*, 32, 101062. https://doi.org/10.1016/j.rsase.2023.101062
-30. Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
-31. van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, 20, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
-32. Widyasanti, A. A. (2024, August 30). *Press release: Kondisi kelas menengah di Indonesia*. Badan Pusat Statistik.
+25. PT PLN (Persero). (2025). Statistik PLN 2024 (No. 01001-300625)
+26. Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, 16(1).
+27. Rencher, A. C. (2002). Methods of multivariate analysis (2nd ed.). John Wiley & Sons.
+28. Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, 2(1), 79–91. https://doi.org/10.5334/bc.72
+29. Rousseeuw, PJ (1987). Silhouettes: a graphical aid to the interpretation and validation of cluster analysis. Journal of computational and applied mathematics, Elsevier, <https://www.sciencedirect.com/science/article/pii/0377042787901257>
+30. Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C., Gamal, A., & Dimyati, M. (2023). Spatio-temporal characteristics of urban heat island of Jakarta metropolitan. *Remote Sensing Applications: Society and Environment*, 32, 101062. https://doi.org/10.1016/j.rsase.2023.101062
+31. Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
+32. van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, 20, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
+33. Widyasanti, A. A. (2024, August 30). *Press release: Kondisi kelas menengah di Indonesia*. Badan Pusat Statistik.
 
 ---
 
