@@ -161,7 +161,7 @@ tahun_sekolah <- c( "0" = 0,
   "1" = 6,  "2" = 6,  "3" = 6,  "4" = 6,  "5" = 6,
   "6" = 9,  "7" = 9,  "8" = 9,  "9" = 9,  "10" = 9,
   "11" = 12, "12" = 12, "13" = 12, "14" = 12, "15" = 12, "16" = 12, "17" = 12,
-  "18" = 14, "19" = 15, "20" = 16, "21" = 17, "22" = 18, "23" = 19, "24" = 22,
+  "18" = 14, "19" = 15, "20" = 16, "21" = 16, "22" = 16, "23" = 18, "24" = 18,
   "25" = 0
 )
 
@@ -1097,7 +1097,7 @@ print(uji_anova)
 write_csv(uji_anova, file.path(folder_output, "32_uji_anova.csv"))
 
 tab_ac <- table(data_hasil$cluster, data_hasil$ac)
-uji_chi_ac <- broom::tidy(stats::chisq.test(tab_ac))
+uji_chi_ac <- broom::tidy(stats::chisq.test(tab_ac, correct = FALSE))
 
 print(tab_ac)
 print(uji_chi_ac)
@@ -1343,11 +1343,11 @@ if (!all(is.na(data_penciri$luas_lantai_w))) {
 }
 
 uji_penciri_unweighted$ac <-
-  broom::tidy(chisq.test(table(data_penciri$cluster, data_penciri$ac)))
+  broom::tidy(chisq.test(table(data_penciri$cluster, data_penciri$ac), correct = FALSE))
 
 if (!all(is.na(data_penciri$lemari_es))) {
   uji_penciri_unweighted$lemari_es <-
-    broom::tidy(chisq.test(table(data_penciri$cluster, data_penciri$lemari_es)))
+    broom::tidy(chisq.test(table(data_penciri$cluster, data_penciri$lemari_es), correct = FALSE))
 }
 
 uji_penciri_unweighted <- bind_rows(uji_penciri_unweighted, .id = "variabel")
