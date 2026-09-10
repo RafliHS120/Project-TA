@@ -157,7 +157,7 @@ winsorize <- function(x, probs = c(0.01, 0.99)) {
 # sebelum ditulis di naskah. Cukup ubah angkanya di sini bila beda.
 # ============================================================
 
-tahun_sekolah <- c(
+tahun_sekolah <- c( "0" = 0,
   "1" = 6,  "2" = 6,  "3" = 6,  "4" = 6,  "5" = 6,
   "6" = 9,  "7" = 9,  "8" = 9,  "9" = 9,  "10" = 9,
   "11" = 12, "12" = 12, "13" = 12, "14" = 12, "15" = 12, "16" = 12, "17" = 12,
