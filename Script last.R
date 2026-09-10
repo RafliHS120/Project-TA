@@ -141,71 +141,50 @@ winsorize <- function(x, probs = c(0.01, 0.99)) {
 
 
 # ============================================================
-# 2.1 RECODE PENDIDIKAN KRT
+# 2.1 RECODE PENDIDIKAN KRT  (VERSI PERBAIKAN SESI I)
+# ------------------------------------------------------------
+# Kode R613/R615 mengikuti layout Susenas Maret 2025
+# (sheet "value label individu"):
+#  1 Paket A | 2 SDLB | 3 SD | 4 MI | 5 SPM/PDF Ula
+#  6 Paket B | 7 SMPLB | 8 SMP | 9 MTs | 10 SPM/PDF Wustha
+# 11 Paket C | 12 SMLB | 13 SMA | 14 MA | 15 SMK | 16 MAK | 17 SPM/PDF Ulya
+# 18 D1/D2 | 19 D3 | 20 D4 | 21 S1 | 22 Profesi | 23 S2 | 24 S3
+# 25 Tidak punya ijazah SD (hanya R615)
+# R611 = 1 : tidak/belum pernah bersekolah -> 0 tahun
+#
+# Nilai tahun di bawah = tabel konversi lama sekolah BPS.
+# [PERLU VERIFIKASI] cocokkan dengan metadata RLS di Sirusa BPS
+# sebelum ditulis di naskah. Cukup ubah angkanya di sini bila beda.
 # ============================================================
-# Catatan:
-# - Jika R615 tersedia, digunakan sebagai pendekatan ijazah/STTB tertinggi.
-# - Jika R615 tidak tersedia, digunakan R613 sebagai jenjang pendidikan
-#   tertinggi yang sedang/pernah diikuti.
-# - Untuk final TA, pemetaan kode tetap perlu dicocokkan dengan layout
-#   atau kamus variabel Susenas 2025.
 
-recode_lama_sekolah_r615 <- function(x) {
-  x <- safe_num(x)
-  
-  case_when(
-    is.na(x) ~ NA_real_,
-    
-    x %in% c(0, 1, 2) ~ 0,
-    
-    x %in% c(3, 4, 5) ~ 6,
-    
-    x %in% c(6, 7, 8) ~ 9,
-    
-    x %in% c(9, 10, 11) ~ 12,
-    
-    x %in% c(12) ~ 14,
-    
-    x %in% c(13) ~ 15,
-    
-    x %in% c(14, 15) ~ 16,
-    
-    x %in% c(16) ~ 18,
-    
-    x %in% c(17, 18, 19, 20) ~ 22,
-    
-    TRUE ~ NA_real_
-  )
+tahun_sekolah <- c(
+  "1" = 6,  "2" = 6,  "3" = 6,  "4" = 6,  "5" = 6,
+  "6" = 9,  "7" = 9,  "8" = 9,  "9" = 9,  "10" = 9,
+  "11" = 12, "12" = 12, "13" = 12, "14" = 12, "15" = 12, "16" = 12, "17" = 12,
+  "18" = 14, "19" = 15, "20" = 16, "21" = 17, "22" = 18, "23" = 19, "24" = 22,
+  "25" = 0
+)
+
+konversi_tahun <- function(x) {
+  unname(tahun_sekolah[as.character(safe_num(x))])
 }
 
-recode_lama_sekolah_r613 <- function(x) {
-  x <- safe_num(x)
-  
-  case_when(
-    is.na(x) ~ NA_real_,
-    
-    x %in% c(0, 1, 2, 21) ~ 0,
-    
-    x %in% c(3, 4) ~ 6,
-    
-    x %in% c(5, 6) ~ 9,
-    
-    x %in% c(7, 8, 9, 10) ~ 12,
-    
-    x %in% c(11) ~ 14,
-    
-    x %in% c(12) ~ 15,
-    
-    x %in% c(13, 14) ~ 16,
-    
-    x %in% c(15) ~ 18,
-    
-    x %in% c(16, 17, 18, 19, 20) ~ 22,
-    
-    TRUE ~ NA_real_
-  )
+# Mengambil satu variabel individu dari ind1 atau ind2
+# (dicari di ind1 dulu; bila tidak ada, dicari di ind2)
+ambil_var_ind <- function(nama_var) {
+  if (nama_var %in% names(kor_ind1)) {
+    sumber <- kor_ind1
+  } else if (nama_var %in% names(kor_ind2)) {
+    sumber <- kor_ind2
+  } else {
+    return(NULL)
+  }
+  stop_if_missing(sumber, c("idrt", "r401", nama_var), paste("berkas individu untuk", nama_var))
+  sumber |>
+    transmute(idrt, r401 = safe_num(r401), nilai = safe_num(.data[[nama_var]])) |>
+    distinct(idrt, r401, .keep_all = TRUE) |>
+    rename(!!nama_var := nilai)
 }
-
 
 # ============================================================
 # 3. BACA DATA
@@ -344,36 +323,56 @@ if ("r615" %in% names(kor_ind1)) {
 
 
 # ============================================================
-# 6. BENTUK DATA KRT DAN DATA RUMAH TANGGA
+# 6a. BENTUK DATA KRT
 # ============================================================
 
-if ("r615" %in% names(kor_ind1)) {
-  krt <- kor_ind1 |>
-    filter(safe_num(r403) == 1) |>
-    group_by(idrt) |>
-    slice(1) |>
-    ungroup() |>
-    transmute(
-      idrt,
-      r613_asli = safe_num(r613),
-      r615_asli = safe_num(r615),
-      sumber_pendidikan = "R615",
-      pendidikan_krt = recode_lama_sekolah_r615(r615)
-    )
-} else {
-  krt <- kor_ind1 |>
-    filter(safe_num(r403) == 1) |>
-    group_by(idrt) |>
-    slice(1) |>
-    ungroup() |>
-    transmute(
-      idrt,
-      r613_asli = safe_num(r613),
-      r615_asli = NA_real_,
-      sumber_pendidikan = "R613",
-      pendidikan_krt = recode_lama_sekolah_r613(r613)
-    )
+cat("\nLokasi variabel pendidikan:\n")
+for (v in c("r611", "r613", "r614", "r615")) {
+  cat(v, "-> ind1:", v %in% names(kor_ind1), "| ind2:", v %in% names(kor_ind2), "\n")
 }
+
+krt <- kor_ind1 |>
+  filter(safe_num(r403) == 1) |>
+  group_by(idrt) |>
+  slice(1) |>
+  ungroup() |>
+  transmute(idrt, r401 = safe_num(r401))
+
+for (v in c("r611", "r613", "r615")) {
+  tambahan <- ambil_var_ind(v)
+  if (is.null(tambahan)) {
+    krt[[v]] <- NA_real_
+  } else {
+    krt <- krt |> left_join(tambahan, by = c("idrt", "r401"))
+  }
+}
+
+krt <- krt |>
+  mutate(
+    r613_asli = r613,
+    r615_asli = r615,
+    thn_r615 = konversi_tahun(r615),
+    thn_r613 = konversi_tahun(r613),
+    pendidikan_krt = case_when(
+      r611 == 1 ~ 0,
+      !is.na(thn_r615) ~ thn_r615,
+      !is.na(thn_r613) ~ thn_r613,
+      TRUE ~ NA_real_
+    ),
+    sumber_pendidikan = case_when(
+      r611 == 1 ~ "R611_tidak_pernah_sekolah",
+      !is.na(thn_r615) ~ "R615",
+      !is.na(thn_r613) ~ "R613",
+      TRUE ~ "Tidak_terkonversi"
+    )
+  ) |>
+  select(idrt, r613_asli, r615_asli, sumber_pendidikan, pendidikan_krt)
+
+cat("\nSumber nilai pendidikan KRT:\n")
+print(table(krt$sumber_pendidikan, useNA = "ifany"))
+cat("\nSebaran lama sekolah KRT (tahun):\n")
+print(table(krt$pendidikan_krt, useNA = "ifany"))
+
 
 diag_pendidikan_krt <- krt |>
   summarise(
@@ -1369,3 +1368,50 @@ ukuran_efek <- tibble(
 
 print(ukuran_efek)
 write_csv(ukuran_efek, file.path(folder_output, "49_ukuran_efek_penciri.csv"))
+
+
+# --- 22.7 Golongan daya terpasang x klaster (bukti Opsi A+) --
+# Label R1616B1 (layout Susenas Maret 2025, value label ruta):
+# 1 = 450 watt | 2 = 900 watt | 3 = 1.300 watt atau lebih
+# Kode 0 tidak berlabel -> dicek terhadap R1616 di bawah
+
+daya <- kor_rt |>
+  group_by(idrt) |>
+  slice(1) |>
+  ungroup() |>
+  transmute(
+    idrt,
+    r1616 = if ("r1616" %in% names(kor_rt)) safe_num(r1616) else NA_real_,
+    daya1 = safe_num(r1616b1)
+  )
+
+cat("\nCek kode 0 R1616B1 terhadap sumber penerangan R1616:\n")
+print(table(R1616 = daya$r1616, R1616B1 = daya$daya1, useNA = "ifany"))
+
+data_daya <- data_hasil |>
+  select(idrt, cluster, bobot) |>
+  left_join(daya, by = "idrt") |>
+  filter(daya1 %in% c(1, 2, 3)) |>
+  mutate(daya_f = factor(daya1, levels = 1:3,
+                         labels = c("450 watt", "900 watt", "1.300 watt atau lebih")))
+
+cat("\nJumlah RT analisis tanpa kode daya 1-3:",
+    nrow(data_hasil) - nrow(data_daya), "\n")
+
+tab_daya <- table(Klaster = data_daya$cluster, Daya = data_daya$daya_f)
+cat("\nFrekuensi (tidak tertimbang):\n"); print(tab_daya)
+
+desain_daya <- survey::svydesign(ids = ~1, weights = ~bobot, data = data_daya)
+persen_daya_w <- round(100 * prop.table(survey::svytable(~cluster + daya_f, desain_daya), 1), 1)
+cat("\nPersen baris tertimbang:\n"); print(persen_daya_w)
+
+uji_daya <- chisq.test(tab_daya)
+v_daya <- sqrt(unname(uji_daya$statistic) / (sum(tab_daya) * (min(dim(tab_daya)) - 1)))
+uji_daya_w <- survey::svychisq(~cluster + daya_f, desain_daya, statistic = "Chisq")
+print(uji_daya); print(uji_daya_w)
+cat("Cramer's V daya terpasang:", round(v_daya, 3), "\n")
+
+capture.output(tab_daya, persen_daya_w, uji_daya, uji_daya_w,
+               paste("Cramer's V:", round(v_daya, 3)),
+               file = file.path(folder_output, "50_daya_terpasang_x_klaster.txt"))
+
