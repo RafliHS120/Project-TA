@@ -40,8 +40,36 @@ seed_kmeans <- 123
 # Bila tetap NA, script memilih K berdasarkan silhouette tertinggi.
 k_opt <- NA
 
-# Tarif rata-rata listrik rumah tangga DKI Jakarta berdasarkan Statistik PLN 2024.
+# --- Tarif tenaga listrik golongan RUMAH TANGGA (Rp/kWh) ---------------
+# Sumber: [PERLU VERIFIKASI] Permen ESDM tentang Tarif Tenaga Listrik +
+#         penetapan tarif adjustment triwulanan Kementerian ESDM/PT PLN 2025.
+# Pemetaan kategori R1616B1 Susenas -> golongan tarif PLN:
+#   1 = 450 watt              -> R-1/TR 450 VA (subsidi)            = 415,00
+#   2 = 900 watt              -> R-1/TR 900 VA subsidi (605,00) ATAU
+#                                R-1/TR 900 VA RTM nonsubsidi (1.352,00)
+#   3 = 1.300 watt atau lebih -> R-1/TR 1.300-2.200 (1.444,70) ATAU
+#                                R-2/TR & R-3/TR (1.699,53)
+#   0 = tanpa meteran PLN     -> tidak punya golongan; pakai tarif rata-rata
+#
+# Skenario dapat diganti di SATU baris untuk analisis sensitivitas.
+skenario_tarif <- "utama"   # "utama" | "s900_rtm" | "s_atas" | "tarif_tunggal"
+
+tarif_golongan <- switch(
+  skenario_tarif,
+  utama         = c("1" =  415.00, "2" =  605.00, "3" = 1444.70),
+  s900_rtm      = c("1" =  415.00, "2" = 1352.00, "3" = 1444.70),
+  s_atas        = c("1" =  415.00, "2" = 1352.00, "3" = 1699.53),
+  tarif_tunggal = c("1" = 1493.62, "2" = 1493.62, "3" = 1493.62),
+  stop("skenario_tarif tidak dikenal.")
+)
+
+# Tarif rata-rata RT UID Jakarta Raya (Statistik PLN 2024, Tabel 9, hlm. 22).
+# Dipakai untuk RT tanpa meteran PLN (kode 0) dan sebagai pembanding.
 tarif_kwh_acuan <- 1493.62
+tarif_tanpa_meteran <- tarif_kwh_acuan
+
+folder_output <- file.path(folder_data,
+                           paste0("output_final_tarif_golongan_", skenario_tarif))
 
 if (!dir.exists(folder_data)) {
   stop(paste("Folder data tidak ditemukan:", folder_data))
@@ -474,7 +502,7 @@ kp_hh <- kp |>
     pengeluaran_listrik_rp = if_else(is.na(pengeluaran_listrik_rp), 0, pengeluaran_listrik_rp),
     pengeluaran_nonmakanan = if_else(is.na(pengeluaran_nonmakanan), 0, pengeluaran_nonmakanan),
     
-    estimasi_kwh_listrik = pengeluaran_listrik_rp / tarif_kwh_acuan,
+    estimasi_kwh_tarif_tunggal = pengeluaran_listrik_rp / tarif_kwh_acuan,
     
     pengeluaran_nonmakanan_nonlistrik = pengeluaran_nonmakanan - pengeluaran_listrik_rp,
     pengeluaran_nonmakanan_nonlistrik = if_else(
@@ -483,8 +511,7 @@ kp_hh <- kp |>
       pengeluaran_nonmakanan_nonlistrik
     ),
     
-    sumber_kwh_final = "Estimasi_pengeluaran_listrik_dibagi_tarif_PLN_2024",
-    listrik_kwh_final = estimasi_kwh_listrik
+        sumber_kwh_final = "Estimasi_pengeluaran_listrik_dibagi_tarif_golongan_daya"
   )
 
 prop_kwh_positif <- kp_hh |>
@@ -497,10 +524,14 @@ if (is.na(prop_kwh_positif)) {
 
 write_csv(
   tibble(
+    skenario_tarif           = skenario_tarif,
+    tarif_450                = unname(tarif_golongan["1"]),
+    tarif_900                = unname(tarif_golongan["2"]),
+    tarif_1300_plus          = unname(tarif_golongan["3"]),
+    tarif_tanpa_meteran      = tarif_tanpa_meteran,
     prop_kwh_tercatat_positif = prop_kwh_positif,
-    sumber_kwh_final = "Estimasi_pengeluaran_listrik_dibagi_tarif_PLN_2024",
-    tarif_kwh_acuan = tarif_kwh_acuan,
-    catatan = "kWh aktual tidak tersedia memadai sehingga digunakan estimasi berbasis pengeluaran listrik"
+    sumber_kwh_final = "Estimasi_pengeluaran_listrik_dibagi_tarif_golongan_daya",
+    catatan = "kWh aktual (kode 233) bernilai nol seluruhnya sehingga digunakan estimasi berbasis pengeluaran listrik dibagi tarif golongan daya terpasang"
   ),
   file.path(folder_output, "07_keputusan_sumber_kwh.csv")
 )
@@ -519,7 +550,16 @@ ta <- rt |>
       !is.na(fwt) & fwt > 0 ~ fwt,
       TRUE ~ NA_real_
     ),
-    
+        # Golongan daya meteran utama -> tarif yang berlaku bagi RT tsb.
+    kode_daya = daya_meter_1,
+    tarif_rt = case_when(
+      kode_daya %in% c(1, 2, 3) ~ unname(tarif_golongan[as.character(kode_daya)]),
+      TRUE                      ~ tarif_tanpa_meteran
+    ),
+    tarif_sumber = if_else(kode_daya %in% c(1, 2, 3),
+                           "golongan_daya", "fallback_tarif_rata2"),
+
+    listrik_kwh_final = pengeluaran_listrik_rp / tarif_rt,
     listrik_kwh_perkapita = listrik_kwh_final / ukuran_rt,
     pengeluaran_listrik_perkapita = pengeluaran_listrik_rp / ukuran_rt,
     share_listrik_nonfood = pengeluaran_listrik_rp / pengeluaran_nonmakanan,
@@ -534,6 +574,31 @@ ta <- rt |>
 
 glimpse(ta)
 
+# --- Diagnostik penerapan tarif per golongan --------------------------
+cat("\n=== Sebaran tarif yang diterapkan ===\n")
+print(ta |> count(kode_daya, tarif_rt, tarif_sumber))
+
+# Kapasitas maksimum teoretis meteran bila menyala 24 jam sebulan (kWh):
+#   450 VA -> 0,45 kW x 24 x 30 = 324 kWh | 900 VA -> 648 kWh
+kapasitas_maks <- c("1" = 324, "2" = 648)
+
+anomali <- ta |>
+  filter(kode_daya %in% c(1, 2)) |>
+  mutate(batas = unname(kapasitas_maks[as.character(kode_daya)])) |>
+  filter(listrik_kwh_final > batas)
+
+cat("\nRT dengan estimasi kWh melampaui kapasitas meteran:", nrow(anomali), "\n")
+print(anomali |> count(kode_daya))
+write_csv(anomali |> select(idrt, kode_daya, tarif_rt,
+                            pengeluaran_listrik_rp, listrik_kwh_final),
+          file.path(folder_output, "07b_anomali_kwh_melebihi_kapasitas.csv"))
+
+# Perbandingan langsung dengan estimasi tarif tunggal
+cat("\nRingkasan estimasi kWh — tarif golongan vs tarif tunggal:\n")
+print(summary(ta$listrik_kwh_final))
+print(summary(ta$estimasi_kwh_tarif_tunggal))
+
+  
 skim(
   ta |>
     select(
@@ -715,7 +780,7 @@ p_hist_kwh <- ggplot(ta_clean, aes(x = listrik_kwh_final_w)) +
   geom_histogram(bins = 40) +
   labs(
     title = "Distribusi Estimasi Konsumsi Listrik Rumah Tangga",
-    subtitle = "Estimasi kWh = pengeluaran listrik / tarif acuan Statistik PLN 2024",
+    subtitle = "Estimasi kWh = pengeluaran listrik / tarif golongan daya terpasang",
     x = "Estimasi listrik sebulan terakhir (kWh)",
     y = "Jumlah rumah tangga sampel"
   ) +
@@ -935,7 +1000,6 @@ profil_klaster <- data_hasil |>
     proporsi_ac = weighted.mean(ac, bobot, na.rm = TRUE) * 100,
     rata_share_listrik_nonfood = weighted.mean(share_listrik_nonfood_w, bobot, na.rm = TRUE) * 100,
     
-    rata_daya_meter = weighted.mean(daya_meter_total, bobot, na.rm = TRUE),
     
     .groups = "drop"
   ) |>
