@@ -773,6 +773,59 @@ write_csv(tabel_deskriptif_unweighted, file.path(folder_output, "14_deskriptif_t
 
 
 # ============================================================
+# 10b. DESKRIPTIF LENGKAP — arahan #3 Bimbingan 1
+# ============================================================
+vars_desk <- c("listrik_kwh_final_w", "listrik_kwh_perkapita_w",
+               "pengeluaran_listrik_rp_w", "pengeluaran_nonmakanan_nonlistrik_w",
+               "ukuran_rt_w", "pendidikan_krt", "share_listrik_nonfood_w")
+
+desk_w <- purrr::map_dfr(vars_desk, function(v) {
+  f <- as.formula(paste0("~", v))
+  m <- survey::svymean(f, desain, na.rm = TRUE)
+  tibble(variabel        = v,
+         rata_tertimbang = as.numeric(m),
+         se_rata         = as.numeric(survey::SE(m)),
+         stdev_tertimbang = sqrt(as.numeric(survey::svyvar(f, desain, na.rm = TRUE))))
+})
+
+desk_s <- ta_clean |>
+  select(all_of(vars_desk)) |>
+  tidyr::pivot_longer(everything(), names_to = "variabel", values_to = "nilai") |>
+  group_by(variabel) |>
+  summarise(n            = sum(!is.na(nilai)),
+            rata_sampel  = mean(nilai, na.rm = TRUE),
+            stdev_sampel = sd(nilai, na.rm = TRUE),
+            min_sampel   = min(nilai, na.rm = TRUE),
+            maks_sampel  = max(nilai, na.rm = TRUE),
+            .groups = "drop")
+
+tabel_deskriptif <- left_join(desk_s, desk_w, by = "variabel")
+print(as.data.frame(tabel_deskriptif))
+write_csv(tabel_deskriptif, file.path(folder_output, "14b_deskriptif_lengkap.csv"))
+
+# Ekstrem sebelum winsorizing, untuk lampiran
+ekstrem_prawinsor <- ta |>
+  summarise(across(c(listrik_kwh_final, pengeluaran_listrik_rp,
+                     pengeluaran_nonmakanan_nonlistrik),
+                   list(min = \(z) min(z, na.rm = TRUE),
+                        maks = \(z) max(z, na.rm = TRUE))))
+print(as.data.frame(ekstrem_prawinsor))
+write_csv(ekstrem_prawinsor, file.path(folder_output, "14c_ekstrem_sebelum_winsorizing.csv"))
+
+# Deskriptif per klaster (bahan Tabel 4.2/4.3)
+profil_klaster_lengkap <- data_hasil |>
+  group_by(cluster) |>
+  summarise(across(all_of(vars_desk),
+                   list(rata  = \(z) mean(z, na.rm = TRUE),
+                        stdev = \(z) sd(z, na.rm = TRUE),
+                        min   = \(z) min(z, na.rm = TRUE),
+                        maks  = \(z) max(z, na.rm = TRUE))),
+            .groups = "drop")
+write_csv(profil_klaster_lengkap,
+          file.path(folder_output, "23b_profil_klaster_lengkap.csv"))
+
+
+# ============================================================
 # 11. VISUALISASI DESKRIPTIF
 # ============================================================
 
@@ -937,6 +990,29 @@ if (is.na(k_opt)) {
 if (!k_opt %in% k_range) {
   stop(paste("k_opt harus berada dalam rentang", min(k_range), "sampai", max(k_range)))
 }
+
+# ============================================================
+# 13b. DIAGNOSTIK KESEIMBANGAN KLASTER — bahan diskusi arahan #2
+# ============================================================
+x_mentah <- ta_clean |>
+  transmute(listrik_kwh_final, pengeluaran_nonmakanan_nonlistrik,
+            ukuran_rt, pendidikan_krt) |>
+  scale()
+
+diag_seimbang <- purrr::map_dfr(2:5, function(k) {
+  a <- kmeans(x,        centers = k, nstart = 50, iter.max = 100)
+  b <- kmeans(x_mentah, centers = k, nstart = 50, iter.max = 100)
+  tibble(
+    k = k,
+    versi  = c("log + winsorizing (dipakai)", "mentah tanpa transformasi"),
+    ukuran = c(paste(sort(a$size), collapse = " / "),
+               paste(sort(b$size), collapse = " / ")),
+    klaster_terkecil_persen = c(100 * min(a$size) / nrow(x),
+                                100 * min(b$size) / nrow(x_mentah))
+  )
+})
+print(as.data.frame(diag_seimbang))
+write_csv(diag_seimbang, file.path(folder_output, "18b_diagnostik_keseimbangan.csv"))
 
 
 # ============================================================
