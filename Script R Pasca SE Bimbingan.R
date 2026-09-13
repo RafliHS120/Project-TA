@@ -1003,7 +1003,7 @@ diag_seimbang <- purrr::map_dfr(2:5, function(k) {
   )
 })
 print(as.data.frame(diag_seimbang))
-write_csv(diag_seimbang, file.path(folder_output, "18b_diagnostik_keseimbangan.csv"))
+
 
 # ============================================================
 # 13c. EKSPLORASI SPESIFIKASI VARIABEL — SESI O
@@ -1090,7 +1090,53 @@ hasil <- purrr::map_dfr(names(spek), function(nm) {
 })
 
 print(as.data.frame(hasil))
-readr::write_csv(hasil, file.path(folder_output, "18c_eksplorasi_spesifikasi.csv"))
+
+
+# ============================================================
+# 13d. SEL YANG BELUM PERNAH DIUJI: winsorizing YA, ln TIDAK
+# ============================================================
+
+set.seed(seed_kmeans)
+
+vars_13d <- c("listrik_kwh_final_w",
+              "pengeluaran_nonmakanan_nonlistrik_w",
+              "pendidikan_krt")
+
+X13d <- ta_clean |> dplyr::select(all_of(vars_13d)) |> scale()
+d13d <- dist(X13d)
+
+hasil_13d <- purrr::map_dfr(2:5, function(k) {
+  km <- kmeans(X13d, centers = k, nstart = 50, iter.max = 1000)
+  tibble(
+    spesifikasi   = "S2 winsor tanpa ln",
+    k             = k,
+    silhouette    = round(mean(cluster::silhouette(km$cluster, d13d)[, 3]), 4),
+    ukuran        = paste(sort(km$size), collapse = " / "),
+    terkecil_pers = round(100 * min(km$size) / nrow(X13d), 2),
+    cramerV_ac    = round(cramer_v(km$cluster, ta_clean[[kol_ac]]), 4)
+  )
+})
+
+print(as.data.frame(hasil_13d))
+write_csv(hasil_13d, file.path(folder_output, "18d_winsor_tanpa_ln.csv"))
+
+set.seed(seed_kmeans)
+km13e <- kmeans(X13d, centers = 2, nstart = 50, iter.max = 1000)
+
+profil_13e <- ta_clean |>
+  dplyr::mutate(kl = km13e$cluster) |>
+  dplyr::group_by(kl) |>
+  dplyr::summarise(
+    n            = dplyr::n(),
+    rata_kwh     = round(mean(listrik_kwh_final_w), 1),
+    maks_kwh     = round(max(listrik_kwh_final_w), 1),
+    rata_nonmkn  = round(mean(pengeluaran_nonmakanan_nonlistrik_w), 0),
+    rata_didik   = round(mean(pendidikan_krt), 2),
+    prop_ac      = round(mean(ta_clean[[kol_ac]][dplyr::cur_group_rows()] ==
+                                sort(unique(ta_clean[[kol_ac]]))[2]), 4)
+  )
+
+print(as.data.frame(profil_13e))
 
 # ============================================================
 # 14. K-MEANS FINAL
@@ -1392,6 +1438,10 @@ boxm_result <- biotools::boxM(
 
 print(boxm_result)
 capture.output(boxm_result, file = file.path(folder_output, "38_box_m.txt"))
+
+write_csv(diag_seimbang, file.path(folder_output, "18b_diagnostik_keseimbangan.csv"))
+
+readr::write_csv(hasil, file.path(folder_output, "18c_eksplorasi_spesifikasi.csv"))
 
 
 # ============================================================
