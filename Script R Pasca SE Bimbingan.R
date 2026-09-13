@@ -41,7 +41,16 @@ k_opt <- NA
 
 # Tarif asumsi untuk estimasi kWh jika R233 tidak terisi.
 # Ganti angka ini jika Anda punya tarif resmi yang lebih sesuai.
-tarif_kwh_asumsi <- 1493.62
+# ============================================================
+# TARIF LISTRIK BERDASARKAN KELOMPOK DAYA SUSENAS
+# ============================================================
+
+tarif_450 <- 415
+tarif_900 <- 1352
+tarif_1300 <- 1444.70
+
+# fallback untuk rumah tangga tanpa informasi daya
+tarif_fallback <- 1493.62
 
 # Minimal proporsi rumah tangga dengan kWh tercatat positif agar R233 dipakai sebagai variabel utama.
 # Jika di bawah threshold ini, script memakai estimasi kWh dari rupiah listrik.
@@ -276,7 +285,7 @@ krt <- kor_ind1 |>
   ungroup() |>
   transmute(
     idrt,
-    pendidikan_krt = recode_pendidikan_r613(r613),
+    pendidikan_krt = safe_num(r613),
     r613_asli = safe_num(r613)
   )
 
@@ -287,35 +296,74 @@ rt <- kor_rt |>
   ungroup() |>
   transmute(
     idrt,
+    
     r101 = safe_num(r101),
     r102 = safe_num(r102),
     r105 = safe_num(r105),
+    
     fwt = safe_num(fwt),
+    
     ukuran_rt = safe_num(r301),
+    
+    # Kategori daya listrik Susenas
+    daya_susenas = safe_num(r1616b1),
     
     # Kepemilikan AC
     ac = case_when(
       safe_num(r1801c) == 1 ~ 1L,
-      safe_num(r1801c) %in% c(0, 2, 5) ~ 0L,
+      safe_num(r1801c) %in% c(0,2,5) ~ 0L,
       TRUE ~ NA_integer_
     ),
     
-    # Daya meter, jika tersedia
     daya_meter_1 = if ("r1616b1" %in% names(kor_rt)) safe_num(r1616b1) else NA_real_,
     daya_meter_2 = if ("r1616b2" %in% names(kor_rt)) safe_num(r1616b2) else NA_real_,
     daya_meter_3 = if ("r1616b3" %in% names(kor_rt)) safe_num(r1616b3) else NA_real_
   ) |>
   mutate(
+    
+    kategori_tarif = case_when(
+      daya_susenas == 1 ~ "450 VA",
+      daya_susenas == 2 ~ "900 VA",
+      daya_susenas >= 3 ~ ">=1300 VA",
+      TRUE ~ "Tanpa meter"
+    ),
+    
+    tarif_kwh = case_when(
+      kategori_tarif == "450 VA" ~ tarif_450,
+      kategori_tarif == "900 VA" ~ tarif_900,
+      kategori_tarif == ">=1300 VA" ~ tarif_1300,
+      kategori_tarif == "Tanpa meter" ~ tarif_fallback,
+      TRUE ~ tarif_fallback
+    ),
+    
     daya_meter_total = rowSums(
       cbind(
-        replace_na(daya_meter_1, 0),
-        replace_na(daya_meter_2, 0),
-        replace_na(daya_meter_3, 0)
+        replace_na(daya_meter_1,0),
+        replace_na(daya_meter_2,0),
+        replace_na(daya_meter_3,0)
       ),
       na.rm = TRUE
     ),
-    daya_meter_total = if_else(daya_meter_total == 0, NA_real_, daya_meter_total)
+    
+    daya_meter_total =
+      if_else(daya_meter_total == 0,
+              NA_real_,
+              daya_meter_total)
   )
+
+# Diagnostik distribusi tarif
+diag_tarif <- rt |>
+  count(
+    kategori_tarif,
+    tarif_kwh
+  )
+
+print(diag_tarif)
+
+write_csv(
+  diag_tarif,
+  file.path(folder_output,"03c_distribusi_tarif_listrik.csv")
+)
 
 # ============================================================
 # 7. BENTUK DATA LISTRIK DAN PENGELUARAN DARI KP
@@ -357,25 +405,69 @@ kp_hh <- kp |>
     wert = max(safe_num(wert), na.rm = TRUE),
     .groups = "drop"
   ) |>
-  mutate(wert = if_else(is.infinite(wert), NA_real_, wert)) |>
-  left_join(listrik_kwh_r233, by = "idrt") |>
-  left_join(listrik_rp_r234, by = "idrt") |>
-  left_join(nonfood_total, by = "idrt") |>
   mutate(
-    kwh_listrik_tercatat = if_else(is.na(kwh_listrik_tercatat), 0, kwh_listrik_tercatat),
-    pengeluaran_listrik_rp = if_else(is.na(pengeluaran_listrik_rp), 0, pengeluaran_listrik_rp),
-    pengeluaran_nonmakanan = if_else(is.na(pengeluaran_nonmakanan), 0, pengeluaran_nonmakanan),
-    
-    # Estimasi kWh dari rupiah listrik jika R233 tidak tersedia/bernilai 0.
-    kwh_listrik_estimasi = pengeluaran_listrik_rp / tarif_kwh_asumsi,
-    
-    # Pengeluaran bukan makanan selain listrik.
-    pengeluaran_nonmakanan_nonlistrik = pengeluaran_nonmakanan - pengeluaran_listrik_rp,
-    pengeluaran_nonmakanan_nonlistrik = if_else(
-      pengeluaran_nonmakanan_nonlistrik < 0,
+    wert = if_else(
+      is.infinite(wert),
       NA_real_,
-      pengeluaran_nonmakanan_nonlistrik
+      wert
     )
+  ) |>
+  left_join(
+    rt |>
+      select(
+        idrt,
+        kategori_tarif,
+        tarif_kwh
+      ),
+    by="idrt"
+  ) |>
+  left_join(
+    listrik_kwh_r233,
+    by="idrt"
+  ) |>
+  left_join(
+    listrik_rp_r234,
+    by="idrt"
+  ) |>
+  left_join(
+    nonfood_total,
+    by="idrt"
+  ) |>
+  mutate(
+    kwh_listrik_tercatat =
+      if_else(
+        is.na(kwh_listrik_tercatat),
+        0,
+        kwh_listrik_tercatat
+      ),
+    
+    pengeluaran_listrik_rp =
+      if_else(
+        is.na(pengeluaran_listrik_rp),
+        0,
+        pengeluaran_listrik_rp
+      ),
+    
+    pengeluaran_nonmakanan =
+      if_else(
+        is.na(pengeluaran_nonmakanan),
+        0,
+        pengeluaran_nonmakanan
+      ),
+    
+    kwh_listrik_estimasi =
+      pengeluaran_listrik_rp / tarif_kwh,
+    
+    pengeluaran_nonmakanan_nonlistrik =
+      pengeluaran_nonmakanan -
+      pengeluaran_listrik_rp,
+    
+    pengeluaran_nonmakanan_nonlistrik =
+      if_else(
+        pengeluaran_nonmakanan_nonlistrik < 0,
+        NA_real_,
+        pengeluaran_nonmakanan_nonlistrik
+      )
   )
 
 # ============================================================
@@ -397,9 +489,8 @@ if (gunakan_kwh_tercatat) {
 } else {
   warning(
     paste0(
-      "R233 kWh tidak terisi cukup baik. Proporsi kWh positif hanya ",
-      round(prop_kwh_positif * 100, 2),
-      "%. Script memakai kWh estimasi = R234 / tarif_kwh_asumsi."
+      "R233 kWh tidak tersedia. ",
+      "Script memakai estimasi kWh = R234 / tarif berdasarkan kelompok daya Susenas."
     )
   )
 }
@@ -491,10 +582,46 @@ ta <- rt |>
     )
   )
 
+cek_join_pendidikan <- ta |>
+  summarise(
+    total=n(),
+    pendidikan_tersedia=sum(!is.na(pendidikan_krt)),
+    pendidikan_missing=sum(is.na(pendidikan_krt))
+  )
+
+print(cek_join_pendidikan)
+
 # Filter hanya DKI Jakarta bila R101 = 31.
 # Jika file memang sudah DKI Jakarta, ini tetap aman.
 ta <- ta |>
   filter(r101 == 31)
+
+# Cek hasil estimasi kWh
+
+cek_tarif_kwh <- ta |>
+  summarise(
+    jumlah_ruta = n(),
+    median_kwh = median(
+      listrik_kwh_final,
+      na.rm=TRUE
+    ),
+    min_kwh = min(
+      listrik_kwh_final,
+      na.rm=TRUE
+    ),
+    max_kwh = max(
+      listrik_kwh_final,
+      na.rm=TRUE
+    )
+  )
+
+print(cek_tarif_kwh)
+
+write_csv(
+  cek_tarif_kwh,
+  file.path(folder_output,
+            "04_validasi_estimasi_kwh.csv")
+)
 
 glimpse(ta)
 skim(
@@ -537,7 +664,7 @@ diag_r613_krt <- kor_ind1 |>
   mutate(persen = 100 * n / sum(n)) |>
   arrange(r613)
 
-print(diag_r613_krt, n = Inf)
+print(as.data.frame(diag_r613_krt))
 write_csv(diag_r613_krt, file.path(folder_output, "05c_distribusi_r613_krt.csv"))
 
 if ("r615" %in% names(kor_ind1)) {
@@ -556,6 +683,11 @@ write_csv(ta, file.path(folder_output, "05_data_gabungan_awal.csv"))
 # ============================================================
 # 10. CLEANING DATA ANALISIS
 # ============================================================
+summary(ta$pendidikan_krt)
+
+sum(is.na(ta$pendidikan_krt))
+
+nrow(ta)
 
 ta_clean <- ta |>
   filter(
@@ -1226,3 +1358,4 @@ cat("Jumlah klaster final:", k_opt, "\n")
 cat("Akurasi diskriminan:", round(akurasi_lda * 100, 2), "%\n")
 cat("Output tersimpan di:", folder_output, "\n")
 cat("============================================================\n")
+
