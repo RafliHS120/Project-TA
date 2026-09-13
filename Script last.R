@@ -1014,6 +1014,92 @@ diag_seimbang <- purrr::map_dfr(2:5, function(k) {
 print(as.data.frame(diag_seimbang))
 write_csv(diag_seimbang, file.path(folder_output, "18b_diagnostik_keseimbangan.csv"))
 
+# ============================================================
+# 13c. EKSPLORASI SPESIFIKASI VARIABEL — SESI O
+#      Menguji S0/S1/S2 x (winsor on/off) untuk K = 2..5
+# ============================================================
+
+# --- KONFIGURASI: sesuaikan nama kolom bila berbeda ---
+kol_ac <- "ac"   # kolom kepemilikan AC di ta_clean (0/1). GANTI bila namanya lain.
+
+stopifnot(all(c("listrik_kwh_final", "pengeluaran_nonmakanan_nonlistrik",
+                "ukuran_rt", "pendidikan_krt") %in% names(ta_clean)))
+if (!kol_ac %in% names(ta_clean)) stop("Nama kolom AC salah. Isi 'kol_ac' dengan nama yang benar.")
+
+# --- PEMERIKSAAN PEMBATAL: apakah kolom masih mentah? ---
+maks_kwh <- max(ta_clean$listrik_kwh_final, na.rm = TRUE)
+message("Maksimum listrik_kwh_final di ta_clean: ", round(maks_kwh, 2))
+if (maks_kwh < 5000) {
+  stop(paste0(
+    "DIHENTIKAN. Maksimum kWh = ", round(maks_kwh, 2),
+    " (berkas 14c mencatat nilai mentah 17.797,59). ",
+    "Artinya kolom ini SUDAH di-winsorize sebelum masuk ta_clean, ",
+    "sehingga skenario 'tanpa winsorizing' tidak dapat diuji dari sini. ",
+    "Laporkan pesan ini apa adanya sebelum melanjutkan."
+  ))
+}
+
+set.seed(seed_kmeans)
+
+basis <- ta_clean |>
+  dplyr::transmute(
+    kwh        = listrik_kwh_final,
+    nonfood    = pengeluaran_nonmakanan_nonlistrik,
+    urt        = ukuran_rt,
+    didik      = pendidikan_krt,
+    ac         = .data[[kol_ac]]
+  ) |>
+  dplyr::mutate(
+    kwh_pc     = kwh / urt,
+    nonfood_pc = nonfood / urt
+  )
+
+spek <- list(
+  S0 = c("kwh", "nonfood", "urt", "didik"),        # spesifikasi sekarang
+  S1 = c("kwh_pc", "nonfood_pc", "didik"),         # per kapita, tanpa ukuran RT
+  S2 = c("kwh", "nonfood", "didik")                # total, ukuran RT dibuang
+)
+
+var_moneter <- c("kwh", "nonfood", "kwh_pc", "nonfood_pc")
+
+buat_matriks <- function(vars, pakai_winsor) {
+  m <- as.data.frame(basis[, vars, drop = FALSE])
+  lv <- intersect(vars, var_moneter)
+  if (pakai_winsor) m[lv] <- lapply(m[lv], winsorize)
+  m[lv] <- lapply(m[lv], log1p)
+  scale(m)
+}
+
+cramer_v <- function(klaster, ac) {
+  tab <- table(klaster, ac)
+  khi <- suppressWarnings(chisq.test(tab, correct = FALSE))$statistic
+  as.numeric(sqrt(khi / (sum(tab) * (min(dim(tab)) - 1))))
+}
+
+hasil <- purrr::map_dfr(names(spek), function(nm) {
+  purrr::map_dfr(c(TRUE, FALSE), function(w) {
+    X <- buat_matriks(spek[[nm]], w)
+    d <- dist(X)                      # dihitung sekali per spesifikasi
+    out <- purrr::map_dfr(2:5, function(k) {
+      km  <- kmeans(X, centers = k, nstart = 25, iter.max = 100)
+      sil <- mean(cluster::silhouette(km$cluster, d)[, 3])
+      tibble::tibble(
+        spesifikasi   = nm,
+        winsorizing   = ifelse(w, "ya", "tidak"),
+        k             = k,
+        silhouette    = round(sil, 4),
+        ukuran        = paste(sort(km$size), collapse = " / "),
+        terkecil_pers = round(100 * min(km$size) / nrow(X), 2),
+        cramerV_ac    = round(cramer_v(km$cluster, basis$ac), 4)
+      )
+    })
+    rm(d); gc()
+    out
+  })
+})
+
+print(as.data.frame(hasil))
+readr::write_csv(hasil, file.path(folder_output, "18c_eksplorasi_spesifikasi.csv"))
 
 # ============================================================
 # 14. K-MEANS FINAL
