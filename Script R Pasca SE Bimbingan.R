@@ -867,12 +867,15 @@ ggsave(file.path(folder_output, "17_scatter_estimasi_kwh_nonfood.png"), p_scatte
 # 12. DATA UNTUK K-MEANS
 # ============================================================
 
+# Spesifikasi S2 (keputusan Sesi O): ukuran rumah tangga DIKELUARKAN dari
+# variabel pembentuk klaster dan dipindahkan menjadi variabel penciri.
 cluster_vars <- c(
   "ln_listrik_kwh",
   "ln_pengeluaran_nonmakanan_nonlistrik",
-  "ukuran_rt_w",
   "pendidikan_krt"
 )
+stopifnot(length(cluster_vars) == 3)
+cat("\n[CEK S2] Variabel pembentuk klaster:", paste(cluster_vars, collapse = ", "), "\n")
 
 data_cluster <- ta_clean |>
   select(
@@ -923,11 +926,11 @@ set.seed(seed_kmeans)
 k_range <- 2:min(8, nrow(x) - 1)
 
 wss <- purrr::map_dbl(k_range, function(k) {
-  kmeans(x, centers = k, nstart = 50, iter.max = 100)$tot.withinss
+  kmeans(x, centers = k, nstart = 50, iter.max = 1000)$tot.withinss
 })
 
 sil <- purrr::map_dbl(k_range, function(k) {
-  km <- kmeans(x, centers = k, nstart = 50, iter.max = 100)
+  km <- kmeans(x, centers = k, nstart = 50, iter.max = 1000)
   mean(cluster::silhouette(km$cluster, dist(x))[, 3])
 })
 
@@ -984,12 +987,12 @@ if (!k_opt %in% k_range) {
 # ============================================================
 x_mentah <- ta_clean |>
   transmute(listrik_kwh_final, pengeluaran_nonmakanan_nonlistrik,
-            ukuran_rt, pendidikan_krt) |>
+            pendidikan_krt) |>
   scale()
 
 diag_seimbang <- purrr::map_dfr(2:5, function(k) {
-  a <- kmeans(x,        centers = k, nstart = 50, iter.max = 100)
-  b <- kmeans(x_mentah, centers = k, nstart = 50, iter.max = 100)
+  a <- kmeans(x,        centers = k, nstart = 50, iter.max = 1000)
+  b <- kmeans(x_mentah, centers = k, nstart = 50, iter.max = 1000)
   tibble(
     k = k,
     versi  = c("log + winsorizing (dipakai)", "mentah tanpa transformasi"),
@@ -1069,7 +1072,7 @@ hasil <- purrr::map_dfr(names(spek), function(nm) {
     X <- buat_matriks(spek[[nm]], w)
     d <- dist(X)                      # dihitung sekali per spesifikasi
     out <- purrr::map_dfr(2:5, function(k) {
-      km  <- kmeans(X, centers = k, nstart = 25, iter.max = 100)
+      km  <- kmeans(X, centers = k, nstart = 25, iter.max = 1000)
       sil <- mean(cluster::silhouette(km$cluster, d)[, 3])
       tibble::tibble(
         spesifikasi   = nm,
@@ -1099,8 +1102,30 @@ km_final <- kmeans(
   x,
   centers = k_opt,
   nstart = 100,
-  iter.max = 100
+  iter.max = 1000
 )
+
+# --- Penguncian arah label klaster (Sesi P) -------------------------
+# Klaster diurutkan naik menurut centroid ln estimasi kWh, sehingga
+# Klaster 1 SELALU konsumsi rendah dan Klaster K SELALU konsumsi tinggi.
+# Ini hanya penomoran ulang; keanggotaan tiap rumah tangga tidak berubah.
+urutan <- order(km_final$centers[, "z_ln_listrik_kwh"])
+peta_label <- integer(k_opt)
+peta_label[urutan] <- seq_len(k_opt)
+
+cat("\n[CEK LABEL] Pemetaan label klaster (lama -> baru):\n")
+print(data.frame(label_lama = seq_len(k_opt), label_baru = peta_label))
+
+km_final$cluster  <- peta_label[km_final$cluster]
+km_final$centers  <- km_final$centers[urutan, , drop = FALSE]
+rownames(km_final$centers) <- seq_len(k_opt)
+km_final$size     <- km_final$size[urutan]
+km_final$withinss <- km_final$withinss[urutan]
+
+cat("[CEK LABEL] Ukuran klaster setelah penomoran ulang:",
+    paste(km_final$size, collapse = " / "), "\n")
+cat("[CEK LABEL] ifault kmeans (0 atau NULL = aman):",
+    ifelse(is.null(km_final$ifault), "NULL", km_final$ifault), "\n")
 
 data_hasil <- data_model |>
   mutate(cluster = factor(km_final$cluster))
@@ -1296,12 +1321,13 @@ ggsave(file.path(folder_output, "30_pendidikan_krt_bar.png"), p_pendidikan_bar, 
 # 17. UJI BEDA UNIVARIAT ANTAR KLASTER
 # ============================================================
 
+# S2: tiga variabel pembentuk. ukuran_rt_w pindah ke blok penciri (22.9).
 uji_vars <- c(
   "listrik_kwh_final_w",
   "pengeluaran_nonmakanan_nonlistrik_w",
-  "ukuran_rt_w",
   "pendidikan_krt"
 )
+stopifnot(length(uji_vars) == 3)
 
 uji_kruskal <- purrr::map_dfr(uji_vars, function(v) {
   formula <- as.formula(paste(v, "~ cluster"))
@@ -1640,3 +1666,27 @@ cat("Cramer's V daya terpasang:", round(v_daya, 3), "\n")
 capture.output(tab_daya, persen_daya_w, uji_daya, uji_daya_w,
                paste("Cramer's V:", round(v_daya, 3)),
                file = file.path(folder_output, "50_daya_terpasang_x_klaster.txt"))
+
+# ============================================================
+# 22.9 UKURAN RUMAH TANGGA SEBAGAI VARIABEL PENCIRI (Sesi P, S2)
+# ============================================================
+
+ukuran_profil <- data_hasil |>
+  group_by(cluster) |>
+  summarise(
+    n_sampel              = n(),
+    rata_tertimbang       = weighted.mean(ukuran_rt_w, bobot, na.rm = TRUE),
+    rata_tidak_tertimbang = mean(ukuran_rt_w, na.rm = TRUE),
+    sd                    = sd(ukuran_rt_w, na.rm = TRUE),
+    min                   = min(ukuran_rt_w, na.rm = TRUE),
+    maks                  = max(ukuran_rt_w, na.rm = TRUE),
+    .groups = "drop"
+  )
+print(ukuran_profil)
+write_csv(ukuran_profil, file.path(folder_output, "51_penciri_ukuran_rt.csv"))
+
+uji_ukuran_rt <- broom::tidy(
+  kruskal.test(ukuran_rt_w ~ cluster, data = data_hasil)
+)
+print(uji_ukuran_rt)
+write_csv(uji_ukuran_rt, file.path(folder_output, "52_uji_ukuran_rt.csv"))
