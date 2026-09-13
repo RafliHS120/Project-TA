@@ -1358,4 +1358,3 @@ cat("Jumlah klaster final:", k_opt, "\n")
 cat("Akurasi diskriminan:", round(akurasi_lda * 100, 2), "%\n")
 cat("Output tersimpan di:", folder_output, "\n")
 cat("============================================================\n")
-
