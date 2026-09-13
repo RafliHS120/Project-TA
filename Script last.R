@@ -812,18 +812,6 @@ ekstrem_prawinsor <- ta |>
 print(as.data.frame(ekstrem_prawinsor))
 write_csv(ekstrem_prawinsor, file.path(folder_output, "14c_ekstrem_sebelum_winsorizing.csv"))
 
-# Deskriptif per klaster (bahan Tabel 4.2/4.3)
-profil_klaster_lengkap <- data_hasil |>
-  group_by(cluster) |>
-  summarise(across(all_of(vars_desk),
-                   list(rata  = \(z) mean(z, na.rm = TRUE),
-                        stdev = \(z) sd(z, na.rm = TRUE),
-                        min   = \(z) min(z, na.rm = TRUE),
-                        maks  = \(z) max(z, na.rm = TRUE))),
-            .groups = "drop")
-write_csv(profil_klaster_lengkap,
-          file.path(folder_output, "23b_profil_klaster_lengkap.csv"))
-
 
 # ============================================================
 # 11. VISUALISASI DESKRIPTIF
@@ -1116,6 +1104,18 @@ km_final <- kmeans(
 
 data_hasil <- data_model |>
   mutate(cluster = factor(km_final$cluster))
+
+# Deskriptif per klaster (bahan Tabel 4.2/4.3)
+profil_klaster_lengkap <- data_hasil |>
+  group_by(cluster) |>
+  summarise(across(all_of(vars_desk),
+                   list(rata  = \(z) mean(z, na.rm = TRUE),
+                        stdev = \(z) sd(z, na.rm = TRUE),
+                        min   = \(z) min(z, na.rm = TRUE),
+                        maks  = \(z) max(z, na.rm = TRUE))),
+            .groups = "drop")
+write_csv(profil_klaster_lengkap,
+          file.path(folder_output, "23b_profil_klaster_lengkap.csv"))
 
 print(table(data_hasil$cluster))
 
