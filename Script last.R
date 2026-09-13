@@ -1117,6 +1117,24 @@ hasil_13d <- purrr::map_dfr(2:5, function(k) {
 print(as.data.frame(hasil_13d))
 write_csv(hasil_13d, file.path(folder_output, "18d_winsor_tanpa_ln.csv"))
 
+set.seed(seed_kmeans)
+km13e <- kmeans(X13d, centers = 2, nstart = 50, iter.max = 1000)
+
+profil_13e <- ta_clean |>
+  dplyr::mutate(kl = km13e$cluster) |>
+  dplyr::group_by(kl) |>
+  dplyr::summarise(
+    n            = dplyr::n(),
+    rata_kwh     = round(mean(listrik_kwh_final_w), 1),
+    maks_kwh     = round(max(listrik_kwh_final_w), 1),
+    rata_nonmkn  = round(mean(pengeluaran_nonmakanan_nonlistrik_w), 0),
+    rata_didik   = round(mean(pendidikan_krt), 2),
+    prop_ac      = round(mean(ta_clean[[kol_ac]][dplyr::cur_group_rows()] ==
+                              sort(unique(ta_clean[[kol_ac]]))[2]), 4)
+  )
+
+print(as.data.frame(profil_13e))
+
 # ============================================================
 # 14. K-MEANS FINAL
 # ============================================================
