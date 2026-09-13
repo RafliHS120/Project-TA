@@ -1152,10 +1152,9 @@ km_final <- kmeans(
 )
 
 # --- Penguncian arah label klaster (Sesi P) -------------------------
-# Klaster diurutkan naik menurut centroid ln estimasi kWh, sehingga
-# Klaster 1 SELALU konsumsi rendah dan Klaster K SELALU konsumsi tinggi.
-# Ini hanya penomoran ulang; keanggotaan tiap rumah tangga tidak berubah.
-urutan <- order(km_final$centers[, "z_ln_listrik_kwh"])
+# Klaster diurutkan naik menurut centroid estimasi kWh (skala winsorized),
+# sehingga Klaster 1 SELALU konsumsi rendah dan Klaster K SELALU tinggi.
+urutan <- order(km_final$centers[, "z_listrik_kwh_final_w"])
 peta_label <- integer(k_opt)
 peta_label[urutan] <- seq_len(k_opt)
 
