@@ -923,7 +923,10 @@ if (any(!is.finite(x))) {
 
 set.seed(seed_kmeans)
 
-k_range <- 2:min(8, nrow(x) - 1)
+k_range <- 1:min(8, nrow(x))
+
+limits = c(1, max(k_range))
+print(k_range)
 
 wss <- purrr::map_dbl(k_range, function(k) {
   kmeans(x, centers = k, nstart = 50, iter.max = 1000)$tot.withinss
@@ -953,8 +956,22 @@ p_elbow <- ggplot(evaluasi_k, aes(x = k, y = wss)) +
     y = "Within-Cluster Sum of Squares (WCSS)"
   ) +
   theme_minimal()
-
-ggsave(file.path(folder_output, "19_elbow_wcss.png"), p_elbow, width = 8, height = 5, dpi = 300)
+p_elbow <- ggplot(evaluasi_k, aes(x = k, y = wss)) +
+  geom_line() +
+  geom_point(size = 3) +
+  scale_x_continuous(
+    breaks = k_range,
+    limits = c(1, max(k_range)),
+    expand = c(0.05, 0)
+  ) +
+  labs(
+    title = "Metode Elbow untuk Penentuan Jumlah Klaster",
+    x = "Jumlah klaster (K)",
+    y = "Within-Cluster Sum of Squares (WCSS)"
+  ) +
+  theme_minimal()
+ggsave(file.path(folder_output, "19_elbow_wcss.png"), p_elbow, width = 9, height = 5, dpi = 300
+       
 
 p_sil <- ggplot(evaluasi_k, aes(x = k, y = silhouette)) +
   geom_line() +
