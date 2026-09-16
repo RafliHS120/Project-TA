@@ -720,9 +720,6 @@ Variabel pengeluaran nonmakanan selain listrik dibentuk dengan mengurangkan peng
 
 Penggunaan estimasi konsumsi listrik membawa dua implikasi metodologis. Pertama, hasil analisis dapat dibaca sebagai pola relatif konsumsi listrik antarrumah tangga, bukan sebagai pengukuran teknis konsumsi listrik aktual pada meter rumah tangga. Kedua, karena tarif yang dikenakan berbeda antargolongan daya, estimasi konsumsi listrik tidak lagi merupakan penskalaan tunggal atas pengeluaran listrik; dua rumah tangga dengan pengeluaran listrik yang sama dapat memiliki estimasi konsumsi yang berbeda apabila golongan dayanya berbeda. Interpretasi hasil klaster karena itu diarahkan pada pemetaan pola konsumsi dan karakteristik sosial ekonomi rumah tangga, bukan pada audit teknis penggunaan listrik per rumah tangga.
 
-> ⚠️ **PLACEHOLDER BELUM DIISI PADA BERKAS SUMBER.** Teks "[isi setelah output final]" masih berupa penanda kosong. Berdasarkan Subbab 4.2 dan 4.4, angka yang dimaksud adalah **4.994** rumah tangga.
-
-Secara metodologis, penggunaan estimasi konsumsi listrik dalam penelitian ini memiliki dua implikasi penting. Pertama, hasil analisis dapat digunakan untuk membaca pola relatif konsumsi listrik antar rumah tangga, tetapi tidak dimaksudkan sebagai pengukuran teknis konsumsi listrik aktual dari meter rumah tangga. Kedua, karena tarif acuan yang digunakan sama untuk seluruh rumah tangga, perbedaan estimasi konsumsi listrik antar rumah tangga pada dasarnya tetap mengikuti perbedaan pengeluaran listrik bulanan. Oleh karena itu, interpretasi hasil klaster lebih diarahkan pada pemetaan pola konsumsi dan karakteristik sosial ekonomi, bukan pada audit teknis penggunaan listrik per rumah tangga.
 
 ## 4.1 Gambaran Umum Konsumsi Listrik dan Karakteristik Sosial Ekonomi Rumah Tangga
 
@@ -774,85 +771,6 @@ Sumber: Susenas Maret 2025, diolah.
 Gambar 4.3 memperlihatkan perbedaan yang mencolok antara kedua kelompok. Kotak rumah tangga yang memiliki air conditioner berada seluruhnya di atas kotak rumah tangga yang tidak memiliki, dengan nilai tengah maupun kuartil yang lebih tinggi, dan sebarannya jauh lebih lebar. Rumah tangga tanpa air conditioner terkonsentrasi pada konsumsi rendah dengan sedikit pengamatan yang menonjol ke atas. Kepemilikan perangkat pendingin dengan demikian merupakan pembeda pola konsumsi listrik yang kuat sekalipun bukan variabel pembentuk klaster, sehingga variabel ini digunakan sebagai variabel penciri pada tahap penafsiran klaster.
 
 Dua temuan pada Tabel 4.1 berkonsekuensi langsung pada tahap pengelompokan. Pertama, konsumsi listrik dan pengeluaran nonmakanan selain listrik bersebaran menceng ke kanan dengan simpangan baku melebihi rata-ratanya, sehingga keduanya ditransformasikan dengan logaritma sebelum digunakan sebagai variabel pembentuk klaster agar jarak antar rumah tangga tidak ditentukan oleh sekelompok kecil rumah tangga berkonsumsi ekstrem. Kedua, ketiga variabel pembentuk klaster terukur pada satuan yang berbeda, yaitu kWh, rupiah, dan tahun, dengan rentang nilai yang terpaut jauh. Tanpa penyeragaman skala, variabel bersatuan rupiah akan mendominasi perhitungan jarak semata-mata karena angkanya lebih besar. Karena itu seluruh variabel pembentuk klaster distandardisasi menjadi skor Z sesudah transformasi logaritma diterapkan.
-
-### 4.2.1 Estimasi Konsumsi Listrik
-
-Estimasi konsumsi listrik rumah tangga diperoleh dari pengeluaran listrik bulanan yang dikonversi menjadi kWh menggunakan tarif acuan PLN DKI Jakarta 2024 sebesar Rp1.493,62/kWh. Analisis deskriptif menunjukkan bahwa rata-rata estimasi konsumsi listrik rumah tangga sebesar 266,7 kWh per bulan, dengan nilai median 155 kWh, dan kuartil pertama dan ketiga masing-masing 86 kWh dan 293 kWh. Nilai minimum tercatat 20,8 kWh dan maksimum 1.725 kWh, menunjukkan heterogenitas konsumsi listrik antar rumah tangga.
-
-![Gambar 4.1 Distribusi Estimasi Konsumsi Listrik Rumah Tangga](assets-ta/gambar-4-1-histogram-konsumsi.png)
-
-**Gambar 4.1 Distribusi Estimasi Konsumsi Listrik Rumah Tangga**
-
-> **Deskripsi Gambar 4.1.**
-> *Media internal:* `image9.png` · *Lokasi dokumen:* halaman 52 / halaman tercetak 46.
->
-> **Bentuk visual.** Histogram bergaya ggplot2 dengan latar putih dan garis kisi abu-abu tipis. Batang berwarna **abu-abu gelap solid**.
-> - **Judul di dalam gambar:** "Distribusi Estimasi Konsumsi Listrik Rumah Tangga"
-> - **Subjudul di dalam gambar:** "Estimasi kWh = pengeluaran listrik / tarif acuan Statistik PLN 2024"
-> - **Sumbu-X:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
-> - **Sumbu-Y:** "Jumlah rumah tangga sampel", tanda sumbu 0, 250, 500, 750, 1000
->
-> **Pola yang terlihat.** Distribusi sangat **menceng ke kanan (right-skewed)**. Batang pertama (dekat 0) berada di sekitar 420. Batang tertinggi berikutnya mencapai puncak sedikit di atas **1.000** rumah tangga, disusul batang ±980. Setelah itu frekuensi turun tajam: ±600, lalu ±340, ±280, ±240, ±200, dan seterusnya menurun landai. Pada rentang di atas ±500 kWh batang menjadi sangat pendek (di bawah 60) dan membentuk ekor panjang yang memanjang sampai sekitar 1.700 kWh. Terdapat satu **batang menonjol di ujung paling kanan** (sekitar 1.700–1.725 kWh) setinggi ±50, yang lebih tinggi daripada batang-batang tetangganya — pola khas nilai yang tertumpuk pada batas atas (kemungkinan efek *top-coding*/pemotongan pencilan).
-> *Nilai ketinggian batang dibaca dari posisi visual, sehingga bersifat perkiraan.*
->
-> **Angka pendukung dari teks di sekitar gambar.** Rata-rata 266,7 kWh/bulan; median 155 kWh; Q1 86 kWh; Q3 293 kWh; minimum 20,8 kWh; maksimum 1.725 kWh.
->
-> **Makna dalam konteks dokumen.** Selisih besar antara rata-rata (266,7) dan median (155) konsisten dengan bentuk distribusi yang menceng ke kanan. Grafik memperlihatkan heterogenitas konsumsi yang menjadi alasan utama penggunaan analisis klaster.
-
-### 4.2.2 Pengeluaran Non-Makanan Selain Listrik
-
-Variabel pengeluaran non-makanan selain listrik dihitung dengan mengurangi pengeluaran listrik dari total pengeluaran non-makanan. Rata-rata pengeluaran non-makanan selain listrik adalah Rp5.412.300 per bulan, dengan median Rp3.082.435, kuartil pertama Rp1.989.667, dan kuartil ketiga Rp5.554.583. Nilai ini mencerminkan kapasitas ekonomi rumah tangga di DKI Jakarta dan digunakan sebagai indikator untuk membedakan klaster berdasarkan kemampuan konsumsi non-listrik.
-
-![Gambar 4.2 Hubungan Pengeluaran Non-Makanan Non-Listrik dan Estimasi Konsumsi Listrik](assets-ta/gambar-4-2-scatter-pengeluaran-konsumsi.png)
-
-**Gambar 4.2 Hubungan Pengeluaran Non-Makanan Non-Listrik dan Estimasi Konsumsi Listrik**
-
-> **Deskripsi Gambar 4.2.**
-> *Media internal:* `image10.png` · *Lokasi dokumen:* halaman 52 / halaman tercetak 46.
->
-> **Bentuk visual.** *Scatter plot* satu warna (titik **hitam semi-transparan**, sehingga area padat tampak lebih pekat), latar putih dengan kisi abu-abu.
-> - **Judul di dalam gambar:** "Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik"
-> - **Sumbu-X:** "Pengeluaran nonmakanan selain listrik (Rp)", tanda sumbu 0; 10.000.000; 20.000.000; 30.000.000
-> - **Sumbu-Y:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
->
-> **Pola yang terlihat.** Kepadatan titik sangat ekstrem di **pojok kiri bawah** (pengeluaran di bawah ±Rp5 juta dan konsumsi di bawah ±300 kWh), membentuk gumpalan hitam pekat. Dari gumpalan itu titik menyebar membentuk kipas melebar ke kanan atas: makin tinggi pengeluaran, makin lebar rentang konsumsi listriknya. Arah hubungan **positif tetapi tidak rapat** — pada tingkat pengeluaran yang sama bisa ditemukan konsumsi dari mendekati 0 sampai di atas 1.500 kWh. Terlihat pula dua ciri artefak data: (1) **pita horizontal rapat di garis paling atas** (±1.725 kWh), yaitu titik-titik yang menumpuk di batas atas konsumsi; dan (2) **kolom vertikal rapat di tepi kanan** (±Rp35 juta), yaitu titik-titik yang menumpuk di batas atas pengeluaran.
->
-> **Angka pendukung dari teks.** Pengeluaran nonmakanan selain listrik: rata-rata Rp5.412.300; median Rp3.082.435; Q1 Rp1.989.667; Q3 Rp5.554.583.
->
-> **Makna dalam konteks dokumen.** Grafik mendukung gagasan bahwa kapasitas ekonomi berkaitan dengan intensitas penggunaan listrik. Namun sebaran yang sangat luas menunjukkan pengeluaran ekonomi bukan satu-satunya faktor pembeda.
-
-### 4.2.3 Ukuran Rumah Tangga dan Pendidikan Kepala Rumah Tangga
-
-Ukuran rumah tangga rata-rata adalah 3,68 anggota, sedangkan pendidikan kepala rumah tangga rata-rata setara 11,88 tahun sekolah. Variabel ini menunjukkan heterogenitas sosial dan kapasitas adaptasi rumah tangga terhadap kebutuhan listrik. Variabel pendidikan digunakan untuk menilai kapasitas pengetahuan dan potensi pengelolaan penggunaan listrik dalam rumah tangga.
-
-### 4.2.4 Kepemilikan AC
-
-Analisis proporsi rumah tangga yang memiliki AC menunjukkan bahwa 38,85 persen rumah tangga memiliki perangkat pendingin, sedangkan 61,15 persen lainnya tidak. Variabel ini digunakan untuk tujuan profiling klaster, membantu memahami perbedaan adaptasi pendinginan antar rumah tangga.
-
-![Gambar 4.3 Distribusi Konsumsi Listrik Menurut Kepemilikan AC](assets-ta/gambar-4-3-boxplot-ac.png)
-
-**Gambar 4.3 Distribusi Konsumsi Listrik Menurut Kepemilikan AC**
-
-> **Deskripsi Gambar 4.3.**
-> *Media internal:* `image11.png` · *Lokasi dokumen:* halaman 53 / halaman tercetak 47.
->
-> **Bentuk visual.** Dua *boxplot* berdampingan yang ditumpangi hamburan titik observasi individual (*jitter*), semuanya monokrom abu-abu/hitam. Kotak boxplot bergaris tepi hitam tanpa isi warna.
-> - **Judul di dalam gambar:** "Estimasi Konsumsi Listrik Menurut Kepemilikan AC"
-> - **Sumbu-X:** "Kepemilikan AC", dua kategori: **"Tidak memiliki AC"** (kiri) dan **"Memiliki AC"** (kanan)
-> - **Sumbu-Y:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
->
-> **Pola yang terlihat.**
-> - **Kelompok "Tidak memiliki AC":** kotak sangat rendah dan pipih, berada kira-kira di rentang 60–160 kWh dengan garis median di sekitar 100 kWh. Awan titik sangat padat dan terkonsentrasi di bawah ±250 kWh. Ada sedikit pencilan menyebar ke atas hingga sekitar 1.600 kWh, tetapi jumlahnya sangat sedikit.
-> - **Kelompok "Memiliki AC":** kotak jauh lebih tinggi dan lebih lebar, kira-kira dari 220 sampai 500 kWh, dengan garis median di sekitar 290 kWh. *Whisker* atas memanjang sampai ±880 kWh. Awan titik menyebar sangat lebar ke atas, dan terdapat pita titik rapat di garis batas atas (±1.725 kWh).
-> *Posisi kuartil dibaca secara visual, sehingga bersifat perkiraan.*
->
-> **Angka pendukung dari teks.** Pada data hasil cleaning, 38,85% rumah tangga memiliki AC dan 61,15% tidak memiliki AC.
->
-> **Makna dalam konteks dokumen.** Gambar menunjukkan keterkaitan kuat antara kepemilikan AC dan konsumsi listrik. Karena AC tidak dipakai sebagai variabel pembentuk klaster, hubungan ini dimanfaatkan terutama untuk profiling dan interpretasi kemampuan adaptasi pendinginan.
-
-### 4.2.5 Ringkasan Deskriptif Tertimbang
-
-Analisis tertimbang menggunakan bobot rumah tangga (FWT/WERT) dilakukan untuk memperhitungkan representasi rumah tangga dalam populasi. Hasil deskriptif tertimbang mencakup rata-rata dan kuantil variabel pembentuk klaster serta variabel profiling. Proporsi rumah tangga dengan AC sebesar 38,85 persen, sementara rata-rata estimasi konsumsi listrik per kapita adalah 83,69 kWh/bulan. Rata-rata share pengeluaran listrik terhadap pengeluaran non-makanan sebesar 7,29 persen, yang memberikan indikasi kontribusi listrik terhadap pengeluaran rumah tangga.
 
 ## 4.3 Penentuan Jumlah Klaster
 
