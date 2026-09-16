@@ -772,109 +772,89 @@ Gambar 4.3 memperlihatkan perbedaan yang mencolok antara kedua kelompok. Kotak r
 
 Dua temuan pada Tabel 4.1 berkonsekuensi langsung pada tahap pengelompokan. Pertama, konsumsi listrik dan pengeluaran nonmakanan selain listrik bersebaran menceng ke kanan dengan simpangan baku melebihi rata-ratanya, sehingga keduanya ditransformasikan dengan logaritma sebelum digunakan sebagai variabel pembentuk klaster agar jarak antar rumah tangga tidak ditentukan oleh sekelompok kecil rumah tangga berkonsumsi ekstrem. Kedua, ketiga variabel pembentuk klaster terukur pada satuan yang berbeda, yaitu kWh, rupiah, dan tahun, dengan rentang nilai yang terpaut jauh. Tanpa penyeragaman skala, variabel bersatuan rupiah akan mendominasi perhitungan jarak semata-mata karena angkanya lebih besar. Karena itu seluruh variabel pembentuk klaster distandardisasi menjadi skor Z sesudah transformasi logaritma diterapkan.
 
-## 4.3 Penentuan Jumlah Klaster
+4.2 Pembentukan Klaster Rumah Tangga
 
-Penentuan jumlah klaster merupakan tahap penting dalam analisis klaster karena akan memengaruhi tingkat homogenitas di dalam klaster dan heterogenitas antar klaster. Dalam penelitian ini, jumlah klaster ditentukan dengan mengombinasikan pertimbangan kuantitatif melalui metode Elbow dan nilai rata-rata silhouette, serta pertimbangan substantif yang berkaitan dengan tujuan penelitian.
+Subbab ini menjawab tujuan kedua penelitian, yaitu mengidentifikasi dan mengelompokkan rumah tangga di Provinsi DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi. Uraian disusun dalam dua tahap yang berurutan, yaitu penentuan jumlah klaster dan pembentukan klaster dengan metode K-Means. Pengelompokan dilakukan atas tiga variabel pembentuk klaster, yaitu konsumsi listrik hasil konversi, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga, yang seluruhnya telah ditransformasikan dengan logaritma natural dan distandardisasi menjadi skor Z sebagaimana diuraikan pada Subbab 3.4.3.
 
-Berdasarkan kurva Elbow, nilai within-cluster sum of squares (WCSS) menurun cukup tajam dari dua klaster hingga empat klaster, kemudian penurunannya mulai melandai pada jumlah klaster yang lebih besar. Pola ini menunjukkan bahwa penambahan klaster setelah titik tertentu tidak lagi memberikan penurunan variasi dalam klaster yang terlalu besar. Secara visual, perubahan bentuk kurva menunjukkan adanya titik siku pada rentang dua sampai empat klaster. Dengan demikian, dari sudut pandang metode Elbow, jumlah klaster yang layak dipertimbangkan tidak hanya dua klaster, tetapi juga empat klaster.
+4.2.1 Penentuan Jumlah Klaster
 
-![Gambar 4.4 Kurva Elbow untuk Penentuan Jumlah Klaster](assets-ta/gambar-4-4-kurva-elbow.png)
+Jumlah klaster ditentukan dengan membandingkan dua kriteria kuantitatif, yaitu within-cluster sum of squares (WCSS) melalui metode elbow dan rata-rata koefisien silhouette. Kedua kriteria dihitung untuk satu sampai delapan klaster dan disajikan pada Tabel 4.2.
 
-**Gambar 4.4 Kurva Elbow untuk Penentuan Jumlah Klaster**
+Tabel 4.2 Nilai WCSS dan Rata-Rata Koefisien Silhouette Menurut Jumlah Klaster, DKI Jakarta, Maret 2025 (n = 5.001)
 
-> **Deskripsi Gambar 4.4.**
-> *Media internal:* `image12.png` · *Lokasi dokumen:* halaman 54 / halaman tercetak 48.
->
-> **Bentuk visual.** Grafik garis tunggal berwarna **hitam** dengan penanda titik bulat pada tiap nilai K, latar putih dan kisi abu-abu tipis.
-> - **Judul di dalam gambar:** "Metode Elbow untuk Penentuan Jumlah Klaster"
-> - **Sumbu-X:** "Jumlah klaster (K)", nilai bulat 2 sampai 8
-> - **Sumbu-Y:** "Within-Cluster Sum of Squares (WCSS)", tanda sumbu 7500, 10000, 12500
->
-> **Pola yang terlihat.** Kurva menurun secara monoton dari kiri ke kanan. Penurunan paling curam terjadi pada segmen **K=2 → K=3** dan **K=3 → K=4**; setelah K=4 kemiringannya jelas melandai dan segmen K=5 sampai K=8 hampir mendekati garis lurus landai. Secara visual titik belok (siku) berada di sekitar **K=4**.
->
-> **Nilai perkiraan yang dibaca dari posisi titik:**
->
-> | K | WCSS (perkiraan visual) |
-> |---|---|
-> | 2 | ±14.200 |
-> | 3 | ±11.300 |
-> | 4 | ±9.100 |
-> | 5 | ±8.100 |
-> | 6 | ±7.200 |
-> | 7 | ±6.500 |
-> | 8 | ±6.000 |
->
-> Angka di atas dibaca dari posisi titik pada grafik, sehingga diperlakukan sebagai perkiraan, bukan transkripsi tabel.
->
-> **Makna dalam konteks dokumen.** Kurva Elbow tidak dipakai sendirian; dokumen menggabungkannya dengan silhouette dan pertimbangan substantif. Hasil akhirnya memilih dua klaster sebagai solusi utama, sementara empat klaster disebut alternatif yang masih layak untuk analisis lanjutan.
+Jumlah klaster (K)	WCSS	Penurunan WCSS dari K sebelumnya	Rata-rata koefisien silhouette
+1	15.000,00	—	tidak terdefinisi
+2	8.806,23	6.193,77	0,3640
+3	6.578,36	2.227,88	0,3149
+4	5.362,93	1.215,43	0,2907
+5	4.643,41	719,52	0,2848
+6	4.162,75	480,66	0,2643
+7	3.751,59	411,17	0,2728
+8	3.433,24	318,35	0,2786
 
-Selanjutnya, evaluasi dilakukan dengan menggunakan rata-rata silhouette. Nilai silhouette memberikan informasi mengenai tingkat kedekatan suatu observasi dengan klasternya sendiri dibandingkan dengan klaster lain. Hasil perhitungan menunjukkan bahwa nilai silhouette tertinggi diperoleh pada jumlah klaster sebanyak dua, yaitu sekitar 0,279. Nilai tertinggi berikutnya muncul pada empat klaster, yaitu sekitar 0,263, sedangkan pada jumlah klaster lainnya nilai silhouette cenderung lebih rendah. Temuan ini menunjukkan bahwa dua klaster memberikan pemisahan paling kuat secara statistik, meskipun empat klaster masih dapat dipandang sebagai alternatif yang cukup layak.
+Sumber: Susenas Maret 2025, diolah. Koefisien silhouette tidak terdefinisi pada satu klaster karena tidak terdapat klaster pembanding.
 
-![Gambar 4.5 Rata-Rata Silhouette Menurut Jumlah Klaster](assets-ta/gambar-4-5-silhouette.png)
+Nilai WCSS pada satu klaster tepat sebesar 15.000, yaitu hasil kali antara 5.000 derajat bebas dan tiga variabel pembentuk klaster. Kesesuaian angka tersebut menegaskan bahwa standardisasi skor Z berjalan sebagaimana mestinya, sehingga seluruh nilai WCSS pada Tabel 4.2 dapat dibaca sebagai proporsi keragaman baku yang tersisa di dalam klaster. Penambahan klaster dari satu menjadi dua menurunkan WCSS sebesar 6.193,77, yaitu lebih dari empat puluh persen keragaman total, sedangkan penambahan berikutnya hanya menurunkan 2.227,88 dan terus mengecil sesudahnya.
 
-**Gambar 4.5 Rata-Rata Silhouette Menurut Jumlah Klaster**
+Bentuk penurunan tersebut ditampilkan pada Gambar 4.4.
 
-> **Deskripsi Gambar 4.5.**
-> *Media internal:* `image13.png` · *Lokasi dokumen:* halaman 55 / halaman tercetak 49.
->
-> **Bentuk visual.** Grafik garis tunggal berwarna **hitam** dengan penanda titik bulat, latar putih.
-> - **Judul di dalam gambar:** "Rata-Rata Silhouette Menurut Jumlah Klaster"
-> - **Sumbu-X:** "Jumlah klaster (K)", nilai 2 sampai 8
-> - **Sumbu-Y:** "Rata-rata Silhouette", tanda sumbu 0.25, 0.26, 0.27, 0.28
->
-> **Pola yang terlihat — berbentuk zig-zag, bukan monoton.** Titik tertinggi berada di **K=2** (mendekati garis 0,28). Nilai lalu **jatuh tajam** ke titik terendah kedua di K=3, **naik kembali** ke puncak lokal di K=4, kemudian menurun bertahap pada K=5 dan K=6, mencapai **titik terendah** di K=7, lalu **sedikit naik** lagi di K=8. Perhatikan bahwa sumbu-Y dipotong pada rentang sempit (±0,245–0,280), sehingga selisih antartitik terlihat lebih dramatis daripada besaran sebenarnya.
->
-> **Angka yang tersedia:**
->
-> | K | Rata-rata silhouette | Sumber angka |
-> |---|---|---|
-> | 2 | ≈ 0,279 | disebut eksplisit dalam naskah |
-> | 3 | ≈ 0,246 | pembacaan visual |
-> | 4 | ≈ 0,263 | disebut eksplisit dalam naskah |
-> | 5 | ≈ 0,256 | pembacaan visual |
-> | 6 | ≈ 0,248 | pembacaan visual |
-> | 7 | ≈ 0,246 | pembacaan visual |
-> | 8 | ≈ 0,255 | pembacaan visual |
->
-> **Makna dalam konteks dokumen.** Silhouette menjadi alasan kuantitatif utama pemilihan dua klaster. Dokumen menekankan bahwa dua klaster memberi pemisahan paling kuat dan tetap mudah diinterpretasikan secara substantif.
+Gambar 4.4 Kurva Elbow untuk Penentuan Jumlah Klaster, DKI Jakarta, Maret 2025
+(berkas 19_elbow_wcss.png)
+Sumber: Susenas Maret 2025, diolah.
 
-Dengan mempertimbangkan kedua indikator tersebut, penelitian ini menetapkan dua klaster sebagai solusi utama. Keputusan ini didasarkan pada dua alasan. Pertama, secara kuantitatif jumlah klaster dua memberikan nilai silhouette tertinggi, sehingga menunjukkan pemisahan kelompok yang relatif paling baik. Kedua, secara substantif tujuan penelitian ini adalah membedakan rumah tangga berdasarkan pola konsumsi listrik dan karakteristik sosial ekonominya untuk mengidentifikasi kelompok dengan kapasitas adaptasi pendinginan yang relatif lebih terbatas dan kelompok dengan kapasitas yang relatif lebih tinggi. Dalam kerangka tujuan tersebut, solusi dua klaster masih memadai karena menghasilkan segmentasi yang tegas dan mudah diinterpretasikan.
+Gambar 4.4 memperlihatkan penurunan yang sangat curam pada segmen pertama, melandai secara nyata sesudah tiga klaster, dan hampir menjadi garis lurus pada lima klaster ke atas. Titik siku karena itu terbaca pada rentang dua hingga tiga klaster. Metode elbow sendiri bersandar pada penilaian visual atas titik perubahan kemiringan sehingga tidak menghasilkan satu jawaban tunggal, dan karena itu hasilnya dibandingkan dengan kriteria kedua.
 
-Meskipun demikian, hasil Elbow juga menunjukkan bahwa solusi empat klaster dapat dipertimbangkan sebagai analisis lanjutan atau uji kekokohan hasil. Artinya, penggunaan dua klaster dalam penelitian ini bukan berarti satu-satunya solusi yang mungkin, melainkan solusi utama yang dipilih karena paling sesuai dengan keseimbangan antara kualitas pemisahan statistik dan kebutuhan interpretasi substantif.
+Perbandingan rata-rata koefisien silhouette ditampilkan pada Gambar 4.5.
 
-## 4.4 Hasil Pembentukan Klaster Rumah Tangga
+Gambar 4.5 Rata-Rata Koefisien Silhouette Menurut Jumlah Klaster, DKI Jakarta, Maret 2025
+(berkas 20_silhouette.png)
+Sumber: Susenas Maret 2025, diolah.
 
-Setelah jumlah klaster ditetapkan sebanyak dua, proses pengelompokan dilakukan dengan metode K-Means terhadap rumah tangga yang telah melalui tahap pembersihan data dan standardisasi variabel pembentuk klaster. Jumlah observasi yang berhasil dikelompokkan adalah 4.994 rumah tangga. Hasil pengelompokan menunjukkan bahwa klaster 1 terdiri atas 3.329 rumah tangga, sedangkan klaster 2 terdiri atas 1.665 rumah tangga.
+Rata-rata koefisien silhouette mencapai nilai tertinggi pada dua klaster, yaitu 0,3640, kemudian menurun berturut-turut hingga titik terendah 0,2643 pada enam klaster, dan naik tipis pada tujuh dan delapan klaster. Kenaikan tipis di ujung kanan tidak mengubah kesimpulan karena nilainya tetap berada jauh di bawah nilai pada dua klaster, sekaligus menandakan bahwa penambahan klaster pada rentang tersebut hanya memecah kelompok yang sudah terbentuk tanpa memperbaiki pemisahannya. Perlu diperhatikan pula bahwa sumbu tegak Gambar 4.5 dipotong pada rentang yang sempit, sehingga selisih antartitik tampak lebih tajam daripada besaran sebenarnya.
 
-Secara tertimbang, komposisi rumah tangga pada klaster 1 mencapai sekitar 58,8 persen dari total populasi rumah tangga sampel, sedangkan klaster 2 mencapai sekitar 41,2 persen. Komposisi ini menunjukkan bahwa kelompok rumah tangga dengan karakteristik klaster 1 merupakan kelompok yang lebih dominan dalam populasi dibandingkan klaster 2.
+Kedua kriteria karena itu menunjuk arah yang sama, dan penelitian ini menetapkan dua klaster sebagai solusi akhir. Ketetapan tersebut perlu dibaca bersama besaran koefisiennya. Kaufman dan Rousseeuw memandang klasifikasi yang memadai dicirikan oleh koefisien silhouette di atas 0,5, sedangkan koefisien rata-rata di bawah 0,2 ditafsirkan sebagai ketiadaan struktur klaster yang berarti (Everitt dkk., 2011, hlm. 129). Koefisien 0,3640 yang diperoleh berada di antara kedua ambang tersebut. Struktur klaster pada data ini dengan demikian nyata tetapi lemah: rumah tangga di Provinsi DKI Jakarta tidak terpisah menjadi kelompok-kelompok yang berbatas tegas, melainkan membentuk sebaran menerus yang dipenggal pada titik paling wajar oleh algoritme. Seluruh penafsiran hasil pada subbab berikutnya karena itu diarahkan pada perbedaan kecenderungan antarkelompok, bukan pada penggolongan rumah tangga secara tegas.
 
-Visualisasi hasil klaster memperlihatkan bahwa pemisahan dua kelompok relatif jelas, terutama pada dimensi pertama hasil reduksi komponen utama. Dimensi pertama menjelaskan sekitar 45,6 persen keragaman, sedangkan dimensi kedua menjelaskan sekitar 27,2 persen keragaman. Dengan demikian, lebih dari dua pertiga variasi utama dalam data dapat ditangkap melalui dua dimensi visualisasi tersebut. Sebaran ini memperlihatkan bahwa rumah tangga pada klaster 1 cenderung terkonsentrasi pada area dengan skor dimensi pertama yang lebih rendah, sedangkan rumah tangga pada klaster 2 cenderung berada pada area dengan skor dimensi pertama yang lebih tinggi.
+Ketetapan dua klaster diuji pula terhadap pilihan transformasi variabel. Pengelompokan yang dijalankan tanpa transformasi logaritma menghasilkan koefisien silhouette yang jauh lebih tinggi, yaitu 0,6548, tetapi kenaikan itu berasal dari terpisahnya satu klaster kecil berisi 408 rumah tangga atau 8,16 persen sampel yang merupakan ekor atas sebaran pengeluaran. Pada saat yang sama, keeratan hubungan antara klaster dan kepemilikan air conditioner justru melemah, yaitu koefisien Cramér menurun dari 0,5530 menjadi 0,3759, dan lebih dari sembilan puluh persen rumah tangga melebur dalam satu klaster sehingga karakter sosial ekonominya tidak lagi dapat dibedakan. Koefisien silhouette yang lebih tinggi pada versi tanpa transformasi dengan demikian mengukur terpisahnya pencilan, bukan menajamnya struktur sosial ekonomi yang menjadi sasaran penelitian. Hasil lengkap pembandingan tersebut disajikan pada Lampiran 3.
 
-![Gambar 4.6 Visualisasi Sebaran Hasil Klaster Rumah Tangga](assets-ta/gambar-4-6-cluster-plot.png)
+4.2.2 Hasil Pembentukan Klaster
 
-**Gambar 4.6 Visualisasi Sebaran Hasil Klaster Rumah Tangga**
+Pengelompokan dengan metode K-Means atas 5.001 rumah tangga menghasilkan dua klaster dengan ukuran yang timpang. Klaster 1 memuat 3.329 rumah tangga atau 66,57 persen sampel, sedangkan Klaster 2 memuat 1.672 rumah tangga atau 33,43 persen sampel. Setelah penimbang rumah tangga Susenas diterapkan, komposisinya menjadi 60,11 persen untuk Klaster 1 dan 39,89 persen untuk Klaster 2. Pembentukan klaster dijalankan tanpa penimbang karena algoritme K-Means bekerja atas jarak antarpengamatan, sedangkan penimbang diterapkan pada tahap pelaporan komposisi dan penciri agar angka yang disajikan menggambarkan seluruh rumah tangga di Provinsi DKI Jakarta. Selisih antara persentase sampel dan persentase tertimbang menunjukkan bahwa rumah tangga berkarakter Klaster 2 sedikit terwakili berlebih dalam sampel dibandingkan porsinya dalam populasi.
 
-> **Deskripsi Gambar 4.6.**
-> *Media internal:* `image14.png` · *Lokasi dokumen:* halaman 56 / halaman tercetak 50.
->
-> **Bentuk visual.** *Cluster plot* dua dimensi hasil reduksi komponen utama (keluaran `fviz_cluster`), latar putih dengan kisi abu-abu.
-> - **Judul di dalam gambar:** "Cluster plot"
-> - **Sumbu-X:** "Dim1 (45.6%)", rentang kira-kira -3 sampai +4
-> - **Sumbu-Y:** "Dim2 (27.2%)", rentang kira-kira -2,5 sampai +2,5
-> - **Legenda di kanan:** berjudul "cluster", dengan dua entri — **1** (titik bulat **merah salmon/merah muda**) dan **2** (segitiga **biru kehijauan/teal**)
->
-> **Pola yang terlihat.** Setiap kelompok dibungkus **poligon cembung semi-transparan** berwarna senada dengan titiknya. Poligon merah menempati sisi **kiri**, poligon teal menempati sisi **kanan**. Batas antara keduanya sangat tegas, berupa garis vertikal di sekitar **Dim1 ≈ 0**, hampir tanpa tumpang tindih horizontal. Secara vertikal kedua kelompok menempati rentang Dim2 yang sama, sehingga pemisahan praktis hanya terjadi pada Dim1.
->
-> Ciri visual mencolok lain: titik-titik tidak tersebar merata, melainkan membentuk **pita-pita horizontal berulang** yang tampak seperti garis-garis mendatar bertumpuk. Ini adalah artefak proyeksi dari data yang memuat variabel diskrit/bertingkat (misalnya ukuran rumah tangga dalam satuan jiwa dan pendidikan dalam tahun sekolah), tetapi gambar itu sendiri tidak membuktikan variabel mana penyebabnya.
->
-> **Angka yang terbaca dan pendukungnya.** Dim1 menjelaskan 45,6% keragaman dan Dim2 27,2% — bersama-sama ±72,8%. Jumlah observasi yang dikelompokkan: 4.994 rumah tangga (klaster 1 = 3.329; klaster 2 = 1.665).
->
-> **Makna dalam konteks dokumen.** Visual mendukung kesimpulan bahwa dua kelompok mempunyai pemisahan yang cukup jelas, khususnya pada dimensi utama pertama. Dokumen kemudian melanjutkan ke profiling untuk menjelaskan karakter substantif masing-masing kelompok.
+Pusat kedua klaster pada skala skor Z disajikan pada Tabel 4.3.
 
-Pola pemisahan tersebut mengindikasikan bahwa pembentukan dua klaster tidak terjadi secara acak, melainkan merefleksikan perbedaan sistematis pada variabel pembentuk klaster. Oleh karena itu, langkah berikutnya adalah menelaah profil masing-masing klaster agar karakter rumah tangga dalam tiap kelompok dapat dipahami secara lebih substantif.
+Tabel 4.3 Ukuran dan Pusat Klaster pada Skala Skor Z, DKI Jakarta, Maret 2025
 
+Klaster	n sampel	Persen sampel	Persen tertimbang	z ln konsumsi listrik	z ln pengeluaran nonmakanan selain listrik	z lama sekolah KRT
+1	3.329	66,57	60,11	−0,4548	−0,5099	−0,3939
+2	1.672	33,43	39,89	0,9055	1,0152	0,7843
 
-## 4.5 Evaluasi Perbedaan dan Pemisahan Klaster
+Sumber: Susenas Maret 2025, diolah. Penomoran klaster diurutkan menaik menurut pusat konsumsi listrik, sehingga Klaster 1 selalu bermakna kelompok berkonsumsi lebih rendah.
+
+Tabel 4.3 memperlihatkan pola pemisahan yang seragam arahnya. Ketiga pusat Klaster 1 berada di bawah rata-rata seluruh rumah tangga dan ketiga pusat Klaster 2 berada di atasnya, tanpa satu pun variabel yang berlawanan arah. Kedua klaster karena itu terpisah menurut tingkat, yaitu tinggi rendahnya seluruh variabel secara bersamaan, bukan menurut komposisi, yaitu pertukaran antara satu variabel yang tinggi dan variabel lain yang rendah. Jarak baku terbesar terdapat pada pengeluaran nonmakanan selain listrik, yaitu 1,5251 simpangan baku antara kedua pusat, disusul konsumsi listrik sebesar 1,3603 dan lama sekolah kepala rumah tangga sebesar 1,1782. Kapasitas ekonomi dengan demikian merupakan sumbu pemisah yang paling kuat, sedangkan pendidikan kepala rumah tangga ikut membedakan kedua kelompok dengan jarak yang lebih pendek.
+
+Sebaran kedua klaster pada dua komponen utama ditampilkan pada Gambar 4.6.
+
+Gambar 4.6 Visualisasi Klaster Rumah Tangga pada Dua Komponen Utama, DKI Jakarta, Maret 2025
+(berkas 22_visualisasi_cluster_pca.png)
+Sumber: Susenas Maret 2025, diolah.
+
+Gambar 4.6 disusun dengan memproyeksikan ketiga variabel pembentuk klaster yang telah distandardisasi ke dalam dua komponen utama, semata-mata agar sebaran berdimensi tiga dapat ditampilkan pada bidang datar. Muatan variabel dan keragaman yang dijelaskan kedua sumbu disajikan pada Tabel 4.4.
+
+Tabel 4.4 Muatan Variabel Pembentuk Klaster pada Dua Komponen Utama
+
+Variabel	Komponen 1	Komponen 2
+ln konsumsi listrik	0,5822	0,5566
+ln pengeluaran nonmakanan selain listrik	0,6397	0,1363
+Lama sekolah kepala rumah tangga	0,5018	−0,8195
+Keragaman yang dijelaskan (persen)	65,42	23,88
+
+Sumber: Susenas Maret 2025, diolah. Keragaman kumulatif kedua komponen sebesar 89,31 persen.
+
+Kedua komponen bersama-sama menjelaskan 89,31 persen keragaman data, sehingga penilaian visual atas pemisahan klaster pada Gambar 4.6 dapat dipercaya sebagai gambaran sebaran yang sebenarnya. Komponen pertama memuat ketiga variabel dengan tanda positif dan besaran yang berdekatan, yaitu berkisar antara 0,50 dan 0,64, sehingga sumbu mendatar dapat dibaca sebagai tingkat kemapanan energi dan ekonomi rumah tangga secara umum: bergerak ke kanan berarti konsumsi listrik, pengeluaran nonmakanan, dan lama sekolah kepala rumah tangga sama-sama lebih tinggi. Komponen kedua mempertentangkan lama sekolah kepala rumah tangga yang bermuatan negatif dengan konsumsi listrik yang bermuatan positif, sehingga sumbu tegak menangkap rumah tangga yang berkonsumsi listrik tinggi meskipun pendidikan kepala rumah tangganya relatif rendah, dan sebaliknya.
+
+Sebaran pada Gambar 4.6 memperlihatkan dua poligon yang menempati sisi kiri dan sisi kanan bidang dengan batas yang tegas pada sumbu mendatar dan hampir tanpa tumpang tindih, sedangkan pada sumbu tegak keduanya menempati rentang yang sama. Pusat Klaster 1 berada pada −0,7887 dan pusat Klaster 2 pada 1,5703 untuk komponen pertama, sementara pada komponen kedua keduanya praktis berimpit di angka nol, yaitu 0,0002 dan −0,0004. Temuan ini memperkuat bacaan atas Tabel 4.3: seluruh pemisahan kedua klaster terjadi pada satu sumbu tingkat kemapanan, dan tidak ada satu pun kelompok yang terbentuk karena perbedaan komposisi antara pendidikan dan konsumsi listrik. Pemisahan yang bersandar pada satu sumbu tunggal juga menjelaskan mengapa koefisien silhouette yang diperoleh tergolong lemah, karena rumah tangga tersebar menerus di sepanjang sumbu tersebut tanpa celah yang memisahkan kedua kelompok.
+
+Perbedaan pusat klaster pada ketiga variabel pembentuk dan pada variabel di luar variabel pembentuk perlu diuji kebermaknaannya sebelum karakter masing-masing kelompok ditafsirkan. Pengujian tersebut diuraikan pada Subbab 4.3.## 4.5 Evaluasi Perbedaan dan Pemisahan Klaster
 
 Setelah dua klaster terbentuk, evaluasi dilakukan untuk menilai apakah karakteristik rumah tangga antar klaster menunjukkan perbedaan yang bermakna. Evaluasi ini dilakukan melalui uji beda univariat, uji hubungan pada variabel kepemilikan AC, serta evaluasi pemisahan multivariat. Perlu ditegaskan bahwa evaluasi ini bersifat internal dan deskriptif, karena klaster yang diuji merupakan hasil pembentukan dari variabel yang sama. Oleh karena itu, hasil uji statistik dalam bagian ini digunakan untuk memperjelas karakter pemisahan klaster, bukan sebagai validasi eksternal yang sepenuhnya independen.
 
