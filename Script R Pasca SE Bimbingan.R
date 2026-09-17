@@ -803,12 +803,6 @@ stopifnot(length(cluster_vars) == 3)
 cat("\n[CEK S2] Variabel pembentuk klaster:",
     paste(cluster_vars, collapse = ", "), "\n")
 
-# Label berbahasa Indonesia untuk grafik dan tabel.
-label_var <- c(
-  z_ln_listrik_kwh = "ln estimasi konsumsi listrik",
-  z_ln_pengeluaran_nonmakanan_nonlistrik = "ln pengeluaran nonmakanan selain listrik",
-  z_pendidikan_krt = "Lama sekolah KRT"
-)
 
 data_cluster <- ta_clean |>
   select(
@@ -1250,13 +1244,13 @@ p_profil_kwh <- ggplot(profil_klaster, aes(x = cluster, y = rata_estimasi_kwh)) 
   scale_y_continuous(labels = scales::comma,
                      expand = expansion(mult = c(0, 0.12))) +
   labs(
-    title = "Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster",
+    title = "Rata-Rata Konsumsi Listrik Menurut Klaster",
     subtitle = "Rata-rata tertimbang menurut bobot Susenas Maret 2025",
-    x = "Klaster", y = "Rata-rata estimasi konsumsi listrik (kWh per bulan)"
+    x = "Klaster", y = "Rata-rata konsumsi listrik (kWh per bulan)"
   ) +
   theme_minimal(base_size = 12)
 
-ggsave(file.path(folder_output, "25_profil_rata_estimasi_kwh.png"),
+ggsave(file.path(folder_output, "25_profil_rata_kwh.png"),
        p_profil_kwh, width = 8, height = 5, dpi = 300)
 
 p_profil_ac <- ggplot(profil_klaster, aes(x = cluster, y = proporsi_ac)) +
@@ -1271,6 +1265,13 @@ p_profil_ac <- ggplot(profil_klaster, aes(x = cluster, y = proporsi_ac)) +
 
 ggsave(file.path(folder_output, "26_profil_proporsi_ac.png"),
        p_profil_ac, width = 8, height = 5, dpi = 300)
+
+# Label berbahasa Indonesia untuk grafik dan tabel.
+label_var <- c(
+  z_ln_listrik_kwh = "ln konsumsi listrik",
+  z_ln_pengeluaran_nonmakanan_nonlistrik = "ln pengeluaran nonmakanan selain listrik",
+  z_pendidikan_krt = "Lama sekolah KRT"
+)
 
 profil_z_long <- data_hasil |>
   group_by(cluster) |>
@@ -1300,12 +1301,12 @@ p_box_kwh_cluster <- ggplot(data_hasil, aes(x = cluster, y = listrik_kwh_final_w
   geom_jitter(width = 0.15, alpha = 0.08, size = 0.5) +
   scale_y_continuous(labels = scales::comma) +
   labs(
-    title = "Sebaran Estimasi Konsumsi Listrik Menurut Klaster",
+    title = "Sebaran Konsumsi Listrik Menurut Klaster",
     x = "Klaster", y = "Estimasi konsumsi listrik sebulan terakhir (kWh)"
   ) +
   theme_minimal(base_size = 12)
 
-ggsave(file.path(folder_output, "28_boxplot_estimasi_kwh_cluster.png"),
+ggsave(file.path(folder_output, "28_boxplot_kwh_cluster.png"),
        p_box_kwh_cluster, width = 8, height = 5, dpi = 300)
 
 p_scatter_cluster <- ggplot(
@@ -1319,7 +1320,7 @@ p_scatter_cluster <- ggplot(
   labs(
     title = "Pengeluaran Nonmakanan Selain Listrik dan Konsumsi Listrik Menurut Klaster",
     x = "Pengeluaran nonmakanan selain listrik (Rp per bulan)",
-    y = "Estimasi konsumsi listrik sebulan terakhir (kWh)",
+    y = "Konsumsi listrik sebulan terakhir (kWh)",
     colour = "Klaster"
   ) +
   theme_minimal(base_size = 12)
@@ -1649,3 +1650,4 @@ cat("Rata-rata Silhouette pada K terpilih:",
 cat("Akurasi diskriminan                 :", round(akurasi_lda * 100, 2), "%\n")
 cat("Output tersimpan di                 :", folder_output, "\n")
 cat("============================================================\n")
+
