@@ -905,6 +905,41 @@ Hipotesis nol ditolak pada kedua ruang, sehingga matriks ragam-peragam kedua kla
 
 Seluruh pengujian pada subbab ini menegaskan bahwa kedua klaster benar-benar terpisah, tetapi belum menjawab pertanyaan yang lebih penting bagi tujuan ketiga, yaitu seperti apa isi masing-masing kelompok dan karakteristik apa di luar variabel pembentuk yang membedakannya. Kedua pertanyaan tersebut dijawab berturut-turut pada Subbab 4.3.3 dan Subbab 4.3.4.
 
+### 4.3.2 Analisis Diskriminan sebagai Pemeriksaan Konsistensi Internal
+
+Pemisahan yang terbukti bermakna pada Subbab 4.3.1 selanjutnya diperiksa dari sudut yang berbeda, yaitu sejauh mana keanggotaan klaster dapat ditebak kembali dari ketiga variabel pembentuknya melalui fungsi diskriminan linear. Karena uji Box's M pada Tabel 4.7 menolak hipotesis homogenitas matriks ragam-peragam pada kedua ruang pengujian, salah satu asumsi analisis diskriminan linear tidak terpenuhi. Hasil pada subbab ini karena itu tidak diperlakukan sebagai uji inferensia dan tidak dipakai menyimpulkan apa pun mengenai populasi; fungsinya terbatas sebagai pemeriksaan konsistensi internal atas struktur yang dihasilkan K-Means. Peluang awal kelompok yang dipakai adalah proporsi sampel masing-masing klaster, yaitu 0,6657 untuk Klaster 1 dan 0,3343 untuk Klaster 2, sedangkan rata-rata kelompok pada skala skor baku identik dengan pusat klaster yang telah disajikan pada Tabel 4.3.
+
+Karena kelompok yang dibedakan hanya dua, fungsi diskriminan yang terbentuk hanya satu. Koefisien fungsi tersebut disajikan pada Tabel 4.8.
+
+Tabel 4.8 Koefisien Fungsi Diskriminan Linear pada Skala Skor Baku
+
+Variabel	Koefisien fungsi diskriminan (LD1)
+z ln konsumsi listrik	0,6450
+z ln pengeluaran nonmakanan selain listrik	0,8014
+z lama sekolah kepala rumah tangga	0,5724
+
+Sumber: Susenas Maret 2025, diolah.
+
+Ketiga koefisien bertanda positif dengan besaran yang berdekatan, berkisar antara 0,57 dan 0,80. Susunan seperti ini berarti fungsi diskriminan bekerja sebagai satu sumbu gabungan: skor seorang rumah tangga naik ketika konsumsi listrik, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga sama-sama naik, tanpa ada satu pun variabel yang bekerja berlawanan arah dengan variabel lainnya. Bacaan ini sejalan dengan muatan komponen pertama pada Tabel 4.4 yang juga positif pada ketiga variabel, dan menguatkan kesimpulan Subbab 4.2.2 bahwa pemisahan kedua klaster bertumpu pada satu sumbu tingkat kemapanan. Urutan kontribusinya pun konsisten dengan Subbab 4.3.1: pengeluaran nonmakanan selain listrik memiliki koefisien terbesar dan sekaligus nilai H terbesar pada Tabel 4.5, disusul konsumsi listrik, sedangkan lama sekolah kepala rumah tangga terkecil pada keduanya.
+
+Kemampuan fungsi diskriminan menebak kembali keanggotaan klaster dinilai dengan dua cara. Cara pertama adalah resubstitusi, yaitu memprediksi data yang sama dengan data pelatihnya. Cara kedua adalah validasi silang leave-one-out, yaitu memprediksi setiap rumah tangga menggunakan fungsi yang dibangun tanpa mengikutsertakan rumah tangga tersebut, sehingga sebagian bias resubstitusi terkoreksi [PERLU VERIFIKASI]. Hasil keduanya disajikan pada Tabel 4.9.
+
+Tabel 4.9 Matriks Klasifikasi dan Akurasi Internal Fungsi Diskriminan
+
+Metode evaluasi	Klaster aktual	Prediksi Klaster 1	Prediksi Klaster 2	Jumlah	Akurasi (persen)
+Resubstitusi	Klaster 1	3.329	0	3.329	94,84
+Resubstitusi	Klaster 2	258	1.414	1.672	
+Validasi silang leave-one-out	Klaster 1	3.329	0	3.329	94,82
+Validasi silang leave-one-out	Klaster 2	259	1.413	1.672
+
+Sumber: Susenas Maret 2025, diolah.
+
+Dua pola pada tabel di atas perlu dibaca bersama-sama. Pertama, seluruh kesalahan klasifikasi bersifat satu arah. Tidak ada satu pun rumah tangga Klaster 1 yang diprediksi masuk Klaster 2, sedangkan 258 rumah tangga Klaster 2 atau sekitar 15,4 persen anggotanya diprediksi masuk Klaster 1. Keadaan ini konsisten dengan dua hal yang sudah dilaporkan sebelumnya, yaitu peluang awal Klaster 1 yang hampir dua kali lipat peluang awal Klaster 2, dan temuan Subbab 4.2.2 bahwa kedua kelompok tersebar menerus di sepanjang satu sumbu tanpa celah pemisah, sehingga rumah tangga Klaster 2 yang berada dekat batas mudah jatuh ke sisi yang berseberangan. Kedua, selisih antara akurasi resubstitusi dan akurasi validasi silang hanya 0,02 poin persen, yang secara harfiah berarti pergeseran satu rumah tangga.
+
+Selisih sekecil itu tidak boleh dibaca sebagai bukti ketangguhan model. Sebaliknya, hal tersebut menegaskan sifat melingkar evaluasi ini. Fungsi diskriminan pada subbab ini dilatih pada ketiga variabel yang persis dipakai K-Means untuk membentuk kedua klaster, sehingga batas pemisah yang dicarinya sudah ditentukan lebih dahulu oleh algoritme pengelompokan. Dalam keadaan demikian, akurasi yang tinggi merupakan konsekuensi wajar dari konstruksi, bukan temuan; dan mencabut satu pengamatan dari 5.001 pengamatan tidak cukup menggeser batas tersebut. Angka 94,84 persen dan 94,82 persen karena itu dibaca sebagai bukti bahwa penetapan keanggotaan klaster oleh K-Means bersifat konsisten dan dapat direproduksi oleh aturan klasifikasi lain, bukan sebagai bukti bahwa kedua klaster merupakan kelompok yang benar-benar ada di populasi.
+
+Pengujian pada Subbab 4.3.1 dan pemeriksaan pada subbab ini bersama-sama menunjukkan bahwa kedua klaster terpisah secara konsisten pada variabel pembentuknya. Pertanyaan mengenai isi dan karakter masing-masing kelompok, serta mengenai perbedaan yang muncul pada variabel di luar variabel pembentuk, dijawab pada Subbab 4.3.3 dan Subbab 4.3.4.
+
 ---
 
 # BAB V KESIMPULAN DAN SARAN
