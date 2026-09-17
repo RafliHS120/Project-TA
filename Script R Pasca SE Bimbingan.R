@@ -1433,6 +1433,8 @@ fit_manova_z <- manova(
 )
 capture.output(summary(fit_manova_z, test = "Wilks"),
                file = file.path(folder_output, "36b_manova_wilks_z.txt"))
+capture.output(summary(fit_manova_z, test = "Pillai"),
+               file = file.path(folder_output, "37b_manova_pillai_z.txt"))
 capture.output(biotools::boxM(data_hasil |> select(all_of(manova_vars)),
                               grouping = data_hasil$cluster),
                file = file.path(folder_output, "38b_box_m_z.txt"))
@@ -1463,6 +1465,11 @@ lda_cv <- MASS::lda(cluster ~ ., data = lda_data, CV = TRUE)
 conf_cv <- table(Aktual = lda_data$cluster, Prediksi = lda_cv$class)
 write_csv(as.data.frame.matrix(conf_cv) |> rownames_to_column("Aktual"),
           file.path(folder_output, "40b_confusion_matrix_lda_cv.csv"))
+
+akurasi_lda_cv <- sum(diag(conf_cv)) / sum(conf_cv)
+cat("[CEK] Akurasi LDA validasi silang:", round(100 * akurasi_lda_cv, 2), "%\n")
+write_csv(tibble(akurasi_lda_cv = akurasi_lda_cv),
+          file.path(folder_output, "41b_akurasi_lda_cv.csv"))
 
 write_csv(tibble(akurasi_lda = akurasi_lda),
           file.path(folder_output, "41_akurasi_lda.csv"))
