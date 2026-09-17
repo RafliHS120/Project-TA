@@ -1066,6 +1066,9 @@ set.seed(seed_kmeans)
 
 km_final <- kmeans(x, centers = k_opt, nstart = 100, iter.max = 1000)
 
+cat("[CEK] ifault kmeans (0 atau NULL = aman):",
+    ifelse(is.null(km_final$ifault), "NULL", km_final$ifault), "\n")
+
 # --- Penguncian arah label klaster ----------------------------------
 # Klaster diurutkan naik menurut centroid ln estimasi kWh, sehingga
 # Klaster 1 selalu konsumsi terendah dan Klaster K selalu tertinggi.
@@ -1115,6 +1118,13 @@ write_csv(centroid_z, file.path(folder_output, "21_centroid_zscore.csv"))
 # bawah menerangkan arti kedua sumbu tersebut.
 # ============================================================
 
+# Label berbahasa Indonesia untuk grafik dan tabel.
+label_var <- c(
+  z_ln_listrik_kwh = "ln konsumsi listrik",
+  z_ln_pengeluaran_nonmakanan_nonlistrik = "ln pengeluaran nonmakanan selain listrik",
+  z_pendidikan_krt = "Lama sekolah KRT"
+)
+    
 pca_klaster <- prcomp(x, center = FALSE, scale. = FALSE)
 
 var_pca <- (pca_klaster$sdev^2) / sum(pca_klaster$sdev^2)
@@ -1266,12 +1276,6 @@ p_profil_ac <- ggplot(profil_klaster, aes(x = cluster, y = proporsi_ac)) +
 ggsave(file.path(folder_output, "26_profil_proporsi_ac.png"),
        p_profil_ac, width = 8, height = 5, dpi = 300)
 
-# Label berbahasa Indonesia untuk grafik dan tabel.
-label_var <- c(
-  z_ln_listrik_kwh = "ln konsumsi listrik",
-  z_ln_pengeluaran_nonmakanan_nonlistrik = "ln pengeluaran nonmakanan selain listrik",
-  z_pendidikan_krt = "Lama sekolah KRT"
-)
 
 profil_z_long <- data_hasil |>
   group_by(cluster) |>
@@ -1302,7 +1306,7 @@ p_box_kwh_cluster <- ggplot(data_hasil, aes(x = cluster, y = listrik_kwh_final_w
   scale_y_continuous(labels = scales::comma) +
   labs(
     title = "Sebaran Konsumsi Listrik Menurut Klaster",
-    x = "Klaster", y = "Estimasi konsumsi listrik sebulan terakhir (kWh)"
+    x = "Klaster", y = "Konsumsi listrik sebulan terakhir (kWh)"
   ) +
   theme_minimal(base_size = 12)
 
@@ -1441,6 +1445,12 @@ print(akurasi_lda)
 
 write_csv(as.data.frame.matrix(conf_matrix) |> rownames_to_column("Aktual"),
           file.path(folder_output, "40_confusion_matrix_lda.csv"))
+
+lda_cv <- MASS::lda(cluster ~ ., data = lda_data, CV = TRUE)
+conf_cv <- table(Aktual = lda_data$cluster, Prediksi = lda_cv$class)
+write_csv(as.data.frame.matrix(conf_cv) |> rownames_to_column("Aktual"),
+          file.path(folder_output, "40b_confusion_matrix_lda_cv.csv"))
+
 write_csv(tibble(akurasi_lda = akurasi_lda),
           file.path(folder_output, "41_akurasi_lda.csv"))
 
