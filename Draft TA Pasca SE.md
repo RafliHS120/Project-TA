@@ -940,6 +940,69 @@ Selisih sekecil itu tidak boleh dibaca sebagai bukti ketangguhan model. Sebalikn
 
 Pengujian pada Subbab 4.3.1 dan pemeriksaan pada subbab ini bersama-sama menunjukkan bahwa kedua klaster terpisah secara konsisten pada variabel pembentuknya. Pertanyaan mengenai isi dan karakter masing-masing kelompok, serta mengenai perbedaan yang muncul pada variabel di luar variabel pembentuk, dijawab pada Subbab 4.3.3 dan Subbab 4.3.4.
 
+### 4.3.3 Profil Klaster
+
+Karakter kedua klaster diuraikan dengan membandingkan nilai rata-rata dan nilai tengah sejumlah indikator pada masing-masing kelompok. Seluruh nilai rata-rata dihitung dengan penimbang rumah tangga Susenas agar angkanya menggambarkan rumah tangga di Provinsi DKI Jakarta, bukan semata rumah tangga terpilih dalam sampel. Nilai tengah disajikan tanpa penimbang sebagai pembanding, karena posisinya berguna untuk menunjukkan seberapa jauh rata-rata tertarik oleh rumah tangga berkonsumsi sangat tinggi. Perlu diingat bahwa pembentukan klaster sendiri dilakukan tanpa penimbang sebagaimana dinyatakan pada Subbab 4.2, sehingga penimbang di sini berperan pada tahap pelaporan, bukan pada tahap pengelompokan. Profil selengkapnya disajikan pada Tabel 4.10.
+
+Tabel 4.10 Profil Tertimbang Rumah Tangga menurut Klaster
+
+Indikator	Klaster 1	Klaster 2
+Jumlah rumah tangga sampel	3.329	1.672
+Estimasi jumlah rumah tangga	1.744.440	1.157.822
+Persentase tertimbang (persen)	60,11	39,89
+Rata-rata konsumsi listrik (kWh per bulan)	186,61	645,34
+Median konsumsi listrik (kWh per bulan)	163,36	435,05
+Rata-rata konsumsi listrik per kapita (kWh per bulan)	60,08	198,88
+Median konsumsi listrik per kapita (kWh per bulan)	58,26	152,67
+Rata-rata pengeluaran listrik (rupiah per bulan)	180.146	789.474
+Median pengeluaran listrik (rupiah per bulan)	145.000	486.000
+Rata-rata pengeluaran nonmakanan selain listrik (rupiah per bulan)	2.509.606	10.821.847
+Median pengeluaran nonmakanan selain listrik (rupiah per bulan)	2.030.833	6.140.250
+Rata-rata ukuran rumah tangga (orang)	3,65	3,71
+Rata-rata lama sekolah kepala rumah tangga (tahun)	9,83	13,74
+Proporsi memiliki AC (persen)	17,02	76,07
+Rata-rata pangsa pengeluaran listrik terhadap pengeluaran nonmakanan (persen)	7,05	7,63
+
+Sumber: Susenas Maret 2025, diolah. Nilai tengah dihitung tanpa penimbang.
+
+Klaster 1 mencakup 3.329 rumah tangga sampel yang mewakili sekitar 1.744.440 rumah tangga atau 60,11 persen rumah tangga di Provinsi DKI Jakarta, sedangkan Klaster 2 mencakup 1.672 rumah tangga sampel yang mewakili sekitar 1.157.822 rumah tangga atau 39,89 persen. Kelompok yang lebih besar karena itu adalah kelompok dengan konsumsi listrik lebih rendah, dan kelompok dengan konsumsi tinggi merupakan minoritas yang cukup besar, yaitu sekitar dua dari setiap lima rumah tangga.
+
+Perbedaan paling mencolok terletak pada konsumsi listrik. Rata-rata konsumsi Klaster 2 sebesar 645,34 kWh per bulan, yaitu sekitar 3,46 kali rata-rata Klaster 1 yang sebesar 186,61 kWh per bulan. Perbedaan tersebut bertahan ketika konsumsi dihitung per anggota rumah tangga: 198,88 kWh per kapita pada Klaster 2 berbanding 60,08 kWh per kapita pada Klaster 1, atau sekitar 3,31 kali. Kesenjangan konsumsi antara kedua klaster karena itu tidak dapat dijelaskan oleh perbedaan jumlah penghuni, melainkan oleh perbedaan intensitas penggunaan listrik per orang. Pada kedua klaster, nilai rata-rata tetap berada di atas nilai tengahnya, yang menunjukkan bahwa kemencengan sebaran ke kanan sebagaimana dilaporkan pada Subbab 4.1 tidak hilang oleh pengelompokan, melainkan tetap ada di dalam masing-masing kelompok.
+
+[Sisipkan Gambar 4.7 di sini]
+
+Gambar 4.7 Rata-Rata Konsumsi Listrik Rumah Tangga menurut Klaster
+
+Sumber: Susenas Maret 2025, diolah.
+
+Perbedaan konsumsi listrik tersebut tidak berbanding lurus dengan perbedaan pengeluaran listriknya. Rata-rata pengeluaran listrik Klaster 2 sebesar Rp789.474 per bulan, yaitu sekitar 4,38 kali rata-rata Klaster 1 yang sebesar Rp180.146 per bulan, sedangkan rasio konsumsinya hanya 3,46 kali. Selisih kedua rasio tersebut merupakan konsekuensi langsung dari struktur tarif tenaga listrik yang berjenjang menurut golongan daya terpasang: rumah tangga Klaster 2 sebagian besar berada pada golongan daya 1.300 VA ke atas sebagaimana ditunjukkan pada Subbab 4.3.4, sehingga membayar tarif per kWh yang lebih tinggi daripada rumah tangga bersubsidi. Temuan ini sekaligus menunjukkan bahwa penggunaan tarif berjenjang dalam konversi pengeluaran menjadi kWh, sebagaimana diuraikan pada bagian pra-pengolahan, memang diperlukan; penggunaan satu tarif rata-rata akan membuat estimasi konsumsi menjadi kelipatan tetap dari pengeluaran sehingga kedua rasio tersebut dipaksa sama.
+
+[Sisipkan Gambar 4.8 di sini]
+
+Gambar 4.8 Sebaran Konsumsi Listrik Rumah Tangga menurut Klaster
+
+Sumber: Susenas Maret 2025, diolah. Deretan titik mendatar pada nilai tertinggi merupakan akibat pembatasan nilai ekstrem pada persentil ke-99 (winsorizing), bukan penumpukan rumah tangga pada satu nilai konsumsi yang sama.
+
+Kesenjangan yang serupa terlihat pada kapasitas ekonomi rumah tangga. Rata-rata pengeluaran nonmakanan selain listrik pada Klaster 2 sebesar Rp10.821.847 per bulan, yaitu sekitar 4,31 kali rata-rata Klaster 1 yang sebesar Rp2.509.606 per bulan. Meskipun demikian, pangsa pengeluaran listrik terhadap pengeluaran nonmakanan pada kedua kelompok hampir sama, yaitu 7,05 persen pada Klaster 1 dan 7,63 persen pada Klaster 2. Kedua angka tersebut memberi arti penting bagi penafsiran: perbedaan antara kedua klaster bukan terletak pada porsi anggaran yang dialokasikan untuk listrik, melainkan pada besaran anggaran itu sendiri. Rumah tangga pada kedua kelompok membelanjakan bagian yang kurang lebih sebanding dari pengeluaran nonmakanannya untuk listrik, tetapi bekerja pada skala anggaran yang berbeda jauh.
+
+[Sisipkan Gambar 4.9 di sini]
+
+Gambar 4.9 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik menurut Klaster
+
+Sumber: Susenas Maret 2025, diolah. Deretan titik pada tepi grafik merupakan akibat pembatasan nilai ekstrem pada persentil ke-99 (winsorizing).
+
+Lama sekolah kepala rumah tangga bergerak searah dengan kedua indikator di atas. Rata-rata lama sekolah kepala rumah tangga pada Klaster 1 sebesar 9,83 tahun, sedangkan pada Klaster 2 sebesar 13,74 tahun, sehingga selisihnya mencapai 3,90 tahun. Secara jenjang, rata-rata Klaster 1 berada di sekitar tamat sekolah menengah pertama, sementara rata-rata Klaster 2 telah melampaui tamat sekolah menengah atas. Komposisi kategori pendidikannya memperjelas perbedaan tersebut, sebagaimana terlihat pada Gambar 4.10: pada Klaster 1, kepala rumah tangga berpendidikan menengah merupakan kelompok terbesar dan kepala rumah tangga berpendidikan tinggi hanya sebagian kecil, sedangkan pada Klaster 2 kepala rumah tangga berpendidikan tinggi merupakan kelompok terbesar dan kepala rumah tangga berpendidikan rendah nyaris tidak ada. Dengan demikian, ketiga variabel pembentuk klaster bergerak ke arah yang sama, dan pengelompokan yang dihasilkan mencerminkan satu sumbu tingkat kemapanan sebagaimana telah disimpulkan dari muatan komponen utama pada Tabel 4.4 dan dari koefisien fungsi diskriminan pada Tabel 4.8.
+
+[Sisipkan Gambar 4.10 di sini]
+
+Gambar 4.10 Komposisi Pendidikan Kepala Rumah Tangga menurut Klaster
+
+Sumber: Susenas Maret 2025, diolah.
+
+Dua indikator terakhir pada Tabel 4.10 bergerak dengan pola yang berbeda dan karena itu perlu dibaca terpisah. Rata-rata ukuran rumah tangga hampir sama pada kedua kelompok, yaitu 3,65 orang pada Klaster 1 dan 3,71 orang pada Klaster 2; kebermaknaan selisih sekecil itu diuji pada Subbab 4.3.4. Sebaliknya, proporsi rumah tangga yang memiliki AC berbeda sangat tajam, yaitu 17,02 persen pada Klaster 1 berbanding 76,07 persen pada Klaster 2. Kepemilikan AC tidak termasuk variabel pembentuk klaster, sehingga perbedaan tersebut merupakan temuan dan bukan konsekuensi konstruksi; pembahasannya dilanjutkan pada Subbab 4.3.4 bersama variabel penciri lainnya.
+
+Berdasarkan keseluruhan profil tersebut, Klaster 1 dapat dibaca sebagai kelompok rumah tangga dengan konsumsi listrik rendah, kapasitas pengeluaran terbatas, dan kepala rumah tangga berpendidikan menengah, yang mencakup mayoritas rumah tangga di Provinsi DKI Jakarta. Klaster 2 dapat dibaca sebagai kelompok rumah tangga dengan konsumsi listrik tinggi, kapasitas pengeluaran jauh lebih luas, dan kepala rumah tangga berpendidikan tinggi, yang mencakup sekitar dua dari setiap lima rumah tangga. Penamaan kedua kelompok ini bersifat deskriptif dan tidak menyiratkan urutan nilai apa pun di antara keduanya.
+
 ---
 
 # BAB V KESIMPULAN DAN SARAN
