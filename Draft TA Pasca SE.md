@@ -854,420 +854,56 @@ Kedua komponen bersama-sama menjelaskan 89,31 persen keragaman data, sehingga pe
 
 Sebaran pada Gambar 4.6 memperlihatkan dua poligon yang menempati sisi kiri dan sisi kanan bidang dengan batas yang tegas pada sumbu mendatar dan hampir tanpa tumpang tindih, sedangkan pada sumbu tegak keduanya menempati rentang yang sama. Pusat Klaster 1 berada pada −0,7887 dan pusat Klaster 2 pada 1,5703 untuk komponen pertama, sementara pada komponen kedua keduanya praktis berimpit di angka nol, yaitu 0,0002 dan −0,0004. Temuan ini memperkuat bacaan atas Tabel 4.3: seluruh pemisahan kedua klaster terjadi pada satu sumbu tingkat kemapanan, dan tidak ada satu pun kelompok yang terbentuk karena perbedaan komposisi antara pendidikan dan konsumsi listrik. Pemisahan yang bersandar pada satu sumbu tunggal juga menjelaskan mengapa koefisien silhouette yang diperoleh tergolong lemah, karena rumah tangga tersebar menerus di sepanjang sumbu tersebut tanpa celah yang memisahkan kedua kelompok.
 
-Perbedaan pusat klaster pada ketiga variabel pembentuk dan pada variabel di luar variabel pembentuk perlu diuji kebermaknaannya sebelum karakter masing-masing kelompok ditafsirkan. Pengujian tersebut diuraikan pada Subbab 4.3.## 4.5 Evaluasi Perbedaan dan Pemisahan Klaster
-
-Setelah dua klaster terbentuk, evaluasi dilakukan untuk menilai apakah karakteristik rumah tangga antar klaster menunjukkan perbedaan yang bermakna. Evaluasi ini dilakukan melalui uji beda univariat, uji hubungan pada variabel kepemilikan AC, serta evaluasi pemisahan multivariat. Perlu ditegaskan bahwa evaluasi ini bersifat internal dan deskriptif, karena klaster yang diuji merupakan hasil pembentukan dari variabel yang sama. Oleh karena itu, hasil uji statistik dalam bagian ini digunakan untuk memperjelas karakter pemisahan klaster, bukan sebagai validasi eksternal yang sepenuhnya independen.
-
-Hasil uji Kruskal–Wallis menunjukkan bahwa seluruh variabel pembentuk klaster berbeda secara signifikan antar klaster. Estimasi konsumsi listrik memiliki nilai statistik sebesar 2.835 dengan p-value kurang dari 0,001. Pengeluaran nonmakanan selain listrik juga menunjukkan perbedaan yang sangat kuat dengan nilai statistik sebesar 2.855 dan p-value kurang dari 0,001. Selain itu, ukuran rumah tangga dan pendidikan kepala rumah tangga juga berbeda signifikan antar klaster, masing-masing dengan nilai statistik sebesar 45,6 dan 111, serta p-value kurang dari 0,001. Hasil ini menunjukkan bahwa dua klaster yang terbentuk memiliki karakteristik yang berbeda pada seluruh variabel pembentuk klaster.
-
-**Tabel 4.8 Hasil Uji Kruskal–Wallis Variabel Pembentuk Klaster**
-
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER** (hanya nomor dan judul). Rekonstruksi dari angka yang disebut di naskah:
->
-> | Variabel | Statistik Kruskal–Wallis | p-value |
-> |---|---|---|
-> | Estimasi konsumsi listrik | 2.835 | < 0,001 |
-> | Pengeluaran nonmakanan selain listrik | 2.855 | < 0,001 |
-> | Ukuran rumah tangga | 45,6 | < 0,001 |
-> | Pendidikan kepala rumah tangga | 111 | < 0,001 |
-
-Hasil ANOVA satu arah menunjukkan pola yang sejalan dengan uji Kruskal–Wallis. Estimasi konsumsi listrik, pengeluaran nonmakanan selain listrik, ukuran rumah tangga, dan pendidikan kepala rumah tangga seluruhnya memiliki perbedaan rata-rata yang signifikan antar klaster. Nilai F untuk estimasi konsumsi listrik sebesar 2.839, sedangkan nilai F untuk pengeluaran nonmakanan selain listrik sebesar 2.560. Sementara itu, ukuran rumah tangga dan pendidikan kepala rumah tangga masing-masing memiliki nilai F sebesar 49,9 dan 221. Seluruh nilai p-value berada di bawah 0,001. Konsistensi hasil antara uji parametrik dan nonparametrik ini memperkuat temuan bahwa pemisahan klaster tidak hanya terlihat secara visual, tetapi juga tercermin dalam perbedaan statistik antar kelompok.
-
-**Tabel 4.9 Hasil ANOVA Variabel Pembentuk Klaster**
-
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER** (hanya nomor dan judul). Rekonstruksi dari angka yang disebut di naskah:
->
-> | Variabel | Nilai F | p-value |
-> |---|---|---|
-> | Estimasi konsumsi listrik | 2.839 | < 0,001 |
-> | Pengeluaran nonmakanan selain listrik | 2.560 | < 0,001 |
-> | Ukuran rumah tangga | 49,9 | < 0,001 |
-> | Pendidikan kepala rumah tangga | 221 | < 0,001 |
-
-Pada variabel profiling, kepemilikan AC juga menunjukkan perbedaan yang sangat jelas antar klaster. Tabulasi silang menunjukkan bahwa pada klaster 1 terdapat 2.828 rumah tangga yang tidak memiliki AC dan 501 rumah tangga yang memiliki AC. Sebaliknya, pada klaster 2 terdapat 473 rumah tangga yang tidak memiliki AC dan 1.192 rumah tangga yang memiliki AC. Hasil uji chi-square menghasilkan nilai statistik sebesar 1.581 dengan p-value kurang dari 0,001. Hal ini menunjukkan bahwa distribusi kepemilikan AC berbeda secara signifikan antar klaster. Dengan demikian, meskipun AC tidak digunakan sebagai variabel pembentuk klaster, variabel ini mampu memperjelas perbedaan karakter adaptasi pendinginan antar kelompok rumah tangga.
-
-**Tabel 4.10 Tabulasi Silang Kepemilikan AC Menurut Klaster**
-
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER** (hanya nomor dan judul). Rekonstruksi dari angka yang disebut di naskah:
->
-> | Klaster | Tidak memiliki AC | Memiliki AC | Total |
-> |---|---|---|---|
-> | Klaster 1 | 2.828 | 501 | 3.329 |
-> | Klaster 2 | 473 | 1.192 | 1.665 |
-> | **Total** | **3.301** | **1.693** | **4.994** |
-
-**Tabel 4.11 Hasil Uji Chi-Square Kepemilikan AC Menurut Klaster**
-
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER** (hanya nomor dan judul). Angka yang disebut di naskah: statistik chi-square = **1.581**, p-value **< 0,001**.
-
-Evaluasi multivariat dilakukan untuk melihat apakah pemisahan dua klaster tetap terlihat ketika seluruh variabel pembentuk klaster dipertimbangkan secara simultan. Hasil Wilks' Lambda sebesar 0,5928 dengan approximate F sebesar 856,73 dan p-value kurang dari 0,001 menunjukkan bahwa terdapat perbedaan multivariat yang signifikan antara klaster 1 dan klaster 2. Hasil Pillai's Trace sebesar 0,4072 dengan approximate F yang sama dan p-value kurang dari 0,001 juga memberikan kesimpulan yang sejalan. Artinya, secara simultan kedua klaster memiliki perbedaan karakteristik berdasarkan kombinasi estimasi konsumsi listrik, pengeluaran nonmakanan selain listrik, ukuran rumah tangga, dan pendidikan kepala rumah tangga.
-
-**Tabel 4.12 Hasil Evaluasi Multivariat Wilks' Lambda dan Pillai's Trace**
-
-Output pertama — **Wilks' Lambda**:
-
-![Output Wilks Lambda](assets-ta/output-wilks-lambda.png)
-
-> **Deskripsi gambar — Output Wilks' Lambda.**
-> *Media internal:* `image21.png` · *Lokasi dokumen:* halaman 64 / halaman tercetak 58 (bagian Tabel 4.12).
->
-> **Bentuk visual.** Tangkapan layar keluaran konsol R berlatar putih, teks hitam **monospace**. Beberapa kata (`Df`, `approx`, `Df`, `Signif.`) bergaris bawah merah bergelombang — artefak pemeriksa ejaan aplikasi pengolah kata, bukan bagian dari output. Terdiri dari baris header kolom, satu baris hasil, satu baris residual, garis pemisah `---`, dan legenda kode signifikansi.
->
-> **Transkripsi isi:**
->
-> ```
->          Df  Wilks  approx F  num Df  den Df   Pr(>F)
-> cluster   1  0.5928   856.73       4    4989  < 2.2e-16 ***
-> Residuals 4992
-> ---
-> Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-> ```
->
-> | Butir | Nilai |
-> |---|---|
-> | Df (cluster) | 1 |
-> | Wilks | 0,5928 |
-> | approx F | 856,73 |
-> | num Df | 4 |
-> | den Df | 4989 |
-> | Pr(>F) | < 2,2e-16 (ditandai `***`) |
-> | Residuals | 4992 |
->
-> **Makna dalam konteks dokumen.** Nilai Wilks yang lebih kecil menunjukkan pemisahan multivariat yang lebih kuat. Hasil ini dibaca sebagai bukti bahwa kombinasi empat variabel pembentuk klaster berbeda secara signifikan antara klaster 1 dan klaster 2.
-
-Output kedua — **Pillai's Trace**:
-
-![Output Pillai Trace](assets-ta/output-pillai-trace.png)
-
-> **Deskripsi gambar — Output Pillai's Trace.**
-> *Media internal:* `image22.png` · *Lokasi dokumen:* halaman 64 / halaman tercetak 58 (bagian Tabel 4.12).
->
-> **Bentuk visual.** Tangkapan layar konsol R, tata letak identik dengan output Wilks, hanya kolom statistik utamanya berganti menjadi `Pillai`. Sama-sama monospace hitam di latar putih, dengan garis bawah merah bergelombang pada beberapa kata (artefak pemeriksa ejaan).
->
-> **Transkripsi isi:**
->
-> ```
->          Df  Pillai  approx F  num Df  den Df   Pr(>F)
-> cluster   1  0.4072    856.73       4    4989  < 2.2e-16 ***
-> Residuals 4992
-> ---
-> Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-> ```
->
-> | Butir | Nilai |
-> |---|---|
-> | Df (cluster) | 1 |
-> | Pillai | 0,4072 |
-> | approx F | 856,73 |
-> | num Df | 4 |
-> | den Df | 4989 |
-> | Pr(>F) | < 2,2e-16 (ditandai `***`) |
-> | Residuals | 4992 |
->
-> **Catatan pembacaan.** Nilai `approx F`, `num Df`, dan `den Df` persis sama dengan output Wilks. Ini wajar: pada kasus dua kelompok, Wilks' Lambda dan Pillai's Trace saling melengkapi (0,5928 + 0,4072 = 1,0000) dan menghasilkan statistik F yang identik.
->
-> **Makna dalam konteks dokumen.** Hasil Pillai sejalan dengan Wilks, yaitu menunjukkan perbedaan multivariat yang sangat signifikan. Karena uji Box's M menunjukkan ketidakhomogenan kovarians, dokumen menyebut Pillai's Trace lebih aman sebagai pendukung interpretasi karena relatif lebih robust terhadap pelanggaran asumsi tersebut.
-
-Meskipun demikian, hasil uji Box's M menunjukkan p-value kurang dari 0,001. Hasil ini berarti bahwa matriks kovarians antar klaster tidak homogen. Oleh karena itu, interpretasi hasil evaluasi multivariat perlu dilakukan secara hati-hati. Dalam penelitian ini, Wilks' Lambda dan Pillai's Trace tidak digunakan sebagai satu-satunya dasar validasi, tetapi sebagai informasi pendukung untuk menunjukkan bahwa struktur dua klaster memiliki pemisahan multivariat yang kuat. Karena asumsi homogenitas kovarians tidak terpenuhi, hasil Pillai's Trace lebih aman digunakan sebagai pendukung interpretasi karena relatif lebih robust dibandingkan Wilks' Lambda ketika asumsi kovarians tidak sepenuhnya terpenuhi.
-
-**Tabel 4.13 Hasil Uji Box's M**
-
-![Output Box's M-test](assets-ta/output-box-m.png)
-
-> **Deskripsi gambar — Output Box's M-test for Homogeneity of Covariance Matrices.**
-> *Media internal:* `image23.png` · *Lokasi dokumen:* halaman 65 / halaman tercetak 59.
->
-> **Bentuk visual.** Tangkapan layar konsol R, teks monospace hitam di latar putih. Judul output berada di baris pertama dengan indentasi tengah, disusul baris kosong, lalu dua baris hasil. Beberapa kata (`data_hasil`, `all_of`, `df`, `Chi`) bergaris bawah merah bergelombang — artefak pemeriksa ejaan.
->
-> **Transkripsi isi:**
->
-> ```
->     Box's M-test for Homogeneity of Covariance Matrices
->
-> data:  select(data_hasil, all_of(uji_vars))
-> Chi-Sq (approx.) = 13849, df = 10, p-value < 2.2e-16
-> ```
->
-> | Butir | Nilai |
-> |---|---|
-> | Data | `select(data_hasil, all_of(uji_vars))` |
-> | Chi-Sq (approx.) | 13849 |
-> | df | 10 |
-> | p-value | < 2,2e-16 |
->
-> **Makna dalam konteks dokumen.** P-value yang sangat kecil menunjukkan matriks kovarians antar klaster tidak homogen. Dokumen secara eksplisit meminta hasil Wilks/Pillai ditafsirkan hati-hati dan tidak dijadikan satu-satunya dasar validasi klaster.
-
-Analisis diskriminan digunakan untuk melihat kemampuan kombinasi variabel pembentuk klaster dalam mengklasifikasikan kembali rumah tangga ke dalam klaster yang telah terbentuk. Hasil analisis menunjukkan bahwa variabel dengan kontribusi terbesar terhadap fungsi diskriminan adalah pengeluaran nonmakanan selain listrik dan estimasi konsumsi listrik. Koefisien diskriminan untuk pengeluaran nonmakanan selain listrik sebesar 0,881, sedangkan koefisien untuk estimasi konsumsi listrik sebesar 0,810. Sebaliknya, ukuran rumah tangga memiliki koefisien yang relatif kecil, yaitu 0,033, sedangkan pendidikan kepala rumah tangga memiliki koefisien negatif sebesar -0,236. Pola ini menunjukkan bahwa pemisahan klaster terutama didorong oleh dimensi konsumsi listrik dan kapasitas pengeluaran non-listrik, bukan oleh ukuran rumah tangga.
-
-**Tabel 4.14 Hasil Analisis Diskriminan Linear**
-
-![Output Analisis Diskriminan Linear (LDA)](assets-ta/output-lda.png)
-
-> **Deskripsi gambar — Output Analisis Diskriminan Linear (LDA).**
-> *Media internal:* `image24.png` · *Lokasi dokumen:* halaman 65, dengan caption Tabel 4.14 pada halaman 66.
->
-> **Bentuk visual.** Tangkapan layar konsol R yang cukup panjang, teks monospace hitam di latar putih, terbagi menjadi **empat blok** yang dipisahkan baris kosong: (1) `Call:`, (2) `Prior probabilities of groups:`, (3) `Group means:`, dan (4) `Coefficients of linear discriminants:`. Nama-nama variabel (`z_ln_listrik_kwh`, `z_ln_pengeluaran_nonmakanan_nonlistrik`, `z_ukuran_rt_w`, `z_pendidikan_krt`, `lda`) bergaris bawah merah bergelombang — artefak pemeriksa ejaan, bukan bagian output.
->
-> **Transkripsi isi:**
->
-> ```
-> Call:
-> lda(cluster ~ ., data = lda_data)
->
-> Prior probabilities of groups:
->         1         2
-> 0.6665999 0.3334001
->
-> Group means:
->   z_ln_listrik_kwh  z_ln_pengeluaran_nonmakanan_nonlistrik  z_ukuran_rt_w  z_pendidikan_krt
-> 1       -0.5184213                              -0.5238765    -0.07034029         0.1454923
-> 2        1.0365312                               1.0474384     0.14063833        -0.2908973
->
-> Coefficients of linear discriminants:
->                                                 LD1
-> z_ln_listrik_kwh                          0.80979992
-> z_ln_pengeluaran_nonmakanan_nonlistrik    0.88148045
-> z_ukuran_rt_w                             0.03311366
-> z_pendidikan_krt                         -0.23579770
-> ```
->
-> **Rincian per blok:**
->
-> *Prior probabilities of groups*
->
-> | Kelompok | Prior |
-> |---|---|
-> | 1 | 0,6665999 |
-> | 2 | 0,3334001 |
->
-> *Group means (variabel terstandar)*
->
-> | Kelompok | z_ln_listrik_kwh | z_ln_pengeluaran_nonmakanan_nonlistrik | z_ukuran_rt_w | z_pendidikan_krt |
-> |---|---|---|---|---|
-> | 1 | -0,5184213 | -0,5238765 | -0,07034029 | 0,1454923 |
-> | 2 | 1,0365312 | 1,0474384 | 0,14063833 | -0,2908973 |
->
-> *Coefficients of linear discriminants (LD1)*
->
-> | Variabel | LD1 |
-> |---|---|
-> | z_ln_listrik_kwh | 0,80979992 |
-> | z_ln_pengeluaran_nonmakanan_nonlistrik | 0,88148045 |
-> | z_ukuran_rt_w | 0,03311366 |
-> | z_pendidikan_krt | -0,23579770 |
->
-> **Pola yang terlihat.** Prior menunjukkan kelompok 1 sekitar dua pertiga dan kelompok 2 sekitar sepertiga. *Group means* searah dengan heatmap Gambar 4.9: klaster 1 negatif pada konsumsi listrik dan pengeluaran non-listrik, klaster 2 positif besar pada keduanya. Koefisien LD1 terbesar secara absolut berasal dari pengeluaran nonmakanan selain listrik (0,881) dan estimasi konsumsi listrik (0,810); ukuran rumah tangga hanya 0,033, sedangkan pendidikan KRT berarah negatif (-0,236).
->
-> **Makna dalam konteks dokumen.** Pemisahan klaster terutama didorong oleh dimensi konsumsi energi dan kapasitas pengeluaran, bukan oleh ukuran rumah tangga.
->
-> **Informasi lanjutan pada halaman berikutnya.** Dokumen melaporkan klasifikasi ulang internal dengan matriks: aktual klaster 1 = 3.329 benar dan 0 salah; aktual klaster 2 = 1.391 benar dan 274 masuk klaster 1. Akurasi internal keseluruhan = 94,51%. Angka tersebut mengukur konsistensi internal, bukan akurasi prediksi eksternal.
-
-Hasil klasifikasi ulang menunjukkan bahwa seluruh rumah tangga pada klaster 1 berhasil diklasifikasikan kembali ke klaster asalnya. Pada klaster 2, sebanyak 1.391 rumah tangga berhasil diklasifikasikan dengan benar, sedangkan 274 rumah tangga diklasifikasikan ke klaster 1. Secara keseluruhan, akurasi klasifikasi internal mencapai 94,51 persen. Nilai ini menunjukkan bahwa dua klaster yang terbentuk memiliki struktur pemisahan yang kuat. Namun, karena klasifikasi ini dilakukan pada data yang sama dengan data pembentukan klaster, nilai akurasi tersebut harus dibaca sebagai ukuran konsistensi internal, bukan sebagai akurasi prediksi eksternal.
-
-**Tabel 4.15 Matriks Klasifikasi Analisis Diskriminan**
-
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER** (hanya nomor dan judul). Rekonstruksi dari angka yang disebut di naskah:
->
-> | Aktual \ Prediksi | Klaster 1 | Klaster 2 | Total |
-> |---|---|---|---|
-> | Klaster 1 | 3.329 | 0 | 3.329 |
-> | Klaster 2 | 274 | 1.391 | 1.665 |
-
-**Tabel 4.16 Akurasi Klasifikasi Internal**
-
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER** (hanya nomor dan judul). Angka yang disebut di naskah: akurasi klasifikasi internal **94,51 persen**.
-
-
-## 4.6 Profil Klaster Rumah Tangga
-
-Profil klaster disusun berdasarkan nilai rata-rata tertimbang dari variabel pembentuk klaster dan beberapa variabel pendukung. Dari hasil ini terlihat bahwa dua klaster yang terbentuk menunjukkan karakter yang berbeda secara cukup tegas.
-
-Secara umum, klaster 1 merupakan kelompok rumah tangga dengan estimasi konsumsi listrik yang lebih rendah. Rata-rata estimasi konsumsi listrik pada klaster ini sekitar 107 kWh per bulan, dengan median sekitar 94,4 kWh. Di sisi lain, klaster 2 memiliki rata-rata estimasi konsumsi listrik yang jauh lebih tinggi, yaitu sekitar 495 kWh per bulan, dengan median sekitar 322 kWh. Perbedaan ini menunjukkan bahwa klaster 2 merupakan kelompok rumah tangga dengan intensitas penggunaan listrik yang secara nyata lebih tinggi dibandingkan klaster 1.
-
-Perbedaan serupa juga terlihat pada pengeluaran nonmakanan selain listrik. Klaster 2 memiliki rata-rata pengeluaran nonmakanan selain listrik yang lebih tinggi daripada klaster 1. Hal ini menunjukkan bahwa rumah tangga pada klaster 2 pada umumnya memiliki kapasitas konsumsi non-listrik yang lebih besar, sehingga secara ekonomi relatif lebih mampu membiayai kebutuhan rumah tangga di luar konsumsi dasar listrik.
-
-Jika dilihat dari ukuran rumah tangga, klaster 2 cenderung memiliki ukuran rumah tangga yang sedikit lebih besar dibandingkan klaster 1. Sementara itu, pada variabel pendidikan kepala rumah tangga, pola yang muncul justru menunjukkan bahwa klaster 1 memiliki rata-rata pendidikan kepala rumah tangga yang sedikit lebih tinggi, sedangkan klaster 2 sedikit lebih rendah. Dengan demikian, rumah tangga dengan konsumsi listrik dan kapasitas belanja non-listrik yang lebih tinggi tidak selalu identik dengan tingkat pendidikan kepala rumah tangga yang lebih tinggi.
-
-**Tabel 4.7 Profil Tertimbang Rumah Tangga Menurut Klaster**
-
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER.** Hanya nomor dan judul tabel yang terbawa. Angka-angka yang tersebar di naskah dan di lampiran deskripsi visual menghasilkan rekonstruksi parsial berikut:
->
-> | Indikator | Klaster 1 | Klaster 2 |
-> |---|---|---|
-> | Jumlah rumah tangga (sampel) | 3.329 | 1.665 |
-> | Komposisi tertimbang | ±58,8% | ±41,2% |
-> | Rata-rata estimasi konsumsi listrik | ±107,03 kWh/bulan | ±494,97 kWh/bulan |
-> | Median estimasi konsumsi listrik | ±94,4 kWh | ±322 kWh |
-> | Rata-rata pengeluaran nonmakanan selain listrik | ±Rp2,34 juta | ±Rp9,80 juta |
-> | Proporsi kepemilikan AC | 14,73% | 73,32% |
-
-Visualisasi rata-rata estimasi konsumsi listrik per klaster mempertegas perbedaan tersebut. Klaster 2 memiliki rata-rata konsumsi listrik beberapa kali lebih tinggi dibandingkan klaster 1. Temuan ini menguatkan bahwa dimensi konsumsi energi merupakan salah satu pembeda utama dalam struktur klaster rumah tangga yang terbentuk.
-
-![Gambar 4.7 Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster](assets-ta/gambar-4-7-bar-konsumsi-klaster.png)
-
-**Gambar 4.7 Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster**
-
-> **Deskripsi Gambar 4.7.**
-> *Media internal:* `image15.png` · *Lokasi dokumen:* halaman 58 / halaman tercetak 52.
->
-> **Bentuk visual.** *Bar chart* vertikal sangat sederhana, hanya dua batang berwarna **abu-abu gelap solid**, latar putih.
-> - **Judul di dalam gambar:** "Rata-Rata Estimasi Konsumsi Listrik Menurut Klaster"
-> - **Subjudul di dalam gambar:** "Estimasi kWh = pengeluaran listrik / tarif acuan Statistik PLN 2024"
-> - **Sumbu-X:** "Klaster", dua kategori berlabel **1** dan **2**
-> - **Sumbu-Y:** "Rata-rata estimasi listrik tertimbang (kWh)", tanda sumbu 0, 100, 200, 300, 400, 500
->
-> **Pola yang terlihat.** Batang klaster 1 pendek, berhenti sedikit di atas garis 100. Batang klaster 2 hampir menyentuh garis 500 — kira-kira **4,6 kali** lebih tinggi. Tidak ada label angka di atas batang; grafik memang disusun untuk menonjolkan kesenjangan, bukan nilai persisnya.
->
-> **Angka pendukung dari naskah.** Klaster 1 ±107,03 kWh/bulan; klaster 2 ±494,97 kWh/bulan. Median disebut ±94,4 kWh (klaster 1) dan ±322 kWh (klaster 2).
->
-> **Makna dalam konteks dokumen.** Konsumsi listrik merupakan salah satu pembeda utama struktur klaster; klaster 2 menunjukkan intensitas pemakaian yang jauh lebih tinggi daripada klaster 1.
-
-Kepemilikan air conditioner (AC) juga memperlihatkan perbedaan yang sangat menonjol antar klaster. Pada klaster 1, proporsi rumah tangga yang memiliki AC berada pada kisaran yang jauh lebih rendah, sekitar 14–15 persen. Sebaliknya, pada klaster 2 proporsinya meningkat tajam hingga sekitar 70 persen atau lebih. Temuan ini memperlihatkan bahwa klaster 2 bukan hanya dicirikan oleh konsumsi listrik yang lebih tinggi, tetapi juga oleh tingkat kepemilikan perangkat pendingin yang jauh lebih besar.
-
-![Gambar 4.8 Proporsi Kepemilikan AC Menurut Klaster](assets-ta/gambar-4-8-proporsi-ac-klaster.png)
-
-**Gambar 4.8 Proporsi Kepemilikan AC Menurut Klaster**
-
-> **Deskripsi Gambar 4.8.**
-> *Media internal:* `image16.png` · *Lokasi dokumen:* halaman 59 / halaman tercetak 53.
->
-> **Bentuk visual.** *Bar chart* vertikal dua batang, warna **abu-abu gelap solid**, latar putih.
-> - **Judul di dalam gambar:** "Proporsi Kepemilikan AC Menurut Klaster"
-> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
-> - **Sumbu-Y:** "Proporsi rumah tangga memiliki AC (%)", tanda sumbu 0, 20, 40, 60
->
-> **Pola yang terlihat.** Batang klaster 1 pendek, berhenti di sekitar **15 persen**. Batang klaster 2 jauh lebih tinggi, melewati tanda 60 dan mencapai sekitar **73 persen** — hampir lima kali lipat. Selisih ketinggian batang adalah salah satu kontras paling tegas di seluruh bab hasil. Tidak ada label angka di atas batang.
->
-> **Angka pendukung.** Berdasarkan tabel profil tertimbang yang menyertai bagian ini: **Klaster 1 = 14,73%** rumah tangga memiliki AC; **Klaster 2 = 73,32%**.
->
-> **Makna dalam konteks dokumen.** Klaster 2 bukan hanya memiliki konsumsi listrik lebih tinggi, tetapi juga akses jauh lebih besar terhadap perangkat pendingin. Klaster 1 kemudian dibaca sebagai kelompok dengan keterbatasan lebih besar dalam adaptasi pendinginan.
-
-Hasil heatmap berbasis rata-rata z-score menunjukkan pola yang konsisten. Klaster 2 memiliki nilai rata-rata z-score positif pada log estimasi konsumsi listrik dan log pengeluaran nonmakanan selain listrik, masing-masing sekitar 1,04 dan 1,05. Sebaliknya, klaster 1 memiliki nilai rata-rata z-score negatif pada kedua variabel tersebut, masing-masing sekitar -0,52 dan -0,52. Pola ini menegaskan bahwa pemisahan utama antarklaster terutama didorong oleh perbedaan konsumsi listrik dan kapasitas pengeluaran non-listrik. Pada variabel pendidikan kepala rumah tangga, klaster 1 memiliki nilai rata-rata z-score positif, sedangkan klaster 2 negatif. Untuk ukuran rumah tangga, perbedaannya relatif kecil, meskipun klaster 2 tetap sedikit lebih tinggi.
-
-![Gambar 4.9 Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score](assets-ta/gambar-4-9-heatmap-zscore.png)
-
-**Gambar 4.9 Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score**
-
-> **Deskripsi Gambar 4.9.**
-> *Media internal:* `image17.png` · *Lokasi dokumen:* halaman 59 / halaman tercetak 53.
->
-> **Bentuk visual.** *Heatmap* berupa matriks **2 baris × 4 kolom**, setiap sel diberi warna sekaligus label angka di tengahnya.
-> - **Judul di dalam gambar:** "Heatmap Profil Klaster Berdasarkan Rata-Rata Z-Score"
-> - **Sumbu-Y:** "Klaster" — baris atas = **2**, baris bawah = **1**
-> - **Sumbu-X:** "Variabel pembentuk klaster" — empat label ditulis miring: `ln_listrik_kwh`, `ln_pengeluaran_nonmakanan_nonlistrik`, `pendidikan_krt`, `ukuran_rt_w`
-> - **Legenda warna di kanan:** berjudul "Rata-rata Z", gradasi divergen dari **merah salmon** (nilai negatif, ≈ -0,5) melalui **putih/ungu pucat** (nol) ke **biru pekat** (nilai positif, ≈ 1,0)
->
-> **Pola warna dan angka:**
->
-> | Klaster | ln_listrik_kwh | ln_pengeluaran_nonmakanan_nonlistrik | pendidikan_krt | ukuran_rt_w |
-> |---|---|---|---|---|
-> | **2** (baris atas) | **1,04** — biru pekat | **1,05** — biru pekat | **-0,29** — salmon muda | **0,14** — ungu sangat pucat |
-> | **1** (baris bawah) | **-0,52** — salmon | **-0,52** — salmon | **0,15** — ungu sangat pucat | **-0,07** — hampir putih |
->
-> **Pola yang terlihat.** Dua kolom pertama menghasilkan kontras warna paling ekstrem: klaster 2 biru pekat, klaster 1 salmon. Pada kolom `pendidikan_krt` **arah pola berbalik** — klaster 1 sedikit positif, klaster 2 negatif. Kolom `ukuran_rt_w` nyaris tanpa warna karena kedua nilainya mendekati nol.
->
-> **Makna dalam konteks dokumen.** Heatmap menegaskan bahwa pemisahan terbesar muncul pada dimensi konsumsi listrik dan kapasitas pengeluaran non-listrik. Pendidikan dan ukuran rumah tangga memberi kontribusi pembeda yang jauh lebih kecil, dan arah pendidikan berlawanan dengan dua variabel ekonomi utama.
-
-Sebaran estimasi konsumsi listrik menurut klaster juga menunjukkan bahwa klaster 1 terkonsentrasi pada tingkat konsumsi yang lebih rendah dengan penyebaran yang relatif sempit, sedangkan klaster 2 memiliki median yang lebih tinggi dan penyebaran yang lebih lebar. Artinya, klaster 2 tidak hanya lebih tinggi secara rata-rata, tetapi juga lebih heterogen dalam intensitas konsumsi listriknya.
-
-![Gambar 4.10 Sebaran Estimasi Konsumsi Listrik per Klaster](assets-ta/gambar-4-10-boxplot-klaster.png)
-
-**Gambar 4.10 Sebaran Estimasi Konsumsi Listrik per Klaster**
-
-> **Deskripsi Gambar 4.10.**
-> *Media internal:* `image18.png` · *Lokasi dokumen:* halaman 60 / halaman tercetak 54.
->
-> **Bentuk visual.** Dua *boxplot* berdampingan yang ditumpangi hamburan titik observasi (*jitter*), monokrom abu-abu/hitam, latar putih.
-> - **Judul di dalam gambar:** "Sebaran Estimasi Konsumsi Listrik per Klaster"
-> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
-> - **Sumbu-Y:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
->
-> **Pola yang terlihat.**
-> - **Klaster 1:** kotak sangat rendah dan pipih (kira-kira 60–140 kWh) dengan garis median di sekitar 95 kWh. Awan titik padat dan sempit, hampir seluruhnya di bawah 250 kWh. Nyaris tanpa titik ekstrem ke atas.
-> - **Klaster 2:** kotak jauh lebih tinggi dan lebih lebar (kira-kira 240–495 kWh), garis median di sekitar 320 kWh. *Whisker* atas memanjang hingga ±880 kWh. Awan titik menyebar sangat luas ke atas dan membentuk pita rapat di batas atas (±1.725 kWh).
-> *Posisi kuartil dibaca secara visual, sehingga bersifat perkiraan.*
->
-> **Angka pendukung dari naskah.** Rata-rata ±107 kWh (klaster 1) dan ±495 kWh (klaster 2); median ±94,4 kWh dan ±322 kWh. Perbedaan bukan hanya pada rata-rata, tetapi juga pada pusat distribusi dan lebar penyebaran.
->
-> **Makna dalam konteks dokumen.** Klaster 2 lebih heterogen dalam intensitas konsumsi, sedangkan klaster 1 lebih homogen dan terkonsentrasi pada konsumsi rendah.
-
-Hubungan antara pengeluaran nonmakanan selain listrik dan estimasi konsumsi listrik juga memperlihatkan pola yang searah. Rumah tangga dalam klaster 2 cenderung menempati area dengan pengeluaran non-listrik lebih tinggi dan konsumsi listrik lebih tinggi. Sebaliknya, rumah tangga pada klaster 1 cenderung terkonsentrasi pada area dengan pengeluaran non-listrik dan konsumsi listrik yang sama-sama lebih rendah. Temuan ini menguatkan bahwa terdapat keterkaitan antara kapasitas pengeluaran rumah tangga dan intensitas penggunaan listrik.
-
-![Gambar 4.11 Hubungan Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster](assets-ta/gambar-4-11-scatter-klaster.png)
-
-**Gambar 4.11 Hubungan Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster**
-
-> **Deskripsi Gambar 4.11.**
-> *Media internal:* `image19.png` · *Lokasi dokumen:* halaman 60 / halaman tercetak 54.
->
-> **Bentuk visual.** *Scatter plot* dengan sumbu identik seperti Gambar 4.2, tetapi kini titik **diwarnai menurut klaster**.
-> - **Judul di dalam gambar:** "Pengeluaran Nonmakanan Selain Listrik dan Estimasi Konsumsi Listrik Menurut Klaster"
-> - **Sumbu-X:** "Pengeluaran nonmakanan selain listrik (Rp)", tanda sumbu 0; 10.000.000; 20.000.000; 30.000.000
-> - **Sumbu-Y:** "Estimasi listrik sebulan terakhir (kWh)", tanda sumbu 0, 500, 1000, 1500
-> - **Legenda di kanan:** berjudul "Klaster" — **1** = **merah salmon**, **2** = **biru kehijauan/teal**
->
-> **Pola yang terlihat.** Titik **merah salmon (klaster 1)** membentuk gumpalan sangat padat di **pojok kiri bawah**, terbatas pada pengeluaran di bawah ±Rp5 juta dan konsumsi di bawah ±300 kWh. Titik **teal (klaster 2)** mengisi seluruh sisa bidang: menyebar jauh ke kanan (sampai batas ±Rp35 juta) dan ke atas (sampai batas ±1.725 kWh). Batas antara dua warna terlihat cukup tegas dan mengikuti garis diagonal — makin tinggi salah satu sumbu, makin dominan teal. Terlihat pula kolom teal rapat di tepi kanan dan pita teal rapat di garis atas, yaitu observasi yang menumpuk pada batas atas kedua variabel.
->
-> **Angka pendukung.** Profil tertimbang: rata-rata pengeluaran nonmakanan nonlistrik ±Rp2,34 juta (klaster 1) dan ±Rp9,80 juta (klaster 2); rata-rata konsumsi listrik ±107 dan ±495 kWh/bulan.
->
-> **Makna dalam konteks dokumen.** Plot memperlihatkan bahwa klaster 2 merepresentasikan kelompok dengan kapasitas konsumsi non-listrik dan penggunaan listrik yang secara bersamaan lebih tinggi, sejalan dengan gagasan bahwa kondisi ekonomi berhubungan dengan intensitas penggunaan energi modern.
-
-Jika dilihat dari distribusi pendidikan kepala rumah tangga, klaster 1 memiliki proporsi kategori pendidikan tinggi yang relatif lebih besar, sedangkan klaster 2 memiliki proporsi kategori pendidikan rendah yang lebih besar. Temuan ini menarik karena menunjukkan bahwa rumah tangga dengan konsumsi listrik lebih tinggi tidak selalu berasal dari kepala rumah tangga dengan tingkat pendidikan lebih tinggi. Dalam konteks ini, pola konsumsi listrik tampaknya lebih erat berkaitan dengan kapasitas pengeluaran dan kepemilikan perangkat pendingin dibandingkan dengan pendidikan kepala rumah tangga semata.
-
-![Gambar 4.12 Distribusi Pendidikan Kepala Rumah Tangga Menurut Klaster](assets-ta/gambar-4-12-pendidikan-krt-klaster.png)
-
-**Gambar 4.12 Distribusi Pendidikan Kepala Rumah Tangga Menurut Klaster**
-
-> **Deskripsi Gambar 4.12.**
-> *Media internal:* `image20.png` · *Lokasi dokumen:* halaman 61 / halaman tercetak 55.
->
-> **Bentuk visual.** *Stacked bar chart* 100 persen, dua batang vertikal, latar putih.
-> - **Judul di dalam gambar:** "Distribusi Pendidikan KRT per Klaster"
-> - **Sumbu-X:** "Klaster", kategori **1** dan **2**
-> - **Sumbu-Y:** "Persentase rumah tangga", tanda sumbu 0%, 25%, 50%, 75%, 100%
-> - **Legenda di kanan:** berjudul "Kategori pendidikan" — **Rendah** = **merah salmon**, **Sedang** = **hijau**, **Tinggi** = **biru**
->
-> **Susunan tumpukan (dari bawah ke atas):** biru (Tinggi) → hijau (Sedang) → salmon (Rendah). Kedua batang penuh sampai 100%.
->
-> **Proporsi yang terbaca secara visual:**
->
-> | Kategori | Klaster 1 | Klaster 2 |
-> |---|---|---|
-> | Tinggi (biru) | ±53% | ±47% |
-> | Sedang (hijau) | ±20% | ±10% |
-> | Rendah (salmon) | ±27% | ±43% |
->
-> Angka di atas merupakan pembacaan visual proporsi terhadap sumbu, bukan angka tabel eksplisit. Yang paling kentara adalah **segmen hijau (Sedang) pada klaster 2 menyusut menjadi kira-kira separuh** dari klaster 1, sementara segmen salmon (Rendah) membesar tajam.
->
-> **Kesimpulan tekstual dokumen.** Klaster 1 memiliki proporsi kategori pendidikan tinggi yang relatif lebih besar, sedangkan klaster 2 memiliki proporsi kategori pendidikan rendah yang lebih besar.
->
-> **Makna dalam konteks dokumen.** Temuan ini penting karena memperlihatkan bahwa kelompok dengan konsumsi listrik lebih tinggi tidak otomatis memiliki pendidikan KRT yang lebih tinggi. Dalam hasil klaster, kapasitas pengeluaran dan kepemilikan perangkat pendingin tampak lebih erat berhubungan dengan perbedaan konsumsi listrik dibanding pendidikan KRT semata.
-
-Berdasarkan keseluruhan profil tersebut, klaster 1 dapat diinterpretasikan sebagai kelompok rumah tangga dengan konsumsi listrik relatif rendah, pengeluaran nonmakanan selain listrik relatif lebih rendah, dan proporsi kepemilikan AC yang juga rendah. Dalam konteks penelitian ini, klaster tersebut dapat dibaca sebagai kelompok rumah tangga yang cenderung memiliki keterbatasan lebih besar dalam adaptasi pendinginan. Sebaliknya, klaster 2 dapat diinterpretasikan sebagai kelompok rumah tangga dengan konsumsi listrik lebih tinggi, kapasitas pengeluaran non-listrik lebih tinggi, dan tingkat kepemilikan AC yang jauh lebih besar, sehingga relatif lebih mampu melakukan adaptasi pendinginan.
-
-## 4.7 Pembahasan Karakter Klaster
-
-Hasil penelitian menunjukkan bahwa rumah tangga di DKI Jakarta dapat dikelompokkan ke dalam dua klaster utama berdasarkan estimasi konsumsi listrik dan karakteristik sosial ekonominya. Klaster 1 merupakan kelompok rumah tangga dengan estimasi konsumsi listrik relatif rendah, pengeluaran nonmakanan selain listrik yang lebih rendah, dan proporsi kepemilikan AC yang kecil. Sebaliknya, klaster 2 merupakan kelompok rumah tangga dengan estimasi konsumsi listrik lebih tinggi, pengeluaran nonmakanan selain listrik yang lebih besar, serta proporsi kepemilikan AC yang jauh lebih tinggi.
-
-Perbedaan paling kuat antara kedua klaster terletak pada estimasi konsumsi listrik dan pengeluaran nonmakanan selain listrik. Hal ini terlihat dari nilai rata-rata, visualisasi klaster, heatmap z-score, serta koefisien diskriminan. Klaster 2 memiliki skor z positif pada log estimasi konsumsi listrik dan log pengeluaran nonmakanan selain listrik, sedangkan klaster 1 memiliki skor z negatif pada kedua variabel tersebut. Dengan demikian, struktur klaster terutama mencerminkan perbedaan kapasitas konsumsi dan intensitas penggunaan listrik rumah tangga.
-
-Kepemilikan AC memberikan informasi penting dalam membaca karakter adaptasi pendinginan. Proporsi kepemilikan AC pada klaster 2 jauh lebih tinggi dibandingkan klaster 1. Temuan ini menunjukkan bahwa rumah tangga dengan konsumsi listrik tinggi dan pengeluaran nonmakanan tinggi cenderung memiliki akses lebih besar terhadap perangkat pendingin. Sebaliknya, rumah tangga pada klaster 1 cenderung memiliki konsumsi listrik rendah dan kepemilikan AC rendah. Dalam konteks wilayah perkotaan seperti DKI Jakarta, kondisi ini dapat menunjukkan adanya keterbatasan kapasitas adaptasi pendinginan pada sebagian rumah tangga.
-
-Namun, interpretasi mengenai adaptation cooling deficit perlu dilakukan secara hati-hati. Penelitian ini tidak mengukur suhu ruang, paparan panas aktual, preferensi termal, atau kebutuhan pendinginan secara langsung. Oleh karena itu, klaster 1 tidak dapat secara langsung disebut mengalami defisit pendinginan, tetapi dapat diidentifikasi sebagai kelompok yang berpotensi memiliki keterbatasan adaptasi pendinginan berdasarkan kombinasi konsumsi listrik rendah, kapasitas pengeluaran lebih rendah, dan kepemilikan AC yang terbatas.
-
-Temuan lain yang menarik adalah pendidikan kepala rumah tangga tidak bergerak searah dengan konsumsi listrik. Klaster 1 memiliki nilai pendidikan kepala rumah tangga yang relatif lebih tinggi dibandingkan klaster 2, meskipun konsumsi listrik dan pengeluaran nonmakanan selain listriknya lebih rendah. Hal ini menunjukkan bahwa pendidikan kepala rumah tangga bukan satu-satunya faktor yang membedakan intensitas konsumsi listrik. Dalam hasil penelitian ini, konsumsi listrik lebih kuat berkaitan dengan kapasitas pengeluaran dan kepemilikan perangkat pendingin dibandingkan dengan pendidikan kepala rumah tangga.
-
-Secara keseluruhan, hasil klasterisasi menunjukkan bahwa heterogenitas konsumsi listrik rumah tangga di DKI Jakarta tidak hanya berkaitan dengan penggunaan energi, tetapi juga terkait dengan kapasitas ekonomi dan akses terhadap perangkat adaptasi pendinginan. Klaster 1 dapat dipahami sebagai kelompok rumah tangga dengan konsumsi listrik rendah dan kapasitas adaptasi pendinginan yang lebih terbatas, sedangkan klaster 2 merupakan kelompok rumah tangga dengan konsumsi listrik tinggi dan kapasitas adaptasi pendinginan yang lebih kuat. Hasil ini dapat menjadi dasar untuk memahami ketimpangan dalam penggunaan energi rumah tangga perkotaan, khususnya dalam konteks meningkatnya kebutuhan pendinginan di wilayah metropolitan.
-
-## 4.8 Ringkasan Hasil Bab IV
-
-Berdasarkan hasil pengolahan data, jumlah rumah tangga awal yang dianalisis adalah 5.079 rumah tangga. Setelah proses pembersihan data, sebanyak 4.994 rumah tangga digunakan dalam analisis klaster. Konsumsi listrik dalam penelitian ini diukur sebagai estimasi konsumsi listrik berbasis pengeluaran listrik bulanan yang dikonversi menggunakan tarif acuan Statistik PLN 2024 sebesar Rp1.493,62/kWh. Pendekatan ini digunakan karena informasi kWh aktual tidak tersedia secara memadai.
-
-Hasil evaluasi jumlah klaster menunjukkan bahwa dua klaster merupakan solusi utama yang dipilih. Pemilihan ini didasarkan pada nilai silhouette tertinggi dan keterbacaan substantif hasil klaster. Klaster 1 mencakup 3.329 rumah tangga atau sekitar 58,8 persen secara tertimbang, sedangkan klaster 2 mencakup 1.665 rumah tangga atau sekitar 41,2 persen secara tertimbang.
-
-Profil klaster menunjukkan bahwa klaster 1 memiliki estimasi konsumsi listrik lebih rendah, pengeluaran nonmakanan selain listrik lebih rendah, dan kepemilikan AC lebih terbatas. Klaster 2 memiliki estimasi konsumsi listrik lebih tinggi, pengeluaran nonmakanan selain listrik lebih besar, serta kepemilikan AC yang jauh lebih tinggi. Hasil uji beda univariat, evaluasi multivariat, dan analisis diskriminan menunjukkan bahwa kedua klaster memiliki pemisahan yang kuat, meskipun hasil evaluasi multivariat tetap perlu dibaca secara hati-hati karena asumsi homogenitas kovarians tidak terpenuhi.
-
-Dengan demikian, hasil penelitian ini menunjukkan adanya dua pola utama rumah tangga di DKI Jakarta dalam konteks konsumsi listrik dan karakteristik sosial ekonomi. Perbedaan tersebut dapat digunakan untuk membaca potensi ketimpangan kapasitas adaptasi pendinginan, terutama antara rumah tangga dengan konsumsi listrik rendah dan kepemilikan AC terbatas dibandingkan rumah tangga dengan konsumsi listrik tinggi dan akses perangkat pendingin yang lebih besar.
+Perbedaan pusat klaster pada ketiga variabel pembentuk dan pada variabel di luar variabel pembentuk perlu diuji kebermaknaannya sebelum karakter masing-masing kelompok ditafsirkan. Pengujian tersebut diuraikan pada Subbab 4.3.
+
+## 4.3 Perbedaan Karakteristik Sosial Ekonomi Antarklaster
+
+Subbab ini menjawab tujuan ketiga penelitian, yaitu menganalisis perbedaan karakteristik sosial ekonomi pada setiap klaster rumah tangga yang terbentuk. Pengujian disusun dalam dua lapis yang harus dibedakan sejak awal. Lapis pertama menguji ketiga variabel yang dipakai membentuk klaster; hasilnya bersifat internal dan berfungsi memastikan bahwa algoritme benar-benar menghasilkan dua kelompok yang terpisah, bukan membelah satu populasi yang homogen. Lapis kedua menguji variabel di luar variabel pembentuk, yaitu luas lantai, kepemilikan AC, kepemilikan lemari es, golongan daya terpasang, dan ukuran rumah tangga; pada lapis inilah temuan substantif penelitian berada, karena kelima variabel tersebut tidak ikut menentukan keanggotaan klaster. Uraian dimulai dari uji beda pada variabel pembentuk (Subbab 4.3.1), dilanjutkan analisis diskriminan sebagai pemeriksaan konsistensi internal (Subbab 4.3.2), profil kedua klaster (Subbab 4.3.3), variabel penciri di luar variabel pembentuk (Subbab 4.3.4), dan ditutup dengan pembahasan yang mengaitkan temuan pada penelitian terdahulu (Subbab 4.3.5).
+
+### 4.3.1 Uji Beda Antarklaster pada Variabel Pembentuk
+
+Perbedaan kedua klaster pada ketiga variabel pembentuk diuji dengan Kruskal–Wallis. Pemilihan uji berbasis peringkat merupakan konsekuensi langsung dari sebaran yang dilaporkan pada Subbab 4.1: konsumsi listrik dan pengeluaran nonmakanan selain listrik menceng kuat ke kanan dengan simpangan baku melampaui rata-ratanya, sehingga uji yang mengandaikan kenormalan tidak tepat dipakai sebagai hasil utama. Hasil pengujian disajikan pada Tabel 4.5.
+
+Tabel 4.5 Hasil Uji Kruskal–Wallis pada Variabel Pembentuk Klaster
+
+Variabel	H	db	p-value
+Konsumsi listrik (kWh per bulan)	2.115,7753	1	< 0,001
+Pengeluaran nonmakanan selain listrik (rupiah per bulan)	2.641,0933	1	< 0,001
+Lama sekolah kepala rumah tangga (tahun)	1.608,7838	1	< 0,001
+
+Sumber: Susenas Maret 2025, diolah.
+
+Ketiga variabel berbeda secara bermakna antarklaster pada taraf nyata 1 persen. Nilai H terbesar dimiliki pengeluaran nonmakanan selain listrik, disusul konsumsi listrik, dan terkecil lama sekolah kepala rumah tangga; urutan ini sejalan dengan besaran koefisien fungsi diskriminan yang dilaporkan pada Subbab 4.3.2. Satu sifat uji ini perlu dicatat karena berkaitan dengan pilihan ruang transformasi yang dibahas di bawah: Kruskal–Wallis bekerja pada peringkat, sedangkan transformasi logaritma bersifat monoton naik sehingga tidak mengubah urutan pengamatan. Nilai H pada Tabel 4.5 karena itu berlaku sama pada skala asli maupun pada skala logaritma yang dipakai membentuk klaster [PERLU VERIFIKASI]. Sebagai pembanding, uji ANOVA satu arah pada ketiga variabel yang sama menghasilkan kesimpulan searah dan disajikan pada Lampiran, tanpa dijadikan hasil utama karena asumsi kenormalannya tidak terpenuhi.
+
+Perbedaan pada ketiga variabel selanjutnya diuji secara serentak dengan analisis ragam multivariat. Pengujian dilakukan pada dua ruang yang berbeda dan keduanya dilaporkan secara terbuka. Ruang pertama adalah skala asli hasil winsorizing, yaitu variabel sebagaimana terukur dalam satuan kWh, rupiah, dan tahun; hasil pada ruang ini ditetapkan sebagai hasil utama karena yang diuji adalah besaran yang benar-benar diamati. Ruang kedua adalah ruang ln–Z, yaitu ruang tempat K-Means sesungguhnya bekerja; hasil pada ruang ini berfungsi sebagai uji kepekaan untuk memastikan kesimpulan tidak berubah ketika ruang pengujian disamakan dengan ruang pembentukan klaster. Hasil keduanya disajikan pada Tabel 4.6.
+
+Tabel 4.6 Hasil Uji Beda Multivariat pada Dua Ruang Pengujian
+
+Ruang pengujian	Statistik	Nilai	F hampiran	db pembilang	db penyebut	p-value
+Skala asli (winsorized)	Wilks' Λ	0,50131	1.656,9	3	4.997	< 0,001
+Skala asli (winsorized)	Pillai's trace	0,49869	1.656,9	3	4.997	< 0,001
+ln–Z (ruang pembentukan klaster)	Wilks' Λ	0,36857	2.853,6	3	4.997	< 0,001
+ln–Z (ruang pembentukan klaster)	Pillai's trace	0,63143	2.853,6	3	4.997	< 0,001
+
+Sumber: Susenas Maret 2025, diolah.
+
+Kedua statistik pada tabel di atas bukan dua bukti yang saling menguatkan, melainkan dua penyajian atas satu bukti yang sama. Karena kelompok yang dibandingkan hanya dua, derajat bebas hipotesis bernilai satu dan matriks yang diuji hanya memiliki satu akar ciri tak nol, sehingga Wilks' Λ dan Pillai's trace menghasilkan uji F yang identik dan berjumlah tepat satu [PERLU VERIFIKASI]. Hal ini terlihat langsung pada tabel: nilai F kedua statistik sama persis pada masing-masing ruang, dan penjumlahan Λ dengan Pillai menghasilkan satu. Konsekuensinya, penyajian keduanya dilakukan untuk kelengkapan pelaporan, bukan sebagai penguatan berganda atas kesimpulan yang sama.
+
+Pada ruang skala asli, nilai Wilks' Λ sebesar 0,50131 menunjukkan bahwa sekitar 49,87 persen keragaman gabungan ketiga variabel dijelaskan oleh keanggotaan klaster. Pada ruang ln–Z, nilai Λ turun menjadi 0,36857 sehingga keragaman terjelaskan naik menjadi sekitar 63,14 persen. Arah perubahan ini wajar dan memperkuat kesimpulan: pemisahan terlihat lebih tegas justru pada ruang tempat klaster dibentuk. Kesimpulan uji tidak berubah pada kedua ruang, yaitu kedua klaster berbeda secara bermakna pada ketiga variabel pembentuk secara serentak.
+
+Asumsi homogenitas matriks ragam-peragam diuji dengan Box's M pada kedua ruang yang sama, dengan hasil pada Tabel 4.7.
+
+Tabel 4.7 Hasil Uji Box's M pada Dua Ruang Pengujian
+
+Ruang pengujian	χ² hampiran	db	p-value
+Skala asli (winsorized)	11.369	6	< 0,001
+ln–Z (ruang pembentukan klaster)	403,62	6	< 0,001
+
+Sumber: Susenas Maret 2025, diolah.
+
+Hipotesis nol ditolak pada kedua ruang, sehingga matriks ragam-peragam kedua klaster tidak dapat dianggap homogen. Temuan ini dilaporkan apa adanya beserta dua catatan yang membatasi cara membacanya. Pertama, transformasi logaritma memperbaiki keadaan secara sangat besar: nilai χ² turun dari 11.369 menjadi 403,62, yaitu sekitar dua puluh delapan kali lebih kecil, yang menunjukkan bahwa sebagian besar penolakan pada ruang skala asli bersumber dari kemencengan sebaran, bukan semata dari perbedaan struktur ragam-peragam antarklaster. Kedua, Box's M sangat peka terhadap ukuran sampel; dengan 5.001 rumah tangga, penyimpangan sekecil apa pun dari homogenitas akan terdeteksi sebagai signifikan [PERLU VERIFIKASI]. Konsekuensi metodologisnya ditarik secara konsisten di seluruh subbab berikutnya: hasil uji multivariat pada Tabel 4.6 dibaca sebagai penguat deskriptif atas pemisahan klaster, dan analisis diskriminan pada Subbab 4.3.2 tidak diperlakukan sebagai uji inferensia.
+
+Seluruh pengujian pada subbab ini menegaskan bahwa kedua klaster benar-benar terpisah, tetapi belum menjawab pertanyaan yang lebih penting bagi tujuan ketiga, yaitu seperti apa isi masing-masing kelompok dan karakteristik apa di luar variabel pembentuk yang membedakannya. Kedua pertanyaan tersebut dijawab berturut-turut pada Subbab 4.3.3 dan Subbab 4.3.4.
 
 ---
 
