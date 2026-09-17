@@ -1423,6 +1423,19 @@ boxm_result <- biotools::boxM(data_hasil |> select(all_of(uji_vars)),
 print(boxm_result)
 capture.output(boxm_result, file = file.path(folder_output, "38_box_m.txt"))
 
+manova_vars <- c("z_ln_listrik_kwh",
+                 "z_ln_pengeluaran_nonmakanan_nonlistrik",
+                 "z_pendidikan_krt")
+
+fit_manova_z <- manova(
+  as.formula(paste("cbind(", paste(manova_vars, collapse = ", "), ") ~ cluster")),
+  data = data_hasil
+)
+capture.output(summary(fit_manova_z, test = "Wilks"),
+               file = file.path(folder_output, "36b_manova_wilks_z.txt"))
+capture.output(biotools::boxM(data_hasil |> select(all_of(manova_vars)),
+                              grouping = data_hasil$cluster),
+               file = file.path(folder_output, "38b_box_m_z.txt"))
 
 # ============================================================
 # 20. ANALISIS DISKRIMINAN
