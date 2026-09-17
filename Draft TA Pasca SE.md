@@ -1003,6 +1003,58 @@ Dua indikator terakhir pada Tabel 4.10 bergerak dengan pola yang berbeda dan kar
 
 Berdasarkan keseluruhan profil tersebut, Klaster 1 dapat dibaca sebagai kelompok rumah tangga dengan konsumsi listrik rendah, kapasitas pengeluaran terbatas, dan kepala rumah tangga berpendidikan menengah, yang mencakup mayoritas rumah tangga di Provinsi DKI Jakarta. Klaster 2 dapat dibaca sebagai kelompok rumah tangga dengan konsumsi listrik tinggi, kapasitas pengeluaran jauh lebih luas, dan kepala rumah tangga berpendidikan tinggi, yang mencakup sekitar dua dari setiap lima rumah tangga. Penamaan kedua kelompok ini bersifat deskriptif dan tidak menyiratkan urutan nilai apa pun di antara keduanya.
 
+### 4.3.4 Variabel Penciri di Luar Variabel Pembentuk
+
+Pengujian pada Subbab 4.3.1 dan pemeriksaan pada Subbab 4.3.2 menunjukkan bahwa kedua klaster terpisah secara konsisten pada variabel yang dipakai membentuknya. Keterpisahan semacam itu, sebagaimana dinyatakan pada subbab sebelumnya, bersifat melingkar karena yang diuji adalah variabel yang menentukan keanggotaan klaster itu sendiri. Bukti yang lebih berarti diperoleh dengan memeriksa variabel yang sama sekali tidak dilihat algoritme saat membentuk klaster. Bila kedua kelompok yang terbentuk dari konsumsi listrik, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga ternyata juga berbeda tajam pada kepemilikan peralatan rumah tangga dan kondisi hunian, perbedaan tersebut bukan konsekuensi konstruksi melainkan ciri yang melekat pada kelompoknya. Empat variabel penciri diperiksa, yaitu luas lantai tempat tinggal, kepemilikan air conditioner (AC), kepemilikan lemari es, dan golongan daya terpasang, ditambah ukuran rumah tangga yang pada penelitian ini tidak dipakai sebagai variabel pembentuk. Profil kelima variabel tersebut disajikan pada Tabel 4.11.
+
+Tabel 4.11 Profil Variabel Penciri Menurut Klaster
+
+Variabel penciri	Satuan	Klaster 1	Klaster 2
+Jumlah rumah tangga sampel	rumah tangga	3.329	1.672
+Luas lantai, rata-rata tertimbang	m²	42,52	106,17
+Luas lantai, nilai tengah tidak tertimbang	m²	30	80
+Kepemilikan AC	persen	17,02	76,07
+Kepemilikan lemari es	persen	87,27	98,25
+Golongan daya 450 watt	persen	8,9	6,3
+Golongan daya 900 watt	persen	37,1	15,6
+Golongan daya 1.300 watt atau lebih	persen	53,9	78,1
+Ukuran rumah tangga, rata-rata tertimbang	jiwa	3,65	3,71
+Ukuran rumah tangga, rata-rata tidak tertimbang	jiwa	3,03	3,24
+
+Sumber: Susenas Maret 2025, diolah.
+
+Catatan: seluruh persentase dihitung dengan penimbang rumah tangga; nilai tengah luas lantai disajikan tanpa penimbang. Luas lantai merupakan nilai setelah winsorizing pada persentil 1 dan 99. Persentase golongan daya merupakan persentase baris dan tidak selalu berjumlah tepat seratus akibat pembulatan.
+
+Perbedaan terbesar muncul pada luas lantai dan kepemilikan AC. Rata-rata luas lantai Klaster 2 mencapai dua setengah kali rata-rata Klaster 1, dengan selisih sekitar 64 m², sedangkan nilai tengahnya berselisih 50 m². Kedua ukuran pemusatan bergerak searah, sehingga selisih ini tidak dapat dijelaskan oleh segelintir rumah tangga berhunian sangat luas. Nilai luas lantai yang dipakai merupakan hasil winsorizing pada persentil 1 dan 99 agar nilai ekstrem tidak menarik rata-rata secara berlebihan tanpa harus membuang pengamatannya dari analisis [PERLU VERIFIKASI: Hair dkk. (2018) bab Examining Your Data, halaman penanganan pencilan]. Pada kepemilikan AC, selisihnya mencapai 59 poin persentase: tiga dari empat rumah tangga Klaster 2 memiliki AC, sedangkan pada Klaster 1 kepemilikan AC merupakan pengecualian dan hanya dijumpai pada kurang dari seperlima rumah tangga. Sebaran ini disajikan pada Gambar 4.11.
+
+Gambar 4.11 Proporsi Kepemilikan AC Menurut Klaster
+Sumber: Susenas Maret 2025, diolah.
+
+Kepemilikan lemari es memperlihatkan pola yang berbeda sifatnya. Selisihnya memang searah, yaitu 98,25 persen berbanding 87,27 persen, tetapi hanya sekitar sebelas poin persentase karena lemari es telah dimiliki hampir seluruh rumah tangga pada kedua kelompok. Variabel ini karena itu tidak berfungsi memisahkan kedua klaster, melainkan menunjukkan bahwa perbedaan antarkelompok tidak terletak pada pemenuhan kebutuhan dasar peralatan rumah tangga, melainkan pada kepemilikan peralatan yang bersifat tambahan dan berdaya besar seperti AC.
+
+Sebaran golongan daya terpasang bergerak searah dengan ketiga penciri sebelumnya. Sebanyak 78,1 persen rumah tangga Klaster 2 tersambung pada daya 1.300 watt atau lebih, berbanding 53,9 persen pada Klaster 1, sementara golongan 900 watt jauh lebih padat pada Klaster 1, yaitu 37,1 persen berbanding 15,6 persen. Satu hal perlu dinyatakan terbuka dalam membaca baris ini. Golongan daya terpasang dipakai pada tahap pra-pengolahan untuk menetapkan tarif yang membagi pengeluaran listrik menjadi estimasi konsumsi listrik, sehingga variabel ini ikut menentukan nilai variabel pembentuk pertama. Sebaran pada Tabel 4.11 karenanya disajikan sebagai deskripsi karakteristik kelistrikan kedua kelompok, bukan sebagai bukti bebas yang memvalidasi pemisahan klaster. Penilaian bebas atas pemisahan itu bersandar pada luas lantai, kepemilikan AC, dan kepemilikan lemari es, yang tidak dipakai sama sekali dalam pembentukan maupun pra-pengolahan variabel.
+
+Ukuran rumah tangga menuntut kehati-hatian yang berbeda. Rata-rata tertimbangnya adalah 3,71 jiwa pada Klaster 2 dan 3,65 jiwa pada Klaster 1, sehingga selisihnya hanya 0,06 jiwa. Pengujian pada Tabel 4.12 menghasilkan p-value yang sangat kecil, tetapi kesimpulan bahwa ukuran rumah tangga berbeda antarklaster tidak boleh dilaporkan tanpa menyebut besaran selisihnya. Dengan 5.001 rumah tangga, selisih sekecil enam per seratus jiwa pun cukup untuk menghasilkan p-value yang kecil, sedangkan secara substantif kedua kelompok praktis memiliki ukuran rumah tangga yang sama. Ukuran rumah tangga karena itu tidak ditetapkan sebagai penciri kedua klaster. Selain itu, rata-rata tertimbang pada kedua kelompok konsisten lebih besar daripada rata-rata tidak tertimbangnya, yaitu 3,65 berbanding 3,03 jiwa pada Klaster 1 dan 3,71 berbanding 3,24 jiwa pada Klaster 2. Pola ini menunjukkan bahwa penimbang rumah tangga Susenas tidak bebas terhadap ukuran rumah tangga, sehingga kedua versi angka dilaporkan berdampingan alih-alih memilih salah satunya.
+
+Perbedaan kelima variabel di atas diuji secara formal dengan dua versi perhitungan, yaitu tanpa penimbang dan dengan penimbang berbasis desain survei. Hasil keduanya disajikan pada Tabel 4.12.
+
+Tabel 4.12 Uji Beda dan Ukuran Efek Variabel Penciri Antarklaster
+
+Variabel penciri	Uji tanpa penimbang	Statistik	p-value	Uji dengan penimbang	Statistik	p-value	Cramér's V
+Luas lantai	Kruskal–Wallis	H = 1.154,5859 (db 1)	< 0,001	Kruskal–Wallis berbasis desain	t = 34,814 (db 4.999)	< 0,001	–
+Kepemilikan AC	Khi-kuadrat Pearson	χ² = 1.529,4057 (db 1)	< 0,001	Khi-kuadrat penyesuaian Rao–Scott	X² = 1.734 (db 1)	< 0,001	0,553
+Kepemilikan lemari es	Khi-kuadrat Pearson	χ² = 229,8040 (db 1)	< 0,001	Khi-kuadrat penyesuaian Rao–Scott	X² = 188,72 (db 1)	< 0,001	0,214
+Golongan daya terpasang	Khi-kuadrat Pearson	χ² = 292,96 (db 2)	< 0,001	Khi-kuadrat penyesuaian Rao–Scott	X² = 314,86 (db 2)	< 0,001	0,242
+Ukuran rumah tangga	Kruskal–Wallis	H = 24,2546 (db 1)	< 0,001	–	–	–	–
+
+Sumber: Susenas Maret 2025, diolah.
+
+Catatan: khi-kuadrat Pearson dihitung tanpa koreksi Yates. Cramér's V dihitung dari statistik khi-kuadrat tanpa penimbang. Luas lantai bersifat kontinu sehingga tidak memiliki Cramér's V. Uji golongan daya terpasang mencakup 5.001 rumah tangga yang seluruhnya memiliki kode golongan daya.
+
+Dua pembacaan muncul dari tabel tersebut. Pertama, seluruh variabel penciri berbeda secara bermakna antarklaster pada taraf nyata 1 persen, dan kesimpulan itu tidak berubah ketika perhitungan dilakukan dengan maupun tanpa penimbang. Keselarasan kedua versi perhitungan ini penting karena pembentukan klaster dilakukan tanpa penimbang, sedangkan pelaporan profilnya menggunakan penimbang, sebagaimana dijelaskan pada Subbab 4.2 dan Subbab 4.3.3. Kesesuaian arah dan kesesuaian kesimpulan pada kedua versi menunjukkan bahwa perbedaan yang ditemukan tidak bergantung pada keputusan memakai atau tidak memakai penimbang.
+
+Kedua, besaran hubungan antarvariabel penciri berbeda jauh. Kepemilikan AC memiliki Cramér's V sebesar 0,553, yaitu lebih dari dua kali nilai pada golongan daya terpasang (0,242) dan kepemilikan lemari es (0,214). Urutan ini sejalan dengan selisih persentase pada Tabel 4.11 dan menegaskan bahwa kepemilikan AC merupakan penciri terkuat di antara variabel yang tidak dipakai membentuk klaster. [Kalimat opsional, baru boleh dipakai setelah ambang tafsirnya terverifikasi: "Merujuk pada ambang tafsir Cramér's V, nilai 0,553 tergolong hubungan kuat, sedangkan 0,242 dan 0,214 tergolong hubungan lemah sampai sedang."] Temuan bahwa pemisahan kedua klaster tampak paling tegas justru pada kepemilikan peralatan pendingin ruangan menjadi pangkal pembahasan pada Subbab 4.3.5.
+
 ---
 
 # BAB V KESIMPULAN DAN SARAN
