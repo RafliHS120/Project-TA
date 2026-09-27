@@ -607,7 +607,7 @@ Tahap kedua adalah transformasi logaritma natural berbentuk ln(1 + x) terhadap k
 
 ### 3.4.2 Analisis Deskriptif
 
-Analisis deskriptif digunakan untuk memberikan gambaran umum mengenai karakteristik rumah tangga di DKI Jakarta tahun 2025 berdasarkan variabel penelitian. Johnson dan Wichern (2014) menjelaskan bahwa statistik deskriptif penting untuk meringkas dan menampilkan pola dasar dalam data multivariat sebelum dilakukan analisis lanjutan. Dalam penelitian ini, hasil analisis deskriptif disajikan dalam bentuk tabel distribusi frekuensi, ukuran ringkasan, dan grafik untuk mempermudah interpretasi data, khususnya untuk menggambarkan pola umum pengeluaran listrik rumah tangga, total pengeluaran rumah tangga, ukuran rumah tangga, tingkat pendidikan KRT, dan kepemilikan AC.
+Analisis deskriptif digunakan untuk menjawab tujuan pertama penelitian, yaitu memberikan gambaran umum mengenai konsumsi listrik dan karakteristik sosial ekonomi rumah tangga di Provinsi DKI Jakarta Tahun 2025. Johnson dan Wichern (2014) menjelaskan bahwa statistik deskriptif penting untuk meringkas dan menampilkan pola dasar dalam data multivariat sebelum dilakukan analisis lanjutan. Variabel yang dideskripsikan meliputi konsumsi listrik rumah tangga, konsumsi listrik per kapita, pengeluaran listrik, pengeluaran nonmakanan selain listrik, pangsa pengeluaran listrik terhadap pengeluaran nonmakanan, lama sekolah KRT, ukuran rumah tangga, dan kepemilikan AC. Ukuran ringkasan yang disajikan adalah rata-rata, simpangan baku, nilai minimum, dan nilai maksimum sampel, serta rata-rata tertimbang beserta galat bakunya. Rata-rata tertimbang dihitung dengan penimbang rumah tangga Susenas agar angka yang disajikan menggambarkan populasi rumah tangga di Provinsi DKI Jakarta, sedangkan statistik sampel disajikan untuk menggambarkan data yang secara langsung masuk ke tahap pengelompokan. Hasil deskriptif juga disajikan dalam bentuk grafik, yaitu histogram sebaran konsumsi listrik, diagram pencar antara pengeluaran nonmakanan selain listrik dan konsumsi listrik, serta diagram kotak konsumsi listrik menurut kepemilikan AC.
 
 ### 3.4.3 Penetapan Variabel Pembentuk dan Standardisasi Data
 
@@ -621,7 +621,7 @@ Pada dua klaster, yaitu jumlah klaster dengan rata-rata koefisien silhouette ter
 
 Setelah variabel pembentuk ditetapkan, ketiga variabel distandardisasi karena memiliki satuan pengukuran yang berbeda. Standardisasi bertujuan menyamakan skala antarvariabel agar tidak terjadi dominasi variabel tertentu dalam perhitungan jarak. Everitt et al. (2011) menegaskan bahwa standardisasi relevan ketika variabel memiliki skala yang berbeda, karena perhitungan jarak dari data mentah dapat menjadi tidak proporsional. Metode standardisasi yang digunakan adalah transformasi Z-score, yaitu:
 
-$$Z_{ij}=\frac{x_{ij}-\bar{x}_j}{s_j},\quad j=1,2,3$$
+$$Z_{ij}=\frac{x_{ij}-\bar{x}_j}{s_j},\quad j=1,2,3 \tag{3.1}$$
 
 dengan Z_ij = nilai standar variabel ke-j pada observasi ke-i; x_ij = nilai variabel ke-j pada observasi ke-i setelah transformasi pada Subbab 3.4.1; x̄_j = rata-rata variabel ke-j; dan s_j = simpangan baku variabel ke-j. Standardisasi diterapkan pada tiga variabel pembentuk klaster, yaitu ln(1 + konsumsi listrik), ln(1 + pengeluaran nonmakanan selain listrik), dan lama sekolah KRT.
 
@@ -629,14 +629,14 @@ dengan Z_ij = nilai standar variabel ke-j pada observasi ke-i; x_ij = nilai vari
 
 Pembentukan klaster memerlukan ukuran kedekatan atau ketidakmiripan antarobjek. Untuk peubah kuantitatif kontinu, ukuran jarak yang umum digunakan adalah jarak Euclidean. Everitt et al. (2011) menjelaskan bahwa untuk data kontinu, ukuran dissimilarity berbasis jarak merupakan dasar penting dalam analisis klaster, sedangkan Johnson dan Wichern (2014) menempatkan metode jarak sebagai komponen utama dalam pengelompokan non-hierarki. Dalam penelitian ini, jarak Euclidean digunakan karena sesuai untuk peubah kuantitatif yang telah distandarisasi. Jarak Euclidean antara objek ke-⟨i⟩ dan objek ke-⟨k⟩ dirumuskan sebagai:
 
-> ⚠️ **RUMUS HILANG PADA BERKAS SUMBER.** Bentuk bakunya:
-> $$d(\mathbf{Z}_i,\mathbf{Z}_k)=\sqrt{\sum_{j=1}^{4}(Z_{ij}-Z_{kj})^2}$$
+$$d(\mathbf{Z}_i,\mathbf{Z}_l)=\sqrt{\sum_{j=1}^{3}\left(Z_{ij}-Z_{lj}\right)^2} \tag{3.2}$$
 
 dengan:
 
-- ⟨d⟩ = jarak Euclidean antara objek ke-⟨i⟩ dan objek ke-⟨k⟩,
-- ⟨Z_ij⟩ = nilai variabel ke-⟨j⟩ pada objek ke-⟨i⟩,
-- ⟨Z_kj⟩ = nilai variabel ke-⟨j⟩ pada objek ke-⟨k⟩
+- $d(\mathbf{Z}_i,\mathbf{Z}_l)$ = jarak Euclidean antara rumah tangga ke-$i$ dan rumah tangga ke-$l$,
+- $Z_{ij}$ = nilai standar variabel ke-$j$ pada rumah tangga ke-$i$,
+- $Z_{lj}$ = nilai standar variabel ke-$j$ pada rumah tangga ke-$l$,
+- $j = 1, 2, 3$ = indeks variabel pembentuk klaster.
 
 ### 3.4.5 Penentuan Jumlah Klaster
 
@@ -652,18 +652,19 @@ Pembentukan klaster rumah tangga dilakukan menggunakan metode K-Means clustering
 
 Fungsi objektif yang diminimalkan dalam metode ini adalah Within-Cluster Sum of Squares (WCSS), yaitu:
 
-> ⚠️ **RUMUS HILANG PADA BERKAS SUMBER.** Bentuk bakunya:
-> $$WCSS=\sum_{k=1}^{K}\sum_{i\in C_k}\sum_{j=1}^{4}\left(Z_{ij}-\bar{Z}_{kj}\right)^2$$
+$$WCSS=\sum_{k=1}^{K}\sum_{i\in C_k}\sum_{j=1}^{3}\left(Z_{ij}-\bar{Z}_{kj}\right)^2 \tag{3.3}$$
 
 dengan:
 
-- ⟨C_k⟩ = himpunan objek pada klaster ke-⟨k⟩,
-- ⟨Z̄_kj⟩ = nilai centroid klaster ke-⟨k⟩ pada variabel ke-⟨j⟩.
+- $K$ = jumlah klaster,
+- $C_k$ = himpunan rumah tangga pada klaster ke-$k$,
+- $\bar{Z}_{kj}$ = nilai pusat (*centroid*) klaster ke-$k$ pada variabel ke-$j$.
 
-Centroid klaster ke-⟨k⟩ dihitung sebagai rata-rata seluruh anggota klaster tersebut, yaitu:
+Pusat klaster ke-$k$ dihitung sebagai rata-rata seluruh anggota klaster tersebut, yaitu:
 
-> ⚠️ **RUMUS HILANG PADA BERKAS SUMBER.** Bentuk bakunya:
-> $$\bar{\mathbf{Z}}_k=\frac{1}{n_k}\sum_{i\in C_k}\mathbf{Z}_i$$
+$$\bar{\mathbf{Z}}_k=\frac{1}{n_k}\sum_{i\in C_k}\mathbf{Z}_i \tag{3.4}$$
+
+dengan $n_k$ = banyaknya rumah tangga pada klaster ke-$k$.
 
 Algoritme K-Means dilakukan secara iteratif melalui langkah-langkah:
 
@@ -673,7 +674,7 @@ Algoritme K-Means dilakukan secara iteratif melalui langkah-langkah:
 4. memperbarui centroid berdasarkan rata-rata anggota klaster,
 5. mengulangi langkah 3 dan 4 sampai konvergen.
 
-Everitt et al. (2011, hlm. 125–126) juga menekankan bahwa hasil k-means dapat dipengaruhi oleh nilai awal, sehingga penggunaan beberapa inisialisasi dan pemilihan solusi dengan kriteria terbaik merupakan praktik yang lebih baik. Oleh karena itu, dalam penelitian ini K-Means dijalankan beberapa kali dengan inisialisasi berbeda, lalu dipilih solusi dengan nilai WCSS terendah.
+Everitt et al. (2011, hlm. 125–126) juga menekankan bahwa hasil k-means dapat dipengaruhi oleh nilai awal, sehingga penggunaan beberapa inisialisasi dan pemilihan solusi dengan kriteria terbaik merupakan praktik yang lebih baik. Oleh karena itu, dalam penelitian ini K-Means final dijalankan dengan 100 inisialisasi acak dan batas 1.000 iterasi, lalu dipilih solusi dengan nilai WCSS terendah; bilangan acak awal ditetapkan agar hasil dapat direproduksi.
 
 
 ### 3.4.7 Evaluasi Perbedaan dan Pemisahan Klaster
@@ -1158,7 +1159,67 @@ Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan pe
 
 ---
 
-# LAMPIRAN
+## Lampiran 1 Hasil Pembandingan Spesifikasi Variabel Pembentuk dan Transformasi
+
+**Tabel L1.1 Pembandingan Tiga Spesifikasi Variabel Pembentuk Klaster, DKI Jakarta, Maret 2025 (n = 5.001)**
+
+| No. | Spesifikasi | *Winsorizing* | K | Rata-rata *silhouette* | Ukuran klaster | Klaster terkecil (%) | Cramér's V (AC) |
+|---|---|---|---|---|---|---|---|
+| 1 | S0 | Ya | 2 | 0,2807 | 1.746 / 3.255 | 34,91 | 0,5454 |
+| 2 | S0 | Ya | 3 | 0,2447 | 1.179 / 1.720 / 2.102 | 23,58 | 0,5520 |
+| 3 | S0 | Ya | 4 | 0,2325 | 980 / 1.238 / 1.318 / 1.465 | 19,60 | 0,5420 |
+| 4 | S0 | Ya | 5 | 0,2169 | 607 / 821 / 1.045 / 1.183 / 1.345 | 12,14 | 0,5635 |
+| 5 | S0 | Tidak | 2 | 0,2786 | 1.733 / 3.268 | 34,65 | 0,5442 |
+| 6 | S0 | Tidak | 3 | 0,2442 | 1.158 / 1.738 / 2.105 | 23,16 | 0,5514 |
+| 7 | S0 | Tidak | 4 | 0,2330 | 913 / 1.240 / 1.362 / 1.486 | 18,26 | 0,5336 |
+| 8 | S0 | Tidak | 5 | 0,2169 | 567 / 807 / 1.052 / 1.223 / 1.352 | 11,34 | 0,5587 |
+| 9 | S1 | Ya | 2 | 0,3666 | 1.797 / 3.204 | 35,93 | 0,4364 |
+| 10 | S1 | Ya | 3 | 0,3285 | 1.421 / 1.457 / 2.123 | 28,41 | 0,4465 |
+| 11 | S1 | Ya | 4 | 0,3043 | 843 / 1.196 / 1.404 / 1.558 | 16,86 | 0,4886 |
+| 12 | S1 | Ya | 5 | 0,3046 | 673 / 752 / 1.028 / 1.171 / 1.377 | 13,46 | 0,5011 |
+| 13 | S1 | Tidak | 2 | 0,3651 | 1.764 / 3.237 | 35,27 | 0,4414 |
+| 14 | S1 | Tidak | 3 | 0,3264 | 1.431 / 1.448 / 2.122 | 28,61 | 0,4460 |
+| 15 | S1 | Tidak | 4 | 0,3024 | 814 / 1.205 / 1.404 / 1.578 | 16,28 | 0,4913 |
+| 16 | S1 | Tidak | 5 | 0,3022 | 645 / 782 / 1.001 / 1.179 / 1.394 | 12,90 | 0,5006 |
+| **17** | **S2** | Ya | 2 | 0,3640 | 1.672 / 3.329 | 33,43 | 0,5530 |
+| 18 | S2 | Ya | 3 | 0,3149 | 1.159 / 1.701 / 2.141 | 23,18 | 0,5567 |
+| 19 | S2 | Ya | 4 | 0,2907 | 648 / 1.273 / 1.379 / 1.701 | 12,96 | 0,5741 |
+| 20 | S2 | Ya | 5 | 0,2848 | 565 / 799 / 967 / 1.241 / 1.429 | 11,30 | 0,5736 |
+| 21 | S2 | Tidak | 2 | 0,3627 | 1.658 / 3.343 | 33,15 | 0,5515 |
+| 22 | S2 | Tidak | 3 | 0,3157 | 1.117 / 1.708 / 2.176 | 22,34 | 0,5554 |
+| 23 | S2 | Tidak | 4 | 0,2923 | 566 / 1.304 / 1.408 / 1.723 | 11,32 | 0,5687 |
+| 24 | S2 | Tidak | 5 | 0,2832 | 528 / 821 / 948 / 1.296 / 1.408 | 10,56 | 0,5755 |
+
+Sumber: Susenas Maret 2025, diolah.
+Keterangan: S0 = konsumsi listrik, pengeluaran nonmakanan selain listrik, ukuran rumah tangga, dan lama sekolah KRT; S1 = konsumsi listrik per kapita, pengeluaran nonmakanan selain listrik per kapita, dan lama sekolah KRT; S2 = konsumsi listrik, pengeluaran nonmakanan selain listrik, dan lama sekolah KRT. Variabel moneter pada ketiga spesifikasi ditransformasi ln(1 + x) lalu distandardisasi. Ukuran klaster diurutkan dari yang terkecil, bukan menurut nomor klaster. Kepemilikan AC tidak ikut membentuk klaster pada spesifikasi mana pun. Baris 17 adalah spesifikasi yang dipakai.
+
+**Tabel L1.2 Pembandingan Spesifikasi S2 dengan dan tanpa Transformasi Logaritma, DKI Jakarta, Maret 2025 (n = 5.001)**
+
+| K | Transformasi | Rata-rata *silhouette* | Ukuran klaster | Klaster terkecil (%) | Cramér's V (AC) |
+|---|---|---|---|---|---|
+| 2 | ln + *winsorizing* (dipakai) | 0,3640 | 1.672 / 3.329 | 33,43 | 0,5530 |
+| 2 | *Winsorizing* tanpa ln | 0,6548 | 408 / 4.593 | 8,16 | 0,3759 |
+| 3 | ln + *winsorizing* (dipakai) | 0,3149 | 1.159 / 1.701 / 2.141 | 23,18 | 0,5567 |
+| 3 | *Winsorizing* tanpa ln | 0,4602 | 350 / 1.775 / 2.876 | 7,00 | 0,4262 |
+| 4 | ln + *winsorizing* (dipakai) | 0,2907 | 648 / 1.273 / 1.379 / 1.701 | 12,96 | 0,5741 |
+| 4 | *Winsorizing* tanpa ln | 0,4585 | 211 / 609 / 1.758 / 2.423 | 4,22 | 0,5114 |
+| 5 | ln + *winsorizing* (dipakai) | 0,2848 | 565 / 799 / 967 / 1.241 / 1.429 | 11,30 | 0,5736 |
+| 5 | *Winsorizing* tanpa ln | 0,4575 | 96 / 157 / 622 / 1.755 / 2.371 | 1,92 | 0,5191 |
+
+Sumber: Susenas Maret 2025, diolah.
+
+## Lampiran 2 Hasil Uji ANOVA Satu Arah pada Variabel Pembentuk Klaster
+
+**Tabel L2.1 Hasil Uji ANOVA Satu Arah Antarklaster pada Variabel Pembentuk Klaster, DKI Jakarta, Maret 2025 (n = 5.001)**
+
+| Variabel | Derajat bebas | Statistik F | *p-value* |
+|---|---|---|---|
+| Konsumsi listrik (kWh/bulan) | [MENUNGGU OUTPUT: 32_uji_anova.csv] | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] |
+| Pengeluaran nonmakanan selain listrik (Rp/bulan) | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] |
+| Lama sekolah KRT (tahun) | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] |
+
+Sumber: Susenas Maret 2025, diolah.
+Keterangan: disajikan sebagai pembanding bagi uji Kruskal–Wallis pada Tabel 4.5; tidak dijadikan hasil utama karena asumsi kenormalan tidak terpenuhi.
 
 ## Lampiran Deskripsi Visual Sangat Rinci
 
