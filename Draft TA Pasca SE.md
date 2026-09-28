@@ -701,9 +701,9 @@ Perbedaan antarklaster pada kepemilikan AC, kepemilikan lemari es, dan golongan 
 
 $$\chi^2=\sum_{k=1}^{K}\sum_{j=1}^{J}\frac{\left(O_{kj}-E_{kj}\right)^2}{E_{kj}},\qquad E_{kj}=\frac{n_{k\cdot}\,n_{\cdot j}}{n} \tag{3.7}$$
 
-dengan $O_{kj}$ banyaknya rumah tangga pada klaster ke-$k$ dan kategori ke-$j$, $E_{kj}$ frekuensi harapan di bawah hipotesis nol, $n_{k\cdot}$ dan $n_{\cdot j}$ jumlah baris ke-$k$ dan jumlah kolom ke-$j$, $J$ banyaknya kategori variabel penciri, dan $n$ banyaknya seluruh rumah tangga. Di bawah hipotesis nol, $\chi^2$ menyebar mendekati khi-kuadrat dengan derajat bebas $(K-1)(J-1)$ (Fisher, 1922, hlm. 88) [PV]. Statistik dihitung tanpa koreksi kontinuitas Yates. Karena Persamaan (3.7) hanya disusun dari frekuensi sampel, versi dengan penimbang memakai fungsi svychisq pada package survey dalam R. Penyesuaian ini diperlukan karena pada rancangan sampel survei yang tidak memenuhi asumsi pengambilan sampel multinomial, misalnya karena penggerombolan dan stratifikasi, statistik khi-kuadrat Pearson tidak lagi menyebar khi-kuadrat, melainkan menyebar sebagai jumlah tertimbang peubah khi-kuadrat berderajat bebas satu dengan bobot berupa efek desain tergeneralisasi (Rao & Scott, 1984, hlm. 50–51). Fungsi tersebut menyediakan koreksi Rao–Scott orde pertama, yang membagi statistik khi-kuadrat Pearson dengan rata-rata efek desain (Rao & Scott, 1984, hlm. 53), dan orde kedua, yang turut menyesuaikan derajat bebas menurut koefisien variasi efek desain (Rao & Scott, 1984, hlm. 52). Penelitian ini memakai pilihan statistic = "F", yaitu pilihan bawaan fungsi tersebut, yang menerapkan koreksi Rao–Scott orde kedua dan menghitung p-value dengan pendekatan Satterthwaite terhadap sebaran statistiknya (Lumley, 2024).
+dengan $O_{kj}$ banyaknya rumah tangga pada klaster ke-$k$ dan kategori ke-$j$, $E_{kj}$ frekuensi harapan di bawah hipotesis nol, $n_{k\cdot}$ dan $n_{\cdot j}$ jumlah baris ke-$k$ dan jumlah kolom ke-$j$, $J$ banyaknya kategori variabel penciri, dan $n$ banyaknya seluruh rumah tangga. Di bawah hipotesis nol, $\chi^2$ menyebar mendekati khi-kuadrat dengan derajat bebas $(K-1)(J-1)$ (Fisher, 1922, hlm. 88). Statistik dihitung tanpa koreksi kontinuitas Yates. Karena Persamaan (3.7) hanya disusun dari frekuensi sampel, versi dengan penimbang memakai fungsi svychisq pada package survey dalam R. Penyesuaian ini diperlukan karena pada rancangan sampel survei yang tidak memenuhi asumsi pengambilan sampel multinomial, misalnya karena penggerombolan dan stratifikasi, statistik khi-kuadrat Pearson tidak lagi menyebar khi-kuadrat, melainkan menyebar sebagai jumlah tertimbang peubah khi-kuadrat berderajat bebas satu dengan bobot berupa efek desain tergeneralisasi (Rao & Scott, 1984, hlm. 50–51). Fungsi tersebut menyediakan koreksi Rao–Scott orde pertama, yang membagi statistik khi-kuadrat Pearson dengan rata-rata efek desain (Rao & Scott, 1984, hlm. 53), dan orde kedua, yang turut menyesuaikan derajat bebas menurut koefisien variasi efek desain (Rao & Scott, 1984, hlm. 52). Penelitian ini memakai pilihan statistic = "F", yaitu pilihan bawaan fungsi tersebut, yang menerapkan koreksi Rao–Scott orde kedua dan menghitung p-value dengan pendekatan Satterthwaite terhadap sebaran statistiknya (Lumley, 2024).
 
-Besaran hubungan antara keanggotaan klaster dan setiap variabel penciri kategorik diukur dengan koefisien Cramér (Cramér, 1946) [PV]:
+Besaran hubungan antara keanggotaan klaster dan setiap variabel penciri kategorik diukur dengan koefisien Cramér (Cramér, 1946, dalam Bergsma, 2013, Bagian 1):
 
 $$V=\sqrt{\frac{\chi^2}{n\left(\min(K,J)-1\right)}} \tag{3.8}$$
 
@@ -1236,12 +1236,12 @@ Sumber: Susenas Maret 2025, diolah.
 
 | Variabel | Derajat bebas | Statistik F | *p-value* |
 |---|---|---|---|
-| Konsumsi listrik (kWh/bulan) | [MENUNGGU OUTPUT: 32_uji_anova.csv] | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] |
-| Pengeluaran nonmakanan selain listrik (Rp/bulan) | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] |
-| Lama sekolah KRT (tahun) | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] | [MENUNGGU OUTPUT] |
+| Konsumsi listrik (kWh/bulan) | 1; 4.999 | 2.201,8027 | < 0,001 |
+| Pengeluaran nonmakanan selain listrik (Rp/bulan) | 1; 4.999 | 2.398,3888 | < 0,001 |
+| Lama sekolah KRT (tahun) | 1; 4.999 | 2.235,8598 | < 0,001 |
 
 Sumber: Susenas Maret 2025, diolah.
-Keterangan: disajikan sebagai pembanding bagi uji Kruskal–Wallis pada Tabel 4.5; tidak dijadikan hasil utama karena asumsi kenormalan tidak terpenuhi.
+Keterangan: uji dijalankan pada skala asli hasil *winsorizing*, sama dengan uji Kruskal–Wallis pada Tabel 4.5. Derajat bebas ditulis sebagai (derajat bebas antarklaster; derajat bebas galat). Uji ini disajikan sebagai pembanding dan tidak dijadikan hasil utama karena konsumsi listrik dan pengeluaran nonmakanan selain listrik bersebaran menceng kuat ke kanan (Subbab 4.1). Kesimpulannya sama dengan uji Kruskal–Wallis, yaitu ketiga variabel berbeda secara bermakna antarklaster pada taraf nyata 1 persen.
 
 ## Lampiran Deskripsi Visual Sangat Rinci
 
