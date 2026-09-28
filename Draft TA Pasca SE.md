@@ -1142,7 +1142,7 @@ Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan pe
 21. Indrawanto, D. (2025). Integration of sustainable architecture principles in vertical housing design in high-density urban areas. *The Journal of Academic Science*, 2(2), 461–469. https://doi.org/10.59613/ttsfb560
 22. Johnson, R. A., & Wichern, D. W. (2014). *Applied multivariate statistical analysis* (6th ed.). Pearson Education Limited.
 23. Kaufman, L., & Rousseeuw, P. J. (1990)._Finding groups in data: An introduction to cluster analysis_. John Wiley & Sons.
-24. Kementerian Energi dan Sumber Daya Mineral Republik Indonesia. (2024). Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 tentang Tarif Tenaga Listrik yang Disediakan oleh PT Perusahaan Listrik Negara (Persero). Berita Indonesia Tahun 2024.
+24. Kementerian Energi dan Sumber Daya Mineral. (2024). Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 tentang Tarif Tenaga Listrik yang Disediakan oleh PT Perusahaan Listrik Negara (Persero). Berita Negara Republik Indonesia Tahun 2024.
 25. Kementerian Lingkungan Hidup dan Kehutanan. (2024). Laporan inventarisasi gas rumah kaca (GRK) dan monitoring, pelaporan, verifikasi (MPV) tahun 2024 (Vol. 10). Direktorat Jenderal Pengendalian Perubahan Iklim.
 26. Kementerian PPN/Bappenas. (2019). Background study Visi Indonesia 2045: Indonesia 2045 berdaulat, maju, adil, dan makmur.
 27. Kementerian PPN/Bappenas. (2025). Rencana pembangunan jangka menengah nasional tahun 2025–2029.
@@ -1158,11 +1158,12 @@ Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan pe
 38. Nicholson, W., & Snyder, C. (2010). *Intermediate microeconomics and its application* (11th ed.). South-Western Cengage Learning.
 39. Nojedehi, P., Gunay, B., O'Brien, W., & Papineau, M. (2025). A method to develop residential archetypes by associating thermophysical building attributes with utility meter data. *Energy & Buildings*, 347.
 40. Novianto, D., Gao, W., & Kuroki, S. (2015). Review on people's lifestyle and energy consumption of Asian communities: Case study of Indonesia, Thailand, and China. *Energy and Power Engineering*, 7(10), 465–476. https://doi.org/10.4236/epe.2015.710045
-41. OKTASANDIRA, A (2025). ANALISIS KLASTER PELANGGAN LISTRIK BERDASARKAN PERILAKU KONSUMSI DI KOTA SUKABUMI MENGGUNAKAN METODE K-MEANS …., repository.nusaputra.ac.id, https://repository.nusaputra.ac.id/id/eprint/1737/1/Andhika%20Oktasandira%20(repo).pdf
+41. Oktasandira, A. (2025). ANALISIS KLASTER PELANGGAN LISTRIK BERDASARKAN PERILAKU KONSUMSI DI KOTA SUKABUMI MENGGUNAKAN METODE K-MEANS 
+CLUSTERING Skripsi, UNIVERSITAS NUSA PUTRA SUKABUMI. https://repository.nusaputra.ac.id/id/eprint/1737/
 42. Pasaribu, N. G., Wulandari, F. W., & Wulandari, S. P. (2024). Pengelompokan indikator kemiskinan di kabupaten/kota Aceh tahun 2021 menggunakan analisis klaster. *Bilangan: Jurnal Ilmiah Matematika, Kebumian dan Angkasa*, 2(6).
 43. Pavanello, F., De Cian, E., Davide, M., Mistry, M., Cruz, T., Bezerra, P., Jagu, D., Renner, S., Schaeffer, R., & Lucena, A. F. P. (2021). Air-conditioning and the adaptation cooling deficit in emerging economies. *Nature Communications*, 12, 6460. https://doi.org/10.1038/s41467-021-26592-2
 44. Prastika, A. (2023). Hubungan antara tingkat konsumsi energi listrik dengan pertumbuhan ekonomi di Indonesia. *Jurnal Ilmu Ekonomi (JIE)*.
-45. PT PLN (Persero). (2025). Statistik PLN 2024 (No. 01001-300625)
+45. PT PLN (Persero). (2025). Penetapan tarif tenaga listrik PT PLN (Persero) periode triwulan I tahun 2025.
 46. Rao, J. N. K., & Scott, A. J. (1984). On chi-squared tests for multiway contingency tables with cell proportions estimated from survey data. The Annals of Statistics, 12(1), 46–60.
 47. Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, 16(1).
 48. Rencher, A. C. (2002). Methods of multivariate analysis (2nd ed.). John Wiley & Sons.
