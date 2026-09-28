@@ -648,12 +648,50 @@ write_csv(cek_data, file.path(folder_output, "10_cek_data_setelah_cleaning.csv")
 
 
 # ============================================================
+# 9b. RANCANGAN SAMPEL SUSENAS (PATCH C1 — Sesi AK)
+# ------------------------------------------------------------
+# Semua analisis tertimbang memakai PSU + strata (nest = TRUE),
+# bukan lagi ids = ~1. Kolom diambil dari KOR RT.
+# ============================================================
+
+stop_if_missing(kor_rt, c("psu", "strata"), "KOR RT (rancangan sampel)")
+
+kolom_desain <- kor_rt |>
+  group_by(idrt) |>
+  slice(1) |>
+  ungroup() |>
+  transmute(idrt,
+            psu_d = as.character(psu),
+            strata_d = as.character(strata))
+
+buat_desain <- function(data) {
+  data <- data |> left_join(kolom_desain, by = "idrt")
+  if (any(is.na(data$psu_d) | is.na(data$strata_d))) {
+    stop("Ada rumah tangga tanpa PSU/strata setelah penggabungan. Cek kolom idrt.")
+  }
+  survey::svydesign(ids = ~psu_d, strata = ~strata_d, weights = ~bobot,
+                    data = data, nest = TRUE)
+}
+
+cek_desain <- ta_clean |>
+  left_join(kolom_desain, by = "idrt") |>
+  summarise(
+    n_ruta = n(),
+    n_strata = n_distinct(strata_d),
+    n_psu = n_distinct(paste(strata_d, psu_d)),
+    ruta_tanpa_psu_strata = sum(is.na(psu_d) | is.na(strata_d))
+  )
+cat("\n[CEK C1] Rancangan sampel yang dipakai:\n"); print(cek_desain)
+write_csv(cek_desain, file.path(folder_output, "10b_cek_rancangan_sampel.csv"))
+
+
+# ============================================================
 # 10. ANALISIS DESKRIPTIF TERTIMBANG
 # ============================================================
 
 options(survey.lonely.psu = "adjust")
 
-desain <- survey::svydesign(ids = ~1, weights = ~bobot, data = ta_clean)
+desain <- buat_desain(ta_clean)
 
 deskriptif_mean <- survey::svymean(
   ~listrik_kwh_final_w + pengeluaran_listrik_rp_w +
@@ -1551,7 +1589,7 @@ profil_penciri <- data_penciri |>
 print(profil_penciri, width = Inf)
 write_csv(profil_penciri, file.path(folder_output, "44_profil_penciri_tertimbang.csv"))
 
-desain_penciri <- survey::svydesign(ids = ~1, weights = ~bobot, data = data_penciri)
+desain_penciri <- buat_desain(data_penciri)
 
 if (!all(is.na(data_penciri$luas_lantai_w))) {
   uji_luas_w <- survey::svyranktest(luas_lantai_w ~ cluster, desain_penciri,
@@ -1561,13 +1599,13 @@ if (!all(is.na(data_penciri$luas_lantai_w))) {
                  file = file.path(folder_output, "45_uji_luas_lantai_tertimbang.txt"))
 }
 
-uji_ac_w <- survey::svychisq(~ cluster + ac_f, desain_penciri, statistic = "Chisq")
+uji_ac_w <- survey::svychisq(~ cluster + ac_f, desain_penciri, statistic = "F")
 print(uji_ac_w)
 capture.output(uji_ac_w, file = file.path(folder_output, "46_uji_ac_tertimbang.txt"))
 
 if (!all(is.na(data_penciri$lemari_es))) {
   desain_es <- subset(desain_penciri, !is.na(lemari_es))
-  uji_es_w <- survey::svychisq(~ cluster + lemari_es_f, desain_es, statistic = "Chisq")
+  uji_es_w <- survey::svychisq(~ cluster + lemari_es_f, desain_es, statistic = "F")
   print(uji_es_w)
   capture.output(uji_es_w,
                  file = file.path(folder_output, "47_uji_lemari_es_tertimbang.txt"))
@@ -1620,14 +1658,14 @@ data_daya <- data_hasil |>
 tab_daya <- table(Klaster = data_daya$cluster, Daya = data_daya$daya_f)
 cat("\nFrekuensi golongan daya (tidak tertimbang):\n"); print(tab_daya)
 
-desain_daya <- survey::svydesign(ids = ~1, weights = ~bobot, data = data_daya)
+desain_daya <- buat_desain(data_daya)
 persen_daya_w <- round(100 * prop.table(
   survey::svytable(~cluster + daya_f, desain_daya), 1), 1)
 cat("\nPersen baris tertimbang:\n"); print(persen_daya_w)
 
 uji_daya <- chisq.test(tab_daya)
 v_daya <- sqrt(unname(uji_daya$statistic) / (sum(tab_daya) * (min(dim(tab_daya)) - 1)))
-uji_daya_w <- survey::svychisq(~cluster + daya_f, desain_daya, statistic = "Chisq")
+uji_daya_w <- survey::svychisq(~cluster + daya_f, desain_daya, statistic = "F")
 
 print(uji_daya); print(uji_daya_w)
 cat("Cramer's V golongan daya terpasang:", round(v_daya, 3), "\n")
@@ -1656,6 +1694,14 @@ uji_ukuran_rt <- broom::tidy(kruskal.test(ukuran_rt_w ~ cluster, data = data_has
 print(uji_ukuran_rt)
 write_csv(uji_ukuran_rt, file.path(folder_output, "52_uji_ukuran_rt.csv"))
 
+# PATCH C1: uji ukuran rumah tangga versi tertimbang (sejajar luas lantai)
+desain_ukuran <- buat_desain(data_hasil)
+uji_ukuran_rt_w <- survey::svyranktest(ukuran_rt_w ~ cluster, desain_ukuran,
+                                       test = "KruskalWallis")
+print(uji_ukuran_rt_w)
+capture.output(uji_ukuran_rt_w,
+               file = file.path(folder_output, "52b_uji_ukuran_rt_tertimbang.txt"))
+
 
 # ============================================================
 # 23. RINGKASAN AKHIR
@@ -1680,4 +1726,3 @@ cat("Rata-rata Silhouette pada K terpilih:",
 cat("Akurasi diskriminan                 :", round(akurasi_lda * 100, 2), "%\n")
 cat("Output tersimpan di                 :", folder_output, "\n")
 cat("============================================================\n")
-
