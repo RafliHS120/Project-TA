@@ -83,7 +83,7 @@ RAFLI HIBRIANSYAH SIREGAR, "Klasifikasi Pola Konsumsi Listrik Rumah Tangga Berda
 
 # BAB I PENDAHULUAN
 
-## Latar Belakang
+## 1.1 Latar Belakang
 
 Visi Indonesia 2045 menempatkan pembangunan ekonomi berkelanjutan sebagai salah satu dari empat pilar pencapaian visi. Pada pilar tersebut, perekonomian ditopang antara lain oleh ketahanan pangan, energi, dan air yang kuat, disertai komitmen menjaga lingkungan hidup bagi keberlanjutan pembangunan (Kementerian PPN/Bappenas, 2019). Dokumen yang sama mencatat bahwa pemanasan global dan perubahan iklim mengganggu ekosistem serta dapat menurunkan pendapatan petani dan nelayan, sedangkan udara yang tercemar dapat menyebabkan gangguan kesehatan. Untuk menurunkan emisi, peningkatan efisiensi energi dimasukkan sebagai salah satu strategi pembangunan rendah karbon (Kementerian PPN/Bappenas, 2019). Arah tersebut dilanjutkan dalam Rencana Pembangunan Jangka Menengah Nasional (RPJMN) 2025–2029, yang memuat swasembada energi untuk memperkuat ketahanan dan kemandirian energi pada Prioritas Nasional 2 serta penyelarasan kehidupan yang harmonis dengan lingkungan alam pada Prioritas Nasional 8 (Kementerian PPN/Bappenas, 2025).
 
@@ -256,7 +256,7 @@ Sumber: Badan Pusat Statistik Provinsi DKI Jakarta (2026), Tabel 6.4 dan 6.5, de
 
 Data pada Gambar 1.3 memperlihatkan bahwa sektor rumah tangga merupakan kelompok pelanggan listrik paling dominan di DKI Jakarta. Pada tahun 2025, sektor rumah tangga mencakup 5.159.869 pelanggan atau setara dengan 92,49 persen dari total pelanggan listrik di Provinsi DKI Jakarta. Dominasi jumlah pelanggan tersebut menjadikan rumah tangga sebagai sektor dengan konsumsi listrik agregat terbesar, yaitu sebesar 16,36 miliar kWh atau sekitar 42,84 persen dari total konsumsi listrik di DKI Jakarta. Nilai tersebut lebih tinggi dibandingkan sektor usaha sebesar 13,96 miliar kWh, sektor industri sebesar 3,92 miliar kWh, sektor sosial sebesar 1,77 miliar kWh, dan sektor perkantoran sebesar 1,60 miliar kWh (Badan Pusat Statistik Provinsi DKI Jakarta, 2026). Kondisi ini menunjukkan bahwa sektor rumah tangga memiliki posisi penting dalam pengelolaan permintaan listrik di wilayah perkotaan. Namun, besarnya konsumsi listrik rumah tangga secara agregat tidak berarti bahwa seluruh rumah tangga memiliki karakteristik konsumsi yang seragam. Variasi konsumsi listrik rumah tangga dapat dipengaruhi oleh perbedaan tingkat kesejahteraan, jumlah anggota rumah tangga, pendidikan kepala rumah tangga, karakteristik hunian, serta kepemilikan perangkat elektronik seperti air conditioner (AC) (Kubota et al., 2014; Nazer & Handra, 2016; Ali et al., 2021; De Cian et al., 2025). Secara teoritis, kondisi tersebut sejalan dengan konsep Energy Ladder yang menjelaskan bahwa peningkatan kesejahteraan dapat mendorong penggunaan energi modern dan meningkatkan intensitas pemakaian listrik melalui kepemilikan aset elektronik (van der Kroon et al., 2013; Nazer & Handra, 2016). Oleh karena itu, analisis berbasis data agregat sektor belum cukup untuk memahami pola konsumsi listrik rumah tangga secara mendalam. Diperlukan pemetaan berbasis mikrodata rumah tangga agar perbedaan karakteristik konsumsi listrik dapat diidentifikasi secara lebih spesifik dan dapat mendukung kebijakan efisiensi energi yang lebih tepat sasaran.
 
-## Identifikasi Masalah
+## 1.2 Identifikasi Masalah
 
 Perkembangan beban konsumsi listrik rumah tangga di DKI Jakarta menunjukkan bahwa persoalan energi domestik di wilayah ini tidak dapat lagi dipahami hanya melalui indikator rata-rata wilayah. Tren pengeluaran listrik per kapita di DKI Jakarta yang terus meningkat dari tahun ke tahun, sebagaimana ditunjukkan pada Gambar 1.4, mencerminkan bahwa listrik semakin menjadi komponen pengeluaran rumah tangga yang penting. Namun, nilai rata-rata tersebut belum mampu menjelaskan bagaimana variasi konsumsi listrik terjadi pada tingkat rumah tangga. Dengan kata lain, tingginya rata-rata pengeluaran listrik di DKI Jakarta masih menyisakan pertanyaan mengenai apakah seluruh rumah tangga memiliki pola konsumsi yang relatif seragam, atau justru terbentuk kelompok-kelompok rumah tangga dengan karakteristik konsumsi yang berbeda.
 
@@ -286,7 +286,7 @@ Di sisi lain, penelitian terkait konsumsi energi rumah tangga di Indonesia masih
 
 Ketiadaan pemetaan tersebut berimplikasi pada kebijakan manajemen sisi permintaan (demand-side management) yang cenderung masih bersifat umum atau one-size-fits-all. Padahal, kebijakan efisiensi energi yang efektif memerlukan pemahaman yang lebih rinci mengenai kelompok rumah tangga mana yang memiliki konsumsi relatif tinggi, kelompok mana yang efisien, dan kelompok mana yang berpotensi rentan terhadap keterbatasan adaptasi pendinginan. Oleh karena itu, diperlukan suatu pendekatan statistik yang mampu mengelompokkan rumah tangga berdasarkan kemiripan karakteristiknya. Dalam konteks penelitian ini, analisis klaster digunakan untuk mengidentifikasi dan memetakan kelompok rumah tangga di DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, sehingga dapat diperoleh profil rumah tangga yang lebih jelas sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
 
-## Tujuan Penelitian
+## 1.3 Tujuan Penelitian
 
 Berdasarkan latar belakang dan identifikasi masalah yang telah dipaparkan, tujuan penelitian ini adalah sebagai berikut:
 
@@ -294,7 +294,7 @@ Berdasarkan latar belakang dan identifikasi masalah yang telah dipaparkan, tujua
 2. Mengidentifikasi dan mengelompokkan rumah tangga di Provinsi DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi.
 3. Menganalisis perbedaan karakteristik sosial ekonomi pada setiap klaster rumah tangga yang terbentuk di Provinsi DKI Jakarta Tahun 2025.
 
-## Keterbatasan Penelitian
+## 1.4 Keterbatasan Penelitian
 
 Penelitian ini menggunakan data sekunder berupa mikrodata Survei Sosial Ekonomi Nasional (Susenas) Maret 2025 dengan cakupan wilayah Provinsi DKI Jakarta dan unit observasi rumah tangga sampel Susenas Maret 2025. Klaster dibentuk dari tiga variabel, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan lama sekolah Kepala Rumah Tangga (KRT), sehingga pengelompokan hanya mencerminkan perbedaan antarrumah tangga pada ketiga dimensi tersebut. Lima variabel lainnya, yaitu ukuran rumah tangga, kepemilikan air conditioner (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang, tidak dipakai dalam perhitungan jarak dan berperan sebagai variabel penciri pada tahap profiling. Kepemilikan AC juga dipakai sebagai salah satu kriteria dalam memilih spesifikasi variabel pembentuk (Subbab 3.4.3), sehingga perbedaan kepemilikan AC antarklaster tidak sepenuhnya bebas dari proses pembentukan klaster.
 
@@ -308,7 +308,7 @@ Sebagian rumah tangga pada golongan bersubsidi memiliki konsumsi listrik hasil k
 
 Karena penelitian ini menggunakan data cross-section pada satu periode pengamatan, hasil yang diperoleh menggambarkan kondisi rumah tangga di DKI Jakarta pada tahun 2025 dan tidak dimaksudkan untuk menjelaskan perubahan perilaku konsumsi listrik rumah tangga antarwaktu. Dengan demikian, interpretasi hasil penelitian diarahkan pada pemetaan heterogenitas rumah tangga pada satu periode tertentu, bukan pada analisis dinamika konsumsi listrik secara longitudinal.
 
-## Sistematika Penulisan
+## 1.5 Sistematika Penulisan
 
 Tugas Akhir ini disusun secara sistematis sesuai dengan Pedoman Penyusunan Tugas Akhir Politeknik Statistika STIS. Penulisan diawali dengan Bagian Awal yang memuat halaman sampul, halaman judul, halaman pernyataan, halaman pengesahan, pernyataan hak cipta, prakata, abstrak, daftar isi, daftar tabel, daftar gambar, dan daftar lampiran. Selanjutnya, isi Tugas Akhir ini disusun ke dalam lima bab utama, kemudian diakhiri dengan daftar pustaka, lampiran, dan riwayat hidup penulis.
 
@@ -328,7 +328,7 @@ Bagian Akhir memuat Daftar Pustaka, Lampiran hasil analisis, dan Riwayat Hidup p
 
 # BAB II KAJIAN PUSTAKA
 
-## Landasan Teori
+## 2.1 Landasan Teori
 
 ### 2.1.1 Analisis Multivariat
 
@@ -418,7 +418,7 @@ dengan:
 Nilai s\left(i\right) terbatas pada rentang −1 hingga 1. Nilai yang mendekati 1 menunjukkan objek berada jauh lebih dekat dengan anggota klasternya sendiri dibandingkan klaster tetangga, nilai di sekitar 0 menandakan objek berada pada perbatasan dua klaster, sedangkan nilai negatif mengindikasikan objek kemungkinan lebih sesuai ditempatkan pada klaster lain.
 Kualitas struktur pengelompokan secara keseluruhan dinilai melalui rata-rata koefisien Silhouette seluruh objek atau average silhouette width:
 \bar{s}=\frac{1}{n}\sum_{i=1}^{n} s\left(i\right)
-dengan s menyatakan rata-rata koefisien Silhouette dan n menyatakan banyaknya objek. _Kaufman dan Rousseeuw_ (1990) menetapkan pedoman interpretasi atas nilai tersebut: nilai di atas 0,70 mencerminkan struktur klaster yang kuat, nilai 0,51 sampai 0,70 mencerminkan struktur yang memadai, nilai 0,26 sampai 0,50 mencerminkan struktur yang lemah sehingga hasilnya perlu ditafsirkan secara hati-hati, dan nilai di bawah 0,26 menunjukkan struktur klaster yang belum meyakinkan.
+dengan s menyatakan rata-rata koefisien Silhouette dan n menyatakan banyaknya objek. Kaufman dan Rousseeuw (1990) menetapkan pedoman interpretasi atas nilai tersebut: nilai di atas 0,70 mencerminkan struktur klaster yang kuat, nilai 0,51 sampai 0,70 mencerminkan struktur yang memadai, nilai 0,26 sampai 0,50 mencerminkan struktur yang lemah sehingga hasilnya perlu ditafsirkan secara hati-hati, dan nilai di bawah 0,26 menunjukkan struktur klaster yang belum meyakinkan.
 Kedua kriteria tersebut bersifat komplementer: Metode Elbow membaca pola penurunan variasi dalam klaster, sedangkan koefisien Silhouette mengukur kekuatan pemisahan antar klaster pada setiap kandidat jumlah klaster. Atas dasar itu, penelitian ini menggunakan keduanya secara bersamaan dalam menetapkan jumlah klaster, dengan prosedur penerapan yang diuraikan pada Subbab 3.4.5.
 
 
@@ -428,7 +428,7 @@ Klaster yang dihasilkan algoritme pengelompokan pada dasarnya hanya berupa label
 
 ### 2.1.7 Energy Ladder
 
-Energy Ladder menjelaskan bahwa rumah tangga cenderung mengalami transisi penggunaan energi seiring dengan peningkatan kesejahteraan. Dalam formulasi klasiknya, rumah tangga diasumsikan bergerak dari sumber energi tradisional ke energi transisi, lalu menuju energi modern yang lebih bersih, nyaman, dan efisien, seperti listrik dan LPG. Dengan demikian, tingkat kesejahteraan berhubungan dengan peluang rumah tangga untuk menggunakan energi modern secara lebih intensif. Hubungan ini penting karena konsumsi energi rumah tangga pada dasarnya tidak hanya ditentukan oleh kebutuhan dasar, tetapi juga oleh kemampuan ekonomi untuk mengakses layanan energi yang lebih berkualitas. van der Kroon, Brouwer, dan van Beukering (2013) menegaskan bahwa energy ladder merupakan model yang umum digunakan untuk menjelaskan pilihan energi rumah tangga, meskipun dalam praktiknya hubungan antara pendapatan dan pilihan energi tidak selalu sesederhana perpindahan satu arah dari energi tradisional menuju energi modern. Temuan tersebut juga sejalan dengan Leach (1992) yang menekankan bahwa transisi energi rumah tangga dipengaruhi oleh urbanisasi, akses terhadap energi modern, dan perubahan kebutuhan layanan energi.
+Energy Ladder menjelaskan bahwa rumah tangga cenderung mengalami transisi penggunaan energi seiring dengan peningkatan kesejahteraan. Dalam formulasi klasiknya, rumah tangga diasumsikan bergerak dari sumber energi tradisional ke energi transisi, lalu menuju energi modern yang lebih bersih, nyaman, dan efisien, seperti listrik dan LPG. Dengan demikian, tingkat kesejahteraan berhubungan dengan peluang rumah tangga untuk menggunakan energi modern secara lebih intensif. Hubungan ini penting karena konsumsi energi rumah tangga pada dasarnya tidak hanya ditentukan oleh kebutuhan dasar, tetapi juga oleh kemampuan ekonomi untuk mengakses layanan energi yang lebih berkualitas. van der Kroon et al. (2013) menegaskan bahwa energy ladder merupakan model yang umum digunakan untuk menjelaskan pilihan energi rumah tangga, meskipun dalam praktiknya hubungan antara pendapatan dan pilihan energi tidak selalu sesederhana perpindahan satu arah dari energi tradisional menuju energi modern. Temuan tersebut juga sejalan dengan Leach (1992) yang menekankan bahwa transisi energi rumah tangga dipengaruhi oleh urbanisasi, akses terhadap energi modern, dan perubahan kebutuhan layanan energi.
 
 Meskipun demikian, teori Energy Ladder dalam penelitian ini tidak dipahami secara kaku sebagai perpindahan sempurna dari satu jenis energi ke jenis energi lain. van der Kroon et al. (2013) menunjukkan bahwa dalam banyak kasus rumah tangga justru menggunakan kombinasi beberapa sumber energi secara bersamaan (fuel stacking), sehingga perubahan pola konsumsi energi tidak selalu berbentuk substitusi penuh. Dalam konteks rumah tangga perkotaan Indonesia, Nazer dan Handra (2016) juga menunjukkan bahwa konsep energy ladder dan fuel stacking sama-sama relevan untuk menjelaskan konsumsi energi rumah tangga. Studi tersebut menemukan bahwa elastisitas pendapatan terhadap konsumsi energi modern bernilai positif, yang berarti peningkatan pendapatan diikuti oleh peningkatan konsumsi energi modern. Dengan demikian, dalam penelitian ini Energy Ladder digunakan sebagai landasan teori utama untuk menjelaskan bahwa perbedaan tingkat kesejahteraan rumah tangga akan berkaitan dengan perbedaan intensitas penggunaan energi modern, termasuk listrik, serta kemampuan rumah tangga untuk memiliki dan menggunakan perangkat listrik.
 
@@ -450,7 +450,7 @@ Selain faktor ekonomi, ukuran rumah tangga juga penting karena berkaitan dengan 
 
 Pendidikan kepala rumah tangga juga dapat diposisikan sebagai faktor penting karena merefleksikan modal manusia, pengetahuan, preferensi, dan keputusan adopsi teknologi rumah tangga. Ali et al. (2021) menunjukkan bahwa pendidikan berhubungan positif dengan konsumsi listrik rumah tangga, sedangkan Pavanello et al. (2021) menunjukkan bahwa rumah tangga dengan tingkat pendidikan lebih tinggi cenderung memiliki kemungkinan adopsi AC yang lebih besar. Dalam konteks penelitian ini, pendidikan kepala rumah tangga dipahami sebagai faktor yang dapat membedakan perilaku konsumsi listrik melalui jalur preferensi kenyamanan, adopsi teknologi, dan pola penggunaan perangkat rumah tangga. Dari determinan tersebut, kapasitas ekonomi dan pendidikan kepala rumah tangga dipakai sebagai dimensi sosial ekonomi pembentuk klaster, dengan kapasitas ekonomi diwakili oleh pengeluaran nonmakanan selain listrik. Ukuran rumah tangga dan karakteristik hunian tidak dihilangkan dari analisis, melainkan diperiksa sebagai variabel penciri setelah klaster terbentuk, dengan alasan penempatan yang diuraikan pada Subbab 3.4.3.
 
-## Penelitian Terkait
+## 2.2 Penelitian Terkait
 
 **Tabel 2.1 Penelitian terkait**
 
@@ -464,7 +464,7 @@ Ketiga, terdapat penelitian yang menjelaskan konteks termal perkotaan dan kebutu
 
 Dengan demikian, terdapat ruang penelitian yang masih terbuka. Penelitian terdahulu telah membahas konsumsi listrik rumah tangga dari sisi perbandingan wilayah, gaya hidup penghuni apartemen, determinan sosial ekonomi, maupun konteks pendinginan perkotaan. Akan tetapi, belum banyak penelitian yang secara khusus mengklasifikasikan rumah tangga di Provinsi DKI Jakarta menggunakan data mikro Susenas berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi secara bersamaan. Oleh karena itu, penelitian ini diarahkan untuk mengisi kekosongan tersebut melalui pendekatan analisis klaster, sehingga dapat diperoleh tipologi rumah tangga yang lebih relevan sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
 
-## Kerangka Pikir
+## 2.3 Kerangka Pikir
 
 Pola konsumsi listrik rumah tangga di DKI Jakarta tidak bersifat homogen. Perbedaan kesejahteraan menghasilkan perbedaan intensitas pemanfaatan energi modern sebagaimana dijelaskan teori energy ladder pada Subbab 2.1.7, sementara tekanan panas perkotaan menjadikan pendinginan ruang bagian dari kebutuhan listrik rumah tangga sebagaimana diuraikan pada Subbab 2.1.8. Kedua kondisi tersebut tidak dialami secara seragam, karena kemampuan rumah tangga memenuhi kebutuhan listrik dan pendinginannya bergantung pada kapasitas ekonomi dan modal manusia yang dimilikinya.
 
@@ -478,7 +478,7 @@ Melalui alur tersebut, profil klaster yang dihasilkan dipakai untuk memberikan i
 
 **Gambar 2.1 Kerangka Pikir Penelitian**
 
-## Hipotesis Penelitian
+## 2.4 Hipotesis Penelitian
 
 Hipotesis dirumuskan hanya pada variabel penciri. Perbedaan antarklaster pada variabel pembentuk tidak dirumuskan sebagai hipotesis, karena keanggotaan klaster ditentukan oleh variabel tersebut sehingga pengujiannya bersifat melingkar (Everitt et al., 2011). Arah hipotesis disandarkan pada dua temuan empiris. Pavanello et al. (2021) menemukan bahwa di Brasil, India, Indonesia, dan Meksiko, adopsi AC lebih tinggi pada rumah tangga berpendapatan dan berpendidikan lebih tinggi serta berhunian lebih baik. Di India dan Indonesia, pendidikan dan kualitas hunian yang berkorelasi dengan kesejahteraan rumah tangga juga lebih kuat berkaitan dengan adopsi lemari es dan AC. Kubota et al. (2014) menemukan bahwa di Jakarta, konsumsi energi untuk AC sebagai penyumbang utama konsumsi listrik rumah tangga dapat dijelaskan oleh luas lantai dan pendapatan rumah tangga, sedangkan peningkatan pendapatan berkaitan dengan luas lantai yang lebih besar. Berdasarkan landasan teori, penelitian terkait, dan kerangka pikir tersebut, hipotesis penelitian dirumuskan sebagai berikut:
 
@@ -535,7 +535,7 @@ Metode analisis disusun mengikuti urutan tiga tujuan penelitian. Tujuan pertama,
 
 ![Gambar 3.1 Diagram Alur Metode Analisis](assets-ta/gambar-3-1-diagram-alur.png)
 
-**Gambar 3.1 Diagram Alur Metode Analisis
+Gambar 3.1 Diagram Alur Metode Analisis
 
 No.	Bentuk	Teks di dalam kotak	Subbab
 1	Elips	Mulai	—
