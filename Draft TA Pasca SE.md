@@ -536,39 +536,46 @@ Sumber: Badan Pusat Statistik (2025), diolah; tarif tenaga listrik mengacu pada 
 
 ## 3.4 Metode Analisis
 
-Metode analisis pada penelitian ini disusun untuk mencapai tiga tujuan utama, yaitu menggambarkan karakteristik rumah tangga di DKI Jakarta, membentuk klaster rumah tangga berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, serta mengevaluasi karakter klaster yang terbentuk. Secara umum, analisis dilakukan melalui tahapan pra-pengolahan data, analisis deskriptif, pembentukan klaster dengan metode K-Means, evaluasi perbedaan dan pemisahan antar klaster, serta profiling dan interpretasi hasil. Alur tahapan analisis tersebut disajikan pada Gambar 3.1.
+Metode analisis disusun mengikuti urutan tiga tujuan penelitian. Tujuan pertama, yaitu mendeskripsikan profil konsumsi listrik serta kondisi sosial ekonomi rumah tangga, dijawab dengan analisis deskriptif (Subbab 3.4.2) setelah data melalui pra-pengolahan (Subbab 3.4.1). Tujuan kedua, yaitu mengelompokkan rumah tangga berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, dijawab melalui penetapan variabel pembentuk dan standardisasi data (Subbab 3.4.3), penetapan ukuran jarak (Subbab 3.4.4), penentuan jumlah klaster (Subbab 3.4.5), dan pengelompokan dengan metode K-Means (Subbab 3.4.6). Tujuan ketiga, yaitu menganalisis perbedaan karakteristik sosial ekonomi antarklaster, dijawab dalam dua tahap, yaitu pemeriksaan pemisahan klaster pada variabel pembentuk sebagai penguat deskriptif (Subbab 3.4.7), lalu profiling klaster dan pengujian hipotesis pada variabel penciri (Subbab 3.4.8). Dengan susunan tersebut, analisis deskriptif mendahului analisis inferensia, dan pengujian hipotesis ditempatkan paling akhir karena memerlukan klaster yang telah terbentuk. Alur tahapan analisis disajikan pada Gambar 3.1.
 
 ![Gambar 3.1 Diagram Alur Metode Analisis](assets-ta/gambar-3-1-diagram-alur.png)
 
-**Gambar 3.1 Diagram Alur Metode Analisis**
+**Gambar 3.1 Diagram Alur Metode Analisis
 
-> **Deskripsi Gambar 3.1.**
-> *Media internal:* `image8.png` · *Lokasi dokumen:* halaman 42 / halaman tercetak 36.
->
-> **Bentuk visual.** *Flowchart* hitam-putih bergaya standar, dibaca berkelok (baris 1 kiri→kanan, baris 2 kanan→kiri, baris 3 kiri→kanan). Bentuk **elips** dipakai untuk terminal (Mulai/Selesai), **persegi panjang bersudut membulat** untuk proses, dan panah berkepala solid untuk aliran. Rangkaian simpulnya:
->
-> **Baris paling atas (jalur deskriptif, cabang):**
-> - **"Analisis Deskriptif"** → **"Tabel & Grafik"**
->
-> **Baris 1 (kiri → kanan):**
-> 1. **Mulai** (elips, pojok kiri atas)
-> 2. **Input Data**
-> 3. **Pra-pengolahan data** — dari kotak ini keluar **dua** panah: satu **ke atas** menuju "Analisis Deskriptif" (cabang deskriptif), satu ke kanan meneruskan jalur klaster
-> 4. **Penetapan Peubah Pembentuk klaster (X1, X2, X3, X4)** — ujung kanan baris 1, panah turun ke baris 2
->
-> **Baris 2 (kanan → kiri):**
-> 5. **Standarisasi Z-score** (paling kanan)
-> 6. **Penentuan Jumlah Klaster (K)**
-> 7. **K-Means Clustering** (paling kiri), panah turun ke baris 3
->
-> **Baris 3 (kiri → kanan):**
-> 8. **Uji Beda & Validasi Klaster** (paling kiri)
-> 9. **Profiling & Interpretasi**
-> 10. **Selesai** (elips, pojok kanan bawah)
->
-> **Masukan tambahan:** satu kotak bertuliskan **"Kepemilikan AC"** berada di bagian bawah gambar, di bawah "Profiling & Interpretasi", dengan panah **mengarah ke atas** menuju kotak tersebut. Ini menegaskan sekali lagi bahwa kepemilikan AC masuk hanya pada tahap profiling, bukan pada pembentukan klaster.
->
-> **Makna dalam konteks dokumen.** Diagram mengubah metodologi menjadi prosedur operasional, memperlihatkan pemisahan jelas antara analisis deskriptif, pembentukan klaster, evaluasi pemisahan klaster, serta interpretasi substantif.
+Kotak dan urutan
+No.	Bentuk	Teks di dalam kotak	Subbab
+1	Elips	Mulai	—
+2	Jajar genjang (data)	Mikrodata Susenas Maret 2025, Provinsi DKI Jakarta	3.2
+3	Persegi panjang	Pra-pengolahan Data	3.4.1
+4	Persegi panjang (cabang)	Analisis Deskriptif	3.4.2
+5	Persegi panjang	Penetapan Variabel Pembentuk: Konsumsi Listrik, Pengeluaran Nonmakanan selain Listrik, Lama Sekolah Kepala Rumah Tangga	3.4.3
+6	Persegi panjang	Standardisasi Skor Z	3.4.3
+7	Persegi panjang	Penentuan Jumlah Klaster (Metode Elbow dan Koefisien Silhouette)	3.4.5
+8	Persegi panjang	Pengelompokan K-Means (Jarak Euclidean)	3.4.4, 3.4.6
+9	Persegi panjang	Pemeriksaan Pemisahan Klaster pada Variabel Pembentuk	3.4.7
+10	Persegi panjang	Profiling Klaster dan Pengujian Hipotesis pada Variabel Penciri	3.4.8
+11	Jajar genjang (data), di samping kotak 10	Variabel Penciri: Luas Lantai, Kepemilikan AC, Kepemilikan Lemari Es, Golongan Daya Terpasang, Ukuran Rumah Tangga	3.3
+12	Elips	Selesai	—
+Panah
+Dari	Ke	Catatan
+1 → 2 → 3		Jalur utama
+3	4	Cabang deskriptif, keluar dari kotak 3
+4	12	Cabang deskriptif berakhir di Selesai (boleh bergabung dengan panah dari kotak 10)
+3 → 5 → 6 → 7 → 8 → 9 → 10 → 12		Jalur klaster
+11	10	Satu-satunya masuknya variabel penciri. Tidak boleh ada panah dari kotak 11 ke kotak 5–8
+Penanda tujuan (kurung kurawal atau kotak latar abu-abu muda di sisi kanan)
+Penanda	Mencakup kotak
+Tujuan 1	4
+Tujuan 2	5–8
+Tujuan 3	9–10
+Aturan gambar
+Aturan	Isi
+Warna	Hitam-putih; latar penanda tujuan abu-abu muda
+Tata letak	Vertikal atas ke bawah (lebih mudah terbaca pada halaman A4 dibanding tata letak berkelok)
+Notasi	Pakai nama variabel, bukan X1–X3, karena notasi X1–X3 tidak didefinisikan di mana pun dalam naskah
+Istilah asing	Elbow, Silhouette, Profiling ditulis miring
+Sumber di bawah gambar	Wajib dicantumkan; ikuti format sumber yang sudah dipakai pada Gambar 2.1
+Nama dokumen gambar	gambar-3-1-diagram-alur.png (sama dengan yang lama, sehingga tautan di repo baris 559 tidak perlu diubah)
 
 ### 3.4.1 Pra-pengolahan Data
 
@@ -682,7 +689,7 @@ Asumsi homogenitas matriks ragam-peragam antarklaster, yang mendasari MANOVA dan
 
 Lapis terakhir adalah analisis diskriminan linear, yang dipakai untuk memeriksa sejauh mana keanggotaan klaster hasil K-Means dapat ditebak kembali dari ketiga variabel pembentuk pada ruang skor baku (Fisher, 1936, hlm. 179). Peluang awal (*prior*) setiap klaster ditetapkan sama dengan proporsi sampelnya, dan koefisien fungsi diskriminan dibaca untuk melihat arah serta besaran kontribusi setiap variabel pembentuk. Ketepatan klasifikasi dihitung dengan dua cara, yaitu resubstitusi, yang memprediksi data yang sama dengan data pembangun fungsi, dan validasi silang *leave-one-out*, yang memprediksi setiap rumah tangga dengan fungsi yang dibangun tanpa rumah tangga tersebut. Alasan yang sama dengan keberatan terhadap uji baku pada variabel pembentuk berlaku di sini: fungsi diskriminan dilatih pada variabel yang sama dengan variabel pembentuk klaster, sehingga ketepatan klasifikasi yang tinggi merupakan konsekuensi konstruksi. Hasil analisis diskriminan karena itu dibaca sebagai bukti bahwa keanggotaan klaster bersifat konsisten dan dapat direproduksi oleh aturan klasifikasi lain, bukan sebagai validasi bahwa klaster tersebut merupakan kelompok yang ada di populasi.
 
-### 3.4.8Profiling Klaster dan Pengujian Hipotesis pada Variabel Penciri
+### 3.4.8 Profiling Klaster dan Pengujian Hipotesis pada Variabel Penciri
 
 Tahap terakhir analisis menguraikan karakter setiap klaster dan menguji hipotesis penelitian. Berbeda dari Subbab 3.4.7 yang diterapkan pada variabel pembentuk, tahap ini diterapkan pada variabel penciri, yaitu variabel yang tidak dipakai algoritme K-Means dalam membentuk klaster. Lima variabel penciri diperiksa, yaitu luas lantai tempat tinggal, kepemilikan air conditioner (AC), kepemilikan lemari es, golongan daya terpasang, dan ukuran rumah tangga, tetapi kedudukan kelimanya tidak sama. Hipotesis penelitian hanya menyangkut kepemilikan AC, kepemilikan lemari es, dan luas lantai, sehingga hanya ketiga variabel tersebut yang menjadi dasar keputusan hipotesis. Di antara ketiganya, kepemilikan AC telah dipakai sebagai kriteria pemilihan spesifikasi variabel pembentuk pada Subbab 3.4.3, sehingga bukti yang berasal dari variabel ini tidak sepenuhnya bebas dari proses pembentukan klaster; kepemilikan lemari es dan luas lantai, yang tidak dipakai pada tahap mana pun sebelum profiling, menjadi pembanding yang sepenuhnya bebas. Golongan daya terpasang dipakai pada tahap pra-pengolahan untuk menetapkan tarif konversi pengeluaran listrik menjadi konsumsi listrik (Subbab 3.4.1), sehingga ikut menentukan nilai variabel pembentuk pertama. Ukuran rumah tangga dikeluarkan dari variabel pembentuk pada Subbab 3.4.3 dan diperiksa untuk memastikan bahwa perbedaan antarklaster tidak bersumber dari perbedaan jumlah penghuni. Kedua variabel terakhir karena itu diuji dan dilaporkan sebagai deskripsi karakter klaster, bukan sebagai bukti hipotesis.
 
@@ -694,9 +701,9 @@ Perbedaan antarklaster pada kepemilikan AC, kepemilikan lemari es, dan golongan 
 
 $$\chi^2=\sum_{k=1}^{K}\sum_{j=1}^{J}\frac{\left(O_{kj}-E_{kj}\right)^2}{E_{kj}},\qquad E_{kj}=\frac{n_{k\cdot}\,n_{\cdot j}}{n} \tag{3.7}$$
 
-dengan $O_{kj}$ banyaknya rumah tangga pada klaster ke-$k$ dan kategori ke-$j$, $E_{kj}$ frekuensi harapan di bawah hipotesis nol, $n_{k\cdot}$ dan $n_{\cdot j}$ jumlah baris ke-$k$ dan jumlah kolom ke-$j$, $J$ banyaknya kategori variabel penciri, dan $n$ banyaknya seluruh rumah tangga. Di bawah hipotesis nol, $\chi^2$ menyebar mendekati khi-kuadrat dengan derajat bebas $(K-1)(J-1)$ [PERLU VERIFIKASI: sumber rumus khi-kuadrat Pearson]. Statistik dihitung tanpa koreksi kontinuitas Yates. Karena Persamaan (3.7) hanya disusun dari frekuensi sampel, versi dengan penimbang memakai fungsi svychisq pada paket survey dalam R. Fungsi tersebut menyediakan koreksi Rao–Scott orde pertama dan orde kedua terhadap uji khi-kuadrat Pearson; penelitian ini memakai pilihan statistic = "Chisq", yang menyesuaikan statistik khi-kuadrat Pearson dengan taksiran efek desain lalu membandingkannya dengan sebaran khi-kuadrat yang berlaku di bawah pengambilan sampel acak sederhana (Lumley, 2012; Rao & Scott, 1981 [PERLU VERIFIKASI]).
+dengan $O_{kj}$ banyaknya rumah tangga pada klaster ke-$k$ dan kategori ke-$j$, $E_{kj}$ frekuensi harapan di bawah hipotesis nol, $n_{k\cdot}$ dan $n_{\cdot j}$ jumlah baris ke-$k$ dan jumlah kolom ke-$j$, $J$ banyaknya kategori variabel penciri, dan $n$ banyaknya seluruh rumah tangga. Di bawah hipotesis nol, $\chi^2$ menyebar mendekati khi-kuadrat dengan derajat bebas $(K-1)(J-1)$ (Cramér, 1946) [PV]. Statistik dihitung tanpa koreksi kontinuitas Yates. Karena Persamaan (3.7) hanya disusun dari frekuensi sampel, versi dengan penimbang memakai fungsi svychisq pada package survey dalam R. Fungsi tersebut menyediakan koreksi Rao–Scott orde pertama dan orde kedua terhadap uji khi-kuadrat Pearson; penelitian ini memakai pilihan statistic = "Chisq", yang menyesuaikan statistik khi-kuadrat Pearson dengan taksiran efek desain lalu membandingkannya dengan sebaran khi-kuadrat yang berlaku di bawah pengambilan sampel acak sederhana (Lumley, [tahun] [PV]; Rao & Scott, 1981 [PV]).
 
-Besaran hubungan antara keanggotaan klaster dan setiap variabel penciri kategorik diukur dengan koefisien Cramér [PERLU VERIFIKASI: Cramér (1946)]:
+Besaran hubungan antara keanggotaan klaster dan setiap variabel penciri kategorik diukur dengan koefisien Cramér (Cramér, 1946) [PV]:
 
 $$V=\sqrt{\frac{\chi^2}{n\left(\min(K,J)-1\right)}} \tag{3.8}$$
 
@@ -706,9 +713,9 @@ Luas lantai dan ukuran rumah tangga merupakan variabel numerik yang sebarannya m
 
 $$\hat{R}_i=\frac{1}{\hat{N}}\sum_{j\in s}\left[w_j\,I\left(Y_j<Y_i\right)+0{,}5\,w_j\,I\left(Y_j=Y_i\right)\right],\qquad \hat{N}=\sum_{j\in s}w_j \tag{3.9}$$
 
-dengan $Y_i$ luas lantai rumah tangga ke-$i$, $w_j$ penimbang rumah tangga ke-$j$, $s$ himpunan rumah tangga sampel, dan $I(\cdot)$ fungsi indikator yang bernilai satu apabila syarat di dalamnya terpenuhi. Rata-rata tertimbang $\hat{R}_i$ kemudian dibandingkan antarklaster. Untuk dua kelompok, uji ini dijalankan sebagai uji t tertimbang atas peringkat taksiran tersebut (Lumley & Scott, 2012, hlm. 9), sedangkan untuk lebih dari dua kelompok dijalankan sebagai analisis ragam satu arah tertimbang (Lumley & Scott, 2012, hlm. 19). Sebaran rujukannya adalah sebaran t dengan derajat bebas sebesar banyaknya unit sampling primer (PSU) dikurangi banyaknya strata (Lumley & Scott, 2012, hlm. 9). Uji ini dijalankan dengan fungsi svyranktest pada paket survey dengan pilihan test = "KruskalWallis". Ukuran rumah tangga hanya diuji tanpa penimbang karena tidak menjadi dasar keputusan hipotesis.
+dengan $Y_i$ luas lantai rumah tangga ke-$i$, $w_j$ penimbang rumah tangga ke-$j$, $s$ himpunan rumah tangga sampel, dan $I(\cdot)$ fungsi indikator yang bernilai satu apabila syarat di dalamnya terpenuhi. Rata-rata tertimbang $\hat{R}_i$ kemudian dibandingkan antarklaster. Untuk dua kelompok, uji ini dijalankan sebagai uji t tertimbang atas peringkat taksiran tersebut (Lumley & Scott, 2012, hlm. 9), sedangkan untuk lebih dari dua kelompok dijalankan sebagai analisis ragam satu arah tertimbang (Lumley & Scott, 2012, hlm. 19). Sebaran rujukannya adalah sebaran t dengan derajat bebas sebesar banyaknya unit sampling primer (PSU) dikurangi banyaknya strata (Lumley & Scott, 2012, hlm. 9). Uji ini dijalankan dengan fungsi svyranktest pada package survey dengan pilihan test = "KruskalWallis". Ukuran rumah tangga hanya diuji tanpa penimbang karena tidak menjadi dasar keputusan hipotesis.
 
-Seluruh perhitungan tertimbang dijalankan dengan paket survey dalam R (Lumley, [TAHUN PERLU VERIFIKASI]). Rancangan sampel dispesifikasikan hanya melalui penimbang rumah tangga, tanpa informasi PSU dan strata, sehingga galat baku dan statistik uji tertimbang memperhitungkan ketidaksamaan penimbang tetapi belum memperhitungkan pengelompokan rumah tangga di dalam PSU. Hasil profiling dan pengujian tersebut menjadi dasar penamaan deskriptif setiap klaster serta pembahasan pada Subbab 4.3.5.
+Seluruh perhitungan tertimbang dijalankan dengan package survey dalam R (Lumley, [tahun] [PV]). Rancangan sampel dispesifikasikan hanya melalui penimbang rumah tangga, tanpa informasi PSU dan strata, sehingga galat baku dan statistik uji tertimbang memperhitungkan ketidaksamaan penimbang tetapi belum memperhitungkan pengelompokan rumah tangga di dalam PSU. Hasil profiling dan pengujian tersebut menjadi dasar penamaan deskriptif setiap klaster serta pembahasan pada Subbab 4.3.5.
 
 ---
 
