@@ -1132,34 +1132,33 @@ Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan pe
 11. Christono, A. B., & Putri, D. D. (2021). Pengaruh konsumsi dan investasi terhadap produk domestik regional bruto (PDRB) di Provinsi DKI Jakarta periode 2010–2019. *Journal of Economics and Business UBS*.
 12. De Cian, E., Falchetta, G., Pavanello, F., Romitti, Y., & Wing, I. S. (2025). The impact of air conditioning on residential electricity consumption across world countries. *Journal of Environmental Economics and Management*, 131, 103122. https://doi.org/10.1016/j.jeem.2025.103122
 13. Dinas Lingkungan Hidup Provinsi DKI Jakarta. (2024). Laporan akhir inventarisasi profil emisi dan pelaporan penurunan emisi gas rumah kaca Provinsi DKI Jakarta.
-14. Dixon, W. J. (1960). Simplified estimation from censored normal samples. The Annals of Mathematical Statistics, 31(2), 385–391. ⚠ Halaman terverifikasi; volume dan nomor cocokkan lewat Mendeley
-15. Everitt, B., Landau, S., Leese, M., & Stahl, D. (2011). *Cluster analysis* (5th ed.). John Wiley & Sons.
+14. Dixon, W. J. (1960). Simplified Estimation from Censored Normal Samples. The Annals of Mathematical Statistics, 31(2), 385–391. https://doi.org/10.1214/aoms/1177705900
+15. Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). *Cluster analysis* (5th ed.). John Wiley & Sons.
 16. Fisher, R. A. (1922). On the interpretation of χ² from contingency tables, and the calculation of P. Journal of the Royal Statistical Society, 85(1), 87–94. https://doi.org/10.1111/j.2397-2335.1922.tb00768.x
 17. Fisher, R. A. (1936). The use of multiple measurements in taxonomic problems. Annals of Eugenics, 7(2), 179–188. https://doi.org/10.1111/j.1469-1809.1936.tb02137.x
 18. Gujarati, D. N. (2004). *Basic econometrics* (4th ed.). The McGraw-Hill Companies.
 19. Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). *Multivariate data analysis* (8th ed.). Cengage Learning.
 20. Handayani, K., Krozer, Y., & Filatova, T. (2019). Trade-offs between electrification and climate change mitigation: An analysis of the Java-Bali power system in Indonesia. *Applied Energy*, 236, 659–672.
-21. Indrawanto, D. (2025). Integration of sustainable architecture principles in vertical housing design in high-density urban areas. *The Journal of Academic Science*, 2(2), 461–469. https://thejoas.com/index.php/
+21. Indrawanto, D. (2025). Integration of sustainable architecture principles in vertical housing design in high-density urban areas. *The Journal of Academic Science*, 2(2), 461–469. https://doi.org/10.59613/ttsfb560
 22. Johnson, R. A., & Wichern, D. W. (2014). *Applied multivariate statistical analysis* (6th ed.). Pearson Education Limited.
 23. Kaufman, L., & Rousseeuw, P. J. (1990)._Finding groups in data: An introduction to cluster analysis_. John Wiley & Sons.
-24. Kementerian Energi dan Sumber Daya Mineral Republik Indonesia. (2024). Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 tentang Tarif Tenaga Listrik yang Disediakan oleh PT Perusahaan Listrik Negara (Persero). Berita Negara Republik Indonesia Tahun 2024.
+24. Kementerian Energi dan Sumber Daya Mineral Republik Indonesia. (2024). Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 tentang Tarif Tenaga Listrik yang Disediakan oleh PT Perusahaan Listrik Negara (Persero). Berita Indonesia Tahun 2024.
 25. Kementerian Lingkungan Hidup dan Kehutanan. (2024). Laporan inventarisasi gas rumah kaca (GRK) dan monitoring, pelaporan, verifikasi (MPV) tahun 2024 (Vol. 10). Direktorat Jenderal Pengendalian Perubahan Iklim.
 26. Kementerian PPN/Bappenas. (2019). Background study Visi Indonesia 2045: Indonesia 2045 berdaulat, maju, adil, dan makmur.
 27. Kementerian PPN/Bappenas. (2025). Rencana pembangunan jangka menengah nasional tahun 2025–2029.
 28. Kruskal, W. H., & Wallis, W. A. (1952). Use of ranks in one-criterion variance analysis. Journal of the American Statistical Association, 47(260), 583–621. https://doi.org/10.1080/01621459.1952.10483441
 29. Kubota, T., Surahman, U., & Higashi, O. (2014). A comparative analysis of household energy consumption in Jakarta and Bandung. *Proceedings of the 30th International PLEA Conference*, Ahmedabad, India.
-30. Landau, S., & Chis Ster, I. (2010). Cluster analysis: Overview. In *Encyclopedia of Behavioral Statistics*. Elsevier Ltd.
-31. Leach, G. (1992). The energy transition. *Energy Policy*, 20(2), 116–123. https://doi.org/10.1016/0301-4215(92)90105-B
-32. Lumley, T. (2010). Complex surveys: A guide to analysis using R. John Wiley & Sons.
-33. Lumley, T. (2024). survey: Analysis of complex survey samples (R package version 4.5) [Computer software].
-34. Lumley, T., & Scott, A. (2012). Two-sample rank tests under complex sampling [Technical report]. Department of Statistics, University of Auckland.
+30. Leach, G. (1992). The energy transition. *Energy Policy*, 20(2), 116–123. https://doi.org/10.1016/0301-4215(92)90105-B
+31. Lumley, T. (2010). Complex surveys: A guide to analysis using R. John Wiley & Sons.
+32. Lumley, T. (2024). survey: Analysis of complex survey samples (R package version 4.5) [Computer software].
+33. Lumley, T., & Scott, A. (2012). Two-sample rank tests under complex sampling [Technical report]. Department of Statistics, University of Auckland.
 35. Mair, P., & Wilcox, R. (2020). Robust statistical methods in R using the WRS2 package. Behavior Research Methods, 52, 464–488. https://doi.org/10.3758/s13428-019-01246-w
 36. Moeeni, S., Moeeni, M., & Bozorga, A. M. R. (2025). Quantile regression analysis of household energy demand in Iran using income-expenditure national survey (2016–2023): Heterogeneity and key characteristics. *Iranian Journal of Economic Studies*, 14(1), 163–200.
 37. Nazer, M., & Handra, H. (2016). Analisis konsumsi energi rumah tangga perkotaan di Indonesia. *Jurnal Ekonomi dan Pembangunan Indonesia*.
 38. Nicholson, W., & Snyder, C. (2010). *Intermediate microeconomics and its application* (11th ed.). South-Western Cengage Learning.
 39. Nojedehi, P., Gunay, B., O'Brien, W., & Papineau, M. (2025). A method to develop residential archetypes by associating thermophysical building attributes with utility meter data. *Energy & Buildings*, 347.
 40. Novianto, D., Gao, W., & Kuroki, S. (2015). Review on people's lifestyle and energy consumption of Asian communities: Case study of Indonesia, Thailand, and China. *Energy and Power Engineering*, 7(10), 465–476. https://doi.org/10.4236/epe.2015.710045
-41. Oktasandira, A. (2025). *Analisis klaster pelanggan listrik berdasarkan perilaku konsumsi di Kota Sukabumi menggunakan metode K-Means clustering*.
+41. OKTASANDIRA, A (2025). ANALISIS KLASTER PELANGGAN LISTRIK BERDASARKAN PERILAKU KONSUMSI DI KOTA SUKABUMI MENGGUNAKAN METODE K-MEANS …., repository.nusaputra.ac.id, https://repository.nusaputra.ac.id/id/eprint/1737/1/Andhika%20Oktasandira%20(repo).pdf
 42. Pasaribu, N. G., Wulandari, F. W., & Wulandari, S. P. (2024). Pengelompokan indikator kemiskinan di kabupaten/kota Aceh tahun 2021 menggunakan analisis klaster. *Bilangan: Jurnal Ilmiah Matematika, Kebumian dan Angkasa*, 2(6).
 43. Pavanello, F., De Cian, E., Davide, M., Mistry, M., Cruz, T., Bezerra, P., Jagu, D., Renner, S., Schaeffer, R., & Lucena, A. F. P. (2021). Air-conditioning and the adaptation cooling deficit in emerging economies. *Nature Communications*, 12, 6460. https://doi.org/10.1038/s41467-021-26592-2
 44. Prastika, A. (2023). Hubungan antara tingkat konsumsi energi listrik dengan pertumbuhan ekonomi di Indonesia. *Jurnal Ilmu Ekonomi (JIE)*.
@@ -1168,7 +1167,7 @@ Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan pe
 47. Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, 16(1).
 48. Rencher, A. C. (2002). Methods of multivariate analysis (2nd ed.). John Wiley & Sons.
 49. Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, 2(1), 79–91. https://doi.org/10.5334/bc.72
-50. Rousseeuw, PJ (1987). Silhouettes: a graphical aid to the interpretation and validation of cluster analysis. Journal of computational and applied mathematics, Elsevier, <https://www.sciencedirect.com/science/article/pii/0377042787901257>
+50. Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. Journal of Computational and Applied Mathematics, 20, 53–65. https://doi.org/10.1016/0377-0427(87)90125-7
 51. Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C., Gamal, A., & Dimyati, M. (2023). Spatio-temporal characteristics of urban heat island of Jakarta metropolitan. *Remote Sensing Applications: Society and Environment*, 32, 101062. https://doi.org/10.1016/j.rsase.2023.101062
 52. Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
 53. van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, 20, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
