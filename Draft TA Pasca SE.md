@@ -156,7 +156,7 @@ Dalam dimensi pembangunan berkelanjutan, pengelolaan sektor energi memegang pera
 
 Listrik sebagai tulang punggung infrastruktur energi modern berperan dalam mendukung sasaran swasembada energi pada Prioritas Nasional 2 RPJMN 2025–2029, yang diarahkan untuk memperkuat ketahanan dan kemandirian energi dalam memenuhi kebutuhan energi nasional (Kementerian PPN/Bappenas, 2025). Urgensi pengelolaan di sektor ini didasarkan pada fakta bahwa konsumsi listrik per kapita nasional terus meningkat hingga mencapai 1.411 kWh per kapita pada tahun 2024 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Meskipun aksesibilitas energi sudah hampir menyeluruh dengan capaian rasio elektrifikasi nasional sebesar 99,83 persen pada tahun 2024 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025), tantangan pembangunan saat ini bergeser pada isu stabilitas pasokan dan efisiensi konsumsi. Hal ini didorong oleh prediksi lonjakan permintaan energi di wilayah perkotaan yang meningkat tajam seiring dengan dinamika sosial ekonomi masyarakat (Takata et al., 2025). Potret sebaran akses energi tersebut disajikan pada Gambar 1.
 
-![Gambar 1 Rasio Elektrifikasi menurut Provinsi, 2024](assets-ta/gambar-1-rasio-elektrifikasi.png)
+![Gambar 1 Rasio Elektrifikasi menurut Provinsi, 2024](assets-ta/gambar-01-rasio-elektrifikasi.png)
 
 **Gambar 1 Rasio Elektrifikasi menurut Provinsi, 2024**
 
@@ -218,7 +218,7 @@ Sumber: Badan Pusat Statistik & Kementerian PPN/Bappenas (2025), dengan data Kem
 
 Berdasarkan Gambar 1, Provinsi DKI Jakarta dan Provinsi Bali merupakan wilayah yang telah mencapai rasio elektrifikasi sebesar 100 persen, melampaui capaian nasional yang berada pada angka 99,83 persen (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Secara spasial, wilayah dengan karakteristik metropolitan berfungsi sebagai pusat pertumbuhan ekonomi yang didorong oleh variabel konsumsi dan investasi (Christono & Putri, 2021). Sebagai ibu kota negara, DKI Jakarta mencatatkan nilai Produk Domestik Regional Bruto (PDRB) tertinggi di Indonesia, yang berimplikasi pada tingginya permintaan energi listrik (Prastika, 2023). Kondisi wilayah yang sepenuhnya merupakan kawasan perkotaan juga memicu fenomena *Urban Heat Island* (UHI), yaitu peningkatan suhu udara di pusat kota yang mendorong kebutuhan energi listrik lebih besar sebagai strategi adaptasi termal masyarakat (Siswanto et al., 2023). Implikasi ekonomi dari karakteristik wilayah metropolitan tersebut tercermin pada besarnya pengeluaran listrik rumah tangga, sebagaimana ditunjukkan pada Gambar 2.
 
-![Gambar 2 Rata-Rata Pengeluaran Listrik per Kapita Sebulan menurut Provinsi, 2025](assets-ta/gambar-2-pengeluaran-listrik-perkapita.png)
+![Gambar 2 Rata-Rata Pengeluaran Listrik per Kapita Sebulan menurut Provinsi, 2025](assets-ta/gambar-02-pengeluaran-listrik-per-kapita.png)
 
 **Gambar 2 Rata-Rata Pengeluaran Listrik per Kapita Sebulan menurut Provinsi, 2025**
 
@@ -284,7 +284,7 @@ Besarnya beban ekonomi akibat intensitas penggunaan energi di wilayah metropolit
 
 | (a) Komposisi Pelanggan | (b) Distribusi Konsumsi |
 |---|---|
-| ![Gambar 3a](assets-ta/gambar-3a-komposisi-pelanggan.png) | ![Gambar 3b](assets-ta/gambar-3b-distribusi-konsumsi.png) |
+| ![Gambar 3a](assets-ta/gambar-03a-komposisi-pelanggan.png) | ![Gambar 3b](assets-ta/gambar-03b-distribusi-konsumsi.png) |
 
 **Gambar 3 (a) Komposisi Pelanggan Listrik menurut Sektor di DKI Jakarta, 2025, dan (b) Distribusi Konsumsi Listrik (kWh) menurut Sektor di DKI Jakarta, 2025**
 
@@ -334,12 +334,11 @@ Data pada Gambar 3 memperlihatkan bahwa sektor rumah tangga merupakan kelompok p
 
 Perkembangan beban konsumsi listrik rumah tangga di DKI Jakarta menunjukkan bahwa persoalan energi domestik di wilayah ini tidak dapat lagi dipahami hanya melalui indikator rata-rata wilayah. Energi listrik yang terjual kepada pelanggan rumah tangga di DKI Jakarta terus meningkat dari tahun ke tahun, sebagaimana ditunjukkan pada Gambar 4, sehingga listrik semakin menjadi kebutuhan rumah tangga yang penting. Namun, angka agregat tersebut belum mampu menjelaskan bagaimana variasi konsumsi listrik terjadi pada tingkat rumah tangga. Dengan kata lain, tingginya rata-rata pengeluaran listrik di DKI Jakarta masih menyisakan pertanyaan mengenai apakah seluruh rumah tangga memiliki pola konsumsi yang relatif seragam, atau justru terbentuk kelompok-kelompok rumah tangga dengan karakteristik konsumsi yang berbeda.
 
-![Gambar 4 Energi Listrik Terjual kepada Pelanggan Rumah Tangga](assets-ta/gambar-4-tren-daya-terjual.png)
+![Gambar 4 Energi Listrik Terjual kepada Pelanggan Rumah Tangga](assets-ta/gambar-04-energi-listrik-terjual.png)
 
 **Gambar 4 Energi Listrik Terjual kepada Pelanggan Rumah Tangga di Provinsi DKI Jakarta, 2018–2025**
 
-Sumber: Badan Pusat Statistik Provinsi DKI Jakarta, *Provinsi DKI Jakarta dalam Angka* edisi 2018–2025, tabel Jumlah Daya (kWh) Listrik menurut Golongan Tarif dan Cabang di Provinsi DKI Jakarta (diolah)
-<!-- CEK: data tahun 2025 lazimnya terbit di edisi 2026; pastikan rentang edisi yang dipakai. Tiap edisi perlu entri Daftar Pustaka sendiri. -->
+Sumber: Badan Pusat Statistik Provinsi DKI Jakarta (2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026), tabel Jumlah Daya (kWh) Listrik menurut Golongan Tarif dan Cabang di Provinsi DKI Jakarta (diolah)
 
 <details>
 <summary>Deskripsi Gambar 4 (catatan konversi, bukan isi naskah)</summary>
@@ -568,7 +567,7 @@ Lima variabel lain berperan sebagai penciri, yaitu ukuran rumah tangga, kepemili
 
 Melalui alur tersebut, profil klaster yang dihasilkan dipakai untuk memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami *adaptation cooling deficit*, yaitu kondisi ketika rumah tangga menghadapi kebutuhan pendinginan tetapi memiliki keterbatasan dalam mengakses pendinginan aktif secara memadai. Kerangka pikir ini menjadi dasar logis bagi penggunaan analisis klaster dalam penelitian ini untuk memetakan heterogenitas rumah tangga di DKI Jakarta sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
 
-![Gambar 5 Kerangka Pikir Penelitian](assets-ta/gambar-2-1-kerangka-pikir.png)
+![Gambar 5 Kerangka Pikir Penelitian](assets-ta/gambar-05-kerangka-pikir.png)
 
 **Gambar 5 Kerangka Pikir Penelitian**
 
@@ -624,7 +623,7 @@ Sumber: Badan Pusat Statistik (2025b), diolah; tarif tenaga listrik mengacu pada
 
 Metode analisis disusun mengikuti urutan tiga tujuan penelitian. Tujuan pertama, yaitu mendeskripsikan profil konsumsi listrik serta kondisi sosial ekonomi rumah tangga, dijawab dengan analisis deskriptif setelah data melalui persiapan data. Tujuan kedua, yaitu mengelompokkan rumah tangga berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, dijawab melalui penetapan variabel pembentuk dan standardisasi data, penetapan ukuran jarak, penentuan jumlah klaster, dan pengelompokan dengan metode *K-Means*. Tujuan ketiga, yaitu menganalisis perbedaan karakteristik sosial ekonomi antarklaster, dijawab melalui *profiling* klaster, yaitu deskripsi kedua klaster pada variabel pembentuk dan variabel penciri, lalu pengujian hipotesis pada variabel penciri. Dengan susunan tersebut, analisis deskriptif mendahului analisis inferensia, dan pengujian hipotesis ditempatkan paling akhir karena memerlukan klaster yang telah terbentuk. Alur tahapan analisis disajikan pada Gambar 6.
 
-![Gambar 6 Diagram Alur Metode Analisis](assets-ta/gambar-3-1-diagram-alur.png)
+![Gambar 6 Diagram Alur Metode Analisis](assets-ta/gambar-06-diagram-alur.png)
 
 **Gambar 6 Diagram Alur Metode Analisis**
 
@@ -1137,8 +1136,6 @@ Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan pe
 
 # DAFTAR PUSTAKA
 
-Agung PS, P., Hartono, D., & Awirya, A. A. (2017). Pengaruh urbanisasi terhadap konsumsi energi dan emisi CO₂: Analisis provinsi di Indonesia. *Jurnal Ekonomi Kuantitatif Terapan*, [volume(nomor)], 9–17.
-
 Ali, S. S. S., Razman, M. R., Awang, A., Asyraf, M. R. M., Ishak, M. R., Ilyas, R. A., & Lawrence, R. J. (2021). Critical determinants of household electricity consumption in a rapidly growing city. *Sustainability*, *13*(8), 4441. https://doi.org/10.3390/su13084441
 
 Badan Pusat Statistik. (2025a). *Indikator perumahan dan kesehatan lingkungan 2025* (Vol. 11; No. Publikasi 04200.25024).
@@ -1148,6 +1145,21 @@ Badan Pusat Statistik. (2025b). *Survei Sosial Ekonomi Nasional (Susenas) Maret 
 Badan Pusat Statistik, & Kementerian PPN/Bappenas. (2025). *Indikator tujuan pembangunan berkelanjutan Indonesia 2025* (Vol. 9; No. Publikasi 07300.25034). Badan Pusat Statistik.
 
 Badan Pusat Statistik Kota Yogyakarta. (2026). *Indeks pembangunan manusia Kota Yogyakarta 2025* (Vol. 12; No. Publikasi 34710.26006).
+
+<!-- Lengkapi Vol. dan No. Publikasi edisi 2019–2025 dari dokumen masing-masing. -->
+Badan Pusat Statistik Provinsi DKI Jakarta. (2019). *Provinsi DKI Jakarta dalam angka 2019*.
+
+Badan Pusat Statistik Provinsi DKI Jakarta. (2020). *Provinsi DKI Jakarta dalam angka 2020*.
+
+Badan Pusat Statistik Provinsi DKI Jakarta. (2021). *Provinsi DKI Jakarta dalam angka 2021*.
+
+Badan Pusat Statistik Provinsi DKI Jakarta. (2022). *Provinsi DKI Jakarta dalam angka 2022*.
+
+Badan Pusat Statistik Provinsi DKI Jakarta. (2023). *Provinsi DKI Jakarta dalam angka 2023*.
+
+Badan Pusat Statistik Provinsi DKI Jakarta. (2024). *Provinsi DKI Jakarta dalam angka 2024*.
+
+Badan Pusat Statistik Provinsi DKI Jakarta. (2025). *Provinsi DKI Jakarta dalam angka 2025*.
 
 Badan Pusat Statistik Provinsi DKI Jakarta. (2026). *Provinsi DKI Jakarta dalam angka 2026* (Vol. 56; No. Publikasi 31000.26005).
 
@@ -1177,7 +1189,6 @@ Indrawanto, D. (2025). Integration of sustainable architecture principles in ver
 
 Johnson, R. A., & Wichern, D. W. (2014). *Applied multivariate statistical analysis* (6th ed.). Pearson Education Limited.
 
-Kaufman, L., & Rousseeuw, P. J. (1990). *Finding groups in data: An introduction to cluster analysis*. John Wiley & Sons.
 
 Kementerian Energi dan Sumber Daya Mineral. (2024). *Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 tentang Tarif Tenaga Listrik yang Disediakan oleh PT Perusahaan Listrik Negara (Persero)*. Berita Negara Republik Indonesia Tahun 2024.
 
