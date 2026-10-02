@@ -1,7 +1,6 @@
 # KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
 
-> **Sumber berkas:** `Klasifikasi_Rumah_Tangga_Konsumsi_Listrik_Dengan_Deskripsi_Gambar_Detail.html`
-> **Sumber dokumen:** Karya Ilmiah Tugas Akhir Politeknik Statistika STIS, Rafli Hibriansyah Siregar.
+> **Catatan repo (bukan isi naskah).** Dokumen ini adalah naskah kerja versi Markdown dari Karya Ilmiah Tugas Akhir Rafli Hibriansyah Siregar, Politeknik Statistika STIS. Naskah resmi tetap dokumen `.docx`. Istilah mengikuti `Kamus_Istilah_Polstat_STIS.md` (Project TA). Gambar dan tabel dinomori berurutan lintas bab (Gambar 1, 2, …; Tabel 1, 2, …). Gambar belum tersimpan di repo; posisi gambar ditandai dengan kotak keterangan.
 
 ---
 
@@ -9,11 +8,12 @@
 
 ![Logo Politeknik Statistika STIS](assets-ta/logo-stis.png)
 
-> **Deskripsi gambar — Logo Politeknik Statistika STIS.**
-> *Media internal:* `image1.png` · *Lokasi dokumen:* halaman sampul dan halaman judul · *Fungsi:* identitas institusi.
-> Lambang berbentuk lingkaran, monokrom hitam-putih, dengan garis lingkaran luar yang tebal. Pada cincin luar bagian atas tertulis melingkar **POLITEKNIK STATISTIKA**. Bagian tengah menampilkan emblem grafis khas STIS: bentuk vertikal menyerupai pilar/garis statistik bergaris-garis, dipadukan dengan ornamen sayap simetris melebar ke kiri dan kanan. Pada bagian bawah lingkaran tertulis **STIS** dengan huruf kapital tebal. Emblem utama berada tepat di pusat lingkaran.
-> *Teks yang terbaca dari gambar:* "POLITEKNIK STATISTIKA" dan "STIS".
-> *Makna dalam konteks dokumen:* menegaskan bahwa karya ilmiah ini berasal dari Politeknik Statistika STIS; dipakai pada halaman sampul dan halaman judul sebagai identitas akademik.
+<details>
+<summary>Deskripsi logo (catatan konversi, bukan isi naskah)</summary>
+
+Lambang berbentuk lingkaran, monokrom hitam-putih. Cincin luar bagian atas bertuliskan "POLITEKNIK STATISTIKA", bagian bawah bertuliskan "STIS", dengan emblem pilar bergaris dan ornamen sayap simetris di tengah. Dipakai pada halaman sampul dan halaman judul sebagai identitas institusi.
+
+</details>
 
 KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
 
@@ -37,23 +37,23 @@ RAFLI HIBRIANSYAH SIREGAR
 
 112313326
 
-PROGRAM STUDI STATISTIKA PROGRAM
+PROGRAM STUDI STATISTIKA PROGRAM DIPLOMA III
 
 ---
 
 ## PRAKATA
 
-Syukur Alhamdulillah penulis ucapkan ke hadirat Allah SWT, akhirnya berkat pertolongan-Nya penulis dapat menyelesaikan tugas akhir yang berjudul "Klasifikasi Pola Konsumsi Listrik Rumah Tangga Berdasarkan Karakteristik Sosial ekonomi Di Dki Jakarta". Penulis juga mengucapkan terimakasih kepada:
+Syukur Alhamdulillah penulis ucapkan ke hadirat Allah SWT, karena berkat pertolongan-Nya penulis dapat menyelesaikan tugas akhir yang berjudul "Klasifikasi Rumah Tangga Berdasarkan Pola Konsumsi Listrik dan Karakteristik Sosial Ekonomi di DKI Jakarta". Penulis juga mengucapkan terima kasih kepada:
 
-- Ibu Dr. Erni Tri Astuti M. Math., selaku Direktur Politeknik Statistika STIS;
-- Bapak Agung Priyo Utomo, S.Si., M.T. selaku Ketua Prodi D-III Statistika Politeknik Statistika STIS;
+- Ibu Dr. Erni Tri Astuti, M.Math., selaku Direktur Politeknik Statistika STIS;
+- Bapak Agung Priyo Utomo, S.Si., M.T., selaku Ketua Program Studi Statistika Program Diploma III Politeknik Statistika STIS;
 - Ibu Dr. Fitri Kartiasih, S.ST., S.E., M.Si., selaku dosen pembimbing yang telah bersedia meluangkan waktu untuk membimbing penyusunan tugas akhir ini;
-- Bapak Yaya Setiadi. dan Bapak Dr. Azka Ubaidillah, S.Si., M.Stat., selaku dosen penguji atas koreksi dan saran yang disampaikan;
-- Ibu Winih Budiarti, SST., M.Stat., dan Dr. Sarni Maniar Berliana, SST., M.Si., selaku dosen pembimbing akademik;
-- Bapak, Ibu, dan Adik serta keluarga besar penulis yang telah memberikan dukungan secara moril dan materiil.
-- serta semua pihak yang telah membantu penulisan tugas akhir ini.
+- Bapak Yaya Setiadi, [lengkapi gelar], dan Bapak Dr. Azka Ubaidillah, S.Si., M.Stat., selaku dosen penguji atas koreksi dan saran yang disampaikan;
+- Ibu Winih Budiarti, SST., M.Stat., dan Ibu Dr. Sarni Maniar Berliana, SST., M.Si., selaku dosen pembimbing akademik;
+- Bapak, Ibu, dan Adik serta keluarga besar penulis yang telah memberikan dukungan secara moril dan materiel; serta
+- semua pihak yang telah membantu penulisan tugas akhir ini.
 
-Penulis menyadari bahwa tugas akhir ini masih mempunyai kekurangan baik isi maupun susunannya. Oleh karena itu, saran dan kritik yang membangun sangatlah penulis harapkan demi perbaikan penulisan tugas akhir ini. Semoga tugas akhir ini bermanfaat bagi banyak pihak.
+Penulis menyadari bahwa tugas akhir ini masih mempunyai kekurangan, baik isi maupun susunannya. Oleh karena itu, saran dan kritik yang membangun sangat penulis harapkan demi perbaikan penulisan tugas akhir ini. Semoga tugas akhir ini bermanfaat bagi banyak pihak.
 
 Jakarta, 30 Desember 2025
 
@@ -63,21 +63,86 @@ Rafli Hibriansyah Siregar
 
 ## ABSTRAK
 
-RAFLI HIBRIANSYAH SIREGAR, "Klasifikasi Pola Konsumsi Listrik Rumah Tangga Berdasarkan Karakteristik Sosial ekonomi Di Dki Jakarta".
+RAFLI HIBRIANSYAH SIREGAR, "Klasifikasi Rumah Tangga Berdasarkan Pola Konsumsi Listrik dan Karakteristik Sosial Ekonomi di DKI Jakarta".
 
-*(Isi abstrak tidak termuat pada berkas HTML sumber — hanya judul bagian yang ada.)*
+*[Isi abstrak belum ditulis pada versi repo.]*
 
 ---
 
 ## DAFTAR ISI
 
+- PRAKATA
+- ABSTRAK
+- DAFTAR TABEL
+- DAFTAR GAMBAR
+- DAFTAR LAMPIRAN
+- BAB I PENDAHULUAN
+  - 1.1 Latar Belakang
+  - 1.2 Identifikasi Masalah
+  - 1.3 Tujuan Penelitian
+  - 1.4 Keterbatasan Penelitian
+  - 1.5 Sistematika Penulisan
+- BAB II KAJIAN PUSTAKA
+  - 2.1 Landasan Teori
+  - 2.2 Penelitian Terkait
+  - 2.3 Kerangka Pikir
+  - 2.4 Hipotesis Penelitian
+- BAB III METODOLOGI
+  - 3.1 Ruang Lingkup Penelitian
+  - 3.2 Metode Pengumpulan Data
+  - 3.3 Definisi Operasional
+  - 3.4 Metode Analisis
+- BAB IV HASIL DAN PEMBAHASAN
+  - 4.1 Gambaran Umum Konsumsi Listrik dan Karakteristik Sosial Ekonomi Rumah Tangga
+  - 4.2 Pembentukan Klaster Rumah Tangga
+  - 4.3 Perbedaan Karakteristik Sosial Ekonomi Antarklaster
+- BAB V KESIMPULAN DAN SARAN
+  - 5.1 Kesimpulan
+  - 5.2 Saran
+- DAFTAR PUSTAKA
+- LAMPIRAN
+
 ## DAFTAR TABEL
+
+| No. | Judul tabel |
+|---|---|
+| Tabel 1 | Penelitian Terkait |
+| Tabel 2 | Definisi Operasional Variabel Penelitian |
+| Tabel 3 | Statistik Deskriptif Variabel Penelitian, DKI Jakarta, Maret 2025 (n = 5.001) |
+| Tabel 4 | Nilai WCSS dan Rata-Rata Koefisien *Silhouette* menurut Jumlah Klaster, DKI Jakarta, Maret 2025 (n = 5.001) |
+| Tabel 5 | Ukuran dan *Centroid* Klaster pada Skala *Z-score*, DKI Jakarta, Maret 2025 |
+| Tabel 6 | Muatan Variabel Pembentuk Klaster pada Dua Komponen Utama |
+| Tabel 7 | Profil Tertimbang Rumah Tangga menurut Klaster |
+| Tabel 8 | Profil Variabel Penciri menurut Klaster |
+| Tabel 9 | Uji Beda dan Ukuran Asosiasi Variabel Penciri Antarklaster |
 
 ## DAFTAR GAMBAR
 
+| No. | Judul gambar |
+|---|---|
+| Gambar 1 | Rasio Elektrifikasi menurut Provinsi, 2024 |
+| Gambar 2 | Rata-Rata Pengeluaran Listrik per Kapita Sebulan menurut Provinsi, 2025 |
+| Gambar 3 | (a) Komposisi Pelanggan Listrik menurut Sektor di DKI Jakarta, 2025, dan (b) Distribusi Konsumsi Listrik (kWh) menurut Sektor di DKI Jakarta, 2025 |
+| Gambar 4 | Energi Listrik Terjual kepada Pelanggan Rumah Tangga di Provinsi DKI Jakarta, 2018–2025 |
+| Gambar 5 | Kerangka Pikir Penelitian |
+| Gambar 6 | Diagram Alur Metode Analisis |
+| Gambar 7 | Distribusi Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025 |
+| Gambar 8 | Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025 |
+| Gambar 9 | Konsumsi Listrik Rumah Tangga menurut Kepemilikan *Air Conditioner*, DKI Jakarta, Maret 2025 |
+| Gambar 10 | Kurva *Elbow* untuk Penentuan Jumlah Klaster, DKI Jakarta, Maret 2025 |
+| Gambar 11 | Rata-Rata Koefisien *Silhouette* menurut Jumlah Klaster, DKI Jakarta, Maret 2025 |
+| Gambar 12 | Visualisasi Klaster Rumah Tangga pada Dua Komponen Utama, DKI Jakarta, Maret 2025 |
+| Gambar 13 | Rata-Rata Konsumsi Listrik Rumah Tangga menurut Klaster |
+| Gambar 14 | Sebaran Konsumsi Listrik Rumah Tangga menurut Klaster |
+| Gambar 15 | Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik menurut Klaster |
+| Gambar 16 | Komposisi Pendidikan Kepala Rumah Tangga menurut Klaster |
+| Gambar 17 | Proporsi Kepemilikan AC menurut Klaster |
+
 ## DAFTAR LAMPIRAN
 
-*(Keempat daftar di atas hanya berupa judul bagian pada berkas HTML sumber; isi daftarnya tidak terbawa.)*
+| No. | Judul lampiran |
+|---|---|
+| Lampiran 1 | Hasil Pembandingan Spesifikasi Variabel Pembentuk dan Transformasi |
 
 ---
 
@@ -89,202 +154,219 @@ Visi Indonesia 2045 menempatkan pembangunan ekonomi berkelanjutan sebagai salah 
 
 Dalam dimensi pembangunan berkelanjutan, pengelolaan sektor energi memegang peranan sentral sebagai mesin penggerak ekonomi sekaligus penentu kualitas lingkungan. Ketergantungan yang tinggi terhadap sumber energi fosil dalam mendukung aktivitas pembangunan berimplikasi langsung pada peningkatan emisi gas rumah kaca nasional yang mencapai 1.360,35 juta ton CO₂e pada tahun 2023 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Laporan Inventarisasi GRK dan MPV Tahun 2024 mencatat target pengurangan emisi sebesar 31,89 persen dengan kemampuan sendiri sebagaimana ditetapkan dalam Enhanced NDC tahun 2022, serta menempatkan efisiensi energi sebagai salah satu dari lima kelompok aksi mitigasi sektor energi (Kementerian Lingkungan Hidup dan Kehutanan, 2024). Pengendalian konsumsi energi di sisi pengguna akhir karena itu merupakan bagian dari upaya pencapaian target tersebut. Dengan demikian, penguatan kualitas lingkungan hidup tidak hanya dicapai melalui sisi hulu produksi, tetapi juga melalui pengendalian konsumsi secara sistematis demi mendukung komitmen iklim nasional.
 
-Listrik sebagai tulang punggung infrastruktur energi modern berperan dalam mendukung sasaran swasembada energi pada Prioritas Nasional 2 RPJMN 2025–2029, yang diarahkan untuk memperkuat ketahanan dan kemandirian energi dalam memenuhi kebutuhan energi nasional (Kementerian PPN/Bappenas, 2025). Urgensi pengelolaan di sektor ini didasarkan pada fakta bahwa konsumsi listrik per kapita nasional terus meningkat hingga mencapai 1.411 kWh per kapita pada tahun 2024 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Meskipun aksesibilitas energi sudah hampir menyeluruh dengan capaian rasio elektrifikasi nasional sebesar 99,83 persen pada tahun 2024 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025), tantangan pembangunan saat ini bergeser pada isu stabilitas pasokan dan efisiensi konsumsi. Hal ini didorong oleh prediksi lonjakan permintaan energi di wilayah perkotaan yang meningkat tajam seiring dengan dinamika sosial ekonomi masyarakat (Takata et al., 2025). Potret sebaran akses energi tersebut disajikan pada Gambar 1.1
+Listrik sebagai tulang punggung infrastruktur energi modern berperan dalam mendukung sasaran swasembada energi pada Prioritas Nasional 2 RPJMN 2025–2029, yang diarahkan untuk memperkuat ketahanan dan kemandirian energi dalam memenuhi kebutuhan energi nasional (Kementerian PPN/Bappenas, 2025). Urgensi pengelolaan di sektor ini didasarkan pada fakta bahwa konsumsi listrik per kapita nasional terus meningkat hingga mencapai 1.411 kWh per kapita pada tahun 2024 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Meskipun aksesibilitas energi sudah hampir menyeluruh dengan capaian rasio elektrifikasi nasional sebesar 99,83 persen pada tahun 2024 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025), tantangan pembangunan saat ini bergeser pada isu stabilitas pasokan dan efisiensi konsumsi. Hal ini didorong oleh prediksi lonjakan permintaan energi di wilayah perkotaan yang meningkat tajam seiring dengan dinamika sosial ekonomi masyarakat (Takata et al., 2025). Potret sebaran akses energi tersebut disajikan pada Gambar 1.
 
-![Gambar 1 Peta Sebaran Rasio Elektrifikasi Tahun 2024](assets-ta/gambar-1-rasio-elektrifikasi.png)
+![Gambar 1 Rasio Elektrifikasi menurut Provinsi, 2024](assets-ta/gambar-1-rasio-elektrifikasi.png)
+
+**Gambar 1 Rasio Elektrifikasi menurut Provinsi, 2024**
 
 Sumber: Badan Pusat Statistik & Kementerian PPN/Bappenas (2025), dengan data Kementerian Energi dan Sumber Daya Mineral, diolah
 
-**Gambar 1.1 Peta Sebaran Rasio Elektrifikasi Tahun 2024**
+<details>
+<summary>Deskripsi Gambar 1 (catatan konversi, bukan isi naskah)</summary>
 
-> **Deskripsi Gambar 1.**
-> *Media internal:* `image2.png` · *Lokasi dokumen:* halaman 15 dokumen / halaman tercetak 9.
->
-> **Bentuk visual.** *Dot plot* (lollipop) horizontal: tiap provinsi diwakili satu garis tipis abu-abu yang berakhir pada satu titik bulat, dengan label angka di sisi kanan titik. Sumbu-X berjudul **"Rasio Elektrifikasi (%)"** dengan skala terpotong, tanda sumbu pada 90, 93, 96, dan 99. Sumbu-Y berisi 38 nama provinsi, diurutkan dari rasio tertinggi (atas) ke terendah (bawah). Dua titik teratas — DKI Jakarta dan Bali — diberi warna **merah** sebagai penekanan; seluruh titik lain berwarna **biru muda**. Mayoritas provinsi menumpuk sangat rapat di sekitar 99,99 persen, sehingga titik-titiknya membentuk satu kolom vertikal padat; hanya beberapa provinsi di bagian bawah yang bergeser jauh ke kiri.
->
-> **Angka yang terbaca dari gambar:**
->
-> | Provinsi | Rasio elektrifikasi (%) |
-> |---|---|
-> | DKI Jakarta | 100 |
-> | Bali | 100 |
-> | Sumatera Utara | 99,99 |
-> | Sumatera Selatan | 99,99 |
-> | Sumatera Barat | 99,99 |
-> | Sulawesi Utara | 99,99 |
-> | Sulawesi Tengah | 99,99 |
-> | Sulawesi Selatan | 99,99 |
-> | Sulawesi Barat | 99,99 |
-> | Riau | 99,99 |
-> | Papua Barat Daya | 99,99 |
-> | Papua Barat | 99,99 |
-> | Nusa Tenggara Barat | 99,99 |
-> | Maluku Utara | 99,99 |
-> | Lampung | 99,99 |
-> | Kepulauan Riau | 99,99 |
-> | Kepulauan Bangka Belitung | 99,99 |
-> | Kalimantan Utara | 99,99 |
-> | Kalimantan Timur | 99,99 |
-> | Kalimantan Selatan | 99,99 |
-> | Jawa Tengah | 99,99 |
-> | Jawa Barat | 99,99 |
-> | Jambi | 99,99 |
-> | Gorontalo | 99,99 |
-> | DI Yogyakarta | 99,99 |
-> | Bengkulu | 99,99 |
-> | Banten | 99,99 |
-> | Aceh | 99,99 |
-> | Kalimantan Barat | 99,85 |
-> | Papua | 99,81 |
-> | Sulawesi Tenggara | 99,78 |
-> | Jawa Timur | 99,67 |
-> | Papua Tengah | 99,49 |
-> | Papua Selatan | 99,08 |
-> | Maluku | 99,08 |
-> | Kalimantan Tengah | 98,05 |
-> | Nusa Tenggara Timur | 96,35 |
-> | Papua Pegunungan | 94,02 |
->
-> **Makna dalam konteks dokumen.** Grafik dipakai untuk menunjukkan bahwa akses listrik nasional sudah sangat tinggi. DKI Jakarta dan Bali mencapai 100 persen, sedangkan capaian nasional disebut 99,83 persen dalam pembahasan. Konteks ini menggeser fokus penelitian dari persoalan akses listrik menuju stabilitas pasokan, efisiensi konsumsi, dan heterogenitas pemakaian listrik pada tingkat rumah tangga.
->
-> **Catatan pembacaan.** Judul pada dokumen menyebutnya "peta sebaran", tetapi bentuk visual yang tampil adalah *dot plot*/peringkat horizontal, bukan peta geografis.
+**Deskripsi Gambar 1.**
 
-Berdasarkan Gambar 1.1, Provinsi DKI Jakarta dan Provinsi Bali merupakan wilayah yang telah mencapai rasio elektrifikasi sebesar 100 persen, melampaui capaian nasional yang berada pada angka 99,83 persen (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Secara spasial, wilayah dengan karakteristik metropolitan berfungsi sebagai pusat pertumbuhan ekonomi yang didorong oleh variabel konsumsi dan investasi (Christono & Putri, 2021). Sebagai ibu kota negara, DKI Jakarta mencatatkan nilai Produk Domestik Regional Bruto (PDRB) tertinggi di Indonesia, yang berimplikasi pada tingginya permintaan energi listrik (Prastika, 2023). Kondisi wilayah yang sepenuhnya merupakan kawasan perkotaan juga memicu fenomena Urban Heat Island (UHI), yaitu peningkatan suhu udara di pusat kota yang mendorong kebutuhan energi listrik lebih besar sebagai strategi adaptasi termal masyarakat (Siswanto et al., 2023). Implikasi ekonomi dari karakteristik wilayah metropolitan tersebut tercermin pada besarnya pengeluaran listrik rumah tangga, sebagaimana ditunjukkan pada Gambar 1.2.
+**Bentuk visual.** *Dot plot* (lollipop) horizontal: tiap provinsi diwakili satu garis tipis abu-abu yang berakhir pada satu titik bulat, dengan label angka di sisi kanan titik. Sumbu-X berjudul **"Rasio Elektrifikasi (%)"** dengan skala terpotong, tanda sumbu pada 90, 93, 96, dan 99. Sumbu-Y berisi 38 nama provinsi, diurutkan dari rasio tertinggi (atas) ke terendah (bawah). Dua titik teratas — DKI Jakarta dan Bali — diberi warna **merah** sebagai penekanan; seluruh titik lain berwarna **biru muda**. Mayoritas provinsi menumpuk sangat rapat di sekitar 99,99 persen, sehingga titik-titiknya membentuk satu kolom vertikal padat; hanya beberapa provinsi di bagian bawah yang bergeser jauh ke kiri.
 
-![Gambar 2 Rata-Rata Pengeluaran Listrik per Kapita Sebulan Tahun 2025](assets-ta/gambar-2-pengeluaran-listrik-perkapita.png)
+**Angka yang terbaca dari gambar:**
+
+| Provinsi | Rasio elektrifikasi (%) |
+|---|---|
+| DKI Jakarta | 100 |
+| Bali | 100 |
+| Sumatera Utara | 99,99 |
+| Sumatera Selatan | 99,99 |
+| Sumatera Barat | 99,99 |
+| Sulawesi Utara | 99,99 |
+| Sulawesi Tengah | 99,99 |
+| Sulawesi Selatan | 99,99 |
+| Sulawesi Barat | 99,99 |
+| Riau | 99,99 |
+| Papua Barat Daya | 99,99 |
+| Papua Barat | 99,99 |
+| Nusa Tenggara Barat | 99,99 |
+| Maluku Utara | 99,99 |
+| Lampung | 99,99 |
+| Kepulauan Riau | 99,99 |
+| Kepulauan Bangka Belitung | 99,99 |
+| Kalimantan Utara | 99,99 |
+| Kalimantan Timur | 99,99 |
+| Kalimantan Selatan | 99,99 |
+| Jawa Tengah | 99,99 |
+| Jawa Barat | 99,99 |
+| Jambi | 99,99 |
+| Gorontalo | 99,99 |
+| DI Yogyakarta | 99,99 |
+| Bengkulu | 99,99 |
+| Banten | 99,99 |
+| Aceh | 99,99 |
+| Kalimantan Barat | 99,85 |
+| Papua | 99,81 |
+| Sulawesi Tenggara | 99,78 |
+| Jawa Timur | 99,67 |
+| Papua Tengah | 99,49 |
+| Papua Selatan | 99,08 |
+| Maluku | 99,08 |
+| Kalimantan Tengah | 98,05 |
+| Nusa Tenggara Timur | 96,35 |
+| Papua Pegunungan | 94,02 |
+
+**Makna dalam konteks dokumen.** Grafik dipakai untuk menunjukkan bahwa akses listrik nasional sudah sangat tinggi. DKI Jakarta dan Bali mencapai 100 persen, sedangkan capaian nasional disebut 99,83 persen dalam pembahasan. Konteks ini menggeser fokus penelitian dari persoalan akses listrik menuju stabilitas pasokan, efisiensi konsumsi, dan heterogenitas pemakaian listrik pada tingkat rumah tangga.
+
+</details>
+
+Berdasarkan Gambar 1, Provinsi DKI Jakarta dan Provinsi Bali merupakan wilayah yang telah mencapai rasio elektrifikasi sebesar 100 persen, melampaui capaian nasional yang berada pada angka 99,83 persen (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Secara spasial, wilayah dengan karakteristik metropolitan berfungsi sebagai pusat pertumbuhan ekonomi yang didorong oleh variabel konsumsi dan investasi (Christono & Putri, 2021). Sebagai ibu kota negara, DKI Jakarta mencatatkan nilai Produk Domestik Regional Bruto (PDRB) tertinggi di Indonesia, yang berimplikasi pada tingginya permintaan energi listrik (Prastika, 2023). Kondisi wilayah yang sepenuhnya merupakan kawasan perkotaan juga memicu fenomena *Urban Heat Island* (UHI), yaitu peningkatan suhu udara di pusat kota yang mendorong kebutuhan energi listrik lebih besar sebagai strategi adaptasi termal masyarakat (Siswanto et al., 2023). Implikasi ekonomi dari karakteristik wilayah metropolitan tersebut tercermin pada besarnya pengeluaran listrik rumah tangga, sebagaimana ditunjukkan pada Gambar 2.
+
+![Gambar 2 Rata-Rata Pengeluaran Listrik per Kapita Sebulan menurut Provinsi, 2025](assets-ta/gambar-2-pengeluaran-listrik-perkapita.png)
+
+**Gambar 2 Rata-Rata Pengeluaran Listrik per Kapita Sebulan menurut Provinsi, 2025**
 
 Sumber: Badan Pusat Statistik (2025a), Tabel 8.5 (diolah)
 
-**Gambar 1.2 Rata-Rata Pengeluaran Listrik per Kapita Sebulan Tahun 2025**
+<details>
+<summary>Deskripsi Gambar 2 (catatan konversi, bukan isi naskah)</summary>
 
-> **Deskripsi Gambar 2.**
-> *Media internal:* `image3.png` · *Lokasi dokumen:* halaman 16 / halaman tercetak 10.
->
-> **Bentuk visual.** *Bar chart* horizontal terurut menurun, 38 provinsi. Sumbu-X berjudul **"Pengeluaran (Rupiah)"** dengan tanda sumbu 0; 50.000; 100.000; 150.000. Batang **DKI Jakarta** diwarnai **merah tua** dan jauh lebih panjang daripada batang lain; seluruh batang lainnya berwarna **abu-abu**. Terdapat **garis vertikal putus-putus berwarna biru** yang memotong grafik sebagai penanda rata-rata nasional, dengan anotasi teks biru dua baris: **"Rata-Rata Nasional: Rp 41.339"**. Setiap batang diberi label angka di ujung kanannya. Sebagian besar provinsi berada di sebelah kiri garis acuan (di bawah rata-rata nasional).
->
-> **Angka yang terbaca dari gambar:**
->
-> | Provinsi | Pengeluaran listrik per kapita per bulan (Rp) |
-> |---|---|
-> | DKI Jakarta | 120.220 |
-> | Kepulauan Riau | 107.074 |
-> | Kalimantan Timur | 65.431 |
-> | Kalimantan Utara | 59.111 |
-> | Papua | 58.371 |
-> | Riau | 53.467 |
-> | Bali | 53.090 |
-> | Banten | 53.067 |
-> | Papua Barat Daya | 50.741 |
-> | Kep. Bangka Belitung | 46.851 |
-> | Jawa Barat | 45.331 |
-> | Kalimantan Tengah | 41.435 |
-> | Sumatera Utara | 40.200 |
-> | Kalimantan Selatan | 40.105 |
-> | Papua Selatan | 39.234 |
-> | Papua Barat | 39.086 |
-> | Papua Tengah | 38.607 |
-> | DI Yogyakarta | 38.483 |
-> | Kalimantan Barat | 38.237 |
-> | Jambi | 36.951 |
-> | Sulawesi Selatan | 35.291 |
-> | Bengkulu | 35.192 |
-> | Sumatera Selatan | 34.039 |
-> | Jawa Timur | 34.036 |
-> | Sumatera Barat | 33.550 |
-> | Maluku | 31.863 |
-> | Lampung | 31.189 |
-> | Maluku Utara | 31.147 |
-> | Sulawesi Tenggara | 30.783 |
-> | Aceh | 30.161 |
-> | Sulawesi Utara | 29.818 |
-> | Sulawesi Tengah | 27.544 |
-> | Jawa Tengah | 27.493 |
-> | Gorontalo | 25.521 |
-> | Sulawesi Barat | 19.731 |
-> | Nusa Tenggara Barat | 19.537 |
-> | Papua Pegunungan | 17.767 |
-> | Nusa Tenggara Timur | 15.856 |
->
-> Garis acuan: **Rata-rata nasional Rp41.339 per kapita per bulan.**
->
-> **Makna dalam konteks dokumen.** Grafik memperlihatkan besarnya beban ekonomi konsumsi listrik di DKI Jakarta — Rp120.220 per kapita per bulan, hampir tiga kali rata-rata nasional. Nilai tersebut memperkuat alasan pemilihan DKI Jakarta sebagai wilayah studi konsumsi listrik rumah tangga.
+**Deskripsi Gambar 2.**
 
-Besarnya beban ekonomi akibat intensitas penggunaan energi di wilayah metropolitan terpotret pada Gambar 1.2, di mana rata-rata pengeluaran listrik per kapita di DKI Jakarta mencapai Rp120.220 per bulan, tertinggi di antara seluruh provinsi. Angka ini hampir tiga kali rata-rata nasional sebesar Rp41.339 per bulan (Badan Pusat Statistik, 2025a). Dalam perspektif lingkungan, tingginya penggunaan listrik di DKI Jakarta juga memiliki implikasi terhadap emisi tidak langsung. Laporan Inventarisasi Profil Emisi dan Pelaporan Penurunan Emisi Gas Rumah Kaca Provinsi DKI Jakarta menunjukkan bahwa pada tahun 2024 emisi tidak langsung dari penggunaan listrik mencapai 34.509 Gg CO₂e, lebih tinggi dibandingkan total emisi langsung sebesar 30.322 Gg CO₂e. Jika emisi langsung dan tidak langsung digabungkan, penggunaan listrik menjadi kontributor utama emisi GRK DKI Jakarta dengan porsi sebesar 53 persen. Laporan tersebut juga menjelaskan bahwa kondisi ini sejalan dengan karakteristik DKI Jakarta sebagai wilayah dengan banyak bangunan rumah tangga dan komersial yang memiliki konsumsi listrik lebih besar dibandingkan konsumsi bahan bakar lain (Dinas Lingkungan Hidup Provinsi DKI Jakarta, 2024). Dengan demikian, pengendalian emisi di DKI Jakarta tidak cukup hanya diarahkan pada pembakaran bahan bakar langsung, tetapi juga perlu memperhatikan konsumsi listrik pada tingkat pengguna akhir. Besarnya skala pemakaian listrik menurut kategori pelanggan di ibu kota disajikan pada Gambar 1.3.
+**Bentuk visual.** *Bar chart* horizontal terurut menurun, 38 provinsi. Sumbu-X berjudul **"Pengeluaran (Rupiah)"** dengan tanda sumbu 0; 50.000; 100.000; 150.000. Batang **DKI Jakarta** diwarnai **merah tua** dan jauh lebih panjang daripada batang lain; seluruh batang lainnya berwarna **abu-abu**. Terdapat **garis vertikal putus-putus berwarna biru** yang memotong grafik sebagai penanda rata-rata nasional, dengan anotasi teks biru dua baris: **"Rata-Rata Nasional: Rp 41.339"**. Setiap batang diberi label angka di ujung kanannya. Sebagian besar provinsi berada di sebelah kiri garis acuan (di bawah rata-rata nasional).
+
+**Angka yang terbaca dari gambar:**
+
+| Provinsi | Pengeluaran listrik per kapita per bulan (Rp) |
+|---|---|
+| DKI Jakarta | 120.220 |
+| Kepulauan Riau | 107.074 |
+| Kalimantan Timur | 65.431 |
+| Kalimantan Utara | 59.111 |
+| Papua | 58.371 |
+| Riau | 53.467 |
+| Bali | 53.090 |
+| Banten | 53.067 |
+| Papua Barat Daya | 50.741 |
+| Kep. Bangka Belitung | 46.851 |
+| Jawa Barat | 45.331 |
+| Kalimantan Tengah | 41.435 |
+| Sumatera Utara | 40.200 |
+| Kalimantan Selatan | 40.105 |
+| Papua Selatan | 39.234 |
+| Papua Barat | 39.086 |
+| Papua Tengah | 38.607 |
+| DI Yogyakarta | 38.483 |
+| Kalimantan Barat | 38.237 |
+| Jambi | 36.951 |
+| Sulawesi Selatan | 35.291 |
+| Bengkulu | 35.192 |
+| Sumatera Selatan | 34.039 |
+| Jawa Timur | 34.036 |
+| Sumatera Barat | 33.550 |
+| Maluku | 31.863 |
+| Lampung | 31.189 |
+| Maluku Utara | 31.147 |
+| Sulawesi Tenggara | 30.783 |
+| Aceh | 30.161 |
+| Sulawesi Utara | 29.818 |
+| Sulawesi Tengah | 27.544 |
+| Jawa Tengah | 27.493 |
+| Gorontalo | 25.521 |
+| Sulawesi Barat | 19.731 |
+| Nusa Tenggara Barat | 19.537 |
+| Papua Pegunungan | 17.767 |
+| Nusa Tenggara Timur | 15.856 |
+
+Garis acuan: **Rata-rata nasional Rp41.339 per kapita per bulan.**
+
+**Makna dalam konteks dokumen.** Grafik memperlihatkan besarnya beban ekonomi konsumsi listrik di DKI Jakarta — Rp120.220 per kapita per bulan, hampir tiga kali rata-rata nasional. Nilai tersebut memperkuat alasan pemilihan DKI Jakarta sebagai wilayah studi konsumsi listrik rumah tangga.
+
+</details>
+
+Besarnya beban ekonomi akibat intensitas penggunaan energi di wilayah metropolitan terpotret pada Gambar 2, di mana rata-rata pengeluaran listrik per kapita di DKI Jakarta mencapai Rp120.220 per bulan, tertinggi di antara seluruh provinsi. Angka ini hampir tiga kali rata-rata nasional sebesar Rp41.339 per bulan (Badan Pusat Statistik, 2025a). Dalam perspektif lingkungan, tingginya penggunaan listrik di DKI Jakarta juga memiliki implikasi terhadap emisi tidak langsung. Laporan Inventarisasi Profil Emisi dan Pelaporan Penurunan Emisi Gas Rumah Kaca Provinsi DKI Jakarta menunjukkan bahwa pada tahun 2024 emisi tidak langsung dari penggunaan listrik mencapai 34.509 Gg CO₂e, lebih tinggi dibandingkan total emisi langsung sebesar 30.322 Gg CO₂e. Jika emisi langsung dan tidak langsung digabungkan, penggunaan listrik menjadi kontributor utama emisi GRK DKI Jakarta dengan porsi sebesar 53 persen. Laporan tersebut juga menjelaskan bahwa kondisi ini sejalan dengan karakteristik DKI Jakarta sebagai wilayah dengan banyak bangunan rumah tangga dan komersial yang memiliki konsumsi listrik lebih besar dibandingkan konsumsi bahan bakar lain (Dinas Lingkungan Hidup Provinsi DKI Jakarta, 2024). Dengan demikian, pengendalian emisi di DKI Jakarta tidak cukup hanya diarahkan pada pembakaran bahan bakar langsung, tetapi juga perlu memperhatikan konsumsi listrik pada tingkat pengguna akhir. Besarnya skala pemakaian listrik menurut kategori pelanggan di ibu kota disajikan pada Gambar 3.
 
 | (a) Komposisi Pelanggan | (b) Distribusi Konsumsi |
 |---|---|
 | ![Gambar 3a](assets-ta/gambar-3a-komposisi-pelanggan.png) | ![Gambar 3b](assets-ta/gambar-3b-distribusi-konsumsi.png) |
 
+**Gambar 3 (a) Komposisi Pelanggan Listrik menurut Sektor di DKI Jakarta, 2025, dan (b) Distribusi Konsumsi Listrik (kWh) menurut Sektor di DKI Jakarta, 2025**
+
 Sumber: Badan Pusat Statistik Provinsi DKI Jakarta (2026), Tabel 6.4 dan 6.5, dengan data PT PLN (Persero) Distribusi DKI Jakarta dan Tangerang (diolah)
 
-**Gambar 1.3 (a) Komposisi Pelanggan Listrik Menurut Sektor di DKI Jakarta, 2025, dan (b) Distribusi Konsumsi Listrik (kWh) Menurut Sektor di DKI Jakarta, 2025**
+<details>
+<summary>Deskripsi Gambar 3 (catatan konversi, bukan isi naskah)</summary>
 
-> **Deskripsi Gambar 3(a) — Komposisi Pelanggan Listrik Menurut Sektor.**
-> *Media internal:* `image4.png` · *Lokasi dokumen:* halaman 17 / halaman tercetak 11.
->
-> **Bentuk visual.** *Treemap*, luas kotak mewakili jumlah pelanggan tiap sektor. Kotak **merah tua** berlabel "Rumah Tangga" mendominasi hampir seluruh bidang gambar, dengan teks putih berukuran sangat besar. Di sisi kanan tersusun satu kolom sempit berisi kotak **biru** ("Usaha"), kotak **hijau tua** ("Sosial"), serta beberapa irisan sangat tipis berwarna **ungu**, **oranye**, dan **biru-kehijauan** di pojok kanan atas. Dominasi bidang merah tampak ekstrem, sehingga rumah tangga terlihat nyaris mencakup keseluruhan basis pelanggan listrik.
->
-> **Angka/teks yang terbaca dari gambar:**
->
-> | Sektor | Jumlah pelanggan | Persentase |
-> |---|---|---|
-> | Rumah Tangga | 5.159.869 | 92,49% |
-> | Usaha | 333.396 | 5,98% |
-> | Sosial | 53.928 | 0,97% |
->
-> Kategori sisanya tampil sebagai irisan tipis; labelnya terlalu kecil pada gambar asli untuk ditranskripsi tanpa menebak, sehingga tidak diisi.
->
-> **Makna dalam konteks dokumen.** Gambar menjadi dasar argumen bahwa rumah tangga adalah kelompok pelanggan paling dominan di DKI Jakarta, sehingga penting dalam kebijakan manajemen permintaan listrik.
+**Deskripsi Gambar 3(a) — Komposisi Pelanggan Listrik Menurut Sektor.**
 
-> **Deskripsi Gambar 3(b) — Distribusi Konsumsi Listrik Menurut Sektor.**
-> *Media internal:* `image5.png` · *Lokasi dokumen:* halaman 17 / halaman tercetak 11.
->
-> **Bentuk visual.** *Treemap* juga, tetapi pembagiannya jauh lebih berimbang daripada panel (a). Sisi kiri terbagi dua secara horizontal: kotak **biru** ("Usaha") di atas dan kotak **hijau tua** ("Rumah Tangga") di bawah — kotak hijau adalah yang terbesar. Kolom kanan berisi, dari bawah ke atas: kotak **merah tua** ("Industri"), kotak **oranye** ("Sosial"), kotak **ungu** ("Perkantoran"), dan satu bidang tipis **abu-abu gelap** ("Lainnya") di paling atas. Semua label ditulis putih dengan tiga baris: nama sektor, nilai kWh, dan persentase dalam kurung.
->
-> **Angka/teks yang terbaca dari gambar:**
->
-> | Sektor | Konsumsi | Persentase |
-> |---|---|---|
-> | Rumah Tangga | 16,36 Miliar kWh | 42,84% |
-> | Usaha | 13,96 Miliar kWh | 36,56% |
-> | Industri | 3,92 Miliar kWh | 10,26% |
-> | Sosial | 1,77 Miliar kWh | 4,63% |
-> | Perkantoran | 1,6 Miliar kWh | 4,19% |
-> | Lainnya | 0,18 Miliar kWh (label sangat kecil) | 1,47% |
->
-> **Makna dalam konteks dokumen.** Rumah tangga bukan hanya dominan sebagai pelanggan, tetapi juga merupakan sektor dengan konsumsi listrik agregat terbesar. Namun porsi 42,84% menunjukkan sektor usaha dan sektor lain tetap menyerap bagian besar konsumsi total — kontras tajam dengan panel (a) yang menunjukkan 92,49%.
+**Bentuk visual.** *Treemap*, luas kotak mewakili jumlah pelanggan tiap sektor. Kotak **merah tua** berlabel "Rumah Tangga" mendominasi hampir seluruh bidang gambar, dengan teks putih berukuran sangat besar. Di sisi kanan tersusun satu kolom sempit berisi kotak **biru** ("Usaha"), kotak **hijau tua** ("Sosial"), serta beberapa irisan sangat tipis berwarna **ungu**, **oranye**, dan **biru-kehijauan** di pojok kanan atas. Dominasi bidang merah tampak ekstrem, sehingga rumah tangga terlihat nyaris mencakup keseluruhan basis pelanggan listrik.
 
-Data pada Gambar 1.3 memperlihatkan bahwa sektor rumah tangga merupakan kelompok pelanggan listrik paling dominan di DKI Jakarta. Pada tahun 2025, sektor rumah tangga mencakup 5.159.869 pelanggan atau setara dengan 92,49 persen dari total pelanggan listrik di Provinsi DKI Jakarta. Dominasi jumlah pelanggan tersebut menjadikan rumah tangga sebagai sektor dengan konsumsi listrik agregat terbesar, yaitu sebesar 16,36 miliar kWh atau sekitar 42,84 persen dari total konsumsi listrik di DKI Jakarta. Nilai tersebut lebih tinggi dibandingkan sektor usaha sebesar 13,96 miliar kWh, sektor industri sebesar 3,92 miliar kWh, sektor sosial sebesar 1,77 miliar kWh, dan sektor perkantoran sebesar 1,60 miliar kWh (Badan Pusat Statistik Provinsi DKI Jakarta, 2026). Kondisi ini menunjukkan bahwa sektor rumah tangga memiliki posisi penting dalam pengelolaan permintaan listrik di wilayah perkotaan. Namun, besarnya konsumsi listrik rumah tangga secara agregat tidak berarti bahwa seluruh rumah tangga memiliki karakteristik konsumsi yang seragam. Variasi konsumsi listrik rumah tangga dapat dipengaruhi oleh perbedaan tingkat kesejahteraan, jumlah anggota rumah tangga, pendidikan kepala rumah tangga, karakteristik hunian, serta kepemilikan perangkat elektronik seperti air conditioner (AC) (Kubota et al., 2014; Nazer & Handra, 2016; Ali et al., 2021; De Cian et al., 2025). Secara teoritis, kondisi tersebut sejalan dengan konsep Energy Ladder yang menjelaskan bahwa peningkatan kesejahteraan dapat mendorong penggunaan energi modern dan meningkatkan intensitas pemakaian listrik melalui kepemilikan aset elektronik (van der Kroon et al., 2013; Nazer & Handra, 2016). Oleh karena itu, analisis berbasis data agregat sektor belum cukup untuk memahami pola konsumsi listrik rumah tangga secara mendalam. Diperlukan pemetaan berbasis mikrodata rumah tangga agar perbedaan karakteristik konsumsi listrik dapat diidentifikasi secara lebih spesifik dan dapat mendukung kebijakan efisiensi energi yang lebih tepat sasaran.
+**Angka/teks yang terbaca dari gambar:**
+
+| Sektor | Jumlah pelanggan | Persentase |
+|---|---|---|
+| Rumah Tangga | 5.159.869 | 92,49% |
+| Usaha | 333.396 | 5,98% |
+| Sosial | 53.928 | 0,97% |
+
+Kategori sisanya tampil sebagai irisan tipis; labelnya terlalu kecil pada gambar asli untuk ditranskripsi tanpa menebak, sehingga tidak diisi.
+
+**Makna dalam konteks dokumen.** Gambar menjadi dasar argumen bahwa rumah tangga adalah kelompok pelanggan paling dominan di DKI Jakarta, sehingga penting dalam kebijakan manajemen permintaan listrik.
+
+**Deskripsi Gambar 3(b) — Distribusi Konsumsi Listrik Menurut Sektor.**
+
+**Bentuk visual.** *Treemap* juga, tetapi pembagiannya jauh lebih berimbang daripada panel (a). Sisi kiri terbagi dua secara horizontal: kotak **biru** ("Usaha") di atas dan kotak **hijau tua** ("Rumah Tangga") di bawah — kotak hijau adalah yang terbesar. Kolom kanan berisi, dari bawah ke atas: kotak **merah tua** ("Industri"), kotak **oranye** ("Sosial"), kotak **ungu** ("Perkantoran"), dan satu bidang tipis **abu-abu gelap** ("Lainnya") di paling atas. Semua label ditulis putih dengan tiga baris: nama sektor, nilai kWh, dan persentase dalam kurung.
+
+**Angka/teks yang terbaca dari gambar:**
+
+| Sektor | Konsumsi | Persentase |
+|---|---|---|
+| Rumah Tangga | 16,36 Miliar kWh | 42,84% |
+| Usaha | 13,96 Miliar kWh | 36,56% |
+| Industri | 3,92 Miliar kWh | 10,26% |
+| Sosial | 1,77 Miliar kWh | 4,63% |
+| Perkantoran | 1,6 Miliar kWh | 4,19% |
+| Lainnya | 0,18 Miliar kWh (label sangat kecil) | 1,47% |
+
+**Makna dalam konteks dokumen.** Rumah tangga bukan hanya dominan sebagai pelanggan, tetapi juga merupakan sektor dengan konsumsi listrik agregat terbesar. Namun porsi 42,84% menunjukkan sektor usaha dan sektor lain tetap menyerap bagian besar konsumsi total — kontras tajam dengan panel (a) yang menunjukkan 92,49%.
+
+</details>
+
+Data pada Gambar 3 memperlihatkan bahwa sektor rumah tangga merupakan kelompok pelanggan listrik paling dominan di DKI Jakarta. Pada tahun 2025, sektor rumah tangga mencakup 5.159.869 pelanggan atau setara dengan 92,49 persen dari total pelanggan listrik di Provinsi DKI Jakarta. Dominasi jumlah pelanggan tersebut menjadikan rumah tangga sebagai sektor dengan konsumsi listrik agregat terbesar, yaitu sebesar 16,36 miliar kWh atau sekitar 42,84 persen dari total konsumsi listrik di DKI Jakarta. Nilai tersebut lebih tinggi dibandingkan sektor usaha sebesar 13,96 miliar kWh, sektor industri sebesar 3,92 miliar kWh, sektor sosial sebesar 1,77 miliar kWh, dan sektor perkantoran sebesar 1,60 miliar kWh (Badan Pusat Statistik Provinsi DKI Jakarta, 2026). Kondisi ini menunjukkan bahwa sektor rumah tangga memiliki posisi penting dalam pengelolaan permintaan listrik di wilayah perkotaan. Namun, besarnya konsumsi listrik rumah tangga secara agregat tidak berarti bahwa seluruh rumah tangga memiliki karakteristik konsumsi yang seragam. Variasi konsumsi listrik rumah tangga dapat dipengaruhi oleh perbedaan tingkat kesejahteraan, jumlah anggota rumah tangga, pendidikan kepala rumah tangga, karakteristik hunian, serta kepemilikan perangkat elektronik seperti *air conditioner* (AC) (Kubota et al., 2014; Nazer & Handra, 2016; Ali et al., 2021; De Cian et al., 2025). Secara teoretis, kondisi tersebut sejalan dengan konsep *energy ladder* yang menjelaskan bahwa peningkatan kesejahteraan dapat mendorong penggunaan energi modern dan meningkatkan intensitas pemakaian listrik melalui kepemilikan aset elektronik (van der Kroon et al., 2013; Nazer & Handra, 2016). Oleh karena itu, analisis berbasis data agregat sektor belum cukup untuk memahami pola konsumsi listrik rumah tangga secara mendalam. Diperlukan pemetaan berbasis mikrodata rumah tangga agar perbedaan karakteristik konsumsi listrik dapat diidentifikasi secara lebih spesifik dan dapat mendukung kebijakan efisiensi energi yang lebih tepat sasaran.
 
 ## 1.2 Identifikasi Masalah
 
-Perkembangan beban konsumsi listrik rumah tangga di DKI Jakarta menunjukkan bahwa persoalan energi domestik di wilayah ini tidak dapat lagi dipahami hanya melalui indikator rata-rata wilayah. Tren pengeluaran listrik per kapita di DKI Jakarta yang terus meningkat dari tahun ke tahun, sebagaimana ditunjukkan pada Gambar 1.4, mencerminkan bahwa listrik semakin menjadi komponen pengeluaran rumah tangga yang penting. Namun, nilai rata-rata tersebut belum mampu menjelaskan bagaimana variasi konsumsi listrik terjadi pada tingkat rumah tangga. Dengan kata lain, tingginya rata-rata pengeluaran listrik di DKI Jakarta masih menyisakan pertanyaan mengenai apakah seluruh rumah tangga memiliki pola konsumsi yang relatif seragam, atau justru terbentuk kelompok-kelompok rumah tangga dengan karakteristik konsumsi yang berbeda.
+Perkembangan beban konsumsi listrik rumah tangga di DKI Jakarta menunjukkan bahwa persoalan energi domestik di wilayah ini tidak dapat lagi dipahami hanya melalui indikator rata-rata wilayah. Energi listrik yang terjual kepada pelanggan rumah tangga di DKI Jakarta terus meningkat dari tahun ke tahun, sebagaimana ditunjukkan pada Gambar 4, sehingga listrik semakin menjadi kebutuhan rumah tangga yang penting. Namun, angka agregat tersebut belum mampu menjelaskan bagaimana variasi konsumsi listrik terjadi pada tingkat rumah tangga. Dengan kata lain, tingginya rata-rata pengeluaran listrik di DKI Jakarta masih menyisakan pertanyaan mengenai apakah seluruh rumah tangga memiliki pola konsumsi yang relatif seragam, atau justru terbentuk kelompok-kelompok rumah tangga dengan karakteristik konsumsi yang berbeda.
 
-![Gambar 4 Tren Total Daya Listrik Rumah Tangga Terjual](assets-ta/gambar-4-tren-daya-terjual.png)
+![Gambar 4 Energi Listrik Terjual kepada Pelanggan Rumah Tangga](assets-ta/gambar-4-tren-daya-terjual.png)
 
-**Gambar 1.4 Tren Total Daya Listrik Rumah Tangga Terjual di Provinsi DKI Jakarta**
+**Gambar 4 Energi Listrik Terjual kepada Pelanggan Rumah Tangga di Provinsi DKI Jakarta, 2018–2025**
 
-> **Deskripsi Gambar 4.**
-> *Media internal:* `image6.png` · *Lokasi dokumen:* halaman 19 / halaman tercetak 13.
->
-> **Bentuk visual.** Grafik garis dengan penanda titik bulat, empat seri, periode **2018–2025**. Sumbu-X berjudul **"Tahun"**, sumbu-Y berjudul **"Daya Terjual (Miliar kWh)"** dengan skala 0–18 (tanda tiap 2). Legenda horizontal di bawah grafik. Setiap seri diberi label angka berwarna di ujung kanan (tahun 2025).
->
-> | Seri | Warna & gaya garis | Pola yang terlihat | Label ujung 2025 |
-> |---|---|---|---|
-> | Total Rumah Tangga | merah, **putus-putus** | naik dari ±13,2 (2018) → ±14,0 (2019) → ±14,6 (2020) → ±14,75 (2021) → ±14,8 (2022) → ±15,6 (2023) → ±16,4 (2024), lalu mendatar | **16,36** |
-> | R1 (450–2200 VA) | biru, garis penuh | naik dari ±8,6 (2018) ke ±9,3 (2020), sedikit melandai/turun 2021–2022 (±9,2), naik ke ±10,1 (2024), mendatar | **10,06** |
-> | R2 (3.500–5.500 VA) | oranye/kuning, garis penuh | naik landai dari ±2,5 (2018) ke ±3,5 (2024), sedikit turun di 2025 | **3,38** |
-> | R3 (6.600 VA ke atas) | hijau, garis penuh | naik landai dari ±2,1 (2018) ke ±2,9 (2024), mendatar | **2,92** |
->
-> Nilai antartahun selain label ujung dibaca dari posisi titik pada grafik, sehingga bersifat perkiraan visual.
->
-> **Makna dalam konteks dokumen.** Grafik memperlihatkan kecenderungan peningkatan konsumsi listrik rumah tangga dari waktu ke waktu, dengan golongan R1 sebagai komponen terbesar. Namun penelitian utama tetap menggunakan data *cross-section* 2025 untuk memetakan heterogenitas antar rumah tangga, bukan perubahan perilaku individual antarwaktu.
+Sumber: [lengkapi sumber gambar]
+
+<details>
+<summary>Deskripsi Gambar 4 (catatan konversi, bukan isi naskah)</summary>
+
+**Deskripsi Gambar 4.**
+
+**Bentuk visual.** Grafik garis dengan penanda titik bulat, empat seri, periode **2018–2025**. Sumbu-X berjudul **"Tahun"**, sumbu-Y berjudul **"Daya Terjual (Miliar kWh)"** dengan skala 0–18 (tanda tiap 2). Legenda horizontal di bawah grafik. Setiap seri diberi label angka berwarna di ujung kanan (tahun 2025).
+
+| Seri | Warna & gaya garis | Pola yang terlihat | Label ujung 2025 |
+|---|---|---|---|
+| Total Rumah Tangga | merah, **putus-putus** | naik dari ±13,2 (2018) → ±14,0 (2019) → ±14,6 (2020) → ±14,75 (2021) → ±14,8 (2022) → ±15,6 (2023) → ±16,4 (2024), lalu mendatar | **16,36** |
+| R1 (450–2200 VA) | biru, garis penuh | naik dari ±8,6 (2018) ke ±9,3 (2020), sedikit melandai/turun 2021–2022 (±9,2), naik ke ±10,1 (2024), mendatar | **10,06** |
+| R2 (3.500–5.500 VA) | oranye/kuning, garis penuh | naik landai dari ±2,5 (2018) ke ±3,5 (2024), sedikit turun di 2025 | **3,38** |
+| R3 (6.600 VA ke atas) | hijau, garis penuh | naik landai dari ±2,1 (2018) ke ±2,9 (2024), mendatar | **2,92** |
+
+Nilai antartahun selain label ujung dibaca dari posisi titik pada grafik, sehingga bersifat perkiraan visual.
+
+**Makna dalam konteks dokumen.** Grafik memperlihatkan kecenderungan peningkatan konsumsi listrik rumah tangga dari waktu ke waktu, dengan golongan R1 sebagai komponen terbesar. Namun penelitian utama tetap menggunakan data *cross-section* 2025 untuk memetakan heterogenitas antarrumah tangga, bukan perubahan perilaku individual antarwaktu.
+
+**Catatan revisi.** Label sumbu tegak pada gambar masih bertuliskan "Daya Terjual (Miliar kWh)". Satuan kWh menyatakan energi, bukan daya, sehingga label perlu diganti menjadi "Energi Listrik Terjual (Miliar kWh)" saat gambar dibuat ulang. Sumber gambar belum dicantumkan.
+
+</details>
 
 Secara empiris, variasi konsumsi listrik rumah tangga dipengaruhi oleh karakteristik sosial ekonomi yang berbeda-beda. Kubota et al. (2014) menunjukkan bahwa konsumsi energi rumah tangga di Jakarta dipengaruhi oleh karakteristik hunian dan kepemilikan perangkat pendingin, sedangkan Nazer dan Handra (2016) menegaskan bahwa kemampuan ekonomi rumah tangga berhubungan dengan konsumsi energi modern. Ali et al. (2021) juga menunjukkan bahwa ukuran rumah tangga dan tingkat pendidikan turut berkaitan dengan tingkat konsumsi listrik rumah tangga. Temuan-temuan tersebut mengindikasikan bahwa rumah tangga di DKI Jakarta tidak dapat diperlakukan sebagai kelompok yang homogen, karena terdapat perbedaan dalam kemampuan ekonomi, kebutuhan domestik, dan pola penggunaan energi. Dalam konteks wilayah metropolitan seperti Jakarta, kompleksitas ini semakin kuat karena kebutuhan listrik tidak hanya dipengaruhi oleh faktor ekonomi, tetapi juga oleh tekanan lingkungan perkotaan.
 
 Di sisi lain, penelitian terkait konsumsi energi rumah tangga di Indonesia masih belum banyak yang secara khusus memetakan heterogenitas rumah tangga di DKI Jakarta secara lebih luas. Takata et al. (2025) memang telah mengkaji klasifikasi pola gaya hidup dan hubungannya dengan konsumsi energi, tetapi fokusnya terbatas pada hunian apartemen. Kondisi ini menyisakan ruang eksplorasi untuk rumah tangga pada pemukiman umum di DKI Jakarta yang memiliki karakteristik sosial ekonomi, kondisi hunian, dan akses terhadap perangkat listrik yang lebih beragam. Dengan demikian, masih terdapat kesenjangan penelitian dalam bentuk belum tersedianya pemetaan yang komprehensif mengenai kelompok-kelompok rumah tangga di DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi.
 
-Ketiadaan pemetaan tersebut berimplikasi pada kebijakan manajemen sisi permintaan (demand-side management) yang cenderung masih bersifat umum atau one-size-fits-all. Padahal, kebijakan efisiensi energi yang efektif memerlukan pemahaman yang lebih rinci mengenai kelompok rumah tangga mana yang memiliki konsumsi relatif tinggi, kelompok mana yang efisien, dan kelompok mana yang berpotensi rentan terhadap keterbatasan adaptasi pendinginan. Oleh karena itu, diperlukan suatu pendekatan statistik yang mampu mengelompokkan rumah tangga berdasarkan kemiripan karakteristiknya. Dalam konteks penelitian ini, analisis klaster digunakan untuk mengidentifikasi dan memetakan kelompok rumah tangga di DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, sehingga dapat diperoleh profil rumah tangga yang lebih jelas sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
+Ketiadaan pemetaan tersebut berimplikasi pada kebijakan manajemen sisi permintaan (*demand-side management*) yang cenderung masih bersifat umum atau *one-size-fits-all*. Padahal, kebijakan efisiensi energi yang efektif memerlukan pemahaman yang lebih rinci mengenai kelompok rumah tangga mana yang memiliki konsumsi relatif tinggi, kelompok mana yang efisien, dan kelompok mana yang berpotensi rentan terhadap keterbatasan adaptasi pendinginan. Oleh karena itu, diperlukan suatu pendekatan statistik yang mampu mengelompokkan rumah tangga berdasarkan kemiripan karakteristiknya. Dalam konteks penelitian ini, analisis klaster digunakan untuk mengidentifikasi dan memetakan kelompok rumah tangga di DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, sehingga dapat diperoleh profil rumah tangga yang lebih jelas sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
 
 ## 1.3 Tujuan Penelitian
 
@@ -296,7 +378,7 @@ Berdasarkan latar belakang dan identifikasi masalah yang telah dipaparkan, tujua
 
 ## 1.4 Keterbatasan Penelitian
 
-Penelitian ini menggunakan data sekunder berupa mikrodata Survei Sosial Ekonomi Nasional (Susenas) Maret 2025 dengan cakupan wilayah Provinsi DKI Jakarta dan unit observasi rumah tangga sampel Susenas Maret 2025. Klaster dibentuk dari tiga variabel, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan lama sekolah Kepala Rumah Tangga (KRT), sehingga pengelompokan hanya mencerminkan perbedaan antarrumah tangga pada ketiga dimensi tersebut. Lima variabel lainnya, yaitu ukuran rumah tangga, kepemilikan air conditioner (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang, tidak dipakai dalam perhitungan jarak dan berperan sebagai variabel penciri pada tahap profiling. Kepemilikan AC juga dipakai sebagai salah satu kriteria dalam memilih spesifikasi variabel pembentuk, sehingga perbedaan kepemilikan AC antarklaster tidak sepenuhnya bebas dari proses pembentukan klaster.
+Penelitian ini menggunakan data sekunder berupa mikrodata Survei Sosial Ekonomi Nasional (Susenas) Maret 2025 dengan cakupan wilayah Provinsi DKI Jakarta dan unit observasi rumah tangga sampel Susenas Maret 2025. Klaster dibentuk dari tiga variabel, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga (KRT), sehingga pengelompokan hanya mencerminkan perbedaan antarrumah tangga pada ketiga dimensi tersebut. Lima variabel lainnya, yaitu ukuran rumah tangga, kepemilikan *air conditioner* (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang, tidak dipakai dalam perhitungan jarak dan berperan sebagai variabel penciri pada tahap *profiling*. Kepemilikan AC juga dipakai sebagai salah satu kriteria dalam memilih spesifikasi variabel pembentuk, sehingga perbedaan kepemilikan AC antarklaster tidak sepenuhnya bebas dari proses pembentukan klaster.
 
 Keterbatasan utama penelitian ini terletak pada penggunaan data sekunder Susenas yang tidak menyediakan informasi teknis secara rinci mengenai konsumsi energi rumah tangga, seperti durasi penggunaan, daya spesifik, dan intensitas pemakaian peralatan elektronik, termasuk AC. Selain itu, penelitian ini juga tidak mengukur secara langsung kondisi termal hunian atau paparan panas pada tingkat rumah tangga. Oleh karena itu, hasil analisis klaster yang diperoleh merupakan pendekatan proksi berdasarkan pola pengeluaran listrik dan karakteristik sosial ekonomi rumah tangga, bukan hasil observasi teknis langsung terhadap konsumsi energi per peralatan maupun pengukuran langsung terhadap kebutuhan pendinginan rumah tangga.
 
@@ -304,9 +386,9 @@ Keterbatasan berikutnya melekat pada cara konsumsi listrik rumah tangga diperole
 
 Konversi tersebut juga mensyaratkan setiap rumah tangga memiliki golongan tarif yang sah. Sebanyak 78 rumah tangga, yang terdiri atas 66 rumah tangga pengguna listrik PT PLN (Persero) tanpa meteran dan 12 rumah tangga pengguna listrik non-PLN, tidak memenuhi syarat tersebut sehingga dikeluarkan dari analisis. Kesimpulan penelitian karena itu berlaku bagi rumah tangga bermeteran PT PLN (Persero) di Provinsi DKI Jakarta, bukan bagi seluruh rumah tangga di provinsi tersebut.
 
-Sebagian rumah tangga pada golongan bersubsidi memiliki konsumsi listrik hasil konversi yang melampaui batas atas kapasitas meterannya. Batas atas tersebut diperoleh dengan menganggap daya terpasang terpakai penuh selama 24 jam setiap hari sepanjang 30 hari, dengan angka daya dalam satuan watt sebagaimana dicatat kuesioner Susenas, yaitu 450 × 24 × 30 = 324.000 watt-jam atau 324 kWh bagi golongan 450 VA dan 900 × 24 × 30 = 648.000 watt-jam atau 648 kWh bagi golongan 900 VA. Keadaan tersebut ditemukan pada 226 dari 553 rumah tangga golongan 450 VA, atau 40,87 persen, dan pada 64 dari 1.573 rumah tangga golongan 900 VA, atau 4,07 persen. Mikrodata Susenas tidak memungkinkan penyebabnya dipastikan. Kemungkinan yang dapat diajukan adalah golongan daya yang terekam tidak sesuai dengan keadaan sebenarnya, rumah tangga yang sebenarnya dikenai tarif nonsubsidi, dan pembelian token listrik untuk lebih dari satu bulan yang tercatat sebagai pengeluaran sebulan terakhir. Ketiga kemungkinan tersebut sama-sama membuat konsumsi listrik hasil konversi lebih tinggi daripada konsumsi sebenarnya: dua kemungkinan pertama karena tarif yang dipakai dalam konversi lebih rendah daripada tarif yang berlaku, sedangkan kemungkinan ketiga karena pengeluaran yang dikonversi mencakup pemakaian lebih dari satu bulan. Observasi tersebut tetap diikutsertakan tanpa koreksi karena tidak terdapat dasar yang sah untuk menetapkan nilai penggantinya. Winsorizing pada persentil ke-1 dan ke-99 serta transformasi logaritma natural menekan pengaruh nilai ekstrem terhadap perhitungan jarak, tetapi tidak mengoreksi observasi tersebut sepanjang nilainya berada di bawah persentil ke-99.
+Sebagian rumah tangga pada golongan bersubsidi memiliki konsumsi listrik hasil konversi yang melampaui batas atas kapasitas meterannya. Batas atas tersebut diperoleh dengan menganggap daya terpasang terpakai penuh selama 24 jam setiap hari sepanjang 30 hari, dengan angka daya dalam satuan watt sebagaimana dicatat kuesioner Susenas, yaitu 450 × 24 × 30 = 324.000 watt-jam atau 324 kWh bagi golongan 450 VA dan 900 × 24 × 30 = 648.000 watt-jam atau 648 kWh bagi golongan 900 VA. Keadaan tersebut ditemukan pada 226 dari 553 rumah tangga golongan 450 VA, atau 40,87 persen, dan pada 64 dari 1.573 rumah tangga golongan 900 VA, atau 4,07 persen. Mikrodata Susenas tidak memungkinkan penyebabnya dipastikan. Kemungkinan yang dapat diajukan adalah golongan daya yang terekam tidak sesuai dengan keadaan sebenarnya, rumah tangga yang sebenarnya dikenai tarif nonsubsidi, dan pembelian token listrik untuk lebih dari satu bulan yang tercatat sebagai pengeluaran sebulan terakhir. Ketiga kemungkinan tersebut sama-sama membuat konsumsi listrik hasil konversi lebih tinggi daripada konsumsi sebenarnya: dua kemungkinan pertama karena tarif yang dipakai dalam konversi lebih rendah daripada tarif yang berlaku, sedangkan kemungkinan ketiga karena pengeluaran yang dikonversi mencakup pemakaian lebih dari satu bulan. Observasi tersebut tetap diikutsertakan tanpa koreksi karena tidak terdapat dasar yang sah untuk menetapkan nilai penggantinya. *Winsorizing* pada persentil ke-1 dan ke-99 serta transformasi logaritma natural menekan pengaruh nilai ekstrem terhadap perhitungan jarak, tetapi tidak mengoreksi observasi tersebut sepanjang nilainya berada di bawah persentil ke-99.
 
-Karena penelitian ini menggunakan data cross-section pada satu periode pengamatan, hasil yang diperoleh menggambarkan kondisi rumah tangga di DKI Jakarta pada tahun 2025 dan tidak dimaksudkan untuk menjelaskan perubahan perilaku konsumsi listrik rumah tangga antarwaktu. Dengan demikian, interpretasi hasil penelitian diarahkan pada pemetaan heterogenitas rumah tangga pada satu periode tertentu, bukan pada analisis dinamika konsumsi listrik secara longitudinal.
+Karena penelitian ini menggunakan data *cross-section* pada satu periode pengamatan, hasil yang diperoleh menggambarkan kondisi rumah tangga di DKI Jakarta pada tahun 2025 dan tidak dimaksudkan untuk menjelaskan perubahan perilaku konsumsi listrik rumah tangga antarwaktu. Dengan demikian, interpretasi hasil penelitian diarahkan pada pemetaan heterogenitas rumah tangga pada satu periode tertentu, bukan pada analisis dinamika konsumsi listrik secara longitudinal.
 
 ## 1.5 Sistematika Penulisan
 
@@ -336,11 +418,11 @@ Analisis multivariat merupakan sekumpulan metode statistika yang digunakan ketik
 
 **Analisis Klaster**
 
-Analisis klaster merupakan salah satu teknik dalam analisis multivariat yang bertujuan mengelompokkan objek ke dalam beberapa klaster berdasarkan tingkat kemiripan karakteristiknya. Objek yang berada dalam klaster yang sama memiliki homogenitas internal yang tinggi, sedangkan objek dari klaster yang berbeda secara jelas dari anggota klaster lain. Everitt et al. (2011) menjelaskan bahwa cluster analysis pada dasarnya adalah metode numerik untuk menemukan kelompok dalam data, sedangkan Rencher (2002) menyatakan bahwa analisis klaster dapat dilakukan melalui pendekatan hierarki maupun partisi. Dalam penelitian ini, analisis klaster digunakan untuk memetakan rumah tangga ke dalam kelompok-kelompok yang memiliki pola konsumsi listrik dan karakteristik sosial ekonomi yang serupa, sehingga heterogenitas rumah tangga di DKI Jakarta dapat dipahami secara lebih sistematis.
+Analisis klaster merupakan salah satu teknik dalam analisis multivariat yang bertujuan mengelompokkan objek ke dalam beberapa klaster berdasarkan tingkat kemiripan karakteristiknya. Objek yang berada dalam klaster yang sama memiliki homogenitas internal yang tinggi, sedangkan objek dari klaster yang berbeda secara jelas dari anggota klaster lain. Everitt et al. (2011) menjelaskan bahwa *cluster analysis* pada dasarnya adalah metode numerik untuk menemukan kelompok dalam data, sedangkan Rencher (2002) menyatakan bahwa analisis klaster dapat dilakukan melalui pendekatan hierarki maupun partisi. Dalam penelitian ini, analisis klaster digunakan untuk memetakan rumah tangga ke dalam kelompok-kelompok yang memiliki pola konsumsi listrik dan karakteristik sosial ekonomi yang serupa, sehingga heterogenitas rumah tangga di DKI Jakarta dapat dipahami secara lebih sistematis.
 
 **Ukuran Kemiripan dan Standardisasi Data**
 
-Pembentukan klaster memerlukan ukuran kemiripan (jarak) antarobjek. Untuk data kuantitatif, salah satu ukuran jarak yang paling umum digunakan adalah jarak Euclidean, yaitu jarak geometrik antar dua titik dalam ruang berdimensi $p$. Jarak Euclidean antara objek ke-$i$ dan objek ke-$k$ dinyatakan sebagai:
+Pembentukan klaster memerlukan ukuran kemiripan (jarak) antarobjek. Untuk data kuantitatif, salah satu ukuran jarak yang paling umum digunakan adalah jarak Euclidean, yaitu jarak geometrik antardua titik dalam ruang berdimensi $p$. Jarak Euclidean antara objek ke-$i$ dan objek ke-$k$ dinyatakan sebagai:
 
 $$d(\mathbf{x}_i,\mathbf{x}_k)=\sqrt{\sum_{j=1}^{p}(x_{ij}-x_{kj})^2} \tag{2.1}$$
 
@@ -351,10 +433,9 @@ dengan:
 - $x_{ij}$ = nilai variabel ke-$j$ pada objek ke-$i$,
 - $x_{kj}$ = nilai variabel ke-$j$ pada objek ke-$k$.
 
+Rencher (2002) menempatkan pembahasan *distance between vectors* sebagai dasar penting dalam analisis multivariat, sedangkan Johnson dan Wichern (2014) menunjukkan bahwa *K-Means* lazim menggunakan jarak Euclidean dalam proses alokasi objek ke klaster.
 
-Rencher (2002) menempatkan pembahasan distance between vectors sebagai dasar penting dalam analisis multivariat, sedangkan Johnson dan Wichern (2014) menunjukkan bahwa k-means lazim menggunakan jarak Euclidean dalam proses alokasi objek ke klaster.
-
-Namun, jarak Euclidean sensitif terhadap perbedaan satuan dan skala antarvariabel. Jika variabel-variabel memiliki rentang yang sangat berbeda, maka variabel dengan skala terbesar dapat mendominasi perhitungan jarak. Everitt et al. (2011) menegaskan bahwa ketika variabel tidak diukur dalam satuan yang sama, standardisasi menjadi langkah yang umum dilakukan sebelum analisis klaster. Salah satu bentuk standardisasi yang banyak digunakan adalah transformasi Z-score, yaitu:
+Namun, jarak Euclidean sensitif terhadap perbedaan satuan dan skala antarvariabel. Jika variabel-variabel memiliki rentang yang sangat berbeda, maka variabel dengan skala terbesar dapat mendominasi perhitungan jarak. Everitt et al. (2011) menegaskan bahwa ketika variabel tidak diukur dalam satuan yang sama, standardisasi menjadi langkah yang umum dilakukan sebelum analisis klaster. Salah satu bentuk standardisasi yang banyak digunakan adalah transformasi *Z-score*, yaitu:
 
 $$z_{ij}=\frac{x_{ij}-\bar{x}_j}{s_j} \tag{2.2}$$
 
@@ -367,11 +448,11 @@ dengan:
 
 Dalam penelitian ini, standardisasi diperlukan karena variabel pembentuk klaster memiliki satuan yang berbeda, yaitu kWh, rupiah, dan tahun. Dengan standardisasi, setiap variabel memberikan kontribusi yang seimbang dalam proses pembentukan klaster.
 
-**Metode Non-Hierarki *K-Means***
+**Metode Nonhierarki *K-Means***
 
-Metode k-means clustering merupakan metode non-hierarki yang membagi objek ke dalam sejumlah klaster yang telah ditentukan sebelumnya. Johnson dan Wichern (2014) menyatakan bahwa k-means mengalokasikan setiap objek ke klaster yang memiliki centroid atau rata-rata terdekat. Rencher (2002) juga menjelaskan bahwa metode ini dimulai dengan memilih sejumlah seed awal, kemudian setiap objek dialokasikan ke klaster terdekat, dan centroid diperbarui secara iteratif hingga tidak ada perbaikan lebih lanjut. Everitt et al. (2011) menambahkan bahwa algoritme k-means pada dasarnya merupakan algoritme optimisasi yang berupaya meminimalkan variasi dalam klaster.
+Metode *K-Means* merupakan metode nonhierarki yang membagi objek ke dalam sejumlah klaster yang telah ditentukan sebelumnya. Johnson dan Wichern (2014) menyatakan bahwa *K-Means* mengalokasikan setiap objek ke klaster yang memiliki centroid atau rata-rata terdekat. Rencher (2002) juga menjelaskan bahwa metode ini dimulai dengan memilih sejumlah *seed* awal, kemudian setiap objek dialokasikan ke klaster terdekat, dan centroid diperbarui secara iteratif hingga tidak ada perbaikan lebih lanjut. Everitt et al. (2011) menambahkan bahwa algoritme *K-Means* pada dasarnya merupakan algoritme optimisasi yang berupaya meminimalkan variasi dalam klaster.
 
-Secara umum, langkah-langkah metode k-means adalah sebagai berikut:
+Secara umum, langkah-langkah metode *K-Means* adalah sebagai berikut:
 
 1. Menentukan jumlah klaster $K$.
 2. Menentukan centroid awal atau seed.
@@ -390,7 +471,7 @@ dengan:
 - $C_k$ = himpunan objek pada klaster ke-$k$,
 - $\mathbf{x}_i$ = vektor pengamatan objek ke-$i$.
 
-Tujuan utama k-means adalah meminimalkan jumlah kuadrat dalam klaster atau Within-Cluster Sum of Squares (WCSS), yang dapat ditulis sebagai:
+Tujuan utama *K-Means* adalah meminimalkan jumlah kuadrat dalam klaster atau *within-cluster sum of squares* (WCSS), yang dapat ditulis sebagai:
 
 $$WCSS=\sum_{k=1}^{K}\sum_{i\in C_k}\left\lVert\mathbf{x}_i-\bar{\mathbf{x}}_k\right\rVert^2 \tag{2.4}$$
 
@@ -398,49 +479,51 @@ Nilai WCSS yang semakin kecil menunjukkan bahwa objek-objek dalam suatu klaster 
 
 **Penentuan Jumlah Klaster**
 
-Penetapan jumlah klaster merupakan persoalan mendasar dalam metode non-hierarki karena nilai K harus ditentukan sebelum proses alokasi objek berlangsung. Rencher (2002) menunjukkan bahwa pada metode non-hierarki jumlah klaster perlu ditetapkan atau dipilih sebelum interpretasi akhir dilakukan, sementara Johnson dan Wichern (2014) mencatat bahwa jumlah klaster pada metode non-hierarki dapat ditentukan terlebih dahulu maupun ditetapkan melalui prosedur tertentu sebagai bagian dari proses klasterisasi. Keduanya menegaskan keharusan penetapan tersebut tanpa menguraikan prosedur pemilihannya secara khusus. 
+Penetapan jumlah klaster merupakan persoalan mendasar dalam metode nonhierarki karena nilai K harus ditentukan sebelum proses alokasi objek berlangsung. Rencher (2002) menunjukkan bahwa pada metode nonhierarki jumlah klaster perlu ditetapkan atau dipilih sebelum interpretasi akhir dilakukan, sementara Johnson dan Wichern (2014) mencatat bahwa jumlah klaster pada metode nonhierarki dapat ditentukan terlebih dahulu maupun ditetapkan melalui prosedur tertentu sebagai bagian dari proses klasterisasi. Keduanya menegaskan keharusan penetapan tersebut tanpa menguraikan prosedur pemilihannya secara khusus. 
 
-Persoalan ini umumnya dijawab melalui kriteria evaluasi internal, yaitu ukuran yang menilai kualitas struktur pengelompokan berdasarkan data itu sendiri tanpa memerlukan informasi kelompok yang sebenarnya. Dua kriteria yang paling banyak digunakan dalam literatur analisis klaster adalah Metode Elbow dan koefisien Silhouette.
+Persoalan ini umumnya dijawab melalui kriteria evaluasi internal, yaitu ukuran yang menilai kualitas struktur pengelompokan berdasarkan data itu sendiri tanpa memerlukan informasi kelompok yang sebenarnya. Dua kriteria yang paling banyak digunakan dalam literatur analisis klaster adalah Metode *elbow* dan koefisien *silhouette*.
 
-Metode Elbow bertumpu pada perilaku Within-Cluster Sum of Squares (WCSS) sebagai fungsi dari jumlah klaster. Everitt et al. (2011) menjelaskan bahwa dalam penerapan metode non-hierarki, jumlah kelompok yang sesuai dapat diperkirakan dengan memplot nilai kriteria klaster terhadap jumlah kelompok dan mengamati perubahan besar pada kurva. Titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (elbow) menandakan bahwa penambahan klaster berikutnya tidak lagi memberikan perbaikan homogenitas yang berarti, sehingga jumlah klaster dipilih berdasarkan keseimbangan antara homogenitas internal dan kesederhanaan struktur pengelompokan.
+Metode *elbow* bertumpu pada perilaku WCSS sebagai fungsi dari jumlah klaster. Everitt et al. (2011) menjelaskan bahwa dalam penerapan metode nonhierarki, jumlah kelompok yang sesuai dapat diperkirakan dengan memplot nilai kriteria klaster terhadap jumlah kelompok dan mengamati perubahan besar pada kurva. Titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (*elbow*) menandakan bahwa penambahan klaster berikutnya tidak lagi memberikan perbaikan homogenitas yang berarti, sehingga jumlah klaster dipilih berdasarkan keseimbangan antara homogenitas internal dan kesederhanaan struktur pengelompokan.
 
-Kriteria ini memiliki dua keterbatasan yang saling berkaitan. Pertama, nilai WCSS menurun secara monoton seiring bertambahnya jumlah klaster sehingga tidak dapat diperlakukan sebagai fungsi objektif yang diminimalkan secara langsung; penilaiannya bergantung pada pembacaan bentuk kurva, yang menjadi ambigu ketika penurunan berlangsung landai tanpa titik patah yang tegas. Kedua, WCSS semata-mata merekam kedekatan objek terhadap centroid klasternya sendiri dan tidak memuat informasi mengenai jarak antar klaster, padahal kualitas pengelompokan ditentukan oleh kekompakan internal sekaligus keterpisahan antar kelompok.
+Kriteria ini memiliki dua keterbatasan yang saling berkaitan. Pertama, nilai WCSS menurun secara monoton seiring bertambahnya jumlah klaster sehingga tidak dapat diperlakukan sebagai fungsi objektif yang diminimalkan secara langsung; penilaiannya bergantung pada pembacaan bentuk kurva, yang menjadi ambigu ketika penurunan berlangsung landai tanpa titik patah yang tegas. Kedua, WCSS semata-mata merekam kedekatan objek terhadap centroid klasternya sendiri dan tidak memuat informasi mengenai jarak antarklaster, padahal kualitas pengelompokan ditentukan oleh kekompakan internal sekaligus keterpisahan antarkelompok.
 
-Rousseeuw (1987) memperkenalkan koefisien Silhouette sebagai ukuran yang memuat kedua dimensi tersebut secara serentak. Ukuran ini menilai ketepatan penempatan setiap objek dengan membandingkan kedekatannya terhadap anggota klasternya sendiri dan kedekatannya terhadap klaster tetangga terdekat. Untuk objek ke-i, didefinisikan a(i) sebagai rata-rata jarak objek ke-i terhadap seluruh objek lain dalam klaster yang sama, dan b(i) sebagai nilai terkecil dari rata-rata jarak objek ke-i terhadap seluruh objek pada klaster lain, sehingga koefisien Silhouette dirumuskan sebagai:
+Rousseeuw (1987) memperkenalkan koefisien *silhouette* sebagai ukuran yang memuat kedua dimensi tersebut secara serentak. Ukuran ini menilai ketepatan penempatan setiap objek dengan membandingkan kedekatannya terhadap anggota klasternya sendiri dan kedekatannya terhadap klaster tetangga terdekat. Untuk objek ke-$i$, didefinisikan $a(i)$ sebagai rata-rata jarak objek ke-$i$ terhadap seluruh objek lain dalam klaster yang sama, dan $b(i)$ sebagai nilai terkecil dari rata-rata jarak objek ke-$i$ terhadap seluruh objek pada klaster lain, sehingga koefisien *silhouette* dirumuskan sebagai:
 
-s\left(i\right)=\frac{b\left(i\right)-a\left(i\right)}{\max⁡\left\{a,\; \left(i\right)\text{\,}b\left(i\right)\right\}}
+$$s(i)=\frac{b(i)-a(i)}{\max\{a(i),\,b(i)\}} \tag{2.5}$$
 
 dengan:
-	s\left(i\right)s(i) = koefisien Silhouette objek ke-i,
-	a\left(i\right)a(i) = rata-rata jarak objek ke-i terhadap objek lain dalam klaster yang sama,
-	b\left(i\right)b(i) = rata-rata jarak terkecil objek ke-i terhadap objek pada klaster lain.
-  
-Nilai s\left(i\right) terbatas pada rentang −1 hingga 1. Nilai yang mendekati 1 menunjukkan objek berada jauh lebih dekat dengan anggota klasternya sendiri dibandingkan klaster tetangga, nilai di sekitar 0 menandakan objek berada pada perbatasan dua klaster, sedangkan nilai negatif mengindikasikan objek kemungkinan lebih sesuai ditempatkan pada klaster lain.
-Kualitas struktur pengelompokan secara keseluruhan dinilai melalui rata-rata koefisien Silhouette seluruh objek atau average silhouette width:
-\bar{s}=\frac{1}{n}\sum_{i=1}^{n} s\left(i\right)
-dengan s menyatakan rata-rata koefisien Silhouette dan n menyatakan banyaknya objek. Kaufman dan Rousseeuw (1990) menetapkan pedoman interpretasi atas nilai tersebut: nilai di atas 0,70 mencerminkan struktur klaster yang kuat, nilai 0,51 sampai 0,70 mencerminkan struktur yang memadai, nilai 0,26 sampai 0,50 mencerminkan struktur yang lemah sehingga hasilnya perlu ditafsirkan secara hati-hati, dan nilai di bawah 0,26 menunjukkan struktur klaster yang belum meyakinkan.
-Kedua kriteria tersebut bersifat komplementer: Metode Elbow membaca pola penurunan variasi dalam klaster, sedangkan koefisien Silhouette mengukur kekuatan pemisahan antar klaster pada setiap kandidat jumlah klaster. Atas dasar itu, penelitian ini menggunakan keduanya secara bersamaan dalam menetapkan jumlah klaster.
 
+- $s(i)$ = koefisien *silhouette* objek ke-$i$,
+- $a(i)$ = rata-rata jarak objek ke-$i$ terhadap objek lain dalam klaster yang sama,
+- $b(i)$ = rata-rata jarak terkecil objek ke-$i$ terhadap objek pada klaster lain.
+
+Nilai $s(i)$ terbatas pada rentang −1 hingga 1. Nilai yang mendekati 1 menunjukkan objek berada jauh lebih dekat dengan anggota klasternya sendiri dibandingkan klaster tetangga, nilai di sekitar 0 menandakan objek berada pada perbatasan dua klaster, sedangkan nilai negatif mengindikasikan objek kemungkinan lebih sesuai ditempatkan pada klaster lain. Kualitas struktur pengelompokan secara keseluruhan dinilai melalui rata-rata koefisien *silhouette* seluruh objek (*average silhouette width*):
+
+$$\bar{s}=\frac{1}{n}\sum_{i=1}^{n} s(i) \tag{2.6}$$
+
+dengan $\bar{s}$ menyatakan rata-rata koefisien *silhouette* dan $n$ menyatakan banyaknya objek. Kaufman dan Rousseeuw (1990) menetapkan pedoman interpretasi atas nilai tersebut: nilai di atas 0,70 mencerminkan struktur klaster yang kuat, nilai 0,51 sampai 0,70 mencerminkan struktur yang memadai, nilai 0,26 sampai 0,50 mencerminkan struktur yang lemah sehingga hasilnya perlu ditafsirkan secara hati-hati, dan nilai di bawah 0,26 menunjukkan struktur klaster yang belum meyakinkan.
+
+Kedua kriteria tersebut bersifat komplementer: metode *elbow* membaca pola penurunan variasi dalam klaster, sedangkan koefisien *silhouette* mengukur kekuatan pemisahan antarklaster pada setiap kandidat jumlah klaster. Atas dasar itu, penelitian ini menggunakan keduanya secara bersamaan dalam menetapkan jumlah klaster.
 
 ***Profiling* Klaster**
 
-Klaster yang dihasilkan algoritme pengelompokan pada dasarnya hanya berupa label keanggotaan numerik, sehingga perlu diterjemahkan secara substantif agar bermakna secara analitis. Everitt et al. (2011) menyatakan bahwa tahap interpretasi dapat memerlukan penyajian grafis dan statistik deskriptif, sekaligus mengingatkan bahwa uji statistik baku seperti analisis ragam tidak tepat dipakai untuk membandingkan variabel pembentuk antarklaster, karena teknik pengelompokan dengan sendirinya telah memaksimalkan perbedaan antarklaster pada variabel tersebut. Peringatan ini membedakan dua jenis informasi dalam karakterisasi klaster. Variabel pembentuk menggambarkan dimensi yang memisahkan klaster, tetapi perbedaannya tidak dapat dipakai sebagai bukti keberadaan kelompok. Variabel yang tidak ikut membentuk klaster memuat informasi yang tidak dilihat algoritme, sehingga kesesuaian polanya dengan klaster yang terbentuk menjadi dasar pembacaan yang lebih berarti. Setiap klaster karena itu diprofilkan melalui dua kelompok variabel, yaitu tiga variabel pembentuk berupa konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan pendidikan kepala rumah tangga, serta lima variabel penciri berupa ukuran rumah tangga, kepemilikan air conditioner (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang.
+Klaster yang dihasilkan algoritme pengelompokan pada dasarnya hanya berupa label keanggotaan numerik, sehingga perlu diterjemahkan secara substantif agar bermakna secara analitis. Everitt et al. (2011) menyatakan bahwa tahap interpretasi dapat memerlukan penyajian grafis dan statistik deskriptif, sekaligus mengingatkan bahwa uji statistik baku seperti analisis ragam tidak tepat dipakai untuk membandingkan variabel pembentuk antarklaster, karena teknik pengelompokan dengan sendirinya telah memaksimalkan perbedaan antarklaster pada variabel tersebut. Peringatan ini membedakan dua jenis informasi dalam karakterisasi klaster. Variabel pembentuk menggambarkan dimensi yang memisahkan klaster, tetapi perbedaannya tidak dapat dipakai sebagai bukti keberadaan kelompok. Variabel yang tidak ikut membentuk klaster memuat informasi yang tidak dilihat algoritme, sehingga kesesuaian polanya dengan klaster yang terbentuk menjadi dasar pembacaan yang lebih berarti. Setiap klaster karena itu diprofilkan melalui dua kelompok variabel, yaitu tiga variabel pembentuk berupa konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan lama sekolah KRT, serta lima variabel penciri berupa ukuran rumah tangga, kepemilikan *air conditioner* (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang.
 
 ***Energy Ladder***
 
-Energy Ladder menjelaskan bahwa rumah tangga cenderung mengalami transisi penggunaan energi seiring dengan peningkatan kesejahteraan. Dalam formulasi klasiknya, rumah tangga diasumsikan bergerak dari sumber energi tradisional ke energi transisi, lalu menuju energi modern yang lebih bersih, nyaman, dan efisien, seperti listrik dan LPG. Dengan demikian, tingkat kesejahteraan berhubungan dengan peluang rumah tangga untuk menggunakan energi modern secara lebih intensif. Hubungan ini penting karena konsumsi energi rumah tangga pada dasarnya tidak hanya ditentukan oleh kebutuhan dasar, tetapi juga oleh kemampuan ekonomi untuk mengakses layanan energi yang lebih berkualitas. van der Kroon et al. (2013) menegaskan bahwa energy ladder merupakan model yang umum digunakan untuk menjelaskan pilihan energi rumah tangga, meskipun dalam praktiknya hubungan antara pendapatan dan pilihan energi tidak selalu sesederhana perpindahan satu arah dari energi tradisional menuju energi modern. Temuan tersebut juga sejalan dengan Leach (1992) yang menekankan bahwa transisi energi rumah tangga dipengaruhi oleh urbanisasi, akses terhadap energi modern, dan perubahan kebutuhan layanan energi.
+*Energy ladder* menjelaskan bahwa rumah tangga cenderung mengalami transisi penggunaan energi seiring dengan peningkatan kesejahteraan. Dalam formulasi klasiknya, rumah tangga diasumsikan bergerak dari sumber energi tradisional ke energi transisi, lalu menuju energi modern yang lebih bersih, nyaman, dan efisien, seperti listrik dan LPG. Dengan demikian, tingkat kesejahteraan berhubungan dengan peluang rumah tangga untuk menggunakan energi modern secara lebih intensif. Hubungan ini penting karena konsumsi energi rumah tangga pada dasarnya tidak hanya ditentukan oleh kebutuhan dasar, tetapi juga oleh kemampuan ekonomi untuk mengakses layanan energi yang lebih berkualitas. van der Kroon et al. (2013) menegaskan bahwa *energy ladder* merupakan model yang umum digunakan untuk menjelaskan pilihan energi rumah tangga, meskipun dalam praktiknya hubungan antara pendapatan dan pilihan energi tidak selalu sesederhana perpindahan satu arah dari energi tradisional menuju energi modern. Temuan tersebut juga sejalan dengan Leach (1992) yang menekankan bahwa transisi energi rumah tangga dipengaruhi oleh urbanisasi, akses terhadap energi modern, dan perubahan kebutuhan layanan energi.
 
-Meskipun demikian, teori Energy Ladder dalam penelitian ini tidak dipahami secara kaku sebagai perpindahan sempurna dari satu jenis energi ke jenis energi lain. van der Kroon et al. (2013) menunjukkan bahwa dalam banyak kasus rumah tangga justru menggunakan kombinasi beberapa sumber energi secara bersamaan (fuel stacking), sehingga perubahan pola konsumsi energi tidak selalu berbentuk substitusi penuh. Dalam konteks rumah tangga perkotaan Indonesia, Nazer dan Handra (2016) juga menunjukkan bahwa konsep energy ladder dan fuel stacking sama-sama relevan untuk menjelaskan konsumsi energi rumah tangga. Studi tersebut menemukan bahwa elastisitas pendapatan terhadap konsumsi energi modern bernilai positif, yang berarti peningkatan pendapatan diikuti oleh peningkatan konsumsi energi modern. Dengan demikian, dalam penelitian ini Energy Ladder digunakan sebagai landasan teori utama untuk menjelaskan bahwa perbedaan tingkat kesejahteraan rumah tangga akan berkaitan dengan perbedaan intensitas penggunaan energi modern, termasuk listrik, serta kemampuan rumah tangga untuk memiliki dan menggunakan perangkat listrik.
+Meskipun demikian, teori *energy ladder* dalam penelitian ini tidak dipahami secara kaku sebagai perpindahan sempurna dari satu jenis energi ke jenis energi lain. van der Kroon et al. (2013) menunjukkan bahwa dalam banyak kasus rumah tangga justru menggunakan kombinasi beberapa sumber energi secara bersamaan (*fuel stacking*), sehingga perubahan pola konsumsi energi tidak selalu berbentuk substitusi penuh. Dalam konteks rumah tangga perkotaan Indonesia, Nazer dan Handra (2016) juga menunjukkan bahwa konsep *energy ladder* dan *fuel stacking* sama-sama relevan untuk menjelaskan konsumsi energi rumah tangga. Studi tersebut menemukan bahwa elastisitas pendapatan terhadap konsumsi energi modern bernilai positif, yang berarti peningkatan pendapatan diikuti oleh peningkatan konsumsi energi modern. Dengan demikian, dalam penelitian ini *energy ladder* digunakan sebagai landasan teori utama untuk menjelaskan bahwa perbedaan tingkat kesejahteraan rumah tangga akan berkaitan dengan perbedaan intensitas penggunaan energi modern, termasuk listrik, serta kemampuan rumah tangga untuk memiliki dan menggunakan perangkat listrik.
 
-Pendekatan tersebut relevan untuk konteks DKI Jakarta sebagai wilayah metropolitan dengan akses listrik yang sudah sangat tinggi. Pada kondisi seperti ini, isu utamanya bukan lagi sekadar akses terhadap energi modern, melainkan bagaimana perbedaan kesejahteraan rumah tangga menghasilkan perbedaan intensitas pemanfaatan energi modern antarrumah tangga. Oleh karena itu, Energy Ladder tetap sesuai digunakan sebagai teori utama dalam penelitian ini, karena mampu menjelaskan keterkaitan antara kondisi sosial ekonomi dan pola konsumsi listrik rumah tangga.
+Pendekatan tersebut relevan untuk konteks DKI Jakarta sebagai wilayah metropolitan dengan akses listrik yang sudah sangat tinggi. Pada kondisi seperti ini, isu utamanya bukan lagi sekadar akses terhadap energi modern, melainkan bagaimana perbedaan kesejahteraan rumah tangga menghasilkan perbedaan intensitas pemanfaatan energi modern antarrumah tangga. Oleh karena itu, *energy ladder* tetap sesuai digunakan sebagai teori utama dalam penelitian ini, karena mampu menjelaskan keterkaitan antara kondisi sosial ekonomi dan pola konsumsi listrik rumah tangga.
 
 ***Urban Heat Island* dan *Adaptation Cooling Deficit***
 
-Selain dipengaruhi oleh kondisi sosial ekonomi, konsumsi listrik rumah tangga perkotaan juga dipengaruhi oleh kondisi lingkungan termal. Dalam konteks metropolitan seperti Jakarta, fenomena Urban Heat Island (UHI) menyebabkan suhu kawasan perkotaan lebih tinggi dibandingkan wilayah sekitarnya. Siswanto et al. (2023) menunjukkan bahwa Jakarta metropolitan mengalami penguatan fenomena UHI, dan penyebaran kawasan terbangun serta kepadatan aktivitas perkotaan berkontribusi terhadap peningkatan suhu di wilayah ini. Kondisi tersebut penting karena peningkatan suhu lingkungan akan mendorong kebutuhan pendinginan ruang, sehingga kebutuhan listrik rumah tangga di wilayah perkotaan juga dipengaruhi oleh tekanan iklim perkotaan.
+Selain dipengaruhi oleh kondisi sosial ekonomi, konsumsi listrik rumah tangga perkotaan juga dipengaruhi oleh kondisi lingkungan termal. Dalam konteks metropolitan seperti Jakarta, fenomena *Urban Heat Island* (UHI) menyebabkan suhu kawasan perkotaan lebih tinggi dibandingkan wilayah sekitarnya. Siswanto et al. (2023) menunjukkan bahwa Jakarta metropolitan mengalami penguatan fenomena UHI, dan penyebaran kawasan terbangun serta kepadatan aktivitas perkotaan berkontribusi terhadap peningkatan suhu di wilayah ini. Kondisi tersebut penting karena peningkatan suhu lingkungan akan mendorong kebutuhan pendinginan ruang, sehingga kebutuhan listrik rumah tangga di wilayah perkotaan juga dipengaruhi oleh tekanan iklim perkotaan.
 
-Dalam situasi tersebut, kepemilikan dan penggunaan perangkat pendingin, terutama air conditioner (AC), menjadi salah satu bentuk adaptasi rumah tangga terhadap tekanan panas. De Cian et al. (2025) menunjukkan bahwa penggunaan AC meningkatkan konsumsi listrik rumah tangga, sedangkan Pavanello et al. (2021) menekankan bahwa adopsi pendinginan aktif di negara berkembang dipengaruhi oleh pendapatan dan suhu yang disesuaikan dengan kelembapan. Dengan kata lain, rumah tangga yang memiliki kapasitas ekonomi lebih tinggi cenderung memiliki peluang lebih besar untuk mengadopsi AC sebagai bentuk adaptasi terhadap kondisi panas perkotaan.
+Dalam situasi tersebut, kepemilikan dan penggunaan perangkat pendingin, terutama *air conditioner* (AC), menjadi salah satu bentuk adaptasi rumah tangga terhadap tekanan panas. De Cian et al. (2025) menunjukkan bahwa penggunaan AC meningkatkan konsumsi listrik rumah tangga, sedangkan Pavanello et al. (2021) menekankan bahwa adopsi pendinginan aktif di negara berkembang dipengaruhi oleh pendapatan dan suhu yang disesuaikan dengan kelembapan. Dengan kata lain, rumah tangga yang memiliki kapasitas ekonomi lebih tinggi cenderung memiliki peluang lebih besar untuk mengadopsi AC sebagai bentuk adaptasi terhadap kondisi panas perkotaan.
 
-Namun, kemampuan rumah tangga untuk beradaptasi terhadap tekanan panas tidak bersifat merata. Pavanello et al. (2021) memperkenalkan konsep adaptation cooling deficit, yaitu kondisi ketika rumah tangga sebenarnya membutuhkan pendinginan, tetapi tidak memiliki kemampuan ekonomi yang memadai untuk memenuhinya. Dalam konteks ini, rumah tangga berpengeluaran rendah dapat menghadapi paparan panas yang sama dengan rumah tangga lain, tetapi tidak mampu menggunakan pendinginan aktif secara cukup. Oleh karena itu, isu pendinginan rumah tangga di wilayah metropolitan bukan hanya persoalan efisiensi energi, tetapi juga menyangkut ketimpangan kemampuan adaptasi termal. Dalam penelitian ini, konsep adaptation cooling deficit digunakan sebagai konsep pendukung untuk membantu membaca makna substantif dari kepemilikan AC dalam proses profiling klaster rumah tangga.
+Namun, kemampuan rumah tangga untuk beradaptasi terhadap tekanan panas tidak bersifat merata. Pavanello et al. (2021) memperkenalkan konsep *adaptation cooling deficit*, yaitu kondisi ketika rumah tangga sebenarnya membutuhkan pendinginan, tetapi tidak memiliki kemampuan ekonomi yang memadai untuk memenuhinya. Dalam konteks ini, rumah tangga berpengeluaran rendah dapat menghadapi paparan panas yang sama dengan rumah tangga lain, tetapi tidak mampu menggunakan pendinginan aktif secara cukup. Oleh karena itu, isu pendinginan rumah tangga di wilayah metropolitan bukan hanya persoalan efisiensi energi, tetapi juga menyangkut ketimpangan kemampuan adaptasi termal. Dalam penelitian ini, konsep *adaptation cooling deficit* digunakan sebagai konsep pendukung untuk membantu membaca makna substantif dari kepemilikan AC dalam proses *profiling* klaster rumah tangga.
 
 **Determinan Sosial Ekonomi Konsumsi Listrik Rumah Tangga**
 
@@ -452,41 +535,37 @@ Pendidikan kepala rumah tangga juga dapat diposisikan sebagai faktor penting kar
 
 ## 2.2 Penelitian Terkait
 
-**Tabel 1 Penelitian terkait**
+**Tabel 1 Penelitian Terkait**
 
-> ⚠️ **ISI TABEL HILANG PADA BERKAS SUMBER.** Hanya judul tabel yang terbawa ke HTML; baris dan kolomnya tidak ada.
+> **[Isi Tabel 1 belum dipindahkan ke repo; lihat naskah `.docx`.]**
 
 Berdasarkan Tabel 1, penelitian terdahulu dapat dikelompokkan ke dalam tiga arus utama. Pertama, penelitian yang secara langsung membahas konsumsi energi rumah tangga dan pengelompokan pola konsumsi, seperti Kubota et al. (2014), Takata et al. (2025), dan Oktasandira (2025). Penelitian-penelitian tersebut menunjukkan bahwa konsumsi energi rumah tangga bersifat heterogen dan dapat dibedakan berdasarkan karakteristik tertentu, baik karakteristik hunian, gaya hidup, maupun perilaku konsumsi listrik. Namun, Kubota et al. (2014) lebih menekankan perbandingan dua kota, Takata et al. (2025) berfokus pada penghuni apartemen, sedangkan Oktasandira (2025) berfokus pada pelanggan listrik berbasis data utilitas, bukan rumah tangga dengan karakteristik sosial ekonomi berbasis Susenas.
 
 Kedua, terdapat penelitian yang menekankan determinan sosial ekonomi konsumsi energi rumah tangga, seperti Nazer dan Handra (2016) serta Ali et al. (2021). Kedua penelitian ini menguatkan bahwa pengeluaran atau pendapatan, ukuran rumah tangga, pendidikan, dan karakteristik hunian merupakan faktor penting yang berhubungan dengan konsumsi listrik rumah tangga. Meskipun demikian, pendekatan yang digunakan masih didominasi oleh analisis regresi, sehingga belum secara langsung menghasilkan tipologi rumah tangga berbasis pola konsumsi listrik dan karakteristik sosial ekonomi.
 
-Ketiga, terdapat penelitian yang menjelaskan konteks termal perkotaan dan kebutuhan pendinginan rumah tangga, seperti Siswanto et al. (2023), Pavanello et al. (2021), dan De Cian et al. (2025). Penelitian-penelitian tersebut memperlihatkan bahwa fenomena Urban Heat Island, adopsi AC, dan adaptation cooling deficit berpengaruh terhadap kebutuhan energi rumah tangga, terutama di wilayah perkotaan. Namun, penelitian-penelitian tersebut tidak secara khusus memetakan kelompok rumah tangga di DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonominya.
+Ketiga, terdapat penelitian yang menjelaskan konteks termal perkotaan dan kebutuhan pendinginan rumah tangga, seperti Siswanto et al. (2023), Pavanello et al. (2021), dan De Cian et al. (2025). Penelitian-penelitian tersebut memperlihatkan bahwa fenomena *Urban Heat Island*, adopsi AC, dan *adaptation cooling deficit* berpengaruh terhadap kebutuhan energi rumah tangga, terutama di wilayah perkotaan. Namun, penelitian-penelitian tersebut tidak secara khusus memetakan kelompok rumah tangga di DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonominya.
 
-Dengan demikian, terdapat ruang penelitian yang masih terbuka. Penelitian terdahulu telah membahas konsumsi listrik rumah tangga dari sisi perbandingan wilayah, gaya hidup penghuni apartemen, determinan sosial ekonomi, maupun konteks pendinginan perkotaan. Akan tetapi, belum banyak penelitian yang secara khusus mengklasifikasikan rumah tangga di Provinsi DKI Jakarta menggunakan data mikro Susenas berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi secara bersamaan. Oleh karena itu, penelitian ini diarahkan untuk mengisi kekosongan tersebut melalui pendekatan analisis klaster, sehingga dapat diperoleh tipologi rumah tangga yang lebih relevan sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
+Dengan demikian, terdapat ruang penelitian yang masih terbuka. Penelitian terdahulu telah membahas konsumsi listrik rumah tangga dari sisi perbandingan wilayah, gaya hidup penghuni apartemen, determinan sosial ekonomi, maupun konteks pendinginan perkotaan. Akan tetapi, belum banyak penelitian yang secara khusus mengklasifikasikan rumah tangga di Provinsi DKI Jakarta menggunakan mikrodata Susenas berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi secara bersamaan. Oleh karena itu, penelitian ini diarahkan untuk mengisi kekosongan tersebut melalui pendekatan analisis klaster, sehingga dapat diperoleh tipologi rumah tangga yang lebih relevan sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
 
 ## 2.3 Kerangka Pikir
 
-Pola konsumsi listrik rumah tangga di DKI Jakarta tidak bersifat homogen. Perbedaan kesejahteraan menghasilkan perbedaan intensitas pemanfaatan energi modern sebagaimana dijelaskan teori energy ladder, sementara tekanan panas perkotaan menjadikan pendinginan ruang bagian dari kebutuhan listrik rumah tangga akibat fenomena Urban Heat Island. Kedua kondisi tersebut tidak dialami secara seragam, karena kemampuan rumah tangga memenuhi kebutuhan listrik dan pendinginannya bergantung pada kapasitas ekonomi dan modal manusia yang dimilikinya.
+Pola konsumsi listrik rumah tangga di DKI Jakarta tidak bersifat homogen. Perbedaan kesejahteraan menghasilkan perbedaan intensitas pemanfaatan energi modern sebagaimana dijelaskan teori *energy ladder*, sementara tekanan panas perkotaan menjadikan pendinginan ruang bagian dari kebutuhan listrik rumah tangga akibat fenomena *Urban Heat Island*. Kedua kondisi tersebut tidak dialami secara seragam, karena kemampuan rumah tangga memenuhi kebutuhan listrik dan pendinginannya bergantung pada kapasitas ekonomi dan modal manusia yang dimilikinya.
 
 Pengelompokan rumah tangga karena itu dibangun dari tiga dimensi. Konsumsi listrik rumah tangga merepresentasikan intensitas pemakaian energi modern, pengeluaran nonmakanan selain listrik merepresentasikan kapasitas ekonomi rumah tangga, dan tingkat pendidikan kepala rumah tangga merepresentasikan modal manusia yang berkaitan dengan adopsi teknologi. Komponen listrik dikeluarkan dari pengeluaran nonmakanan agar informasi yang sama tidak terhitung dua kali dalam penentuan kemiripan antarrumah tangga.
 
-Lima variabel lain berperan sebagai penciri, yaitu ukuran rumah tangga, kepemilikan air conditioner (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang. Variabel penciri tidak ikut menentukan keanggotaan klaster, tetapi dipakai untuk membaca karakter klaster yang terbentuk. Pemisahan peran ini membawa konsekuensi analitis. Perbedaan antarklaster pada variabel pembentuk tidak dapat dijadikan bukti yang berdiri sendiri, karena klaster memang dibentuk untuk memisahkan rumah tangga pada variabel tersebut. Sebaliknya, perbedaan pada variabel penciri merupakan informasi yang tidak dilihat algoritme saat klaster dibentuk. Kepemilikan AC mendapat perhatian khusus sebagai bentuk adaptasi rumah tangga terhadap tekanan panas yang adopsinya lebih tinggi pada rumah tangga berpendapatan dan berpendidikan lebih tinggi serta berhunian lebih baik (Pavanello et al., 2021). Dua penciri dibaca dengan batasan. Golongan daya terpasang ikut menentukan tarif pada konversi konsumsi listrik, sehingga tidak diperlakukan sebagai pembanding bebas. Ukuran rumah tangga ditempatkan sebagai penciri agar klaster terbentuk dari dimensi konsumsi, kapasitas ekonomi, dan pendidikan, sedangkan besar kecilnya rumah tangga diperiksa setelah klaster terbentuk.
+Lima variabel lain berperan sebagai penciri, yaitu ukuran rumah tangga, kepemilikan *air conditioner* (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang. Variabel penciri tidak ikut menentukan keanggotaan klaster, tetapi dipakai untuk membaca karakter klaster yang terbentuk. Pemisahan peran ini membawa konsekuensi analitis. Perbedaan antarklaster pada variabel pembentuk tidak dapat dijadikan bukti yang berdiri sendiri, karena klaster memang dibentuk untuk memisahkan rumah tangga pada variabel tersebut. Sebaliknya, perbedaan pada variabel penciri merupakan informasi yang tidak dilihat algoritme saat klaster dibentuk. Kepemilikan AC mendapat perhatian khusus sebagai bentuk adaptasi rumah tangga terhadap tekanan panas yang adopsinya lebih tinggi pada rumah tangga berpendapatan dan berpendidikan lebih tinggi serta berhunian lebih baik (Pavanello et al., 2021). Dua penciri dibaca dengan batasan. Golongan daya terpasang ikut menentukan tarif pada konversi konsumsi listrik, sehingga tidak diperlakukan sebagai pembanding bebas. Ukuran rumah tangga ditempatkan sebagai penciri agar klaster terbentuk dari dimensi konsumsi, kapasitas ekonomi, dan pendidikan, sedangkan besar kecilnya rumah tangga diperiksa setelah klaster terbentuk.
 
-Melalui alur tersebut, profil klaster yang dihasilkan dipakai untuk memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami adaptation cooling deficit, yaitu kondisi ketika rumah tangga menghadapi kebutuhan pendinginan tetapi memiliki keterbatasan dalam mengakses pendinginan aktif secara memadai. Kerangka pikir ini menjadi dasar logis bagi penggunaan analisis klaster dalam penelitian ini untuk memetakan heterogenitas rumah tangga di DKI Jakarta sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
+Melalui alur tersebut, profil klaster yang dihasilkan dipakai untuk memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami *adaptation cooling deficit*, yaitu kondisi ketika rumah tangga menghadapi kebutuhan pendinginan tetapi memiliki keterbatasan dalam mengakses pendinginan aktif secara memadai. Kerangka pikir ini menjadi dasar logis bagi penggunaan analisis klaster dalam penelitian ini untuk memetakan heterogenitas rumah tangga di DKI Jakarta sebagai dasar perumusan kebijakan efisiensi energi yang lebih tepat sasaran.
 
-![Gambar 2.1 Kerangka Pikir Penelitian](assets-ta/gambar-2-1-kerangka-pikir.png)
+![Gambar 5 Kerangka Pikir Penelitian](assets-ta/gambar-2-1-kerangka-pikir.png)
 
-**Gambar 2.1 Kerangka Pikir Penelitian**
+**Gambar 5 Kerangka Pikir Penelitian**
 
 ## 2.4 Hipotesis Penelitian
 
-Hipotesis dirumuskan hanya pada variabel penciri. Perbedaan antarklaster pada variabel pembentuk tidak dirumuskan sebagai hipotesis, karena keanggotaan klaster ditentukan oleh variabel tersebut sehingga pengujiannya bersifat melingkar (Everitt et al., 2011). Arah hipotesis disandarkan pada dua temuan empiris. Pavanello et al. (2021) menemukan bahwa di Brasil, India, Indonesia, dan Meksiko, adopsi AC lebih tinggi pada rumah tangga berpendapatan dan berpendidikan lebih tinggi serta berhunian lebih baik. Di India dan Indonesia, pendidikan dan kualitas hunian yang berkorelasi dengan kesejahteraan rumah tangga juga lebih kuat berkaitan dengan adopsi lemari es dan AC. Kubota et al. (2014) menemukan bahwa di Jakarta, konsumsi energi untuk AC sebagai penyumbang utama konsumsi listrik rumah tangga dapat dijelaskan oleh luas lantai dan pendapatan rumah tangga, sedangkan peningkatan pendapatan berkaitan dengan luas lantai yang lebih besar. Berdasarkan landasan teori, penelitian terkait, dan kerangka pikir tersebut, hipotesis penelitian dirumuskan sebagai berikut:
+Hipotesis dirumuskan hanya pada variabel penciri. Perbedaan antarklaster pada variabel pembentuk tidak dirumuskan sebagai hipotesis, karena keanggotaan klaster ditentukan oleh variabel tersebut sehingga pengujiannya tidak dapat dijadikan bukti karena variabel yang diuji adalah variabel pembentuk klaster itu sendiri (Everitt et al., 2011). Arah hipotesis disandarkan pada dua temuan empiris. Pavanello et al. (2021) menemukan bahwa di Brasil, India, Indonesia, dan Meksiko, adopsi AC lebih tinggi pada rumah tangga berpendapatan dan berpendidikan lebih tinggi serta berhunian lebih baik. Di India dan Indonesia, pendidikan dan kualitas hunian yang berkorelasi dengan kesejahteraan rumah tangga juga lebih kuat berkaitan dengan adopsi lemari es dan AC. Kubota et al. (2014) menemukan bahwa di Jakarta, konsumsi energi untuk AC sebagai penyumbang utama konsumsi listrik rumah tangga dapat dijelaskan oleh luas lantai dan pendapatan rumah tangga, sedangkan peningkatan pendapatan berkaitan dengan luas lantai yang lebih besar. Berdasarkan landasan teori, penelitian terkait, dan kerangka pikir tersebut, hipotesis penelitian dirumuskan sebagai berikut:
 
 Klaster rumah tangga di Provinsi DKI Jakarta Tahun 2025 dengan konsumsi listrik yang lebih tinggi ditandai oleh proporsi kepemilikan AC dan lemari es yang lebih tinggi serta luas lantai tempat tinggal yang lebih besar dibandingkan klaster lainnya.
-
-*"...Sengaja dikosongkan..."*
-
-*"...Sengaja dikosongkan..."*
 
 ---
 
@@ -494,15 +573,15 @@ Klaster rumah tangga di Provinsi DKI Jakarta Tahun 2025 dengan konsumsi listrik 
 
 ## 3.1 Ruang Lingkup Penelitian
 
-Penelitian ini berfokus pada klasifikasi rumah tangga di Provinsi DKI Jakarta Tahun 2025 berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi. Sumber data utama adalah mikrodata Survei Sosial Ekonomi Nasional (Susenas) Maret 2025 	(Badan Pusat Statistik, 2025b). Unit observasi sekaligus unit analisis dalam penelitian ini adalah rumah tangga sampel Susenas Maret 2025 di Provinsi DKI Jakarta, dengan cakupan wilayah seluruh kabupaten dan kota administrasi di provinsi tersebut.
+Penelitian ini berfokus pada klasifikasi rumah tangga di Provinsi DKI Jakarta Tahun 2025 berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi. Sumber data utama adalah mikrodata Survei Sosial Ekonomi Nasional (Susenas) Maret 2025 (Badan Pusat Statistik, 2025b). Unit observasi sekaligus unit analisis dalam penelitian ini adalah rumah tangga sampel Susenas Maret 2025 di Provinsi DKI Jakarta, dengan cakupan wilayah seluruh kabupaten dan kota administrasi di provinsi tersebut.
 
-Analisis dibatasi pada rumah tangga pengguna listrik PT PLN (Persero) bermeteran. Pembatasan ini diperlukan karena konsumsi listrik diperoleh dari konversi pengeluaran listrik terhadap tarif menurut golongan daya terpasang, sedangkan rumah tangga pengguna listrik PT PLN (Persero) tanpa meteran dan pengguna listrik non-PLN tidak memiliki golongan tarif yang sah. Variabel pembentuk klaster dibatasi pada tiga variabel, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan lama sekolah Kepala Rumah Tangga (KRT). Lima variabel lainnya, yaitu ukuran rumah tangga, kepemilikan air conditioner (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang, tidak ikut membentuk klaster dan digunakan sebagai variabel penciri pada tahap profiling.
+Analisis dibatasi pada rumah tangga pengguna listrik PT PLN (Persero) bermeteran. Pembatasan ini diperlukan karena konsumsi listrik diperoleh dari konversi pengeluaran listrik terhadap tarif menurut golongan daya terpasang, sedangkan rumah tangga pengguna listrik PT PLN (Persero) tanpa meteran dan pengguna listrik non-PLN tidak memiliki golongan tarif yang sah. Variabel pembentuk klaster dibatasi pada tiga variabel, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan lama sekolah KRT. Lima variabel lainnya, yaitu ukuran rumah tangga, kepemilikan *air conditioner* (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang, tidak ikut membentuk klaster dan digunakan sebagai variabel penciri pada tahap *profiling*.
 
-Hasil pengelompokan diarahkan untuk menggambarkan heterogenitas rumah tangga di wilayah metropolitan DKI Jakarta dan memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami adaptation cooling deficit, yaitu keadaan rumah tangga yang membutuhkan pendinginan tetapi tidak mampu memperoleh AC (Pavanello et al., 2021). Penelitian ini tidak mengukur paparan suhu pada tingkat rumah tangga. Karena itu, indikasi tersebut dibaca dari rendahnya kepemilikan AC dan kapasitas ekonomi pada klaster yang terbentuk, bukan sebagai pengukuran langsung atas adaptation cooling deficit.
+Hasil pengelompokan diarahkan untuk menggambarkan heterogenitas rumah tangga di wilayah metropolitan DKI Jakarta dan memberikan indikasi mengenai kelompok rumah tangga yang berpotensi mengalami *adaptation cooling deficit*, yaitu keadaan rumah tangga yang membutuhkan pendinginan tetapi tidak mampu memperoleh AC (Pavanello et al., 2021). Penelitian ini tidak mengukur paparan suhu pada tingkat rumah tangga. Karena itu, indikasi tersebut dibaca dari rendahnya kepemilikan AC dan kapasitas ekonomi pada klaster yang terbentuk, bukan sebagai pengukuran langsung atas *adaptation cooling deficit*.
 
 ## 3.2 Metode Pengumpulan Data
 
-Jenis data yang digunakan dalam penelitian ini adalah data cross-section, sedangkan sumber datanya adalah data sekunder berupa mikrodata Susenas Maret 2025 Provinsi DKI Jakarta yang diterbitkan oleh Badan Pusat Statistik (BPS) 	(Badan Pusat Statistik, 2025b). Karena menggunakan data sekunder, penelitian ini tidak melakukan pengumpulan data secara langsung di lapangan. Data diperoleh melalui studi dokumentasi terhadap mikrodata Susenas Maret 2025 beserta layout dan keterangan variabel yang menyertainya. Dengan demikian, proses pengumpulan data mengikuti rancangan survei Susenas yang dilaksanakan oleh BPS.
+Jenis data yang digunakan dalam penelitian ini adalah data *cross-section*, sedangkan sumber datanya adalah data sekunder berupa mikrodata Susenas Maret 2025 Provinsi DKI Jakarta yang diterbitkan oleh Badan Pusat Statistik (BPS) (Badan Pusat Statistik, 2025b). Karena menggunakan data sekunder, penelitian ini tidak melakukan pengumpulan data secara langsung di lapangan. Data diperoleh melalui studi dokumentasi terhadap mikrodata Susenas Maret 2025 beserta layout dan keterangan variabel yang menyertainya. Dengan demikian, proses pengumpulan data mengikuti rancangan survei Susenas yang dilaksanakan oleh BPS.
 
 Variabel penelitian diperoleh dari dua kelompok data dalam mikrodata Susenas Maret 2025. Kelompok pertama adalah data Kuesioner Kor (VSEN25.K), yang terdiri atas keterangan individu dan keterangan rumah tangga. Dari keterangan individu diambil hubungan dengan kepala rumah tangga (R403) untuk mengenali KRT, serta jenjang pendidikan tertinggi yang sedang atau pernah diikuti KRT (R613). Dari keterangan rumah tangga diambil banyaknya anggota rumah tangga (R301), luas lantai tempat tinggal (R1604), sumber penerangan utama (R1616), golongan daya terpasang pada meteran pertama (R1616B1), serta kepemilikan lemari es (R1801B) dan AC (R1801C). Kelompok kedua adalah data Kuesioner Konsumsi dan Pengeluaran (VSEN25.KP) Blok IV.2, yang memuat pengeluaran listrik sebulan terakhir (R234) dan pengeluaran nonmakanan sebulan. Selain variabel tersebut, digunakan pula penimbang rumah tangga yang tersedia pada mikrodata untuk menghasilkan angka deskriptif dan profil klaster yang menggambarkan populasi rumah tangga di Provinsi DKI Jakarta. Kedua kelompok data digabungkan menurut pengenal rumah tangga.
 
@@ -510,74 +589,84 @@ Variabel penelitian diperoleh dari dua kelompok data dalam mikrodata Susenas Mar
 
 Definisi operasional variabel menjembatani konsep pola konsumsi listrik dan karakteristik sosial ekonomi rumah tangga dengan pengukuran empiris pada mikrodata Susenas Maret 2025. Variabel penelitian dibagi menjadi dua kelompok menurut perannya dalam analisis. Kelompok pertama adalah variabel pembentuk klaster, yaitu variabel yang dipakai untuk menghitung jarak antarrumah tangga pada tahap pengelompokan. Kelompok kedua adalah variabel penciri, yaitu variabel yang tidak ikut membentuk klaster tetapi dipakai untuk membaca karakter klaster yang terbentuk pada tahap *profiling*.
 
-Tiga variabel digunakan sebagai pembentuk klaster, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan tingkat pendidikan Kepala Rumah Tangga (KRT). Konsumsi listrik rumah tangga diperoleh dari konversi pengeluaran listrik sebulan terakhir terhadap tarif tenaga listrik yang berlaku bagi golongan daya terpasang rumah tangga. Karena diperoleh melalui konversi, variabel ini dibaca sebagai ukuran relatif pemakaian listrik antarrumah tangga, bukan sebagai hasil pencatatan meteran. Pengeluaran nonmakanan selain listrik dipakai sebagai proksi kemampuan belanja rumah tangga di luar kebutuhan pangan. Komponen listrik dikeluarkan dari variabel ini agar informasi yang sama tidak masuk dua kali ke dalam perhitungan jarak. Tingkat pendidikan KRT dinyatakan dalam tahun sekolah ekuivalen yang dikonversi dari jenjang pendidikan tertinggi yang sedang atau pernah diikuti, dengan mengacu pada tabel konversi lama sekolah berdasarkan ijazah terakhir yang digunakan Badan Pusat Statistik dalam penghitungan rata-rata lama sekolah (Badan Pusat Statistik Kota Yogyakarta, 2026). Konsumsi listrik dan pengeluaran nonmakanan selain listrik ditransformasi ke dalam bentuk ln(1 + x) sebelum distandardisasi.
+Tiga variabel digunakan sebagai pembentuk klaster, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga (KRT). Konsumsi listrik rumah tangga diperoleh dari konversi pengeluaran listrik sebulan terakhir terhadap tarif tenaga listrik yang berlaku bagi golongan daya terpasang rumah tangga. Karena diperoleh melalui konversi, variabel ini dibaca sebagai ukuran relatif pemakaian listrik antarrumah tangga, bukan sebagai hasil pencatatan meteran. Pengeluaran nonmakanan selain listrik dipakai sebagai proksi kemampuan belanja rumah tangga di luar kebutuhan pangan. Komponen listrik dikeluarkan dari variabel ini agar informasi yang sama tidak masuk dua kali ke dalam perhitungan jarak. Lama sekolah KRT dinyatakan dalam tahun sekolah ekuivalen yang dikonversi dari jenjang pendidikan tertinggi yang sedang atau pernah diikuti, dengan mengacu pada tabel konversi lama sekolah berdasarkan ijazah terakhir yang digunakan Badan Pusat Statistik dalam penghitungan rata-rata lama sekolah (Badan Pusat Statistik Kota Yogyakarta, 2026). Konsumsi listrik dan pengeluaran nonmakanan selain listrik ditransformasi ke dalam bentuk ln(1 + x) sebelum distandardisasi.
 
 Lima variabel digunakan sebagai penciri, yaitu ukuran rumah tangga, kepemilikan *air conditioner* (AC), kepemilikan lemari es, luas lantai tempat tinggal, dan golongan daya terpasang. Ukuran rumah tangga ditempatkan sebagai penciri sehingga klaster terbentuk dari dimensi konsumsi listrik, kapasitas ekonomi, dan pendidikan, sedangkan besar kecilnya rumah tangga diperiksa setelah klaster terbentuk. Golongan daya terpasang berperan ganda, yaitu sebagai penciri sekaligus sebagai dasar penetapan tarif pada konversi konsumsi listrik. Keterkaitan tersebut membuat golongan daya dibaca sebagai deskripsi karakteristik kelistrikan klaster, bukan sebagai pembanding bebas bagi hasil pengelompokan. Pengeluaran listrik rumah tangga tidak dipakai sebagai pembentuk maupun penciri, melainkan sebagai dasar konversi konsumsi listrik dan disajikan pada analisis deskriptif. Rincian definisi operasional seluruh variabel disajikan pada Tabel 2.
 
-Tabel 2 Definisi Operasional Variabel Penelitian
+**Tabel 2 Definisi Operasional Variabel Penelitian**
 
-No.	Variabel	Definisi Operasional	Kode Variabel Susenas Maret 2025	Satuan/Skala Ukur	Peran dalam Analisis
-1	Konsumsi Listrik Rumah Tangga (X₁)	Pengeluaran listrik sebulan terakhir dibagi tarif tenaga listrik menurut golongan daya terpasang, yaitu Rp415,00/kWh (450 VA), Rp605,00/kWh (900 VA), dan Rp1.444,70/kWh (1.300 VA ke atas); digunakan dalam bentuk ln(1 + x)	VSEN25.KP, Blok IV.2 R234; VSEN25.K, R1616B1	kWh per bulan; rasio	Pembentuk klaster
-2	Pengeluaran Nonmakanan Selain Listrik (X₂)	Total pengeluaran nonmakanan sebulan dikurangi pengeluaran listrik; selisih bernilai negatif diperlakukan sebagai data tidak valid; digunakan dalam bentuk ln(1 + x)	VSEN25.KP, Blok IV.2 subtotal nonmakanan dikurangi R234	Rupiah per bulan; rasio	Pembentuk klaster
-3	Pendidikan KRT (X₃)	Lama sekolah ekuivalen KRT, dikonversi dari jenjang pendidikan tertinggi yang sedang atau pernah diikuti; KRT yang tidak pernah bersekolah bernilai 0 tahun	VSEN25.K, R613 (KRT: R403 = 1)	Tahun; rasio	Pembentuk klaster
-4	Pengeluaran Listrik Rumah Tangga	Nilai pengeluaran rumah tangga untuk pembayaran tagihan listrik atau pembelian token listrik sebulan terakhir	VSEN25.KP, Blok IV.2 R234	Rupiah per bulan; rasio	Dasar konversi X₁ dan analisis deskriptif
-5	Ukuran Rumah Tangga	Banyaknya anggota rumah tangga	VSEN25.K, R301	Jiwa; rasio	Penciri
-6	Kepemilikan AC	Rumah tangga memiliki AC	VSEN25.K, R1801C	Biner (1 = memiliki; 0 = tidak memiliki)	Penciri
-7	Kepemilikan Lemari Es	Rumah tangga memiliki lemari es/kulkas	VSEN25.K, R1801B	Biner (1 = memiliki; 0 = tidak memiliki)	Penciri
-8	Luas Lantai	Luas lantai bangunan tempat tinggal	VSEN25.K, R1604	m²; rasio	Penciri
-9	Golongan Daya Terpasang	Daya terpasang pada meteran 1, khusus rumah tangga pengguna listrik PT PLN (Persero) bermeteran	VSEN25.K, R1616B1	Ordinal: 450 VA; 900 VA; 1.300 VA atau lebih (kuesioner mencatat dalam satuan watt)	Penciri (deskriptif) dan dasar penetapan tarif X₁
+| No. | Variabel | Definisi Operasional | Kode Variabel Susenas Maret 2025 | Satuan/Skala Ukur | Peran dalam Analisis |
+|---|---|---|---|---|---|
+| 1 | Konsumsi Listrik Rumah Tangga (X₁) | Pengeluaran listrik sebulan terakhir dibagi tarif tenaga listrik menurut golongan daya terpasang, yaitu Rp415,00/kWh (450 VA), Rp605,00/kWh (900 VA), dan Rp1.444,70/kWh (1.300 VA ke atas); digunakan dalam bentuk ln(1 + x) | VSEN25.KP, Blok IV.2 R234; VSEN25.K, R1616B1 | kWh per bulan; rasio | Pembentuk klaster |
+| 2 | Pengeluaran Nonmakanan Selain Listrik (X₂) | Total pengeluaran nonmakanan sebulan dikurangi pengeluaran listrik; selisih bernilai negatif diperlakukan sebagai data tidak valid; digunakan dalam bentuk ln(1 + x) | VSEN25.KP, Blok IV.2 subtotal nonmakanan dikurangi R234 | Rupiah per bulan; rasio | Pembentuk klaster |
+| 3 | Lama Sekolah KRT (X₃) | Lama sekolah ekuivalen KRT, dikonversi dari jenjang pendidikan tertinggi yang sedang atau pernah diikuti; KRT yang tidak pernah bersekolah bernilai 0 tahun | VSEN25.K, R613 (KRT: R403 = 1) | Tahun; rasio | Pembentuk klaster |
+| 4 | Pengeluaran Listrik Rumah Tangga | Nilai pengeluaran rumah tangga untuk pembayaran tagihan listrik atau pembelian token listrik sebulan terakhir | VSEN25.KP, Blok IV.2 R234 | Rupiah per bulan; rasio | Dasar konversi X₁ dan analisis deskriptif |
+| 5 | Ukuran Rumah Tangga | Banyaknya anggota rumah tangga | VSEN25.K, R301 | Orang; rasio | Penciri |
+| 6 | Kepemilikan AC | Rumah tangga memiliki AC | VSEN25.K, R1801C | Biner (1 = memiliki; 0 = tidak memiliki) | Penciri |
+| 7 | Kepemilikan Lemari Es | Rumah tangga memiliki lemari es/kulkas | VSEN25.K, R1801B | Biner (1 = memiliki; 0 = tidak memiliki) | Penciri |
+| 8 | Luas Lantai | Luas lantai bangunan tempat tinggal | VSEN25.K, R1604 | m²; rasio | Penciri |
+| 9 | Golongan Daya Terpasang | Daya terpasang pada meteran 1, khusus rumah tangga pengguna listrik PT PLN (Persero) bermeteran | VSEN25.K, R1616B1 | Ordinal: 450 VA; 900 VA; 1.300 VA atau lebih (kuesioner mencatat dalam satuan watt) | Penciri (deskriptif) dan dasar penetapan tarif X₁ |
 
-Sumber: 	Badan Pusat Statistik (2025b), diolah; tarif tenaga listrik mengacu pada Kementerian Energi dan Sumber Daya Mineral (2024) dan PT PLN (Persero) (2025).
+Sumber: Badan Pusat Statistik (2025b), diolah; tarif tenaga listrik mengacu pada Kementerian Energi dan Sumber Daya Mineral (2024) dan PT PLN (Persero) (2025).
 
 ## 3.4 Metode Analisis
 
-Metode analisis disusun mengikuti urutan tiga tujuan penelitian. Tujuan pertama, yaitu mendeskripsikan profil konsumsi listrik serta kondisi sosial ekonomi rumah tangga, dijawab dengan analisis deskriptif setelah data melalui persiapan data. Tujuan kedua, yaitu mengelompokkan rumah tangga berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, dijawab melalui penetapan variabel pembentuk dan standardisasi data, penetapan ukuran jarak, penentuan jumlah klaster, dan pengelompokan dengan metode K-Means. Tujuan ketiga, yaitu menganalisis perbedaan karakteristik sosial ekonomi antarklaster, dijawab melalui profiling klaster, yaitu deskripsi kedua klaster pada variabel pembentuk dan variabel penciri, lalu pengujian hipotesis pada variabel penciri. Dengan susunan tersebut, analisis deskriptif mendahului analisis inferensia, dan pengujian hipotesis ditempatkan paling akhir karena memerlukan klaster yang telah terbentuk. Alur tahapan analisis disajikan pada Gambar 3.1.
+Metode analisis disusun mengikuti urutan tiga tujuan penelitian. Tujuan pertama, yaitu mendeskripsikan profil konsumsi listrik serta kondisi sosial ekonomi rumah tangga, dijawab dengan analisis deskriptif setelah data melalui persiapan data. Tujuan kedua, yaitu mengelompokkan rumah tangga berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, dijawab melalui penetapan variabel pembentuk dan standardisasi data, penetapan ukuran jarak, penentuan jumlah klaster, dan pengelompokan dengan metode *K-Means*. Tujuan ketiga, yaitu menganalisis perbedaan karakteristik sosial ekonomi antarklaster, dijawab melalui *profiling* klaster, yaitu deskripsi kedua klaster pada variabel pembentuk dan variabel penciri, lalu pengujian hipotesis pada variabel penciri. Dengan susunan tersebut, analisis deskriptif mendahului analisis inferensia, dan pengujian hipotesis ditempatkan paling akhir karena memerlukan klaster yang telah terbentuk. Alur tahapan analisis disajikan pada Gambar 6.
 
-![Gambar 3.1 Diagram Alur Metode Analisis](assets-ta/gambar-3-1-diagram-alur.png)
+![Gambar 6 Diagram Alur Metode Analisis](assets-ta/gambar-3-1-diagram-alur.png)
 
-Gambar 3.1 Diagram Alur Metode Analisis
+**Gambar 6 Diagram Alur Metode Analisis**
 
-No.	Bentuk	Teks di dalam kotak	Subbab
-1	Elips	Mulai	—
-2	Jajar genjang (data)	Mikrodata Susenas Maret 2025, Provinsi DKI Jakarta	3.2
-3	Persegi panjang	Persiapan Data	3.4.1
-4	Persegi panjang (cabang)	Analisis Deskriptif	3.4.2
-5	Persegi panjang	Penetapan Variabel Pembentuk: Konsumsi Listrik, Pengeluaran Nonmakanan selain Listrik, Lama Sekolah Kepala Rumah Tangga	3.4.3
-6	Persegi panjang	Standardisasi Skor Z	3.4.3
-7	Persegi panjang	Penentuan Jumlah Klaster (Metode Elbow dan Koefisien Silhouette)	3.4.5
-8	Persegi panjang	Pengelompokan K-Means (Jarak Euclidean)	3.4.4, 3.4.6
-9	Persegi panjang	Profiling Klaster dan Pengujian Hipotesis pada Variabel Penciri	3.4.7
-10	Jajar genjang (data), di samping kotak 9	Variabel Penciri: Luas Lantai, Kepemilikan AC, Kepemilikan Lemari Es, Golongan Daya Terpasang, Ukuran Rumah Tangga	3.3
-11	Elips	Selesai	—
-Panah
-Dari	Ke	Catatan
-1 → 2 → 3		Jalur utama
-3	4	Cabang deskriptif, keluar dari kotak 3
-4	11	Cabang deskriptif berakhir di Selesai (boleh bergabung dengan panah dari kotak 9)
-3 → 5 → 6 → 7 → 8 → 9 → 11		Jalur klaster
-10	9	Satu-satunya masuknya variabel penciri. Tidak boleh ada panah dari kotak 10 ke kotak 5–8
-Penanda tujuan (kurung kurawal atau kotak latar abu-abu muda di sisi kanan)
-Penanda	Mencakup kotak
-Tujuan 1	4
-Tujuan 2	5–8
-Tujuan 3	9
-Aturan gambar
-Aturan	Isi
-Warna	Hitam-putih; latar penanda tujuan abu-abu muda
-Tata letak	Vertikal atas ke bawah (lebih mudah terbaca pada halaman A4 dibanding tata letak berkelok)
-Notasi	Pakai nama variabel, bukan X1–X3, karena notasi X1–X3 tidak didefinisikan di mana pun dalam naskah
-Istilah asing	Elbow, Silhouette, Profiling ditulis miring
-Sumber di bawah gambar	Wajib dicantumkan; ikuti format sumber yang sudah dipakai pada Gambar 2.1
-Catatan revisi	Kotak "Pemeriksaan Pemisahan Klaster pada Variabel Pembentuk" dihapus (Sesi AS); gambar perlu digambar ulang
-Nama dokumen gambar	gambar-3-1-diagram-alur.png (sama dengan yang lama, sehingga tautan di repo baris 559 tidak perlu diubah)
+<details>
+<summary>Spesifikasi untuk menggambar ulang Gambar 6 (catatan kerja, bukan isi naskah)</summary>
+
+| No. | Bentuk | Teks di dalam kotak | Bagian naskah |
+|---|---|---|---|
+| 1 | Elips | Mulai | — |
+| 2 | Jajar genjang (data) | Mikrodata Susenas Maret 2025, Provinsi DKI Jakarta | 3.2 |
+| 3 | Persegi panjang | Persiapan Data | 3.4 Persiapan Data |
+| 4 | Persegi panjang (cabang) | Analisis Deskriptif | 3.4 Analisis Deskriptif |
+| 5 | Persegi panjang | Penetapan Variabel Pembentuk: Konsumsi Listrik, Pengeluaran Nonmakanan selain Listrik, Lama Sekolah KRT | 3.4 Penetapan Variabel Pembentuk |
+| 6 | Persegi panjang | Standardisasi *Z-score* | 3.4 Penetapan Variabel Pembentuk |
+| 7 | Persegi panjang | Penentuan Jumlah Klaster (Metode *Elbow* dan Koefisien *Silhouette*) | 3.4 Penentuan Jumlah Klaster |
+| 8 | Persegi panjang | Pengelompokan *K-Means* (Jarak Euclidean) | 3.4 Ukuran Jarak; Pengelompokan dengan Metode *K-Means* |
+| 9 | Persegi panjang | *Profiling* Klaster dan Pengujian Hipotesis pada Variabel Penciri | 3.4 *Profiling* Klaster |
+| 10 | Jajar genjang (data), di samping kotak 9 | Variabel Penciri: Luas Lantai, Kepemilikan AC, Kepemilikan Lemari Es, Golongan Daya Terpasang, Ukuran Rumah Tangga | 3.3 |
+| 11 | Elips | Selesai | — |
+
+| Panah dari | Ke | Catatan |
+|---|---|---|
+| 1 → 2 → 3 | — | Jalur utama |
+| 3 | 4 | Cabang deskriptif, keluar dari kotak 3 |
+| 4 | 11 | Cabang deskriptif berakhir di Selesai (boleh bergabung dengan panah dari kotak 9) |
+| 3 → 5 → 6 → 7 → 8 → 9 → 11 | — | Jalur klaster |
+| 10 | 9 | Satu-satunya masuknya variabel penciri; tidak ada panah dari kotak 10 ke kotak 5–8 |
+
+| Penanda tujuan (kurung kurawal atau latar abu-abu muda di sisi kanan) | Mencakup kotak |
+|---|---|
+| Tujuan 1 | 4 |
+| Tujuan 2 | 5–8 |
+| Tujuan 3 | 9 |
+
+| Aturan gambar | Isi |
+|---|---|
+| Warna | Hitam-putih; latar penanda tujuan abu-abu muda |
+| Tata letak | Vertikal atas ke bawah |
+| Notasi | Pakai nama variabel, bukan X₁–X₃ |
+| Istilah asing | *Elbow*, *Silhouette*, *Profiling* ditulis miring |
+| Sumber di bawah gambar | Wajib dicantumkan; ikuti format sumber Gambar 5 |
+| Catatan revisi | Kotak "Pemeriksaan Pemisahan Klaster pada Variabel Pembentuk" sudah dihapus (Sesi AS); gambar perlu digambar ulang |
+
+</details>
 
 **Persiapan Data**
 
-Tahap persiapan data dilakukan untuk mengubah data mikro Susenas Maret 2025 menjadi satu himpunan data berunit rumah tangga yang siap dianalisis. Tahap ini mencakup lima langkah, yaitu integrasi data, konversi pengeluaran listrik menjadi konsumsi listrik, pembentukan variabel turunan lain, pembersihan data, serta transformasi variabel.
+Tahap persiapan data dilakukan untuk mengubah mikrodata Susenas Maret 2025 menjadi satu himpunan data berunit rumah tangga yang siap dianalisis. Tahap ini mencakup lima langkah, yaitu integrasi data, konversi pengeluaran listrik menjadi konsumsi listrik, pembentukan variabel turunan lain, pembersihan data, serta transformasi variabel.
 
 Integrasi data dilakukan dengan menggabungkan tiga sumber, yaitu data keterangan individu, data keterangan rumah tangga, dan data konsumsi dan pengeluaran Blok IV.2. Penggabungan memakai pengenal unik rumah tangga yang dibentuk dari kombinasi kode wilayah dan nomor urut rumah tangga. Keterangan pendidikan diambil dari data individu dengan menyaring anggota rumah tangga berstatus kepala rumah tangga, kemudian dilekatkan pada catatan rumah tangga yang bersangkutan. Cakupan analisis dibatasi pada rumah tangga di Provinsi DKI Jakarta, dan penggabungan tersebut menghasilkan 5.079 rumah tangga.
 
-Isian konsumsi listrik dalam satuan kWh pada mikrodata Susenas Maret 2025 tidak terisi pada rumah tangga sampel di Provinsi DKI Jakarta, sedangkan isian pengeluaran listrik bulanan tersedia dan bernilai positif pada seluruh rumah tangga. Konsumsi listrik karena itu diperoleh dengan membagi pengeluaran listrik bulanan rumah tangga terhadap tarif tenaga listrik yang berlaku bagi golongan daya terpasangnya, yaitu Rp415,00 per kWh untuk golongan 450 VA dan Rp605,00 per kWh untuk golongan 900 VA sebagaimana tercantum pada Lampiran II Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 (Kementerian Energi dan Sumber Daya Mineral, 2024), serta Rp1.444,70 per kWh untuk golongan 1.300 VA ke atas sebagaimana tercantum pada Penetapan Tarif Tenaga Listrik PT PLN (Persero) Periode Triwulan I Tahun 2025 dengan keterangan tarif tetap (PT PLN (Persero), 2025). Kategori daya terpasang pada kuesioner Susenas Maret 2025 dicatat dalam satuan watt 	(Badan Pusat Statistik, 2025b), sedangkan kedua ketetapan tarif tersebut menyatakan golongan daya dalam satuan volt-ampere (VA). Setiap kategori kuesioner dicocokkan dengan golongan tarif yang berbatas daya sama, dan naskah ini selanjutnya menuliskan golongan daya dalam satuan VA. Penetapan triwulanan tersebut tidak mencantumkan golongan R-1/TR 450 VA maupun R-1/TR 900 VA bersubsidi, sehingga tarif kedua golongan itu mengikuti Lampiran II Peraturan Menteri. Penetapan tarif menurut golongan daya menghindarkan hasil konversi dari bias sistematis yang timbul bila seluruh rumah tangga diperlakukan menghadapi tarif yang sama, sekaligus memungkinkan rasio pengeluaran listrik antarkelompok berbeda dari rasio konsumsinya.
+| Isian konsumsi listrik dalam satuan kWh pada mikrodata Susenas Maret 2025 tidak terisi pada rumah tangga sampel di Provinsi DKI Jakarta, sedangkan isian pengeluaran listrik bulanan tersedia dan bernilai positif pada seluruh rumah tangga. Konsumsi listrik karena itu diperoleh dengan membagi pengeluaran listrik bulanan rumah tangga terhadap tarif tenaga listrik yang berlaku bagi golongan daya terpasangnya, yaitu Rp415,00 per kWh untuk golongan 450 VA dan Rp605,00 per kWh untuk golongan 900 VA sebagaimana tercantum pada Lampiran II Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 (Kementerian Energi dan Sumber Daya Mineral, 2024), serta Rp1.444,70 per kWh untuk golongan 1.300 VA ke atas sebagaimana tercantum pada Penetapan Tarif Tenaga Listrik PT PLN (Persero) Periode Triwulan I Tahun 2025 dengan keterangan tarif tetap (PT PLN (Persero), 2025). Kategori daya terpasang pada kuesioner Susenas Maret 2025 dicatat dalam satuan watt | (Badan Pusat Statistik, 2025b), sedangkan kedua ketetapan tarif tersebut menyatakan golongan daya dalam satuan volt-ampere (VA). Setiap kategori kuesioner dicocokkan dengan golongan tarif yang berbatas daya sama, dan naskah ini selanjutnya menuliskan golongan daya dalam satuan VA. Penetapan triwulanan tersebut tidak mencantumkan golongan R-1/TR 450 VA maupun R-1/TR 900 VA bersubsidi, sehingga tarif kedua golongan itu mengikuti Lampiran II Peraturan Menteri. Penetapan tarif menurut golongan daya menghindarkan hasil konversi dari bias sistematis yang timbul bila seluruh rumah tangga diperlakukan menghadapi tarif yang sama, sekaligus memungkinkan rasio pengeluaran listrik antarkelompok berbeda dari rasio konsumsinya. |
+|---|---|
 
 Dua penyederhanaan melekat pada prosedur tersebut. Pertama, Lampiran II Peraturan Menteri menetapkan dua skema bagi golongan 450 VA dan 900 VA, yaitu tarif reguler berlapis tiga blok disertai biaya beban bulanan dan tarif prabayar bernilai tunggal, sedangkan Susenas tidak mencatat skema yang berlaku bagi tiap rumah tangga, sehingga penelitian ini memakai tarif prabayar bagi kedua golongan tersebut. Kedua, Susenas merekam daya terpasang dalam tiga kategori, sedangkan penetapan tarif memuat tujuh golongan tarif rumah tangga, sehingga kategori 1.300 VA ke atas yang mencakup golongan R-1/1.300 VA, R-1/2.200 VA, R-2/TR, dan R-3/TR–TM diperlakukan seluruhnya pada tarif R-1/1.300 VA. Kedua penyederhanaan tersebut dimuat kembali sebagai butir keterbatasan penelitian.
 
@@ -585,11 +674,11 @@ Variabel turunan lain dibentuk pada tahap berikutnya. Pengeluaran nonmakanan sel
 
 Pendidikan KRT dikonversi ke dalam tahun sekolah ekuivalen dengan mengacu pada tabel konversi lama sekolah berdasarkan ijazah terakhir yang digunakan Badan Pusat Statistik, yaitu 0 tahun untuk tidak memiliki ijazah, 6 tahun untuk SD/SDLB/MI/Paket A, 9 tahun untuk SMP/SMPLB/MTs/Paket B, 12 tahun untuk SMA/SMLB/MA/SMK/Paket C, 14 tahun untuk D1/D2, 15 tahun untuk D3/Sarjana Muda, 16 tahun untuk D4/S1, dan 18 tahun untuk S2/S3 (Badan Pusat Statistik Kota Yogyakarta, 2026). Dalam penghitungan rata-rata lama sekolah, nilai konversi tersebut diterapkan pada ijazah terakhir dan dikombinasikan dengan kelas terakhir yang pernah atau sedang diduduki (Badan Pusat Statistik Kota Yogyakarta, 2026). Keterangan ijazah tertinggi dan kelas tertinggi tidak tersedia pada data yang diperoleh, sehingga nilai konversi diterapkan langsung pada jenjang pendidikan tertinggi yang sedang atau pernah diikuti KRT. Akibatnya, KRT yang tidak menamatkan jenjang pendidikannya memperoleh nilai setara lulusan jenjang tersebut, sehingga lama sekolah yang dihasilkan cenderung lebih tinggi daripada lama sekolah menurut ketentuan Badan Pusat Statistik. Jenjang yang tidak tercantum dalam tabel konversi, yaitu satuan pendidikan muadalah dan pendidikan diniyah formal, madrasah aliyah kejuruan, serta program profesi, disetarakan dengan jenjang formal padanannya. Program profesi diberi nilai 16 tahun sebagaimana S1 karena program profesi ditempuh setelah program sarjana. Penyetaraan ini hanya menyangkut tujuh KRT.
 
-Rumah tangga yang tidak tersambung pada meteran PT PLN (Persero) tidak memiliki golongan tarif yang sah, sehingga konsumsi listriknya tidak dapat diperoleh melalui prosedur di atas. Sebanyak 78 rumah tangga berada pada keadaan tersebut dan dikeluarkan dari analisis, sehingga jumlah rumah tangga yang dianalisis menjadi 5.001 dengan sebaran golongan daya 553 rumah tangga pada 450 VA, 1.573 rumah tangga pada 900 VA, dan 2.875 rumah tangga pada 1.300 VA ke atas. Pembersihan berikutnya dilakukan dengan kriteria kelengkapan dan kewajaran nilai. Rumah tangga dipertahankan dalam analisis apabila memiliki penimbang yang sah bernilai positif, nilai pengeluaran listrik dan konsumsi listrik yang tidak hilang serta tidak negatif, total pengeluaran nonmakanan bernilai positif, pengeluaran nonmakanan selain listrik tidak negatif, ukuran rumah tangga bernilai positif, keterangan pendidikan kepala rumah tangga tersedia, dan keterangan kepemilikan air conditioner bernilai biner. Kepala rumah tangga dengan kode jenjang pendidikan 0, yaitu kode yang tidak tercantum dalam daftar kategori jenjang pendidikan, diperlakukan sebagai tidak pernah bersekolah sehingga diberi nilai 0 tahun. Seluruh 5.001 rumah tangga tersebut memenuhi kriteria pembersihan, sehingga tidak ada rumah tangga yang dikeluarkan pada tahap ini.
+Rumah tangga yang tidak tersambung pada meteran PT PLN (Persero) tidak memiliki golongan tarif yang sah, sehingga konsumsi listriknya tidak dapat diperoleh melalui prosedur di atas. Sebanyak 78 rumah tangga berada pada keadaan tersebut dan dikeluarkan dari analisis, sehingga jumlah rumah tangga yang dianalisis menjadi 5.001 dengan sebaran golongan daya 553 rumah tangga pada 450 VA, 1.573 rumah tangga pada 900 VA, dan 2.875 rumah tangga pada 1.300 VA ke atas. Pembersihan berikutnya dilakukan dengan kriteria kelengkapan dan kewajaran nilai. Rumah tangga dipertahankan dalam analisis apabila memiliki penimbang yang sah bernilai positif, nilai pengeluaran listrik dan konsumsi listrik yang tidak hilang serta tidak negatif, total pengeluaran nonmakanan bernilai positif, pengeluaran nonmakanan selain listrik tidak negatif, ukuran rumah tangga bernilai positif, keterangan pendidikan kepala rumah tangga tersedia, dan keterangan kepemilikan *air conditioner* bernilai biner. Kepala rumah tangga dengan kode jenjang pendidikan 0, yaitu kode yang tidak tercantum dalam daftar kategori jenjang pendidikan, diperlakukan sebagai tidak pernah bersekolah sehingga diberi nilai 0 tahun. Seluruh 5.001 rumah tangga tersebut memenuhi kriteria pembersihan, sehingga tidak ada rumah tangga yang dikeluarkan pada tahap ini.
 
-Transformasi variabel dilakukan dalam dua tahap berurutan. Tahap pertama adalah winsorizing pada persentil ke-1 dan ke-99, yaitu penggantian nilai di bawah persentil ke-1 dengan nilai persentil ke-1 dan nilai di atas persentil ke-99 dengan nilai persentil ke-99. Nama perlakuan ini merujuk pada penduga Winsorized, yaitu penduga yang mengganti nilai ekstrem dengan nilai terdekat berikutnya (Dixon, 1960, hlm. 385). Perlakuan ini diterapkan pada konsumsi listrik, pengeluaran listrik, pengeluaran nonmakanan, pengeluaran nonmakanan selain listrik, serta ukuran rumah tangga. Langkah ini diambil sebagai pengaman karena K-Means memilih partisi yang meminimumkan jumlah kuadrat jarak setiap pengamatan terhadap *centroid* klasternya, yaitu trace(W), sehingga pengamatan yang letaknya sangat jauh dari kelompoknya memperoleh bobot besar dalam kriteria tersebut. Ketahanan terhadap pencilan merupakan salah satu alasan algoritme k-median sering diusulkan sebagai alternatif K-Means (Everitt et al., 2011, hlm. 126). Berbeda dengan pembuangan pengamatan, winsorizing tidak membuang nilai terkecil dan terbesar, melainkan menyamakannya dengan nilai terdekat yang tidak terpotong pada tingkat yang ditetapkan sebelum analisis, sehingga pengaruh nilai ekstrem tertahan tanpa mengurangi jumlah rumah tangga yang dianalisis (Mair & Wilcox, 2020, hlm. 465). Nilai lama sekolah kepala rumah tangga tidak dikenai *winsorizing* karena rentangnya telah terbatas secara alami oleh jenjang pendidikan formal.
+Transformasi variabel dilakukan dalam dua tahap berurutan. Tahap pertama adalah *winsorizing* pada persentil ke-1 dan ke-99, yaitu penggantian nilai di bawah persentil ke-1 dengan nilai persentil ke-1 dan nilai di atas persentil ke-99 dengan nilai persentil ke-99. Nama perlakuan ini merujuk pada penduga *Winsorized*, yaitu penduga yang mengganti nilai ekstrem dengan nilai terdekat berikutnya (Dixon, 1960, hlm. 385). Perlakuan ini diterapkan pada konsumsi listrik, pengeluaran listrik, pengeluaran nonmakanan, pengeluaran nonmakanan selain listrik, serta ukuran rumah tangga. Langkah ini diambil sebagai pengaman karena *K-Means* memilih partisi yang meminimumkan jumlah kuadrat jarak setiap pengamatan terhadap *centroid* klasternya, yaitu *trace*(**W**), sehingga pengamatan yang letaknya sangat jauh dari kelompoknya memperoleh bobot besar dalam kriteria tersebut. Ketahanan terhadap pencilan merupakan salah satu alasan algoritme *k-median* sering diusulkan sebagai alternatif *K-Means* (Everitt et al., 2011, hlm. 126). Berbeda dengan pembuangan pengamatan, *winsorizing* tidak membuang nilai terkecil dan terbesar, melainkan menyamakannya dengan nilai terdekat yang tidak terpotong pada tingkat yang ditetapkan sebelum analisis, sehingga pengaruh nilai ekstrem tertahan tanpa mengurangi jumlah rumah tangga yang dianalisis (Mair & Wilcox, 2020, hlm. 465). Nilai lama sekolah KRT tidak dikenai *winsorizing* karena rentangnya telah terbatas secara alami oleh jenjang pendidikan formal.
 
-Tahap kedua adalah transformasi logaritma natural berbentuk ln(1 + x) terhadap konsumsi listrik dan pengeluaran nonmakanan selain listrik hasil winsorizing. Kedua variabel tersebut merupakan variabel moneter dan volume yang sebarannya menceng ke kanan, sehingga tanpa transformasi jarak antarrumah tangga akan didominasi oleh selisih pada nilai-nilai besar. Bentuk ln(1 + x) dipilih, bukan logaritma biasa, karena terdapat rumah tangga dengan nilai nol yang tidak terdefinisi pada logaritma biasa. Lama sekolah kepala rumah tangga, sebagai satu-satunya variabel pembentuk klaster yang tidak bersifat moneter, dipakai pada skala aslinya karena rentang nilainya sempit dan sebarannya tidak menceng. Hasil transformasi inilah yang kemudian distandardisasi.
+Tahap kedua adalah transformasi logaritma natural berbentuk ln(1 + x) terhadap konsumsi listrik dan pengeluaran nonmakanan selain listrik hasil *winsorizing*. Kedua variabel tersebut merupakan variabel moneter dan volume yang sebarannya menceng ke kanan, sehingga tanpa transformasi jarak antarrumah tangga akan didominasi oleh selisih pada nilai-nilai besar. Bentuk ln(1 + x) dipilih, bukan logaritma biasa, karena terdapat rumah tangga dengan nilai nol yang tidak terdefinisi pada logaritma biasa. Lama sekolah KRT, sebagai satu-satunya variabel pembentuk klaster yang tidak bersifat moneter, dipakai pada skala aslinya karena rentang nilainya sempit dan sebarannya tidak menceng. Hasil transformasi inilah yang kemudian distandardisasi.
 
 **Analisis Deskriptif**
 
@@ -599,13 +688,13 @@ Analisis deskriptif digunakan untuk menjawab tujuan pertama penelitian, yaitu me
 
 Pemilihan variabel yang dimasukkan ke dalam perhitungan jarak merupakan salah satu bentuk pembobotan variabel. Variabel yang tidak dimasukkan pada dasarnya diberi bobot nol, sedangkan standardisasi ke ragam satuan merupakan kasus khusus dari pembobotan tersebut (Everitt et al., 2011, hlm. 63). Dengan jarak Euclidean atas data terstandardisasi, setiap variabel pembentuk memperoleh bobot yang setara dalam menentukan kedekatan antarrumah tangga. Karena itu, keputusan memasukkan suatu variabel sekaligus menentukan dimensi yang memisahkan klaster. Everitt et al. (2011, hlm. 261) menyarankan agar suatu variabel hanya dimasukkan apabila terdapat alasan kuat bahwa variabel tersebut mendefinisikan klaster yang dicari. Pertimbangan subjektif peneliti juga sebaiknya dibatasi pada tahap pemilihan variabel awal, dengan pemilihan yang mencerminkan relevansi variabel terhadap tujuan klasifikasi (Everitt et al., 2011, hlm. 67).
 
-Tujuan klasifikasi dalam penelitian ini adalah mengelompokkan rumah tangga menurut pola konsumsi listrik dan karakteristik sosial ekonominya. Tiga variabel ditetapkan sebagai pembentuk klaster, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik sebagai proksi kapasitas ekonomi, dan lama sekolah KRT. Ukuran rumah tangga tidak dimasukkan ke dalam perhitungan jarak karena dua alasan. Pertama, ukuran rumah tangga mencerminkan skala kebutuhan domestik, bukan kapasitas ekonomi maupun modal manusia rumah tangga. Bila ukuran rumah tangga dimasukkan dengan bobot setara, ukuran rumah tangga ikut menentukan batas klaster dengan bobot yang sama besar dengan kapasitas ekonomi. Akibatnya, dua rumah tangga dengan kapasitas ekonomi dan pendidikan yang serupa dapat terpisah ke klaster berbeda hanya karena jumlah anggotanya berbeda. Kedua, Kubota et al. (2014) memang mengelompokkan rumah tangga di Jakarta dan Bandung menurut skor faktor kesejahteraan dan ukuran rumah tangga, tetapi sasarannya adalah konsumsi energi rumah tangga secara keseluruhan, termasuk LPG. Pada hasil penelitian yang sama untuk Jakarta, ukuran rumah tangga muncul sebagai penjelas konsumsi LPG. Sebaliknya, konsumsi energi AC sebagai penyumbang utama konsumsi listrik rumah tangga dijelaskan oleh luas lantai, pendapatan rumah tangga, dan usia suami (Kubota et al., 2014). Karena objek penelitian ini adalah konsumsi listrik, ukuran rumah tangga ditempatkan sebagai variabel penciri. Penempatan tersebut tidak menyangkal temuan Ali et al. (2021) mengenai hubungan positif antara ukuran rumah tangga dan konsumsi listrik. Hubungan ukuran rumah tangga dengan klaster yang terbentuk tetap diperiksa dan dilaporkan pada tahap profiling.
+Tujuan klasifikasi dalam penelitian ini adalah mengelompokkan rumah tangga menurut pola konsumsi listrik dan karakteristik sosial ekonominya. Tiga variabel ditetapkan sebagai pembentuk klaster, yaitu konsumsi listrik rumah tangga, pengeluaran nonmakanan selain listrik sebagai proksi kapasitas ekonomi, dan lama sekolah KRT. Ukuran rumah tangga tidak dimasukkan ke dalam perhitungan jarak karena dua alasan. Pertama, ukuran rumah tangga mencerminkan skala kebutuhan domestik, bukan kapasitas ekonomi maupun modal manusia rumah tangga. Bila ukuran rumah tangga dimasukkan dengan bobot setara, ukuran rumah tangga ikut menentukan batas klaster dengan bobot yang sama besar dengan kapasitas ekonomi. Akibatnya, dua rumah tangga dengan kapasitas ekonomi dan pendidikan yang serupa dapat terpisah ke klaster berbeda hanya karena jumlah anggotanya berbeda. Kedua, Kubota et al. (2014) memang mengelompokkan rumah tangga di Jakarta dan Bandung menurut skor faktor kesejahteraan dan ukuran rumah tangga, tetapi sasarannya adalah konsumsi energi rumah tangga secara keseluruhan, termasuk LPG. Pada hasil penelitian yang sama untuk Jakarta, ukuran rumah tangga muncul sebagai penjelas konsumsi LPG. Sebaliknya, konsumsi energi AC sebagai penyumbang utama konsumsi listrik rumah tangga dijelaskan oleh luas lantai, pendapatan rumah tangga, dan usia suami (Kubota et al., 2014). Karena objek penelitian ini adalah konsumsi listrik, ukuran rumah tangga ditempatkan sebagai variabel penciri. Penempatan tersebut tidak menyangkal temuan Ali et al. (2021) mengenai hubungan positif antara ukuran rumah tangga dan konsumsi listrik. Hubungan ukuran rumah tangga dengan klaster yang terbentuk tetap diperiksa dan dilaporkan pada tahap *profiling*.
 
-Penetapan tersebut diperiksa secara empiris dengan membandingkan tiga spesifikasi variabel pembentuk. Spesifikasi pertama (S0) memuat empat variabel, termasuk ukuran rumah tangga. Spesifikasi kedua (S1) memuat tiga variabel dalam bentuk per kapita. Spesifikasi ketiga (S2) memuat tiga variabel dalam bentuk total per rumah tangga. Setiap spesifikasi dijalankan dengan dan tanpa winsorizing pada dua hingga lima klaster, sehingga diperoleh 24 kombinasi yang seluruhnya disajikan pada Lampiran 1. Pembandingan antarspesifikasi memakai tiga kriteria berurutan. Kriteria pertama adalah keeratan hubungan antara keanggotaan klaster dan kepemilikan AC, yaitu variabel yang tidak ikut membentuk klaster pada spesifikasi mana pun, diukur dengan *Cramér's V*. Kriteria kedua adalah syarat bahwa klaster terkecil memuat sekurang-kurangnya 10 persen rumah tangga. Kriteria ketiga adalah rata-rata koefisien silhouette, yang dipakai sebagai penentu apabila dua kriteria pertama tidak membedakan. Jumlah klaster tidak dipilih melalui pembandingan ini, melainkan melalui metode elbow dan koefisien silhouette. Pembandingan antarspesifikasi karena itu dilakukan pada jumlah klaster yang sama.
+Penetapan tersebut diperiksa secara empiris dengan membandingkan tiga spesifikasi variabel pembentuk. Spesifikasi pertama (S0) memuat empat variabel, termasuk ukuran rumah tangga. Spesifikasi kedua (S1) memuat tiga variabel dalam bentuk per kapita. Spesifikasi ketiga (S2) memuat tiga variabel dalam bentuk total per rumah tangga. Setiap spesifikasi dijalankan dengan dan tanpa *winsorizing* pada dua hingga lima klaster, sehingga diperoleh 24 kombinasi yang seluruhnya disajikan pada Lampiran 1. Pembandingan antarspesifikasi memakai tiga kriteria berurutan. Kriteria pertama adalah keeratan hubungan antara keanggotaan klaster dan kepemilikan AC, yaitu variabel yang tidak ikut membentuk klaster pada spesifikasi mana pun, diukur dengan *Cramér's V*. Kriteria kedua adalah syarat bahwa klaster terkecil memuat sekurang-kurangnya 10 persen rumah tangga. Kriteria ketiga adalah rata-rata koefisien *silhouette*, yang dipakai sebagai penentu apabila dua kriteria pertama tidak membedakan. Jumlah klaster tidak dipilih melalui pembandingan ini, melainkan melalui metode *elbow* dan koefisien *silhouette*. Pembandingan antarspesifikasi karena itu dilakukan pada jumlah klaster yang sama.
 
-Pada dua klaster, yaitu jumlah klaster dengan rata-rata koefisien silhouette tertinggi pada ketiga spesifikasi, nilai *Cramér's V* untuk kepemilikan AC bernilai 0,545 pada S0, 0,436 pada S1, dan 0,553 pada S2. Klaster terkecil pada ketiga spesifikasi memuat lebih dari 33 persen rumah tangga. Ada atau tidaknya winsorizing hampir tidak mengubah hasil tersebut; pada S2 dengan dua klaster, rata-rata koefisien silhouette bernilai 0,3640 dengan winsorizing dan 0,3627 tanpa winsorizing, dengan klaster terkecil masing-masing memuat 33,43 dan 33,15 persen rumah tangga (Lampiran 1). Pengeluaran ukuran rumah tangga dari variabel pembentuk (S0 menjadi S2) tidak melemahkan hubungan klaster dengan kepemilikan AC. Sebaliknya, pengubahan variabel ke bentuk per kapita (S1) melemahkan hubungan tersebut secara jelas. Atas dasar itu, S2 ditetapkan sebagai spesifikasi variabel pembentuk. Konsumsi listrik dan pengeluaran nonmakanan selain listrik dipertahankan dalam bentuk total per rumah tangga, sejalan dengan unit analisis penelitian. Kepemilikan AC dipakai sebagai kriteria pemilihan spesifikasi, sehingga perbedaan kepemilikan AC antarklaster tidak sepenuhnya bebas dari proses pemilihan tersebut. Karena itu, kepemilikan lemari es dan luas lantai, yang tidak dipakai pada tahap mana pun sebelum profiling, menjadi pembanding yang sepenuhnya independen.
+Pada dua klaster, yaitu jumlah klaster dengan rata-rata koefisien *silhouette* tertinggi pada ketiga spesifikasi, nilai *Cramér's V* untuk kepemilikan AC bernilai 0,545 pada S0, 0,436 pada S1, dan 0,553 pada S2. Klaster terkecil pada ketiga spesifikasi memuat lebih dari 33 persen rumah tangga. Ada atau tidaknya *winsorizing* hampir tidak mengubah hasil tersebut; pada S2 dengan dua klaster, rata-rata koefisien *silhouette* bernilai 0,3640 dengan *winsorizing* dan 0,3627 tanpa *winsorizing*, dengan klaster terkecil masing-masing memuat 33,43 dan 33,15 persen rumah tangga (Lampiran 1). Pengeluaran ukuran rumah tangga dari variabel pembentuk (S0 menjadi S2) tidak melemahkan hubungan klaster dengan kepemilikan AC. Sebaliknya, pengubahan variabel ke bentuk per kapita (S1) melemahkan hubungan tersebut secara jelas. Atas dasar itu, S2 ditetapkan sebagai spesifikasi variabel pembentuk. Konsumsi listrik dan pengeluaran nonmakanan selain listrik dipertahankan dalam bentuk total per rumah tangga, sejalan dengan unit analisis penelitian. Kepemilikan AC dipakai sebagai kriteria pemilihan spesifikasi, sehingga perbedaan kepemilikan AC antarklaster tidak sepenuhnya bebas dari proses pemilihan tersebut. Karena itu, kepemilikan lemari es dan luas lantai, yang tidak dipakai pada tahap mana pun sebelum *profiling*, menjadi pembanding yang sepenuhnya independen.
 
-Setelah variabel pembentuk ditetapkan, ketiga variabel distandardisasi karena memiliki satuan pengukuran yang berbeda. Standardisasi bertujuan menyamakan skala antarvariabel agar tidak terjadi dominasi variabel tertentu dalam perhitungan jarak. Everitt et al. (2011) menegaskan bahwa standardisasi relevan ketika variabel memiliki skala yang berbeda, karena perhitungan jarak dari data mentah dapat menjadi tidak proporsional. Metode standardisasi yang digunakan adalah transformasi Z-score, yaitu:
+Setelah variabel pembentuk ditetapkan, ketiga variabel distandardisasi karena memiliki satuan pengukuran yang berbeda. Standardisasi bertujuan menyamakan skala antarvariabel agar tidak terjadi dominasi variabel tertentu dalam perhitungan jarak. Everitt et al. (2011) menegaskan bahwa standardisasi relevan ketika variabel memiliki skala yang berbeda, karena perhitungan jarak dari data mentah dapat menjadi tidak proporsional. Metode standardisasi yang digunakan adalah transformasi *Z-score*, yaitu:
 
 $$Z_{ij}=\frac{x_{ij}-\bar{x}_j}{s_j},\quad j=1,2,3 \tag{3.1}$$
 
@@ -613,7 +702,7 @@ dengan Z_ij = nilai standar variabel ke-j pada observasi ke-i; x_ij = nilai vari
 
 **Ukuran Jarak**
 
-Pembentukan klaster memerlukan ukuran kemiripan (jarak) antarobjek. Untuk variabel kuantitatif kontinu, ukuran jarak yang umum digunakan adalah jarak Euclidean. Everitt et al. (2011) menjelaskan bahwa untuk data kontinu, ukuran dissimilarity berbasis jarak merupakan dasar penting dalam analisis klaster, sedangkan Johnson dan Wichern (2014) menempatkan metode jarak sebagai komponen utama dalam pengelompokan non-hierarki. Dalam penelitian ini, Jarak Euclidean antara rumah tangga ke-$i$ dan rumah tangga ke-$l$ dirumuskan sebagai:
+Pembentukan klaster memerlukan ukuran kemiripan (jarak) antarobjek. Untuk variabel kuantitatif kontinu, ukuran jarak yang umum digunakan adalah jarak Euclidean. Everitt et al. (2011) menjelaskan bahwa untuk data kontinu, ukuran *dissimilarity* berbasis jarak merupakan dasar penting dalam analisis klaster, sedangkan Johnson dan Wichern (2014) menempatkan metode jarak sebagai komponen utama dalam pengelompokan nonhierarki. Dalam penelitian ini, jarak Euclidean antara rumah tangga ke-$i$ dan rumah tangga ke-$l$ dirumuskan sebagai:
 
 $$d(\mathbf{Z}_i,\mathbf{Z}_l)=\sqrt{\sum_{j=1}^{3}\left(Z_{ij}-Z_{lj}\right)^2} \tag{3.2}$$
 
@@ -626,17 +715,17 @@ dengan:
 
 **Penentuan Jumlah Klaster**
 
-Salah satu keputusan penting dalam metode non-hierarki adalah penentuan jumlah klaster K. Pada sebagian besar penerapan metode non-hierarki, jumlah klaster tidak diketahui sebelumnya sehingga peneliti harus menentukannya sendiri, dan pendekatan yang paling lazim adalah memplot nilai kriteria pengelompokan terhadap jumlah kelompok untuk mencari titik terjadinya perubahan besar pada kurva (Everitt et al., 2011). Dalam penelitian ini, jumlah klaster ditentukan menggunakan Metode Elbow, yaitu dengan membandingkan nilai within-cluster sum of squares (WCSS) pada beberapa kandidat K. Nilai K dipilih pada titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (elbow). Pembacaan titik siku secara visual mengandung unsur subjektif, karena besar kecilnya perubahan pada kurva bergantung pada penilaian peneliti (Everitt et al., 2011). Keterbatasan tersebut menjadi alasan hasil Metode Elbow dalam penelitian ini tidak dipakai sendirian, melainkan dibandingkan dengan koefisien silhouette.
+Salah satu keputusan penting dalam metode nonhierarki adalah penentuan jumlah klaster K. Pada sebagian besar penerapan metode nonhierarki, jumlah klaster tidak diketahui sebelumnya sehingga peneliti harus menentukannya sendiri, dan pendekatan yang paling lazim adalah memplot nilai kriteria pengelompokan terhadap jumlah kelompok untuk mencari titik terjadinya perubahan besar pada kurva (Everitt et al., 2011). Dalam penelitian ini, jumlah klaster ditentukan menggunakan Metode *elbow*, yaitu dengan membandingkan nilai WCSS pada beberapa kandidat K. Nilai K dipilih pada titik ketika penurunan WCSS mulai melandai dan membentuk pola siku (*elbow*). Pembacaan titik siku secara visual mengandung unsur subjektif, karena besar kecilnya perubahan pada kurva bergantung pada penilaian peneliti (Everitt et al., 2011). Keterbatasan tersebut menjadi alasan hasil Metode *elbow* dalam penelitian ini tidak dipakai sendirian, melainkan dibandingkan dengan koefisien *silhouette*.
 
-Selain Metode Elbow, penentuan jumlah klaster dalam penelitian ini juga menggunakan koefisien silhouette. Perhitungan dilakukan pada data yang telah distandardisasi menggunakan jarak Euclidean, sesuai dengan ukuran jarak yang digunakan dalam proses pembentukan klaster. Rata-rata koefisien silhouette dihitung untuk setiap kandidat jumlah klaster, kemudian dibandingkan untuk melihat konfigurasi yang menghasilkan pemisahan kelompok paling kuat.
+Selain Metode *elbow*, penentuan jumlah klaster dalam penelitian ini juga menggunakan koefisien *silhouette*. Perhitungan dilakukan pada data yang telah distandardisasi menggunakan jarak Euclidean, sesuai dengan ukuran jarak yang digunakan dalam proses pembentukan klaster. Rata-rata koefisien *silhouette* dihitung untuk setiap kandidat jumlah klaster, kemudian dibandingkan untuk melihat konfigurasi yang menghasilkan pemisahan kelompok paling kuat.
 
-Jumlah klaster akhir ditetapkan dengan mempertimbangkan tiga hal secara bersamaan, yaitu pola siku pada kurva WCSS, nilai rata-rata koefisien silhouette tertinggi, dan keterbacaan hasil klaster secara substantif. Apabila hasil Elbow dan silhouette menunjuk pada jumlah klaster yang berbeda, keputusan diambil dengan mengutamakan konfigurasi yang menghasilkan profil klaster yang paling dapat diinterpretasikan dalam konteks pola konsumsi listrik dan karakteristik sosial ekonomi rumah tangga, disertai penjelasan atas pertimbangan tersebut.
+Jumlah klaster akhir ditetapkan dengan mempertimbangkan tiga hal secara bersamaan, yaitu pola siku pada kurva WCSS, nilai rata-rata koefisien *silhouette* tertinggi, dan keterbacaan hasil klaster secara substantif. Apabila hasil metode *elbow* dan koefisien *silhouette* menunjuk pada jumlah klaster yang berbeda, keputusan diambil dengan mengutamakan konfigurasi yang menghasilkan profil klaster yang paling dapat diinterpretasikan dalam konteks pola konsumsi listrik dan karakteristik sosial ekonomi rumah tangga, disertai penjelasan atas pertimbangan tersebut.
 
 **Pengelompokan dengan Metode *K-Means***
 
-Pembentukan klaster rumah tangga dilakukan menggunakan metode K-Means clustering, yaitu metode klaster non-hierarki yang bersifat unsupervised. Johnson dan Wichern (2014) menjelaskan bahwa metode non-hierarki membentuk kumpulan klaster dengan mengalokasikan setiap objek ke *centroid* klaster yang terdekat, sedangkan Everitt et al. (2011) menempatkan k-means sebagai bagian dari metode non-hierarki yang meminimalkan variasi dalam klaster. Metode ini dipilih karena penelitian bertujuan mengelompokkan rumah tangga ketika label kelompok belum tersedia sebelumnya, dengan variabel pembentuk klaster berupa variabel kuantitatif kontinu yang telah distandardisasi. Selain itu, K-Means relatif efisien untuk diterapkan pada data berukuran besar dan menghasilkan segmentasi yang mudah diinterpretasikan.
+Pembentukan klaster rumah tangga dilakukan menggunakan metode *K-Means*, yaitu metode klaster nonhierarki yang bersifat *unsupervised*. Johnson dan Wichern (2014) menjelaskan bahwa metode nonhierarki membentuk kumpulan klaster dengan mengalokasikan setiap objek ke *centroid* klaster yang terdekat, sedangkan Everitt et al. (2011) menempatkan *K-Means* sebagai bagian dari metode nonhierarki yang meminimalkan variasi dalam klaster. Metode ini dipilih karena penelitian bertujuan mengelompokkan rumah tangga ketika label kelompok belum tersedia sebelumnya, dengan variabel pembentuk klaster berupa variabel kuantitatif kontinu yang telah distandardisasi. Selain itu, *K-Means* relatif efisien untuk diterapkan pada data berukuran besar dan menghasilkan segmentasi yang mudah diinterpretasikan.
 
-Fungsi objektif yang diminimalkan dalam metode ini adalah Within-Cluster Sum of Squares (WCSS), yaitu:
+Fungsi objektif yang diminimalkan dalam metode ini adalah WCSS, yaitu:
 
 $$WCSS=\sum_{k=1}^{K}\sum_{i\in C_k}\sum_{j=1}^{3}\left(Z_{ij}-\bar{Z}_{kj}\right)^2 \tag{3.3}$$
 
@@ -644,7 +733,7 @@ dengan:
 
 - $K$ = jumlah klaster,
 - $C_k$ = himpunan rumah tangga pada klaster ke-$k$,
-- $\bar{Z}_{kj}$ = nilai pusat (*centroid*) klaster ke-$k$ pada variabel ke-$j$.
+- $\bar{Z}_{kj}$ = nilai *centroid* klaster ke-$k$ pada variabel ke-$j$.
 
 *Centroid* klaster ke-$k$ dihitung sebagai rata-rata seluruh anggota klaster tersebut, yaitu:
 
@@ -652,7 +741,7 @@ $$\bar{\mathbf{Z}}_k=\frac{1}{n_k}\sum_{i\in C_k}\mathbf{Z}_i \tag{3.4}$$
 
 dengan $n_k$ = banyaknya rumah tangga pada klaster ke-$k$.
 
-Algoritme K-Means dilakukan secara iteratif melalui langkah-langkah:
+Algoritme *K-Means* dilakukan secara iteratif melalui langkah-langkah:
 
 1. menentukan jumlah klaster $K$,
 2. menginisialisasi centroid awal,
@@ -660,14 +749,13 @@ Algoritme K-Means dilakukan secara iteratif melalui langkah-langkah:
 4. memperbarui centroid berdasarkan rata-rata anggota klaster,
 5. mengulangi langkah 3 dan 4 sampai konvergen.
 
-Everitt et al. (2011, hlm. 125–126) juga menekankan bahwa hasil k-means dapat dipengaruhi oleh nilai awal, sehingga penggunaan beberapa inisialisasi dan pemilihan solusi dengan kriteria terbaik merupakan praktik yang lebih baik. Oleh karena itu, dalam penelitian ini K-Means final dijalankan dengan 100 inisialisasi acak dan batas 1.000 iterasi, lalu dipilih solusi dengan nilai WCSS terendah; bilangan acak awal ditetapkan agar hasil dapat direproduksi.
-
+Everitt et al. (2011, hlm. 125–126) juga menekankan bahwa hasil *K-Means* dapat dipengaruhi oleh nilai awal, sehingga penggunaan beberapa inisialisasi dan pemilihan solusi dengan kriteria terbaik merupakan praktik yang lebih baik. Oleh karena itu, dalam penelitian ini *K-Means* final dijalankan dengan 100 inisialisasi acak dan batas 1.000 iterasi, lalu dipilih solusi dengan nilai WCSS terendah; bilangan acak awal ditetapkan agar hasil dapat direproduksi.
 
 ***Profiling* Klaster dan Pengujian Hipotesis pada Variabel Penciri**
 
-Tahap terakhir analisis menguraikan karakter setiap klaster dan menguji hipotesis penelitian. Variabel pembentuk hanya dideskripsikan melalui *centroid* dan statistik profil, tanpa uji statistik, karena teknik pengelompokan dengan sendirinya telah memaksimalkan perbedaan antarklaster pada variabel tersebut sehingga uji statistik baku seperti analisis ragam tidak tepat dipakai untuk membandingkannya (Everitt et al., 2011, hlm. 262). Pengujian karena itu hanya diterapkan pada variabel penciri, yaitu variabel yang tidak dipakai algoritme K-Means dalam membentuk klaster. Lima variabel penciri diperiksa, yaitu luas lantai tempat tinggal, kepemilikan air conditioner (AC), kepemilikan lemari es, golongan daya terpasang, dan ukuran rumah tangga, tetapi kedudukan kelimanya tidak sama. Hipotesis penelitian hanya menyangkut kepemilikan AC, kepemilikan lemari es, dan luas lantai, sehingga hanya ketiga variabel tersebut yang menjadi dasar keputusan hipotesis. Di antara ketiganya, kepemilikan AC telah dipakai sebagai kriteria pemilihan spesifikasi variabel pembentuk, sehingga bukti yang berasal dari variabel ini tidak sepenuhnya bebas dari proses pembentukan klaster; kepemilikan lemari es dan luas lantai, yang tidak dipakai pada tahap mana pun sebelum profiling, menjadi pembanding yang sepenuhnya bebas. Golongan daya terpasang dipakai pada tahap persiapan data untuk menetapkan tarif konversi pengeluaran listrik menjadi konsumsi listrik, sehingga ikut menentukan nilai variabel pembentuk pertama. Ukuran rumah tangga dikeluarkan dari variabel pembentuk dan diperiksa untuk memastikan bahwa perbedaan antarklaster tidak bersumber dari perbedaan jumlah penghuni. Kedua variabel terakhir karena itu diuji dan dilaporkan sebagai deskripsi karakter klaster, bukan sebagai bukti hipotesis.
+Tahap terakhir analisis menguraikan karakter setiap klaster dan menguji hipotesis penelitian. Variabel pembentuk hanya dideskripsikan melalui *centroid* dan statistik profil, tanpa uji statistik, karena teknik pengelompokan dengan sendirinya telah memaksimalkan perbedaan antarklaster pada variabel tersebut sehingga uji statistik baku seperti analisis ragam tidak tepat dipakai untuk membandingkannya (Everitt et al., 2011, hlm. 262). Pengujian karena itu hanya diterapkan pada variabel penciri, yaitu variabel yang tidak dipakai algoritme *K-Means* dalam membentuk klaster. Lima variabel penciri diperiksa, yaitu luas lantai tempat tinggal, kepemilikan *air conditioner* (AC), kepemilikan lemari es, golongan daya terpasang, dan ukuran rumah tangga, tetapi kedudukan kelimanya tidak sama. Hipotesis penelitian hanya menyangkut kepemilikan AC, kepemilikan lemari es, dan luas lantai, sehingga hanya ketiga variabel tersebut yang menjadi dasar keputusan hipotesis. Di antara ketiganya, kepemilikan AC telah dipakai sebagai kriteria pemilihan spesifikasi variabel pembentuk, sehingga bukti yang berasal dari variabel ini tidak sepenuhnya bebas dari proses pembentukan klaster; kepemilikan lemari es dan luas lantai, yang tidak dipakai pada tahap mana pun sebelum *profiling*, menjadi pembanding yang sepenuhnya bebas. Golongan daya terpasang dipakai pada tahap persiapan data untuk menetapkan tarif konversi pengeluaran listrik menjadi konsumsi listrik, sehingga ikut menentukan nilai variabel pembentuk pertama. Ukuran rumah tangga dikeluarkan dari variabel pembentuk dan diperiksa untuk memastikan bahwa perbedaan antarklaster tidak bersumber dari perbedaan jumlah penghuni. Kedua variabel terakhir karena itu diuji dan dilaporkan sebagai deskripsi karakter klaster, bukan sebagai bukti hipotesis.
 
-Profiling dilakukan dengan menghitung statistik ringkas setiap klaster pada variabel pembentuk dan variabel penciri. Statistik yang dihitung meliputi jumlah rumah tangga sampel dan jumlah rumah tangga tertimbang, rata-rata tertimbang untuk variabel numerik, persentase tertimbang untuk variabel kategorik, serta nilai tengah tanpa penimbang sebagai pembanding bagi variabel yang sebarannya menceng ke kanan. Penimbang sampling didefinisikan sebagai kebalikan dari peluang terpilih suatu unit, dan pada survei berskala besar lazim memuat penyesuaian atas ketidakterjawaban (Lumley & Scott, 2012, hlm. 7); penelitian ini memakai penimbang rumah tangga yang tersedia pada mikrodata Susenas Maret 2025. Penimbang hanya berperan pada tahap pelaporan. Klaster dibentuk tanpa penimbang, sedangkan statistik profil dihitung dengan penimbang agar menggambarkan rumah tangga di Provinsi DKI Jakarta, bukan semata rumah tangga yang terpilih dalam sampel. Nilai tengah disajikan tanpa penimbang karena fungsinya terbatas pada menunjukkan seberapa jauh rata-rata tertarik oleh rumah tangga bernilai sangat tinggi. Luas lantai ditangani dengan winsorizing pada persentil ke-1 dan ke-99 sebelum dihitung rata-ratanya, dengan alasan yang sama seperti pada variabel pembentuk, yaitu agar segelintir tempat tinggal yang sangat luas tidak menarik rata-rata klaster secara berlebihan tanpa harus mengeluarkan rumah tangga tersebut dari analisis.
+Profiling dilakukan dengan menghitung statistik ringkas setiap klaster pada variabel pembentuk dan variabel penciri. Statistik yang dihitung meliputi jumlah rumah tangga sampel dan jumlah rumah tangga tertimbang, rata-rata tertimbang untuk variabel numerik, persentase tertimbang untuk variabel kategorik, serta median tanpa penimbang sebagai pembanding bagi variabel yang sebarannya menceng ke kanan. Penimbang sampling didefinisikan sebagai kebalikan dari peluang terpilih suatu unit, dan pada survei berskala besar lazim memuat penyesuaian atas ketidakterjawaban (Lumley & Scott, 2012, hlm. 7); penelitian ini memakai penimbang rumah tangga yang tersedia pada mikrodata Susenas Maret 2025. Penimbang hanya berperan pada tahap pelaporan. Klaster dibentuk tanpa penimbang, sedangkan statistik profil dihitung dengan penimbang agar menggambarkan rumah tangga di Provinsi DKI Jakarta, bukan semata rumah tangga yang terpilih dalam sampel. Median disajikan tanpa penimbang karena fungsinya terbatas pada menunjukkan seberapa jauh rata-rata tertarik oleh rumah tangga bernilai sangat tinggi. Luas lantai ditangani dengan *winsorizing* pada persentil ke-1 dan ke-99 sebelum dihitung rata-ratanya, dengan alasan yang sama seperti pada variabel pembentuk, yaitu agar segelintir tempat tinggal yang sangat luas tidak menarik rata-rata klaster secara berlebihan tanpa harus mengeluarkan rumah tangga tersebut dari analisis.
 
 Hipotesis penelitian bersifat berarah, yaitu klaster dengan konsumsi listrik lebih tinggi memiliki proporsi kepemilikan AC dan lemari es yang lebih tinggi serta luas lantai yang lebih besar. Pengujiannya karena itu disusun dalam dua bagian. Bagian pertama menilai signifikansi perbedaan antarklaster pada setiap variabel penciri, dengan hipotesis nol bahwa sebaran variabel tersebut sama pada seluruh klaster dan hipotesis alternatif bahwa sebarannya berbeda sekurang-kurangnya pada satu klaster. Bagian kedua menilai arah perbedaan dari statistik profil, yaitu apakah persentase kepemilikan dan rata-rata luas lantai lebih tinggi pada klaster dengan konsumsi listrik lebih tinggi. Hipotesis penelitian dinyatakan didukung apabila ketiga variabel penciri berbeda signifikan pada taraf nyata 1 persen dan ketiganya menunjukkan arah yang dinyatakan dalam hipotesis. Setiap uji dijalankan dalam dua versi, yaitu tanpa penimbang dan dengan penimbang berbasis desain survei. Versi dengan penimbang dijadikan dasar keputusan karena hipotesis menyangkut rumah tangga di Provinsi DKI Jakarta, sedangkan versi tanpa penimbang dilaporkan berdampingan karena klaster dibentuk tanpa penimbang. Kesesuaian kesimpulan kedua versi dipakai untuk menunjukkan bahwa keputusan hipotesis tidak bergantung pada pilihan memakai atau tidak memakai penimbang.
 
@@ -675,7 +763,7 @@ Perbedaan antarklaster pada kepemilikan AC, kepemilikan lemari es, dan golongan 
 
 $$\chi^2=\sum_{k=1}^{K}\sum_{j=1}^{J}\frac{\left(O_{kj}-E_{kj}\right)^2}{E_{kj}},\qquad E_{kj}=\frac{n_{k\cdot}\,n_{\cdot j}}{n} \tag{3.5}$$
 
-dengan $O_{kj}$ banyaknya rumah tangga pada klaster ke-$k$ dan kategori ke-$j$, $E_{kj}$ frekuensi harapan di bawah hipotesis nol, $n_{k\cdot}$ dan $n_{\cdot j}$ jumlah baris ke-$k$ dan jumlah kolom ke-$j$, $J$ banyaknya kategori variabel penciri, dan $n$ banyaknya seluruh rumah tangga. Di bawah hipotesis nol, $\chi^2$ mendekati distribusi *chi-square* dengan derajat bebas $(K-1)(J-1)$ (Fisher, 1922, hlm. 88). Statistik dihitung tanpa koreksi kontinuitas Yates. Karena Persamaan (3.5) hanya disusun dari frekuensi sampel, versi dengan penimbang memakai fungsi svychisq pada package survey dalam R. Penyesuaian ini diperlukan karena pada rancangan sampel survei yang tidak memenuhi asumsi pengambilan sampel multinomial, misalnya karena pengelompokan rumah tangga dalam PSU dan stratifikasi, statistik *chi-square* Pearson tidak lagi berdistribusi *chi-square*, melainkan berdistribusi sebagai jumlah tertimbang variabel acak *chi-square* berderajat bebas satu dengan bobot berupa efek desain tergeneralisasi (Rao & Scott, 1984, hlm. 50–51). Fungsi tersebut menyediakan koreksi Rao–Scott orde pertama, yang membagi statistik *chi-square* Pearson dengan rata-rata efek desain (Rao & Scott, 1984, hlm. 53), dan orde kedua, yang turut menyesuaikan derajat bebas menurut koefisien variasi efek desain (Rao & Scott, 1984, hlm. 52). Penelitian ini memakai pilihan statistic = "F", yaitu pilihan bawaan fungsi tersebut, yang menerapkan koreksi Rao–Scott orde kedua dan menghitung p-value dengan pendekatan Satterthwaite terhadap sebaran statistiknya (Lumley, 2024).
+dengan $O_{kj}$ banyaknya rumah tangga pada klaster ke-$k$ dan kategori ke-$j$, $E_{kj}$ frekuensi harapan di bawah hipotesis nol, $n_{k\cdot}$ dan $n_{\cdot j}$ jumlah baris ke-$k$ dan jumlah kolom ke-$j$, $J$ banyaknya kategori variabel penciri, dan $n$ banyaknya seluruh rumah tangga. Di bawah hipotesis nol, $\chi^2$ mendekati distribusi *chi-square* dengan derajat bebas $(K-1)(J-1)$ (Fisher, 1922, hlm. 88). Statistik dihitung tanpa koreksi kontinuitas Yates. Karena Persamaan (3.5) hanya disusun dari frekuensi sampel, versi dengan penimbang memakai fungsi `svychisq` pada *package* `survey` dalam R. Penyesuaian ini diperlukan karena pada rancangan sampel survei yang tidak memenuhi asumsi pengambilan sampel multinomial, misalnya karena pengelompokan rumah tangga dalam *primary sampling unit* (PSU) dan stratifikasi, statistik *chi-square* Pearson tidak lagi berdistribusi *chi-square*, melainkan berdistribusi sebagai jumlah tertimbang variabel acak *chi-square* berderajat bebas satu dengan bobot berupa efek desain tergeneralisasi (Rao & Scott, 1984, hlm. 50–51). Fungsi tersebut menyediakan koreksi Rao–Scott orde pertama, yang membagi statistik *chi-square* Pearson dengan rata-rata efek desain (Rao & Scott, 1984, hlm. 53), dan orde kedua, yang turut menyesuaikan derajat bebas menurut koefisien variasi efek desain (Rao & Scott, 1984, hlm. 52). Penelitian ini memakai pilihan `statistic = "F"`, yaitu pilihan bawaan fungsi tersebut, yang menerapkan koreksi Rao–Scott orde kedua dan menghitung *p-value* dengan pendekatan Satterthwaite terhadap sebaran statistiknya (Lumley, 2024).
 
 Besaran hubungan antara keanggotaan klaster dan setiap variabel penciri kategorik diukur dengan *Cramér's V* (Cramér, 1946, dalam Bergsma, 2013, Bagian 1):
 
@@ -693,155 +781,176 @@ Versi dengan penimbang diterapkan pada kedua variabel tersebut dengan uji Kruska
 
 $$\hat{R}_i=\frac{1}{\hat{N}}\sum_{j\in s}\left[w_j\,I\left(Y_j<Y_i\right)+0{,}5\,w_j\,I\left(Y_j=Y_i\right)\right],\qquad \hat{N}=\sum_{j\in s}w_j \tag{3.8}$$
 
-dengan $Y_i$ luas lantai rumah tangga ke-$i$, $w_j$ penimbang rumah tangga ke-$j$, $s$ himpunan rumah tangga sampel, dan $I(\cdot)$ fungsi indikator yang bernilai satu apabila syarat di dalamnya terpenuhi. Rata-rata tertimbang $\hat{R}_i$ kemudian dibandingkan antarklaster. Untuk dua kelompok, uji ini dijalankan sebagai uji t tertimbang atas dugaan peringkat tersebut (Lumley & Scott, 2012, hlm. 9), sedangkan untuk lebih dari dua kelompok dijalankan sebagai analisis ragam satu arah tertimbang (Lumley & Scott, 2012, hlm. 19). Sebaran rujukannya adalah sebaran t dengan derajat bebas sebesar banyaknya unit sampling primer (PSU) dikurangi banyaknya strata (Lumley & Scott, 2012, hlm. 9). Uji ini dijalankan dengan fungsi svyranktest pada package survey dengan pilihan test = "KruskalWallis". Ukuran rumah tangga hanya diuji tanpa penimbang karena tidak menjadi dasar keputusan hipotesis.
+dengan $Y_i$ luas lantai rumah tangga ke-$i$, $w_j$ penimbang rumah tangga ke-$j$, $s$ himpunan rumah tangga sampel, dan $I(\cdot)$ fungsi indikator yang bernilai satu apabila syarat di dalamnya terpenuhi. Rata-rata tertimbang $\hat{R}_i$ kemudian dibandingkan antarklaster. Untuk dua kelompok, uji ini dijalankan sebagai uji t tertimbang atas dugaan peringkat tersebut (Lumley & Scott, 2012, hlm. 9), sedangkan untuk lebih dari dua kelompok dijalankan sebagai analisis ragam satu arah tertimbang (Lumley & Scott, 2012, hlm. 19). Sebaran rujukannya adalah sebaran t dengan derajat bebas sebesar banyaknya PSU dikurangi banyaknya strata (Lumley & Scott, 2012, hlm. 9). Uji ini dijalankan dengan fungsi `svyranktest` pada *package* `survey` dengan pilihan `test = "KruskalWallis"`. Ukuran rumah tangga hanya diuji tanpa penimbang karena tidak menjadi dasar keputusan hipotesis.
 
-Seluruh perhitungan tertimbang dijalankan dengan *package* survey dalam R (Lumley, 2024). Rancangan sampel dispesifikasikan dengan tiga unsur rancangan Susenas, yaitu *primary sampling unit* (PSU), strata, dan penimbang rumah tangga. Pilihan nest = TRUE dipakai agar PSU yang memiliki kode sama pada strata berbeda diperlakukan sebagai PSU yang berbeda (Lumley, 2024). Pada 5.001 rumah tangga yang dianalisis terdapat 6 strata dan 512 PSU. Dengan spesifikasi tersebut, *standard error* dan statistik uji tertimbang memperhitungkan ketidaksamaan penimbang sekaligus pengelompokan rumah tangga di dalam PSU. Hasil *profiling* dan pengujian tersebut menjadi dasar penamaan deskriptif setiap klaster.
+Seluruh perhitungan tertimbang dijalankan dengan *package* `survey` dalam R (Lumley, 2024). Rancangan sampel dispesifikasikan dengan tiga unsur rancangan Susenas, yaitu PSU, strata, dan penimbang rumah tangga. Pilihan `nest = TRUE` dipakai agar PSU yang memiliki kode sama pada strata berbeda diperlakukan sebagai PSU yang berbeda (Lumley, 2024). Pada 5.001 rumah tangga yang dianalisis terdapat 6 strata dan 512 PSU. Dengan spesifikasi tersebut, *standard error* dan statistik uji tertimbang memperhitungkan ketidaksamaan penimbang sekaligus pengelompokan rumah tangga di dalam PSU. Hasil *profiling* dan pengujian tersebut menjadi dasar penamaan deskriptif setiap klaster.
 
 ---
 
 # BAB IV HASIL DAN PEMBAHASAN
 
-Bab ini menyajikan hasil pengolahan data dan pembahasannya dengan urutan yang mengikuti tujuan penelitian, yaitu gambaran deskriptif konsumsi listrik dan karakteristik sosial ekonomi rumah tangga, pembentukan klaster dengan metode K-Means, serta perbedaan karakteristik antarklaster beserta pengujian hipotesis pada variabel penciri.
+Bab ini menyajikan hasil pengolahan data dan pembahasannya dengan urutan yang mengikuti tujuan penelitian, yaitu gambaran deskriptif konsumsi listrik dan karakteristik sosial ekonomi rumah tangga, pembentukan klaster dengan metode *K-Means*, serta perbedaan karakteristik antarklaster beserta pengujian hipotesis pada variabel penciri.
 
-Penggabungan data keterangan individu, keterangan rumah tangga, dan pengeluaran Blok IV.2 menghasilkan 5.079 rumah tangga di Provinsi DKI Jakarta, dan seluruhnya memiliki keterangan pendidikan kepala rumah tangga yang dapat dikonversi menjadi lama sekolah. Sebanyak 78 rumah tangga atau 1,54 persen tidak memiliki keterangan golongan daya terpasang sehingga konsumsi listriknya tidak dapat diperoleh dan dikeluarkan dari analisis. Kelompok ini memiliki rata-rata ukuran rumah tangga 2,64 orang, lama sekolah kepala rumah tangga 9,62 tahun, pengeluaran listrik Rp166.397 per bulan, dan kepemilikan AC 10,3 persen. Ketiga rata-rata pertama lebih rendah daripada rata-rata rumah tangga yang dianalisis pada Tabel 3, sehingga hasil penelitian ini tidak mewakili rumah tangga tanpa golongan daya terpasang. Kriteria pembersihan lainnya tidak menggugurkan rumah tangga tambahan, sehingga analisis mencakup 5.001 rumah tangga dengan sebaran golongan daya 553 rumah tangga pada 450 VA, 1.573 rumah tangga pada 900 VA, dan 2.875 rumah tangga pada 1.300 VA atau lebih.
+Penggabungan data keterangan individu, keterangan rumah tangga, dan pengeluaran Blok IV.2 menghasilkan 5.079 rumah tangga di Provinsi DKI Jakarta, dan seluruhnya memiliki keterangan pendidikan kepala rumah tangga yang dapat dikonversi menjadi lama sekolah. Sebanyak 78 rumah tangga atau 1,54 persen tidak memiliki keterangan golongan daya terpasang sehingga konsumsi listriknya tidak dapat diperoleh dan dikeluarkan dari analisis. Kelompok ini memiliki rata-rata ukuran rumah tangga 2,64 orang, lama sekolah KRT 9,62 tahun, pengeluaran listrik Rp166.397 per bulan, dan kepemilikan AC 10,3 persen. Ketiga rata-rata pertama lebih rendah daripada rata-rata rumah tangga yang dianalisis pada Tabel 3, sehingga hasil penelitian ini tidak mewakili rumah tangga tanpa golongan daya terpasang. Kriteria pembersihan lainnya tidak menggugurkan rumah tangga tambahan, sehingga analisis mencakup 5.001 rumah tangga dengan sebaran golongan daya 553 rumah tangga pada 450 VA, 1.573 rumah tangga pada 900 VA, dan 2.875 rumah tangga pada 1.300 VA atau lebih.
 
 Seluruh hasil pada bab ini perlu dibaca dengan memperhatikan satu batasan pengukuran. Konsumsi listrik yang dianalisis bukan kWh aktual hasil pencatatan meter rumah tangga, melainkan konsumsi listrik hasil konversi pengeluaran listrik bulanan rumah tangga terhadap tarif tenaga listrik yang berlaku menurut golongan daya terpasang. Setiap penyebutan konsumsi listrik pada bab ini merujuk pada besaran hasil konversi tersebut, bukan pada hasil pengukuran langsung.
 
-Sebelum masuk tahap analisis, nilai ekstrem ditangani dengan winsorizing pada persentil ke-1 dan ke-99. Perlakuan ini diterapkan pada konsumsi listrik hasil konversi, pengeluaran listrik, pengeluaran nonmakanan, pengeluaran nonmakanan selain listrik, dan ukuran rumah tangga, sedangkan lama sekolah kepala rumah tangga dipakai tanpa winsorizing. Perubahan rentang pada dua variabel pembentuk klaster yang sebarannya menceng ke kanan adalah sebagai berikut. Sebelum winsorizing, konsumsi listrik hasil konversi berkisar antara 21,46 kWh dan 17.797,59 kWh, sedangkan pengeluaran nonmakanan selain listrik mencapai Rp258.010.250 per bulan. Sesudah winsorizing, rentangnya menjadi 37,38 kWh hingga 2.335,43 kWh dan Rp618.667 hingga Rp37.010.083. Nilai minimum dan maksimum kelima variabel tersebut, beserta variabel turunannya yaitu konsumsi listrik per kapita dan pangsa listrik, pada seluruh tabel dan gambar deskriptif berikutnya karena itu dihitung dari data hasil winsorizing, bukan dari nilai pengamatan terendah dan tertinggi yang sesungguhnya.
-
+Sebelum masuk tahap analisis, nilai ekstrem ditangani dengan *winsorizing* pada persentil ke-1 dan ke-99. Perlakuan ini diterapkan pada konsumsi listrik hasil konversi, pengeluaran listrik, pengeluaran nonmakanan, pengeluaran nonmakanan selain listrik, dan ukuran rumah tangga, sedangkan lama sekolah KRT dipakai tanpa *winsorizing*. Perubahan rentang pada dua variabel pembentuk klaster yang sebarannya menceng ke kanan adalah sebagai berikut. Sebelum *winsorizing*, konsumsi listrik hasil konversi berkisar antara 21,46 kWh dan 17.797,59 kWh, sedangkan pengeluaran nonmakanan selain listrik mencapai Rp258.010.250 per bulan. Sesudah *winsorizing*, rentangnya menjadi 37,38 kWh hingga 2.335,43 kWh dan Rp618.667 hingga Rp37.010.083. Nilai minimum dan maksimum kelima variabel tersebut, beserta variabel turunannya yaitu konsumsi listrik per kapita dan pangsa listrik, pada seluruh tabel dan gambar deskriptif berikutnya karena itu dihitung dari data hasil *winsorizing*, bukan dari nilai pengamatan terendah dan tertinggi yang sesungguhnya.
 
 ## 4.1 Gambaran Umum Konsumsi Listrik dan Karakteristik Sosial Ekonomi Rumah Tangga
 
 Subbab ini menjawab tujuan pertama penelitian, yaitu mendeskripsikan profil konsumsi listrik dan kondisi sosial ekonomi rumah tangga di Provinsi DKI Jakarta. Ringkasan statistik seluruh variabel penelitian disajikan pada Tabel 3. Rata-rata sampel dihitung tanpa penimbang dan menggambarkan rumah tangga terpilih, sedangkan rata-rata tertimbang menggunakan penimbang rumah tangga Susenas sehingga menggambarkan seluruh rumah tangga di Provinsi DKI Jakarta.
 
-Tabel 3 Statistik Deskriptif Variabel Penelitian, DKI Jakarta, Maret 2025 (n = 5.001)
+**Tabel 3 Statistik Deskriptif Variabel Penelitian, DKI Jakarta, Maret 2025 (n = 5.001)**
 
-Variabel	Rata-rata sampel	Simpangan baku	Minimum	Maksimum	Rata-rata tertimbang	*Standard error*
-Konsumsi listrik (kWh/bulan)	327,45	353,88	37,38	2.335,43	369,61	15,83
-Konsumsi listrik per kapita (kWh/bulan)	132,98	172,09	6,43	2.335,43	115,45	5,03
-Pengeluaran listrik (Rp/bulan)	348.967	436.012	33.000	2.689.200	423.230	21.808
-Pengeluaran nonmakanan selain listrik (Rp/bulan)	4.654.809	5.918.258	618.667	37.010.083	5.825.672	291.320
-Pangsa listrik terhadap pengeluaran nonmakanan	0,0764	0,0414	0,0057	0,4100	0,0728	0,0012
-Lama sekolah kepala rumah tangga (tahun)	10,98	3,37	0	18	11,39	0,09
-Ukuran rumah tangga (orang)	3,10	1,37	1	6	3,68	0,03
+| Variabel | Rata-rata sampel | Simpangan baku | Minimum | Maksimum | Rata-rata tertimbang | *Standard error* |
+|---|---|---|---|---|---|---|
+| Konsumsi listrik (kWh/bulan) | 327,45 | 353,88 | 37,38 | 2.335,43 | 369,61 | 15,83 |
+| Konsumsi listrik per kapita (kWh/bulan) | 132,98 | 172,09 | 6,43 | 2.335,43 | 115,45 | 5,03 |
+| Pengeluaran listrik (Rp/bulan) | 348.967 | 436.012 | 33.000 | 2.689.200 | 423.230 | 21.808 |
+| Pengeluaran nonmakanan selain listrik (Rp/bulan) | 4.654.809 | 5.918.258 | 618.667 | 37.010.083 | 5.825.672 | 291.320 |
+| Pangsa listrik terhadap pengeluaran nonmakanan | 0,0764 | 0,0414 | 0,0057 | 0,4100 | 0,0728 | 0,0012 |
+| Lama sekolah KRT (tahun) | 10,98 | 3,37 | 0 | 18 | 11,39 | 0,09 |
+| Ukuran rumah tangga (orang) | 3,10 | 1,37 | 1 | 6 | 3,68 | 0,03 |
 
-Sumber: Susenas Maret 2025, diolah. Nilai minimum dan maksimum dihitung setelah winsorizing, kecuali lama sekolah kepala rumah tangga yang tidak dikenai *winsorizing*. *Standard error* rata-rata tertimbang dihitung dengan memperhitungkan PSU dan strata Susenas.
+Sumber: Susenas Maret 2025, diolah. Nilai minimum dan maksimum dihitung setelah *winsorizing*, kecuali lama sekolah KRT yang tidak dikenai *winsorizing*. *Standard error* rata-rata tertimbang dihitung dengan memperhitungkan PSU dan strata Susenas.
 
-Konsumsi listrik rumah tangga di Provinsi DKI Jakarta rata-rata mencapai 369,61 kWh per bulan dengan *standard error* 15,83 kWh. Sebarannya sangat lebar: simpangan baku sampel sebesar 353,88 kWh bahkan melampaui rata-rata sampelnya sendiri, dan nilai tengahnya hanya 222,19 kWh sementara rata-ratanya 327,45 kWh. Selisih antara nilai tengah dan rata-rata menunjukkan sebaran yang menceng ke kanan, yaitu sebagian besar rumah tangga berkonsumsi rendah sedangkan sejumlah kecil rumah tangga berkonsumsi sangat tinggi menarik rata-rata ke atas. Rata-rata tertimbang yang lebih tinggi daripada rata-rata sampel menandakan bahwa rumah tangga berkonsumsi besar memiliki bobot lebih besar dalam populasi dibandingkan porsinya dalam sampel, sehingga angka tertimbang merupakan rujukan yang tepat untuk menggambarkan kondisi provinsi.
+Konsumsi listrik rumah tangga di Provinsi DKI Jakarta rata-rata mencapai 369,61 kWh per bulan dengan *standard error* 15,83 kWh. Sebarannya sangat lebar: simpangan baku sampel sebesar 353,88 kWh bahkan melampaui rata-rata sampelnya sendiri, dan mediannya hanya 222,19 kWh sementara rata-ratanya 327,45 kWh. Selisih antara median dan rata-rata menunjukkan sebaran yang menceng ke kanan, yaitu sebagian besar rumah tangga berkonsumsi rendah sedangkan sejumlah kecil rumah tangga berkonsumsi sangat tinggi menarik rata-rata ke atas. Rata-rata tertimbang yang lebih tinggi daripada rata-rata sampel menandakan bahwa rumah tangga berkonsumsi besar memiliki bobot lebih besar dalam populasi dibandingkan porsinya dalam sampel, sehingga angka tertimbang merupakan rujukan yang tepat untuk menggambarkan kondisi provinsi.
 
-Bentuk sebaran konsumsi listrik rumah tangga disajikan pada Gambar 4.1.
+Bentuk sebaran konsumsi listrik rumah tangga disajikan pada Gambar 7.
 
-Gambar 4.1 Distribusi Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025
-(berkas 15_hist_estimasi_kwh.png, setelah label diperbarui)
+> **[Posisi Gambar 7]** Gambar belum tersimpan di repo.
+<!-- keluaran R: 15_hist_estimasi_kwh.png (label diperbarui) -->
+
+**Gambar 7 Distribusi Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025**
+
 Sumber: Susenas Maret 2025, diolah.
 
-Gambar 4.1 memperlihatkan sebaran yang menceng kuat ke kanan. Frekuensi tertinggi berada pada rentang konsumsi di bawah 250 kWh per bulan, kemudian menurun tajam dan menyisakan ekor panjang yang menipis hingga melewati 1.500 kWh. Bentuk seperti ini menegaskan bahwa rata-rata bukan ukuran pemusatan yang memadai untuk variabel tersebut, dan menjadi dasar diterapkannya transformasi logaritma sebelum pengelompokan. Batang yang muncul terpisah di ujung kanan gambar merupakan akibat winsorizing, yaitu sekitar satu persen rumah tangga dengan konsumsi tertinggi yang nilainya disamakan pada batas 2.335,43 kWh. Batang tersebut karena itu tidak menunjukkan adanya kelompok rumah tangga yang benar-benar menumpuk pada satu tingkat konsumsi.
+Gambar 7 memperlihatkan sebaran yang menceng kuat ke kanan. Frekuensi tertinggi berada pada rentang konsumsi di bawah 250 kWh per bulan, kemudian menurun tajam dan menyisakan ekor panjang yang menipis hingga melewati 1.500 kWh. Bentuk seperti ini menegaskan bahwa rata-rata bukan ukuran pemusatan yang memadai untuk variabel tersebut, dan menjadi dasar diterapkannya transformasi logaritma sebelum pengelompokan. Batang yang muncul terpisah di ujung kanan gambar merupakan akibat *winsorizing*, yaitu sekitar satu persen rumah tangga dengan konsumsi tertinggi yang nilainya disamakan pada batas 2.335,43 kWh. Batang tersebut karena itu tidak menunjukkan adanya kelompok rumah tangga yang benar-benar menumpuk pada satu tingkat konsumsi.
 
-Pola yang sama muncul pada pengeluaran listrik, yang rata-rata tertimbangnya Rp423.230 per bulan dengan nilai tengah Rp204.000. Meskipun demikian, pengeluaran listrik hanya menyerap 7,28 persen dari pengeluaran nonmakanan rumah tangga. Pangsa ini relatif stabil antar rumah tangga, dengan simpangan baku 0,0414, tetapi rentangnya cukup lebar karena terdapat rumah tangga yang mengalokasikan hingga 41 persen pengeluaran nonmakanannya untuk listrik. Rumah tangga pada ujung atas rentang tersebut menanggung beban listrik yang jauh melampaui kelaziman dan layak diperhatikan sebagai kelompok rentan.
+Pola yang sama muncul pada pengeluaran listrik, yang rata-rata tertimbangnya Rp423.230 per bulan dengan median Rp204.000. Meskipun demikian, pengeluaran listrik hanya menyerap 7,28 persen dari pengeluaran nonmakanan rumah tangga. Pangsa ini relatif stabil antarrumah tangga, dengan simpangan baku 0,0414, tetapi rentangnya cukup lebar karena terdapat rumah tangga yang mengalokasikan hingga 41 persen pengeluaran nonmakanannya untuk listrik. Rumah tangga pada ujung atas rentang tersebut menanggung beban listrik yang jauh melampaui kelaziman dan layak diperhatikan sebagai kelompok rentan.
 
-Kapasitas ekonomi rumah tangga, yang diwakili pengeluaran nonmakanan selain listrik, rata-rata tertimbangnya mencapai Rp5.825.672 per bulan dengan nilai tengah Rp2.714.820. Jarak antara rata-rata dan nilai tengah pada variabel ini lebih lebar daripada pada konsumsi listrik, dan simpangan bakunya kembali melampaui rata-ratanya. Ketimpangan kapasitas ekonomi antar rumah tangga di Provinsi DKI Jakarta dengan demikian lebih tajam daripada ketimpangan konsumsi listriknya.
+Kapasitas ekonomi rumah tangga, yang diwakili pengeluaran nonmakanan selain listrik, rata-rata tertimbangnya mencapai Rp5.825.672 per bulan dengan median Rp2.714.820. Jarak antara rata-rata dan median pada variabel ini lebih lebar daripada pada konsumsi listrik, dan simpangan bakunya kembali melampaui rata-ratanya. Ketimpangan kapasitas ekonomi antarrumah tangga di Provinsi DKI Jakarta dengan demikian lebih tajam daripada ketimpangan konsumsi listriknya.
 
-Keterkaitan antara kapasitas ekonomi dan konsumsi listrik rumah tangga ditampilkan pada Gambar 4.2.
+Keterkaitan antara kapasitas ekonomi dan konsumsi listrik rumah tangga ditampilkan pada Gambar 8.
 
-Gambar 4.2 Pengeluaran Nonmakanan Selain Listrik dan Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025
-(berkas 17_scatter_estimasi_kwh_nonfood.png, setelah label diperbarui)
+> **[Posisi Gambar 8]** Gambar belum tersimpan di repo.
+<!-- keluaran R: 17_scatter_estimasi_kwh_nonfood.png (label diperbarui) -->
+
+**Gambar 8 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025**
+
 Sumber: Susenas Maret 2025, diolah.
 
-Gambar 4.2 menunjukkan arah hubungan yang positif: rumah tangga dengan pengeluaran nonmakanan selain listrik yang lebih besar cenderung mengonsumsi listrik lebih banyak. Hubungan tersebut tidak rapat. Titik-titik memusat padat pada sudut kiri bawah, yaitu rumah tangga dengan pengeluaran nonmakanan di bawah Rp10.000.000 dan konsumsi listrik di bawah 500 kWh, sementara di atas rentang itu titik-titik menyebar lebar sehingga rumah tangga dengan kapasitas ekonomi serupa dapat memiliki konsumsi listrik yang jauh berbeda. Kapasitas ekonomi dengan demikian merupakan penjelas yang penting tetapi tidak tunggal bagi konsumsi listrik rumah tangga, sehingga pengelompokan yang hanya bersandar pada satu dimensi ekonomi tidak akan memadai. Deretan titik yang membentuk garis lurus pada tepi kanan dan tepi atas gambar merupakan akibat winsorizing pada kedua variabel.
+Gambar 8 menunjukkan arah hubungan yang positif: rumah tangga dengan pengeluaran nonmakanan selain listrik yang lebih besar cenderung mengonsumsi listrik lebih banyak. Hubungan tersebut tidak rapat. Titik-titik memusat padat pada sudut kiri bawah, yaitu rumah tangga dengan pengeluaran nonmakanan di bawah Rp10.000.000 dan konsumsi listrik di bawah 500 kWh, sementara di atas rentang itu titik-titik menyebar lebar sehingga rumah tangga dengan kapasitas ekonomi serupa dapat memiliki konsumsi listrik yang jauh berbeda. Kapasitas ekonomi dengan demikian merupakan penjelas yang penting tetapi tidak tunggal bagi konsumsi listrik rumah tangga, sehingga pengelompokan yang hanya bersandar pada satu dimensi ekonomi tidak akan memadai. Deretan titik yang membentuk garis lurus pada tepi kanan dan tepi atas gambar merupakan akibat *winsorizing* pada kedua variabel.
 
-Karakteristik sosial rumah tangga menunjukkan gambaran yang berbeda. Lama sekolah kepala rumah tangga rata-rata 11,39 tahun, yaitu telah melampaui jenjang sekolah menengah pertama dan mendekati tamat sekolah menengah atas, dengan simpangan baku 3,37 tahun. Ukuran rumah tangga rata-rata 3,68 orang dan berkisar antara satu hingga enam orang. Kedua variabel ini bersebaran jauh lebih rapat dibandingkan variabel moneter, karena simpangan bakunya hanya sebagian kecil dari rata-ratanya. Sementara itu, 40,58 persen rumah tangga di Provinsi DKI Jakarta memiliki air conditioner, sehingga kepemilikan perangkat pendingin sudah menjangkau hampir separuh rumah tangga, tetapi belum merata.
+Karakteristik sosial rumah tangga menunjukkan gambaran yang berbeda. Lama sekolah KRT rata-rata 11,39 tahun, yaitu telah melampaui jenjang sekolah menengah pertama dan mendekati tamat sekolah menengah atas, dengan simpangan baku 3,37 tahun. Ukuran rumah tangga rata-rata 3,68 orang dan berkisar antara satu hingga enam orang. Kedua variabel ini bersebaran jauh lebih rapat dibandingkan variabel moneter, karena simpangan bakunya hanya sebagian kecil dari rata-ratanya. Sementara itu, 40,58 persen rumah tangga di Provinsi DKI Jakarta memiliki *air conditioner*, sehingga kepemilikan perangkat pendingin sudah menjangkau hampir separuh rumah tangga, tetapi belum merata.
 
-Perbedaan konsumsi listrik menurut kepemilikan air conditioner ditampilkan pada Gambar 4.3.
+Perbedaan konsumsi listrik menurut kepemilikan *air conditioner* ditampilkan pada Gambar 9.
 
-Gambar 4.3 Konsumsi Listrik Rumah Tangga Menurut Kepemilikan Air Conditioner, DKI Jakarta, Maret 2025
-(berkas 16_boxplot_estimasi_kwh_ac.png, setelah label diperbarui)
+> **[Posisi Gambar 9]** Gambar belum tersimpan di repo.
+<!-- keluaran R: 16_boxplot_estimasi_kwh_ac.png (label diperbarui) -->
+
+**Gambar 9 Konsumsi Listrik Rumah Tangga menurut Kepemilikan *Air Conditioner*, DKI Jakarta, Maret 2025**
+
 Sumber: Susenas Maret 2025, diolah.
 
-Gambar 4.3 memperlihatkan perbedaan yang mencolok antara kedua kelompok. Kotak rumah tangga yang memiliki air conditioner berada seluruhnya di atas kotak rumah tangga yang tidak memiliki, dengan nilai tengah maupun kuartil yang lebih tinggi, dan sebarannya jauh lebih lebar. Rumah tangga tanpa air conditioner terkonsentrasi pada konsumsi rendah dengan sedikit pengamatan yang menonjol ke atas. Kepemilikan perangkat pendingin dengan demikian merupakan pembeda pola konsumsi listrik yang kuat sekalipun bukan variabel pembentuk klaster, sehingga variabel ini digunakan sebagai variabel penciri pada tahap penafsiran klaster.
+Gambar 9 memperlihatkan perbedaan yang mencolok antara kedua kelompok. Kotak rumah tangga yang memiliki *air conditioner* berada seluruhnya di atas kotak rumah tangga yang tidak memiliki, dengan median maupun kuartil yang lebih tinggi, dan sebarannya jauh lebih lebar. Rumah tangga tanpa *air conditioner* terkonsentrasi pada konsumsi rendah dengan sedikit pengamatan yang menonjol ke atas. Kepemilikan perangkat pendingin dengan demikian merupakan pembeda pola konsumsi listrik yang kuat sekalipun bukan variabel pembentuk klaster, sehingga variabel ini digunakan sebagai variabel penciri pada tahap penafsiran klaster.
 
-Dua temuan pada Tabel 3 berkonsekuensi langsung pada tahap pengelompokan. Pertama, konsumsi listrik dan pengeluaran nonmakanan selain listrik bersebaran menceng ke kanan dengan simpangan baku melebihi rata-ratanya, sehingga keduanya ditransformasikan dengan logaritma sebelum digunakan sebagai variabel pembentuk klaster agar jarak antar rumah tangga tidak ditentukan oleh sekelompok kecil rumah tangga berkonsumsi ekstrem. Kedua, ketiga variabel pembentuk klaster terukur pada satuan yang berbeda, yaitu kWh, rupiah, dan tahun, dengan rentang nilai yang terpaut jauh. Tanpa penyeragaman skala, variabel bersatuan rupiah akan mendominasi perhitungan jarak semata-mata karena angkanya lebih besar. Karena itu seluruh variabel pembentuk klaster distandardisasi menjadi skor Z sesudah transformasi logaritma diterapkan.
+Dua temuan pada Tabel 3 berkonsekuensi langsung pada tahap pengelompokan. Pertama, konsumsi listrik dan pengeluaran nonmakanan selain listrik bersebaran menceng ke kanan dengan simpangan baku melebihi rata-ratanya, sehingga keduanya ditransformasikan dengan logaritma sebelum digunakan sebagai variabel pembentuk klaster agar jarak antarrumah tangga tidak ditentukan oleh sekelompok kecil rumah tangga berkonsumsi ekstrem. Kedua, ketiga variabel pembentuk klaster terukur pada satuan yang berbeda, yaitu kWh, rupiah, dan tahun, dengan rentang nilai yang terpaut jauh. Tanpa penyeragaman skala, variabel bersatuan rupiah akan mendominasi perhitungan jarak semata-mata karena angkanya lebih besar. Karena itu seluruh variabel pembentuk klaster distandardisasi menjadi *Z-score* sesudah transformasi logaritma diterapkan.
 
 ## 4.2 Pembentukan Klaster Rumah Tangga
 
-Subbab ini menjawab tujuan kedua penelitian, yaitu mengidentifikasi dan mengelompokkan rumah tangga di Provinsi DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi. Uraian disusun dalam dua tahap yang berurutan, yaitu penentuan jumlah klaster dan pembentukan klaster dengan metode K-Means. Pengelompokan dilakukan atas tiga variabel pembentuk klaster, yaitu konsumsi listrik hasil konversi, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga, yang seluruhnya telah ditransformasikan dengan logaritma natural dan distandardisasi menjadi skor Z.
+Subbab ini menjawab tujuan kedua penelitian, yaitu mengidentifikasi dan mengelompokkan rumah tangga di Provinsi DKI Jakarta berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi. Uraian disusun dalam dua tahap yang berurutan, yaitu penentuan jumlah klaster dan pembentukan klaster dengan metode *K-Means*. Pengelompokan dilakukan atas tiga variabel pembentuk klaster, yaitu konsumsi listrik hasil konversi, pengeluaran nonmakanan selain listrik, dan lama sekolah KRT, yang seluruhnya telah ditransformasikan dengan logaritma natural dan distandardisasi menjadi *Z-score*.
 
 **Penentuan Jumlah Klaster**
 
-Jumlah klaster ditentukan dengan membandingkan dua kriteria kuantitatif, yaitu within-cluster sum of squares (WCSS) melalui metode elbow dan rata-rata koefisien silhouette. Kedua kriteria dihitung untuk satu sampai delapan klaster dan disajikan pada Tabel 4.
+Jumlah klaster ditentukan dengan membandingkan dua kriteria kuantitatif, yaitu WCSS melalui metode *elbow* dan rata-rata koefisien *silhouette*. Kedua kriteria dihitung untuk satu sampai delapan klaster dan disajikan pada Tabel 4.
 
-Tabel 4 Nilai WCSS dan Rata-Rata Koefisien Silhouette Menurut Jumlah Klaster, DKI Jakarta, Maret 2025 (n = 5.001)
+**Tabel 4 Nilai WCSS dan Rata-Rata Koefisien *Silhouette* menurut Jumlah Klaster, DKI Jakarta, Maret 2025 (n = 5.001)**
 
-Jumlah klaster (K)	WCSS	Penurunan WCSS dari K sebelumnya	Rata-rata koefisien silhouette
-1	15.000,00	—	tidak terdefinisi
-2	8.806,23	6.193,77	0,3640
-3	6.578,36	2.227,88	0,3149
-4	5.362,93	1.215,43	0,2907
-5	4.643,41	719,52	0,2848
-6	4.162,75	480,66	0,2643
-7	3.751,59	411,17	0,2728
-8	3.433,24	318,35	0,2786
+| Jumlah klaster (K) | WCSS | Penurunan WCSS dari K sebelumnya | Rata-rata koefisien *silhouette* |
+|---|---|---|---|
+| 1 | 15.000,00 | — | tidak terdefinisi |
+| 2 | 8.806,23 | 6.193,77 | 0,3640 |
+| 3 | 6.578,36 | 2.227,88 | 0,3149 |
+| 4 | 5.362,93 | 1.215,43 | 0,2907 |
+| 5 | 4.643,41 | 719,52 | 0,2848 |
+| 6 | 4.162,75 | 480,66 | 0,2643 |
+| 7 | 3.751,59 | 411,17 | 0,2728 |
+| 8 | 3.433,24 | 318,35 | 0,2786 |
 
-Sumber: Susenas Maret 2025, diolah. Koefisien silhouette tidak terdefinisi pada satu klaster karena tidak terdapat klaster pembanding.
+Sumber: Susenas Maret 2025, diolah. Koefisien *silhouette* tidak terdefinisi pada satu klaster karena tidak terdapat klaster pembanding.
 
-Nilai WCSS pada satu klaster tepat sebesar 15.000, yaitu hasil kali antara 5.000 derajat bebas dan tiga variabel pembentuk klaster. Kesesuaian angka tersebut menegaskan bahwa standardisasi skor Z berjalan sebagaimana mestinya, sehingga seluruh nilai WCSS pada Tabel 4 dapat dibaca sebagai proporsi keragaman baku yang tersisa di dalam klaster. Penambahan klaster dari satu menjadi dua menurunkan WCSS sebesar 6.193,77, yaitu lebih dari empat puluh persen keragaman total, sedangkan penambahan berikutnya hanya menurunkan 2.227,88 dan terus mengecil sesudahnya.
+Nilai WCSS pada satu klaster tepat sebesar 15.000, yaitu hasil kali antara 5.000 derajat bebas dan tiga variabel pembentuk klaster. Kesesuaian angka tersebut menegaskan bahwa standardisasi *Z-score* berjalan sebagaimana mestinya, sehingga seluruh nilai WCSS pada Tabel 4 dapat dibaca sebagai proporsi keragaman baku yang tersisa di dalam klaster. Penambahan klaster dari satu menjadi dua menurunkan WCSS sebesar 6.193,77, yaitu lebih dari empat puluh persen keragaman total, sedangkan penambahan berikutnya hanya menurunkan 2.227,88 dan terus mengecil sesudahnya.
 
-Bentuk penurunan tersebut ditampilkan pada Gambar 4.4.
+Bentuk penurunan tersebut ditampilkan pada Gambar 10.
 
-Gambar 4.4 Kurva Elbow untuk Penentuan Jumlah Klaster, DKI Jakarta, Maret 2025
-(berkas 19_elbow_wcss.png)
+> **[Posisi Gambar 10]** Gambar belum tersimpan di repo.
+<!-- keluaran R: 19_elbow_wcss.png -->
+
+**Gambar 10 Kurva *Elbow* untuk Penentuan Jumlah Klaster, DKI Jakarta, Maret 2025**
+
 Sumber: Susenas Maret 2025, diolah.
 
-Gambar 4.4 memperlihatkan penurunan yang sangat curam pada segmen pertama, melandai secara nyata sesudah tiga klaster, dan hampir menjadi garis lurus pada lima klaster ke atas. Titik siku karena itu terbaca pada rentang dua hingga tiga klaster. Metode elbow sendiri bersandar pada penilaian visual atas titik perubahan kemiringan sehingga tidak menghasilkan satu jawaban tunggal, dan karena itu hasilnya dibandingkan dengan kriteria kedua.
+Gambar 10 memperlihatkan penurunan yang sangat curam pada segmen pertama, melandai secara nyata sesudah tiga klaster, dan hampir menjadi garis lurus pada lima klaster ke atas. Titik siku karena itu terbaca pada rentang dua hingga tiga klaster. Metode *elbow* sendiri bersandar pada penilaian visual atas titik perubahan kemiringan sehingga tidak menghasilkan satu jawaban tunggal, dan karena itu hasilnya dibandingkan dengan kriteria kedua.
 
-Perbandingan rata-rata koefisien silhouette ditampilkan pada Gambar 4.5.
+Perbandingan rata-rata koefisien *silhouette* ditampilkan pada Gambar 11.
 
-Gambar 4.5 Rata-Rata Koefisien Silhouette Menurut Jumlah Klaster, DKI Jakarta, Maret 2025
-(berkas 20_silhouette.png)
+> **[Posisi Gambar 11]** Gambar belum tersimpan di repo.
+<!-- keluaran R: 20_silhouette.png -->
+
+**Gambar 11 Rata-Rata Koefisien *Silhouette* menurut Jumlah Klaster, DKI Jakarta, Maret 2025**
+
 Sumber: Susenas Maret 2025, diolah.
 
-Rata-rata koefisien silhouette mencapai nilai tertinggi pada dua klaster, yaitu 0,3640, kemudian menurun berturut-turut hingga titik terendah 0,2643 pada enam klaster, dan naik tipis pada tujuh dan delapan klaster. Kenaikan tipis di ujung kanan tidak mengubah kesimpulan karena nilainya tetap berada jauh di bawah nilai pada dua klaster, sekaligus menandakan bahwa penambahan klaster pada rentang tersebut hanya memecah kelompok yang sudah terbentuk tanpa memperbaiki pemisahannya. Perlu diperhatikan pula bahwa sumbu tegak Gambar 4.5 dipotong pada rentang yang sempit, sehingga selisih antartitik tampak lebih tajam daripada besaran sebenarnya.
+Rata-rata koefisien *silhouette* mencapai nilai tertinggi pada dua klaster, yaitu 0,3640, kemudian menurun berturut-turut hingga titik terendah 0,2643 pada enam klaster, dan naik tipis pada tujuh dan delapan klaster. Kenaikan tipis di ujung kanan tidak mengubah kesimpulan karena nilainya tetap berada jauh di bawah nilai pada dua klaster, sekaligus menandakan bahwa penambahan klaster pada rentang tersebut hanya memecah kelompok yang sudah terbentuk tanpa memperbaiki pemisahannya. Perlu diperhatikan pula bahwa sumbu tegak Gambar 11 dipotong pada rentang yang sempit, sehingga selisih antartitik tampak lebih tajam daripada besaran sebenarnya.
 
-Kedua kriteria karena itu menunjuk arah yang sama, dan penelitian ini menetapkan dua klaster sebagai solusi akhir. Ketetapan tersebut perlu dibaca bersama besaran koefisiennya. Kaufman dan Rousseeuw memandang klasifikasi yang memadai dicirikan oleh koefisien silhouette di atas 0,5, sedangkan koefisien rata-rata di bawah 0,2 ditafsirkan sebagai ketiadaan struktur klaster yang berarti (Everitt et al., 2011, hlm. 129). Koefisien 0,3640 yang diperoleh berada di antara kedua ambang tersebut. Struktur klaster pada data ini dengan demikian nyata tetapi lemah: rumah tangga di Provinsi DKI Jakarta tidak terpisah menjadi kelompok-kelompok yang berbatas tegas, melainkan membentuk sebaran menerus yang dipenggal pada titik paling wajar oleh algoritme. Penafsiran hasil selanjutnya karena itu diarahkan pada perbedaan kecenderungan antarkelompok, bukan pada penggolongan rumah tangga secara tegas.
+Kedua kriteria karena itu menunjuk arah yang sama, dan penelitian ini menetapkan dua klaster sebagai solusi akhir. Ketetapan tersebut perlu dibaca bersama besaran koefisiennya. Kaufman dan Rousseeuw memandang klasifikasi yang memadai dicirikan oleh koefisien *silhouette* di atas 0,5, sedangkan koefisien rata-rata di bawah 0,2 ditafsirkan sebagai ketiadaan struktur klaster yang berarti (Everitt et al., 2011, hlm. 129). Koefisien 0,3640 yang diperoleh berada di antara kedua ambang tersebut. Struktur klaster pada data ini dengan demikian nyata tetapi lemah: rumah tangga di Provinsi DKI Jakarta tidak terpisah menjadi kelompok-kelompok yang berbatas tegas, melainkan membentuk sebaran menerus yang dibagi oleh algoritme. Penafsiran hasil selanjutnya karena itu diarahkan pada perbedaan kecenderungan antarkelompok, bukan pada penggolongan rumah tangga secara tegas.
 
-Ketetapan dua klaster diuji pula terhadap pilihan transformasi variabel. Pengelompokan yang dijalankan tanpa transformasi logaritma menghasilkan koefisien silhouette yang jauh lebih tinggi, yaitu 0,6548, tetapi kenaikan itu berasal dari terpisahnya satu klaster kecil berisi 408 rumah tangga atau 8,16 persen sampel yang merupakan ekor atas sebaran pengeluaran. Pada saat yang sama, keeratan hubungan antara klaster dan kepemilikan air conditioner justru melemah, yaitu nilai *Cramér's V* menurun dari 0,5530 menjadi 0,3759, dan lebih dari sembilan puluh persen rumah tangga melebur dalam satu klaster sehingga karakter sosial ekonominya tidak lagi dapat dibedakan. Koefisien silhouette yang lebih tinggi pada versi tanpa transformasi dengan demikian mengukur terpisahnya pencilan, bukan menajamnya struktur sosial ekonomi yang menjadi sasaran penelitian. Hasil lengkap pembandingan tersebut disajikan pada Lampiran 1.
+Ketetapan dua klaster diuji pula terhadap pilihan transformasi variabel. Pengelompokan yang dijalankan tanpa transformasi logaritma menghasilkan koefisien *silhouette* yang jauh lebih tinggi, yaitu 0,6548, tetapi kenaikan itu berasal dari terpisahnya satu klaster kecil berisi 408 rumah tangga atau 8,16 persen sampel yang merupakan ekor atas sebaran pengeluaran. Pada saat yang sama, keeratan hubungan antara klaster dan kepemilikan *air conditioner* justru melemah, yaitu nilai *Cramér's V* menurun dari 0,5530 menjadi 0,3759, dan lebih dari sembilan puluh persen rumah tangga melebur dalam satu klaster sehingga karakter sosial ekonominya tidak lagi dapat dibedakan. Koefisien *silhouette* yang lebih tinggi pada versi tanpa transformasi dengan demikian mengukur terpisahnya pencilan, bukan menajamnya struktur sosial ekonomi yang menjadi sasaran penelitian. Hasil lengkap pembandingan tersebut disajikan pada Lampiran 1.
 
 **Hasil Pembentukan Klaster**
 
-Pengelompokan dengan metode K-Means atas 5.001 rumah tangga menghasilkan dua klaster dengan ukuran yang timpang. Klaster 1 memuat 3.329 rumah tangga atau 66,57 persen sampel, sedangkan Klaster 2 memuat 1.672 rumah tangga atau 33,43 persen sampel. Setelah penimbang rumah tangga Susenas diterapkan, komposisinya menjadi 60,11 persen untuk Klaster 1 dan 39,89 persen untuk Klaster 2. Pembentukan klaster dijalankan tanpa penimbang karena algoritme K-Means bekerja atas jarak antarpengamatan, sedangkan penimbang diterapkan pada tahap pelaporan komposisi dan penciri agar angka yang disajikan menggambarkan seluruh rumah tangga di Provinsi DKI Jakarta. Selisih antara persentase sampel dan persentase tertimbang menunjukkan bahwa rumah tangga berkarakter Klaster 2 sedikit terwakili berlebih dalam sampel dibandingkan porsinya dalam populasi.
+Pengelompokan dengan metode *K-Means* atas 5.001 rumah tangga menghasilkan dua klaster dengan ukuran yang timpang. Klaster 1 memuat 3.329 rumah tangga atau 66,57 persen sampel, sedangkan Klaster 2 memuat 1.672 rumah tangga atau 33,43 persen sampel. Setelah penimbang rumah tangga Susenas diterapkan, komposisinya menjadi 60,11 persen untuk Klaster 1 dan 39,89 persen untuk Klaster 2. Pembentukan klaster dijalankan tanpa penimbang karena algoritme *K-Means* bekerja atas jarak antarpengamatan, sedangkan penimbang diterapkan pada tahap pelaporan komposisi dan penciri agar angka yang disajikan menggambarkan seluruh rumah tangga di Provinsi DKI Jakarta. Selisih antara persentase sampel dan persentase tertimbang menunjukkan bahwa proporsi rumah tangga berkarakter Klaster 1 dalam sampel lebih besar daripada proporsinya dalam populasi, sedangkan proporsi rumah tangga berkarakter Klaster 2 dalam sampel lebih kecil daripada proporsinya dalam populasi.
 
-*Centroid* kedua klaster pada skala skor Z disajikan pada Tabel 5.
+*Centroid* kedua klaster pada skala *Z-score* disajikan pada Tabel 5.
 
-Tabel 5 Ukuran dan *Centroid* Klaster pada Skala Skor Z, DKI Jakarta, Maret 2025
+**Tabel 5 Ukuran dan *Centroid* Klaster pada Skala *Z-score*, DKI Jakarta, Maret 2025**
 
-Klaster	n sampel	Persen sampel	Persen tertimbang	z ln konsumsi listrik	z ln pengeluaran nonmakanan selain listrik	z lama sekolah KRT
-1	3.329	66,57	60,11	−0,4548	−0,5099	−0,3939
-2	1.672	33,43	39,89	0,9055	1,0152	0,7843
+| Klaster | n sampel | Persen sampel | Persen tertimbang | z ln konsumsi listrik | z ln pengeluaran nonmakanan selain listrik | z lama sekolah KRT |
+|---|---|---|---|---|---|---|
+| 1 | 3.329 | 66,57 | 60,11 | −0,4548 | −0,5099 | −0,3939 |
+| 2 | 1.672 | 33,43 | 39,89 | 0,9055 | 1,0152 | 0,7843 |
 
 Sumber: Susenas Maret 2025, diolah. Penomoran klaster diurutkan menaik menurut *centroid* konsumsi listrik, sehingga Klaster 1 selalu bermakna kelompok berkonsumsi lebih rendah.
 
-Tabel 5 memperlihatkan pola pemisahan yang seragam arahnya. Ketiga *centroid* Klaster 1 berada di bawah rata-rata seluruh rumah tangga dan ketiga *centroid* Klaster 2 berada di atasnya, tanpa satu pun variabel yang berlawanan arah. Kedua klaster karena itu terpisah menurut tingkat, yaitu tinggi rendahnya seluruh variabel secara bersamaan, bukan menurut komposisi, yaitu pertukaran antara satu variabel yang tinggi dan variabel lain yang rendah. Jarak baku terbesar terdapat pada pengeluaran nonmakanan selain listrik, yaitu 1,5251 simpangan baku antara kedua *centroid*, disusul konsumsi listrik sebesar 1,3603 dan lama sekolah kepala rumah tangga sebesar 1,1782. Kapasitas ekonomi dengan demikian merupakan sumbu pemisah yang paling kuat, sedangkan pendidikan kepala rumah tangga ikut membedakan kedua kelompok dengan jarak yang lebih pendek.
+Tabel 5 memperlihatkan pola pemisahan yang seragam arahnya. Ketiga *centroid* Klaster 1 berada di bawah rata-rata seluruh rumah tangga dan ketiga *centroid* Klaster 2 berada di atasnya, tanpa satu pun variabel yang berlawanan arah. Kedua klaster karena itu terpisah menurut tingkat, yaitu tinggi rendahnya seluruh variabel secara bersamaan, bukan menurut komposisi, yaitu pertukaran antara satu variabel yang tinggi dan variabel lain yang rendah. Jarak baku terbesar terdapat pada pengeluaran nonmakanan selain listrik, yaitu 1,5251 simpangan baku antara kedua *centroid*, disusul konsumsi listrik sebesar 1,3603 dan lama sekolah KRT sebesar 1,1782. Kapasitas ekonomi dengan demikian merupakan sumbu pemisah yang paling kuat, sedangkan pendidikan kepala rumah tangga ikut membedakan kedua kelompok dengan jarak yang lebih pendek.
 
-Sebaran kedua klaster pada dua komponen utama ditampilkan pada Gambar 4.6.
+Sebaran kedua klaster pada dua komponen utama ditampilkan pada Gambar 12.
 
-Gambar 4.6 Visualisasi Klaster Rumah Tangga pada Dua Komponen Utama, DKI Jakarta, Maret 2025
-(berkas 22_visualisasi_cluster_pca.png)
+> **[Posisi Gambar 12]** Gambar belum tersimpan di repo.
+<!-- keluaran R: 22_visualisasi_cluster_pca.png -->
+
+**Gambar 12 Visualisasi Klaster Rumah Tangga pada Dua Komponen Utama, DKI Jakarta, Maret 2025**
+
 Sumber: Susenas Maret 2025, diolah.
 
-Gambar 4.6 disusun dengan memproyeksikan ketiga variabel pembentuk klaster yang telah distandardisasi ke dalam dua komponen utama, semata-mata agar sebaran berdimensi tiga dapat ditampilkan pada bidang datar. Muatan variabel dan keragaman yang dijelaskan kedua sumbu disajikan pada Tabel 6.
+Gambar 12 disusun dengan memproyeksikan ketiga variabel pembentuk klaster yang telah distandardisasi ke dalam dua komponen utama, semata-mata agar sebaran berdimensi tiga dapat ditampilkan pada bidang datar. Muatan variabel dan keragaman yang dijelaskan kedua sumbu disajikan pada Tabel 6.
 
-Tabel 6 Muatan Variabel Pembentuk Klaster pada Dua Komponen Utama
+**Tabel 6 Muatan Variabel Pembentuk Klaster pada Dua Komponen Utama**
 
-Variabel	Komponen 1	Komponen 2
-ln konsumsi listrik	0,5822	0,5566
-ln pengeluaran nonmakanan selain listrik	0,6397	0,1363
-Lama sekolah kepala rumah tangga	0,5018	−0,8195
-Keragaman yang dijelaskan (persen)	65,42	23,88
+| Variabel | Komponen 1 | Komponen 2 |
+|---|---|---|
+| ln konsumsi listrik | 0,5822 | 0,5566 |
+| ln pengeluaran nonmakanan selain listrik | 0,6397 | 0,1363 |
+| Lama sekolah KRT | 0,5018 | −0,8195 |
+| Keragaman yang dijelaskan (persen) | 65,42 | 23,88 |
 
 Sumber: Susenas Maret 2025, diolah. Keragaman kumulatif kedua komponen sebesar 89,31 persen.
 
-Kedua komponen bersama-sama menjelaskan 89,31 persen keragaman data, sehingga penilaian visual atas pemisahan klaster pada Gambar 4.6 dapat dipercaya sebagai gambaran sebaran yang sebenarnya. Komponen pertama memuat ketiga variabel dengan tanda positif dan besaran yang berdekatan, yaitu berkisar antara 0,50 dan 0,64, sehingga sumbu mendatar dapat dibaca sebagai tingkat kemapanan energi dan ekonomi rumah tangga secara umum: bergerak ke kanan berarti konsumsi listrik, pengeluaran nonmakanan, dan lama sekolah kepala rumah tangga sama-sama lebih tinggi. Komponen kedua mempertentangkan lama sekolah kepala rumah tangga yang bermuatan negatif dengan konsumsi listrik yang bermuatan positif, sehingga sumbu tegak menangkap rumah tangga yang berkonsumsi listrik tinggi meskipun pendidikan kepala rumah tangganya relatif rendah, dan sebaliknya.
+Kedua komponen bersama-sama menjelaskan 89,31 persen keragaman data, sehingga penilaian visual atas pemisahan klaster pada Gambar 12 dapat dipercaya sebagai gambaran sebaran yang sebenarnya. Komponen pertama memuat ketiga variabel dengan tanda positif dan besaran yang berdekatan, yaitu berkisar antara 0,50 dan 0,64, sehingga sumbu mendatar dapat dibaca sebagai tingkat konsumsi listrik dan sosial ekonomi rumah tangga secara umum: bergerak ke kanan berarti konsumsi listrik, pengeluaran nonmakanan, dan lama sekolah KRT sama-sama lebih tinggi. Komponen kedua mempertentangkan lama sekolah KRT yang bermuatan negatif dengan konsumsi listrik yang bermuatan positif, sehingga sumbu tegak menangkap rumah tangga yang berkonsumsi listrik tinggi meskipun pendidikan kepala rumah tangganya relatif rendah, dan sebaliknya.
 
-Sebaran pada Gambar 4.6 memperlihatkan dua poligon yang menempati sisi kiri dan sisi kanan bidang dengan batas yang tegas pada sumbu mendatar dan hampir tanpa tumpang tindih, sedangkan pada sumbu tegak keduanya menempati rentang yang sama. *Centroid* Klaster 1 berada pada −0,7887 dan *centroid* Klaster 2 pada 1,5703 untuk komponen pertama, sementara pada komponen kedua keduanya praktis berimpit di angka nol, yaitu 0,0002 dan −0,0004. Temuan ini memperkuat bacaan atas Tabel 5: seluruh pemisahan kedua klaster terjadi pada satu sumbu tingkat kemapanan, dan tidak ada satu pun kelompok yang terbentuk karena perbedaan komposisi antara pendidikan dan konsumsi listrik. Pemisahan yang bersandar pada satu sumbu tunggal juga menjelaskan mengapa koefisien silhouette yang diperoleh tergolong lemah, karena rumah tangga tersebar menerus di sepanjang sumbu tersebut tanpa celah yang memisahkan kedua kelompok.
+Sebaran pada Gambar 12 memperlihatkan dua poligon yang menempati sisi kiri dan sisi kanan bidang dengan batas yang tegas pada sumbu mendatar dan hampir tanpa tumpang tindih, sedangkan pada sumbu tegak keduanya menempati rentang yang sama. *Centroid* Klaster 1 berada pada −0,7887 dan *centroid* Klaster 2 pada 1,5703 untuk komponen pertama, sementara pada komponen kedua keduanya praktis berimpit di angka nol, yaitu 0,0002 dan −0,0004. Temuan ini memperkuat bacaan atas Tabel 5: seluruh pemisahan kedua klaster terjadi pada satu sumbu tingkat konsumsi listrik dan sosial ekonomi, dan tidak ada satu pun kelompok yang terbentuk karena perbedaan komposisi antara pendidikan dan konsumsi listrik. Pemisahan yang bersandar pada satu sumbu tunggal juga menjelaskan mengapa koefisien *silhouette* yang diperoleh tergolong lemah, karena rumah tangga tersebar menerus di sepanjang sumbu tersebut tanpa celah yang memisahkan kedua kelompok.
 
 ## 4.3 Perbedaan Karakteristik Sosial Ekonomi Antarklaster
 
@@ -849,60 +958,65 @@ Subbab ini menjawab tujuan ketiga penelitian, yaitu menganalisis perbedaan karak
 
 **Profil Klaster**
 
-Karakter kedua klaster diuraikan dengan membandingkan nilai rata-rata dan nilai tengah sejumlah indikator pada masing-masing kelompok. Seluruh nilai rata-rata dihitung dengan penimbang rumah tangga Susenas agar angkanya menggambarkan rumah tangga di Provinsi DKI Jakarta, bukan semata rumah tangga terpilih dalam sampel. Nilai tengah disajikan tanpa penimbang sebagai pembanding, karena posisinya berguna untuk menunjukkan seberapa jauh rata-rata tertarik oleh rumah tangga berkonsumsi sangat tinggi. Perlu diingat bahwa pembentukan klaster sendiri dilakukan tanpa penimbang, sehingga penimbang di sini berperan pada tahap pelaporan, bukan pada tahap pengelompokan. Profil selengkapnya disajikan pada Tabel 7.
+Karakter kedua klaster diuraikan dengan membandingkan nilai rata-rata dan median sejumlah indikator pada masing-masing kelompok. Seluruh nilai rata-rata dihitung dengan penimbang rumah tangga Susenas agar angkanya menggambarkan rumah tangga di Provinsi DKI Jakarta, bukan semata rumah tangga terpilih dalam sampel. Median disajikan tanpa penimbang sebagai pembanding, karena posisinya berguna untuk menunjukkan seberapa jauh rata-rata tertarik oleh rumah tangga berkonsumsi sangat tinggi. Perlu diingat bahwa pembentukan klaster sendiri dilakukan tanpa penimbang, sehingga penimbang di sini berperan pada tahap pelaporan, bukan pada tahap pengelompokan. Profil selengkapnya disajikan pada Tabel 7.
 
-Tabel 7 Profil Tertimbang Rumah Tangga menurut Klaster
+**Tabel 7 Profil Tertimbang Rumah Tangga menurut Klaster**
 
-Indikator	Klaster 1	Klaster 2
-Jumlah rumah tangga sampel	3.329	1.672
-Jumlah rumah tangga tertimbang	1.744.440	1.157.822
-Persentase tertimbang (persen)	60,11	39,89
-Rata-rata konsumsi listrik (kWh per bulan)	186,61	645,34
-Median konsumsi listrik (kWh per bulan)	163,36	435,05
-Rata-rata konsumsi listrik per kapita (kWh per bulan)	60,08	198,88
-Median konsumsi listrik per kapita (kWh per bulan)	58,26	152,67
-Rata-rata pengeluaran listrik (rupiah per bulan)	180.146	789.474
-Median pengeluaran listrik (rupiah per bulan)	145.000	486.000
-Rata-rata pengeluaran nonmakanan selain listrik (rupiah per bulan)	2.509.606	10.821.847
-Median pengeluaran nonmakanan selain listrik (rupiah per bulan)	2.030.833	6.140.250
-Rata-rata ukuran rumah tangga (orang)	3,65	3,71
-Rata-rata lama sekolah kepala rumah tangga (tahun)	9,83	13,74
-Proporsi memiliki AC (persen)	17,02	76,07
-Rata-rata pangsa pengeluaran listrik terhadap pengeluaran nonmakanan (persen)	7,05	7,63
+| Indikator | Klaster 1 | Klaster 2 |
+|---|---|---|
+| Jumlah rumah tangga sampel | 3.329 | 1.672 |
+| Jumlah rumah tangga tertimbang | 1.744.440 | 1.157.822 |
+| Persentase tertimbang (persen) | 60,11 | 39,89 |
+| Rata-rata konsumsi listrik (kWh per bulan) | 186,61 | 645,34 |
+| Median konsumsi listrik (kWh per bulan) | 163,36 | 435,05 |
+| Rata-rata konsumsi listrik per kapita (kWh per bulan) | 60,08 | 198,88 |
+| Median konsumsi listrik per kapita (kWh per bulan) | 58,26 | 152,67 |
+| Rata-rata pengeluaran listrik (rupiah per bulan) | 180.146 | 789.474 |
+| Median pengeluaran listrik (rupiah per bulan) | 145.000 | 486.000 |
+| Rata-rata pengeluaran nonmakanan selain listrik (rupiah per bulan) | 2.509.606 | 10.821.847 |
+| Median pengeluaran nonmakanan selain listrik (rupiah per bulan) | 2.030.833 | 6.140.250 |
+| Rata-rata ukuran rumah tangga (orang) | 3,65 | 3,71 |
+| Rata-rata lama sekolah KRT (tahun) | 9,83 | 13,74 |
+| Proporsi memiliki AC (persen) | 17,02 | 76,07 |
+| Rata-rata pangsa pengeluaran listrik terhadap pengeluaran nonmakanan (persen) | 7,05 | 7,63 |
 
-Sumber: Susenas Maret 2025, diolah. Nilai tengah dihitung tanpa penimbang.
+Sumber: Susenas Maret 2025, diolah. Median dihitung tanpa penimbang.
 
 Klaster 1 mencakup 3.329 rumah tangga sampel yang mewakili sekitar 1.744.440 rumah tangga atau 60,11 persen rumah tangga di Provinsi DKI Jakarta, sedangkan Klaster 2 mencakup 1.672 rumah tangga sampel yang mewakili sekitar 1.157.822 rumah tangga atau 39,89 persen. Kelompok yang lebih besar karena itu adalah kelompok dengan konsumsi listrik lebih rendah, dan kelompok dengan konsumsi tinggi merupakan minoritas yang cukup besar, yaitu sekitar dua dari setiap lima rumah tangga.
 
-Perbedaan paling mencolok terletak pada konsumsi listrik. Rata-rata konsumsi Klaster 2 sebesar 645,34 kWh per bulan, yaitu sekitar 3,46 kali rata-rata Klaster 1 yang sebesar 186,61 kWh per bulan. Perbedaan tersebut bertahan ketika konsumsi dihitung per anggota rumah tangga: 198,88 kWh per kapita pada Klaster 2 berbanding 60,08 kWh per kapita pada Klaster 1, atau sekitar 3,31 kali. Kesenjangan konsumsi antara kedua klaster karena itu tidak dapat dijelaskan oleh perbedaan jumlah penghuni, melainkan oleh perbedaan intensitas penggunaan listrik per orang. Pada kedua klaster, nilai rata-rata tetap berada di atas nilai tengahnya, yang menunjukkan bahwa kemencengan sebaran ke kanan tidak hilang oleh pengelompokan, melainkan tetap ada di dalam masing-masing kelompok.
+Perbedaan paling mencolok terletak pada konsumsi listrik. Rata-rata konsumsi Klaster 2 sebesar 645,34 kWh per bulan, yaitu sekitar 3,46 kali rata-rata Klaster 1 yang sebesar 186,61 kWh per bulan. Perbedaan tersebut bertahan ketika konsumsi dihitung per anggota rumah tangga: 198,88 kWh per kapita pada Klaster 2 berbanding 60,08 kWh per kapita pada Klaster 1, atau sekitar 3,31 kali. Kesenjangan konsumsi antara kedua klaster karena itu tidak dapat dijelaskan oleh perbedaan jumlah penghuni, melainkan oleh perbedaan intensitas penggunaan listrik per orang. Pada kedua klaster, nilai rata-rata tetap berada di atas mediannya, yang menunjukkan bahwa kemencengan sebaran ke kanan tidak hilang oleh pengelompokan, melainkan tetap ada di dalam masing-masing kelompok.
 
-[Sisipkan Gambar 4.7 di sini]
+> **[Posisi Gambar 13]** Gambar belum tersimpan di repo.
+<!-- keluaran R: belum ditentukan -->
 
-Gambar 4.7 Rata-Rata Konsumsi Listrik Rumah Tangga menurut Klaster
+**Gambar 13 Rata-Rata Konsumsi Listrik Rumah Tangga menurut Klaster**
 
 Sumber: Susenas Maret 2025, diolah.
 
 Perbedaan konsumsi listrik tersebut tidak berbanding lurus dengan perbedaan pengeluaran listriknya. Rata-rata pengeluaran listrik Klaster 2 sebesar Rp789.474 per bulan, yaitu sekitar 4,38 kali rata-rata Klaster 1 yang sebesar Rp180.146 per bulan, sedangkan rasio konsumsinya hanya 3,46 kali. Selisih kedua rasio tersebut merupakan konsekuensi langsung dari struktur tarif tenaga listrik yang berjenjang menurut golongan daya terpasang: rumah tangga Klaster 2 sebagian besar berada pada golongan daya 1.300 VA ke atas (Tabel 8), sehingga membayar tarif per kWh yang lebih tinggi daripada rumah tangga bersubsidi. Temuan ini sekaligus menunjukkan bahwa penggunaan tarif berjenjang dalam konversi pengeluaran menjadi kWh memang diperlukan; penggunaan satu tarif rata-rata akan membuat konsumsi listrik hasil konversi menjadi kelipatan tetap dari pengeluaran listrik sehingga kedua rasio tersebut dipaksa sama.
 
-[Sisipkan Gambar 4.8 di sini]
+> **[Posisi Gambar 14]** Gambar belum tersimpan di repo.
+<!-- keluaran R: belum ditentukan -->
 
-Gambar 4.8 Sebaran Konsumsi Listrik Rumah Tangga menurut Klaster
+**Gambar 14 Sebaran Konsumsi Listrik Rumah Tangga menurut Klaster**
 
-Sumber: Susenas Maret 2025, diolah. Deretan titik mendatar pada nilai tertinggi merupakan akibat pembatasan nilai ekstrem pada persentil ke-99 (winsorizing), bukan penumpukan rumah tangga pada satu nilai konsumsi yang sama.
+Sumber: Susenas Maret 2025, diolah. Deretan titik mendatar pada nilai tertinggi merupakan akibat pembatasan nilai ekstrem pada persentil ke-99 (*winsorizing*), bukan penumpukan rumah tangga pada satu nilai konsumsi yang sama.
 
 Kesenjangan yang serupa terlihat pada kapasitas ekonomi rumah tangga. Rata-rata pengeluaran nonmakanan selain listrik pada Klaster 2 sebesar Rp10.821.847 per bulan, yaitu sekitar 4,31 kali rata-rata Klaster 1 yang sebesar Rp2.509.606 per bulan. Meskipun demikian, pangsa pengeluaran listrik terhadap pengeluaran nonmakanan pada kedua kelompok hampir sama, yaitu 7,05 persen pada Klaster 1 dan 7,63 persen pada Klaster 2. Kedua angka tersebut memberi arti penting bagi penafsiran: perbedaan antara kedua klaster bukan terletak pada porsi anggaran yang dialokasikan untuk listrik, melainkan pada besaran anggaran itu sendiri. Rumah tangga pada kedua kelompok membelanjakan bagian yang kurang lebih sebanding dari pengeluaran nonmakanannya untuk listrik, tetapi bekerja pada skala anggaran yang berbeda jauh.
 
-[Sisipkan Gambar 4.9 di sini]
+> **[Posisi Gambar 15]** Gambar belum tersimpan di repo.
+<!-- keluaran R: belum ditentukan -->
 
-Gambar 4.9 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik menurut Klaster
+**Gambar 15 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik menurut Klaster**
 
-Sumber: Susenas Maret 2025, diolah. Deretan titik pada tepi grafik merupakan akibat pembatasan nilai ekstrem pada persentil ke-99 (winsorizing).
+Sumber: Susenas Maret 2025, diolah. Deretan titik pada tepi grafik merupakan akibat pembatasan nilai ekstrem pada persentil ke-99 (*winsorizing*).
 
-Lama sekolah kepala rumah tangga bergerak searah dengan kedua indikator di atas. Rata-rata lama sekolah kepala rumah tangga pada Klaster 1 sebesar 9,83 tahun, sedangkan pada Klaster 2 sebesar 13,74 tahun, sehingga selisihnya mencapai 3,90 tahun. Secara jenjang, rata-rata Klaster 1 berada di sekitar tamat sekolah menengah pertama, sementara rata-rata Klaster 2 telah melampaui tamat sekolah menengah atas. Komposisi kategori pendidikannya memperjelas perbedaan tersebut, sebagaimana terlihat pada Gambar 4.10: pada Klaster 1, kepala rumah tangga berpendidikan menengah merupakan kelompok terbesar dan kepala rumah tangga berpendidikan tinggi hanya sebagian kecil, sedangkan pada Klaster 2 kepala rumah tangga berpendidikan tinggi merupakan kelompok terbesar dan kepala rumah tangga berpendidikan rendah nyaris tidak ada. Dengan demikian, ketiga variabel pembentuk klaster bergerak ke arah yang sama, dan pengelompokan yang dihasilkan mencerminkan satu sumbu tingkat kemapanan sebagaimana telah disimpulkan dari muatan komponen utama pada Tabel 6.
+Lama sekolah KRT bergerak searah dengan kedua indikator di atas. Rata-rata lama sekolah KRT pada Klaster 1 sebesar 9,83 tahun, sedangkan pada Klaster 2 sebesar 13,74 tahun, sehingga selisihnya mencapai 3,90 tahun. Secara jenjang, rata-rata Klaster 1 berada di sekitar tamat sekolah menengah pertama, sementara rata-rata Klaster 2 telah melampaui tamat sekolah menengah atas. Komposisi kategori pendidikannya memperjelas perbedaan tersebut, sebagaimana terlihat pada Gambar 16: pada Klaster 1, kepala rumah tangga berpendidikan menengah merupakan kelompok terbesar dan kepala rumah tangga berpendidikan tinggi hanya sebagian kecil, sedangkan pada Klaster 2 kepala rumah tangga berpendidikan tinggi merupakan kelompok terbesar dan kepala rumah tangga berpendidikan rendah nyaris tidak ada. Dengan demikian, ketiga variabel pembentuk klaster bergerak ke arah yang sama, dan pengelompokan yang dihasilkan mencerminkan satu sumbu tingkat konsumsi listrik dan sosial ekonomi sebagaimana telah disimpulkan dari muatan komponen utama pada Tabel 6.
 
-[Sisipkan Gambar 4.10 di sini]
+> **[Posisi Gambar 16]** Gambar belum tersimpan di repo.
+<!-- keluaran R: belum ditentukan -->
 
-Gambar 4.10 Komposisi Pendidikan Kepala Rumah Tangga menurut Klaster
+**Gambar 16 Komposisi Pendidikan Kepala Rumah Tangga menurut Klaster**
 
 Sumber: Susenas Maret 2025, diolah.
 
@@ -912,57 +1026,63 @@ Berdasarkan keseluruhan profil tersebut, Klaster 1 dapat dibaca sebagai kelompok
 
 **Pengujian Hipotesis pada Variabel Penciri**
 
-Profil pada Tabel 7 menggambarkan perbedaan kedua klaster pada variabel pembentuknya, tetapi perbedaan tersebut tidak dapat dijadikan bukti karena variabel itulah yang menentukan keanggotaan klaster. Bukti diperoleh dengan memeriksa variabel yang tidak dipakai algoritme dalam menentukan keanggotaan klaster. Bila kedua kelompok yang terbentuk dari konsumsi listrik, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga ternyata juga berbeda pada kepemilikan peralatan rumah tangga dan kondisi hunian, perbedaan tersebut tidak dihasilkan langsung oleh algoritme dan dapat dibaca sebagai ciri kelompok. Lima variabel penciri diperiksa, yaitu luas lantai tempat tinggal, kepemilikan air conditioner (AC), kepemilikan lemari es, golongan daya terpasang, dan ukuran rumah tangga. Hanya tiga variabel pertama yang menjadi dasar keputusan hipotesis. Profil kelima variabel tersebut disajikan pada Tabel 8.
+Profil pada Tabel 7 menggambarkan perbedaan kedua klaster pada variabel pembentuknya, tetapi perbedaan tersebut tidak dapat dijadikan bukti karena variabel itulah yang menentukan keanggotaan klaster. Bukti diperoleh dengan memeriksa variabel yang tidak dipakai algoritme dalam menentukan keanggotaan klaster. Bila kedua kelompok yang terbentuk dari konsumsi listrik, pengeluaran nonmakanan selain listrik, dan lama sekolah KRT ternyata juga berbeda pada kepemilikan peralatan rumah tangga dan kondisi hunian, perbedaan tersebut tidak dihasilkan langsung oleh algoritme dan dapat dibaca sebagai ciri kelompok. Lima variabel penciri diperiksa, yaitu luas lantai tempat tinggal, kepemilikan *air conditioner* (AC), kepemilikan lemari es, golongan daya terpasang, dan ukuran rumah tangga. Hanya tiga variabel pertama yang menjadi dasar keputusan hipotesis. Profil kelima variabel tersebut disajikan pada Tabel 8.
 
-Tabel 8 Profil Variabel Penciri Menurut Klaster
+**Tabel 8 Profil Variabel Penciri menurut Klaster**
 
-Variabel penciri	Satuan	Klaster 1	Klaster 2
-Jumlah rumah tangga sampel	rumah tangga	3.329	1.672
-Luas lantai, rata-rata tertimbang	m²	42,52	106,17
-Luas lantai, nilai tengah tidak tertimbang	m²	30	80
-Kepemilikan AC	persen	17,02	76,07
-Kepemilikan lemari es	persen	87,27	98,25
-Golongan daya 450 VA	persen	8,9	6,3
-Golongan daya 900 VA	persen	37,1	15,6
-Golongan daya 1.300 VA atau lebih	persen	53,9	78,1
-Ukuran rumah tangga, rata-rata tertimbang	jiwa	3,65	3,71
-Ukuran rumah tangga, rata-rata tidak tertimbang	jiwa	3,03	3,24
+| Variabel penciri | Satuan | Klaster 1 | Klaster 2 |
+|---|---|---|---|
+| Jumlah rumah tangga sampel | rumah tangga | 3.329 | 1.672 |
+| Luas lantai, rata-rata tertimbang | m² | 42,52 | 106,17 |
+| Luas lantai, median tidak tertimbang | m² | 30 | 80 |
+| Kepemilikan AC | persen | 17,02 | 76,07 |
+| Kepemilikan lemari es | persen | 87,27 | 98,25 |
+| Golongan daya 450 VA | persen | 8,9 | 6,3 |
+| Golongan daya 900 VA | persen | 37,1 | 15,6 |
+| Golongan daya 1.300 VA atau lebih | persen | 53,9 | 78,1 |
+| Ukuran rumah tangga, rata-rata tertimbang | orang | 3,65 | 3,71 |
+| Ukuran rumah tangga, rata-rata tidak tertimbang | orang | 3,03 | 3,24 |
 
 Sumber: Susenas Maret 2025, diolah.
 
-Catatan: seluruh persentase dihitung dengan penimbang rumah tangga; nilai tengah luas lantai disajikan tanpa penimbang. Luas lantai merupakan nilai setelah winsorizing pada persentil 1 dan 99. Persentase golongan daya merupakan persentase baris dan tidak selalu berjumlah tepat seratus akibat pembulatan.
+Catatan: seluruh persentase dihitung dengan penimbang rumah tangga; median luas lantai disajikan tanpa penimbang. Luas lantai merupakan nilai setelah *winsorizing* pada persentil 1 dan 99. Persentase golongan daya merupakan persentase baris dan tidak selalu berjumlah tepat seratus akibat pembulatan.
 
-Perbedaan terbesar muncul pada luas lantai dan kepemilikan AC. Rata-rata luas lantai Klaster 2 mencapai dua setengah kali rata-rata Klaster 1, dengan selisih sekitar 64 m², sedangkan nilai tengahnya berselisih 50 m². Kedua ukuran pemusatan bergerak searah, sehingga selisih ini tidak dapat dijelaskan oleh segelintir rumah tangga berhunian sangat luas. Nilai luas lantai yang dipakai merupakan hasil winsorizing pada persentil ke-1 dan ke-99. Pada kepemilikan AC, selisihnya mencapai 59 poin persentase: tiga dari empat rumah tangga Klaster 2 memiliki AC, sedangkan pada Klaster 1 kepemilikan AC merupakan pengecualian dan hanya dijumpai pada kurang dari seperlima rumah tangga. Sebaran ini disajikan pada Gambar 4.11.
+Perbedaan terbesar muncul pada luas lantai dan kepemilikan AC. Rata-rata luas lantai Klaster 2 mencapai dua setengah kali rata-rata Klaster 1, dengan selisih sekitar 64 m², sedangkan mediannya berselisih 50 m². Kedua ukuran pemusatan bergerak searah, sehingga selisih ini tidak dapat dijelaskan oleh segelintir rumah tangga berhunian sangat luas. Nilai luas lantai yang dipakai merupakan hasil *winsorizing* pada persentil ke-1 dan ke-99. Pada kepemilikan AC, selisihnya mencapai 59 poin persentase: tiga dari empat rumah tangga Klaster 2 memiliki AC, sedangkan pada Klaster 1 kepemilikan AC merupakan pengecualian dan hanya dijumpai pada kurang dari seperlima rumah tangga. Sebaran ini disajikan pada Gambar 17.
 
-Gambar 4.11 Proporsi Kepemilikan AC Menurut Klaster
+> **[Posisi Gambar 17]** Gambar belum tersimpan di repo.
+<!-- keluaran R: belum ditentukan -->
+
+**Gambar 17 Proporsi Kepemilikan AC menurut Klaster**
+
 Sumber: Susenas Maret 2025, diolah.
 
 Kepemilikan lemari es memperlihatkan pola yang berbeda sifatnya. Selisihnya memang searah, yaitu 98,25 persen berbanding 87,27 persen, tetapi hanya sekitar sebelas poin persentase karena lemari es telah dimiliki hampir seluruh rumah tangga pada kedua kelompok. Variabel ini karena itu tidak berfungsi memisahkan kedua klaster, melainkan menunjukkan bahwa perbedaan antarkelompok tidak terletak pada pemenuhan kebutuhan dasar peralatan rumah tangga, melainkan pada kepemilikan peralatan yang bersifat tambahan dan berdaya besar seperti AC.
 
 Sebaran golongan daya terpasang bergerak searah dengan ketiga penciri sebelumnya. Sebanyak 78,1 persen rumah tangga Klaster 2 tersambung pada daya 1.300 VA atau lebih, berbanding 53,9 persen pada Klaster 1, sementara golongan 900 VA jauh lebih padat pada Klaster 1, yaitu 37,1 persen berbanding 15,6 persen. Satu hal perlu dinyatakan terbuka dalam membaca baris ini. Golongan daya terpasang dipakai pada tahap persiapan data untuk menetapkan tarif yang mengonversi pengeluaran listrik menjadi konsumsi listrik, sehingga variabel ini ikut menentukan nilai variabel pembentuk pertama. Sebaran pada Tabel 8 karenanya disajikan sebagai deskripsi karakteristik kelistrikan kedua kelompok, bukan sebagai bukti bebas yang memvalidasi pemisahan klaster. Penilaian atas pemisahan itu bersandar pada luas lantai, kepemilikan AC, dan kepemilikan lemari es, yang tidak dipakai dalam pembentukan klaster maupun dalam penyusunan nilai variabel pembentuknya.
 
-Ukuran rumah tangga menuntut kehati-hatian yang berbeda. Rata-rata tertimbangnya adalah 3,71 jiwa pada Klaster 2 dan 3,65 jiwa pada Klaster 1, sehingga selisihnya hanya 0,06 jiwa. Kedua versi pengujian pada Tabel 9 memberikan kesimpulan yang berbeda untuk variabel ini. Uji tanpa penimbang menghasilkan p-value di bawah 0,001, tetapi uji berbasis desain menghasilkan p-value sebesar 0,362, sehingga perbedaan ukuran rumah tangga antarklaster tidak signifikan (gagal tolak H₀) setelah rancangan sampel diperhitungkan. Uji tanpa penimbang memperlakukan 5.001 rumah tangga sebagai pengamatan yang saling bebas, sedangkan uji berbasis desain memperhitungkan bahwa rumah tangga sampel terkumpul di dalam 512 PSU pada 6 strata. Hasil uji berbasis desain sejalan dengan besaran selisihnya: kedua kelompok praktis memiliki ukuran rumah tangga yang sama. Ukuran rumah tangga karena itu tidak ditetapkan sebagai penciri kedua klaster. Selain itu, rata-rata tertimbang pada kedua kelompok konsisten lebih besar daripada rata-rata tidak tertimbangnya, yaitu 3,65 berbanding 3,03 jiwa pada Klaster 1 dan 3,71 berbanding 3,24 jiwa pada Klaster 2. Pola ini menunjukkan bahwa penimbang rumah tangga Susenas tidak bebas terhadap ukuran rumah tangga, sehingga kedua versi angka dilaporkan berdampingan alih-alih memilih salah satunya.
+Ukuran rumah tangga menuntut kehati-hatian yang berbeda. Rata-rata tertimbangnya adalah 3,71 orang pada Klaster 2 dan 3,65 orang pada Klaster 1, sehingga selisihnya hanya 0,06 orang. Kedua versi pengujian pada Tabel 9 memberikan kesimpulan yang berbeda untuk variabel ini. Uji tanpa penimbang menghasilkan *p-value* di bawah 0,001, tetapi uji berbasis desain menghasilkan *p-value* sebesar 0,362, sehingga perbedaan ukuran rumah tangga antarklaster tidak signifikan (gagal tolak H₀) setelah rancangan sampel diperhitungkan. Uji tanpa penimbang memperlakukan 5.001 rumah tangga sebagai pengamatan yang saling bebas, sedangkan uji berbasis desain memperhitungkan bahwa rumah tangga sampel terkumpul di dalam 512 PSU pada 6 strata. Hasil uji berbasis desain sejalan dengan besaran selisihnya: kedua kelompok praktis memiliki ukuran rumah tangga yang sama. Ukuran rumah tangga karena itu tidak ditetapkan sebagai penciri kedua klaster. Selain itu, rata-rata tertimbang pada kedua kelompok konsisten lebih besar daripada rata-rata tidak tertimbangnya, yaitu 3,65 berbanding 3,03 orang pada Klaster 1 dan 3,71 berbanding 3,24 orang pada Klaster 2. Pola ini menunjukkan bahwa penimbang rumah tangga Susenas tidak bebas terhadap ukuran rumah tangga, sehingga kedua versi angka dilaporkan berdampingan alih-alih memilih salah satunya.
 
 Perbedaan kelima variabel di atas diuji secara formal dengan dua versi perhitungan, yaitu tanpa penimbang dan dengan penimbang berbasis desain survei. Hasil keduanya disajikan pada Tabel 9.
 
-Tabel 9 Uji Beda dan Ukuran Asosiasi Variabel Penciri Antarklaster
+**Tabel 9 Uji Beda dan Ukuran Asosiasi Variabel Penciri Antarklaster**
 
-Variabel penciri	Uji tanpa penimbang	Statistik	p-value	Uji berbasis desain	Statistik	p-value	Cramér's V
-Luas lantai	Kruskal–Wallis	H = 1.154,5859 (db 1)	< 0,001	Kruskal–Wallis berbasis desain	t = 24,356 (db 505)	< 0,001	–
-Kepemilikan AC	*Chi-square* Pearson	χ² = 1.529,4057 (db 1)	< 0,001	Rao–Scott orde kedua	F = 733,40 (db 1; 506)	< 0,001	0,553
-Kepemilikan lemari es	*Chi-square* Pearson	χ² = 229,8040 (db 1)	< 0,001	Rao–Scott orde kedua	F = 91,593 (db 1; 506)	< 0,001	0,214
-Golongan daya terpasang	*Chi-square* Pearson	χ² = 292,96 (db 2)	< 0,001	Rao–Scott orde kedua	F = 62,124 (db 1,99; 1.008,05)	< 0,001	0,242
-Ukuran rumah tangga	Kruskal–Wallis	H = 24,2546 (db 1)	< 0,001	Kruskal–Wallis berbasis desain	t = 0,912 (db 505)	0,362	–
+| Variabel penciri | Uji tanpa penimbang | Statistik | *p-value* | Uji berbasis desain | Statistik | *p-value* | *Cramér's V* |
+|---|---|---|---|---|---|---|---|
+| Luas lantai | Kruskal–Wallis | H = 1.154,5859 (db 1) | < 0,001 | Kruskal–Wallis berbasis desain | t = 24,356 (db 505) | < 0,001 | – |
+| Kepemilikan AC | *Chi-square* Pearson | χ² = 1.529,4057 (db 1) | < 0,001 | Rao–Scott orde kedua | F = 733,40 (db 1; 506) | < 0,001 | 0,553 |
+| Kepemilikan lemari es | *Chi-square* Pearson | χ² = 229,8040 (db 1) | < 0,001 | Rao–Scott orde kedua | F = 91,593 (db 1; 506) | < 0,001 | 0,214 |
+| Golongan daya terpasang | *Chi-square* Pearson | χ² = 292,96 (db 2) | < 0,001 | Rao–Scott orde kedua | F = 62,124 (db 1,99; 1.008,05) | < 0,001 | 0,242 |
+| Ukuran rumah tangga | Kruskal–Wallis | H = 24,2546 (db 1) | < 0,001 | Kruskal–Wallis berbasis desain | t = 0,912 (db 505) | 0,362 | – |
 
 Sumber: Susenas Maret 2025, diolah.
 
-Catatan: *chi-square* Pearson dihitung tanpa koreksi Yates. Uji berbasis desain memperhitungkan penimbang, PSU, dan strata Susenas; derajat bebas uji F ditulis sebagai (db pembilang; db penyebut). Cramér's V dihitung dari statistik *chi-square* tanpa penimbang. Luas lantai dan ukuran rumah tangga bersifat numerik sehingga tidak memiliki Cramér's V. Uji golongan daya terpasang mencakup 5.001 rumah tangga yang seluruhnya memiliki kode golongan daya.
+Catatan: *chi-square* Pearson dihitung tanpa koreksi Yates. Uji berbasis desain memperhitungkan penimbang, PSU, dan strata Susenas; derajat bebas uji F ditulis sebagai (db pembilang; db penyebut). *Cramér's V* dihitung dari statistik *chi-square* tanpa penimbang. Luas lantai dan ukuran rumah tangga bersifat numerik sehingga tidak memiliki *Cramér's V*. Uji golongan daya terpasang mencakup 5.001 rumah tangga yang seluruhnya memiliki kode golongan daya.
 
 Dua pembacaan muncul dari tabel tersebut. Pertama, empat dari lima variabel penciri, yaitu luas lantai, kepemilikan AC, kepemilikan lemari es, dan golongan daya terpasang, berbeda signifikan antarklaster pada taraf nyata 1 persen, dan kesimpulan itu tidak berubah ketika perhitungan dilakukan tanpa penimbang maupun dengan memperhitungkan rancangan sampel. Keselarasan kedua versi perhitungan ini penting karena pembentukan klaster dilakukan tanpa penimbang, sedangkan pelaporan profilnya menggunakan penimbang. Ukuran rumah tangga menjadi satu-satunya pengecualian: perbedaannya signifikan pada uji tanpa penimbang tetapi tidak signifikan pada uji berbasis desain, sehingga variabel ini tidak diperlakukan sebagai pembeda antarklaster.
 
-Kedua, besaran hubungan antarvariabel penciri berbeda jauh. Kepemilikan AC memiliki Cramér's V sebesar 0,553, yaitu lebih dari dua kali nilai pada golongan daya terpasang (0,242) dan kepemilikan lemari es (0,214). Urutan ini sejalan dengan selisih persentase pada Tabel 8 dan menegaskan bahwa kepemilikan AC merupakan penciri terkuat di antara variabel yang tidak dipakai membentuk klaster.
+Kedua, besaran hubungan antarvariabel penciri berbeda jauh. Kepemilikan AC memiliki *Cramér's V* sebesar 0,553, yaitu lebih dari dua kali nilai pada golongan daya terpasang (0,242) dan kepemilikan lemari es (0,214). Urutan ini sejalan dengan selisih persentase pada Tabel 8 dan menegaskan bahwa kepemilikan AC merupakan penciri terkuat di antara variabel yang tidak dipakai membentuk klaster.
 
-Hasil tersebut menjadi dasar keputusan atas hipotesis penelitian. Sesuai kriteria keputusan hipotesis, ketiga variabel penciri yang dirumuskan dalam hipotesis berbeda signifikan pada taraf nyata 1 persen pada uji dengan penimbang, dan ketiganya menunjukkan arah yang dinyatakan dalam hipotesis: Klaster 2, yaitu klaster dengan konsumsi listrik lebih tinggi, memiliki persentase kepemilikan AC dan lemari es yang lebih tinggi serta rata-rata luas lantai yang lebih besar daripada Klaster 1 (Tabel 8). Hipotesis penelitian karena itu didukung. Kekuatan dukungan dari ketiga variabel tersebut tidak sama. Kepemilikan AC dipakai sebagai kriteria pemilihan spesifikasi variabel pembentuk, sehingga perbedaannya tidak sepenuhnya bebas dari proses pembentukan klaster. Kepemilikan lemari es dan luas lantai tidak dipakai pada tahap mana pun sebelum profiling dan menunjukkan arah yang sama, sehingga dukungan terhadap hipotesis tidak bertumpu pada kepemilikan AC saja. Di antara keduanya, luas lantai memberi dukungan yang lebih tegas, sedangkan selisih kepemilikan lemari es tipis karena peralatan tersebut telah dimiliki hampir seluruh rumah tangga pada kedua klaster.
+Hasil tersebut menjadi dasar keputusan atas hipotesis penelitian. Sesuai kriteria keputusan hipotesis, ketiga variabel penciri yang dirumuskan dalam hipotesis berbeda signifikan pada taraf nyata 1 persen pada uji dengan penimbang, dan ketiganya menunjukkan arah yang dinyatakan dalam hipotesis: Klaster 2, yaitu klaster dengan konsumsi listrik lebih tinggi, memiliki persentase kepemilikan AC dan lemari es yang lebih tinggi serta rata-rata luas lantai yang lebih besar daripada Klaster 1 (Tabel 8). Hipotesis penelitian karena itu didukung. Kekuatan dukungan dari ketiga variabel tersebut tidak sama. Kepemilikan AC dipakai sebagai kriteria pemilihan spesifikasi variabel pembentuk, sehingga perbedaannya tidak sepenuhnya bebas dari proses pembentukan klaster. Kepemilikan lemari es dan luas lantai tidak dipakai pada tahap mana pun sebelum *profiling* dan menunjukkan arah yang sama, sehingga dukungan terhadap hipotesis tidak bertumpu pada kepemilikan AC saja. Di antara keduanya, luas lantai memberi dukungan yang lebih tegas, sedangkan selisih kepemilikan lemari es tipis karena peralatan tersebut telah dimiliki hampir seluruh rumah tangga pada kedua klaster.
 
 Pola tersebut sejalan dengan penelitian terdahulu. Kubota et al. (2014) menemukan bahwa AC merupakan penentu utama konsumsi listrik rumah tangga di Jakarta dan bahwa konsumsi energi AC di Jakarta dapat dijelaskan oleh luas lantai bersama pendapatan rumah tangga, sedangkan kepemilikan lemari es tetap tinggi pada seluruh klaster rumah tangga di Jakarta dan Bandung. De Cian et al. (2025) juga menemukan bahwa kepemilikan AC menaikkan konsumsi listrik rumah tangga rata-rata sebesar 36 persen.
 
@@ -970,28 +1090,27 @@ Pola tersebut sejalan dengan penelitian terdahulu. Kubota et al. (2014) menemuka
 
 # BAB V KESIMPULAN DAN SARAN
 
-
 ## 5.1 Kesimpulan
 
 Berdasarkan hasil pengolahan dan pembahasan, penelitian ini menghasilkan tiga kesimpulan yang disusun mengikuti urutan tujuan penelitian.
 
-Pertama, konsumsi listrik rumah tangga di Provinsi DKI Jakarta pada Maret 2025 berada pada tingkat yang tinggi sekaligus sangat timpang antarrumah tangga. Rata-rata tertimbang konsumsi listrik mencapai 369,61 kWh per bulan dengan *standard error* 15,83 kWh, atau 115,45 kWh per kapita per bulan. Ketimpangan sebarannya terbaca dari tiga hal sekaligus: simpangan baku sampel sebesar 353,88 kWh melampaui rata-rata sampelnya sendiri, nilai tengah sampel hanya 222,19 kWh berbanding rata-rata sampel 327,45 kWh, dan rata-rata tertimbang berada di atas rata-rata sampel. Sebaran yang menceng ke kanan tersebut berarti sebagian besar rumah tangga berkonsumsi rendah sementara sekelompok kecil rumah tangga berkonsumsi sangat tinggi.
+Pertama, konsumsi listrik rumah tangga di Provinsi DKI Jakarta pada Maret 2025 berada pada tingkat yang tinggi sekaligus sangat timpang antarrumah tangga. Rata-rata tertimbang konsumsi listrik mencapai 369,61 kWh per bulan dengan *standard error* 15,83 kWh, atau 115,45 kWh per kapita per bulan. Ketimpangan sebarannya terbaca dari tiga hal sekaligus: simpangan baku sampel sebesar 353,88 kWh melampaui rata-rata sampelnya sendiri, median sampel hanya 222,19 kWh berbanding rata-rata sampel 327,45 kWh, dan rata-rata tertimbang berada di atas rata-rata sampel. Sebaran yang menceng ke kanan tersebut berarti sebagian besar rumah tangga berkonsumsi rendah sementara sekelompok kecil rumah tangga berkonsumsi sangat tinggi.
 
-Kondisi sosial ekonominya memperlihatkan pola yang sejalan. Rata-rata tertimbang pengeluaran nonmakanan selain listrik sebesar Rp5.825.672 per bulan dengan simpangan baku sampel yang juga melebihi rata-ratanya, rata-rata lama sekolah kepala rumah tangga sebesar 11,39 tahun, dan rata-rata ukuran rumah tangga sebesar 3,68 orang. Pangsa pengeluaran listrik terhadap pengeluaran nonmakanan selain listrik rata-rata sebesar 7,28 persen, dengan rentang yang lebar antarrumah tangga. Keragaman yang besar pada konsumsi listrik maupun pada kondisi sosial ekonomi inilah yang menunjukkan bahwa rumah tangga di Provinsi DKI Jakarta tidak dapat diperlakukan sebagai satu kelompok yang seragam, sekaligus menjadi dasar bagi pengelompokan pada tujuan berikutnya.
+Kondisi sosial ekonominya memperlihatkan pola yang sejalan. Rata-rata tertimbang pengeluaran nonmakanan selain listrik sebesar Rp5.825.672 per bulan dengan simpangan baku sampel yang juga melebihi rata-ratanya, rata-rata lama sekolah KRT sebesar 11,39 tahun, dan rata-rata ukuran rumah tangga sebesar 3,68 orang. Pangsa pengeluaran listrik terhadap pengeluaran nonmakanan selain listrik rata-rata sebesar 7,28 persen, dengan rentang yang lebar antarrumah tangga. Keragaman yang besar pada konsumsi listrik maupun pada kondisi sosial ekonomi inilah yang menunjukkan bahwa rumah tangga di Provinsi DKI Jakarta tidak dapat diperlakukan sebagai satu kelompok yang seragam, sekaligus menjadi dasar bagi pengelompokan pada tujuan berikutnya.
 
-Kedua, rumah tangga di Provinsi DKI Jakarta terkelompok menjadi dua klaster berdasarkan konsumsi listrik hasil konversi, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga. Jumlah klaster ditetapkan melalui dua kriteria yang menunjuk arah sama. Metode elbow menunjukkan penurunan within-cluster sum of squares terbesar pada penambahan klaster pertama, yaitu sebesar 6.193,77 dari total 15.000, sedangkan penambahan berikutnya hanya menurunkan 2.227,88 dan terus mengecil. Rata-rata koefisien silhouette mencapai nilai tertinggi pada dua klaster, yaitu 0,3640, kemudian menurun pada jumlah klaster yang lebih besar.
+Kedua, rumah tangga di Provinsi DKI Jakarta terkelompok menjadi dua klaster berdasarkan konsumsi listrik hasil konversi, pengeluaran nonmakanan selain listrik, dan lama sekolah KRT. Jumlah klaster ditetapkan melalui dua kriteria yang menunjuk arah sama. Metode *elbow* menunjukkan penurunan *within-cluster sum of squares* (WCSS) terbesar pada penambahan klaster pertama, yaitu sebesar 6.193,77 dari total 15.000, sedangkan penambahan berikutnya hanya menurunkan 2.227,88 dan terus mengecil. Rata-rata koefisien *silhouette* mencapai nilai tertinggi pada dua klaster, yaitu 0,3640, kemudian menurun pada jumlah klaster yang lebih besar.
 
-Klaster 1 mencakup 3.329 rumah tangga sampel yang mewakili 60,11 persen rumah tangga di Provinsi DKI Jakarta, dengan *centroid* bernilai negatif pada ketiga variabel pembentuk, yaitu −0,4548; −0,5099; dan −0,3939 pada skala skor Z. Klaster 2 mencakup 1.672 rumah tangga sampel yang mewakili 39,89 persen, dengan *centroid* bernilai positif pada ketiga variabel, yaitu 0,9055; 1,0152; dan 0,7843. Kedua kelompok karena itu berbeda pada tingkat, bukan pada komposisi: seluruh pemisahan terjadi pada satu sumbu yang memuat ketiga variabel dengan arah yang sama, sebagaimana ditunjukkan visualisasi dua komponen utama yang menjelaskan 89,31 persen keragaman data.
+Klaster 1 mencakup 3.329 rumah tangga sampel yang mewakili 60,11 persen rumah tangga di Provinsi DKI Jakarta, dengan *centroid* bernilai negatif pada ketiga variabel pembentuk, yaitu −0,4548; −0,5099; dan −0,3939 pada skala *Z-score*. Klaster 2 mencakup 1.672 rumah tangga sampel yang mewakili 39,89 persen, dengan *centroid* bernilai positif pada ketiga variabel, yaitu 0,9055; 1,0152; dan 0,7843. Kedua kelompok karena itu berbeda pada tingkat, bukan pada komposisi: seluruh pemisahan terjadi pada satu sumbu yang memuat ketiga variabel dengan arah yang sama, sebagaimana ditunjukkan visualisasi dua komponen utama yang menjelaskan 89,31 persen keragaman data.
 
-Kualitas struktur pengelompokan ini perlu dinyatakan apa adanya. Koefisien rata-rata silhouette sebesar 0,3640 berada di antara ambang 0,5 yang menandai klasifikasi memadai dan ambang 0,2 yang menandai ketiadaan struktur berarti (Everitt et al., 2011, hlm. 129). Struktur klaster pada data ini dengan demikian nyata tetapi lemah, dan hasilnya ditafsirkan secara hati-hati: rumah tangga di Provinsi DKI Jakarta tidak terpisah menjadi kelompok berbatas tegas, melainkan membentuk sebaran menerus yang dipenggal pada titik paling wajar oleh algoritme. Penamaan kedua kelompok bersifat deskriptif dan tidak menyatakan peringkat nilai di antara keduanya.
+Kualitas struktur pengelompokan ini perlu dinyatakan apa adanya. Koefisien rata-rata *silhouette* sebesar 0,3640 berada di antara ambang 0,5 yang menandai klasifikasi memadai dan ambang 0,2 yang menandai ketiadaan struktur berarti (Everitt et al., 2011, hlm. 129). Struktur klaster pada data ini dengan demikian nyata tetapi lemah, dan hasilnya ditafsirkan secara hati-hati: rumah tangga di Provinsi DKI Jakarta tidak terpisah menjadi kelompok berbatas tegas, melainkan membentuk sebaran menerus yang dibagi oleh algoritme. Penamaan kedua kelompok bersifat deskriptif dan tidak menyatakan peringkat nilai di antara keduanya.
 
 Ketiga, kedua klaster berbeda jelas pada variabel pembentuknya dan berbeda signifikan pada variabel di luar variabel pembentuk, dengan perbedaan terbesar terletak pada konsumsi listrik, kapasitas belanja, pendidikan kepala rumah tangga, luas hunian, dan kepemilikan AC.
 
-Profil tertimbang kedua kelompok menunjukkan jarak yang besar. Rata-rata konsumsi listrik Klaster 2 sebesar 645,34 kWh per bulan berbanding 186,61 kWh per bulan pada Klaster 1, dan jarak tersebut bertahan pada ukuran per kapita, yaitu 198,88 kWh berbanding 60,08 kWh, sehingga kesenjangan konsumsi tidak bersumber dari perbedaan jumlah penghuni. Rata-rata pengeluaran nonmakanan selain listrik sebesar Rp10.821.847 berbanding Rp2.509.606, dan rata-rata lama sekolah kepala rumah tangga sebesar 13,74 tahun berbanding 9,83 tahun. Meskipun demikian, pangsa pengeluaran listrik terhadap pengeluaran nonmakanan selain listrik hampir sama pada kedua kelompok, yaitu 7,63 persen berbanding 7,05 persen, sementara rasio pengeluaran listrik antarklaster lebih besar daripada rasio konsumsinya, yang konsisten dengan berlakunya tarif berjenjang menurut golongan daya.
+Profil tertimbang kedua kelompok menunjukkan jarak yang besar. Rata-rata konsumsi listrik Klaster 2 sebesar 645,34 kWh per bulan berbanding 186,61 kWh per bulan pada Klaster 1, dan jarak tersebut bertahan pada ukuran per kapita, yaitu 198,88 kWh berbanding 60,08 kWh, sehingga kesenjangan konsumsi tidak bersumber dari perbedaan jumlah penghuni. Rata-rata pengeluaran nonmakanan selain listrik sebesar Rp10.821.847 berbanding Rp2.509.606, dan rata-rata lama sekolah KRT sebesar 13,74 tahun berbanding 9,83 tahun. Meskipun demikian, pangsa pengeluaran listrik terhadap pengeluaran nonmakanan selain listrik hampir sama pada kedua kelompok, yaitu 7,63 persen berbanding 7,05 persen, sementara rasio pengeluaran listrik antarklaster lebih besar daripada rasio konsumsinya, yang konsisten dengan berlakunya tarif berjenjang menurut golongan daya.
 
-Perbedaan tersebut juga tampak pada variabel yang sama sekali tidak dipakai membentuk klaster. Rata-rata tertimbang luas lantai Klaster 2 sebesar 106,17 m² berbanding 42,52 m² pada Klaster 1, dan kepemilikan AC sebesar 76,07 persen berbanding 17,02 persen dengan Cramér's V sebesar 0,553. Kepemilikan lemari es berbeda searah tetapi jauh lebih tipis, yaitu 98,25 persen berbanding 87,27 persen dengan Cramér's V sebesar 0,214, karena peralatan tersebut telah dimiliki hampir seluruh rumah tangga pada kedua kelompok. Ketiga perbedaan tersebut signifikan pada taraf nyata 1 persen dan searah dengan hipotesis, sehingga hipotesis penelitian didukung: klaster dengan konsumsi listrik lebih tinggi memiliki kepemilikan AC dan lemari es yang lebih tinggi serta luas lantai yang lebih besar. Dukungan dari kepemilikan AC tidak sepenuhnya bebas karena variabel tersebut dipakai dalam pemilihan spesifikasi variabel pembentuk, tetapi kepemilikan lemari es dan luas lantai, yang tidak dipakai pada tahap mana pun sebelum profiling, menunjukkan arah yang sama. Sebaran golongan daya terpasang bergerak searah, yaitu 78,1 persen rumah tangga Klaster 2 tersambung pada daya 1.300 VA atau lebih berbanding 53,9 persen pada Klaster 1, tetapi variabel ini ikut menentukan tarif pada tahap persiapan data sehingga dibaca sebagai deskripsi karakteristik kelistrikan, bukan sebagai bukti bebas yang memvalidasi pemisahan klaster.
+Perbedaan tersebut juga tampak pada variabel yang sama sekali tidak dipakai membentuk klaster. Rata-rata tertimbang luas lantai Klaster 2 sebesar 106,17 m² berbanding 42,52 m² pada Klaster 1, dan kepemilikan AC sebesar 76,07 persen berbanding 17,02 persen dengan *Cramér's V* sebesar 0,553. Kepemilikan lemari es berbeda searah tetapi jauh lebih tipis, yaitu 98,25 persen berbanding 87,27 persen dengan *Cramér's V* sebesar 0,214, karena peralatan tersebut telah dimiliki hampir seluruh rumah tangga pada kedua kelompok. Ketiga perbedaan tersebut signifikan pada taraf nyata 1 persen dan searah dengan hipotesis, sehingga hipotesis penelitian didukung: klaster dengan konsumsi listrik lebih tinggi memiliki kepemilikan AC dan lemari es yang lebih tinggi serta luas lantai yang lebih besar. Dukungan dari kepemilikan AC tidak sepenuhnya bebas karena variabel tersebut dipakai dalam pemilihan spesifikasi variabel pembentuk, tetapi kepemilikan lemari es dan luas lantai, yang tidak dipakai pada tahap mana pun sebelum *profiling*, menunjukkan arah yang sama. Sebaran golongan daya terpasang bergerak searah, yaitu 78,1 persen rumah tangga Klaster 2 tersambung pada daya 1.300 VA atau lebih berbanding 53,9 persen pada Klaster 1, tetapi variabel ini ikut menentukan tarif pada tahap persiapan data sehingga dibaca sebagai deskripsi karakteristik kelistrikan, bukan sebagai bukti bebas yang memvalidasi pemisahan klaster.
 
-Dua catatan pembatas menyertai kesimpulan ketiga ini. Pertama, ukuran rumah tangga tidak berbeda signifikan antarklaster setelah rancangan sampel diperhitungkan, dan selisih rata-rata tertimbangnya hanya 0,06 jiwa, sehingga variabel ini tidak menjadi pembeda antarkelompok. Kedua, pada empat variabel penciri lainnya, uji tanpa penimbang dan uji berbasis desain menghasilkan kesimpulan yang sama, sehingga temuan pada kesimpulan ketiga tidak bergantung pada dipakai atau tidaknya penimbang dan rancangan sampel Susenas.
+Dua catatan pembatas menyertai kesimpulan ketiga ini. Pertama, ukuran rumah tangga tidak berbeda signifikan antarklaster setelah rancangan sampel diperhitungkan, dan selisih rata-rata tertimbangnya hanya 0,06 orang, sehingga variabel ini tidak menjadi pembeda antarkelompok. Kedua, pada empat variabel penciri lainnya, uji tanpa penimbang dan uji berbasis desain menghasilkan kesimpulan yang sama, sehingga temuan pada kesimpulan ketiga tidak bergantung pada dipakai atau tidaknya penimbang dan rancangan sampel Susenas.
 
 ## 5.2 Saran
 
@@ -1001,66 +1120,117 @@ Bagi PT PLN (Persero) dan pemerintah Provinsi DKI Jakarta. Program efisiensi ene
 
 Bagi Badan Pusat Statistik. Isian konsumsi listrik dalam satuan kWh pada kuesioner Susenas Maret 2025 tidak terisi pada seluruh rumah tangga sampel di Provinsi DKI Jakarta, sehingga konsumsi listrik dalam penelitian ini harus diperoleh melalui konversi pengeluaran listrik dengan tarif menurut golongan daya. Pemeriksaan kelengkapan isian tersebut pada pengumpulan data berikutnya akan memungkinkan analisis konsumsi listrik rumah tangga dilakukan langsung pada besaran fisiknya tanpa asumsi tarif.
 
-Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan penelitian ini. Pertama, pemakaian data konsumsi listrik hasil pencatatan meteran akan menghilangkan ketergantungan pada asumsi tarif dalam memperoleh besaran kWh. Kedua, rata-rata koefisien silhouette yang menunjukkan struktur lemah mengindikasikan bahwa rumah tangga tersebar menerus pada satu sumbu tingkat kemapanan, sehingga metode pengelompokan yang tidak memaksakan batas tegas antarkelompok layak dicobakan sebagai pembanding bagi K-Means. Ketiga, penelitian ini membentuk klaster tanpa penimbang dan memakai penimbang hanya pada tahap pelaporan; penelaahan atas cara memasukkan desain penarikan sampel ke dalam proses pengelompokan itu sendiri masih terbuka untuk dikerjakan.
+Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan penelitian ini. Pertama, pemakaian data konsumsi listrik hasil pencatatan meteran akan menghilangkan ketergantungan pada asumsi tarif dalam memperoleh besaran kWh. Kedua, rata-rata koefisien *silhouette* yang menunjukkan struktur lemah mengindikasikan bahwa rumah tangga tersebar menerus pada satu sumbu tingkat konsumsi listrik dan sosial ekonomi, sehingga metode pengelompokan yang tidak memaksakan batas tegas antarkelompok layak dicobakan sebagai pembanding bagi *K-Means*. Ketiga, penelitian ini membentuk klaster tanpa penimbang dan memakai penimbang hanya pada tahap pelaporan; penelaahan atas cara memasukkan desain penarikan sampel ke dalam proses pengelompokan itu sendiri masih terbuka untuk dikerjakan.
 
 ---
 
 # DAFTAR PUSTAKA
 
-1. Agung P.S, P., Hartono, D., & Awirya, A. A. (2017). Pengaruh urbanisasi terhadap konsumsi energi dan emisi CO2: Analisis provinsi di Indonesia. *Jurnal Ekonomi Kuantitatif Terapan*.
-2. Ali, S. S. S., Razman, M. R., Awang, A., Asyraf, M. R. M., Ishak, M. R., Ilyas, R. A., & Lawrence, R. J. (2021). Critical determinants of household electricity consumption in a rapidly growing city. *Sustainability*, 13(8), 4441. https://doi.org/10.3390/su13084441
-3. Baltagi, B. H. (2005). *Econometric analysis of panel data* (3rd ed.). John Wiley & Sons.
-4. Badan Pusat Statistik. (2025a). Indikator perumahan dan kesehatan lingkungan 2025 (Vol. 11; No. Publikasi 04200.25024).
-5. Badan Pusat Statistik. (2025b). Survei Sosial Ekonomi Nasional (Susenas) Maret 2025: Kuesioner VSEN25.K dan VSEN25.KP [Data set].
-6. Badan Pusat Statistik, & Kementerian PPN/Bappenas. (2025). Indikator tujuan pembangunan berkelanjutan Indonesia 2025 (Vol. 9; No. Publikasi 07300.25034). Badan Pusat Statistik.
-7. Badan Pusat Statistik Kota Yogyakarta. (2026). Indeks pembangunan manusia Kota Yogyakarta 2025 (Vol. 12; No. Publikasi 34710.26006).
-8. Badan Pusat Statistik Provinsi DKI Jakarta. (2026). Provinsi DKI Jakarta dalam angka 2026 (Vol. 56; No. Publikasi 31000.26005).
-9. Bergsma, W. (2013). A bias-correction for Cramér's V and Tschuprow's T. Journal of the Korean Statistical Society, 42(3), 323–328. https://doi.org/10.1016/j.jkss.2012.10.002
-11. Christono, A. B., & Putri, D. D. (2021). Pengaruh konsumsi dan investasi terhadap produk domestik regional bruto (PDRB) di Provinsi DKI Jakarta periode 2010–2019. *Journal of Economics and Business UBS*.
-12. De Cian, E., Falchetta, G., Pavanello, F., Romitti, Y., & Wing, I. S. (2025). The impact of air conditioning on residential electricity consumption across world countries. *Journal of Environmental Economics and Management*, 131, 103122. https://doi.org/10.1016/j.jeem.2025.103122
-13. Dinas Lingkungan Hidup Provinsi DKI Jakarta. (2024). Laporan akhir inventarisasi profil emisi dan pelaporan penurunan emisi gas rumah kaca Provinsi DKI Jakarta.
-14. Dixon, W. J. (1960). Simplified Estimation from Censored Normal Samples. The Annals of Mathematical Statistics, 31(2), 385–391. https://doi.org/10.1214/aoms/1177705900
-15. Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). *Cluster analysis* (5th ed.). John Wiley & Sons.
-16. Fisher, R. A. (1922). On the interpretation of χ² from contingency tables, and the calculation of P. Journal of the Royal Statistical Society, 85(1), 87–94. https://doi.org/10.1111/j.2397-2335.1922.tb00768.x
-18. Gujarati, D. N. (2004). *Basic econometrics* (4th ed.). The McGraw-Hill Companies.
-19. Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). *Multivariate data analysis* (8th ed.). Cengage Learning.
-20. Handayani, K., Krozer, Y., & Filatova, T. (2019). Trade-offs between electrification and climate change mitigation: An analysis of the Java-Bali power system in Indonesia. *Applied Energy*, 236, 659–672.
-21. Indrawanto, D. (2025). Integration of sustainable architecture principles in vertical housing design in high-density urban areas. *The Journal of Academic Science*, 2(2), 461–469. https://doi.org/10.59613/ttsfb560
-22. Johnson, R. A., & Wichern, D. W. (2014). *Applied multivariate statistical analysis* (6th ed.). Pearson Education Limited.
-23. Kaufman, L., & Rousseeuw, P. J. (1990)._Finding groups in data: An introduction to cluster analysis_. John Wiley & Sons.
-24. Kementerian Energi dan Sumber Daya Mineral. (2024). Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 tentang Tarif Tenaga Listrik yang Disediakan oleh PT Perusahaan Listrik Negara (Persero). Berita Negara Republik Indonesia Tahun 2024.
-25. Kementerian Lingkungan Hidup dan Kehutanan. (2024). Laporan inventarisasi gas rumah kaca (GRK) dan monitoring, pelaporan, verifikasi (MPV) tahun 2024 (Vol. 10). Direktorat Jenderal Pengendalian Perubahan Iklim.
-26. Kementerian PPN/Bappenas. (2019). Background study Visi Indonesia 2045: Indonesia 2045 berdaulat, maju, adil, dan makmur.
-27. Kementerian PPN/Bappenas. (2025). Rencana pembangunan jangka menengah nasional tahun 2025–2029.
-28. Kruskal, W. H., & Wallis, W. A. (1952). Use of ranks in one-criterion variance analysis. Journal of the American Statistical Association, 47(260), 583–621. https://doi.org/10.1080/01621459.1952.10483441
-29. Kubota, T., Surahman, U., & Higashi, O. (2014). A comparative analysis of household energy consumption in Jakarta and Bandung. *Proceedings of the 30th International PLEA Conference*, Ahmedabad, India.
-30. Leach, G. (1992). The energy transition. *Energy Policy*, 20(2), 116–123. https://doi.org/10.1016/0301-4215(92)90105-B
-31. Lumley, T. (2010). Complex surveys: A guide to analysis using R. John Wiley & Sons.
-32. Lumley, T. (2024). survey: Analysis of complex survey samples (R package version 4.5) [Computer software].
-33. Lumley, T., & Scott, A. (2012). Two-sample rank tests under complex sampling [Technical report]. Department of Statistics, University of Auckland.
-35. Mair, P., & Wilcox, R. (2020). Robust statistical methods in R using the WRS2 package. Behavior Research Methods, 52, 464–488. https://doi.org/10.3758/s13428-019-01246-w
-36. Moeeni, S., Moeeni, M., & Bozorga, A. M. R. (2025). Quantile regression analysis of household energy demand in Iran using income-expenditure national survey (2016–2023): Heterogeneity and key characteristics. *Iranian Journal of Economic Studies*, 14(1), 163–200.
-37. Nazer, M., & Handra, H. (2016). Analisis konsumsi energi rumah tangga perkotaan di Indonesia. *Jurnal Ekonomi dan Pembangunan Indonesia*.
-38. Nicholson, W., & Snyder, C. (2010). *Intermediate microeconomics and its application* (11th ed.). South-Western Cengage Learning.
-39. Nojedehi, P., Gunay, B., O'Brien, W., & Papineau, M. (2025). A method to develop residential archetypes by associating thermophysical building attributes with utility meter data. *Energy & Buildings*, 347.
-40. Novianto, D., Gao, W., & Kuroki, S. (2015). Review on people's lifestyle and energy consumption of Asian communities: Case study of Indonesia, Thailand, and China. *Energy and Power Engineering*, 7(10), 465–476. https://doi.org/10.4236/epe.2015.710045
-41. Oktasandira, A. (2025). ANALISIS KLASTER PELANGGAN LISTRIK BERDASARKAN PERILAKU KONSUMSI DI KOTA SUKABUMI MENGGUNAKAN METODE K-MEANS 
-CLUSTERING Skripsi, UNIVERSITAS NUSA PUTRA SUKABUMI. https://repository.nusaputra.ac.id/id/eprint/1737/
-42. Pasaribu, N. G., Wulandari, F. W., & Wulandari, S. P. (2024). Pengelompokan indikator kemiskinan di kabupaten/kota Aceh tahun 2021 menggunakan analisis klaster. *Bilangan: Jurnal Ilmiah Matematika, Kebumian dan Angkasa*, 2(6).
-43. Pavanello, F., De Cian, E., Davide, M., Mistry, M., Cruz, T., Bezerra, P., Jagu, D., Renner, S., Schaeffer, R., & Lucena, A. F. P. (2021). Air-conditioning and the adaptation cooling deficit in emerging economies. *Nature Communications*, 12, 6460. https://doi.org/10.1038/s41467-021-26592-2
-44. Prastika, A. (2023). Hubungan antara tingkat konsumsi energi listrik dengan pertumbuhan ekonomi di Indonesia. *Jurnal Ilmu Ekonomi (JIE)*.
-45. PT PLN (Persero). (2025). Penetapan tarif tenaga listrik PT PLN (Persero) periode triwulan I tahun 2025.
-46. Rao, J. N. K., & Scott, A. J. (1984). On chi-squared tests for multiway contingency tables with cell proportions estimated from survey data. The Annals of Statistics, 12(1), 46–60.
-47. Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, 16(1).
-48. Rencher, A. C. (2002). Methods of multivariate analysis (2nd ed.). John Wiley & Sons.
-49. Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, 2(1), 79–91. https://doi.org/10.5334/bc.72
-50. Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. Journal of Computational and Applied Mathematics, 20, 53–65. https://doi.org/10.1016/0377-0427(87)90125-7
-51. Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C., Gamal, A., & Dimyati, M. (2023). Spatio-temporal characteristics of urban heat island of Jakarta metropolitan. *Remote Sensing Applications: Society and Environment*, 32, 101062. https://doi.org/10.1016/j.rsase.2023.101062
-52. Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
-53. van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, 20, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
-54. Widyasanti, A. A. (2024, August 30). *Press release: Kondisi kelas menengah di Indonesia*. Badan Pusat Statistik.
+Agung P.S, P., Hartono, D., & Awirya, A. A. (2017). Pengaruh urbanisasi terhadap konsumsi energi dan emisi CO2: Analisis provinsi di Indonesia. *Jurnal Ekonomi Kuantitatif Terapan*.
+
+Ali, S. S. S., Razman, M. R., Awang, A., Asyraf, M. R. M., Ishak, M. R., Ilyas, R. A., & Lawrence, R. J. (2021). Critical determinants of household electricity consumption in a rapidly growing city. *Sustainability*, *13*(8), 4441. https://doi.org/10.3390/su13084441
+
+Badan Pusat Statistik. (2025a). *Indikator perumahan dan kesehatan lingkungan 2025* (Vol. 11; No. Publikasi 04200.25024).
+
+Badan Pusat Statistik. (2025b). *Survei Sosial Ekonomi Nasional (Susenas) Maret 2025: Kuesioner VSEN25.K dan VSEN25.KP* [Data set].
+
+Badan Pusat Statistik, & Kementerian PPN/Bappenas. (2025). *Indikator tujuan pembangunan berkelanjutan Indonesia 2025* (Vol. 9; No. Publikasi 07300.25034). Badan Pusat Statistik.
+
+Badan Pusat Statistik Kota Yogyakarta. (2026). *Indeks pembangunan manusia Kota Yogyakarta 2025* (Vol. 12; No. Publikasi 34710.26006).
+
+Badan Pusat Statistik Provinsi DKI Jakarta. (2026). *Provinsi DKI Jakarta dalam angka 2026* (Vol. 56; No. Publikasi 31000.26005).
+
+Baltagi, B. H. (2005). *Econometric analysis of panel data* (3rd ed.). John Wiley & Sons.
+
+Bergsma, W. (2013). A bias-correction for Cramér's V and Tschuprow's T. *Journal of the Korean Statistical Society*, *42*(3), 323–328. https://doi.org/10.1016/j.jkss.2012.10.002
+
+Christono, A. B., & Putri, D. D. (2021). Pengaruh konsumsi dan investasi terhadap produk domestik regional bruto (PDRB) di Provinsi DKI Jakarta periode 2010–2019. *Journal of Economics and Business UBS*.
+
+De Cian, E., Falchetta, G., Pavanello, F., Romitti, Y., & Wing, I. S. (2025). The impact of air conditioning on residential electricity consumption across world countries. *Journal of Environmental Economics and Management*, *131*, 103122. https://doi.org/10.1016/j.jeem.2025.103122
+
+Dinas Lingkungan Hidup Provinsi DKI Jakarta. (2024). *Laporan akhir inventarisasi profil emisi dan pelaporan penurunan emisi gas rumah kaca Provinsi DKI Jakarta*.
+
+Dixon, W. J. (1960). Simplified estimation from censored normal samples. *The Annals of Mathematical Statistics*, *31*(2), 385–391. https://doi.org/10.1214/aoms/1177705900
+
+Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). *Cluster analysis* (5th ed.). John Wiley & Sons.
+
+Fisher, R. A. (1922). On the interpretation of χ² from contingency tables, and the calculation of P. *Journal of the Royal Statistical Society*, *85*(1), 87–94. https://doi.org/10.1111/j.2397-2335.1922.tb00768.x
+
+Gujarati, D. N. (2004). *Basic econometrics* (4th ed.). The McGraw-Hill Companies.
+
+Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). *Multivariate data analysis* (8th ed.). Cengage Learning.
+
+Handayani, K., Krozer, Y., & Filatova, T. (2019). Trade-offs between electrification and climate change mitigation: An analysis of the Java-Bali power system in Indonesia. *Applied Energy*, *236*, 659–672.
+
+Indrawanto, D. (2025). Integration of sustainable architecture principles in vertical housing design in high-density urban areas. *The Journal of Academic Science*, *2*(2), 461–469. https://doi.org/10.59613/ttsfb560
+
+Johnson, R. A., & Wichern, D. W. (2014). *Applied multivariate statistical analysis* (6th ed.). Pearson Education Limited.
+
+Kaufman, L., & Rousseeuw, P. J. (1990). *Finding groups in data: An introduction to cluster analysis*. John Wiley & Sons.
+
+Kementerian Energi dan Sumber Daya Mineral. (2024). *Peraturan Menteri Energi dan Sumber Daya Mineral Nomor 7 Tahun 2024 tentang Tarif Tenaga Listrik yang Disediakan oleh PT Perusahaan Listrik Negara (Persero)*. Berita Negara Republik Indonesia Tahun 2024.
+
+Kementerian Lingkungan Hidup dan Kehutanan. (2024). *Laporan inventarisasi gas rumah kaca (GRK) dan monitoring, pelaporan, verifikasi (MPV) tahun 2024* (Vol. 10). Direktorat Jenderal Pengendalian Perubahan Iklim.
+
+Kementerian PPN/Bappenas. (2019). *Background study Visi Indonesia 2045: Indonesia 2045 berdaulat, maju, adil, dan makmur*.
+
+Kementerian PPN/Bappenas. (2025). *Rencana pembangunan jangka menengah nasional tahun 2025–2029*.
+
+Kruskal, W. H., & Wallis, W. A. (1952). Use of ranks in one-criterion variance analysis. *Journal of the American Statistical Association*, *47*(260), 583–621. https://doi.org/10.1080/01621459.1952.10483441
+
+Kubota, T., Surahman, U., & Higashi, O. (2014). A comparative analysis of household energy consumption in Jakarta and Bandung. *Proceedings of the 30th International PLEA Conference*, Ahmedabad, India.
+
+Leach, G. (1992). The energy transition. *Energy Policy*, *20*(2), 116–123. https://doi.org/10.1016/0301-4215(92)90105-B
+
+Lumley, T. (2010). *Complex surveys: A guide to analysis using R*. John Wiley & Sons.
+
+Lumley, T. (2024). *survey: Analysis of complex survey samples* (R package version 4.5) [Computer software].
+
+Lumley, T., & Scott, A. (2012). *Two-sample rank tests under complex sampling* [Technical report]. Department of Statistics, University of Auckland.
+
+Mair, P., & Wilcox, R. (2020). Robust statistical methods in R using the WRS2 package. *Behavior Research Methods*, *52*, 464–488. https://doi.org/10.3758/s13428-019-01246-w
+
+Moeeni, S., Moeeni, M., & Bozorga, A. M. R. (2025). Quantile regression analysis of household energy demand in Iran using income-expenditure national survey (2016–2023): Heterogeneity and key characteristics. *Iranian Journal of Economic Studies*, *14*(1), 163–200.
+
+Nazer, M., & Handra, H. (2016). Analisis konsumsi energi rumah tangga perkotaan di Indonesia. *Jurnal Ekonomi dan Pembangunan Indonesia*.
+
+Nicholson, W., & Snyder, C. (2010). *Intermediate microeconomics and its application* (11th ed.). South-Western Cengage Learning.
+
+Nojedehi, P., Gunay, B., O'Brien, W., & Papineau, M. (2025). A method to develop residential archetypes by associating thermophysical building attributes with utility meter data. *Energy & Buildings*, *347*.
+
+Novianto, D., Gao, W., & Kuroki, S. (2015). Review on people's lifestyle and energy consumption of Asian communities: Case study of Indonesia, Thailand, and China. *Energy and Power Engineering*, *7*(10), 465–476. https://doi.org/10.4236/epe.2015.710045
+
+Oktasandira, A. (2025). *Analisis klaster pelanggan listrik berdasarkan perilaku konsumsi di Kota Sukabumi menggunakan metode K-Means clustering* [Skripsi, Universitas Nusa Putra Sukabumi]. https://repository.nusaputra.ac.id/id/eprint/1737/
+
+Pasaribu, N. G., Wulandari, F. W., & Wulandari, S. P. (2024). Pengelompokan indikator kemiskinan di kabupaten/kota Aceh tahun 2021 menggunakan analisis klaster. *Bilangan: Jurnal Ilmiah Matematika, Kebumian dan Angkasa*, *2*(6).
+
+Pavanello, F., De Cian, E., Davide, M., Mistry, M., Cruz, T., Bezerra, P., Jagu, D., Renner, S., Schaeffer, R., & Lucena, A. F. P. (2021). Air-conditioning and the adaptation cooling deficit in emerging economies. *Nature Communications*, *12*, 6460. https://doi.org/10.1038/s41467-021-26592-2
+
+Prastika, A. (2023). Hubungan antara tingkat konsumsi energi listrik dengan pertumbuhan ekonomi di Indonesia. *Jurnal Ilmu Ekonomi (JIE)*.
+
+PT PLN (Persero). (2025). *Penetapan tarif tenaga listrik PT PLN (Persero) periode triwulan I tahun 2025*.
+
+Rao, J. N. K., & Scott, A. J. (1984). On chi-squared tests for multiway contingency tables with cell proportions estimated from survey data. *The Annals of Statistics*, *12*(1), 46–60.
+
+Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, *16*(1).
+
+Rencher, A. C. (2002). *Methods of multivariate analysis* (2nd ed.). John Wiley & Sons.
+
+Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, *2*(1), 79–91. https://doi.org/10.5334/bc.72
+
+Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. *Journal of Computational and Applied Mathematics*, *20*, 53–65. https://doi.org/10.1016/0377-0427(87)90125-7
+
+Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C., Gamal, A., & Dimyati, M. (2023). Spatio-temporal characteristics of urban heat island of Jakarta metropolitan. *Remote Sensing Applications: Society and Environment*, *32*, 101062. https://doi.org/10.1016/j.rsase.2023.101062
+
+Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
+
+van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, *20*, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
+
+Widyasanti, A. A. (2024, August 30). *Press release: Kondisi kelas menengah di Indonesia*. Badan Pusat Statistik.
 
 ---
+
+# LAMPIRAN
 
 ## Lampiran 1 Hasil Pembandingan Spesifikasi Variabel Pembentuk dan Transformasi
 
@@ -1110,60 +1280,3 @@ Keterangan: S0 = konsumsi listrik, pengeluaran nonmakanan selain listrik, ukuran
 | 5 | *Winsorizing* tanpa ln | 0,4575 | 96 / 157 / 622 / 1.755 / 2.371 | 1,92 | 0,5191 |
 
 Sumber: Susenas Maret 2025, diolah.
-
-## Lampiran Deskripsi Visual Sangat Rinci
-
-Bagian ini membaca setiap media/gambar yang tertanam di dokumen. Deskripsi dibedakan antara apa yang terlihat langsung, angka atau teks yang dapat dibaca, serta makna yang dijelaskan oleh konteks naskah. Angka yang tidak tercantum eksplisit dalam teks dan hanya dibaca dari posisi titik grafik diberi label sebagai perkiraan visual. Tidak ada angka yang diisi dengan tebakan jika label pada gambar tidak cukup terbaca.
-
-> **Catatan konversi.** Pada berkas HTML sumber, seluruh gambar ditampilkan **dua kali**: sekali di posisi naskahnya, dan sekali lagi di lampiran ini bersama deskripsinya. Dalam versi markdown ini, deskripsi rinci sudah **digabungkan langsung ke bawah setiap gambar** di badan naskah agar tidak terjadi duplikasi. Indeks di bawah berfungsi sebagai peta navigasi.
-
-### Indeks Visual
-
-| No | Visual | Media internal | Letak dalam markdown ini |
-|---|---|---|---|
-| 1 | Logo Politeknik Statistika STIS | `image1.png` | Halaman Sampul dan Halaman Judul |
-| 2 | Gambar 1.1 Rasio Elektrifikasi 2024 | `image2.png` | Bab I — Latar Belakang |
-| 3 | Gambar 2. Pengeluaran Listrik per Kapita 2025 | `image3.png` | Bab I — Latar Belakang |
-| 4 | Gambar 3(a). Komposisi Pelanggan | `image4.png` | Bab I — Latar Belakang |
-| 5 | Gambar 3(b). Distribusi Konsumsi | `image5.png` | Bab I — Latar Belakang |
-| 6 | Gambar 4. Tren Daya Terjual 2018–2025 | `image6.png` | Bab I — Identifikasi Masalah |
-| 7 | Gambar 2.1. Kerangka Pikir | `image7.png` | Bab II — Kerangka Pikir |
-| 8 | Gambar 3.1. Alur Metode Analisis | `image8.png` | Bab III — Metode Analisis |
-| 9 | Gambar 4.1. Histogram Konsumsi | `image9.png` | Subbab 4.2.1 |
-| 10 | Gambar 4.2. Scatter Pengeluaran–Konsumsi | `image10.png` | Subbab 4.2.2 |
-| 11 | Gambar 4.3. Konsumsi menurut AC | `image11.png` | Subbab 4.2.4 |
-| 12 | Gambar 4.4. Elbow | `image12.png` | Subbab 4.3 |
-| 13 | Gambar 4.5. Silhouette | `image13.png` | Subbab 4.3 |
-| 14 | Gambar 4.6. Plot Klaster | `image14.png` | Subbab 4.4 |
-| 15 | Gambar 4.7. Rata-Rata Konsumsi per Klaster | `image15.png` | Subbab 4.5 |
-| 16 | Gambar 4.8. Proporsi AC | `image16.png` | Subbab 4.5 |
-| 17 | Gambar 4.9. Heatmap Z-Score | `image17.png` | Subbab 4.5 |
-| 18 | Gambar 4.10. Boxplot Konsumsi per Klaster | `image18.png` | Subbab 4.5 |
-| 19 | Gambar 4.11. Scatter menurut Klaster | `image19.png` | Subbab 4.5 |
-| 20 | Gambar 4.12. Pendidikan KRT | `image20.png` | Subbab 4.5 |
-| 21 | Output Wilks' Lambda | `image21.png` | Subbab 4.6 (Tabel 4.12) |
-| 22 | Output Pillai's Trace | `image22.png` | Subbab 4.6 (Tabel 4.12) |
-| 23 | Output Box's M | `image23.png` | Subbab 4.6 (Tabel 4.13) |
-| 24 | Output LDA | `image24.png` | Subbab 4.6 (Tabel 4.14) |
-
----
-
-## Catatan Konversi (dari konverter, bukan bagian naskah asli)
-
-Hal-hal berikut adalah kondisi berkas HTML sumber yang perlu diketahui, bukan perubahan yang dilakukan saat konversi:
-
-| Jenis | Rincian |
-|---|---|
-| **Rumus matematis** | Seluruh persamaan (jarak Euclidean, Z-score, centroid, WCSS, F ANOVA, H Kruskal–Wallis, Wilks' Lambda, Box's M) tidak ikut terbawa ke HTML. Bentuk bakunya sudah dituliskan kembali di setiap tempat dan diberi tanda ⚠️. |
-| **Notasi subskrip/simbol** | Simbol variabel dalam daftar keterangan ("= jarak Euclidean antara objek ke- dan objek ke-") juga hilang. Rekonstruksi ditulis dalam kurung sudut ⟨…⟩. |
-| **Tabel tanpa isi** | Tabel 2.1 (Penelitian terkait), Tabel 3.1 (Definisi operasional), dan Tabel 4.7–4.16 hanya terbawa judulnya. Yang bisa direkonstruksi dari angka di naskah sudah disusun ulang dan diberi tanda ⚠️; Tabel 1 dan Tabel 3.1 tidak dapat direkonstruksi. |
-| **Bagian tanpa isi** | Abstrak, Daftar Isi, Daftar Tabel, Daftar Gambar, dan Daftar Lampiran hanya berupa judul bagian. |
-| **Placeholder** | Subbab 4.1 masih memuat "4994". |
-| **Penomoran tabel** | Tabel penelitian terkait berjudul "Tabel 1" tetapi dirujuk sebagai "Tabel 2.1" di paragraf berikutnya. |
-| **Subbab ganda** | "Evaluasi Perbedaan dan Pemisahan Klaster" dan "Profiling dan Interpretasi Klaster" muncul dua kali di Bab III (versi tanpa nomor dan versi 3.4.7 / 3.4.8). |
-| **Penomoran subbab** | Bab III melompat dari 3.4.4 ke subbab tanpa nomor, lalu ke 3.4.7. Tidak ada 3.4.5 dan 3.4.6. |
-| **Konflik Bab IV vs Bab V** | Bab IV: 2 klaster, Wilks' Lambda 0,5928, 4.994 rumah tangga (3.329 / 1.665). Bab V: 3 klaster, Wilks' Lambda 0,156, 31.534 / 47.459 / 21.606 rumah tangga. Kedua bagian dipertahankan apa adanya. |
-| **Kepemilikan AC** | Bab IV melaporkan 14,73% (klaster 1) dan 73,32% (klaster 2); Bab V melaporkan 30,08% (klaster 1) dan 99,08% (klaster 3). |
-| **Judul Gambar 1** | Disebut "Peta Sebaran" padahal visualnya *dot plot* peringkat, bukan peta geografis. |
-| **Rujukan Rencher** | Naskah mengutip "Rencher (2002)" berulang kali, tetapi entri Daftar Pustaka adalah Rencher & Christensen (2012). |
-| **Gambar diduplikasi** | Setiap gambar muncul dua kali di HTML (di naskah dan di lampiran). Dalam markdown ini gambar hanya dimuat sekali, dengan deskripsinya digabungkan. |
