@@ -1,6 +1,6 @@
 # KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
 
-> **Catatan repo (bukan isi naskah).** Dokumen ini adalah naskah kerja versi Markdown dari Karya Ilmiah Tugas Akhir Rafli Hibriansyah Siregar, Politeknik Statistika STIS. Naskah resmi tetap dokumen `.docx`. Istilah mengikuti `Kamus_Istilah_Polstat_STIS.md` (Project TA). Gambar dan tabel dinomori berurutan lintas bab (Gambar 1, 2, …; Tabel 1, 2, …). Gambar belum tersimpan di repo; posisi gambar ditandai dengan kotak keterangan.
+> **Catatan repo (bukan isi naskah).** Dokumen ini adalah naskah kerja versi Markdown dari Karya Ilmiah Tugas Akhir Rafli Hibriansyah Siregar, Politeknik Statistika STIS. Naskah resmi tetap dokumen `.docx`. Istilah mengikuti `Kamus_Istilah_Polstat_STIS.md` (Project TA). Gambar dan tabel dinomori berurutan lintas bab (Gambar 1, 2, …; Tabel 1, 2, …). Sebagian besar gambar belum tersimpan di repo; posisinya ditandai dengan kotak keterangan.
 
 ---
 
@@ -47,8 +47,8 @@ Syukur Alhamdulillah penulis ucapkan ke hadirat Allah SWT, karena berkat pertolo
 
 - Ibu Dr. Erni Tri Astuti, M.Math., selaku Direktur Politeknik Statistika STIS;
 - Bapak Agung Priyo Utomo, S.Si., M.T., selaku Ketua Program Studi Statistika Program Diploma III Politeknik Statistika STIS;
-- Ibu Dr. Fitri Kartiasih, S.ST., S.E., M.Si., selaku dosen pembimbing yang telah bersedia meluangkan waktu untuk membimbing penyusunan tugas akhir ini;
-- Bapak Yaya Setiadi, [lengkapi gelar], dan Bapak Dr. Azka Ubaidillah, S.Si., M.Stat., selaku dosen penguji atas koreksi dan saran yang disampaikan;
+- Ibu Dr. Fitri Kartiasih, S.S.T., S.E., M.Si., selaku dosen pembimbing yang telah bersedia meluangkan waktu untuk membimbing penyusunan tugas akhir ini;
+- Bapak Yaya Setiadi, S.S.T., M.M., dan Bapak Dr. Azka Ubaidillah, S.Si., M.Stat., selaku dosen penguji atas koreksi dan saran yang disampaikan;
 - Ibu Winih Budiarti, SST., M.Stat., dan Ibu Dr. Sarni Maniar Berliana, SST., M.Si., selaku dosen pembimbing akademik;
 - Bapak, Ibu, dan Adik serta keluarga besar penulis yang telah memberikan dukungan secara moril dan materiel; serta
 - semua pihak yang telah membantu penulisan tugas akhir ini.
@@ -338,7 +338,8 @@ Perkembangan beban konsumsi listrik rumah tangga di DKI Jakarta menunjukkan bahw
 
 **Gambar 4 Energi Listrik Terjual kepada Pelanggan Rumah Tangga di Provinsi DKI Jakarta, 2018–2025**
 
-Sumber: [lengkapi sumber gambar]
+Sumber: Badan Pusat Statistik Provinsi DKI Jakarta, *Provinsi DKI Jakarta dalam Angka* edisi 2018–2025, tabel Jumlah Daya (kWh) Listrik menurut Golongan Tarif dan Cabang di Provinsi DKI Jakarta (diolah)
+<!-- CEK: data tahun 2025 lazimnya terbit di edisi 2026; pastikan rentang edisi yang dipakai. Tiap edisi perlu entri Daftar Pustaka sendiri. -->
 
 <details>
 <summary>Deskripsi Gambar 4 (catatan konversi, bukan isi naskah)</summary>
@@ -501,7 +502,7 @@ Nilai $s(i)$ terbatas pada rentang −1 hingga 1. Nilai yang mendekati 1 menunju
 
 $$\bar{s}=\frac{1}{n}\sum_{i=1}^{n} s(i) \tag{2.6}$$
 
-dengan $\bar{s}$ menyatakan rata-rata koefisien *silhouette* dan $n$ menyatakan banyaknya objek. Kaufman dan Rousseeuw (1990) menetapkan pedoman interpretasi atas nilai tersebut: nilai di atas 0,70 mencerminkan struktur klaster yang kuat, nilai 0,51 sampai 0,70 mencerminkan struktur yang memadai, nilai 0,26 sampai 0,50 mencerminkan struktur yang lemah sehingga hasilnya perlu ditafsirkan secara hati-hati, dan nilai di bawah 0,26 menunjukkan struktur klaster yang belum meyakinkan.
+dengan $\bar{s}$ menyatakan rata-rata koefisien *silhouette* dan $n$ menyatakan banyaknya objek. Kaufman dan Rousseeuw memandang klasifikasi yang memadai dicirikan oleh rata-rata koefisien *silhouette* di atas 0,5, sedangkan rata-rata di bawah 0,2 ditafsirkan sebagai ketiadaan struktur klaster yang berarti (Everitt et al., 2011, hlm. 129). Nilai di antara kedua ambang tersebut belum dapat digolongkan sebagai klasifikasi yang memadai, sehingga hasil pengelompokan perlu ditafsirkan secara hati-hati.
 
 Kedua kriteria tersebut bersifat komplementer: metode *elbow* membaca pola penurunan variasi dalam klaster, sedangkan koefisien *silhouette* mengukur kekuatan pemisahan antarklaster pada setiap kandidat jumlah klaster. Atas dasar itu, penelitian ini menggunakan keduanya secara bersamaan dalam menetapkan jumlah klaster.
 
@@ -537,7 +538,17 @@ Pendidikan kepala rumah tangga juga dapat diposisikan sebagai faktor penting kar
 
 **Tabel 1 Penelitian Terkait**
 
-> **[Isi Tabel 1 belum dipindahkan ke repo; lihat naskah `.docx`.]**
+| No. | Penulis | Judul Penelitian | Metode | Hasil Utama |
+|---|---|---|---|---|
+| 1 | Kubota, Surahman, dan Higashi (2014) | A Comparative Analysis of Household Energy Consumption in Jakarta and Bandung | Analisis faktor, analisis klaster, dan regresi linear berganda | Menunjukkan bahwa konsumsi energi rumah tangga di Jakarta lebih tinggi dibandingkan Bandung, dan penggunaan AC menjadi salah satu faktor penting yang membedakan konsumsi energi rumah tangga di kedua kota. |
+| 2 | Takata, Kubota, Pratiwi, dan Sani (2025) | Classification of Daily Lifestyle Patterns and Their Relationships with Household Energy Consumption in Apartment Buildings: A Case Study of Indonesia | *Hierarchical clustering* dan regresi logistik | Berhasil mengelompokkan pola gaya hidup penghuni apartemen di Indonesia dan menunjukkan bahwa pola mobilitas harian berhubungan dengan variasi konsumsi energi rumah tangga, termasuk adanya indikasi *rebound effect* pada penggunaan AC setelah penghuni kembali ke rumah. |
+| 3 | Oktasandira (2025) | Analisis Klaster Pelanggan Listrik Berdasarkan Perilaku Konsumsi di Kota Sukabumi Menggunakan Metode K-Means Clustering | *K-Means clustering* dengan metode *elbow* dan koefisien *silhouette* | Menghasilkan tiga klaster pelanggan listrik dengan karakteristik konsumsi yang berbeda dan menunjukkan bahwa segmentasi pelanggan dapat digunakan sebagai dasar penyusunan kebijakan efisiensi energi. |
+| 4 | Pasaribu, Wulandari, dan Wulandari (2024) | Pengelompokan Indikator Kemiskinan di Kabupaten/Kota Aceh Tahun 2021 Menggunakan Analisis Klaster | *Average linkage* dan *K-Means* | Menunjukkan bahwa *K-Means* menghasilkan pengelompokan yang lebih rinci dibandingkan metode hierarki pada data indikator sosial ekonomi, sehingga relevan sebagai referensi metodologis untuk penelitian berbasis data BPS. |
+| 5 | Nazer dan Handra (2016) | Analisis Konsumsi Energi Rumah Tangga Perkotaan di Indonesia | Regresi linear berganda | Menunjukkan bahwa pendapatan atau pengeluaran rumah tangga merupakan determinan utama konsumsi energi rumah tangga perkotaan di Indonesia, disertai pengaruh faktor rumah tangga lain seperti jumlah anggota rumah tangga. |
+| 6 | Ali et al. (2021) | Critical Determinants of Household Electricity Consumption in a Rapidly Growing City | Regresi bertahap | Menunjukkan bahwa konsumsi listrik rumah tangga dipengaruhi oleh karakteristik sosial ekonomi dan karakteristik fisik rumah, seperti ukuran rumah, jumlah ruang, tingkat pendapatan, dan tingkat pendidikan. |
+| 7 | Siswanto et al. (2023) | Spatio-Temporal Characteristics of Urban Heat Island of Jakarta Metropolitan | Analisis spasio-temporal berbasis citra satelit dan data in situ | Menunjukkan bahwa wilayah Jakarta metropolitan mengalami fenomena *Urban Heat Island* yang cukup kuat, sehingga meningkatkan relevansi pembahasan kebutuhan pendinginan rumah tangga di wilayah perkotaan. |
+| 8 | Pavanello et al. (2021) | Air-Conditioning and the Adaptation Cooling Deficit in Emerging Economies | Model logit dan proyeksi | Menunjukkan adanya *adaptation cooling deficit* di negara berkembang, yaitu kondisi ketika rumah tangga membutuhkan pendinginan tetapi tidak mampu mengakses atau mengoperasikan AC secara memadai. |
+| 9 | De Cian et al. (2025) | The Impact of Air Conditioning on Residential Electricity Consumption across World Countries | *Discrete-continuous choice framework* | Menunjukkan bahwa kepemilikan AC meningkatkan konsumsi listrik rumah tangga secara signifikan, dengan dampak rata-rata sekitar 36–57 persen bergantung pada konteks wilayah dan karakteristik rumah tangga. |
 
 Berdasarkan Tabel 1, penelitian terdahulu dapat dikelompokkan ke dalam tiga arus utama. Pertama, penelitian yang secara langsung membahas konsumsi energi rumah tangga dan pengelompokan pola konsumsi, seperti Kubota et al. (2014), Takata et al. (2025), dan Oktasandira (2025). Penelitian-penelitian tersebut menunjukkan bahwa konsumsi energi rumah tangga bersifat heterogen dan dapat dibedakan berdasarkan karakteristik tertentu, baik karakteristik hunian, gaya hidup, maupun perilaku konsumsi listrik. Namun, Kubota et al. (2014) lebih menekankan perbandingan dua kota, Takata et al. (2025) berfokus pada penghuni apartemen, sedangkan Oktasandira (2025) berfokus pada pelanggan listrik berbasis data utilitas, bukan rumah tangga dengan karakteristik sosial ekonomi berbasis Susenas.
 
@@ -896,7 +907,7 @@ Gambar 10 memperlihatkan penurunan yang sangat curam pada segmen pertama, meland
 
 Perbandingan rata-rata koefisien *silhouette* ditampilkan pada Gambar 11.
 
-> **[Posisi Gambar 11]** Gambar belum tersimpan di repo.
+![Gambar 11 Rata-Rata Koefisien Silhouette menurut Jumlah Klaster](assets-ta/gambar-11-silhouette.png)
 <!-- keluaran R: 20_silhouette.png -->
 
 **Gambar 11 Rata-Rata Koefisien *Silhouette* menurut Jumlah Klaster, DKI Jakarta, Maret 2025**
@@ -1126,7 +1137,7 @@ Bagi penelitian selanjutnya. Tiga arah pengembangan terbuka dari keterbatasan pe
 
 # DAFTAR PUSTAKA
 
-Agung P.S, P., Hartono, D., & Awirya, A. A. (2017). Pengaruh urbanisasi terhadap konsumsi energi dan emisi CO2: Analisis provinsi di Indonesia. *Jurnal Ekonomi Kuantitatif Terapan*.
+Agung PS, P., Hartono, D., & Awirya, A. A. (2017). Pengaruh urbanisasi terhadap konsumsi energi dan emisi CO₂: Analisis provinsi di Indonesia. *Jurnal Ekonomi Kuantitatif Terapan*, [volume(nomor)], 9–17.
 
 Ali, S. S. S., Razman, M. R., Awang, A., Asyraf, M. R. M., Ishak, M. R., Ilyas, R. A., & Lawrence, R. J. (2021). Critical determinants of household electricity consumption in a rapidly growing city. *Sustainability*, *13*(8), 4441. https://doi.org/10.3390/su13084441
 

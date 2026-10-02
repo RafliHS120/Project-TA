@@ -27,4 +27,4 @@ Naskah resmi tetap dokumen `.docx`. Repo ini hanya menyimpan naskah kerja versi 
 - Istilah mengikuti kamus istilah Polstat STIS; istilah asing ditulis miring.
 - Persamaan ditulis dalam LaTeX dengan nomor dua digit per bab, misalnya (2.5).
 - Daftar pustaka mengikuti format APA dan diurutkan alfabetis.
-- Gambar belum tersimpan di repo; posisinya ditandai dengan kotak keterangan.
+- Gambar disimpan di folder `assets-ta/`; gambar yang belum tersedia ditandai dengan kotak keterangan.
