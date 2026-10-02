@@ -1329,7 +1329,7 @@ p_profil_kwh <- ggplot(profil_klaster, aes(x = cluster, y = rata_estimasi_kwh)) 
   scale_y_continuous(labels = sumbu_id(),
                      expand = expansion(mult = c(0, 0.12))) +
   labs(
-    x = "Klaster", y = "Rata-rata konsumsi listrik (kWh per bulan)"
+    x = "Klaster", y = "Rata-rata tertimbang konsumsi listrik (kWh per bulan)"
   ) +
   theme_minimal(base_size = 12, base_family = font_naskah)
 
