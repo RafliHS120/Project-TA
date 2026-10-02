@@ -1139,8 +1139,6 @@ Badan Pusat Statistik Provinsi DKI Jakarta. (2025). *Provinsi DKI Jakarta dalam 
 
 Badan Pusat Statistik Provinsi DKI Jakarta. (2026). *Provinsi DKI Jakarta dalam angka 2026* (Vol. 56; No. Publikasi 31000.26005).
 
-Baltagi, B. H. (2005). *Econometric analysis of panel data* (3rd ed.). John Wiley & Sons.
-
 Bergsma, W. (2013). A bias-correction for Cramér's V and Tschuprow's T. *Journal of the Korean Statistical Society*, *42*(3), 323–328. https://doi.org/10.1016/j.jkss.2012.10.002
 
 Christono, A. B., & Putri, D. D. (2021). Pengaruh konsumsi dan investasi terhadap produk domestik regional bruto (PDRB) di Provinsi DKI Jakarta periode 2010–2019. *Journal of Economics and Business UBS*.
@@ -1155,13 +1153,9 @@ Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). *Cluster analysis* (5
 
 Fisher, R. A. (1922). On the interpretation of χ² from contingency tables, and the calculation of P. *Journal of the Royal Statistical Society*, *85*(1), 87–94. https://doi.org/10.1111/j.2397-2335.1922.tb00768.x
 
-Gujarati, D. N. (2004). *Basic econometrics* (4th ed.). The McGraw-Hill Companies.
-
 Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). *Multivariate data analysis* (8th ed.). Cengage Learning.
 
 Handayani, K., Krozer, Y., & Filatova, T. (2019). Trade-offs between electrification and climate change mitigation: An analysis of the Java-Bali power system in Indonesia. *Applied Energy*, *236*, 659–672.
-
-Indrawanto, D. (2025). Integration of sustainable architecture principles in vertical housing design in high-density urban areas. *The Journal of Academic Science*, *2*(2), 461–469. https://doi.org/10.59613/ttsfb560
 
 Johnson, R. A., & Wichern, D. W. (2014). *Applied multivariate statistical analysis* (6th ed.). Pearson Education Limited.
 
@@ -1210,11 +1204,7 @@ PT PLN (Persero). (2025). *Penetapan tarif tenaga listrik PT PLN (Persero) perio
 
 Rao, J. N. K., & Scott, A. J. (1984). On chi-squared tests for multiway contingency tables with cell proportions estimated from survey data. *The Annals of Statistics*, *12*(1), 46–60.
 
-Rasidia, F., Goejantoro, R., & Fathurahman, M. (2025). Analisis klaster menggunakan metode Average Linkage dengan validasi Multiscale Bootstrap (studi kasus: Indikator pendidikan di Indonesia tahun 2021). *Jurnal EKSPONENSIAL*, *16*(1).
-
 Rencher, A. C. (2002). *Methods of multivariate analysis* (2nd ed.). John Wiley & Sons.
-
-Rinkinen, J., Shove, E., & Smits, M. (2021). Conceptualising urban density, energy demand and social practice. *Buildings and Cities*, *2*(1), 79–91. https://doi.org/10.5334/bc.72
 
 Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. *Journal of Computational and Applied Mathematics*, *20*, 53–65. https://doi.org/10.1016/0377-0427(87)90125-7
 
@@ -1223,8 +1213,6 @@ Siswanto, S., Nuryanto, D. E., Ferdiansyah, M. R., Prastiwi, A. D., Dewi, O. C.,
 Takata, Y., Kubota, T., Pratiwi, S. N., & Sani, H. A. (2025). Classification of daily lifestyle patterns and their relationships with household energy consumption in apartment buildings: A case study of Indonesia. *Journal of Asian Architecture and Building Engineering*. https://doi.org/10.1080/13467581.2025.2574558
 
 van der Kroon, B., Brouwer, R., & van Beukering, P. J. H. (2013). The energy ladder: Theoretical myth or empirical truth? Results from a meta-analysis. *Renewable and Sustainable Energy Reviews*, *20*, 504–513. https://doi.org/10.1016/j.rser.2012.11.045
-
-Widyasanti, A. A. (2024, August 30). *Press release: Kondisi kelas menengah di Indonesia*. Badan Pusat Statistik.
 
 ---
 
