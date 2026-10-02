@@ -1424,7 +1424,7 @@ data_hasil <- data_hasil |>
                                            "Tinggi (> 12 tahun)"))
   )
 
-p_pendidikan_bar <- ggplot(data_hasil, aes(x = cluster, fill = pend_cat)) +
+p_pendidikan_bar <- ggplot(data_hasil, aes(x = cluster, fill = pend_cat, weight = bobot)) +
   geom_bar(position = "fill", width = 0.6, colour = "white", linewidth = 0.5) +
   scale_y_continuous(labels = scales::label_percent(accuracy = 1, decimal.mark = ",")) +
   scale_fill_manual(values = warna_pendidikan) +

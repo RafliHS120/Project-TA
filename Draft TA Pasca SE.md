@@ -134,7 +134,7 @@ RAFLI HIBRIANSYAH SIREGAR, "Klasifikasi Rumah Tangga Berdasarkan Pola Konsumsi L
 | Gambar 12 | Rata-Rata Tertimbang Konsumsi Listrik Rumah Tangga menurut Klaster |
 | Gambar 13 | Sebaran Konsumsi Listrik Rumah Tangga menurut Klaster |
 | Gambar 14 | Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik menurut Klaster |
-| Gambar 15 | Komposisi Pendidikan Kepala Rumah Tangga menurut Klaster |
+| Gambar 15 | Komposisi Tertimbang Pendidikan Kepala Rumah Tangga menurut Klaster |
 | Gambar 16 | Proporsi Kepemilikan AC menurut Klaster |
 
 ## DAFTAR LAMPIRAN
@@ -1011,10 +1011,10 @@ Sumber: Susenas Maret 2025 (Diolah). Deretan titik pada tepi grafik merupakan ak
 
 Lama sekolah KRT bergerak searah dengan kedua indikator di atas. Rata-rata lama sekolah KRT pada Klaster 1 sebesar 9,83 tahun, sedangkan pada Klaster 2 sebesar 13,74 tahun, sehingga selisihnya mencapai 3,90 tahun. Secara jenjang, rata-rata Klaster 1 berada di sekitar tamat sekolah menengah pertama, sementara rata-rata Klaster 2 telah melampaui tamat sekolah menengah atas. Komposisi jenjang pendidikan KRT memperjelas perbedaan tersebut, sebagaimana terlihat pada Gambar 15: [MENUNGGU OUTPUT: jenjang terbesar dan terkecil pada Klaster 1 dan Klaster 2 menurut Gambar 15 hasil skrip terbaru]. Dengan demikian, ketiga variabel pembentuk klaster bergerak ke arah yang sama, dan pengelompokan yang dihasilkan mencerminkan satu sumbu tingkat konsumsi listrik dan sosial ekonomi sebagaimana telah disimpulkan dari muatan komponen utama pada Tabel 6.
 
-![Gambar 15 Komposisi Pendidikan Kepala Rumah Tangga menurut Klaster](assets-ta/gambar-15-pendidikan-krt-klaster.png)
+![Gambar 15 Komposisi Tertimbang Pendidikan Kepala Rumah Tangga menurut Klaster](assets-ta/gambar-15-pendidikan-krt-klaster.png)
 <!-- keluaran R: gambar-15-pendidikan-krt-klaster.png -->
 
-**Gambar 15 Komposisi Pendidikan Kepala Rumah Tangga menurut Klaster**
+**Gambar 15 Komposisi Tertimbang Pendidikan Kepala Rumah Tangga menurut Klaster**
 
 Sumber: Susenas Maret 2025 (Diolah). Jenjang dasar mencakup KRT dengan lama sekolah paling lama 9 tahun (tidak berijazah, SD/sederajat, dan SMP/sederajat), jenjang menengah 12 tahun (SMA/sederajat), dan jenjang tinggi lebih dari 12 tahun (perguruan tinggi).
 
