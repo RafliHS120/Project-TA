@@ -665,7 +665,7 @@ Metode analisis disusun mengikuti urutan tiga tujuan penelitian. Tujuan pertama,
 | Notasi | Pakai nama variabel, bukan X₁–X₃ |
 | Istilah asing | *Elbow*, *Silhouette*, *Profiling* ditulis miring |
 | Sumber di bawah gambar | Wajib dicantumkan; ikuti format sumber Gambar 5 |
-| Catatan revisi | Kotak "Pemeriksaan Pemisahan Klaster pada Variabel Pembentuk" sudah dihapus (Sesi AS); gambar perlu digambar ulang |
+| Catatan revisi | Kotak "Pemeriksaan Pemisahan Klaster pada Variabel Pembentuk" sudah dihapus (Sesi AS); gambar sudah digambar ulang (Sesi AU), sumber draw.io: `assets-ta/gambar-06-diagram-alur.drawio` |
 
 </details>
 
