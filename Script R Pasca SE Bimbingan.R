@@ -1256,6 +1256,7 @@ p_cluster <- factoextra::fviz_cluster(
   pointsize = 0.8, alpha = 0.5, palette = unname(warna_klaster)
 ) +
   labs(
+    title = NULL,   # buang judul bawaan fviz_cluster ("Cluster plot")
     x = label_dim1, y = label_dim2, colour = "Klaster",
     fill = "Klaster", shape = "Klaster"
   ) +
