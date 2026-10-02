@@ -829,7 +829,7 @@ Konsumsi listrik rumah tangga di Provinsi DKI Jakarta rata-rata mencapai 369,61 
 
 Bentuk sebaran konsumsi listrik rumah tangga disajikan pada Gambar 7.
 
-> **[Posisi Gambar 7]** Gambar belum tersimpan di repo.
+![Gambar 7 Distribusi Konsumsi Listrik Rumah Tangga](assets-ta/gambar-07-distribusi-konsumsi.png)
 <!-- keluaran R: 15_hist_estimasi_kwh.png (label diperbarui) -->
 
 **Gambar 7 Distribusi Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025**
@@ -844,7 +844,7 @@ Kapasitas ekonomi rumah tangga, yang diwakili pengeluaran nonmakanan selain list
 
 Keterkaitan antara kapasitas ekonomi dan konsumsi listrik rumah tangga ditampilkan pada Gambar 8.
 
-> **[Posisi Gambar 8]** Gambar belum tersimpan di repo.
+![Gambar 8 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik Rumah Tangga](assets-ta/gambar-08-nonmakanan-konsumsi.png)
 <!-- keluaran R: 17_scatter_estimasi_kwh_nonfood.png (label diperbarui) -->
 
 **Gambar 8 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025**
