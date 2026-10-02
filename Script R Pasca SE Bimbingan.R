@@ -18,6 +18,12 @@
 #    variabel pada sumbu Dim1/Dim2 dan posisi centroid klaster).
 # 8. Perbaikan keterbacaan grafik: label nilai, label variabel berbahasa
 #    Indonesia, dan keterangan persentase keragaman pada sumbu PCA.
+# 9. [SESI AU, 3 OKT 2026] Format grafik disesuaikan Pedoman TA:
+#    desimal koma, ribuan titik, huruf Times New Roman pada sumbu/legenda/
+#    label, tanpa judul di dalam grafik (judul ada di naskah), sumbu PCA
+#    "Komponen utama 1/2", dan nama berkas keluaran = nama aset repo
+#    (gambar-07 ... gambar-16). Boxplot konsumsi menurut AC tidak lagi
+#    masuk naskah (dihapus dari 4.1) sehingga diberi awalan nonnaskah_.
 #
 # CATATAN METODOLOGIS
 # - Konsumsi listrik aktual dalam kWh tidak tersedia memadai (kode 233 = 0).
@@ -96,7 +102,7 @@ if (!dir.exists(folder_output)) {
 
 packages <- c(
   "tidyverse", "foreign", "janitor", "skimr", "cluster",
-  "factoextra", "survey", "broom", "biotools", "MASS", "scales"
+  "factoextra", "survey", "broom", "biotools", "MASS", "scales", "ragg"
 )
 
 installed <- packages %in% rownames(installed.packages())
@@ -127,6 +133,30 @@ summarise <- dplyr::summarise
 # ============================================================
 # 2. FUNGSI BANTU
 # ============================================================
+
+# --- Format grafik sesuai Pedoman TA -------------------------------
+# Pedoman: desimal memakai koma, ribuan memakai titik, dan huruf pada
+# sumbu/legenda memakai Times New Roman.
+font_naskah <- "Times New Roman"
+
+# Angka untuk label di dalam grafik, mis. angka_id(0.3640, 3) -> "0,364"
+angka_id <- function(x, digits = 0) {
+  ifelse(is.na(x), NA_character_,
+         formatC(x, format = "f", digits = digits,
+                 big.mark = ".", decimal.mark = ","))
+}
+
+# Angka untuk sumbu grafik, mis. 15000 -> "15.000"
+sumbu_id <- function(accuracy = 1) {
+  scales::label_number(accuracy = accuracy, big.mark = ".", decimal.mark = ",")
+}
+
+# Simpan grafik dengan ragg agar huruf Times New Roman terbaca di Windows
+simpan_grafik <- function(nama_file, plot, width, height) {
+  ggsave(file.path(folder_output, nama_file), plot,
+         width = width, height = height, dpi = 300,
+         device = ragg::agg_png, bg = "white")
+}
 
 read_dbf_clean <- function(path) {
   if (!file.exists(path)) {
@@ -778,18 +808,16 @@ write_csv(ekstrem_prawinsor,
 
 p_hist_kwh <- ggplot(ta_clean, aes(x = listrik_kwh_final_w)) +
   geom_histogram(bins = 40, fill = "grey35", colour = "white") +
-  scale_x_continuous(labels = scales::comma) +
-  scale_y_continuous(labels = scales::comma) +
+  scale_x_continuous(labels = sumbu_id()) +
+  scale_y_continuous(labels = sumbu_id()) +
   labs(
-    title = "Distribusi Konsumsi Listrik Rumah Tangga",
-    subtitle = "Konsumsi listrik = pengeluaran listrik dibagi tarif golongan daya terpasang",
     x = "Konsumsi listrik sebulan terakhir (kWh)",
     y = "Jumlah rumah tangga sampel"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "15_Distribusi_Konsumsi_Listrik_Rumah_Tangga.png"),
-       p_hist_kwh, width = 8, height = 5, dpi = 300)
+simpan_grafik("gambar-07-distribusi-konsumsi.png",
+              p_hist_kwh, width = 8, height = 5)
 
 p_box_kwh_ac <- ggplot(
   ta_clean,
@@ -799,33 +827,31 @@ p_box_kwh_ac <- ggplot(
 ) +
   geom_boxplot(outlier.shape = NA, fill = "grey85") +
   geom_jitter(width = 0.15, alpha = 0.12, size = 0.5) +
-  scale_y_continuous(labels = scales::comma) +
+  scale_y_continuous(labels = sumbu_id()) +
   labs(
-    title = "Konsumsi Listrik Menurut Kepemilikan AC",
     x = "Kepemilikan AC",
     y = "Konsumsi listrik sebulan terakhir (kWh)"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "16_boxplot_estimasi_kwh_ac.png"),
-       p_box_kwh_ac, width = 8, height = 5, dpi = 300)
+simpan_grafik("nonnaskah_boxplot_konsumsi_ac.png",
+              p_box_kwh_ac, width = 8, height = 5)
 
 p_scatter_kwh_nonfood <- ggplot(
   ta_clean,
   aes(x = pengeluaran_nonmakanan_nonlistrik_w, y = listrik_kwh_final_w)
 ) +
   geom_point(alpha = 0.30, size = 0.8) +
-  scale_x_continuous(labels = scales::comma) +
-  scale_y_continuous(labels = scales::comma) +
+  scale_x_continuous(labels = sumbu_id()) +
+  scale_y_continuous(labels = sumbu_id()) +
   labs(
-    title = "Pengeluaran Nonmakanan Selain Listrik dan Konsumsi Listrik",
     x = "Pengeluaran nonmakanan selain listrik (Rp per bulan)",
     y = "Konsumsi listrik sebulan terakhir (kWh)"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "17_scatter_estimasi_kwh_nonfood.png"),
-       p_scatter_kwh_nonfood, width = 8, height = 5, dpi = 300)
+simpan_grafik("gambar-08-nonmakanan-konsumsi.png",
+              p_scatter_kwh_nonfood, width = 8, height = 5)
 
 
 # ============================================================
@@ -905,40 +931,37 @@ write_csv(evaluasi_k, file.path(folder_output, "18_evaluasi_jumlah_klaster.csv")
 p_elbow <- ggplot(evaluasi_k, aes(x = k, y = wss)) +
   geom_line(linewidth = 0.7, colour = "grey30") +
   geom_point(size = 3, colour = "grey20") +
-  geom_text(aes(label = scales::comma(round(wss, 0))),
+  geom_text(family = font_naskah, aes(label = angka_id(wss, 0)),
             vjust = -1.1, size = 3.2) +
   scale_x_continuous(breaks = k_range, limits = c(0.8, max(k_range) + 0.2)) +
-  scale_y_continuous(labels = scales::comma,
+  scale_y_continuous(labels = sumbu_id(),
                      expand = expansion(mult = c(0.05, 0.12))) +
   labs(
-    title = "Metode Elbow untuk Penentuan Jumlah Klaster",
-    subtitle = "Dihitung mulai K = 1 pada data terstandarkan",
     x = "Jumlah klaster (K)",
     y = "Within-Cluster Sum of Squares (WCSS)"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "19_elbow_wcss.png"),
-       p_elbow, width = 9, height = 5, dpi = 300)
+simpan_grafik("gambar-09-elbow.png",
+              p_elbow, width = 9, height = 5)
 
 # --- Grafik silhouette: K = 2 ke atas --------------------------------
 p_sil <- ggplot(filter(evaluasi_k, !is.na(silhouette)),
                 aes(x = k, y = silhouette)) +
   geom_line(linewidth = 0.7, colour = "grey30") +
   geom_point(size = 3, colour = "grey20") +
-  geom_text(aes(label = sprintf("%.3f", silhouette)), vjust = -1.1, size = 3.2) +
+  geom_text(family = font_naskah, aes(label = angka_id(silhouette, 3)), vjust = -1.1, size = 3.2) +
   scale_x_continuous(breaks = 2:max(k_range)) +
-  scale_y_continuous(expand = expansion(mult = c(0.08, 0.15))) +
+  scale_y_continuous(labels = sumbu_id(0.001),
+                     expand = expansion(mult = c(0.08, 0.15))) +
   labs(
-    title = "Rata-Rata Koefisien Silhouette Menurut Jumlah Klaster",
-    subtitle = "Nilai pada K = 1 tidak terdefinisi sehingga tidak ditampilkan",
     x = "Jumlah klaster (K)",
-    y = "Rata-rata koefisien Silhouette"
+    y = "Rata-rata koefisien silhouette"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "20_silhouette.png"),
-       p_sil, width = 8, height = 5, dpi = 300)
+simpan_grafik("gambar-10-silhouette.png",
+              p_sil, width = 8, height = 5)
 
 if (is.na(k_opt)) {
   k_opt <- evaluasi_k |>
@@ -1214,22 +1237,23 @@ tabel_dimensi <- muatan_pca |>
 print(as.data.frame(tabel_dimensi))
 write_csv(tabel_dimensi, file.path(folder_output, "53d_tabel_dimensi_siap_tempel.csv"))
 
-label_dim1 <- sprintf("Dim1 (%.1f%% keragaman)", ringkas_pca$persen_keragaman[1])
-label_dim2 <- sprintf("Dim2 (%.1f%% keragaman)", ringkas_pca$persen_keragaman[2])
+label_dim1 <- paste0("Komponen utama 1 (", angka_id(ringkas_pca$persen_keragaman[1], 1), "% keragaman)")
+label_dim2 <- paste0("Komponen utama 2 (", angka_id(ringkas_pca$persen_keragaman[2], 1), "% keragaman)")
 
 p_cluster <- factoextra::fviz_cluster(
   km_final, data = x, geom = "point", ellipse.type = "convex",
   pointsize = 0.8, alpha = 0.5
 ) +
   labs(
-    title = "Visualisasi Klaster pada Dua Komponen Utama",
     x = label_dim1, y = label_dim2, colour = "Klaster",
     fill = "Klaster", shape = "Klaster"
   ) +
-  theme_minimal(base_size = 12)
+  scale_x_continuous(labels = sumbu_id(0.1)) +
+  scale_y_continuous(labels = sumbu_id(0.1)) +
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "22_visualisasi_cluster_pca.png"),
-       p_cluster, width = 8, height = 6, dpi = 300)
+simpan_grafik("gambar-11-klaster-komponen-utama.png",
+              p_cluster, width = 8, height = 6)
 
 
 # ============================================================
@@ -1287,32 +1311,29 @@ write_csv(profil_klaster_unweighted,
 
 p_profil_kwh <- ggplot(profil_klaster, aes(x = cluster, y = rata_estimasi_kwh)) +
   geom_col(fill = "grey40", width = 0.6) +
-  geom_text(aes(label = scales::comma(round(rata_estimasi_kwh, 1))),
+  geom_text(family = font_naskah, aes(label = angka_id(rata_estimasi_kwh, 1)),
             vjust = -0.5, size = 3.5) +
-  scale_y_continuous(labels = scales::comma,
+  scale_y_continuous(labels = sumbu_id(),
                      expand = expansion(mult = c(0, 0.12))) +
   labs(
-    title = "Rata-Rata Konsumsi Listrik Menurut Klaster",
-    subtitle = "Rata-rata tertimbang menurut bobot Susenas Maret 2025",
     x = "Klaster", y = "Rata-rata konsumsi listrik (kWh per bulan)"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "25_profil_rata_kwh.png"),
-       p_profil_kwh, width = 8, height = 5, dpi = 300)
+simpan_grafik("gambar-12-rata-rata-konsumsi-klaster.png",
+              p_profil_kwh, width = 8, height = 5)
 
 p_profil_ac <- ggplot(profil_klaster, aes(x = cluster, y = proporsi_ac)) +
   geom_col(fill = "grey40", width = 0.6) +
-  geom_text(aes(label = sprintf("%.1f%%", proporsi_ac)), vjust = -0.5, size = 3.5) +
-  scale_y_continuous(limits = c(0, 100), expand = expansion(mult = c(0, 0.08))) +
+  geom_text(family = font_naskah, aes(label = paste0(angka_id(proporsi_ac, 1), "%")), vjust = -0.5, size = 3.5) +
+  scale_y_continuous(labels = sumbu_id(), limits = c(0, 100), expand = expansion(mult = c(0, 0.08))) +
   labs(
-    title = "Proporsi Kepemilikan AC Menurut Klaster",
     x = "Klaster", y = "Rumah tangga yang memiliki AC (%)"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "26_profil_proporsi_ac.png"),
-       p_profil_ac, width = 8, height = 5, dpi = 300)
+simpan_grafik("gambar-16-kepemilikan-ac-klaster.png",
+              p_profil_ac, width = 8, height = 5)
 
 
 profil_z_long <- data_hasil |>
@@ -1325,31 +1346,29 @@ write_csv(profil_z_long, file.path(folder_output, "27b_rata_zscore_klaster.csv")
 
 p_heatmap <- ggplot(profil_z_long, aes(x = variabel, y = cluster, fill = rata_z)) +
   geom_tile(colour = "white") +
-  geom_text(aes(label = sprintf("%.2f", rata_z)), size = 4) +
+  geom_text(family = font_naskah, aes(label = angka_id(rata_z, 2)), size = 4) +
   scale_fill_gradient2(low = "#B2182B", mid = "white", high = "#2166AC",
                        midpoint = 0) +
   labs(
-    title = "Rata-Rata Skor Baku Variabel Pembentuk Klaster",
     x = "Variabel pembentuk klaster", y = "Klaster", fill = "Rata-rata Z"
   ) +
-  theme_minimal(base_size = 12) +
+  theme_minimal(base_size = 12, base_family = font_naskah) +
   theme(axis.text.x = element_text(angle = 15, hjust = 1))
 
-ggsave(file.path(folder_output, "27_heatmap_zscore_klaster.png"),
-       p_heatmap, width = 9, height = 5, dpi = 300)
+simpan_grafik("nonnaskah_heatmap_zscore_klaster.png",
+              p_heatmap, width = 9, height = 5)
 
 p_box_kwh_cluster <- ggplot(data_hasil, aes(x = cluster, y = listrik_kwh_final_w)) +
   geom_boxplot(outlier.shape = NA, fill = "grey85") +
   geom_jitter(width = 0.15, alpha = 0.08, size = 0.5) +
-  scale_y_continuous(labels = scales::comma) +
+  scale_y_continuous(labels = sumbu_id()) +
   labs(
-    title = "Sebaran Konsumsi Listrik Menurut Klaster",
     x = "Klaster", y = "Konsumsi listrik sebulan terakhir (kWh)"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "28_boxplot_kwh_cluster.png"),
-       p_box_kwh_cluster, width = 8, height = 5, dpi = 300)
+simpan_grafik("gambar-13-sebaran-konsumsi-klaster.png",
+              p_box_kwh_cluster, width = 8, height = 5)
 
 p_scatter_cluster <- ggplot(
   data_hasil,
@@ -1357,24 +1376,23 @@ p_scatter_cluster <- ggplot(
       colour = cluster)
 ) +
   geom_point(alpha = 0.45, size = 0.8) +
-  scale_x_continuous(labels = scales::comma) +
-  scale_y_continuous(labels = scales::comma) +
+  scale_x_continuous(labels = sumbu_id()) +
+  scale_y_continuous(labels = sumbu_id()) +
   labs(
-    title = "Pengeluaran Nonmakanan Selain Listrik dan Konsumsi Listrik Menurut Klaster",
     x = "Pengeluaran nonmakanan selain listrik (Rp per bulan)",
     y = "Konsumsi listrik sebulan terakhir (kWh)",
     colour = "Klaster"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "29_scatter_cluster.png"),
-       p_scatter_cluster, width = 8, height = 5, dpi = 300)
+simpan_grafik("gambar-14-nonmakanan-konsumsi-klaster.png",
+              p_scatter_cluster, width = 8, height = 5)
 
 data_hasil <- data_hasil |>
   mutate(
     pend_cat = case_when(
-      pendidikan_krt <= 6 ~ "Rendah (<= 6 tahun)",
-      pendidikan_krt <= 12 ~ "Sedang (7-12 tahun)",
+      pendidikan_krt <= 6 ~ "Rendah (\u2264 6 tahun)",
+      pendidikan_krt <= 12 ~ "Sedang (7\u201312 tahun)",
       pendidikan_krt > 12 ~ "Tinggi (> 12 tahun)",
       TRUE ~ NA_character_
     )
@@ -1382,16 +1400,15 @@ data_hasil <- data_hasil |>
 
 p_pendidikan_bar <- ggplot(data_hasil, aes(x = cluster, fill = pend_cat)) +
   geom_bar(position = "fill", width = 0.6) +
-  scale_y_continuous(labels = scales::percent_format()) +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1, decimal.mark = ",")) +
   scale_fill_grey(start = 0.75, end = 0.25) +
   labs(
-    title = "Komposisi Pendidikan Kepala Rumah Tangga Menurut Klaster",
-    x = "Klaster", y = "Persentase rumah tangga", fill = "Kategori pendidikan"
+    x = "Klaster", y = "Persentase rumah tangga", fill = "Lama sekolah KRT"
   ) +
-  theme_minimal(base_size = 12)
+  theme_minimal(base_size = 12, base_family = font_naskah)
 
-ggsave(file.path(folder_output, "30_pendidikan_krt_bar.png"),
-       p_pendidikan_bar, width = 8, height = 5, dpi = 300)
+simpan_grafik("gambar-15-pendidikan-krt-klaster.png",
+              p_pendidikan_bar, width = 8, height = 5)
 
 
 # ============================================================

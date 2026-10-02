@@ -829,7 +829,7 @@ Konsumsi listrik rumah tangga di Provinsi DKI Jakarta rata-rata mencapai 369,61 
 Bentuk sebaran konsumsi listrik rumah tangga disajikan pada Gambar 7.
 
 ![Gambar 7 Distribusi Konsumsi Listrik Rumah Tangga](assets-ta/gambar-07-distribusi-konsumsi.png)
-<!-- keluaran R: 15_hist_estimasi_kwh.png (label diperbarui) -->
+<!-- keluaran R: gambar-07-distribusi-konsumsi.png -->
 
 **Gambar 7 Distribusi Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025**
 
@@ -844,7 +844,7 @@ Kapasitas ekonomi rumah tangga, yang diwakili pengeluaran nonmakanan selain list
 Keterkaitan antara kapasitas ekonomi dan konsumsi listrik rumah tangga ditampilkan pada Gambar 8.
 
 ![Gambar 8 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik Rumah Tangga](assets-ta/gambar-08-nonmakanan-konsumsi.png)
-<!-- keluaran R: 17_scatter_estimasi_kwh_nonfood.png (label diperbarui) -->
+<!-- keluaran R: gambar-08-nonmakanan-konsumsi.png -->
 
 **Gambar 8 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik Rumah Tangga, DKI Jakarta, Maret 2025**
 
@@ -884,7 +884,7 @@ Nilai WCSS pada satu klaster tepat sebesar 15.000, yaitu hasil kali antara 5.000
 Bentuk penurunan tersebut ditampilkan pada Gambar 9.
 
 ![Gambar 9 Kurva Elbow untuk Penentuan Jumlah Klaster](assets-ta/gambar-09-elbow.png)
-<!-- keluaran R: 19_elbow_wcss.png -->
+<!-- keluaran R: gambar-09-elbow.png -->
 
 **Gambar 9 Kurva *Elbow* untuk Penentuan Jumlah Klaster, DKI Jakarta, Maret 2025**
 
@@ -895,7 +895,7 @@ Gambar 9 memperlihatkan penurunan yang sangat curam pada segmen pertama, melanda
 Perbandingan rata-rata koefisien *silhouette* ditampilkan pada Gambar 10.
 
 ![Gambar 10 Rata-Rata Koefisien Silhouette menurut Jumlah Klaster](assets-ta/gambar-10-silhouette.png)
-<!-- keluaran R: 20_silhouette.png -->
+<!-- keluaran R: gambar-10-silhouette.png -->
 
 **Gambar 10 Rata-Rata Koefisien *Silhouette* menurut Jumlah Klaster, DKI Jakarta, Maret 2025**
 
@@ -927,7 +927,7 @@ Tabel 5 memperlihatkan pola pemisahan yang seragam arahnya. Ketiga *centroid* Kl
 Sebaran kedua klaster pada dua komponen utama ditampilkan pada Gambar 11.
 
 ![Gambar 11 Visualisasi Klaster Rumah Tangga pada Dua Komponen Utama](assets-ta/gambar-11-klaster-komponen-utama.png)
-<!-- keluaran R: 22_visualisasi_cluster_pca.png -->
+<!-- keluaran R: gambar-11-klaster-komponen-utama.png -->
 
 **Gambar 11 Visualisasi Klaster Rumah Tangga pada Dua Komponen Utama, DKI Jakarta, Maret 2025**
 
@@ -985,7 +985,7 @@ Klaster 1 mencakup 3.329 rumah tangga sampel yang mewakili sekitar 1.744.440 rum
 Perbedaan paling mencolok terletak pada konsumsi listrik. Rata-rata konsumsi Klaster 2 sebesar 645,34 kWh per bulan, yaitu sekitar 3,46 kali rata-rata Klaster 1 yang sebesar 186,61 kWh per bulan. Perbedaan tersebut bertahan ketika konsumsi dihitung per anggota rumah tangga: 198,88 kWh per kapita pada Klaster 2 berbanding 60,08 kWh per kapita pada Klaster 1, atau sekitar 3,31 kali. Kesenjangan konsumsi antara kedua klaster karena itu tidak dapat dijelaskan oleh perbedaan jumlah penghuni, melainkan oleh perbedaan intensitas penggunaan listrik per orang. Pada kedua klaster, nilai rata-rata tetap berada di atas mediannya, yang menunjukkan bahwa kemencengan sebaran ke kanan tidak hilang oleh pengelompokan, melainkan tetap ada di dalam masing-masing kelompok.
 
 > **[Posisi Gambar 12]** Gambar belum tersimpan di repo.
-<!-- keluaran R: belum ditentukan -->
+<!-- keluaran R: gambar-12-rata-rata-konsumsi-klaster.png -->
 
 **Gambar 12 Rata-Rata Konsumsi Listrik Rumah Tangga menurut Klaster**
 
@@ -994,7 +994,7 @@ Sumber: Susenas Maret 2025, diolah.
 Perbedaan konsumsi listrik tersebut tidak berbanding lurus dengan perbedaan pengeluaran listriknya. Rata-rata pengeluaran listrik Klaster 2 sebesar Rp789.474 per bulan, yaitu sekitar 4,38 kali rata-rata Klaster 1 yang sebesar Rp180.146 per bulan, sedangkan rasio konsumsinya hanya 3,46 kali. Selisih kedua rasio tersebut merupakan konsekuensi langsung dari struktur tarif tenaga listrik yang berjenjang menurut golongan daya terpasang: rumah tangga Klaster 2 sebagian besar berada pada golongan daya 1.300 VA ke atas (Tabel 8), sehingga membayar tarif per kWh yang lebih tinggi daripada rumah tangga bersubsidi. Temuan ini sekaligus menunjukkan bahwa penggunaan tarif berjenjang dalam konversi pengeluaran menjadi kWh memang diperlukan; penggunaan satu tarif rata-rata akan membuat konsumsi listrik hasil konversi menjadi kelipatan tetap dari pengeluaran listrik sehingga kedua rasio tersebut dipaksa sama.
 
 > **[Posisi Gambar 13]** Gambar belum tersimpan di repo.
-<!-- keluaran R: belum ditentukan -->
+<!-- keluaran R: gambar-13-sebaran-konsumsi-klaster.png -->
 
 **Gambar 13 Sebaran Konsumsi Listrik Rumah Tangga menurut Klaster**
 
@@ -1003,7 +1003,7 @@ Sumber: Susenas Maret 2025, diolah. Deretan titik mendatar pada nilai tertinggi 
 Kesenjangan yang serupa terlihat pada kapasitas ekonomi rumah tangga. Rata-rata pengeluaran nonmakanan selain listrik pada Klaster 2 sebesar Rp10.821.847 per bulan, yaitu sekitar 4,31 kali rata-rata Klaster 1 yang sebesar Rp2.509.606 per bulan. Meskipun demikian, pangsa pengeluaran listrik terhadap pengeluaran nonmakanan pada kedua kelompok hampir sama, yaitu 7,05 persen pada Klaster 1 dan 7,63 persen pada Klaster 2. Kedua angka tersebut memberi arti penting bagi penafsiran: perbedaan antara kedua klaster bukan terletak pada porsi anggaran yang dialokasikan untuk listrik, melainkan pada besaran anggaran itu sendiri. Rumah tangga pada kedua kelompok membelanjakan bagian yang kurang lebih sebanding dari pengeluaran nonmakanannya untuk listrik, tetapi bekerja pada skala anggaran yang berbeda jauh.
 
 > **[Posisi Gambar 14]** Gambar belum tersimpan di repo.
-<!-- keluaran R: belum ditentukan -->
+<!-- keluaran R: gambar-14-nonmakanan-konsumsi-klaster.png -->
 
 **Gambar 14 Pengeluaran Nonmakanan selain Listrik dan Konsumsi Listrik menurut Klaster**
 
@@ -1012,7 +1012,7 @@ Sumber: Susenas Maret 2025, diolah. Deretan titik pada tepi grafik merupakan aki
 Lama sekolah KRT bergerak searah dengan kedua indikator di atas. Rata-rata lama sekolah KRT pada Klaster 1 sebesar 9,83 tahun, sedangkan pada Klaster 2 sebesar 13,74 tahun, sehingga selisihnya mencapai 3,90 tahun. Secara jenjang, rata-rata Klaster 1 berada di sekitar tamat sekolah menengah pertama, sementara rata-rata Klaster 2 telah melampaui tamat sekolah menengah atas. Komposisi kategori pendidikannya memperjelas perbedaan tersebut, sebagaimana terlihat pada Gambar 15: pada Klaster 1, kepala rumah tangga berpendidikan menengah merupakan kelompok terbesar dan kepala rumah tangga berpendidikan tinggi hanya sebagian kecil, sedangkan pada Klaster 2 kepala rumah tangga berpendidikan tinggi merupakan kelompok terbesar dan kepala rumah tangga berpendidikan rendah nyaris tidak ada. Dengan demikian, ketiga variabel pembentuk klaster bergerak ke arah yang sama, dan pengelompokan yang dihasilkan mencerminkan satu sumbu tingkat konsumsi listrik dan sosial ekonomi sebagaimana telah disimpulkan dari muatan komponen utama pada Tabel 6.
 
 > **[Posisi Gambar 15]** Gambar belum tersimpan di repo.
-<!-- keluaran R: belum ditentukan -->
+<!-- keluaran R: gambar-15-pendidikan-krt-klaster.png -->
 
 **Gambar 15 Komposisi Pendidikan Kepala Rumah Tangga menurut Klaster**
 
@@ -1048,7 +1048,7 @@ Catatan: seluruh persentase dihitung dengan penimbang rumah tangga; median luas 
 Perbedaan terbesar muncul pada luas lantai dan kepemilikan AC. Rata-rata luas lantai Klaster 2 mencapai dua setengah kali rata-rata Klaster 1, dengan selisih sekitar 64 m², sedangkan mediannya berselisih 50 m². Kedua ukuran pemusatan bergerak searah, sehingga selisih ini tidak dapat dijelaskan oleh segelintir rumah tangga berhunian sangat luas. Nilai luas lantai yang dipakai merupakan hasil *winsorizing* pada persentil ke-1 dan ke-99. Pada kepemilikan AC, selisihnya mencapai 59 poin persentase: tiga dari empat rumah tangga Klaster 2 memiliki AC, sedangkan pada Klaster 1 kepemilikan AC merupakan pengecualian dan hanya dijumpai pada kurang dari seperlima rumah tangga. Sebaran ini disajikan pada Gambar 16.
 
 > **[Posisi Gambar 16]** Gambar belum tersimpan di repo.
-<!-- keluaran R: belum ditentukan -->
+<!-- keluaran R: gambar-16-kepemilikan-ac-klaster.png -->
 
 **Gambar 16 Proporsi Kepemilikan AC menurut Klaster**
 
