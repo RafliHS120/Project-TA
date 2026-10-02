@@ -1436,6 +1436,19 @@ p_pendidikan_bar <- ggplot(data_hasil, aes(x = cluster, fill = pend_cat, weight 
 simpan_grafik("gambar-15-pendidikan-krt-klaster.png",
               p_pendidikan_bar, width = 8, height = 5)
 
+# Angka di balik Gambar 15: persentase tertimbang jenjang pendidikan KRT
+komposisi_pendidikan <- data_hasil |>
+  count(cluster, pend_cat, wt = bobot, name = "n_tertimbang") |>
+  group_by(cluster) |>
+  mutate(persen_tertimbang = 100 * n_tertimbang / sum(n_tertimbang)) |>
+  ungroup()
+
+print(as.data.frame(komposisi_pendidikan))
+
+write_csv(komposisi_pendidikan,
+          file.path(folder_output, "25b_komposisi_pendidikan_tertimbang.csv"))
+
+
 
 # ============================================================
 # 18. UJI BEDA UNIVARIAT ANTAR KLASTER
