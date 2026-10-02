@@ -1411,11 +1411,17 @@ simpan_grafik("gambar-14-nonmakanan-konsumsi-klaster.png",
 data_hasil <- data_hasil |>
   mutate(
     pend_cat = case_when(
-      pendidikan_krt <= 6 ~ "Rendah (\u2264 6 tahun)",
-      pendidikan_krt <= 12 ~ "Sedang (7\u201312 tahun)",
+      # Jenjang mengikuti pembagian pendidikan dasar (SD dan SMP),
+      # menengah (SMA/sederajat), dan tinggi pada tabel konversi Bab III:
+      # 0/6/9 = dasar, 12 = menengah, 14/15/16/18 = tinggi
+      pendidikan_krt <= 9 ~ "Dasar (\u2264 9 tahun)",
+      pendidikan_krt <= 12 ~ "Menengah (12 tahun)",
       pendidikan_krt > 12 ~ "Tinggi (> 12 tahun)",
       TRUE ~ NA_character_
-    )
+    ),
+    pend_cat = factor(pend_cat, levels = c("Dasar (\u2264 9 tahun)",
+                                           "Menengah (12 tahun)",
+                                           "Tinggi (> 12 tahun)"))
   )
 
 p_pendidikan_bar <- ggplot(data_hasil, aes(x = cluster, fill = pend_cat)) +
@@ -1423,7 +1429,7 @@ p_pendidikan_bar <- ggplot(data_hasil, aes(x = cluster, fill = pend_cat)) +
   scale_y_continuous(labels = scales::label_percent(accuracy = 1, decimal.mark = ",")) +
   scale_fill_manual(values = warna_pendidikan) +
   labs(
-    x = "Klaster", y = "Persentase rumah tangga", fill = "Lama sekolah KRT"
+    x = "Klaster", y = "Persentase rumah tangga", fill = "Jenjang pendidikan KRT"
   ) +
   theme_minimal(base_size = 12, base_family = font_naskah)
 
