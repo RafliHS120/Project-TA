@@ -322,7 +322,7 @@ Kategori sisanya tampil sebagai irisan tipis; labelnya terlalu kecil pada gambar
 | Industri | 3,92 Miliar kWh | 10,26% |
 | Sosial | 1,77 Miliar kWh | 4,63% |
 | Perkantoran | 1,6 Miliar kWh | 4,19% |
-| Lainnya | 0,18 Miliar kWh (label sangat kecil) | 1,47% |
+| Lainnya | 0,58 Miliar kWh (label sangat kecil) | 1,52% |
 
 **Makna dalam konteks dokumen.** Rumah tangga bukan hanya dominan sebagai pelanggan, tetapi juga merupakan sektor dengan konsumsi listrik agregat terbesar. Namun porsi 42,84% menunjukkan sektor usaha dan sektor lain tetap menyerap bagian besar konsumsi total — kontras tajam dengan panel (a) yang menunjukkan 92,49%.
 
