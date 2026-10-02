@@ -24,6 +24,10 @@
 #    "Komponen utama 1/2", dan nama berkas keluaran = nama aset repo
 #    (gambar-07 ... gambar-16). Boxplot konsumsi menurut AC tidak lagi
 #    masuk naskah (dihapus dari 4.1) sehingga diberi awalan nonnaskah_.
+# 10. [SESI AU] Warna pada grafik klaster: satu warna tetap per klaster
+#    (Klaster 1 biru, Klaster 2 jingga) di Gambar 11-14 dan 16, serta
+#    gradasi hijau terang-gelap untuk kategori lama sekolah KRT (Gambar 15).
+#    Palet Okabe-Ito, aman bagi pembaca buta warna.
 #
 # CATATAN METODOLOGIS
 # - Konsumsi listrik aktual dalam kWh tidak tersedia memadai (kode 233 = 0).
@@ -150,6 +154,13 @@ angka_id <- function(x, digits = 0) {
 sumbu_id <- function(accuracy = 1) {
   scales::label_number(accuracy = accuracy, big.mark = ".", decimal.mark = ",")
 }
+
+# Warna tetap per klaster (dipakai di SEMUA grafik klaster agar konsisten)
+# Klaster 1 = biru, Klaster 2 = jingga (palet Okabe-Ito, aman buta warna)
+warna_klaster <- c("1" = "#0072B2", "2" = "#D55E00")
+
+# Gradasi satu warna untuk kategori berurutan (rendah -> tinggi)
+warna_pendidikan <- c("#C7E9C0", "#74C476", "#238B45")
 
 # Simpan grafik dengan ragg agar huruf Times New Roman terbaca di Windows
 simpan_grafik <- function(nama_file, plot, width, height) {
@@ -1242,7 +1253,7 @@ label_dim2 <- paste0("Komponen utama 2 (", angka_id(ringkas_pca$persen_keragaman
 
 p_cluster <- factoextra::fviz_cluster(
   km_final, data = x, geom = "point", ellipse.type = "convex",
-  pointsize = 0.8, alpha = 0.5
+  pointsize = 0.8, alpha = 0.5, palette = unname(warna_klaster)
 ) +
   labs(
     x = label_dim1, y = label_dim2, colour = "Klaster",
@@ -1310,7 +1321,8 @@ write_csv(profil_klaster_unweighted,
 # ============================================================
 
 p_profil_kwh <- ggplot(profil_klaster, aes(x = cluster, y = rata_estimasi_kwh)) +
-  geom_col(fill = "grey40", width = 0.6) +
+  geom_col(aes(fill = factor(cluster)), width = 0.6, show.legend = FALSE) +
+  scale_fill_manual(values = warna_klaster) +
   geom_text(family = font_naskah, aes(label = angka_id(rata_estimasi_kwh, 1)),
             vjust = -0.5, size = 3.5) +
   scale_y_continuous(labels = sumbu_id(),
@@ -1324,7 +1336,8 @@ simpan_grafik("gambar-12-rata-rata-konsumsi-klaster.png",
               p_profil_kwh, width = 8, height = 5)
 
 p_profil_ac <- ggplot(profil_klaster, aes(x = cluster, y = proporsi_ac)) +
-  geom_col(fill = "grey40", width = 0.6) +
+  geom_col(aes(fill = factor(cluster)), width = 0.6, show.legend = FALSE) +
+  scale_fill_manual(values = warna_klaster) +
   geom_text(family = font_naskah, aes(label = paste0(angka_id(proporsi_ac, 1), "%")), vjust = -0.5, size = 3.5) +
   scale_y_continuous(labels = sumbu_id(), limits = c(0, 100), expand = expansion(mult = c(0, 0.08))) +
   labs(
@@ -1359,8 +1372,12 @@ simpan_grafik("nonnaskah_heatmap_zscore_klaster.png",
               p_heatmap, width = 9, height = 5)
 
 p_box_kwh_cluster <- ggplot(data_hasil, aes(x = cluster, y = listrik_kwh_final_w)) +
-  geom_boxplot(outlier.shape = NA, fill = "grey85") +
-  geom_jitter(width = 0.15, alpha = 0.08, size = 0.5) +
+  geom_boxplot(aes(fill = cluster), outlier.shape = NA, alpha = 0.35,
+               show.legend = FALSE) +
+  geom_jitter(aes(colour = cluster), width = 0.15, alpha = 0.15, size = 0.5,
+              show.legend = FALSE) +
+  scale_fill_manual(values = warna_klaster) +
+  scale_colour_manual(values = warna_klaster) +
   scale_y_continuous(labels = sumbu_id()) +
   labs(
     x = "Klaster", y = "Konsumsi listrik sebulan terakhir (kWh)"
@@ -1376,6 +1393,8 @@ p_scatter_cluster <- ggplot(
       colour = cluster)
 ) +
   geom_point(alpha = 0.45, size = 0.8) +
+  scale_colour_manual(values = warna_klaster) +
+  guides(colour = guide_legend(override.aes = list(size = 3, alpha = 1))) +
   scale_x_continuous(labels = sumbu_id()) +
   scale_y_continuous(labels = sumbu_id()) +
   labs(
@@ -1399,9 +1418,9 @@ data_hasil <- data_hasil |>
   )
 
 p_pendidikan_bar <- ggplot(data_hasil, aes(x = cluster, fill = pend_cat)) +
-  geom_bar(position = "fill", width = 0.6) +
+  geom_bar(position = "fill", width = 0.6, colour = "white", linewidth = 0.5) +
   scale_y_continuous(labels = scales::label_percent(accuracy = 1, decimal.mark = ",")) +
-  scale_fill_grey(start = 0.75, end = 0.25) +
+  scale_fill_manual(values = warna_pendidikan) +
   labs(
     x = "Klaster", y = "Persentase rumah tangga", fill = "Lama sekolah KRT"
   ) +
