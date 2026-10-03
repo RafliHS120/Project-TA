@@ -1,10 +1,52 @@
 # KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
 
-> **Catatan repo (bukan isi naskah).** Dokumen ini adalah naskah kerja versi Markdown dari Karya Ilmiah Tugas Akhir Rafli Hibriansyah Siregar, Politeknik Statistika STIS. Naskah resmi tetap dokumen `.docx`. Istilah mengikuti `Kamus_Istilah_Polstat_STIS.md` (Project TA). Gambar dan tabel dinomori berurutan lintas bab (Gambar 1, 2, …; Tabel 1, 2, …). Gambar 1–16 tersimpan di folder `assets-ta`; logo STIS belum tersimpan.
+> **Catatan repo (bukan isi naskah).** Dokumen ini adalah naskah kerja versi Markdown dari Karya Ilmiah Tugas Akhir Rafli Hibriansyah Siregar, Politeknik Statistika STIS. Naskah resmi tetap dokumen `.docx`. Istilah mengikuti `Kamus_Istilah_Polstat_STIS.md` (Project TA). Gambar dan tabel dinomori berurutan lintas bab (Gambar 1, 2, …; Tabel 1, 2, …). Gambar 1–16 dan logo STIS tersimpan di folder `assets-ta`.
 
 ---
 
-## Halaman Sampul dan Halaman Judul
+## Halaman Pertama Draf Sidang
+
+> **Catatan repo (bukan isi naskah).** Halaman ini hanya untuk draf yang diunggah ke SIPADU dan diserahkan kepada pembimbing serta penguji sebelum sidang (Pedoman D-III, Lampiran 20). Halaman ini **tidak** dimasukkan ke buku final pascasidang. Susunan penguji: Pedoman memakai format Pembimbing/Moderator + Penguji I + Penguji II (bobot nilai 40/30/30), sedangkan SIPADU mencantumkan Bu Fitri sebagai Penguji 1. Di sini Pak Yaya ditulis sebagai Penguji I dan Pak Azka sebagai Penguji II; cocokkan dengan pengumuman jadwal sidang.
+
+DRAFT UJIAN/SIDANG TUGAS AKHIR
+
+POLITEKNIK STATISTIKA STIS
+
+TAHUN AKADEMIK 2025/2026
+
+| | | |
+|---|---|---|
+| NAMA | : | RAFLI HIBRIANSYAH SIREGAR |
+| NIM | : | 112313326 |
+| TINGKAT | : | III |
+| PEMBIMBING | : | Dr. Fitri Kartiasih, S.S.T., S.E., M.Si. |
+| MODERATOR | : | Dr. Fitri Kartiasih, S.S.T., S.E., M.Si. |
+| PENGUJI I | : | Yaya Setiadi, S.S.T., M.M. |
+| PENGUJI II | : | Dr. Azka Ubaidillah, SST., M.Si. |
+
+JADWAL UJIAN/SIDANG
+
+| | | |
+|---|---|---|
+| HARI | : | Rabu |
+| TANGGAL | : | 14 Oktober 2026 |
+| SESI | : | 3 |
+| WAKTU | : | 11.00–12.00 WIB |
+| RUANGAN | : | 321 |
+
+---
+
+## Halaman Sampul
+
+> **Catatan repo (bukan isi naskah).** Format mengikuti Pedoman D-III Bab IV (Format Penulisan Bagian Awal): judul kapital TNR 14 pt, spasi 2; nama dan NIM kapital TNR 12 pt; nama prodi kapital TNR 12 pt **tanpa baris peminatan**; logo hitam-putih 5 cm × 5 cm; tiga baris terakhir kapital TNR 14 pt, spasi 1,5.
+
+KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
+
+RAFLI HIBRIANSYAH SIREGAR
+
+112313326
+
+PROGRAM STUDI STATISTIKA PROGRAM DIPLOMA III
 
 ![Logo Politeknik Statistika STIS](assets-ta/logo-stis.png)
 
@@ -15,21 +57,25 @@ Lambang berbentuk lingkaran, hitam-putih (versi sampul dari Rafli, Sesi AX). Cin
 
 </details>
 
-KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
+POLITEKNIK STATISTIKA STIS
 
-RAFLI HIBRIANSYAH SIREGAR
+JAKARTA
 
-112313326
-
-PROGRAM STUDI STATISTIKA PROGRAM DIPLOMA III
+2026
 
 ---
 
+## Halaman Judul
+
+> **Catatan repo (bukan isi naskah).** Sebutan halaman ini **TUGAS AKHIR** (Pedoman D-III Bab IV, Halaman Judul butir 2), bukan "SKRIPSI" (templat D-IV) dan bukan "KARYA ILMIAH TUGAS AKHIR" (naskah kerja sebelumnya). Halaman judul tidak memuat baris program studi.
+
 KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
 
-KARYA ILMIAH TUGAS AKHIR
+TUGAS AKHIR
 
-Diajukan sebagai Salah Satu Syarat untuk Memperoleh Sebutan Ahli Madya Statistika pada Politeknik Statistika STIS
+Diajukan sebagai Salah Satu Syarat untuk Memperoleh Sebutan
+
+Ahli Madya Statistika pada Politeknik Statistika STIS
 
 Oleh:
 
@@ -37,7 +83,84 @@ RAFLI HIBRIANSYAH SIREGAR
 
 112313326
 
-PROGRAM STUDI STATISTIKA PROGRAM DIPLOMA III
+![Logo Politeknik Statistika STIS](assets-ta/logo-stis.png)
+
+POLITEKNIK STATISTIKA STIS
+
+JAKARTA
+
+2026
+
+---
+
+## Halaman Pernyataan
+
+> **Catatan repo (bukan isi naskah).** Tanggal = tanggal ujian; ditandatangani di atas meterai Rp10.000 (Pedoman D-III, Halaman Pernyataan; komentar sekretaris mahasiswa pada templat).
+
+PERNYATAAN
+
+Tugas Akhir dengan Judul
+
+KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
+
+Oleh:
+
+RAFLI HIBRIANSYAH SIREGAR
+
+112313326
+
+adalah benar-benar hasil penelitian sendiri dan bukan hasil plagiat atau hasil karya orang lain. Jika di kemudian hari diketahui ternyata tugas akhir ini hasil plagiat atau hasil karya orang lain, penulis bersedia tugas akhir ini dinyatakan tidak sah dan sebutan Ahli Madya Statistika dicabut atau dibatalkan.
+
+Jakarta, 14 Oktober 2026
+
+*(meterai Rp10.000 dan tanda tangan)*
+
+Rafli Hibriansyah Siregar
+
+---
+
+## Halaman Pengesahan
+
+> **Catatan repo (bukan isi naskah).** Tanda tangan pembimbing dan penguji memakai tinta hitam (Pedoman D-III, Halaman Pengesahan). Nama dan NIP Pak Azka diambil dari templat Prodi (tercetak sebagai Ketua Prodi D-IV). Isian bertanda `[ISIAN]` masih menunggu data.
+
+KLASIFIKASI RUMAH TANGGA BERDASARKAN POLA KONSUMSI LISTRIK DAN KARAKTERISTIK SOSIAL EKONOMI DI DKI JAKARTA
+
+Oleh:
+
+RAFLI HIBRIANSYAH SIREGAR
+
+112313326
+
+Tim Penguji
+
+| Penguji I | Penguji II |
+|---|---|
+| *(tanda tangan)* | *(tanda tangan)* |
+| Yaya Setiadi, S.S.T., M.M. | Dr. Azka Ubaidillah, SST., M.Si. |
+| NIP [ISIAN] | NIP 198202072004121001 |
+
+Mengetahui/Menyetujui
+
+| Ketua Program Studi Statistika Program Diploma III | Pembimbing |
+|---|---|
+| *(tanda tangan)* | *(tanda tangan)* |
+| [ISIAN: nama dan gelar Ketua Prodi D-III] | Dr. Fitri Kartiasih, S.S.T., S.E., M.Si. |
+| NIP [ISIAN] | NIP [ISIAN] |
+
+---
+
+## Pernyataan Hak Cipta
+
+> **Catatan repo (bukan isi naskah).** Teks mengikuti Pedoman D-III Lampiran 19 ("karya tulis ini"), bukan templat D-IV ("karya tulis, hasil analisis, perancangan, basis data, program, dan artefak hasil skripsi ini"). Butir 2 di Pedoman versi Markdown terpotong setelah kata "seluruh"; lanjutannya dilengkapi mengikuti pola templat. Cocokkan dengan PDF Pedoman halaman 115.
+
+© Hak Cipta milik Politeknik Statistika STIS, Tahun 2026
+
+Hak Cipta dilindungi undang-undang
+
+1. Dilarang mengutip sebagian atau seluruh karya tulis ini tanpa mencantumkan atau menyebutkan sumbernya.
+   a. Pengutipan hanya untuk kepentingan pendidikan, penelitian, penulisan karya ilmiah, penyusunan laporan, penulisan kritik atau tinjauan suatu masalah.
+   b. Pengutipan tidak merugikan kepentingan yang wajar Politeknik Statistika STIS.
+2. Dilarang mengumpulkan dan memperbanyak sebagian atau seluruh karya tulis ini dalam bentuk apa pun tanpa seizin Politeknik Statistika STIS.
 
 ---
 
@@ -55,7 +178,7 @@ Syukur Alhamdulillah penulis ucapkan ke hadirat Allah SWT, karena berkat pertolo
 
 Penulis menyadari bahwa tugas akhir ini masih mempunyai kekurangan, baik isi maupun susunannya. Oleh karena itu, saran dan kritik yang membangun sangat penulis harapkan demi perbaikan penulisan tugas akhir ini. Semoga tugas akhir ini bermanfaat bagi banyak pihak.
 
-Jakarta, 8 Oktober 2026
+Jakarta, Oktober 2026
 
 Rafli Hibriansyah Siregar
 
@@ -73,6 +196,7 @@ RAFLI HIBRIANSYAH SIREGAR, "Klasifikasi Rumah Tangga Berdasarkan Pola Konsumsi L
 
 - PRAKATA
 - ABSTRAK
+- DAFTAR ISI
 - DAFTAR TABEL
 - DAFTAR GAMBAR
 - DAFTAR LAMPIRAN
