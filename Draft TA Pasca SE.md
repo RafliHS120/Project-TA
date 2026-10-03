@@ -503,6 +503,13 @@ Melalui alur tersebut, profil klaster yang dihasilkan dipakai untuk memberikan i
 
 **Gambar 5 Kerangka Pikir Penelitian**
 
+<details>
+<summary>Catatan Gambar 5 (catatan kerja, bukan isi naskah)</summary>
+
+Sumber draw.io: `assets-ta/gambar-05-kerangka-pikir.drawio` (dapat dibuka dan diubah di app.diagrams.net); salinan `assets-ta/gambar-05-kerangka-pikir.drawio.svg` juga memuat sumber yang sama. Sesi AX: label variabel pembentuk ketiga diganti dari "Pendidikan Kepala Rumah Tangga" menjadi "Lama Sekolah Kepala Rumah Tangga" agar sama dengan Tabel 2 (Definisi Operasional). Kotak akhir *adaptation cooling deficit* dipertahankan (Opsi A; pasangannya ada di 4.3 dan 5.1).
+
+</details>
+
 ## 2.4 Hipotesis Penelitian
 
 Hipotesis dirumuskan hanya pada variabel penciri. Perbedaan antarklaster pada variabel pembentuk tidak dirumuskan sebagai hipotesis, karena keanggotaan klaster ditentukan oleh variabel tersebut sehingga pengujiannya tidak dapat dijadikan bukti karena variabel yang diuji adalah variabel pembentuk klaster itu sendiri (Everitt et al., 2011). Arah hipotesis disandarkan pada dua temuan empiris. Pavanello et al. (2021) menemukan bahwa di Brasil, India, Indonesia, dan Meksiko, adopsi AC lebih tinggi pada rumah tangga berpendapatan dan berpendidikan lebih tinggi serta berhunian lebih baik. Di India dan Indonesia, pendidikan dan kualitas hunian yang berkorelasi dengan kesejahteraan rumah tangga juga lebih kuat berkaitan dengan adopsi lemari es dan AC. Kubota et al. (2014) menemukan bahwa di Jakarta, konsumsi energi untuk AC sebagai penyumbang utama konsumsi listrik rumah tangga dapat dijelaskan oleh luas lantai dan pendapatan rumah tangga, sedangkan peningkatan pendapatan berkaitan dengan luas lantai yang lebih besar. Berdasarkan landasan teori, penelitian terkait, dan kerangka pikir tersebut, hipotesis penelitian dirumuskan sebagai berikut:

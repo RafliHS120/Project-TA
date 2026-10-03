@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" scale="1" border="0">
+  <diagram name="Kerangka Pikir" id="2FmTHIMp8r2LsKdNiZwn">
+    <mxGraphModel dx="815" dy="439" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-1" parent="1" style="rounded=1;html=1;dashed=1;strokeWidth=1;fontFamily=Times New Roman;fontSize=12;align=center;verticalAlign=top;whiteSpace=wrap;" value="Variabel Pembentuk Klaster" vertex="1">
+          <mxGeometry height="285" width="240" x="15" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-2" parent="1" style="rounded=1;html=1;strokeWidth=1;fontFamily=Times New Roman;fontSize=12;align=center;whiteSpace=wrap;" value="Konsumsi Listrik Rumah Tangga" vertex="1">
+          <mxGeometry height="60" width="180" x="45" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-3" parent="1" style="rounded=1;html=1;strokeWidth=1;fontFamily=Times New Roman;fontSize=12;align=center;whiteSpace=wrap;" value="Pengeluaran Nonmakanan selain Listrik" vertex="1">
+          <mxGeometry height="60" width="180" x="45" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-4" parent="1" style="rounded=1;html=1;strokeWidth=1;fontFamily=Times New Roman;fontSize=12;align=center;whiteSpace=wrap;" value="Lama Sekolah Kepala Rumah Tangga" vertex="1">
+          <mxGeometry height="60" width="180" x="45" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-5" parent="1" style="rounded=1;html=1;strokeWidth=1;fontFamily=Times New Roman;fontSize=12;align=center;whiteSpace=wrap;" value="Klaster Rumah Tangga" vertex="1">
+          <mxGeometry height="60" width="155" x="285" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-6" parent="1" style="rounded=1;html=1;strokeWidth=1;fontFamily=Times New Roman;fontSize=12;align=center;whiteSpace=wrap;" value="&lt;b&gt;Variabel Penciri&lt;/b&gt;&lt;br&gt;Ukuran Rumah Tangga&lt;br&gt;Kepemilikan AC&lt;br&gt;Kepemilikan Lemari Es&lt;br&gt;Luas Lantai&lt;br&gt;Golongan Daya Terpasang" vertex="1">
+          <mxGeometry height="150" width="155" x="285" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-7" parent="1" style="rounded=1;html=1;strokeWidth=1;fontFamily=Times New Roman;fontSize=12;align=center;whiteSpace=wrap;" value="Profil Karakter Tiap Klaster" vertex="1">
+          <mxGeometry height="60" width="155" x="465" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-8" parent="1" style="rounded=1;html=1;strokeWidth=1;fontFamily=Times New Roman;fontSize=12;align=center;whiteSpace=wrap;" value="Indikasi Kelompok yang Berpotensi Mengalami &lt;i&gt;Adaptation Cooling Deficit&lt;/i&gt;" vertex="1">
+          <mxGeometry height="60" width="155" x="645" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-9" edge="1" parent="1" source="WVmbvTbAEPC8sg8WrF0S-2" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Times New Roman;" target="WVmbvTbAEPC8sg8WrF0S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-10" edge="1" parent="1" source="WVmbvTbAEPC8sg8WrF0S-3" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Times New Roman;" target="WVmbvTbAEPC8sg8WrF0S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-11" edge="1" parent="1" source="WVmbvTbAEPC8sg8WrF0S-4" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Times New Roman;" target="WVmbvTbAEPC8sg8WrF0S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-12" edge="1" parent="1" source="WVmbvTbAEPC8sg8WrF0S-5" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Times New Roman;" target="WVmbvTbAEPC8sg8WrF0S-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-13" edge="1" parent="1" source="WVmbvTbAEPC8sg8WrF0S-6" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Times New Roman;" target="WVmbvTbAEPC8sg8WrF0S-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WVmbvTbAEPC8sg8WrF0S-14" edge="1" parent="1" source="WVmbvTbAEPC8sg8WrF0S-7" style="endArrow=classic;html=1;strokeWidth=1;fontFamily=Times New Roman;" target="WVmbvTbAEPC8sg8WrF0S-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
