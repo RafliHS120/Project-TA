@@ -188,7 +188,13 @@ Rafli Hibriansyah Siregar
 
 RAFLI HIBRIANSYAH SIREGAR, "Klasifikasi Rumah Tangga Berdasarkan Pola Konsumsi Listrik dan Karakteristik Sosial Ekonomi di DKI Jakarta".
 
-*[Isi abstrak belum ditulis pada versi repo.]*
+[ISIAN: jumlah halaman bagian awal, angka romawi kecil]+[ISIAN: jumlah halaman isi dan lampiran] halaman
+
+> **Catatan repo (bukan isi naskah).** Baris jumlah halaman diisi dari `.docx` final dengan format seperti "vii+86 halaman" (Pedoman D-III, Lampiran 8). Isi abstrak maksimal 200 kata dengan spasi 1,5; draf ini 196 kata. Seluruh angka diambil dari 5.1 Kesimpulan.
+
+Energi listrik yang terjual kepada rumah tangga di Provinsi DKI Jakarta cenderung meningkat selama 2018–2025, tetapi angka agregat tersebut belum menunjukkan kelompok rumah tangga yang berbeda pola konsumsinya, sementara kebijakan efisiensi energi masih dirumuskan secara berlaku umum. Penelitian ini bertujuan mendeskripsikan konsumsi listrik dan kondisi sosial ekonomi rumah tangga, mengelompokkan rumah tangga berdasarkan pola konsumsi listrik dan karakteristik sosial ekonomi, serta menganalisis perbedaan karakteristik antarklaster. Data yang digunakan adalah mikrodata Susenas Maret 2025 sebanyak 5.001 rumah tangga. Pengelompokan dilakukan dengan metode *K-Means* atas konsumsi listrik, pengeluaran nonmakanan selain listrik, dan lama sekolah kepala rumah tangga, sedangkan perbedaan antarklaster diuji dengan uji *chi-square* terkoreksi Rao–Scott dan uji Kruskal–Wallis berbasis desain survei. Hasil penelitian menunjukkan bahwa rata-rata tertimbang konsumsi listrik sebesar 369,61 kWh per bulan dengan sebaran yang menceng ke kanan. Rumah tangga terbagi menjadi dua klaster dengan struktur yang lemah (rata-rata koefisien *silhouette* 0,3640). Klaster 2, yang mewakili 39,89 persen rumah tangga, memiliki rata-rata konsumsi listrik sekitar 3,46 kali Klaster 1 serta kepemilikan AC, kepemilikan lemari es, dan luas lantai yang lebih tinggi secara signifikan, sedangkan ukuran rumah tangga tidak berbeda signifikan. Program efisiensi energi disarankan dibedakan menurut klaster, dengan sasaran efisiensi peralatan pendingin pada kelompok berkonsumsi tinggi.
+
+Kata kunci: konsumsi listrik rumah tangga, analisis klaster, *K-Means*, Susenas, DKI Jakarta
 
 ---
 
