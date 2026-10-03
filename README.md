@@ -14,6 +14,7 @@ Naskah resmi tetap dokumen `.docx`. Repo ini hanya menyimpan naskah kerja versi 
 |---|---|---|
 | `Draft TA Pasca SE.md` | Naskah kerja utama (Bab I–V, Daftar Pustaka, Lampiran) | Aktif |
 | `Script R Pasca SE Bimbingan.R` | Skrip R revisi pascabimbingan 14 September 2026 | Aktif |
+| `Script R Gambar Bab I.R` | Skrip R Gambar 1, 3, dan 4 (data publikasi BPS/ESDM ditulis di dalam skrip beserta sumbernya; tidak memerlukan Susenas) | Aktif |
 | `Script last.R` | Skrip R versi sebelum revisi pascabimbingan | Arsip |
 | `01-makalah-seminar-proposal.md` | Makalah seminar proposal | Arsip |
 | `02-notula-seminar-proposal.md` | Notula seminar proposal | Arsip |

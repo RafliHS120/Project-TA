@@ -28,6 +28,9 @@
 #    (Klaster 1 biru, Klaster 2 jingga) di Gambar 11-14 dan 16, serta
 #    gradasi hijau terang-gelap untuk kategori lama sekolah KRT (Gambar 15).
 #    Palet Okabe-Ito, aman bagi pembaca buta warna.
+# 11. [SESI AX, 4 OKT 2026] Gambar 1, 3, dan 4 (Bab I, data publikasi,
+#    tanpa Susenas) dibuat di skrip terpisah "Script R Gambar Bab I.R".
+#    Skrip ini hanya menghasilkan Gambar 7-16.
 #
 # CATATAN METODOLOGIS
 # - Konsumsi listrik aktual dalam kWh tidak tersedia memadai (kode 233 = 0).

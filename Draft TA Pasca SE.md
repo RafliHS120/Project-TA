@@ -164,54 +164,9 @@ Sumber: Badan Pusat Statistik & Kementerian PPN/Bappenas (2025), dengan data Kem
 <details>
 <summary>Deskripsi Gambar 1 (catatan konversi, bukan isi naskah)</summary>
 
-**Deskripsi Gambar 1.**
+**Deskripsi Gambar 1 (Sesi AX).** Dibuat ulang dengan `Script R Gambar Bab I.R`, Bagian 3; angka seluruh provinsi tercatat di skrip tersebut beserta sumbernya. *Dot plot* mendatar 38 provinsi, diurutkan dari rasio tertinggi; sumbu-X "Rasio elektrifikasi (persen)" 93–100. DKI Jakarta (100,00) diberi warna biru dan label tebal sebagai wilayah penelitian; provinsi lain abu-abu. Bali juga 100,00. Dua terendah: Papua Pegunungan 94,02 dan Papua Tengah 94,49.
 
-**Bentuk visual.** *Dot plot* (lollipop) horizontal: tiap provinsi diwakili satu garis tipis abu-abu yang berakhir pada satu titik bulat, dengan label angka di sisi kanan titik. Sumbu-X berjudul **"Rasio Elektrifikasi (%)"** dengan skala terpotong, tanda sumbu pada 90, 93, 96, dan 99. Sumbu-Y berisi 38 nama provinsi, diurutkan dari rasio tertinggi (atas) ke terendah (bawah). Dua titik teratas — DKI Jakarta dan Bali — diberi warna **merah** sebagai penekanan; seluruh titik lain berwarna **biru muda**. Mayoritas provinsi menumpuk sangat rapat di sekitar 99,99 persen, sehingga titik-titiknya membentuk satu kolom vertikal padat; hanya beberapa provinsi di bagian bawah yang bergeser jauh ke kiri.
-
-**Angka yang terbaca dari gambar:**
-
-| Provinsi | Rasio elektrifikasi (%) |
-|---|---|
-| DKI Jakarta | 100 |
-| Bali | 100 |
-| Sumatera Utara | 99,99 |
-| Sumatera Selatan | 99,99 |
-| Sumatera Barat | 99,99 |
-| Sulawesi Utara | 99,99 |
-| Sulawesi Tengah | 99,99 |
-| Sulawesi Selatan | 99,99 |
-| Sulawesi Barat | 99,99 |
-| Riau | 99,99 |
-| Papua Barat Daya | 99,99 |
-| Papua Barat | 99,99 |
-| Nusa Tenggara Barat | 99,99 |
-| Maluku Utara | 99,99 |
-| Lampung | 99,99 |
-| Kepulauan Riau | 99,99 |
-| Kepulauan Bangka Belitung | 99,99 |
-| Kalimantan Utara | 99,99 |
-| Kalimantan Timur | 99,99 |
-| Kalimantan Selatan | 99,99 |
-| Jawa Tengah | 99,99 |
-| Jawa Barat | 99,99 |
-| Jambi | 99,99 |
-| Gorontalo | 99,99 |
-| DI Yogyakarta | 99,99 |
-| Bengkulu | 99,99 |
-| Banten | 99,99 |
-| Aceh | 99,99 |
-| Kalimantan Barat | 99,85 |
-| Papua | 99,81 |
-| Sulawesi Tenggara | 99,78 |
-| Jawa Timur | 99,67 |
-| Papua Tengah | 99,49 |
-| Papua Selatan | 99,08 |
-| Maluku | 99,08 |
-| Kalimantan Tengah | 98,05 |
-| Nusa Tenggara Timur | 96,35 |
-| Papua Pegunungan | 94,02 |
-
-**Makna dalam konteks dokumen.** Grafik dipakai untuk menunjukkan bahwa akses listrik nasional sudah sangat tinggi. DKI Jakarta dan Bali mencapai 100 persen, sedangkan capaian nasional disebut 99,83 persen dalam pembahasan. Konteks ini menggeser fokus penelitian dari persoalan akses listrik menuju stabilitas pasokan, efisiensi konsumsi, dan heterogenitas pemakaian listrik pada tingkat rumah tangga.
+**Koreksi.** Gambar lama menulis Papua Tengah 99,49; sumber (Gambar 7.1 publikasi Indikator TPB Indonesia 2025, data Kementerian ESDM) menulis 94,49.
 
 </details>
 
@@ -292,38 +247,18 @@ Sumber: Badan Pusat Statistik Provinsi DKI Jakarta (2026), Tabel 6.4 dan 6.5, de
 <details>
 <summary>Deskripsi Gambar 3 (catatan konversi, bukan isi naskah)</summary>
 
-**Deskripsi Gambar 3(a) — Komposisi Pelanggan Listrik Menurut Sektor.**
+**Deskripsi Gambar 3 (Sesi AX).** Dibuat ulang dengan `Script R Gambar Bab I.R`, Bagian 4, dari Tabel 6.4 dan 6.5 *Provinsi DKI Jakarta dalam Angka 2026* (kolom Gabungan). Bentuk *treemap* diganti diagram batang mendatar; urutan sektor dan warna sama pada kedua panel (rumah tangga biru, sektor lain abu-abu). Label: persen (nilai).
 
-**Bentuk visual.** *Treemap*, luas kotak mewakili jumlah pelanggan tiap sektor. Kotak **merah tua** berlabel "Rumah Tangga" mendominasi hampir seluruh bidang gambar, dengan teks putih berukuran sangat besar. Di sisi kanan tersusun satu kolom sempit berisi kotak **biru** ("Usaha"), kotak **hijau tua** ("Sosial"), serta beberapa irisan sangat tipis berwarna **ungu**, **oranye**, dan **biru-kehijauan** di pojok kanan atas. Dominasi bidang merah tampak ekstrem, sehingga rumah tangga terlihat nyaris mencakup keseluruhan basis pelanggan listrik.
+| Sektor | Pelanggan | % pelanggan | kWh terjual (miliar) | % kWh |
+|---|---|---|---|---|
+| Rumah tangga | 5.159.869 | 92,49 | 16,36 | 42,84 |
+| Usaha | 333.396 | 5,98 | 13,96 | 36,56 |
+| Industri | 5.847 | 0,10 | 3,92 | 10,26 |
+| Sosial | 53.928 | 0,97 | 1,77 | 4,63 |
+| Perkantoran | 19.150 | 0,34 | 1,60 | 4,19 |
+| Lainnya | 6.474 | 0,12 | 0,58 | 1,52 |
 
-**Angka/teks yang terbaca dari gambar:**
-
-| Sektor | Jumlah pelanggan | Persentase |
-|---|---|---|
-| Rumah Tangga | 5.159.869 | 92,49% |
-| Usaha | 333.396 | 5,98% |
-| Sosial | 53.928 | 0,97% |
-
-Kategori sisanya tampil sebagai irisan tipis; labelnya terlalu kecil pada gambar asli untuk ditranskripsi tanpa menebak, sehingga tidak diisi.
-
-**Makna dalam konteks dokumen.** Gambar menjadi dasar argumen bahwa rumah tangga adalah kelompok pelanggan paling dominan di DKI Jakarta, sehingga penting dalam kebijakan manajemen permintaan listrik.
-
-**Deskripsi Gambar 3(b) — Distribusi Konsumsi Listrik Menurut Sektor.**
-
-**Bentuk visual.** *Treemap* juga, tetapi pembagiannya jauh lebih berimbang daripada panel (a). Sisi kiri terbagi dua secara horizontal: kotak **biru** ("Usaha") di atas dan kotak **hijau tua** ("Rumah Tangga") di bawah — kotak hijau adalah yang terbesar. Kolom kanan berisi, dari bawah ke atas: kotak **merah tua** ("Industri"), kotak **oranye** ("Sosial"), kotak **ungu** ("Perkantoran"), dan satu bidang tipis **abu-abu gelap** ("Lainnya") di paling atas. Semua label ditulis putih dengan tiga baris: nama sektor, nilai kWh, dan persentase dalam kurung.
-
-**Angka/teks yang terbaca dari gambar:**
-
-| Sektor | Konsumsi | Persentase |
-|---|---|---|
-| Rumah Tangga | 16,36 Miliar kWh | 42,84% |
-| Usaha | 13,96 Miliar kWh | 36,56% |
-| Industri | 3,92 Miliar kWh | 10,26% |
-| Sosial | 1,77 Miliar kWh | 4,63% |
-| Perkantoran | 1,6 Miliar kWh | 4,19% |
-| Lainnya | 0,58 Miliar kWh (label sangat kecil) | 1,52% |
-
-**Makna dalam konteks dokumen.** Rumah tangga bukan hanya dominan sebagai pelanggan, tetapi juga merupakan sektor dengan konsumsi listrik agregat terbesar. Namun porsi 42,84% menunjukkan sektor usaha dan sektor lain tetap menyerap bagian besar konsumsi total — kontras tajam dengan panel (a) yang menunjukkan 92,49%.
+Persentase dihitung terhadap baris Jumlah/Total tabel sumber (5.578.664 pelanggan; 38.195.558.854 kWh).
 
 </details>
 
@@ -358,6 +293,8 @@ Nilai antartahun selain label ujung dibaca dari posisi titik pada grafik, sehing
 **Makna dalam konteks dokumen.** Grafik memperlihatkan kecenderungan peningkatan konsumsi listrik rumah tangga dari waktu ke waktu, dengan golongan R1 sebagai komponen terbesar. Namun penelitian utama tetap menggunakan data *cross-section* 2025 untuk memetakan heterogenitas antarrumah tangga, bukan perubahan perilaku individual antarwaktu.
 
 **Catatan revisi.** Label sumbu tegak pada gambar masih bertuliskan "Daya Terjual (Miliar kWh)". Satuan kWh menyatakan energi, bukan daya, sehingga label perlu diganti menjadi "Energi Listrik Terjual (Miliar kWh)" saat gambar dibuat ulang. Sumber gambar belum dicantumkan.
+
+**Status Sesi AX.** Kerangka pembuatan ulang ada di `Script R Gambar Bab I.R`, Bagian 5. Angka 2025 sudah diisi dari Tabel 6.5 edisi 2026; angka 2018–2024 masih `[MENUNGGU DATA]`, sehingga PNG di atas masih gambar lama.
 
 </details>
 
