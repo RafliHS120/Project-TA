@@ -151,7 +151,7 @@ RAFLI HIBRIANSYAH SIREGAR, "Klasifikasi Rumah Tangga Berdasarkan Pola Konsumsi L
 
 Visi Indonesia 2045 menempatkan pembangunan ekonomi berkelanjutan sebagai salah satu dari empat pilar pencapaian visi. Pada pilar tersebut, perekonomian ditopang antara lain oleh ketahanan pangan, energi, dan air yang kuat, disertai komitmen menjaga lingkungan hidup bagi keberlanjutan pembangunan (Kementerian PPN/Bappenas, 2019). Dokumen yang sama mencatat bahwa pemanasan global dan perubahan iklim mengganggu ekosistem serta dapat menurunkan pendapatan petani dan nelayan, sedangkan udara yang tercemar dapat menyebabkan gangguan kesehatan. Untuk menurunkan emisi, peningkatan efisiensi energi dimasukkan sebagai salah satu strategi pembangunan rendah karbon (Kementerian PPN/Bappenas, 2019). Arah tersebut dilanjutkan dalam Rencana Pembangunan Jangka Menengah Nasional (RPJMN) 2025–2029, yang memuat swasembada energi untuk memperkuat ketahanan dan kemandirian energi pada Prioritas Nasional 2 serta penyelarasan kehidupan yang harmonis dengan lingkungan alam pada Prioritas Nasional 8 (Kementerian PPN/Bappenas, 2025).
 
-Dalam dimensi pembangunan berkelanjutan, energi diarahkan untuk dijadikan modal pembangunan, sementara cara penyediaannya, mulai dari eksplorasi, eksploitasi, hingga distribusi, menimbulkan dampak buruk terhadap lingkungan (Kementerian PPN/Bappenas, 2019, hlm. 84–85). Ketergantungan yang tinggi terhadap sumber energi fosil dalam mendukung aktivitas pembangunan berimplikasi langsung pada peningkatan emisi gas rumah kaca nasional yang mencapai 1.360,35 juta ton CO₂e pada tahun 2023 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Laporan Inventarisasi GRK dan MPV Tahun 2024 mencatat target pengurangan emisi sebesar 31,89 persen dengan kemampuan sendiri sebagaimana ditetapkan dalam Enhanced NDC tahun 2022, serta menempatkan efisiensi energi sebagai salah satu dari lima kelompok aksi mitigasi sektor energi (Kementerian Lingkungan Hidup dan Kehutanan, 2024). Pengendalian konsumsi energi di sisi pengguna akhir karena itu merupakan bagian dari upaya pencapaian target tersebut. Dengan demikian, penguatan kualitas lingkungan hidup tidak hanya dicapai melalui sisi hulu produksi, tetapi juga melalui pengendalian konsumsi secara sistematis demi mendukung komitmen iklim nasional.
+Dalam dimensi pembangunan berkelanjutan, energi diarahkan untuk dijadikan modal pembangunan, sementara cara penyediaannya, mulai dari eksplorasi, eksploitasi, hingga distribusi, menimbulkan dampak buruk terhadap lingkungan (Kementerian PPN/Bappenas, 2019, hlm. 84–85). Sektor ketenagalistrikan nasional sangat bergantung pada bahan bakar fosil, terutama batu bara, yang pada tahun 2015 membentuk 90 persen bauran pembangkitan nasional dan 91 persen bauran pembangkitan sistem Jawa–Bali (Handayani et al., 2017, hlm. 1021). Ketergantungan yang tinggi terhadap sumber energi fosil dalam mendukung aktivitas pembangunan berimplikasi langsung pada peningkatan emisi gas rumah kaca nasional yang mencapai 1.360,35 juta ton CO₂e pada tahun 2023 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Laporan Inventarisasi GRK dan MPV Tahun 2024 mencatat target pengurangan emisi sebesar 31,89 persen dengan kemampuan sendiri sebagaimana ditetapkan dalam Enhanced NDC tahun 2022, serta menempatkan efisiensi energi sebagai salah satu dari lima kelompok aksi mitigasi sektor energi (Kementerian Lingkungan Hidup dan Kehutanan, 2024). Pengendalian konsumsi energi di sisi pengguna akhir karena itu merupakan bagian dari upaya pencapaian target tersebut. Dengan demikian, penguatan kualitas lingkungan hidup tidak hanya dicapai melalui sisi hulu produksi, tetapi juga melalui pengendalian konsumsi secara sistematis demi mendukung komitmen iklim nasional.
 
 Listrik sebagai tulang punggung infrastruktur energi modern berperan dalam mendukung sasaran swasembada energi pada Prioritas Nasional 2 RPJMN 2025–2029, yang diarahkan untuk memperkuat ketahanan dan kemandirian energi dalam memenuhi kebutuhan energi nasional (Kementerian PPN/Bappenas, 2025). Urgensi pengelolaan di sektor ini didasarkan pada fakta bahwa konsumsi listrik per kapita nasional terus meningkat hingga mencapai 1.411 kWh per kapita pada tahun 2024 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025). Meskipun aksesibilitas energi sudah hampir menyeluruh dengan capaian rasio elektrifikasi nasional sebesar 99,83 persen pada tahun 2024 (Badan Pusat Statistik & Kementerian PPN/Bappenas, 2025), Rancangan Teknokratik RPJMN 2025–2029 masih mencatat akses energi yang belum merata dan berkualitas serta efisiensi pengusahaan dan pemanfaatan energi yang belum berjalan baik sebagai isu strategis sektor energi (Kementerian PPN/Bappenas, 2024, hlm. 69). Tantangan tersebut diperkuat oleh prediksi lonjakan permintaan energi di wilayah perkotaan yang meningkat tajam seiring dengan dinamika sosial ekonomi masyarakat (Takata et al., 2025). Potret sebaran akses energi tersebut disajikan pada Gambar 1.
 
@@ -1157,9 +1157,7 @@ Everitt, B. S., Landau, S., Leese, M., & Stahl, D. (2011). *Cluster analysis* (5
 
 Fisher, R. A. (1922). On the interpretation of χ² from contingency tables, and the calculation of P. *Journal of the Royal Statistical Society*, *85*(1), 87–94. https://doi.org/10.1111/j.2397-2335.1922.tb00768.x
 
-Hair, J. F., Black, W. C., Babin, B. J., & Anderson, R. E. (2018). *Multivariate data analysis* (8th ed.). Cengage Learning.
-
-Handayani, K., Krozer, Y., & Filatova, T. (2019). Trade-offs between electrification and climate change mitigation: An analysis of the Java-Bali power system in Indonesia. *Applied Energy*, *236*, 659–672.
+Handayani, K., Krozer, Y., & Filatova, T. (2017). Trade-offs between electrification and climate change mitigation: An analysis of the Java-Bali power system in Indonesia. *Applied Energy*, *208*, 1020–1037. https://doi.org/10.1016/j.apenergy.2017.09.048
 
 Haughton, J., & Khandker, S. R. (2009). *Handbook on poverty and inequality*. World Bank. https://doi.org/10.1596/978-0-8213-7613-3
 
@@ -1186,8 +1184,6 @@ Kubota, T., Surahman, U., & Higashi, O. (2014). A comparative analysis of househ
 
 Leach, G. (1992). The energy transition. *Energy Policy*, *20*(2), 116–123. https://doi.org/10.1016/0301-4215(92)90105-B
 
-Lumley, T. (2010). *Complex surveys: A guide to analysis using R*. John Wiley & Sons.
-
 Lumley, T. (2024). *survey: Analysis of complex survey samples* (R package version 4.5) [Computer software].
 
 Lumley, T., & Scott, A. (2012). *Two-sample rank tests under complex sampling* [Technical report]. Department of Statistics, University of Auckland.
@@ -1198,15 +1194,7 @@ Mair, P., & Wilcox, R. (2020). Robust statistical methods in R using the WRS2 pa
 
 Mills, B., & Schleich, J. (2012). Residential energy-efficient technology adoption, energy conservation, knowledge, and attitudes: An analysis of European countries. *Energy Policy*, *49*, 616–628. https://doi.org/10.1016/j.enpol.2012.07.008
 
-Moeeni, S., Moeeni, M., & Bozorga, A. M. R. (2025). Quantile regression analysis of household energy demand in Iran using income-expenditure national survey (2016–2023): Heterogeneity and key characteristics. *Iranian Journal of Economic Studies*, *14*(1), 163–200.
-
 Nazer, M., & Handra, H. (2016). Analisis konsumsi energi rumah tangga perkotaan di Indonesia. *Jurnal Ekonomi dan Pembangunan Indonesia*.
-
-Nicholson, W., & Snyder, C. (2010). *Intermediate microeconomics and its application* (11th ed.). South-Western Cengage Learning.
-
-Nojedehi, P., Gunay, B., O'Brien, W., & Papineau, M. (2025). A method to develop residential archetypes by associating thermophysical building attributes with utility meter data. *Energy & Buildings*, *347*.
-
-Novianto, D., Gao, W., & Kuroki, S. (2015). Review on people's lifestyle and energy consumption of Asian communities: Case study of Indonesia, Thailand, and China. *Energy and Power Engineering*, *7*(10), 465–476. https://doi.org/10.4236/epe.2015.710045
 
 Oktasandira, A. (2025). *Analisis klaster pelanggan listrik berdasarkan perilaku konsumsi di Kota Sukabumi menggunakan metode K-Means clustering* [Skripsi, Universitas Nusa Putra Sukabumi]. https://repository.nusaputra.ac.id/id/eprint/1737/
 
