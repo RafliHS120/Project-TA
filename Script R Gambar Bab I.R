@@ -9,7 +9,7 @@
 # ditulis langsung di bawah beserta sumbernya, sehingga skrip ini juga
 # berfungsi sebagai catatan asal-usul data Gambar 1, 3, dan 4.
 #
-# KELUARAN (nama berkas = nama aset di folder assets-ta repo)
+# KELUARAN (nama berkas = nama aset di folder gambar/bab-1 repo)
 #   gambar-01-rasio-elektrifikasi.png
 #   gambar-03a-komposisi-pelanggan.png
 #   gambar-03b-distribusi-konsumsi.png
@@ -36,7 +36,7 @@
 # ============================================================
 
 # Folder tempat PNG disimpan. Ganti bila perlu.
-folder_output <- "assets-ta"
+folder_output <- "gambar/bab-1"
 if (!dir.exists(folder_output)) dir.create(folder_output, recursive = TRUE)
 
 

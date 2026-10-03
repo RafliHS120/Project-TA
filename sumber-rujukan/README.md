@@ -1,6 +1,6 @@
 # Sumber Rujukan (Bukan Bagian Naskah TA)
 
-Folder ini menyimpan **bukti sumber** untuk kutipan di `Draft TA Pasca SE.md`. Isinya **tidak dilampirkan** di naskah TA. Gambar yang dimuat di naskah tetap berada di `assets-ta/`.
+Folder ini menyimpan **bukti sumber** untuk kutipan di `Draft TA Pasca SE.md`. Isinya **tidak dilampirkan** di naskah TA. Gambar yang dimuat di naskah tetap berada di `gambar/` (subfolder per bab).
 
 Yang disimpan di sini hanya **dokumen resmi pemerintah/BUMN** (Perpres, Bappenas, BPS, PT PLN). Artikel jurnal dan buku teks **tidak** diunggah karena repo ini publik dan dokumen tersebut dilindungi hak cipta penerbit; salinannya disimpan Rafli secara lokal.
 
