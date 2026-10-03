@@ -277,24 +277,20 @@ Sumber: Badan Pusat Statistik Provinsi DKI Jakarta (2019, 2020, 2021, 2022, 2023
 <details>
 <summary>Deskripsi Gambar 4 (catatan konversi, bukan isi naskah)</summary>
 
-**Deskripsi Gambar 4.**
+**Deskripsi Gambar 4 (Sesi AX).** Dibuat ulang dengan `Script R Gambar Bab I.R`, Bagian 5, dari Tabel 6.5 *Provinsi DKI Jakarta dalam Angka* edisi 2019–2026 (kolom Gabungan; edisi tahun t memuat data tahun t−1). Grafik garis empat seri; sumbu tegak "Energi listrik terjual (miliar kWh)", 0–18. Seluruh tahun lolos pemeriksaan jumlah baris tabel terhadap baris Jumlah/Total.
 
-**Bentuk visual.** Grafik garis dengan penanda titik bulat, empat seri, periode **2018–2025**. Sumbu-X berjudul **"Tahun"**, sumbu-Y berjudul **"Daya Terjual (Miliar kWh)"** dengan skala 0–18 (tanda tiap 2). Legenda horizontal di bawah grafik. Setiap seri diberi label angka berwarna di ujung kanan (tahun 2025).
+| Tahun | R1 | R2 | R3 | Total rumah tangga |
+|---|---|---|---|---|
+| 2018 | 8,59 | 2,48 | 2,12 | 13,20 |
+| 2019 | 9,07 | 2,67 | 2,26 | 14,00 |
+| 2020 | 9,35 | 2,91 | 2,35 | 14,60 |
+| 2021 | 9,27 | 3,05 | 2,41 | 14,72 |
+| 2022 | 9,23 | 3,07 | 2,52 | 14,82 |
+| 2023 | 9,70 | 3,24 | 2,70 | 15,64 |
+| 2024 | 10,07 | 3,44 | 2,90 | 16,41 |
+| 2025 | 10,06 | 3,38 | 2,92 | 16,36 |
 
-| Seri | Warna & gaya garis | Pola yang terlihat | Label ujung 2025 |
-|---|---|---|---|
-| Total Rumah Tangga | merah, **putus-putus** | naik dari ±13,2 (2018) → ±14,0 (2019) → ±14,6 (2020) → ±14,75 (2021) → ±14,8 (2022) → ±15,6 (2023) → ±16,4 (2024), lalu mendatar | **16,36** |
-| R1 (450–2200 VA) | biru, garis penuh | naik dari ±8,6 (2018) ke ±9,3 (2020), sedikit melandai/turun 2021–2022 (±9,2), naik ke ±10,1 (2024), mendatar | **10,06** |
-| R2 (3.500–5.500 VA) | oranye/kuning, garis penuh | naik landai dari ±2,5 (2018) ke ±3,5 (2024), sedikit turun di 2025 | **3,38** |
-| R3 (6.600 VA ke atas) | hijau, garis penuh | naik landai dari ±2,1 (2018) ke ±2,9 (2024), mendatar | **2,92** |
-
-Nilai antartahun selain label ujung dibaca dari posisi titik pada grafik, sehingga bersifat perkiraan visual.
-
-**Makna dalam konteks dokumen.** Grafik memperlihatkan kecenderungan peningkatan konsumsi listrik rumah tangga dari waktu ke waktu, dengan golongan R1 sebagai komponen terbesar. Namun penelitian utama tetap menggunakan data *cross-section* 2025 untuk memetakan heterogenitas antarrumah tangga, bukan perubahan perilaku individual antarwaktu.
-
-**Catatan revisi.** Label sumbu tegak pada gambar masih bertuliskan "Daya Terjual (Miliar kWh)". Satuan kWh menyatakan energi, bukan daya, sehingga label perlu diganti menjadi "Energi Listrik Terjual (Miliar kWh)" saat gambar dibuat ulang. Sumber gambar belum dicantumkan.
-
-**Status Sesi AX.** Kerangka pembuatan ulang ada di `Script R Gambar Bab I.R`, Bagian 5. Angka 2018–2020 dan 2022–2025 sudah diisi dari Tabel 6.5 edisi 2019–2021 dan 2023–2026, dan seluruhnya lolos pemeriksaan jumlah baris terhadap baris Jumlah/Total. Angka 2021 (edisi 2022) masih `[MENUNGGU DATA]`, sehingga PNG di atas masih gambar lama.
+Satuan miliar kWh. R3 = 6.600 VA ditambah >200 kVA (baris >200 kVA baru ada mulai data 2024). Edisi 2019 mencetak R2 sebagai ">2,2 kVA – 6.600 VA".
 
 </details>
 

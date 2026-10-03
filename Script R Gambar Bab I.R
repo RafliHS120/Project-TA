@@ -270,11 +270,11 @@ simpan_grafik("gambar-03b-distribusi-konsumsi.png",
 #
 # Halaman tabel (nomor halaman PDF, bukan halaman cetak): edisi 2019
 # Tabel 6.5 hlm. cetak 390; edisi 2020 hlm. PDF 551; edisi 2021 hlm. PDF
-# 553; edisi 2023 hlm. PDF 569; edisi 2024 hlm. PDF 638; edisi 2025 hlm.
+# 553; edisi 2022 hlm. PDF 583; edisi 2023 hlm. PDF 569; edisi 2024 hlm. PDF 638; edisi 2025 hlm.
 # PDF 613; edisi 2026 hlm. PDF 609. Seluruhnya diunduh dari
 # https://jakarta.bps.go.id/ (Sesi AX, 4 Oktober 2026).
 #
-# Pemeriksaan transkripsi (Sesi AX): untuk 2018-2020 dan 2022-2025,
+# Pemeriksaan transkripsi (Sesi AX): untuk seluruh tahun 2018-2025,
 # jumlah seluruh baris tabel (semua sektor) sama persis dengan baris
 # Jumlah/Total yang tercetak (selisih 0 kWh; 2025 selisih 1 kWh akibat
 # pembulatan di sumber).
@@ -285,20 +285,19 @@ simpan_grafik("gambar-03b-distribusi-konsumsi.png",
 # - Baris R3 ">200 kVA" baru muncul mulai data 2024; sebelumnya R3
 #   hanya memuat 6.600 VA.
 #
-# [MENUNGGU DATA] 2021 (edisi 2022) belum diisi. Angka TIDAK boleh
-# dibaca dari gambar lama karena hanya perkiraan visual. Selama masih
-# ada NA, Bagian 5 dilewati dan Gambar 4 lama tidak ditimpa.
+# Bila kelak ada angka yang dihapus (NA), Bagian 5 dilewati dan Gambar 4
+# lama tidak ditimpa.
 # ============================================================
 
 kwh_rt <- data.frame(
   tahun = 2018:2025,
   #  tahun data : edisi -> 2018:2019  2019:2020  2020:2021  2021:2022
   #               2022:2023  2023:2024  2024:2025  2025:2026
-  r1 = c(8594062121, 9066393205, 9351892284, NA,
+  r1 = c(8594062121, 9066393205, 9351892284, 9265311456,
          9230632755, 9700216113, 10070955981, 10062007805),
-  r2 = c(2484355238, 2666271182, 2906589350, NA,
+  r2 = c(2484355238, 2666271182, 2906589350, 3050434614,
          3073163466, 3241758845, 3440779741, 3381190940),
-  r3 = c(2120477433, 2262831766, 2346267911, NA,
+  r3 = c(2120477433, 2262831766, 2346267911, 2408774717,
          2520200173, 2702776809,
          2766367177 + 135765416,   # 2024: 6.600 VA + >200 kVA
          2848405014 + 71720452)    # 2025: 6.600 VA + >200 kVA
@@ -312,8 +311,8 @@ if (anyNA(kwh_rt)) {
   kwh_rt$total <- kwh_rt$r1 + kwh_rt$r2 + kwh_rt$r3
 
   seri <- c(total = "Total rumah tangga",
-            r1 = "R1 (450-2.200 VA)",
-            r2 = "R2 (3.500-5.500 VA)",
+            r1 = "R1 (450\u20132.200 VA)",
+            r2 = "R2 (3.500\u20135.500 VA)",
             r3 = "R3 (6.600 VA ke atas)")
 
   kwh_panjang <- do.call(rbind, lapply(names(seri), function(k)
@@ -322,21 +321,26 @@ if (anyNA(kwh_rt)) {
   kwh_panjang$seri <- factor(kwh_panjang$seri, levels = unname(seri))
 
   akhir <- kwh_panjang[kwh_panjang$tahun == max(kwh_panjang$tahun), ]
+  # Geser label R2 ke atas dan R3 ke bawah agar tidak berdempet
+  akhir$geser <- ifelse(grepl("^R2", akhir$seri), 0.3,
+                        ifelse(grepl("^R3", akhir$seri), -0.3, 0))
 
   p_gambar04 <- ggplot(kwh_panjang,
                        aes(x = tahun, y = miliar_kwh, colour = seri,
                            linetype = seri)) +
     geom_line(linewidth = 0.8) +
     geom_point(size = 2) +
-    geom_text(data = akhir, aes(label = angka_id(miliar_kwh, 2)),
-              family = font_naskah, size = 3.3, hjust = -0.3,
-              show.legend = FALSE) +
+    geom_text(data = akhir, aes(y = miliar_kwh + geser,
+                                label = angka_id(miliar_kwh, 2)),
+              colour = "grey15", family = font_naskah, size = 3.3,
+              hjust = -0.3, show.legend = FALSE) +
     scale_colour_manual(values = c("grey20", "#0072B2", "#E69F00",
                                    "#009E73")) +
     scale_linetype_manual(values = c("dashed", "solid", "solid", "solid")) +
     scale_x_continuous(breaks = 2018:2025,
                        expand = expansion(add = c(0.3, 0.7))) +
-    scale_y_continuous(limits = c(0, NA), labels = sumbu_id(),
+    scale_y_continuous(limits = c(0, 18), breaks = seq(0, 18, 2),
+                       labels = sumbu_id(),
                        expand = expansion(mult = c(0, 0.08))) +
     labs(x = "Tahun", y = "Energi listrik terjual (miliar kWh)",
          colour = NULL, linetype = NULL) +
