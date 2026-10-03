@@ -11,7 +11,7 @@
 <details>
 <summary>Deskripsi logo (catatan konversi, bukan isi naskah)</summary>
 
-Lambang berbentuk lingkaran, monokrom hitam-putih. Cincin luar bagian atas bertuliskan "POLITEKNIK STATISTIKA", bagian bawah bertuliskan "STIS", dengan emblem pilar bergaris dan ornamen sayap simetris di tengah. Dipakai pada halaman sampul dan halaman judul sebagai identitas institusi.
+Lambang berbentuk lingkaran berwarna (Sesi AX, dari Rafli): latar biru dengan bingkai hijau muda, tulisan putih "POLITEKNIK STATISTIKA" di atas dan "STIS" di bawah, emblem kuning-emas di tengah. Dipakai pada halaman sampul dan halaman judul sebagai identitas institusi.
 
 </details>
 
@@ -55,7 +55,7 @@ Syukur Alhamdulillah penulis ucapkan ke hadirat Allah SWT, karena berkat pertolo
 
 Penulis menyadari bahwa tugas akhir ini masih mempunyai kekurangan, baik isi maupun susunannya. Oleh karena itu, saran dan kritik yang membangun sangat penulis harapkan demi perbaikan penulisan tugas akhir ini. Semoga tugas akhir ini bermanfaat bagi banyak pihak.
 
-Jakarta, 30 Desember 2025
+Jakarta, 8 Oktober 2026
 
 Rafli Hibriansyah Siregar
 
@@ -1069,19 +1069,19 @@ Badan Pusat Statistik, & Kementerian PPN/Bappenas. (2025). *Indikator tujuan pem
 Badan Pusat Statistik Kota Yogyakarta. (2026). *Indeks pembangunan manusia Kota Yogyakarta 2025* (Vol. 12; No. Publikasi 34710.26006).
 
 <!-- Lengkapi Vol. dan No. Publikasi edisi 2019–2025 dari dokumen masing-masing. -->
-Badan Pusat Statistik Provinsi DKI Jakarta. (2019). *Provinsi DKI Jakarta dalam angka 2019*.
+Badan Pusat Statistik Provinsi DKI Jakarta. (2019). *Provinsi DKI Jakarta dalam angka 2019* (No. Publikasi 31000.1901).
 
-Badan Pusat Statistik Provinsi DKI Jakarta. (2020). *Provinsi DKI Jakarta dalam angka 2020*.
+Badan Pusat Statistik Provinsi DKI Jakarta. (2020). *Provinsi DKI Jakarta dalam angka 2020* (No. Publikasi 31560.2003).
 
-Badan Pusat Statistik Provinsi DKI Jakarta. (2021). *Provinsi DKI Jakarta dalam angka 2021*.
+Badan Pusat Statistik Provinsi DKI Jakarta. (2021). *Provinsi DKI Jakarta dalam angka 2021* (No. Publikasi 31560.2101).
 
-Badan Pusat Statistik Provinsi DKI Jakarta. (2022). *Provinsi DKI Jakarta dalam angka 2022*.
+Badan Pusat Statistik Provinsi DKI Jakarta. (2022). *Provinsi DKI Jakarta dalam angka 2022* (No. Publikasi 31000.2203).
 
-Badan Pusat Statistik Provinsi DKI Jakarta. (2023). *Provinsi DKI Jakarta dalam angka 2023*.
+Badan Pusat Statistik Provinsi DKI Jakarta. (2023). *Provinsi DKI Jakarta dalam angka 2023* (No. Publikasi 31000.2305).
 
-Badan Pusat Statistik Provinsi DKI Jakarta. (2024). *Provinsi DKI Jakarta dalam angka 2024*.
+Badan Pusat Statistik Provinsi DKI Jakarta. (2024). *Provinsi DKI Jakarta dalam angka 2024* (Vol. 54; No. Publikasi 31000.24005).
 
-Badan Pusat Statistik Provinsi DKI Jakarta. (2025). *Provinsi DKI Jakarta dalam angka 2025*.
+Badan Pusat Statistik Provinsi DKI Jakarta. (2025). *Provinsi DKI Jakarta dalam angka 2025* (Vol. 55; No. Publikasi 31000.25006).
 
 Badan Pusat Statistik Provinsi DKI Jakarta. (2026). *Provinsi DKI Jakarta dalam angka 2026* (Vol. 56; No. Publikasi 31000.26005).
 
