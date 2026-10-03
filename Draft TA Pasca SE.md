@@ -11,7 +11,7 @@
 <details>
 <summary>Deskripsi logo (catatan konversi, bukan isi naskah)</summary>
 
-Lambang berbentuk lingkaran berwarna (Sesi AX, dari Rafli): latar biru dengan bingkai hijau muda, tulisan putih "POLITEKNIK STATISTIKA" di atas dan "STIS" di bawah, emblem kuning-emas di tengah. Dipakai pada halaman sampul dan halaman judul sebagai identitas institusi.
+Lambang berbentuk lingkaran, hitam-putih (versi sampul dari Rafli, Sesi AX). Cincin luar bertuliskan "POLITEKNIK STATISTIKA" di atas dan "STIS" di bawah, dengan emblem pilar dan ornamen simetris di tengah. Dipakai pada halaman sampul dan halaman judul sebagai identitas institusi.
 
 </details>
 
@@ -45,7 +45,7 @@ PROGRAM STUDI STATISTIKA PROGRAM DIPLOMA III
 
 Syukur Alhamdulillah penulis ucapkan ke hadirat Allah SWT, karena berkat pertolongan-Nya penulis dapat menyelesaikan tugas akhir yang berjudul "Klasifikasi Rumah Tangga Berdasarkan Pola Konsumsi Listrik dan Karakteristik Sosial Ekonomi di DKI Jakarta". Penulis juga mengucapkan terima kasih kepada:
 
-- Ibu Dr. Erni Tri Astuti, M.Math., selaku Direktur Politeknik Statistika STIS;
+- Bapak Yunarso Anang, Ph.D., selaku Direktur Politeknik Statistika STIS;
 - Bapak Agung Priyo Utomo, S.Si., M.T., selaku Ketua Program Studi Statistika Program Diploma III Politeknik Statistika STIS;
 - Ibu Dr. Fitri Kartiasih, S.S.T., S.E., M.Si., selaku dosen pembimbing yang telah bersedia meluangkan waktu untuk membimbing penyusunan tugas akhir ini;
 - Bapak Yaya Setiadi, S.S.T., M.M., dan Bapak Dr. Azka Ubaidillah, S.Si., M.Stat., selaku dosen penguji atas koreksi dan saran yang disampaikan;
