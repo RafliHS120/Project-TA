@@ -77,7 +77,7 @@ simpan_grafik <- function(nama_file, plot, width, height) {
 }
 
 # Warna (palet Okabe-Ito, aman buta warna; sama dengan skrip utama)
-warna_sorot  <- "#0072B2"   # biru: DKI Jakarta / sektor rumah tangga
+warna_sorot  <- "#0072B2"   # biru: provinsi 100 persen / sektor rumah tangga
 warna_lain   <- "grey65"    # abu-abu: kategori pembanding
 
 tema_naskah <- theme_minimal(base_size = 12, base_family = font_naskah) +
@@ -126,12 +126,14 @@ re_2024 <- data.frame(
 
 stopifnot(nrow(re_2024) == 38, !anyDuplicated(re_2024$provinsi))
 
-# Urutan: rasio tertinggi di atas; bila sama, DKI Jakarta (wilayah
-# penelitian) didahulukan, lalu urut abjad
-re_2024 <- re_2024[order(-re_2024$rasio, re_2024$provinsi != "DKI Jakarta",
-                         re_2024$provinsi), ]
+# Urutan: rasio tertinggi di atas; bila sama, urut abjad
+re_2024 <- re_2024[order(-re_2024$rasio, re_2024$provinsi), ]
 re_2024$provinsi <- factor(re_2024$provinsi, levels = rev(re_2024$provinsi))
-re_2024$sorot    <- re_2024$provinsi == "DKI Jakarta"
+
+# Sorotan = provinsi yang mencapai 100 persen (DKI Jakarta dan Bali).
+# Sorotan mengikuti NILAI, bukan wilayah penelitian, karena paragraf
+# setelah Gambar 1 menyebut kedua provinsi tersebut bersama-sama.
+re_2024$sorot <- re_2024$rasio >= 100
 
 p_gambar01 <- ggplot(re_2024, aes(y = provinsi, x = rasio)) +
   geom_segment(aes(x = 93, xend = rasio, yend = provinsi),
@@ -146,7 +148,8 @@ p_gambar01 <- ggplot(re_2024, aes(y = provinsi, x = rasio)) +
   tema_naskah +
   theme(panel.grid.major.y = element_blank(),
         axis.text.y = element_text(
-          face = ifelse(levels(re_2024$provinsi) == "DKI Jakarta",
+          face = ifelse(levels(re_2024$provinsi) %in%
+                          re_2024$provinsi[re_2024$sorot],
                         "bold", "plain")))
 
 simpan_grafik("gambar-01-rasio-elektrifikasi.png",
@@ -265,17 +268,40 @@ simpan_grafik("gambar-03b-distribusi-konsumsi.png",
 #           R3 = 6.600 VA ke atas (6.600 VA + >200 kVA).
 # Satuan: kWh. Isi angka persis seperti tercetak, tanpa pembulatan.
 #
-# [MENUNGGU DATA] 2018-2024 belum diisi. Angka TIDAK boleh dibaca dari
-# gambar lama karena hanya perkiraan visual. Selama masih ada NA,
-# Bagian 5 dilewati dan Gambar 4 lama tidak ditimpa.
+# Halaman tabel (nomor halaman PDF, bukan halaman cetak): edisi 2019
+# Tabel 6.5 hlm. cetak 390; edisi 2020 hlm. PDF 551; edisi 2021 hlm. PDF
+# 553; edisi 2023 hlm. PDF 569; edisi 2024 hlm. PDF 638; edisi 2025 hlm.
+# PDF 613; edisi 2026 hlm. PDF 609. Seluruhnya diunduh dari
+# https://jakarta.bps.go.id/ (Sesi AX, 4 Oktober 2026).
+#
+# Pemeriksaan transkripsi (Sesi AX): untuk 2018-2020 dan 2022-2025,
+# jumlah seluruh baris tabel (semua sektor) sama persis dengan baris
+# Jumlah/Total yang tercetak (selisih 0 kWh; 2025 selisih 1 kWh akibat
+# pembulatan di sumber).
+#
+# Catatan definisi golongan pada sumber:
+# - Edisi 2019 (data 2018) mencetak R2 sebagai ">2,2 kVA - 6.600 VA";
+#   edisi berikutnya ">3,5 kVA - 5.500 VA". Angka dipakai apa adanya.
+# - Baris R3 ">200 kVA" baru muncul mulai data 2024; sebelumnya R3
+#   hanya memuat 6.600 VA.
+#
+# [MENUNGGU DATA] 2021 (edisi 2022) belum diisi. Angka TIDAK boleh
+# dibaca dari gambar lama karena hanya perkiraan visual. Selama masih
+# ada NA, Bagian 5 dilewati dan Gambar 4 lama tidak ditimpa.
 # ============================================================
 
 kwh_rt <- data.frame(
   tahun = 2018:2025,
-  #        2018 2019 2020 2021 2022 2023 2024  2025 (Tabel 6.5 edisi 2026)
-  r1 = c(NA, NA, NA, NA, NA, NA, NA, 10062007805),
-  r2 = c(NA, NA, NA, NA, NA, NA, NA,  3381190940),
-  r3 = c(NA, NA, NA, NA, NA, NA, NA,  2848405014 + 71720452)
+  #  tahun data : edisi -> 2018:2019  2019:2020  2020:2021  2021:2022
+  #               2022:2023  2023:2024  2024:2025  2025:2026
+  r1 = c(8594062121, 9066393205, 9351892284, NA,
+         9230632755, 9700216113, 10070955981, 10062007805),
+  r2 = c(2484355238, 2666271182, 2906589350, NA,
+         3073163466, 3241758845, 3440779741, 3381190940),
+  r3 = c(2120477433, 2262831766, 2346267911, NA,
+         2520200173, 2702776809,
+         2766367177 + 135765416,   # 2024: 6.600 VA + >200 kVA
+         2848405014 + 71720452)    # 2025: 6.600 VA + >200 kVA
 )
 
 if (anyNA(kwh_rt)) {

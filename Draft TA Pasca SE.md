@@ -164,7 +164,7 @@ Sumber: Badan Pusat Statistik & Kementerian PPN/Bappenas (2025), dengan data Kem
 <details>
 <summary>Deskripsi Gambar 1 (catatan konversi, bukan isi naskah)</summary>
 
-**Deskripsi Gambar 1 (Sesi AX).** Dibuat ulang dengan `Script R Gambar Bab I.R`, Bagian 3; angka seluruh provinsi tercatat di skrip tersebut beserta sumbernya. *Dot plot* mendatar 38 provinsi, diurutkan dari rasio tertinggi; sumbu-X "Rasio elektrifikasi (persen)" 93–100. DKI Jakarta (100,00) diberi warna biru dan label tebal sebagai wilayah penelitian; provinsi lain abu-abu. Bali juga 100,00. Dua terendah: Papua Pegunungan 94,02 dan Papua Tengah 94,49.
+**Deskripsi Gambar 1 (Sesi AX).** Dibuat ulang dengan `Script R Gambar Bab I.R`, Bagian 3; angka seluruh provinsi tercatat di skrip tersebut beserta sumbernya. *Dot plot* mendatar 38 provinsi, diurutkan dari rasio tertinggi; sumbu-X "Rasio elektrifikasi (persen)" 93–100. Dua provinsi yang mencapai 100,00, yaitu Bali dan DKI Jakarta, diberi warna biru dan label tebal, sejalan dengan paragraf setelah gambar yang menyebut keduanya; provinsi lain abu-abu. Dua terendah: Papua Pegunungan 94,02 dan Papua Tengah 94,49.
 
 **Koreksi.** Gambar lama menulis Papua Tengah 99,49; sumber (Gambar 7.1 publikasi Indikator TPB Indonesia 2025, data Kementerian ESDM) menulis 94,49.
 
@@ -294,7 +294,7 @@ Nilai antartahun selain label ujung dibaca dari posisi titik pada grafik, sehing
 
 **Catatan revisi.** Label sumbu tegak pada gambar masih bertuliskan "Daya Terjual (Miliar kWh)". Satuan kWh menyatakan energi, bukan daya, sehingga label perlu diganti menjadi "Energi Listrik Terjual (Miliar kWh)" saat gambar dibuat ulang. Sumber gambar belum dicantumkan.
 
-**Status Sesi AX.** Kerangka pembuatan ulang ada di `Script R Gambar Bab I.R`, Bagian 5. Angka 2025 sudah diisi dari Tabel 6.5 edisi 2026; angka 2018–2024 masih `[MENUNGGU DATA]`, sehingga PNG di atas masih gambar lama.
+**Status Sesi AX.** Kerangka pembuatan ulang ada di `Script R Gambar Bab I.R`, Bagian 5. Angka 2018–2020 dan 2022–2025 sudah diisi dari Tabel 6.5 edisi 2019–2021 dan 2023–2026, dan seluruhnya lolos pemeriksaan jumlah baris terhadap baris Jumlah/Total. Angka 2021 (edisi 2022) masih `[MENUNGGU DATA]`, sehingga PNG di atas masih gambar lama.
 
 </details>
 
