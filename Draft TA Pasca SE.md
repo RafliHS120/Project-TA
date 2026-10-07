@@ -1144,15 +1144,15 @@ Perbedaan kelima variabel di atas diuji secara formal dengan dua versi perhitung
 
 | Variabel penciri | Uji tanpa penimbang | Statistik | *p-value* | Uji berbasis desain | Statistik | *p-value* | *Cramér's V* |
 |---|---|---|---|---|---|---|---|
-| Luas lantai | Kruskal–Wallis | H = 1.154,5859 (db 1) | < 0,001 | Kruskal–Wallis berbasis desain | t = 24,356 (db 505) | < 0,001 | – |
-| Kepemilikan AC | *Chi-square* Pearson | χ² = 1.529,4057 (db 1) | < 0,001 | Rao–Scott orde kedua | F = 733,40 (db 1; 506) | < 0,001 | 0,553 |
-| Kepemilikan lemari es | *Chi-square* Pearson | χ² = 229,8040 (db 1) | < 0,001 | Rao–Scott orde kedua | F = 91,593 (db 1; 506) | < 0,001 | 0,214 |
-| Golongan daya terpasang | *Chi-square* Pearson | χ² = 292,96 (db 2) | < 0,001 | Rao–Scott orde kedua | F = 62,124 (db 1,99; 1.008,05) | < 0,001 | 0,242 |
-| Ukuran rumah tangga | Kruskal–Wallis | H = 24,2546 (db 1) | < 0,001 | Kruskal–Wallis berbasis desain | t = 0,912 (db 505) | 0,362 | – |
+| Luas lantai | Kruskal–Wallis | H = 1.154,5859 (*df* 1) | < 0,001 | Kruskal–Wallis berbasis desain | t = 24,356 (*df* 505) | < 0,001 | – |
+| Kepemilikan AC | *Chi-square* Pearson | χ² = 1.529,4057 (*df* 1) | < 0,001 | Rao–Scott orde kedua | F = 733,40 (*df* 1; 506) | < 0,001 | 0,553 |
+| Kepemilikan lemari es | *Chi-square* Pearson | χ² = 229,8040 (*df* 1) | < 0,001 | Rao–Scott orde kedua | F = 91,593 (*df* 1; 506) | < 0,001 | 0,214 |
+| Golongan daya terpasang | *Chi-square* Pearson | χ² = 292,96 (*df* 2) | < 0,001 | Rao–Scott orde kedua | F = 62,124 (*df* 1,99; 1.008,05) | < 0,001 | 0,242 |
+| Ukuran rumah tangga | Kruskal–Wallis | H = 24,2546 (*df* 1) | < 0,001 | Kruskal–Wallis berbasis desain | t = 0,912 (*df* 505) | 0,362 | – |
 
 Sumber: Susenas Maret 2025 (Diolah).
 
-Catatan: *chi-square* Pearson dihitung tanpa koreksi Yates. Uji berbasis desain memperhitungkan penimbang, PSU, dan strata Susenas; derajat bebas uji F ditulis sebagai (db pembilang; db penyebut). *Cramér's V* dihitung dari statistik *chi-square* tanpa penimbang. Luas lantai dan ukuran rumah tangga bersifat numerik sehingga tidak memiliki *Cramér's V*. Uji golongan daya terpasang mencakup 5.001 rumah tangga yang seluruhnya memiliki kode golongan daya.
+Catatan: *chi-square* Pearson dihitung tanpa koreksi Yates. Uji berbasis desain memperhitungkan penimbang, PSU, dan strata Susenas; derajat bebas (*degrees of freedom*, *df*) uji F ditulis sebagai (*df* pembilang; *df* penyebut). *Cramér's V* dihitung dari statistik *chi-square* tanpa penimbang. Luas lantai dan ukuran rumah tangga bersifat numerik sehingga tidak memiliki *Cramér's V*. Uji golongan daya terpasang mencakup 5.001 rumah tangga yang seluruhnya memiliki kode golongan daya.
 
 Ada dua hal yang dapat dibaca dari Tabel 9. Pertama, empat dari lima variabel penciri, yaitu luas lantai, kepemilikan AC, kepemilikan lemari es, dan golongan daya terpasang, berbeda signifikan antarklaster pada taraf nyata 1 persen, dan kesimpulan itu tidak berubah ketika perhitungan dilakukan tanpa penimbang maupun dengan memperhitungkan rancangan sampel. Keselarasan kedua versi perhitungan ini penting karena pembentukan klaster dilakukan tanpa penimbang, sedangkan pelaporan profilnya menggunakan penimbang. Ukuran rumah tangga menjadi satu-satunya pengecualian: perbedaannya signifikan pada uji tanpa penimbang tetapi tidak signifikan pada uji berbasis desain, sehingga variabel ini tidak diperlakukan sebagai pembeda antarklaster.
 
@@ -1182,7 +1182,7 @@ Ketiga, kedua klaster berbeda jelas pada karakteristik sosial ekonominya. Rata-r
 
 Berdasarkan temuan penelitian, saran yang dapat diberikan adalah sebagai berikut.
 
-Bagi PT PLN (Persero) dan pemerintah Provinsi DKI Jakarta. Program efisiensi energi rumah tangga perlu dibedakan sasarannya menurut kedua kelompok yang terbentuk, bukan diterapkan seragam. Klaster 2, yang mencakup sekitar dua dari setiap lima rumah tangga, memiliki rata-rata konsumsi listrik lebih dari tiga kali lipat Klaster 1 dan tingkat kepemilikan AC sebesar 76,07 persen. Oleh karena itu, intervensi pada kelompok ini lebih tepat diarahkan pada efisiensi peralatan pendingin dan peralatan berdaya besar. Sebaliknya, konsumsi Klaster 1 sudah berada pada tingkat rendah, sehingga penghematan bukan sasaran yang wajar bagi kelompok ini. Selain itu, karena luas lantai, kepemilikan AC, dan golongan daya terpasang terbukti memisahkan kedua kelompok secara tajam dan ketiganya relatif mudah diamati di lapangan, ketiga variabel tersebut dapat dipertimbangkan sebagai indikator penyasaran program yang lebih praktis daripada variabel pengeluaran.
+Bagi PT PLN (Persero) dan pemerintah Provinsi DKI Jakarta. Program efisiensi energi rumah tangga perlu dibedakan sasarannya menurut kedua kelompok yang terbentuk, bukan diterapkan seragam. Klaster 2, yang mencakup sekitar dua dari setiap lima rumah tangga, memiliki rata-rata konsumsi listrik lebih dari tiga kali lipat Klaster 1 dan tingkat kepemilikan AC sebesar 76,07 persen. Oleh karena itu, intervensi pada kelompok ini lebih tepat diarahkan pada efisiensi peralatan pendingin dan peralatan berdaya besar. Sebaliknya, konsumsi Klaster 1 sudah berada pada tingkat rendah, sehingga penghematan bukan sasaran yang wajar bagi kelompok ini. Selain itu, karena luas lantai dan kepemilikan AC berbeda tajam antarkelompok dan keduanya relatif mudah diamati di lapangan, kedua variabel tersebut dapat dipertimbangkan sebagai indikator penyasaran program yang lebih praktis daripada variabel pengeluaran.
 
 Bagi Badan Pusat Statistik. Isian konsumsi listrik dalam satuan kWh pada kuesioner Susenas Maret 2025 tidak terisi pada seluruh rumah tangga sampel di Provinsi DKI Jakarta, sehingga konsumsi listrik dalam penelitian ini harus diperoleh melalui konversi pengeluaran listrik dengan tarif menurut golongan daya. Pemeriksaan kelengkapan isian tersebut pada pengumpulan data berikutnya akan memungkinkan analisis konsumsi listrik rumah tangga dilakukan langsung pada besaran fisiknya tanpa asumsi tarif.
 
