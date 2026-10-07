@@ -166,7 +166,7 @@ Hak Cipta dilindungi undang-undang
 
 ## PRAKATA
 
-> **Catatan repo (bukan isi naskah).** Isi Prakata disalin dari `.docx` (7 Oktober 2026). Tiga hal sengaja dibuat berbeda dari `.docx`: gelar Pak Azka disamakan dengan Halaman Pengesahan (templat Prodi); nama prodi ditulis "Program Studi Statistika Program Diploma III"; "materiel" (baku) menggantikan "material". Butir 5 masih menulis "adik" saja; Rafli anak kedua dari tiga bersaudara, jadi cek apakah "kakak" perlu ditambahkan.
+> **Catatan repo (bukan isi naskah).** Isi Prakata disalin dari `.docx` (7 Oktober 2026). Tiga hal sengaja dibuat berbeda dari `.docx`: gelar Pak Azka disamakan dengan Halaman Pengesahan (templat Prodi); nama prodi ditulis "Program Studi Statistika Program Diploma III"; "materiel" (baku) menggantikan "material". Butir 5 mengikuti `.docx` revisi (7 Oktober 2026, siang): "Bapak, ibu, oma, kakak, dan adik". Kalimat pembuka repo tetap memakai "pertolongan-Nya" dan "mengucapkan"; `.docx` revisi masih menulis "pertolongan-nya" dan "menucapkan".
 
 Syukur Alhamdulillah penulis panjatkan ke hadirat Allah Swt. karena berkat pertolongan-Nya tugas akhir yang berjudul "Klasifikasi Rumah Tangga Berdasarkan Pola Konsumsi Listrik dan Karakteristik Sosial Ekonomi di DKI Jakarta" dapat terselesaikan. Penulis juga mengucapkan terima kasih kepada:
 
@@ -174,7 +174,7 @@ Syukur Alhamdulillah penulis panjatkan ke hadirat Allah Swt. karena berkat perto
 2. Bapak Dr. Rudi Salam, SST., M.Si., selaku Ketua Program Studi Statistika Program Diploma III Politeknik Statistika STIS;
 3. Ibu Dr. Fitri Kartiasih, S.S.T., S.E., M.Si., selaku dosen pembimbing yang telah bersedia meluangkan waktu dan membimbing dengan penuh kesabaran;
 4. Bapak Yaya Setiadi, S.S.T., M.M., dan Bapak Dr. Azka Ubaidillah, SST., M.Si., selaku dosen penguji atas koreksi dan saran yang disampaikan;
-5. Bapak, ibu, dan adik serta keluarga besar penulis yang telah memberikan dukungan secara moril dan materiel; serta
+5. Bapak, ibu, oma, kakak, dan adik serta keluarga besar penulis yang telah memberikan dukungan secara moril dan materiel; serta
 6. semua pihak yang telah memberikan dukungan dalam penulisan tugas akhir ini.
 
 Saran dan kritik sangat penulis harapkan demi perbaikan tugas akhir ini. Akhirnya, semoga tugas akhir ini bermanfaat bagi banyak pihak.
