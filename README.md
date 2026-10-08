@@ -29,7 +29,7 @@ Project-TA/
 | Dokumen | Isi | Status |
 |---|---|---|
 | `Draft TA Pasca SE.md` | Naskah kerja utama (halaman awal, Bab I–V, Daftar Pustaka, Lampiran) | Aktif |
-| `Script R Pasca SE Bimbingan.R` | Skrip R olah Susenas; menghasilkan Tabel 3–9, Lampiran 1, dan Gambar 7–16 (disimpan di folder data lokal Rafli, lalu disalin ke `gambar/bab-4/`) | Aktif |
+| `Script R Pasca SE Bimbingan.R` | Skrip R olah Susenas; menghasilkan Tabel 3–9, Lampiran 1, dan Gambar 7–16 (disimpan di folder data lokal Rafli, lalu disalin ke `gambar/bab-4/`). Sejak Sesi BB juga menghasilkan grafik *centroid* pendamping Tabel 5 (`gambar-11a-centroid-klaster.png`, nomor final ditetapkan saat masuk naskah) dan tabel komponen utama siap tempel untuk Tabel 6 (`53e`) | Aktif |
 | `Script R Gambar Bab I.R` | Skrip R Gambar 1, 3, dan 4; keluaran langsung ke `gambar/bab-1/` | Aktif |
 | `gambar/` | Seluruh gambar naskah, dipisah per bab; nomor gambar tetap berurutan lintas bab | Aktif |
 | `sumber-rujukan/` | Salinan dokumen resmi yang dikutip (jurnal dan buku tidak diunggah karena hak cipta) | Aktif |

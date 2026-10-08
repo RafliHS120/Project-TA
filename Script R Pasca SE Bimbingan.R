@@ -31,6 +31,14 @@
 # 11. [SESI AX, 4 OKT 2026] Gambar 1, 3, dan 4 (Bab I, data publikasi,
 #    tanpa Susenas) dibuat di skrip terpisah "Script R Gambar Bab I.R".
 #    Skrip ini hanya menghasilkan Gambar 7-16.
+# 12. [SESI BB, 9 OKT 2026] (a) Blok 15 menulis tabel komponen utama
+#    siap tempel untuk Tabel 6 (komponen sebagai baris: muatan, nilai
+#    eigen, proporsi keragaman, proporsi kumulatif; berkas 53e).
+#    (b) Sumbu Gambar 11 diberi nama tafsiran komponen dan label pusat
+#    klaster. (c) Blok 15b BARU: grafik centroid klaster pendamping
+#    Tabel 5, lengkap dengan arti titik nol dan nilai centroid dalam
+#    satuan asli (keluaran gambar-11a-centroid-klaster.png dan berkas
+#    21b). Nomor gambar final ditetapkan saat gambar dimasukkan ke naskah.
 #
 # CATATAN METODOLOGIS
 # - Konsumsi listrik aktual dalam kWh tidak tersedia memadai (kode 233 = 0).
@@ -1251,8 +1259,45 @@ tabel_dimensi <- muatan_pca |>
 print(as.data.frame(tabel_dimensi))
 write_csv(tabel_dimensi, file.path(folder_output, "53d_tabel_dimensi_siap_tempel.csv"))
 
-label_dim1 <- paste0("Komponen utama 1 (", angka_id(ringkas_pca$persen_keragaman[1], 1), "% keragaman)")
-label_dim2 <- paste0("Komponen utama 2 (", angka_id(ringkas_pca$persen_keragaman[2], 1), "% keragaman)")
+# --- [SESI BB] Tabel 6 versi baru: komponen sebagai BARIS ------------
+# Muatan (unsur vektor eigen) tiap variabel, nilai eigen, proporsi
+# keragaman (share), dan proporsi kumulatif (cumulative share) berada
+# pada satu baris per komponen. Proporsi = nilai eigen / 3, karena data
+# sudah distandardisasi sehingga total keragaman = banyaknya variabel.
+tabel6_komponen <- tibble(
+  komponen = paste("Komponen utama", seq_along(pca_klaster$sdev)),
+  muatan_ln_konsumsi_listrik = unname(pca_klaster$rotation["z_ln_listrik_kwh", ]),
+  muatan_ln_nonmakanan_selain_listrik =
+    unname(pca_klaster$rotation["z_ln_pengeluaran_nonmakanan_nonlistrik", ]),
+  muatan_lama_sekolah_krt = unname(pca_klaster$rotation["z_pendidikan_krt", ]),
+  nilai_eigen = ringkas_pca$akar_ciri,
+  proporsi_keragaman_persen = ringkas_pca$persen_keragaman,
+  proporsi_kumulatif_persen = ringkas_pca$persen_kumulatif
+)
+
+cat("\n[TABEL 6 BARU] Komponen sebagai baris (bandingkan dengan naskah):\n")
+print(as.data.frame(tabel6_komponen), digits = 6)
+write_csv(tabel6_komponen,
+          file.path(folder_output, "53e_tabel6_komponen_baris.csv"))
+
+# Pemeriksaan arah: nama sumbu di bawah mengandaikan ketiga muatan
+# Komponen 1 bertanda positif dan lama sekolah KRT bermuatan negatif pada
+# Komponen 2 (sama dengan Tabel 6 naskah). Bila tanda berbalik, tafsiran
+# sumbu juga berbalik dan nama sumbu harus diperiksa ulang.
+if (any(pca_klaster$rotation[, 1] < 0) ||
+    pca_klaster$rotation["z_pendidikan_krt", 2] > 0) {
+  warning("Tanda muatan komponen utama berbeda dari Tabel 6 naskah. ",
+          "Periksa nama sumbu Gambar 11 sebelum dipakai.")
+}
+
+# Nama sumbu = tafsiran komponen (lihat Tabel 6 naskah).
+nama_dim1 <- "tingkat konsumsi listrik dan sosial ekonomi"
+nama_dim2 <- "konsumsi listrik relatif terhadap lama sekolah KRT"
+
+label_dim1 <- paste0("Komponen utama 1: ", nama_dim1, " (",
+                     angka_id(ringkas_pca$persen_keragaman[1], 2), "% keragaman)")
+label_dim2 <- paste0("Komponen utama 2: ", nama_dim2, "\n(",
+                     angka_id(ringkas_pca$persen_keragaman[2], 2), "% keragaman)")
 
 p_cluster <- factoextra::fviz_cluster(
   km_final, data = x, geom = "point", ellipse.type = "convex",
@@ -1265,10 +1310,128 @@ p_cluster <- factoextra::fviz_cluster(
   ) +
   scale_x_continuous(labels = sumbu_id(0.1)) +
   scale_y_continuous(labels = sumbu_id(0.1)) +
-  theme_minimal(base_size = 12, base_family = font_naskah)
+  # [SESI BB] Label pusat klaster (= rata-rata skor komponen per klaster).
+  ggplot2::annotate("label",
+                    x = centroid_pca$Dim1, y = centroid_pca$Dim2 + 0.45,
+                    label = paste0("Pusat Klaster ", centroid_pca$cluster),
+                    family = font_naskah, size = 3.2,
+                    label.size = 0.2, fill = "white") +
+  theme_minimal(base_size = 12, base_family = font_naskah) +
+  theme(axis.title = element_text(size = 10.5))
 
 simpan_grafik("gambar-11-klaster-komponen-utama.png",
               p_cluster, width = 8, height = 6)
+
+
+# ============================================================
+# 15b. GRAFIK CENTROID KLASTER (PENDAMPING TABEL 5)  [SESI BB]
+# ------------------------------------------------------------
+# Tabel 5 memuat centroid pada skala Z-score. Grafik ini menampilkan
+# angka yang sama sebagai batang, ditambah arti TITIK NOL dan nilai
+# centroid dalam satuan asli.
+#
+# Arti titik nol pada skala Z-score:
+#   0 = rata-rata seluruh 5.001 rumah tangga sampel untuk variabel yang
+#       dipakai K-Means (sesudah winsorizing dan, untuk dua variabel
+#       moneter, sesudah ln(1 + x)). Satuan sumbu = simpangan baku.
+#   - Variabel ln: nilai 0 dikembalikan ke satuan asli dengan
+#       exp(rata-rata ln(1 + x)) - 1, yaitu rata-rata geometrik
+#       (rata-rata ukur) rumah tangga sampel, BUKAN rata-rata hitung
+#       pada Tabel 3. Karena itu angkanya lebih kecil dari rata-rata
+#       hitung (sebaran menceng ke kanan).
+#   - Lama sekolah KRT (tanpa ln): nilai 0 = rata-rata hitung sampel.
+# Centroid klaster dikembalikan dengan cara yang sama, sehingga untuk
+# variabel ln hasilnya adalah rata-rata geometrik klaster.
+# Semua angka di blok ini TIDAK tertimbang, sama seperti Tabel 5.
+# ============================================================
+
+ringkas_skala <- tibble(
+  variabel_z = c("z_ln_listrik_kwh",
+                 "z_ln_pengeluaran_nonmakanan_nonlistrik",
+                 "z_pendidikan_krt"),
+  nama_pendek = c("Konsumsi listrik",
+                  "Pengeluaran nonmakanan\nselain listrik",
+                  "Lama sekolah KRT"),
+  rata_skala = c(mean(data_model$ln_listrik_kwh),
+                 mean(data_model$ln_pengeluaran_nonmakanan_nonlistrik),
+                 mean(data_model$pendidikan_krt)),
+  sb_skala = c(sd(data_model$ln_listrik_kwh),
+               sd(data_model$ln_pengeluaran_nonmakanan_nonlistrik),
+               sd(data_model$pendidikan_krt)),
+  pakai_ln = c(TRUE, TRUE, FALSE)
+)
+
+# Mengembalikan nilai Z ke satuan asli (kWh, rupiah, tahun).
+balik_skala <- function(z, rata, sb, pakai_ln) {
+  nilai <- rata + z * sb
+  ifelse(pakai_ln, expm1(nilai), nilai)
+}
+
+format_asli <- function(variabel_z, x) {
+  dplyr::case_when(
+    variabel_z == "z_ln_listrik_kwh" ~ paste0(angka_id(x, 0), " kWh"),
+    variabel_z == "z_ln_pengeluaran_nonmakanan_nonlistrik" ~
+      paste0("Rp", angka_id(x, 0)),
+    TRUE ~ paste0(angka_id(x, 1), " tahun")
+  )
+}
+
+nol_asli <- ringkas_skala |>
+  mutate(nilai_nol = balik_skala(0, rata_skala, sb_skala, pakai_ln),
+         label_sumbu = paste0(nama_pendek, "\n(0 = ",
+                              format_asli(variabel_z, nilai_nol), ")"))
+
+centroid_panjang <- centroid_z |>
+  pivot_longer(-cluster, names_to = "variabel_z", values_to = "z") |>
+  left_join(ringkas_skala, by = "variabel_z") |>
+  mutate(
+    nilai_asli = balik_skala(z, rata_skala, sb_skala, pakai_ln),
+    label_batang = paste0(angka_id(z, 2), "  (",
+                          format_asli(variabel_z, nilai_asli), ")"),
+    cluster = factor(cluster),
+    variabel_z = factor(variabel_z, levels = rev(ringkas_skala$variabel_z))
+  )
+
+cat("\n[GAMBAR CENTROID] Nilai nol dan centroid dalam satuan asli:\n")
+print(as.data.frame(select(nol_asli, variabel_z, rata_skala, sb_skala, nilai_nol)),
+      digits = 6)
+print(as.data.frame(select(centroid_panjang, cluster, variabel_z, z, nilai_asli)),
+      digits = 6)
+write_csv(select(centroid_panjang, cluster, variabel_z, z, nilai_asli),
+          file.path(folder_output, "21b_centroid_satuan_asli.csv"))
+write_csv(select(nol_asli, variabel_z, rata_skala, sb_skala, nilai_nol),
+          file.path(folder_output, "21c_nilai_nol_zscore.csv"))
+
+batas_x <- range(c(0, centroid_panjang$z))
+batas_x <- c(batas_x[1] - 1.2, batas_x[2] + 1.2)
+
+p_centroid <- ggplot(centroid_panjang,
+                     aes(x = z, y = variabel_z, fill = cluster)) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.75) +
+  geom_vline(xintercept = 0, linewidth = 0.7, colour = "grey15") +
+  geom_text(aes(label = label_batang, hjust = ifelse(z < 0, 1.04, -0.04)),
+            position = position_dodge(width = 0.8),
+            family = font_naskah, size = 3.1) +
+  annotate("text", x = 0.04, y = 3.62, hjust = 0,
+           label = "\u2190 garis 0 = rata-rata seluruh rumah tangga sampel",
+           family = font_naskah, size = 3.1, fontface = "italic") +
+  scale_fill_manual(values = warna_klaster,
+                    labels = c("1" = "Klaster 1", "2" = "Klaster 2")) +
+  scale_y_discrete(labels = setNames(nol_asli$label_sumbu, nol_asli$variabel_z),
+                   expand = expansion(add = c(0.6, 0.85))) +
+  scale_x_continuous(labels = sumbu_id(0.1), limits = batas_x,
+                     breaks = seq(floor(batas_x[1] * 2) / 2,
+                                  ceiling(batas_x[2] * 2) / 2, by = 0.5)) +
+  labs(x = "Centroid pada skala Z-score (satuan simpangan baku dari rata-rata sampel)",
+       y = NULL, fill = NULL) +
+  theme_minimal(base_size = 12, base_family = font_naskah) +
+  theme(legend.position = "top",
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_blank(),
+        axis.title.x = element_text(size = 10.5))
+
+simpan_grafik("gambar-11a-centroid-klaster.png",
+              p_centroid, width = 8.5, height = 5)
 
 
 # ============================================================
