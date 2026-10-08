@@ -39,6 +39,13 @@
 #    Tabel 5, lengkap dengan arti titik nol dan nilai centroid dalam
 #    satuan asli (keluaran gambar-11a-centroid-klaster.png dan berkas
 #    21b). Nomor gambar final ditetapkan saat gambar dimasukkan ke naskah.
+# 13. [SESI BC, 9 OKT 2026] Grafik centroid (blok 15b, Gambar 11 naskah
+#    Rev BC): urutan batang disamakan dengan legenda (Klaster 1 di atas,
+#    Klaster 2 di bawah). Grafik komponen utama (Gambar 12 naskah Rev BC):
+#    argumen label.size dibuang karena diabaikan ggplot2 4.x dan memicu
+#    peringatan "Ignoring unknown parameters"; tampilan tidak berubah.
+#    Nama berkas keluaran belum diganti nomor (gambar-11a/gambar-11 ...);
+#    penyesuaian nama menunggu sinkron repo dengan .docx Rev BC.
 #
 # CATATAN METODOLOGIS
 # - Konsumsi listrik aktual dalam kWh tidak tersedia memadai (kode 233 = 0).
@@ -1315,7 +1322,7 @@ p_cluster <- factoextra::fviz_cluster(
                     x = centroid_pca$Dim1, y = centroid_pca$Dim2 + 0.45,
                     label = paste0("Pusat Klaster ", centroid_pca$cluster),
                     family = font_naskah, size = 3.2,
-                    label.size = 0.2, fill = "white") +
+                    fill = "white") +
   theme_minimal(base_size = 12, base_family = font_naskah) +
   theme(axis.title = element_text(size = 10.5))
 
@@ -1405,8 +1412,11 @@ write_csv(select(nol_asli, variabel_z, rata_skala, sb_skala, nilai_nol),
 batas_x <- range(c(0, centroid_panjang$z))
 batas_x <- c(batas_x[1] - 1.2, batas_x[2] + 1.2)
 
+# [SESI BC] group dibalik agar pada setiap variabel batang Klaster 1
+# berada DI ATAS batang Klaster 2, sama dengan urutan legenda.
 p_centroid <- ggplot(centroid_panjang,
-                     aes(x = z, y = variabel_z, fill = cluster)) +
+                     aes(x = z, y = variabel_z, fill = cluster,
+                         group = forcats::fct_rev(cluster))) +
   geom_col(position = position_dodge(width = 0.8), width = 0.75) +
   geom_vline(xintercept = 0, linewidth = 0.7, colour = "grey15") +
   geom_text(aes(label = label_batang, hjust = ifelse(z < 0, 1.04, -0.04)),
