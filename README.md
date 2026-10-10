@@ -32,7 +32,7 @@ Project-TA/
 | `Draft TA Pasca SE.md` | Naskah kerja utama (halaman awal, Bab I–V, Daftar Pustaka, Lampiran) | Aktif |
 | `Script R Pasca SE Bimbingan.R` | Skrip R olah Susenas; menghasilkan Tabel 3–9, Lampiran 1, dan Gambar 7–16 (disimpan di folder data lokal Rafli, lalu disalin ke `gambar/bab-4/`). Sejak Sesi BB juga menghasilkan grafik *centroid* pendamping Tabel 5 (`gambar-11a-centroid-klaster.png`, nomor final ditetapkan saat masuk naskah) dan tabel komponen utama siap tempel untuk Tabel 6 (`53e`) | Aktif |
 | `Script R Gambar Bab I.R` | Skrip R Gambar 1, 3, dan 4; keluaran langsung ke `gambar/bab-1/` | Aktif |
-| `Script R Pembanding K-Medoids.R` | Pembanding K-Medoids (PAM) terhadap K-Means pada data yang sama; dijalankan **sesudah** script utama dalam sesi R yang sama; keluaran `60`–`66` di folder output. Hanya bahan jawaban lisan sidang, tidak masuk naskah (Sesi BD) | Aktif |
+| `Script R Pembanding K-Medoids.R` | Pembanding K-Medoids (PAM) terhadap K-Means pada data yang sama; dijalankan **sesudah** script utama dalam sesi R yang sama; keluaran `60`–`68` di folder output (`67`–`68` = padanan Tabel L1.1 dan L1.2 untuk K-Medoids). Hanya bahan jawaban lisan sidang, tidak masuk naskah (Sesi BD) | Aktif |
 | `gambar/` | Seluruh gambar naskah, dipisah per bab; nomor gambar tetap berurutan lintas bab | Aktif |
 | `sumber-rujukan/` | Salinan dokumen resmi yang dikutip (jurnal dan buku tidak diunggah karena hak cipta) | Aktif |
 | `arsip/Script last.R` | Skrip R versi sebelum revisi pascabimbingan | Arsip |
