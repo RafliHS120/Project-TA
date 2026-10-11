@@ -17,6 +17,7 @@ Project-TA/
 ├── Script R Pasca SE Bimbingan.R     ← skrip olah Susenas (tetap di root: disinkronkan ke Project claude.ai)
 ├── Script R Gambar Bab I.R           ← skrip Gambar 1, 3, 4 (data publikasi ditulis di dalam skrip)
 ├── Script R Pembanding K-Medoids.R   ← pembanding K-Medoids vs K-Means (bahan tanya jawab sidang, bukan isi naskah)
+├── Bank Pertanyaan Sidang.md         ← kemungkinan pertanyaan sidang + jawaban lisan (bahan latihan, bukan isi naskah)
 ├── gambar/
 │   ├── 0-halaman-awal/   logo-stis.png
 │   ├── bab-1/            Gambar 1–4
@@ -33,6 +34,7 @@ Project-TA/
 | `Script R Pasca SE Bimbingan.R` | Skrip R olah Susenas; menghasilkan Tabel 3–9, Lampiran 1, dan Gambar 7–16 (disimpan di folder data lokal Rafli, lalu disalin ke `gambar/bab-4/`). Sejak Sesi BB juga menghasilkan grafik *centroid* pendamping Tabel 5 (`gambar-11a-centroid-klaster.png`, nomor final ditetapkan saat masuk naskah) dan tabel komponen utama siap tempel untuk Tabel 6 (`53e`) | Aktif |
 | `Script R Gambar Bab I.R` | Skrip R Gambar 1, 3, dan 4; keluaran langsung ke `gambar/bab-1/` | Aktif |
 | `Script R Pembanding K-Medoids.R` | Pembanding K-Medoids (PAM) terhadap K-Means pada data yang sama; dijalankan **sesudah** script utama dalam sesi R yang sama; keluaran `60`–`68` di folder output (`67`–`68` = padanan Tabel L1.1 dan L1.2 untuk K-Medoids). Hanya bahan jawaban lisan sidang, tidak masuk naskah (Sesi BD) | Aktif |
+| `Bank Pertanyaan Sidang.md` | 59 kemungkinan pertanyaan sidang (A–G) beserta jawaban lisan, letak bukti di naskah, status sumber, dan daftar cek sebelum sidang. Sitasi tanpa "hlm.". Bahan latihan, tidak dipindahkan ke `.docx` (Sesi BD) | Aktif |
 | `gambar/` | Seluruh gambar naskah, dipisah per bab; nomor gambar tetap berurutan lintas bab | Aktif |
 | `sumber-rujukan/` | Salinan dokumen resmi yang dikutip (jurnal dan buku tidak diunggah karena hak cipta) | Aktif |
 | `arsip/Script last.R` | Skrip R versi sebelum revisi pascabimbingan | Arsip |
