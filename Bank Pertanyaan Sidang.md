@@ -5,7 +5,7 @@
 | Penulis | Rafli Hibriansyah Siregar (112313326, 3D33) |
 | Sidang | Rabu, 14 Oktober 2026 · Sesi 3, 11.00–12.00 WIB · Ruang 321 |
 | Penguji | Bu Fitri (pembimbing), Pak Yaya, Pak Azka (ketat soal pilihan metode: "kenapa tidak ini?") |
-| Disusun | Sesi BD, 11 Oktober 2026 |
+| Disusun | Sesi BD, 11 Oktober 2026 · ditambah bagian I (11 pertanyaan) dan J, Sesi BE, 13 Oktober 2026 |
 | Status | **Bahan latihan lisan. Bukan isi naskah.** Tidak ada satu kalimat pun dari file ini yang dipindahkan ke `.docx` tanpa keputusan Rafli |
 
 ---
@@ -539,6 +539,113 @@
 
 | ⚠️ | Script Gambar 2 tidak ada di repo (`Script R Gambar Bab I.R` hanya Gambar 1, 3, 4). Bila diminta datanya, tunjukkan tabel BPS sumbernya |
 |---|---|
+
+---
+
+## I. TAMBAHAN SESI BE (13 OKTOBER MALAM)
+
+Pertanyaan baru dari pemeriksaan PDF paparan dan latihan naskah ucapan. Belum ada di bagian A–G.
+
+### I1 · Susenas Maret 2025 bertepatan dengan diskon listrik 50 persen. Sudah dikoreksi? ★★
+
+> "Benar, Pak. Pencacahan Susenas Maret 2025 berlangsung pada Februari 2025, bersamaan dengan diskon tarif 50 persen bagi rumah tangga sampai 2.200 VA pada Januari–Februari 2025. Konversi saya memakai tarif normal dan belum mengoreksi diskon itu, karena Susenas tidak mencatat apakah pengeluaran listrik yang dilaporkan sudah terdiskon. Bila sudah terdiskon, konsumsi rumah tangga sampai 2.200 VA tercatat lebih rendah daripada sebenarnya, dan hal ini saya catat sebagai keterbatasan untuk revisi."
+
+| Bukti | **Tidak ada di naskah.** Pencacahan 8–27 Februari 2025 (BPS Kabupaten Lahat, berita 19 Feb 2025); diskon 50% Januari–Februari 2025 untuk 450–2.200 VA (Kepmen ESDM 348.K/TL.01/MEM.L/2024, via pemberitaan) |
+|---|---|
+| Status | Fakta diskon dan tanggal pencacahan `[PERLU VERIFIKASI]` ke Kepmen dan pedoman Susenas · arah bias `[PENALARAN]` |
+| Jangan | Mengangkat sendiri saat paparan · mengklaim "pasti terdiskon" atau "pasti tidak terdiskon" |
+| Bila didesak "lalu hasilnya salah?" | "Ketiga penciri, yaitu AC, lemari es, dan luas lantai, diukur langsung dari kuesioner, dan dua dari tiga variabel pembentuk, yaitu pengeluaran nonmakanan dan lama sekolah, tidak bergantung pada konversi tarif. Yang terdampak terutama besaran kWh dan posisi rumah tangga yang berada di perbatasan klaster; besarnya belum saya periksa." `[PENALARAN]` |
+| Revisi pascasidang | Tambahkan ke Keterbatasan (1.4) |
+
+### I2 · Kalau pemisahannya hanya di satu sumbu, kenapa tidak dipotong saja di median pengeluaran? ★★★
+
+> "Batasnya ditentukan selisih ketiga *centroid* sekaligus, yaitu 1,36; 1,53; dan 1,18 simpangan baku, bukan satu variabel yang saya pilih. Titik potongnya juga ditentukan data, bukan kuantil yang saya tetapkan di awal. Rumah tangga yang konsumsinya tinggi tetapi pengeluarannya rendah tidak akan tertangkap oleh pembagian satu variabel. Saya akui, karena strukturnya lemah, hasilnya mendekati pemotongan satu indeks gabungan, dan itu sebabnya saya membacanya sebagai perbedaan kecenderungan."
+
+| Bukti | 4.2 (jarak *centroid*; Tabel 6; Gambar 12); 5.1 butir kedua |
+|---|---|
+| Status | `[PENALARAN]` |
+| Hindari | "K-Means pasti lebih baik daripada kuantil" |
+
+### I3 · Ambang asli Kaufman–Rousseeuw itu 0,25/0,50/0,70, bukan 0,2/0,5 ★★
+
+> "Saya mengikuti ambang sebagaimana dikutip Everitt dan kawan-kawan. Pada tabel asli pun, 0,3640 jatuh di kelas struktur lemah yang bisa saja artifisial. Karena itu saya tidak berhenti di *silhouette*, tetapi menguji variabel penciri di luar pembentuk untuk melihat apakah pembagian itu bermakna, dan luas lantai serta lemari es berbeda signifikan."
+
+| Bukti | Bab II *silhouette*; Tabel 9 |
+|---|---|
+| Status | Ambang tabel asli (0,71–1 kuat; 0,51–0,70 wajar; 0,26–0,50 lemah, bisa artifisial; ≤ 0,25 tidak ada struktur berarti) `[PERLU VERIFIKASI]`: dari ingatan Claude, buku aslinya belum dipegang. Lihat juga G3 |
+
+### I4 · Simpangan baku lebih besar daripada rata-rata. Apa artinya? ★★★
+
+> "Konsumsi listrik tidak mungkin negatif. Kalau sebarannya simetris, rata-rata dikurangi satu simpangan baku menjadi minus 26 kWh, yang mustahil. Jadi sebarannya melebar ke kanan: sebagian besar rumah tangga berkonsumsi rendah, dan segelintir rumah tangga berkonsumsi sangat tinggi menarik rata-rata ke atas. Itu juga sebabnya median sampel 222,19 kWh jauh di bawah rata-rata 327,45 kWh, dan sebabnya data saya transformasi logaritma sebelum pengelompokan."
+
+| Bukti | Tabel 3; Gambar 7; 3.4 Persiapan Data |
+|---|---|
+| Angka (hitung) | 327,45 − 353,88 = −26,43 · koefisien variasi: listrik 353,88/327,45 = 1,08; nonmakanan 5.918.258/4.654.809 = 1,27 |
+| Analogi untuk diri sendiri | Sembilan orang bergaji Rp5 juta dan satu orang Rp100 juta: rata-rata Rp14,5 juta, median Rp5 juta |
+
+### I5 · "Timpang" diukur dengan apa? Gini? ★★
+
+> "Yang saya maksud timpang adalah sebarannya sangat lebar dan menceng ke kanan, terlihat dari simpangan baku yang melampaui rata-rata dan median yang jauh di bawah rata-rata. Ukuran ketimpangan formal seperti indeks Gini tidak saya hitung."
+
+| Bukti | Tabel 3; 5.1 butir pertama |
+|---|---|
+| Revisi pascasidang | Pertimbangkan "sebaran lebar dan menceng" menggantikan "timpang" bila penguji meminta |
+
+### I6 · Komponen utama: arti skor minus, arti sumbu tegak, arti berimpit ★★★
+
+> "Data sudah distandardisasi, jadi nol adalah rata-rata seluruh rumah tangga sampel; skor minus berarti di bawah rata-rata. Komponen pertama memuat ketiga variabel dengan tanda positif, jadi makin ke kanan ketiganya sama-sama makin tinggi. Komponen kedua membandingkan konsumsi listrik dengan lama sekolah: makin ke atas, konsumsi listriknya relatif tinggi dibanding pendidikan KRT-nya. Kedua pusat klaster berimpit di sekitar nol pada komponen kedua, artinya kedua klaster berbeda tingkat, bukan berbeda pola."
+
+| Butir | Isi |
+|---|---|
+| KU1 | Muatan 0,5822 · 0,6397 · 0,5018 (semua positif) → tingkat konsumsi dan sosial ekonomi. Pendidikan **tidak** turun di KU1 |
+| KU2 | Muatan 0,5566 · 0,1363 · −0,8195 → selisih berbobot listrik vs lama sekolah, **bukan rasio**. Atas = listrik tinggi relatif terhadap pendidikan; bawah = pendidikan tinggi relatif terhadap listrik |
+| Berimpit | *Centroid* KU2 0,0002 dan −0,0004 → keseimbangan listrik–pendidikan sama pada kedua klaster; pemisahan hanya di KU1 |
+| Analogi untuk diri sendiri | KU1 = nilai total dua mata pelajaran; KU2 = condong ke mata pelajaran mana. Klaster 1 dan 2 berbeda nilai total, tetapi sama-sama seimbang |
+| Bukti | Tabel 6; Gambar 12; 4.2 |
+
+### I7 · Kenapa pusat KU1 −0,79 dan 1,57, tidak simetris? ★
+
+> "Rata-rata seluruh skor komponen utama sama dengan nol, jadi klaster yang lebih besar duduk lebih dekat ke nol. Tiga ribu tiga ratus dua puluh sembilan kali minus 0,7887 ditambah seribu enam ratus tujuh puluh dua kali 1,5703 hasilnya hampir nol."
+
+| Angka (hitung) | 3.329 × (−0,7887) + 1.672 × 1,5703 = −2.625,6 + 2.625,5 ≈ 0 |
+|---|---|
+
+### I8 · WCSS satu klaster tepat 15.000. Dari mana? ★
+
+> "Setiap variabel terstandardisasi memiliki jumlah kuadrat simpangan sebesar n dikurangi satu, yaitu 5.000. Dengan tiga variabel, totalnya 15.000. Jadi angka ini sekaligus tanda bahwa standardisasi berjalan benar."
+
+| Status | `[PENALARAN]`: *Z-score* dengan penyebut n − 1 (fungsi `scale` di R) |
+|---|---|
+
+### I9 · Dua kelompok kok memakai Kruskal–Wallis, bukan Mann–Whitney? ★★
+
+> "Untuk dua kelompok, Kruskal–Wallis setara dengan uji Mann–Whitney atau Wilcoxon *rank-sum*, jadi kesimpulannya sama. Saya memakai Kruskal–Wallis karena rumusan metode di Bab III berlaku untuk jumlah klaster berapa pun, sebelum jumlah klaster ditentukan."
+
+| Status | Kesetaraan untuk dua kelompok `[PERLU VERIFIKASI]` (Kruskal & Wallis, 1952) |
+|---|---|
+
+### I10 · Cramér's V untuk tabel 2 × 2? ★
+
+> "Untuk tabel dua kali dua, Cramér's V sama dengan nilai mutlak koefisien phi. Saya memakainya untuk mengurutkan kekuatan hubungan antarpenciri, bukan dibandingkan dengan ambang tertentu."
+
+| Status | `[PENALARAN]` dari rumus V = √(χ² / (n(min(K, J) − 1))) dengan min = 2 |
+|---|---|
+
+### I11 · Maksud saran untuk penelitian selanjutnya? ★★
+
+> "Setiap saran berangkat dari satu keterbatasan. Konsumsi listrik saya peroleh dari konversi tarif, jadi penelitian berikutnya lebih kuat bila memakai kWh hasil pencatatan meteran. Struktur klaster saya lemah dan sebarannya menerus, sehingga metode yang memberi derajat keanggotaan lebih sesuai untuk rumah tangga di perbatasan. Klaster saya dibentuk tanpa penimbang, sehingga penelitian berikutnya dapat memasukkan desain sampel sejak tahap pengelompokan."
+
+| Saran | Kelemahan asal | Contoh bila ditanya lebih lanjut |
+|---|---|---|
+| Data meteran | kWh = pengeluaran ÷ tarif; 40,87% RT 450 VA melampaui kapasitas | Data kWh tercatat PLN |
+| Batas tidak tegas | Setiap RT 100% di satu klaster; *silhouette* 0,3640 | *Fuzzy C-Means*, *Gaussian Mixture Model* (lihat C9) |
+| Desain sampel | Klaster 2: 33,43% sampel vs 39,89% tertimbang | *K-Means* tertimbang (lihat C8) |
+
+---
+
+## J. PERTANYAAN DARI CATATAN RAFLI
+
+*(Diisi pada Sesi BE setelah Rafli mengirim rekap pertanyaannya.)*
 
 ---
 
