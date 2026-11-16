@@ -18,6 +18,7 @@ Project-TA/
 ├── Script R Gambar Bab I.R           ← skrip Gambar 1, 3, 4 (data publikasi ditulis di dalam skrip)
 ├── Script R Pembanding K-Medoids.R   ← pembanding K-Medoids vs K-Means (sejak Sesi BF hasilnya masuk Tabel 5 naskah)
 ├── Script R Revisi Pascasidang.R    ← kontribusi variabel, uji kestabilan bootstrap, histogram (revisi penguji)
+├── Script R Sensitivitas Reviewer ICDSOS.R ← cek ketahanan untuk reviewer paper ICDSOS (kWh dipotong/dikeluarkan, K-Means tertimbang)
 ├── Bank Pertanyaan Sidang.md         ← kemungkinan pertanyaan sidang + jawaban lisan (bahan latihan, bukan isi naskah)
 ├── gambar/
 │   ├── 0-halaman-awal/   logo-stis.png
@@ -36,6 +37,7 @@ Project-TA/
 | `Script R Gambar Bab I.R` | Skrip R Gambar 1, 3, dan 4; keluaran langsung ke `gambar/bab-1/` | Aktif |
 | `Script R Pembanding K-Medoids.R` | Pembanding K-Medoids (PAM) terhadap K-Means pada data yang sama; dijalankan **sesudah** script utama dalam sesi R yang sama; keluaran `60`–`68` di folder output (`67`–`68` = padanan Tabel L1.1 dan L1.2 untuk K-Medoids). Semula bahan jawaban lisan (Sesi BD); sejak Sesi BF hasilnya dipakai di Tabel 5 naskah (perbandingan *K-Means* dan *K-Medoids*) | Aktif |
 | `Script R Revisi Pascasidang.R` | Revisi Lembar Perbaikan Hasil Sidang: kontribusi variabel pembentuk (R² per variabel, `70`), *K-Means* tanpa satu variabel (ARI, `71`), uji kestabilan *bootstrap* Jaccard untuk *K-Means* dan *K-Medoids* (`72`), ringkasan (`73`), dan Gambar 12 histogram variabel pembentuk menurut klaster. Dijalankan **sesudah** script utama (dan sebaiknya sesudah script K-Medoids) dalam sesi R yang sama; perlu *package* fpc (Sesi BF) | Aktif |
+| `Script R Sensitivitas Reviewer ICDSOS.R` | Analisis sensitivitas untuk Reviewer A paper IFLP–ICDSOS 2026 (ID 1004): Skenario A (analisis utama dibangun ulang), B (kWh dipotong di kapasitas meteran 324/648 kWh), C (290 rumah tangga yang melampaui kapasitas dikeluarkan), dan D (standardisasi dan *K-Means* memakai penimbang Susenas). Dijalankan **sesudah** script utama dalam sesi R yang sama; keluaran `90`–`94` di folder output (`90` = ringkasan yang dikirim). Tidak mengubah angka analisis utama. Diuji dengan data buatan; angka hasil baru sah setelah dijalankan pada data Susenas (Sesi BQ) | Aktif |
 | `Bank Pertanyaan Sidang.md` | 59 kemungkinan pertanyaan sidang (A–G) beserta jawaban lisan, letak bukti di naskah, status sumber, dan daftar cek sebelum sidang. Sitasi tanpa "hlm.". Bahan latihan, tidak dipindahkan ke `.docx` (Sesi BD) | Aktif |
 | `gambar/` | Seluruh gambar naskah, dipisah per bab; nomor gambar tetap berurutan lintas bab | Aktif |
 | `sumber-rujukan/` | Salinan dokumen resmi yang dikutip (jurnal dan buku tidak diunggah karena hak cipta) | Aktif |
