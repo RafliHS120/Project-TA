@@ -26,6 +26,7 @@ Project-TA/
 │   ├── bab-2/            Gambar 5 (+ sumber draw.io)
 │   ├── bab-3/            Gambar 6 (+ sumber draw.io)
 │   └── bab-4/            Gambar 7–16
+├── paper-icdsos-2026/                ← paper konferensi IFLP–ICDSOS 2026 (ID 1004) turunan TA; lihat README di dalamnya
 ├── sumber-rujukan/                   ← bukti sumber resmi (BPS, Perpres, Bappenas, tarif PLN); lihat README di dalamnya
 └── arsip/                            ← dokumen lama yang tidak dipakai lagi
 ```
@@ -40,6 +41,7 @@ Project-TA/
 | `Script R Sensitivitas Reviewer ICDSOS.R` | Analisis sensitivitas untuk Reviewer A paper IFLP–ICDSOS 2026 (ID 1004): Skenario A (analisis utama dibangun ulang), B (kWh dipotong di kapasitas meteran 324/648 kWh), C (290 rumah tangga yang melampaui kapasitas dikeluarkan), dan D (standardisasi dan *K-Means* memakai penimbang Susenas). Dijalankan **sesudah** script utama dalam sesi R yang sama; keluaran `90`–`94` di folder output (`90` = ringkasan yang dikirim). Tidak mengubah angka analisis utama. Diuji dengan data buatan; angka hasil baru sah setelah dijalankan pada data Susenas (Sesi BQ) | Aktif |
 | `Bank Pertanyaan Sidang.md` | 59 kemungkinan pertanyaan sidang (A–G) beserta jawaban lisan, letak bukti di naskah, status sumber, dan daftar cek sebelum sidang. Sitasi tanpa "hlm.". Bahan latihan, tidak dipindahkan ke `.docx` (Sesi BD) | Aktif |
 | `gambar/` | Seluruh gambar naskah, dipisah per bab; nomor gambar tetap berurutan lintas bab | Aktif |
+| `paper-icdsos-2026/` | Paper konferensi IFLP–ICDSOS 2026 (ID 1004) yang diturunkan dari TA: dokumen `.docx` resmi, salinan Markdown, dan silsilah versinya | Aktif |
 | `sumber-rujukan/` | Salinan dokumen resmi yang dikutip (jurnal dan buku tidak diunggah karena hak cipta) | Aktif |
 | `arsip/Script last.R` | Skrip R versi sebelum revisi pascabimbingan | Arsip |
 | `arsip/01-makalah-seminar-proposal.md` | Makalah seminar proposal | Arsip |
